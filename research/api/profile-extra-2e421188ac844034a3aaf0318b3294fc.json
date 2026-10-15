@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 11511767,
+      "uuid": "2e421188ac844034a3aaf0318b3294fc",
+      "nickname": "小编阿莫",
+      "avatar": "https://liblibai-online.liblib.cloud/img/2e421188ac844034a3aaf0318b3294fc/0dd0f01c429a6f788d4544668396c5440fd8c77751509b2f7d1572235ff7037c.JPG",
+      "backgroundImage": "",
+      "briefIntroduction": "路人"
+    },
+    "counter": {
+      "totalLikeCount": 30,
+      "projectCount": 2,
+      "viewCreationProcessCount": 1962,
+      "copyCanvasCount": 243,
+      "followerCount": 13,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "b01d705f-e8c6-9ed8-a1ca-3d5d6d6fede8"
+}

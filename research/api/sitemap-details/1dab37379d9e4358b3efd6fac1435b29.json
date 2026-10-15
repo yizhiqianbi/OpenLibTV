@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "1dab37379d9e4358b3efd6fac1435b29",
+      "projectUuid": "9c151e144cfb45619cf43d65b24d529a",
+      "name": "国风动画-踏破凌霄-齐天大圣（109秒）",
+      "description": "国风动画-踏破凌霄-齐天大圣（脚本提示词需要自己修改，有些问题没有改正）",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/06af4c12b18a483ea48765f2b4fab87d/d3d7ed085ec87ec4551ab27e1803e214c965fae4.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/06af4c12b18a483ea48765f2b4fab87d/b5be31865184de3668df08e660e4bdbfbf1e4262.mp4",
+      "snapshotId": 24698,
+      "auditStatus": 1,
+      "ownerId": 10438932,
+      "ownerUuid": "06af4c12b18a483ea48765f2b4fab87d",
+      "avatar": "https://liblibai-online.liblib.cloud/img/06af4c12b18a483ea48765f2b4fab87d/843136571be858060c3f46f5ef8ac3c5b83e5c6b1ccddab71e94e2a2c87d0f5d.jpg",
+      "nickname": "饼干BG",
+      "isLike": false,
+      "likeCount": 36,
+      "tags": [
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "国风还是耐看 一分钟简短剧情 http://xhslink.com/o/1kwRqiEYfcb  打开【小红书】，这篇笔记超精彩！",
+      "createAt": "2026年07月06日 00:01",
+      "updateAt": "2026年07月06日 19:49",
+      "publishAt": "2026年07月06日 19:41",
+      "playCount": 29,
+      "viewCreationProcessCount": 13,
+      "copyCanvasCount": 4,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 21,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9dd347b3-090a-9f82-972c-c58250184468"
+}

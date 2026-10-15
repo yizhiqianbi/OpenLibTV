@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d8806a03708a4adf884819f9af82c6f1",
+      "projectUuid": "7383ce89119c424a80b99a64eab5b7b5",
+      "name": "《孤独的琳达》",
+      "description": "大学生AI艺术季三等奖作品，入围海南岛国际电影节AI单元，一个古怪老太太琳达的故事......",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4bd08b0c42d64a46a98ef277facd1bc5/e08c5cb6ecfd9383873ca631fab293d4fd81adba.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4bd08b0c42d64a46a98ef277facd1bc5/623fd19b943b592429e909c154265cc47ea5599c.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 9068425,
+      "ownerUuid": "4bd08b0c42d64a46a98ef277facd1bc5",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4bd08b0c42d64a46a98ef277facd1bc5/6a4a6359b449596b7d18fb842c00d3b51084b62f4ec9b17b4c52f8cee6c8a760.jpg",
+      "nickname": "王行之Seulgi",
+      "isLike": false,
+      "likeCount": 33,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月16日 10:30",
+      "updateAt": "2026年06月19日 00:46",
+      "publishAt": "2026年06月16日 10:30",
+      "playCount": 19,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6218e4b9-64a8-9281-8904-3093c7474f73"
+}

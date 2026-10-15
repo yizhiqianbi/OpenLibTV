@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "67f7715d28374096a4a72588e01a5a9f",
+      "projectUuid": "5f989607e15b4262950e18197f027c19",
+      "name": "西兰卡普的传说",
+      "description": "以土家族织锦“西兰卡普”的起源传说为核心，歌颂土家少女西兰纯粹执着、热爱美好、坚守匠心的品性，揭露流言偏见与愚昧误解的伤害，诠释西兰卡普承载的土家族千年温柔、思念与非遗匠心，让传统纹样成为永不凋零的民族浪漫。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/65e282ddec1c45df95daeeddf617547d/c7d3eb403cf2e5bfba1f3fc931d2bad8a0d1a5c6.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/65e282ddec1c45df95daeeddf617547d/49d92ff521502ee5b6fd300a15a53129cb02e109.mp4",
+      "snapshotId": 19913,
+      "auditStatus": 1,
+      "ownerId": 9061659,
+      "ownerUuid": "65e282ddec1c45df95daeeddf617547d",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "155****9206",
+      "isLike": false,
+      "likeCount": 5,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "4.30 ufB:/ x@S.LW 07/01 :0pm 西兰卡普传说 # Lib广告导演请就位 以土家族织锦“西兰卡普”的起源传说为核心，歌颂土家少女西兰纯粹执着、热爱美好、坚守匠心的品性，揭露流言偏见与愚昧误解的伤害，诠释西兰卡普承载的土家族千年温柔、思念与非遗匠心，让传统纹样成为永不凋零的民族浪漫。  https://v.douyin.com/UsCzi47VYLw/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月16日 21:55",
+      "updateAt": "2026年07月03日 14:28",
+      "publishAt": "2026年06月16日 21:55",
+      "playCount": 4,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 111,
+        "edges": 148
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f7386b0f-268e-9b2c-b8f7-e7b0266cc051"
+}

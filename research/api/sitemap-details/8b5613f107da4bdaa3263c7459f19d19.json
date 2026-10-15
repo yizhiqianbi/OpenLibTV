@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8b5613f107da4bdaa3263c7459f19d19",
+      "projectUuid": "c204eb04aac64db6badcde63f77bcbca",
+      "name": "伞下缘",
+      "description": "《伞下缘》是一部以江南烟雨为幕、以书信传情为线、交织书香与暖意的古风爱情短剧。故事讲述清贫书生沈辞与温婉闺秀苏晚月，于雨巷初遇、亭中再逢，在一伞之缘、一诗之契、一笺之信中，悄然滋长出的纯真情愫。\n\n全剧不设跌宕起伏的戏剧冲突，而以细腻的日常场景与含蓄的情感递进取胜——雨巷微湿的青石板、暮色湖光中的凉亭吟诗、月下门前的忐忑递信、烛火摇曳里的读信与回信——每一帧画面都浸透古典诗意的慢节奏美感。\n\n两位主角的人物塑造尤为出彩：沈辞虽出身清贫，却身形挺拔、风骨不改，笔下诗句藏满少年赤诚；苏晚月贵为富家千金，却全无骄矜之气，温婉端方、知书达理。他们的情意不靠浓烈表白，而藏在伞面倾斜的方寸之间、墨兰与白棠的纹样呼应之间，以及“他日金榜题名，再与姑娘细说从头”的郑重承诺之中。\n\n风格清新唯美，情感绵长克制，适合偏爱中式含蓄浪漫、钟情古典意境氛围的观众。雨未尽，情已深，一把伞下的温暖，足以照亮整个寒窗岁月。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8d416045b4544a93bd327511431d8a00/1a0d6c2e352741c0d8665a30ddb640ca4d611da1.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8d416045b4544a93bd327511431d8a00/815b922c557057efaf1a4145c36926e3d91ea9a4.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 8903813,
+      "ownerUuid": "8d416045b4544a93bd327511431d8a00",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8d416045b4544a93bd327511431d8a00/ff548da81552271c00c08aec860a630f0106915196235fe2948c324d6691be7e.jpg",
+      "nickname": "爱创作的小Y",
+      "isLike": false,
+      "likeCount": 3,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月07日 11:20",
+      "updateAt": "2026年07月07日 11:24",
+      "publishAt": "2026年07月07日 11:20",
+      "playCount": 6,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b6836208-bd3e-9500-bfce-602cb595548f"
+}

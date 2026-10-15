@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "77668b671f154685bfc02e9bd1081ae7",
+      "projectUuid": "62fb1fe66ddb46cfaba9f1b4355bf553",
+      "name": "《风雪山神庙》完整版",
+      "description": "不得不说LibTV的SD2.0确实很好用，之前做的时候个人版无法用，所以打戏都是Kling3.0用的多一点，确实无法一次直出15s的连贯打戏，只能靠剪辑。昨天开始可以用了，肉眼可见的打戏连贯性高了。具体可以看画板。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/08292dd138446f7a6f9e7686e6f40e491001017f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/c7d79e8340f014efc53037f4420e393497ecf569.mp4",
+      "snapshotId": 4512,
+      "auditStatus": 1,
+      "ownerId": 3238672,
+      "ownerUuid": "e1a8d149cb6c445b91a5f4926f0a0483",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e1a8d149cb6c445b91a5f4926f0a0483/5c53177d7da5a17da9928dd08969204e22c462dff3ed42dbcb959fd7ee0d3a48.jpg",
+      "nickname": "Rick",
+      "isLike": false,
+      "likeCount": 42,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3022,
+          "code": "test",
+          "tagLabel": "短片单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3022",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/69d012d5000000002103a669?xsec_token=AB5D043M5ucZEeHf9DfjeFNG6xZYrIEV9jAvr4SoRiGPw=&xsec_source=pc_user",
+      "createAt": "2026年04月12日 16:00",
+      "updateAt": "2026年05月06日 14:35",
+      "publishAt": "2026年04月12日 16:00",
+      "playCount": 95,
+      "viewCreationProcessCount": 31,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 139,
+        "edges": 106
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "edc0d93f-5c9a-9f70-8d3a-062cd3f2c0a6"
+}

@@ -1,0 +1,183 @@
+.cv-connection-menu.cv-floating {
+  position: fixed;
+  z-index: 4500;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
+  --connection-bg: var(--canvas-controls-bg, #262626);
+  --connection-border: var(--canvas-controls-border, #363636);
+  --connection-text: var(--canvas-controls-text, #fff);
+  --connection-hover: var(--canvas-controls-hover, #ffffff1a);
+  --connection-shadow: var(--canvas-shadow-menu, 0 8px 32px #00000026, 0 2px 8px #0000001a);
+}
+.cv-connection-menu.canvas-light {
+  --connection-bg: #fff;
+  --connection-border: #0000000f;
+  --connection-text: #262626;
+  --connection-hover: #0000000d;
+  --connection-shadow: 0 8px 32px #00000014, 0 2px 8px #0000000a;
+}
+.cv-connection-menu .cv-connection-panel {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  min-width: min(220px, calc(100vw - 16px));
+  max-width: calc(100vw - 16px);
+  max-height: calc(100vh - 16px);
+  padding: 6px;
+  overflow-y: auto;
+  border: 1px solid var(--connection-border);
+  border-radius: 16px;
+  outline: none;
+  background: var(--connection-bg);
+  color: var(--connection-text);
+  box-shadow: var(--connection-shadow);
+}
+.cv-connection-heading {
+  margin: 0;
+  padding: 8px 8px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 0.3;
+}
+.cv-connection-menu .cv-connection-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 36px;
+  gap: 0;
+  margin: 0;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--connection-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  cursor: pointer;
+}
+.cv-connection-menu .cv-connection-item:hover:not(:disabled),
+.cv-connection-menu .cv-connection-item.is-open,
+.cv-connection-menu .cv-connection-item:focus-visible {
+  background: var(--connection-hover);
+}
+.cv-connection-menu .cv-connection-item:focus-visible {
+  outline: 1px solid var(--connection-border);
+  outline-offset: -1px;
+}
+.cv-connection-menu .cv-connection-item:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.cv-connection-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.cv-connection-source-icon {
+  width: 20px;
+  height: 20px;
+  background: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+.cv-connection-label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cv-connection-label-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-connection-badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: var(--connection-hover);
+  font-size: 11px;
+  line-height: 16px;
+  opacity: 0.6;
+}
+.cv-connection-badge.is-new {
+  background: #3cb5cc40;
+  color: #5ddcff;
+  opacity: 1;
+}
+.canvas-light .cv-connection-badge.is-new {
+  background: #3cb5cc1a;
+  color: #05a3c5;
+}
+.cv-connection-chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+.cv-connection-submenu {
+  position: fixed;
+  z-index: 1;
+}
+.cv-connection-submenu-bridge {
+  position: fixed;
+  width: 8px;
+  background: transparent;
+}
+.cv-connection-empty {
+  padding: 8px;
+  color: var(--connection-text);
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.6;
+}
+.cv-multi-connection-menu .cv-connection-panel {
+  width: min(196px, calc(100vw - 16px));
+  min-width: 0;
+  gap: 4px;
+  padding: 8px;
+  border-width: 0.5px;
+  backdrop-filter: blur(32px);
+}
+.cv-multi-connection-menu .cv-connection-heading {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  line-height: 16px;
+  opacity: 0.6;
+}
+.cv-multi-connection-menu .cv-connection-item {
+  height: 32px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.cv-multi-connection-menu .cv-connection-icon,
+.cv-multi-connection-menu .cv-connection-source-icon {
+  width: 14px;
+  height: 14px;
+}

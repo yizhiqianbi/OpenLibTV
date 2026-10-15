@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "4cd51b754f78467882c0a5f58e511eba",
+      "projectUuid": "75e82032db6c46b1b140be0a127c5db1",
+      "name": "《织凤令》",
+      "description": "《织凤令》是一部以中国畲族文化为根脉的东方奇幻剧集。故事发生在云雾深处的\"鸣山界·闻歌寨\"——一座以山歌传魂、以彩带织命的畲族山地村寨。在这里，歌声不只是娱乐，更是维系族人魂魄、抵御\"喑气\"侵蚀的古老力量；当一首古歌被遗忘，一个人的魂便随之消散。\n\n少女月笙带着母亲遗留的一条旧彩带归乡，却撞见村寨的异变：德高望重的阿公忘了世代相传的古歌，稻田一夜枯萎，由腐蚀之气凝成的\"喑兽\"开始侵袭家园。族长钟伯与女长老蓝婆决意行古礼\"踏罡\"问天，守寨青年武者钟黎临危受命、独自出寨御敌，却在崖边遭神秘反派\"遗忘使\"偷袭坠崖，生死未卜。而那条旧彩带上若隐若现的凤纹，正悄然牵起一段跨越两代人的隐秘命运。\n\n这是一个关于记忆、传承与守护的故事——当一个民族的歌与魂面临被\"遗忘\"吞噬的危机，谁来织起那道护佑山河的凤令？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/caaaec2a452f489ab5ea174fa89f5cc8/66a594393f25dd94647011b5559eae1733b4e89f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/caaaec2a452f489ab5ea174fa89f5cc8/783fb4a828bce99cf42d6aa07743d71dee062119.mov",
+      "snapshotId": 23338,
+      "auditStatus": 1,
+      "ownerId": 8368194,
+      "ownerUuid": "caaaec2a452f489ab5ea174fa89f5cc8",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "188****5839",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/AigwVrHXro5",
+      "createAt": "2026年07月01日 00:30",
+      "updateAt": "2026年07月02日 23:50",
+      "publishAt": "2026年07月01日 03:05",
+      "playCount": 1,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 329,
+        "edges": 496
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "4e9999ee-8370-905a-8dc8-0b4aefccf680"
+}

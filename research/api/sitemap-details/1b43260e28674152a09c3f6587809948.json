@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "1b43260e28674152a09c3f6587809948",
+      "projectUuid": "1f993a198b8849d49c366ccdb24e2b23",
+      "name": "狭路相逢勇者胜",
+      "description": "在libtv平台看到许多优秀作品，非常值得学习，我也来借鉴练练。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/33efd3da761e450196c5d371851f6f3f/1af7eb165161efb1d43c8526cecc3f542ae5f653.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/33efd3da761e450196c5d371851f6f3f/c9371c0b95db7c5ed47fe62e0e38843e37935493.mp4",
+      "snapshotId": 18831,
+      "auditStatus": 1,
+      "ownerId": 3688784,
+      "ownerUuid": "33efd3da761e450196c5d371851f6f3f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/33efd3da761e450196c5d371851f6f3f/dc28725ae57410d0583251c4ecbf09e808fb971e4111593beb4500c37c692988.jpg",
+      "nickname": "造梦师JS",
+      "isLike": false,
+      "likeCount": 35,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1302,
+          "code": "game_art",
+          "tagLabel": "游戏美宣",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1302/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a2c053d0000000035039801?xsec_token=ABK1z_u0VC2z68L397xG6prqAEEZFHb6VuS2sjx0vkruo=&xsec_source=pc_user",
+      "createAt": "2026年06月12日 21:14",
+      "updateAt": "2026年06月15日 11:28",
+      "publishAt": "2026年06月12日 21:14",
+      "playCount": 19,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 44,
+        "edges": 34
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "771ccea8-f10c-97cb-a7b8-e6ff47722a85"
+}

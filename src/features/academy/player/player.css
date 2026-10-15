@@ -1,0 +1,381 @@
+.academy-advanced-player {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  outline: 0;
+}
+.academy-advanced-player video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.academy-advanced-player:fullscreen {
+  height: 100%;
+  aspect-ratio: auto;
+}
+.academy-advanced-player .academy-player-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: linear-gradient(transparent, #0009);
+  padding: 28px 16px 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.academy-advanced-player.show-controls .academy-player-controls {
+  opacity: 1;
+  pointer-events: auto;
+}
+.academy-advanced-player .academy-player-control-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 36px;
+  color: #fff;
+  font-size: 12px;
+}
+.academy-advanced-player .academy-player-control-row button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  border: 0;
+  color: inherit;
+  background: none;
+  padding: 0 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.academy-advanced-player .academy-player-volume {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.academy-player-volume-popover {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-radius: 16px;
+  background: #0009;
+  color: #fff;
+  box-shadow: 0 12px 24px #0008;
+  backdrop-filter: blur(12px);
+}
+.academy-player-volume-popover span {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.academy-player-volume-popover input {
+  width: 16px;
+  height: 80px;
+  margin: 0;
+  accent-color: #fff;
+  writing-mode: vertical-lr;
+  direction: rtl;
+}
+.academy-advanced-player .academy-player-spacer {
+  flex: 1;
+}
+.academy-player-progress-wrap {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.academy-advanced-player .academy-player-timeline {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  background: linear-gradient(to right, #fff var(--progress), #ffffff40 var(--progress));
+  border-radius: 2px;
+  cursor: pointer;
+  accent-color: #fff;
+}
+.academy-advanced-player .academy-player-timeline::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: white;
+}
+.academy-player-buffered {
+  position: absolute;
+  height: 4px;
+  background: #ffffff66;
+  left: 0;
+  pointer-events: none;
+}
+.academy-advanced-player .academy-player-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: #0008;
+  color: #fff;
+  border: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academy-advanced-player .academy-player-error {
+  position: absolute;
+  inset: 0;
+  background: #000c;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 13px;
+}
+.academy-advanced-player .academy-player-error button {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: #ffffff26;
+}
+.academy-player-buffering {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 15;
+}
+.academy-player-menu {
+  position: relative;
+}
+.academy-player-choice {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: -8px;
+  background: #242424;
+  border: 0.5px solid #ffffff14;
+  border-radius: 8px;
+  padding: 4px;
+  min-width: 100px;
+  box-shadow: 0 12px 24px #0008;
+}
+.academy-advanced-player .academy-player-choice button {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 4px 8px;
+  gap: 12px;
+  justify-content: space-between;
+  height: 32px;
+}
+.academy-player-choice button[aria-checked='true'] {
+  color: #3fdafd !important;
+}
+.academy-player-choice button:hover {
+  background: #ffffff0d !important;
+  border-radius: 6px;
+}
+.academy-player-mark {
+  position: absolute;
+  z-index: 3;
+  width: 12px;
+  height: 16px;
+  margin-left: -6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.academy-player-mark:after {
+  content: '';
+  width: 3px;
+  height: 8px;
+  border-radius: 1px;
+  background: white;
+  box-shadow: 0 0 0 1px #0006;
+}
+.academy-player-mark-popup {
+  position: absolute;
+  z-index: 25;
+  bottom: 28px;
+  width: 280px;
+  left: clamp(0px, calc(var(--mark-left) - 140px), calc(100% - 280px));
+  border-radius: 12px;
+  border: 0.5px solid #ffffff14;
+  background: #242424f2;
+  backdrop-filter: blur(24px);
+  padding: 16px;
+  box-shadow: 0 16px 24px -8px #0008;
+  color: #fff;
+}
+.academy-player-mark-popup h4 {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 20px 8px 0;
+}
+.academy-player-mark-popup p {
+  color: #ffffffb3;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 0 16px;
+}
+.academy-player-mark-popup > button:first-child {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  padding: 3px;
+}
+.academy-player-mark-popup > button:last-child {
+  width: 100%;
+  height: 28px;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.academy-player-followup-overlay {
+  position: absolute;
+  inset: 0;
+  background: #0008;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academy-player-followup {
+  background: #242424;
+  border: 1px solid #ffffff14;
+  border-radius: 16px;
+  padding: 20px;
+  width: min(320px, calc(100% - 24px));
+  position: relative;
+  color: #fff;
+  outline: 0;
+}
+.academy-player-followup h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.academy-player-followup p {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 0 16px;
+  color: #a8a8a8;
+}
+.academy-player-followup > div {
+  display: flex;
+  gap: 8px;
+}
+.academy-player-followup > div button {
+  flex: 1;
+  height: 32px;
+  border-radius: 8px;
+  background: #ffffff0d;
+  font-size: 12px;
+}
+.academy-player-followup > div button:last-child {
+  background: #f7f7f7;
+  color: #141414;
+}
+.academy-player-followup-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+}
+.academy-player-mobile-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: linear-gradient(#000b, transparent);
+  color: #fff;
+  z-index: 20;
+}
+.academy-player-mobile-top button {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .academy-advanced-player .academy-player-controls {
+    padding: 24px 12px 8px;
+  }
+  .academy-advanced-player .academy-player-control-row {
+    gap: 8px;
+  }
+  .academy-advanced-player .academy-player-volume,
+  .academy-player-desktop-choice {
+    display: none !important;
+  }
+  .academy-player-mark-popup {
+    width: auto;
+    left: 0;
+    right: 0;
+    padding: 12px;
+  }
+  .academy-player-followup {
+    padding: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .academy-advanced-player .academy-player-controls {
+    transition: none;
+  }
+}
+
+.academy-player-frozen-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  opacity: 0;
+}
+.academy-advanced-player:not(.show-controls) .academy-player-mobile-top {
+  opacity: 0;
+  pointer-events: none;
+}
+.academy-advanced-player.is-mobile .academy-player-controls {
+  padding: 24px 12px 8px;
+}
+.academy-advanced-player.is-mobile .academy-player-control-row {
+  gap: 8px;
+}
+.academy-advanced-player.is-mobile .academy-player-volume,
+.academy-advanced-player.is-mobile .academy-player-desktop-choice {
+  display: none !important;
+}

@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "a71806f1fc6145cd877c39459e980246",
+      "projectUuid": "a5e5c06d18594f77ba2592978401a470",
+      "name": "微芒之搏｜微观生存翻车指南",
+      "description": "这本该是一部画面精良、严肃探讨微观生物机制与流体力学的自然观察日志。但抛开静谧的光影和深沉的旁白，它其实只记录了一群微观生物在物理法则面前的集体“翻车”日常。本片以极致的视觉表现力，带你一窥那些严肃生物们最想删除的黑历史。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/248c073c28b6d413b5c05f73108442e67443f4ba.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/50ac1b0efe81bc9c9670213ae935ffa642034af6.mp4",
+      "snapshotId": 6427,
+      "auditStatus": 1,
+      "ownerId": 7691513,
+      "ownerUuid": "bc19270a4e744fa38a01a9ebbdab3244",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bc19270a4e744fa38a01a9ebbdab3244/722e023f39d7dc69916f25658bdde4e848938d9d58c50b42700341045d12e52f.jpg",
+      "nickname": "追逐星辰",
+      "isLike": false,
+      "likeCount": 20,
+      "tags": [
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "小红书：https://www.xiaohongshu.com/discovery/item/69e4cacb00000000210066a2?source=webshare&xhsshare=pc_web&xsec_token=YBzwzjRv-AuROpFzGLYzbu558gdJpGClDYz6VkRlPoo-E=&xsec_source=pc_share  抖音：https://v.douyin.com/IThasFAWOAs/",
+      "createAt": "2026年04月19日 21:17",
+      "updateAt": "2026年04月19日 21:45",
+      "publishAt": "2026年04月19日 21:17",
+      "playCount": 18,
+      "viewCreationProcessCount": 5,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 95,
+        "edges": 111
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "fd211c78-c125-98b0-b81d-7f192f8c89bf"
+}

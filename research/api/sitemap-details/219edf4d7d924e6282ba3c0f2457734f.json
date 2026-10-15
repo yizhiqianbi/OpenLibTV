@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "219edf4d7d924e6282ba3c0f2457734f",
+      "projectUuid": "161a1c5ef0f24899bed64da0311acc76",
+      "name": "防晒衣TVC",
+      "description": "防晒衣商业广告视频",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f70ec94a6371474486993c583a4af4f2/1bea08d097f0958e83ca9a5c14b92b323169c8ee.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f70ec94a6371474486993c583a4af4f2/63bcffb3f02495d87446ee88479b7dc2575f38c7.mp4",
+      "snapshotId": 21819,
+      "auditStatus": 1,
+      "ownerId": 277636,
+      "ownerUuid": "f70ec94a6371474486993c583a4af4f2",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f70ec94a6371474486993c583a4af4f2/9449f796e6e436da6ffaa70617a259e4ca085c84540541e2866a3ccdddf120ca.png",
+      "nickname": "挣钱养菜菜",
+      "isLike": false,
+      "likeCount": 103,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a3ccda1000000001702aa9f?xsec_token=GBglKOXCEhdzNjxxBAsaY1-w67ZHlsCEqkEN3sVsdt9ws=&xsec_source=pc_creatormng",
+      "createAt": "2026年06月25日 14:49",
+      "updateAt": "2026年07月03日 00:39",
+      "publishAt": "2026年06月25日 14:49",
+      "playCount": 52,
+      "viewCreationProcessCount": 23,
+      "copyCanvasCount": 5,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 106,
+        "edges": 121
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "57b8472b-b75c-9cd4-831b-526ce64c4eae"
+}

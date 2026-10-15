@@ -1,0 +1,90 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8e38c28389814163a6089e68269ead16",
+      "projectUuid": "f7f961fc9d854064b542e7f7a53c5ad4",
+      "name": "梦想从未过期",
+      "description": "当一个儿子发现父亲年轻时未完成的梦想，\n他决定用自己的方式，\n帮助父亲重新出发。\n有些梦想会迟到，\n但从未过期。\n\n我们总以为，\n\n父母的梦想，\n\n就是希望我们过得更好。\n\n但其实，\n\n他们也曾经有想去的远方。\n\n《梦想从未过期》\n\n献给天下所有父母。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/232218b277ac4d58ba04635beae958f4/d2ce0c4260eed575eca3d1b2a04376c7690f0caf.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/232218b277ac4d58ba04635beae958f4/1c945b088dfaec5318accbf92207e6cbc64836f9.mp4",
+      "snapshotId": 25085,
+      "auditStatus": 1,
+      "ownerId": 9742709,
+      "ownerUuid": "232218b277ac4d58ba04635beae958f4",
+      "nickname": "微信用户5b8eb8",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "17 【🇲🇾 00后做的第一支Ai广告短片  - KKY小助理號 | 小红书 - 你的生活兴趣社区】 😆 uRQPnKZXahdL5EY 😆 https://www.xiaohongshu.com/discovery/item/6a4d2660000000000e021800?source=webshare&xhsshare=pc_web&xsec_token=AB1xyXAdCV6mPU7Ay1wA7bu3dYWw8xIZfXhH4HcHDnf7Y=&xsec_source=pc_share",
+      "createAt": "2026年07月08日 00:24",
+      "updateAt": "2026年07月08日 00:39",
+      "publishAt": "2026年07月08日 00:24",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 146,
+        "edges": 183
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "be2f33ff-f177-993e-afb0-b4c48fcf1457"
+}

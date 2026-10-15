@@ -1,0 +1,64 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "304d7478ff0d4a32bdc79a6582f0a74c",
+      "projectUuid": "9b4640f4966f4849b863cf0b723abc71",
+      "name": "围棋少年",
+      "description": "小学时看围棋少年就觉得他细腻又充满理想主义气质，一路晋升，直至领悟了“天地大同”。这部2005年的国漫作品实在是一代人的回忆，也是千禧年初的一部优质精良的动画作品。这次借助LibTV的节点式全模态AI创作工具来实现对围棋少年的三维二创，也是达到了很好的效果，效率拉满！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7ce9281879e44b02aea57bd9f842723c/b6b81c0dac781b3e02c98b230ee0387409d3f733.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7ce9281879e44b02aea57bd9f842723c/2476b1db74c962f144f16dc5194654a7f46370d9.mp4",
+      "snapshotId": 2427,
+      "auditStatus": 1,
+      "ownerId": 8500597,
+      "ownerUuid": "7ce9281879e44b02aea57bd9f842723c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/7ce9281879e44b02aea57bd9f842723c/3430ee258208dbbcf13a1043b6fd5b7154a29f9703c9a3dc2878230d24ee2f99.png",
+      "nickname": "朱嘭嘭",
+      "isLike": false,
+      "likeCount": 100,
+      "tags": [
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年03月31日 13:13",
+      "updateAt": "2026年05月20日 18:34",
+      "publishAt": "2026年03月31日 13:23",
+      "playCount": 71,
+      "viewCreationProcessCount": 23,
+      "copyCanvasCount": 2,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 91,
+        "edges": 50
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "944e86ab-cc66-9ef1-a790-85b230dba383"
+}

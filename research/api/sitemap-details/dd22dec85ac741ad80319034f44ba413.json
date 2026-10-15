@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "dd22dec85ac741ad80319034f44ba413",
+      "projectUuid": "57b8acd2a8e34b0aa6b9a0b0964ea54d",
+      "name": "【影落】当我把武侠战斗逻辑完美呈现！",
+      "description": "全程高能的武侠战斗，当我把武侠战斗衔接流畅。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/cf123d73ec774eea8304dedefcc8b1b3/cc7e2e74faab364594de19403d957c730c371200.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/cf123d73ec774eea8304dedefcc8b1b3/39241ba2ff68c517fd515e00ead00fdcf9ff999e.mov",
+      "snapshotId": 21942,
+      "auditStatus": 1,
+      "ownerId": 8643188,
+      "ownerUuid": "cf123d73ec774eea8304dedefcc8b1b3",
+      "avatar": "https://liblibai-online.liblib.cloud/img/cf123d73ec774eea8304dedefcc8b1b3/68d0798f5981ef9535597478e0ee311298aab26e209f127b589a191ab46ccc6c.jpg",
+      "nickname": "Ai淇水汤汤",
+      "isLike": false,
+      "likeCount": 95,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/5UHkeGU60Z1",
+      "createAt": "2026年06月25日 22:08",
+      "updateAt": "2026年06月25日 22:14",
+      "publishAt": "2026年06月25日 22:08",
+      "playCount": 81,
+      "viewCreationProcessCount": 53,
+      "copyCanvasCount": 16,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 100,
+        "edges": 191
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "4151c2b5-2b17-9b6d-a90c-b14e8fa536f2"
+}

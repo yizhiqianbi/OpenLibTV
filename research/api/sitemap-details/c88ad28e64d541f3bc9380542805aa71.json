@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "c88ad28e64d541f3bc9380542805aa71",
+      "projectUuid": "8237f80f1886497d84f6be75083408d7",
+      "name": "《我是秦始皇V我50》｜兵马俑深夜集体复活，第一件事竟然是给秦始皇打钱？！😂😂",
+      "description": "如果在兵马俑坑丢了手机，千万别半夜回去找……不然你就会看到两千年前的秦朝老兵，正在拼单凑50块钱救驾！📱🧱",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/ea845bc2267c4c1aa6df5099a6da594c/5731d6e00a3bd50ce95f78d791a2ea5a82eb4e7166d5b5b3a38a8792e9c77a08.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ea845bc2267c4c1aa6df5099a6da594c/81f45aa65912e6f67aa3346b2199528dd58230af.mp4",
+      "snapshotId": 9578,
+      "auditStatus": 1,
+      "ownerId": 3990772,
+      "ownerUuid": "ea845bc2267c4c1aa6df5099a6da594c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/ea845bc2267c4c1aa6df5099a6da594c/e06eb7479b1678add1682f4b0302c151cf3ceed6ff535c97f3813d47241bbfbf.jpg",
+      "nickname": "Dave",
+      "isLike": false,
+      "likeCount": 275,
+      "tags": [
+        {
+          "id": 3031,
+          "code": "test",
+          "tagLabel": "大乱斗｜vol.1 显形记",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3031/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3034,
+          "code": "test",
+          "tagLabel": "3-创意与超现实",
+          "parentTag": 3031,
+          "categoryId": 0,
+          "path": "3031/3034",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/69faf4c50000000023004a87?xsec_token=YBmYuGnNGQMhtiBJ1vGAiXXFeX1CpkXiWt8bF81nyNQFQ%3D&xsec_source=pc_creatormng",
+      "createAt": "2026年05月07日 12:48",
+      "updateAt": "2026年06月01日 15:30",
+      "publishAt": "2026年05月07日 12:48",
+      "playCount": 41,
+      "viewCreationProcessCount": 7,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 171,
+        "edges": 249
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9d8e40a2-9bd0-9d39-99d7-beaaf8793576"
+}

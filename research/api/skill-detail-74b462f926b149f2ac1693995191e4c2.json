@@ -1,0 +1,66 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "74b462f926b149f2ac1693995191e4c2",
+      "skillUuid": "8ff7406e4d674a2cb52f4a60f172c47e",
+      "skillKey": "wes-anderson-aesthetics-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "韦斯安德森电影美学",
+      "version": "1.0.7",
+      "description": "深度还原韦氏标志性视听语言，适用15秒-5分钟电影短片或广告",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/3ad499bfc70aa8b09ab6ea865e2a22dac192a8f5.png",
+      "snapshotId": 28091,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=HHcwG6xmqD\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/bc56b497cee0eb7ee0b7938770185acd1e019754.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/8d58d8ae82598396e410547b7c5135a8f285152b.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/cdd5283f0b1b7a8cca64ec4dcb58f794505607fb.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/3ad499bfc70aa8b09ab6ea865e2a22dac192a8f5.png\",\"description\":\"深度还原韦氏标志性视听语言，适用15秒-5分钟电影短片或广告\",\"evalResult\":\"\",\"inputType\":\"剧本、故事文本；有对白效果更出彩\",\"name\":\"韦斯安德森电影美学\",\"outputContent\":\"人物造型三视图、场景图、BGM、分镜 prompt、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"wes-anderson-aesthetics-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"8ff7406e4d674a2cb52f4a60f172c47e\",\"sourceType\":1,\"useScenario\":\"创意短片、品牌故事、MV 片段\",\"version\":\"1.0.7\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10，命中 1 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1445,
+      "usePv": 4157,
+      "useUv": 3055,
+      "publishAt": "2026-07-17 14:00:08",
+      "ownerId": 5925397,
+      "ownerName": "omom",
+      "ownerAvatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/c75ed796de88dc1a748ac5bbbbb4e0391d091554.png",
+      "useScenario": "创意短片、品牌故事、MV 片段",
+      "inputType": "剧本、故事文本；有对白效果更出彩",
+      "outputContent": "人物造型三视图、场景图、BGM、分镜 prompt、完整成片",
+      "sourceType": 1,
+      "nickname": "omom",
+      "avatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/c75ed796de88dc1a748ac5bbbbb4e0391d091554.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/bc56b497cee0eb7ee0b7938770185acd1e019754.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=HHcwG6xmqD",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/8d58d8ae82598396e410547b7c5135a8f285152b.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/cdd5283f0b1b7a8cca64ec4dcb58f794505607fb.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "53f718ea-9853-9b8b-a04d-ceae11c24acd"
+}

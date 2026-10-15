@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .feature-version {
+    gap: 24px;
+  }
+  .feature-version-meta {
+    position: static;
+  }
+}

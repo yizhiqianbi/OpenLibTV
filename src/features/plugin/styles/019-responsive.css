@@ -1,0 +1,14 @@
+@media (max-width: 991px) {
+  .plugin-intro h1 {
+    font-size: 26px;
+  }
+  .plugin-showcase-content {
+    height: 540px;
+  }
+  .plugin-conversation {
+    padding: 18px;
+  }
+  .plugin-agent-options button {
+    width: 40px;
+  }
+}

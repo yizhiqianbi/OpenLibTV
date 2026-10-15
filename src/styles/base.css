@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Inter;
+  src: url('/assets/Inter-latin-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Pretendard;
+  src: url('/assets/Pretendard-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Volcano;
+  src: url('/assets/Volcano-title-subset.woff') format('woff');
+  font-display: swap;
+}
+:root {
+  --bg: #121212;
+  --side: #161616;
+  --surface: #212121;
+  --surface2: #282828;
+  --border: #ffffff14;
+  --text: #ffffffe5;
+  --muted: #ffffff73;
+  --faint: #ffffff40;
+  --cyan: #13d5ff;
+  --promo-height: 60px;
+  --sidebar-width: 240px;
+  color-scheme: dark;
+  font-synthesis: none;
+}
+:root[data-theme='light'] {
+  --bg: #fafafa;
+  --side: #fff;
+  --surface: #f0f0f0;
+  --surface2: #e8e8e8;
+  --border: #00000014;
+  --text: #171717;
+  --muted: #777;
+  --faint: #aaa;
+  color-scheme: light;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    Inter,
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+textarea {
+  color: inherit;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  min-width: 0;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--faint);
+}
+textarea {
+  resize: none;
+}
+button,
+input,
+textarea,
+a,
+summary {
+  outline-offset: 4px;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--cyan);
+}
+button {
+  transition:
+    background 0.15s,
+    color 0.15s,
+    opacity 0.15s,
+    transform 0.15s;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 650;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 550;
+}
+h4 {
+  font-weight: 500;
+}

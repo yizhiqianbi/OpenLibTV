@@ -1,0 +1,303 @@
+.cv-script-generator-view {
+  --script-generator-text: #f7f7f7;
+  --script-generator-muted: #919191;
+  --script-generator-ref-bg: #525252;
+  --script-generator-ref-icon: #fff;
+  --script-generator-invert-bg: #f7f7f7;
+  --script-generator-invert-text: #141414;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 8px;
+  padding: 8px;
+  color: var(--fg-default, var(--script-generator-text));
+}
+.cv-script-generator-view.is-light,
+.canvas-light .cv-script-generator-view {
+  --script-generator-text: #141414;
+  --script-generator-muted: #525252;
+  --script-generator-ref-bg: #e5e6ec;
+  --script-generator-ref-icon: #86909c;
+  --script-generator-invert-bg: #141414;
+  --script-generator-invert-text: #fff;
+}
+.cv-script-generator-view.is-expanded {
+  flex: 1;
+}
+.cv-script-generator-view.is-expanded > .node-generator-prompt-container {
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+}
+.cv-script-generator-view > .node-generator-prompt-container {
+  flex-shrink: 0;
+}
+.cv-script-generator-view .node-generator-prompt {
+  color: var(--fg-default, var(--script-generator-text));
+}
+.cv-script-generator-view .node-generator-prompt[data-empty='true']::before {
+  color: var(--fg-muted, var(--script-generator-muted));
+}
+.cv-script-generator-add-row {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cv-script-generator-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 2px;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 5%);
+  color: var(--fg-muted, var(--script-generator-muted));
+  font-size: 12px;
+  line-height: 1.5;
+}
+.cv-script-generator-add:hover:not(:disabled) {
+  background: rgb(255 255 255 / 10%);
+}
+.cv-script-generator-view.is-light .cv-script-generator-add,
+.canvas-light .cv-script-generator-add {
+  background: rgb(0 0 0 / 5%);
+}
+.cv-script-generator-view.is-light .cv-script-generator-add:hover:not(:disabled),
+.canvas-light .cv-script-generator-add:hover:not(:disabled) {
+  background: rgb(0 0 0 / 10%);
+}
+.cv-script-generator-plus {
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  -webkit-mask: url('/assets/icons/plus-s.svg') center / contain no-repeat;
+  mask: url('/assets/icons/plus-s.svg') center / contain no-repeat;
+}
+.cv-script-generator-add-menu {
+  padding: 4px;
+  overflow: auto;
+  border: 0.5px solid var(--canvas-controls-border, #363636);
+  border-radius: 8px;
+  background: var(--panel-background, #262626);
+  color: var(--fg-default, #f7f7f7);
+  box-shadow: var(--canvas-shadow-dropdown, 0 4px 10px #0003);
+}
+.cv-script-generator-add-menu > button {
+  display: block;
+  width: 100%;
+  min-height: 32px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 13px;
+}
+.cv-script-generator-add-menu > button:hover:not(:disabled) {
+  background: var(--canvas-controls-hover, #ffffff1a);
+}
+.cv-script-generator-add-menu.is-light {
+  --canvas-controls-hover: #0000000d;
+  border-color: #0000000f;
+  background: #fff;
+  color: #141414;
+}
+.cv-script-generator-reference-strip {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  padding-left: 4px;
+}
+.cv-script-generator-text-references,
+.cv-script-generator-reference-strip > .cv-inline-references {
+  display: contents;
+}
+.cv-script-generator-text-reference {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 0.5px solid var(--border-default, #525252);
+  border-radius: 8px;
+  background: var(--script-generator-ref-bg);
+}
+.cv-script-generator-text-icon {
+  width: 14px;
+  height: 15px;
+  background: var(--script-generator-ref-icon);
+  -webkit-mask: url('/assets/icons/text-ref.svg') center / contain no-repeat;
+  mask: url('/assets/icons/text-ref.svg') center / contain no-repeat;
+}
+.cv-script-generator-text-index {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  min-width: 14px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: rgb(0 0 0 / 65%);
+  color: #fff;
+  font-size: 9px;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.cv-script-generator-text-delete {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0;
+}
+.cv-script-generator-text-reference:hover .cv-script-generator-text-delete,
+.cv-script-generator-text-reference:focus-within .cv-script-generator-text-delete {
+  opacity: 1;
+}
+.cv-script-generator-text-delete > span {
+  width: 7px;
+  height: 7px;
+  background: currentColor;
+  -webkit-mask: url('/assets/icons/close.svg') center / contain no-repeat;
+  mask: url('/assets/icons/close.svg') center / contain no-repeat;
+}
+.cv-script-generator-text-reference:hover .cv-script-generator-text-index {
+  opacity: 0;
+}
+.cv-script-generator-view.is-light .cv-script-generator-text-reference,
+.canvas-light .cv-script-generator-text-reference {
+  border-color: var(--canvas-controls-border, #0000000f);
+}
+.cv-script-generator-view.is-light .cv-script-generator-text-delete,
+.canvas-light .cv-script-generator-text-delete {
+  border-color: #e3e3e3e6;
+  background: #fff;
+  color: #86909c;
+}
+.cv-script-generator-bottom {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 4px;
+  width: 100%;
+}
+.cv-script-generator-model-icon {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.cv-script-generator-view.is-light .cv-inline-model-trigger,
+.canvas-light .cv-script-generator-view .cv-inline-model-trigger {
+  color: #141414;
+}
+.cv-script-generator-view.is-light .cv-inline-model-trigger:hover,
+.canvas-light .cv-script-generator-view .cv-inline-model-trigger:hover {
+  background: rgb(0 0 0 / 5%);
+}
+.cv-script-generator-model-menu.is-light {
+  border-color: rgb(0 0 0 / 12%);
+  background: rgb(255 255 255 / 95%);
+  color: #141414;
+}
+.cv-script-generator-model-menu.is-light button {
+  color: #141414;
+}
+.cv-script-generator-model-menu.is-light button:hover,
+.cv-script-generator-model-menu.is-light button[aria-selected='true'],
+.cv-script-generator-model-menu.is-light .cv-inline-model-icon {
+  background: rgb(0 0 0 / 5%);
+}
+.cv-script-generator-model-menu.is-light small {
+  color: #919191;
+}
+.cv-script-generator-spacer {
+  flex: 1;
+}
+.cv-script-generator-tools {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+}
+.cv-script-generator-translate,
+.cv-script-generator-voice,
+.cv-script-generator-submit {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+.cv-script-generator-translate,
+.cv-script-generator-voice {
+  border-radius: 8px;
+  background: transparent;
+}
+.cv-script-generator-translate:hover:not(:disabled),
+.cv-script-generator-voice:hover:not(:disabled) {
+  background: var(--canvas-controls-hover, #ffffff1a);
+}
+.cv-script-generator-translate > span {
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  -webkit-mask: url('/assets/icons/translate.svg') center / contain no-repeat;
+  mask: url('/assets/icons/translate.svg') center / contain no-repeat;
+}
+.cv-script-generator-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border-default, #525252);
+}
+.cv-script-generator-submit {
+  border-radius: 12px;
+  background: var(--btn-invert-bg, var(--script-generator-invert-bg));
+  color: var(--btn-invert-text, var(--script-generator-invert-text));
+}
+.cv-script-generator-submit:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+.cv-script-generator-submit:active:not(:disabled) {
+  filter: brightness(0.95);
+}
+.cv-script-generator-submit > span {
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  -webkit-mask: url('/assets/icons/up-arrow.svg') center / contain no-repeat;
+  mask: url('/assets/icons/up-arrow.svg') center / contain no-repeat;
+}
+.cv-script-generator-local-note,
+.cv-script-generator-view > p {
+  color: var(--fg-muted, var(--script-generator-muted));
+  font-size: 12px;
+}
+.cv-script-generator-local-note > button,
+.cv-script-generator-retry-save {
+  margin-left: 4px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.cv-script-generator-view button:focus-visible,
+.cv-script-generator-add-menu button:focus-visible {
+  outline: 2px solid var(--canvas-node-border-selected, #a78bfa);
+  outline-offset: 2px;
+}

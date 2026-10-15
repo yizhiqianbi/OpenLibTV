@@ -1,0 +1,118 @@
+.agent-node-reference {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  max-width: min(135px, 100%);
+  height: 24px;
+  border: 0.5px solid #525252;
+  border-radius: 8px;
+  padding: 0 6px 0 4px;
+  background: transparent;
+  color: #f7f7f7;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+  font-weight: normal;
+}
+button.agent-node-reference,
+.cv-page button.agent-node-reference {
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0 6px 0 4px;
+}
+.agent-node-reference.is-dimmed {
+  opacity: 0.5;
+}
+.agent-node-reference.is-error {
+  color: #fca5a5;
+}
+.agent-node-reference[aria-disabled='true'] {
+  cursor: default;
+}
+.agent-node-reference > svg,
+.agent-node-reference > img,
+.agent-node-video-lead {
+  flex-shrink: 0;
+}
+.agent-node-reference > img,
+.agent-node-video-lead {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.agent-node-reference-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-node-video-lead {
+  position: relative;
+  background: #ffffff24;
+}
+.agent-node-video-lead video,
+.agent-node-video-lead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.agent-node-video-lead svg {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.agent-inline-reference .agent-node-reference-input,
+.agent-inline-reference > button.agent-node-reference-input,
+.cv-page .agent-inline-reference > button.agent-node-reference-input {
+  flex: 1 1 auto;
+  width: auto;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  opacity: 1;
+  justify-content: flex-start;
+}
+.agent-inline-reference .agent-node-reference-input.is-dimmed {
+  opacity: 0.5;
+}
+.agent-node-reference:focus-visible {
+  outline: 2px solid #07b8dd;
+  outline-offset: 2px;
+}
+.agent-node-reference-hover {
+  position: fixed;
+  z-index: 400;
+  padding: 6px;
+  border: 1px solid #ffffff1f;
+  border-radius: 12px;
+  background: #1a1a1a;
+  box-shadow:
+    0 8px 24px #0007,
+    0 2px 8px #0006;
+}
+.agent-node-reference-hover img,
+.agent-node-reference-hover video {
+  display: block;
+  max-height: min(280px, 50dvh);
+  max-width: min(280px, min(85vw, 360px));
+  border-radius: 8px;
+  object-fit: contain;
+}
+.agent-node-reference-spinner {
+  animation: agent-node-reference-spin 1s linear infinite;
+}
+@keyframes agent-node-reference-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .agent-node-reference-spinner {
+    animation: none;
+  }
+}

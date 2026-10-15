@@ -1,0 +1,86 @@
+.cv-studio-source-tree > .cv-studio-tree-row {
+  position: relative;
+  gap: 5px;
+  padding-right: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.cv-studio-source-tree > .cv-studio-tree-row:focus-visible {
+  box-shadow: inset 0 0 0 1px #55d6fa;
+}
+.cv-studio-source-tree > .cv-studio-tree-row > button {
+  flex: none;
+  padding: 3px;
+  min-width: 18px;
+  color: #85868d;
+}
+.cv-studio-source-tree > .cv-studio-tree-row > .cv-studio-tree-toggle {
+  flex: none;
+  justify-content: center;
+  padding: 1px;
+  width: 16px;
+  min-width: 16px;
+}
+.cv-studio-tree-indent {
+  width: 16px;
+  flex: none;
+}
+.cv-studio-tree-label {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.cv-studio-tree-row[data-hidden='true'] > .cv-studio-tree-label {
+  opacity: 0.45;
+}
+.cv-studio-tree-count {
+  padding: 1px 4px;
+  border-radius: 8px;
+  background: #ffffff0a;
+  color: #92939a;
+  font-size: 9px;
+}
+.cv-studio-tree-rename {
+  opacity: 0;
+}
+.cv-studio-tree-row:hover > .cv-studio-tree-rename,
+.cv-studio-tree-row:focus-within > .cv-studio-tree-rename {
+  opacity: 1;
+}
+.cv-studio-entity-name-input {
+  min-width: 0;
+  width: 0;
+  flex: 1;
+  padding: 2px 4px;
+  color: inherit;
+  background: #ffffff0d;
+  border: 1px solid #55d6fa;
+  border-radius: 3px;
+  outline: none;
+}
+.cv-studio-name-error {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 2;
+  max-width: 100%;
+  background: #242529;
+  color: #ff9696;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+}
+.cv-studio-properties > header {
+  position: relative;
+}
+.cv-studio-properties fieldset input:disabled {
+  opacity: 0.45;
+}
+.cv-studio-animation-owned {
+  color: #92939a;
+  margin: 3px 0 10px;
+  font-size: 10px;
+  line-height: 1.5;
+}

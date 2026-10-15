@@ -1,0 +1,9 @@
+{
+  "url": "https://api.liblib.tv/api/course/v1/practice-nodes/01a04762cd0b73c196f4056c05d1229c/studio",
+  "method": "GET",
+  "payload": null,
+  "status": 401,
+  "contentType": "application/json; charset=utf-8",
+  "bytes": 39,
+  "purpose": "Read-only source-declared detail query; no order purchase or progress write."
+}

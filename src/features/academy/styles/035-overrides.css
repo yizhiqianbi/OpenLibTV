@@ -1,0 +1,263 @@
+.academy-video-detail {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.academy-watch-columns {
+  display: flex;
+  min-height: 0;
+  flex: 1;
+  justify-content: center;
+  overflow-x: auto;
+  border-top: 0.5px solid #ffffff14;
+}
+.academy-watch-columns > main {
+  padding: 24px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  min-height: 0;
+}
+.academy-watch-stage {
+  width: min(clamp(412px, 100vw - 388px, 1212px), calc((100dvh - 232px) * 16 / 9));
+}
+.academy-watch-columns > aside {
+  border-left: 0.5px solid #ffffff14;
+  width: 340px;
+  flex-shrink: 0;
+  padding: 12px;
+  overflow-y: auto;
+  min-height: 0;
+}
+.academy-watch-columns > aside > h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 0 4px;
+  margin: 0 0 8px;
+}
+.academy-thumbnail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 4px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: none;
+  color: inherit;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.academy-thumbnail-row:hover,
+.academy-thumbnail-row.active {
+  background: #ffffff08;
+}
+.academy-thumbnail-row.active {
+  cursor: default;
+}
+.academy-thumbnail-row > img {
+  width: 172px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.academy-thumbnail-row > span {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+.academy-thumbnail-row strong {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.academy-thumbnail-row small {
+  font-size: 13px;
+  line-height: 20px;
+  color: #787878;
+  font-variant-numeric: tabular-nums;
+}
+.academy-video-meta {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+.academy-video-meta h1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+.academy-video-meta:has(.academy-master-author) h1 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.academy-video-meta > p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #a8a8a8;
+  margin: 0;
+  white-space: pre-line;
+}
+.academy-video-meta > p.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.academy-master-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.academy-master-author > img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.academy-master-author > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  line-height: 20px;
+}
+.academy-master-author small {
+  font-size: 12px;
+  color: #787878;
+  line-height: 16px;
+}
+.academy-master-author > div {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+.academy-master-author button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  min-width: 40px;
+  gap: 6px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #ffffff08;
+  color: inherit;
+  font-size: 13px;
+  border: 0;
+  cursor: pointer;
+}
+.academy-master-author button:hover {
+  opacity: 0.8;
+}
+.academy-description-toggle {
+  align-self: flex-end;
+  display: flex;
+  gap: 4px;
+  color: #a8a8a8;
+  background: none;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+}
+.academy-master-teaser {
+  width: 100%;
+  aspect-ratio: 900/240;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 12px 0 24px;
+}
+.academy-comments {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.academy-comments h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 16px;
+}
+.academy-comments h2 > span {
+  color: #787878;
+  font-size: 13px;
+  margin-left: 6px;
+}
+.academy-comment-editor {
+  border: 1px solid #ffffff14;
+  background: #202020;
+  border-radius: 12px;
+  padding: 12px;
+}
+.academy-comment-editor textarea {
+  width: 100%;
+  height: 64px;
+  resize: none;
+  font: inherit;
+  background: none;
+  border: 0;
+  color: inherit;
+  outline: 0;
+}
+.academy-comment-editor > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+.academy-comment-editor span {
+  font-size: 12px;
+  color: #777;
+}
+.academy-comment-editor button {
+  border: 0;
+  border-radius: 8px;
+  background: #f7f7f7;
+  color: #141414;
+  padding: 6px 16px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+.academy-comment-editor button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.academy-comments > article {
+  display: flex;
+  gap: 12px;
+  padding-top: 24px;
+}
+.academy-comment-avatar {
+  width: 32px;
+  height: 32px;
+  background: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.academy-comments > article strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.academy-comments > article p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.academy-comments > article small {
+  color: #777;
+  font-size: 12px;
+}

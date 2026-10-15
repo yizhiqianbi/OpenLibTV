@@ -1,0 +1,100 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "20731f8acc774df795550ef83a91ddf3",
+      "projectUuid": "4474f22ee3eb4b74ba0150ba7647bf4e",
+      "name": "运动鞋品牌时尚电商TVC广告",
+      "description": "运动鞋品牌时尚电商TVC广告",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/a310573e7fd592dc0e6493197ece863685f1e03b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/6004f44bddbbd34d082b577658274069654a33db.mp4",
+      "snapshotId": 15981,
+      "auditStatus": 1,
+      "ownerId": 221940,
+      "ownerUuid": "289dfb82dbb444dab196cde0d1d39b7a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/289dfb82dbb444dab196cde0d1d39b7a/7bc5497b4b40a5bf429ada8d35aaa9ac44a9908c0451d149e8e1515d5af6c978.jpg",
+      "nickname": "绘梦",
+      "isLike": false,
+      "likeCount": 109,
+      "tags": [
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月01日 22:25",
+      "updateAt": "2026年06月03日 14:04",
+      "publishAt": "2026年06月01日 22:25",
+      "playCount": 159,
+      "viewCreationProcessCount": 76,
+      "copyCanvasCount": 22,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 41,
+        "edges": 56
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a728a805-d65e-98ed-9f4b-7ff86e768611"
+}

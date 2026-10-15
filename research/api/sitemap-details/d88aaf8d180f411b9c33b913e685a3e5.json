@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d88aaf8d180f411b9c33b913e685a3e5",
+      "projectUuid": "3800646c52e24c8ab954bdc95590c9f7",
+      "name": "戏台新偶",
+      "description": "古戏台匠人抚弄百年木偶，书法“戏台新偶”点明非遗转化主题，定格客家提线木偶守正创新的匠心瞬间。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/727e70d1c3764a0f89349c1adec3d085/9c9a611aa1af265d567f989f6e2930882adb42bf.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/727e70d1c3764a0f89349c1adec3d085/07247c89fb6304b0b912c7a7acca4efb7b51ea89.mp4",
+      "snapshotId": 24693,
+      "auditStatus": 1,
+      "ownerId": 10404214,
+      "ownerUuid": "727e70d1c3764a0f89349c1adec3d085",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "183****5223",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "怎么会有这么帅的木偶！ http://xhslink.com/o/5Cm5aU1Y8r5  复制这段，去【小红书】发现更多好内容~",
+      "createAt": "2026年07月06日 18:56",
+      "updateAt": "2026年07月06日 20:47",
+      "publishAt": "2026年07月06日 18:56",
+      "playCount": 6,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 26,
+        "edges": 47
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1b1963b5-69db-93ae-95f4-49b2c4878c64"
+}

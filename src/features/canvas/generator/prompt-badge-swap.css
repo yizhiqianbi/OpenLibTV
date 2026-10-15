@@ -1,0 +1,20 @@
+.node-generator-prompt-badge.node-prompt-badge-swap-host {
+  position: relative;
+}
+.node-prompt-badge-swap {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.node-prompt-badge-swap svg {
+  pointer-events: none;
+}

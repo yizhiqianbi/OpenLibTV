@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f294419b449247a0a826d9bf39559b89",
+      "projectUuid": "e7e95b3ede654af6a0734a2bfc2ce7bd",
+      "name": "花有来路",
+      "description": "我用AI虚拟了一个品牌：绮章 QIZHANG。\n它不存在于现实货架上，但它的灵感，来自真实的中国古纹样。\n海棠纹、柿蒂纹、祥云纹、灵芝纹、铜钱纹……这些曾经出现在器物、窗棂、丝帛和衣襟上的纹样，不只是装饰，而是中国人写进日常生活里的审美秩序。\n《花有来路》想表达的，不是简单复古，也不是把传统元素贴到现代产品上。\n而是用一个虚拟丝巾品牌，重新想象中国古纹样如何进入当代生活，如何被今天的人们佩戴、使用、表达。真正的文化自信，不是反复证明我们有多好，\n而是我们知道自己的美从哪里来，也知道它可以走向哪里，花会相似，路不会相同，让花有来路。\n让中国纹样，重新穿回今天。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/27d233d77ffb47109dd6ef1b76c32406/179468e91a342bb955ec06a2e678bda4a8819220.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/27d233d77ffb47109dd6ef1b76c32406/ca677b64dff2ad463d8139f93740cae644e17821.mp4",
+      "snapshotId": 25097,
+      "auditStatus": 1,
+      "ownerId": 9650447,
+      "ownerUuid": "27d233d77ffb47109dd6ef1b76c32406",
+      "avatar": "https://liblibai-online.liblib.cloud/img/27d233d77ffb47109dd6ef1b76c32406/b1b9a3518a04fbddbf54319158b22c19073dde7e2a8650776aa8d4146b3f1c8d.png",
+      "nickname": "内向的小小火龙",
+      "isLike": false,
+      "likeCount": 73,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/nXPqPFWL1IQ/ :4pm YMw:/ I@I.ip 01/26",
+      "createAt": "2026年07月07日 23:56",
+      "updateAt": "2026年07月13日 00:00",
+      "publishAt": "2026年07月08日 02:44",
+      "playCount": 17,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 118,
+        "edges": 111
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "4145ed94-d24b-927c-8e3e-d4d42e4e3341"
+}

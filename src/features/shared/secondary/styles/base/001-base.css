@@ -1,0 +1,87 @@
+.secondary-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px 64px;
+  color: var(--fg-default, #f7f7f7);
+  font-size: 14px;
+  position: relative;
+  isolation: isolate;
+}
+.secondary-page button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+.secondary-page button:focus-visible,
+.secondary-page a:focus-visible,
+.blender-landing button:focus-visible,
+.blender-landing a:focus-visible {
+  outline: 2px solid #09caf5;
+  outline-offset: 3px;
+}
+.secondary-page h1,
+.secondary-page h2,
+.secondary-page h3,
+.secondary-page p {
+  margin: 0;
+}
+.secondary-page img {
+  display: block;
+  max-width: 100%;
+}
+.secondary-page a {
+  color: inherit;
+}
+.secondary-back {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding-bottom: 16px;
+  position: relative;
+  gap: 8px;
+  background: var(--bg-page, #141414);
+}
+.secondary-back button {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.secondary-back button:hover {
+  background: #ffffff12;
+}
+.secondary-back > span {
+  height: 20px;
+  width: 1px;
+  background: #ffffff26;
+  margin: 0 0 0 0;
+}
+.secondary-back strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+.secondary-end {
+  padding-top: 32px;
+  text-align: center;
+  font-size: 13px;
+  color: #787878;
+  line-height: 22px;
+}
+.secondary-loading {
+  padding-top: 80px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.secondary-loading > span {
+  height: 200px;
+  flex: 1;
+  min-width: 240px;
+  background: #202020;
+  border-radius: 16px;
+  animation: secondary-pulse 1.5s infinite;
+}

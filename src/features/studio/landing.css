@@ -1,0 +1,120 @@
+.studio-page {
+  padding-top: 4px;
+}
+.studio-hero {
+  max-width: 800px;
+  margin: 22px auto 64px;
+  text-align: center;
+}
+.studio-hero h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.studio-hero > p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.studio-composer {
+  background: #202020;
+  border: 1px solid #fff2;
+  border-radius: 24px;
+  padding: 16px 12px 12px;
+  box-shadow: inset 0 1px 2px #fff1;
+  text-align: left;
+}
+.studio-composer textarea {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  height: 70px;
+  line-height: 1.8;
+  padding: 0 4px;
+}
+.studio-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.studio-tools .cyan-button {
+  border-radius: 24px;
+  padding: 5px 34px;
+  height: 32px;
+  min-height: 32px;
+  font-size: 13px;
+}
+.studio-tools .cyan-button:disabled {
+  background: #067c97;
+}
+.studio-tools .pill-button {
+  padding: 4px 9px;
+  gap: 5px;
+}
+.studio-tools .row {
+  gap: 5px;
+}
+.studio-menu {
+  top: 38px;
+  left: 0;
+  min-width: 160px;
+  text-align: left;
+}
+.studio-menu h4 {
+  font-size: 11px;
+  color: var(--muted);
+  padding: 8px 10px;
+}
+.studio-menu button {
+  justify-content: space-between;
+}
+.studio-examples {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.studio-examples button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: var(--muted);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.studio-examples button:hover {
+  background: var(--surface);
+}
+.studio-projects h2 {
+  margin: 0 8px 20px;
+}
+.studio-new {
+  width: 230px;
+  text-align: left;
+}
+.studio-new > span {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #252525;
+  border: 1px solid #fff1;
+  border-radius: 12px;
+  color: var(--faint);
+}
+.studio-new:hover > span {
+  background: #303030;
+}
+.studio-new p {
+  padding: 9px 8px;
+  font-size: 14px;
+}
+.studio-login {
+  display: block;
+  color: var(--faint);
+  margin: 45px auto 0;
+  font-size: 14px;
+}

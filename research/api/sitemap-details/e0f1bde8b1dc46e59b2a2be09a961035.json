@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e0f1bde8b1dc46e59b2a2be09a961035",
+      "projectUuid": "fc2791c8c782465e8ee38d408e460f13",
+      "name": "《一盏灯的婚约》",
+      "description": "江南灯会前夕，落魄女画师苏小满为了躲债，误闯进沈家灯铺。\n灯铺少主沈砚正被家中逼婚，情急之下，竟说苏小满是自己的心上人。\n苏小满本想借机混吃混住几日，却意外发现沈家灯铺藏着一盏会\"认主\"的古灯。\n更奇怪的是，这盏灯只在她靠近时亮起。\n沈家人以为她只是个来历不明的姑娘。\n可没人知道，苏小满其实是多年前失踪的制灯世家后人。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1139013d9a944f8ba85de88e9697c7a1/b1a5327683491357d8e27cf978d2efd26d79f664.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1139013d9a944f8ba85de88e9697c7a1/2b4d9d560c5f5faa2d22d56e307a69823eb4021e.mp4",
+      "snapshotId": 24932,
+      "auditStatus": 1,
+      "ownerId": 10077255,
+      "ownerUuid": "1139013d9a944f8ba85de88e9697c7a1",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "150****3075",
+      "isLike": false,
+      "likeCount": 7,
+      "tags": [
+        {
+          "id": 1801,
+          "code": "2d",
+          "tagLabel": "2D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1801/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/6Xmt4DZ7dpE/ 08/18 MwF:/ i@P.XM :4pm",
+      "createAt": "2026年07月07日 15:33",
+      "updateAt": "2026年07月07日 20:50",
+      "publishAt": "2026年07月07日 15:33",
+      "playCount": 4,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 0,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 120,
+        "edges": 223
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9b5b0dab-eba2-988a-8c57-54fd8224f639"
+}

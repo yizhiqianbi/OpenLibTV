@@ -1,0 +1,104 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "31f89f9a11c0424d97e417ce1178f023",
+      "projectUuid": "66d51ca8750f493d8f5ee4b653727e49",
+      "name": "创意广告-醒醒咖啡",
+      "description": "末日废土，两具骷髅牛马亚当和夏娃照常“上班”，办公室已成废墟，一杯醒醒咖啡被风吹到亚当脚边，“激活”了亚当的“工作模式”，已经白骨化的手指条件反射般敲打键盘；亚当被唤醒，和夏娃有了讽刺意味很强的黑色幽默对话，最后以夏娃将醒醒咖啡奋力投出为转场，到干净明亮的办公室，亚当和夏娃在探讨醒醒咖啡的方案，原来末日废土终是幻象，一杯醒醒咖啡，世界时刻清醒！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e98c3c3bdc37475eb573f650d2e1e461/ba1f71281c767283a28fdd0460b150833dc16300.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e98c3c3bdc37475eb573f650d2e1e461/8a3f0696e539eb5e02b0f7c0386ed8a36e750580.mp4",
+      "snapshotId": 25258,
+      "auditStatus": 1,
+      "ownerId": 10458070,
+      "ownerUuid": "e98c3c3bdc37475eb573f650d2e1e461",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e98c3c3bdc37475eb573f650d2e1e461/459d8471028f5cf9f602d963a4fa8a55a1ff43ecb327529b7c1dbb0b878a5b55.jpg",
+      "nickname": "水印白木",
+      "isLike": false,
+      "likeCount": 1,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "9.71 复制打开抖音，看看【螣蛇饮墨的作品】创意广告-醒醒咖啡 末日废土，两具骷髅牛马亚当和夏... https://v.douyin.com/GzkIcpCRCoo/ 08/09 :5pm L@W.mD aaA:/",
+      "createAt": "2026年07月08日 16:28",
+      "updateAt": "2026年07月09日 22:15",
+      "publishAt": "2026年07月08日 16:28",
+      "playCount": 7,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 47,
+        "edges": 85
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "66a4a08d-5cb9-944f-a0a9-20d03d400fd2"
+}

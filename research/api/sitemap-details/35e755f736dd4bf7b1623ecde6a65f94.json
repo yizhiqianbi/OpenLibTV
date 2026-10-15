@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "35e755f736dd4bf7b1623ecde6a65f94",
+      "projectUuid": "43fa17ad2da84329b5d65dd74493dbcb",
+      "name": "电影院最后的夜晚",
+      "description": "作为一个影迷，其实一直都很想给电影院做一个小片子。\n关于电影之爱的故事。\n\n于是就有了这次的短片——\n《电影院最后的夜晚》。\n\n故事发生在一间即将关门的老电影院。\n最后一个营业的夜晚，它迎来了最后一位观众。\n某种意义上，这也是一个关于告别的故事——",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1d16d53ea05b4d249880c298b1027aa8/ee9230bfce49b8abd44bbca6b9cd4ea0c3ef0069.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1d16d53ea05b4d249880c298b1027aa8/bd18ccdf4cbd8cc0d3adcf67e62f266c99485e1d.mov",
+      "snapshotId": 783,
+      "auditStatus": 1,
+      "ownerId": 6136071,
+      "ownerUuid": "1d16d53ea05b4d249880c298b1027aa8",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1d16d53ea05b4d249880c298b1027aa8/fce4b204c9202324233d4abe0f59a6672cc4a1040dbec79f0c76e27ceb43979e.jpeg",
+      "nickname": "北海的波特",
+      "isLike": false,
+      "likeCount": 448,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年03月18日 14:25",
+      "updateAt": "2026年04月23日 23:11",
+      "publishAt": "2026年03月18日 23:30",
+      "playCount": 22,
+      "viewCreationProcessCount": 11,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 784,
+        "edges": 543
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b625de10-6a02-9929-80fe-687cd370d3a1"
+}

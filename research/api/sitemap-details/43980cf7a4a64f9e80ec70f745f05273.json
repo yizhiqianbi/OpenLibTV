@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "43980cf7a4a64f9e80ec70f745f05273",
+      "projectUuid": "11b6d40d7bc54608b7430bced2bbc9a0",
+      "name": "Kite",
+      "description": "本片以风筝角逐为载体，演绎一场由成人虚荣心主导的阶层博弈。父辈为争颜面不断较劲，五官在拉扯中反复隐现、复原，外在表象在攀比之中不断摇摆。失衡的拉扯最终扯断风筝线，孩童应声倒地，象征纯真的糖果渐渐失色。当执念走到尽头，所有人的五官彻底消散，虚浮脸面荡然无存。唯有挣脱牵绊的风筝褪去灰暗、绽放斑斓，乘风向远方飞去，隐喻唯有放下虚荣与枷锁，方能寻得本心与自由。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/55eb64475cbd4bff8bdda4d44e966e91/cfdfa6e314dfdd3b823bda76765968e7b697c596.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/55eb64475cbd4bff8bdda4d44e966e91/d82dbb1b1ade9a0c01dc78ef46208b02734de690.mp4",
+      "snapshotId": 18409,
+      "auditStatus": 1,
+      "ownerId": 3302696,
+      "ownerUuid": "55eb64475cbd4bff8bdda4d44e966e91",
+      "avatar": "https://liblibai-online.liblib.cloud/img/55eb64475cbd4bff8bdda4d44e966e91/65e8998982f579adfa1f2439d338d05769d50fa667c1ac4e5fa8bb5e4436c830.png",
+      "nickname": "摸鱼studio",
+      "isLike": false,
+      "likeCount": 54,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月10日 23:49",
+      "updateAt": "2026年06月14日 22:06",
+      "publishAt": "2026年06月11日 15:07",
+      "playCount": 18,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 49,
+        "edges": 42
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e250c0d3-7d35-9bad-b82c-21348b43a382"
+}

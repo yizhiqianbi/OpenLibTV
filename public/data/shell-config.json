@@ -1,0 +1,338 @@
+{
+  "promo": {
+    "id": "postholiday-20261009-36",
+    "showDuration": "daily",
+    "showCountdown": true,
+    "countdownEndTime": [
+      "2026-10-13T00:00:00+08:00"
+    ],
+    "text": "<span style='font-weight:600;'>节后回归特惠｜年会员最高立减300元，</span>Seedance 2.5 720P 生成低至 0.35元/秒",
+    "btn": "限时抢购",
+    "link": "https://www.liblib.art/?paywall=personal",
+    "action": {
+      "type": "modal-popup",
+      "modalParams": {
+        "id": "paywall"
+      }
+    },
+    "bg": [
+      "#001328",
+      "#02c6c4"
+    ],
+    "bgAnimation": "aurora",
+    "bgAnimationDuration": 20,
+    "color": "#FFFFFF",
+    "textStyle": {
+      "color": "#FFFFFF",
+      "fontSize": "15px",
+      "fontWeight": "500",
+      "lineHeight": "22px"
+    },
+    "btStyle": {
+      "background": "#FFFFFF",
+      "border": "none",
+      "borderRadius": "8px",
+      "color": "#000",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "height": "32px",
+      "lineHeight": "18px",
+      "padding": "7px 10px"
+    },
+    "countdownStyle": {
+      "backgroundColor": "#FFF",
+      "color": "#04202F",
+      "borderRadius": "8px",
+      "fontSize": "15px",
+      "fontWeight": "600"
+    },
+    "closeStyle": {
+      "iconSize": "18px",
+      "opacity": 1
+    }
+  },
+  "promoBanner": {
+    "bannerType": 40,
+    "banner": {
+      "endTime": "2026-10-13T00:00:00+08:00",
+      "info": {
+        "id": "postholiday-20261009-36",
+        "showDuration": "daily",
+        "showCountdown": true,
+        "countdownEndTime": [
+          "2026-10-13T00:00:00+08:00"
+        ],
+        "text": "<span style='font-weight:600;'>节后回归特惠｜年会员最高立减300元，</span>Seedance 2.5 720P 生成低至 0.35元/秒",
+        "btn": "限时抢购",
+        "link": "https://www.liblib.art/?paywall=personal",
+        "action": {
+          "type": "modal-popup",
+          "modalParams": {
+            "id": "paywall"
+          }
+        },
+        "bg": [
+          "#001328",
+          "#02c6c4"
+        ],
+        "bgAnimation": "aurora",
+        "bgAnimationDuration": 20,
+        "color": "#FFFFFF",
+        "textStyle": {
+          "color": "#FFFFFF",
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "lineHeight": "22px"
+        },
+        "btStyle": {
+          "background": "#FFFFFF",
+          "border": "none",
+          "borderRadius": "8px",
+          "color": "#000",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "height": "32px",
+          "lineHeight": "18px",
+          "padding": "7px 10px"
+        },
+        "countdownStyle": {
+          "backgroundColor": "#FFF",
+          "color": "#04202F",
+          "borderRadius": "8px",
+          "fontSize": "15px",
+          "fontWeight": "600"
+        },
+        "closeStyle": {
+          "iconSize": "18px",
+          "opacity": 1
+        }
+      }
+    },
+    "dismissed": false,
+    "isMobile": false,
+    "now": 1791633608288
+  },
+  "sidebarPromo": {
+    "enabled": true,
+    "title": "百万积分大包上线",
+    "subtitle": "积分超市限时抢购",
+    "iconUrl": "/assets/bf55456ef177a64b.png",
+    "action": {
+      "type": "modal-popup",
+      "modalParams": {
+        "id": "recharge"
+      }
+    },
+    "style": {
+      "card": {
+        "background": "#09caf514",
+        "hoverBackground": "#09caf51a",
+        "borderRadius": "12px",
+        "padding": "10px 12px",
+        "gap": "8px",
+        "minHeight": "60px"
+      },
+      "content": {
+        "width": "104px",
+        "gap": "2px"
+      },
+      "title": {
+        "color": "#000000e5",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "lineHeight": "20px"
+      },
+      "subtitle": {
+        "color": "#0000008c",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": "20px"
+      },
+      "iconContainer": {
+        "width": "40px",
+        "height": "40px",
+        "background": "transparent",
+        "border": "1px solid #09caf51f",
+        "borderRadius": "9999px"
+      },
+      "icon": {
+        "width": "16px",
+        "height": "16px"
+      }
+    },
+    "styleDark": {
+      "card": {
+        "background": "#09caf514",
+        "hoverBackground": "#09caf51a"
+      },
+      "title": {
+        "color": "#ffffff"
+      },
+      "subtitle": {
+        "color": "#ffffff99"
+      },
+      "iconContainer": {
+        "border": "1px solid #5ddcff1f"
+      }
+    }
+  },
+  "sidebarBanners": [
+    {
+      "url": "https://www.liblib.tv/academy",
+      "pic": "/assets/791241483dfcd602.webp",
+      "title": "",
+      "startTime": "2026-09-29T16:00:00.000+00:00",
+      "endTime": "2026-10-31T15:59:59.000+00:00",
+      "displayOrder": 1,
+      "type": 42,
+      "extendInfo": null
+    },
+    {
+      "url": "https://www.liblib.tv/activity/62",
+      "pic": "/assets/8c8f05d90c062d0a.webp",
+      "title": "",
+      "startTime": "2026-09-20T16:00:00.000+00:00",
+      "endTime": "2026-11-22T15:59:59.000+00:00",
+      "displayOrder": 6,
+      "type": 42,
+      "extendInfo": null
+    },
+    {
+      "url": "https://resonate.feishu.cn/wiki/RWVLw2X4JiPMc8kRFX4cpNaDnvc",
+      "pic": "/assets/8d86b22c00442217.webp",
+      "title": "",
+      "startTime": "2026-09-05T16:00:00.000+00:00",
+      "endTime": "2026-12-31T15:59:59.000+00:00",
+      "displayOrder": 7,
+      "type": 42,
+      "extendInfo": null
+    }
+  ],
+  "login": {
+    "slideMs": 14000,
+    "slides": [
+      {
+        "id": "other",
+        "title": "LibTV 热门作品",
+        "desc": "全网创作者都在用LibTV ｜登录开启你的创意大片",
+        "iconUrl": "",
+        "media": "video",
+        "src": "/assets/8e19a70a725ce27d.webm"
+      }
+    ]
+  },
+  "studio": {
+    "banners": [
+      "/assets/0e827fb25e4a8f39.webp",
+      "/assets/657ebb07e68f6db3.webp",
+      "/assets/ed1d215a9c2d576b.webp",
+      "/assets/fd6afb38e0e76ce4.webp",
+      "/assets/3a8776ee2d28f63f.webp"
+    ],
+    "prompts": [
+      {
+        "title": "预演一段城市街头的警匪追车戏",
+        "text": "帮我创建一段警匪在城市街道中飙车对战的预演动画，重点展现惊险的竞速和运镜效果。包含全景、中景、特写等多种镜头。",
+        "aspectRatio": "16:9",
+        "durationSeconds": 8
+      },
+      {
+        "title": "环绕香水瓶运镜，预演产品广告",
+        "text": "搭建一个简洁的香水瓶，放在圆形展台上。瓶子不动，镜头围绕瓶身缓慢旋转一整圈（360度），最后推进到瓶盖特写，做一段产品广告预演。采用极简几何模型精度。",
+        "aspectRatio": "9:16",
+        "durationSeconds": 10
+      },
+      {
+        "title": "用多个镜头预演古装庭院对峙戏",
+        "text": "做一段古装悬疑剧情预演：搭建一座夜色中的古代庭院，放置一名持密信的青衣女子和一名守在门前的黑衣侍卫。\n0—4秒，全景拍女子穿过庭院走向院门，镜头从侧后方跟随；\n4—8秒，切到门前双人中景，侍卫横步挡住去路，女子停下并将密信藏到身后；\n8—12秒，切到女子身后的手部特写，再切至侍卫越肩视角，镜头缓慢推进，表现两人对峙的紧张气氛。\n用简化模型表现，保持人物、场景和动作连续，重点看人物走位、动作节奏与镜头衔接。",
+        "aspectRatio": "16:9",
+        "durationSeconds": 12
+      }
+    ]
+  },
+  "contact": {
+    "url": "/assets/93bff5118c3961bd.png",
+    "salesurl": "/assets/566761d334f3c05b.png",
+    "officialurl": "/assets/29d477200fe79437.jpg"
+  },
+  "newcomer": {
+    "imageUrl": "/assets/9c347617d1dbbbba.webp",
+    "title": "新人限时红包",
+    "subtitle": "注册立领",
+    "credits": 100,
+    "btnText": "注册新用户",
+    "action": {
+      "type": "login",
+      "entrySource": "credit_float",
+      "buttonName": "register_new_user",
+      "closeOnClickOutside": false
+    },
+    "showDelayMs": 10000,
+    "storageKey": "libtv_login_guide_popup",
+    "frequency": "daily",
+    "width": 240,
+    "bottom": 12,
+    "right": 12,
+    "imageAspectRatio": "276/155",
+    "hideBelowWidth": 768,
+    "titleFontSize": 16,
+    "titleLineHeight": 24,
+    "buttonHeight": 36
+  },
+  "promotion": {
+    "imageUrl": "/assets/3505ff196abbe479.webp",
+    "mode": "simple",
+    "imageSize": {
+      "width": 623
+    },
+    "closeBtn": {
+      "right": 25,
+      "top": 20,
+      "color": "#fff"
+    },
+    "action": {
+      "type": "login"
+    },
+    "dismiss": 30,
+    "unsupportPath": [
+      "/login",
+      "/test",
+      "/wxpay",
+      "/activities",
+      "/team",
+      "/corporate-pay",
+      "/corporate-pay/*",
+      "/canvas",
+      "/developer",
+      "/academy",
+      "/academy/*",
+      "/detail",
+      "/detail/*"
+    ]
+  },
+  "holidayPromo": {
+    "modals": [
+      {
+        "modalBg": "/assets/3505ff196abbe479.webp",
+        "startTime": "20261009T19:00:00+08:00",
+        "endTime": "20261012T00:00:00+08:00"
+      }
+    ]
+  },
+  "guide": {
+    "config_state": true,
+    "windows_only": false,
+    "web_only": true,
+    "config_type": 9,
+    "unlogin_user_config_type": 10
+  },
+  "enterpriseContact": {
+    "memo": "企业版联系二维码",
+    "url": "/assets/c80b3fdfa292e1fe.jpg"
+  },
+  "profileDefaultCovers": [
+    "/assets/47c5d95a66bdb95e.webp",
+    "/assets/ff0be672572aa087.webp",
+    "/assets/fadc575bc5f7a3b8.webp"
+  ]
+}

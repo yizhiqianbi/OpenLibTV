@@ -1,0 +1,70 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "d474c84673f544adafd7d3060087b098",
+      "skillUuid": "b1133e37e9e24d33862f06153c0f23da",
+      "skillKey": "absurdist-comedy-maker-8db3e80ed29a49109eb6c801f13bb76c",
+      "name": "无厘头喜剧",
+      "version": "1.0.8",
+      "description": "将任意主题转成无厘头创意短片，支持剧本改写和照片玩梗。",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/0ffd9c0a06affd66611ceee1f377bec094a82c77.png",
+      "snapshotId": 29789,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=aatl6DZ2iV\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/448416a35ec6846a439a642a080de6d3c0117141.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/1d30dd51b194721961eae9de0918118af765393c.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/01f21a12113a9df2bfedf9b5595e676e9bad3715.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/2515db30eedba8d621648259ec44c5236295fa32.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/0ffd9c0a06affd66611ceee1f377bec094a82c77.png\",\"description\":\"将任意主题转成无厘头创意短片，支持剧本改写和照片玩梗。\",\"evalResult\":\"\",\"inputType\":\"输入一句话创意、产品图、产品卖点\",\"name\":\"无厘头喜剧\",\"outputContent\":\"脚本、情绪版、角色三视图、场景图、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"absurdist-comedy-maker-8db3e80ed29a49109eb6c801f13bb76c\",\"skillUuid\":\"b1133e37e9e24d33862f06153c0f23da\",\"sourceType\":1,\"useScenario\":\"短视频、广告或品牌创意\",\"version\":\"1.0.8\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10，命中 1 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1115,
+      "usePv": 6376,
+      "useUv": 4549,
+      "publishAt": "2026-07-22 14:31:03",
+      "ownerId": 5925400,
+      "ownerName": "捏捏AI",
+      "ownerAvatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/821f4cc63ce7030ea70eb4129ca2b2195ed0295c.png",
+      "useScenario": "短视频、广告或品牌创意",
+      "inputType": "输入一句话创意、产品图、产品卖点",
+      "outputContent": "脚本、情绪版、角色三视图、场景图、完整成片",
+      "sourceType": 1,
+      "nickname": "捏捏AI",
+      "avatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/821f4cc63ce7030ea70eb4129ca2b2195ed0295c.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/448416a35ec6846a439a642a080de6d3c0117141.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=aatl6DZ2iV",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/1d30dd51b194721961eae9de0918118af765393c.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/01f21a12113a9df2bfedf9b5595e676e9bad3715.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/2515db30eedba8d621648259ec44c5236295fa32.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "744fb030-37b7-9274-9b22-60d39a853b76"
+}

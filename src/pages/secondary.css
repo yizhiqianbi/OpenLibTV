@@ -1,0 +1,2 @@
+/* Compatibility stylesheet; route entries share this ordered domain manifest. */
+@import '../features/shared/secondary/styles.css';

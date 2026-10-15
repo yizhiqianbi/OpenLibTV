@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "fed47d59e017454bb86b47328cbdd36d",
+      "projectUuid": "e0e80ff3829a431c9ddac86a07c52dd5",
+      "name": "猫城记2026",
+      "description": "飞行器坠毁后，一名宇航员在一只大猫的引领下，来到猫城。他目睹猫人沉溺“迷叶”、文明腐朽，应大猫的请求，他试图敲响一口钟来唤醒沉溺的猫人们...... 本片改变自老舍先生小说《猫城记》",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d5f0a4d17e7145a19a5bf642d97475dd/9371b0b8201473187a70229afa6b5697e6846846.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d5f0a4d17e7145a19a5bf642d97475dd/0d7797a4ea7940b3ea8ea8eb02c03d0b1fb4770e.mov",
+      "snapshotId": 16761,
+      "auditStatus": 1,
+      "ownerId": 2402101,
+      "ownerUuid": "d5f0a4d17e7145a19a5bf642d97475dd",
+      "nickname": "微信用户b0cf39",
+      "isLike": false,
+      "likeCount": 65,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/2ePhOX9wsYd",
+      "createAt": "2026年05月20日 21:20",
+      "updateAt": "2026年06月09日 22:21",
+      "publishAt": "2026年06月04日 17:21",
+      "playCount": 22,
+      "viewCreationProcessCount": 13,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 82,
+        "edges": 86
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "194dd2b3-1991-95b5-8087-3b024a222272"
+}

@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d485f712ba36439d86babcb10c81ffcc",
+      "projectUuid": "33e0b4516fc644d4aad05a75ca2671a5",
+      "name": "Osmo Pocket 4 “抢先发布”",
+      "description": "本来想熟悉一下libTV的工作流 ，没想到一个小想法一个下午就出片了",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/3c6c42db289e4203adced0658124865b/5b67db3d85e2fb02266ff1232c1749e1cbba1dd0.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/3c6c42db289e4203adced0658124865b/f83f0073ac076aeafca73bbae9693e143822a611.mp4",
+      "snapshotId": 4111,
+      "auditStatus": 1,
+      "ownerId": 3663480,
+      "ownerUuid": "3c6c42db289e4203adced0658124865b",
+      "avatar": "https://liblibai-online.liblib.cloud/web/1656e2f1b3c74f1ba823b610f1b2cbdf/0c3eb5e2-1dc0-405c-a823-07b2570237f8.jpg",
+      "nickname": "朱大大大超人",
+      "isLike": false,
+      "likeCount": 337,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3024,
+          "code": "test",
+          "tagLabel": "广告单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3024",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "视频号",
+      "createAt": "2026年04月10日 14:11",
+      "updateAt": "2026年04月23日 23:11",
+      "publishAt": "2026年04月10日 14:11",
+      "playCount": 150,
+      "viewCreationProcessCount": 79,
+      "copyCanvasCount": 7,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 199,
+        "edges": 174
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "3d66afa6-bcb1-9ac8-bb07-003ffb1d2c99"
+}

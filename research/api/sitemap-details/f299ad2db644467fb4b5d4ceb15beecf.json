@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f299ad2db644467fb4b5d4ceb15beecf",
+      "projectUuid": "f9548cb307844252b347996c3bf53688",
+      "name": "辽斋志异·娇娜",
+      "description": "狐妖孕妻被鬼神盯上，憨夫铁熊以命换子｜该内容仅供娱乐，请勿过度解读。100WAYS FILM出品",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f0489a932e84492fb983c3e1a0931904/c6d50ab3d82e7ec6ff7340af63739880b9f8b1e0.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f0489a932e84492fb983c3e1a0931904/f62e8c3d52725bbdce9711e198baf175b9759d81.mp4",
+      "snapshotId": 22742,
+      "auditStatus": 1,
+      "ownerId": 9855214,
+      "ownerUuid": "f0489a932e84492fb983c3e1a0931904",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f0489a932e84492fb983c3e1a0931904/6dbfa232e0d207e8787805bbda490bc2663c63a14d093e255039e58dd2196c10.jpg",
+      "nickname": "100WAYSFILM",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV1RCKS6mEm8/?vd_source=31f352354a0b67fd7b4afa4619ea0acc#reply304247440273",
+      "createAt": "2026年06月29日 15:42",
+      "updateAt": "2026年06月29日 19:08",
+      "publishAt": "2026年06月29日 15:50",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 225,
+        "edges": 214
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1728447c-ae1e-98c0-af9c-841c55465195"
+}

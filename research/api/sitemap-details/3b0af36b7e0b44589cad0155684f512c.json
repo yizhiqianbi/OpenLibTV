@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "3b0af36b7e0b44589cad0155684f512c",
+      "projectUuid": "b81df68f2df2437494bf99a8ce068e48",
+      "name": "后启示录丨末日美学",
+      "description": "一些关于末日的世界观构筑。末日美学、后启示录",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/57d6894524b04e64a67a3b58f19d3f01/7e01ded4d0c6aeece614c16e044bcf313f383110.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/57d6894524b04e64a67a3b58f19d3f01/899bbea9b3029f82d290b2a644916885bca4a0eb.mp4",
+      "snapshotId": 25506,
+      "auditStatus": 1,
+      "ownerId": 2798755,
+      "ownerUuid": "57d6894524b04e64a67a3b58f19d3f01",
+      "avatar": "https://liblibai-online.liblib.cloud/img/57d6894524b04e64a67a3b58f19d3f01/07d1e7f7c0a152034cf1afd1198a976e5239112a43554d2a9287a8ff40323834.jpg",
+      "nickname": "Beichen_",
+      "isLike": false,
+      "likeCount": 42,
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "后启示录丨末日美学 一些关于末日的世界观构筑 末日美... http://xhslink.com/o/1S4q3XZzDzI  把文本复制下来，打开【小红书】即可查看。",
+      "createAt": "2026年07月09日 09:51",
+      "updateAt": "2026年07月13日 23:31",
+      "publishAt": "2026年07月09日 09:51",
+      "playCount": 16,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 41,
+        "edges": 21
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "5362d46e-1c40-9201-b1c9-934934b1c692"
+}

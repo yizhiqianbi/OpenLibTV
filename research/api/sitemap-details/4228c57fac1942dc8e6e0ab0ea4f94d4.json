@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "4228c57fac1942dc8e6e0ab0ea4f94d4",
+      "projectUuid": "191b65c15f6c463c9a2c587894b1bc1e",
+      "name": "最后的问题（THe Sixth Finger）",
+      "description": "当我们在使用Ai的时候，我们在使用什么？\n一个假装不相信“相信”的孩子，一个假装相信“不相信”的父亲。\n影像本身就是一种凝视——只是当凝视Ai的我们，反被Ai凝视。这一天会远吗？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bb7e7d2505694c758925a12e523d5199/1ccfe5397b38e398b938b235612f86376f46b3ce.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bb7e7d2505694c758925a12e523d5199/de9c476d399b53b2a284d5e8420968452bcd9acb.mp4",
+      "snapshotId": 24976,
+      "auditStatus": 1,
+      "ownerId": 5437328,
+      "ownerUuid": "bb7e7d2505694c758925a12e523d5199",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bb7e7d2505694c758925a12e523d5199/9b34905d07244ccb9d066fbdcedc3fbfe0aacf51dfd62d5fd549ef91fc634659.jpg",
+      "nickname": "ouy",
+      "isLike": false,
+      "likeCount": 172,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "你跟我说这是Ai？？？——《最后的问题》 全Ai短片《... http://xhslink.com/o/7HDI7q0Lbho  打开【小红书】，这篇笔记超精彩！",
+      "createAt": "2026年07月07日 18:09",
+      "updateAt": "2026年07月17日 00:04",
+      "publishAt": "2026年07月07日 18:09",
+      "playCount": 15,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 1,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "5409ddfa-1634-97e2-8a00-ad405c8d9174"
+}

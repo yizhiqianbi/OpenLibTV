@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "251ca259a3ad437b9f2ff2f6404d39e5",
+      "projectUuid": "ce985a25ea3342908e8facc90d402631",
+      "name": "山海镖局",
+      "description": "十年前，山海镖局创始人赵山海押最后一趟镖进入黑山口后神秘死亡。十年后，他的儿子赵小虎接手破败镖局，和冷面刀客刘青、灵兽煤球一起押送一趟趟怪镖，却发现每一趟镖都在指向父亲死亡的真相，而鬼车队正试图打开黑山口，召回一只来自地狱、没人敢叫出名字的邪兽。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e7f4e4c9c35746089900335e9364c4bf/6aac910d406027a756c961f3c1b690b48d027b9c.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e7f4e4c9c35746089900335e9364c4bf/a2d8c3b67075a75461c54e90ba4ce0b85d675fdc.mp4",
+      "snapshotId": 20534,
+      "auditStatus": 1,
+      "ownerId": 331127,
+      "ownerUuid": "e7f4e4c9c35746089900335e9364c4bf",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e7f4e4c9c35746089900335e9364c4bf/ad6983903502b494bddd503c03f04b6d4f0734db7057232b284736a2d9752a86.jpg",
+      "nickname": "杨二",
+      "isLike": false,
+      "likeCount": 38,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "9.43 复制打开抖音，看看【杨二的作品】山海镖局：镖在人在 # 抖音ai创作大赛 # 开放... https://v.douyin.com/NeVCKspgkTU/ c@n.dn BGI:/ 07/31 :5pm",
+      "createAt": "2026年06月18日 19:10",
+      "updateAt": "2026年06月18日 19:28",
+      "publishAt": "2026年06月18日 19:10",
+      "playCount": 19,
+      "viewCreationProcessCount": 9,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 116,
+        "edges": 270
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "af690f22-d146-9153-833c-1ce3cd8a8320"
+}

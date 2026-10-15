@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "templateUuid": "1f00659eead64135a97a42fe92619d41",
+        "projectUuid": "ccf01fbb2fd64829821c87f9d4d8119a",
+        "name": "想你",
+        "description": "五十岁的阿诚在火化场等候捡骨。这三年，他每晚设好闹钟，起来替中风的母亲翻身、换尿布。长椅上，母亲仿佛回来陪他坐着，说出他最怕听见的那句话：「我都听见了。」四十年前他发烧时叫母亲走开，她却在门外守了一整夜。嘴巴都叫人走，人都没走。",
+        "coverUrl": "https://libtv-res.liblib.art/upload-images/58961dda7b084850b7036bf60707f3dd/ad280fdbc452162d99f4bd8fc36ae0df97f870c2.png",
+        "finalOutput": "https://libtv-res.liblib.art/upload-images/58961dda7b084850b7036bf60707f3dd/4e1c2c18e6790920ff433f57d11490eec4abd44c.mp4",
+        "snapshotId": 51113,
+        "auditStatus": 1,
+        "ownerId": 3792516,
+        "ownerUuid": "58961dda7b084850b7036bf60707f3dd",
+        "avatar": "https://liblibai-online.liblib.cloud/img/58961dda7b084850b7036bf60707f3dd/bde335d22cc1a7300a4c9c9303a6d649d575e89451f5569eae08890483996cf3.png",
+        "nickname": "O_BenriO_O",
+        "isLike": false,
+        "likeCount": 68,
+        "isTop": false,
+        "score": 60,
+        "auditBy": 175,
+        "socialMediaUrl": "https://v.douyin.com/sh-bryxgUog/",
+        "createAt": "2026年09月30日 13:19",
+        "updateAt": "2026年10月08日 15:11",
+        "publishAt": "2026年09月30日 13:19"
+      }
+    ],
+    "total": 1
+  },
+  "msg": "",
+  "trace_id": "54d76b64-ae42-95bd-8caa-a57356631485"
+}

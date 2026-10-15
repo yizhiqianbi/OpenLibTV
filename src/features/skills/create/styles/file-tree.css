@@ -1,0 +1,79 @@
+.secondary-skill-tree-row {
+  position: relative;
+}
+.secondary-skill-tree-row > .secondary-skill-file {
+  padding-right: 28px;
+}
+.secondary-skill-tree-row > .secondary-skill-file-more {
+  position: absolute;
+  right: 2px;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.secondary-skill-tree-row:hover > .secondary-skill-file-more,
+.secondary-skill-tree-row:focus-within > .secondary-skill-file-more {
+  opacity: 1;
+}
+.secondary-skill-file-more:focus-visible {
+  outline: 1px solid #7b61ff;
+}
+.secondary-skill-file-chevron {
+  color: var(--muted, #919191);
+}
+.secondary-skill-file-chevron.collapsed {
+  transform: rotate(-90deg);
+}
+.secondary-skill-tree-root {
+  min-height: 60px;
+  flex: 1;
+}
+.secondary-skill-folder-editor > aside {
+  display: flex;
+  flex-direction: column;
+}
+.secondary-skill-tree-row.drop-target > .secondary-skill-file,
+.secondary-skill-tree-root.drop-target {
+  background: #ffffff0d;
+  box-shadow: inset 0 0 0 1px #7b61ff;
+  border-radius: 8px;
+}
+.secondary-skill-tree-error {
+  color: #f76560;
+  font-size: 12px;
+  padding: 4px 0;
+}
+.secondary-skill-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2700;
+}
+.secondary-skill-tree-menu {
+  position: absolute;
+  width: 140px;
+  background: var(--surface, #232323);
+  border: 0.5px solid var(--border, #363636);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #0003;
+  padding: 4px;
+}
+.secondary-skill-tree-menu > button {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  padding: 4px 10px;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 8px;
+}
+.secondary-skill-tree-menu > button:hover,
+.secondary-skill-tree-menu > button:focus-visible {
+  background: #ffffff1a;
+}
+.secondary-skill-tree-menu > button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

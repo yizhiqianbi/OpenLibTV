@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "0c6a8ce6ec02486d81258f7b3207463d",
+      "projectUuid": "51f1add151224db198347d472f3f34bf",
+      "name": "香草美人·屈原",
+      "description": "在战国乱世的楚地，一段因“橘子”结缘的少年情谊，最终演变成了波澜壮阔又痛彻心扉的帝国挽歌。\n成年后的屈原与楚怀王熊槐曾立下“公如青山，我如松柏”的誓言，决意联手推行变法以图强国。然而，改革遭到了旧贵族的疯狂反扑，楚怀王在重压之下看似懦弱地背弃了盟约，将屈原罢官流放。多年后，楚国郢都沦陷，万念俱灰的屈原独立于汨罗江畔，发出“举世皆浊我独清”的悲叹，决意抱石殉国。\n短片《香草美人》以电影级的质感与极具诗意的情感反转，重塑了这段千古悲剧。正如片尾秦始皇的感叹：帝王的利剑只能开辟一时的疆土，而屈原的诗与傲骨，却能跨越两千年的岁月，长明万世！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/81ab1376a763465f9834c715dbf068a7/483e160a47cae51d09f842f74960ec7eb2301e5e.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/81ab1376a763465f9834c715dbf068a7/7b94215189faa76f5fd441bbe8e8fab3ea5fc796.mp4",
+      "snapshotId": 21806,
+      "auditStatus": 1,
+      "ownerId": 8543130,
+      "ownerUuid": "81ab1376a763465f9834c715dbf068a7",
+      "avatar": "https://liblibai-online.liblib.cloud/img/81ab1376a763465f9834c715dbf068a7/dd8e7615c8f0cc6c5f92a5345f648a8cb603fc2747834f97e0c0b73031a0d62c.png",
+      "nickname": "者行孙AIGC",
+      "isLike": false,
+      "likeCount": 11,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/OPa5MebgKAQ/",
+      "createAt": "2026年06月25日 13:39",
+      "updateAt": "2026年07月06日 16:31",
+      "publishAt": "2026年07月06日 16:07",
+      "playCount": 19,
+      "viewCreationProcessCount": 9,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 240,
+        "edges": 194
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "25b76fa0-d664-9dc7-847c-b3779d09b6cc"
+}

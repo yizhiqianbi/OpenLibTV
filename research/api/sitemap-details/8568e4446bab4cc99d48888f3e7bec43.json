@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8568e4446bab4cc99d48888f3e7bec43",
+      "projectUuid": "8df37f39c5ea42279d70137aa01fbed0",
+      "name": "《长生无忌》第3集",
+      "description": "东南亚女诡",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/3e0a9eb869dd4cd283e06dacb4737080/3bc6652f3a5689b261d517e928a9e39d584e7b6e.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/3e0a9eb869dd4cd283e06dacb4737080/6e655aecebac92d3f9edc51fa989129986e36aad.mp4",
+      "snapshotId": 24921,
+      "auditStatus": 1,
+      "ownerId": 3195285,
+      "ownerUuid": "3e0a9eb869dd4cd283e06dacb4737080",
+      "avatar": "https://liblibai-online.liblib.cloud/img/3e0a9eb869dd4cd283e06dacb4737080/8980c8d3187c1f1b179d7a250343cb70bb48c193f7f4e25ab947991355246424.jpg",
+      "nickname": "小安Anleo",
+      "isLike": false,
+      "likeCount": 11,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "7.66 复制打开抖音，看看【小安Anleo的作品】《长生无忌》 第3集| 新角色 武羽士天罡七星刀程... https://v.douyin.com/zwJCmPTyxf0/ PKj:/ o@Q.kc :7pm 02/12",
+      "createAt": "2026年07月07日 12:28",
+      "updateAt": "2026年07月07日 15:17",
+      "publishAt": "2026年07月07日 15:09",
+      "playCount": 17,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 52,
+        "edges": 103
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1154bdba-29dc-9a8a-924c-ceddbbdfc4fb"
+}

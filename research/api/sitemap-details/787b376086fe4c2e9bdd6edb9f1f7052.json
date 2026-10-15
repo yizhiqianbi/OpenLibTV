@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "787b376086fe4c2e9bdd6edb9f1f7052",
+      "projectUuid": "e6d6b80a150e460582d129f4362c9189",
+      "name": "《尘阙》",
+      "description": "一个被藏在人间的女子，回到天宫成为王妃。\n她以为自己只是被命运选中。\n直到神镜照出她的凡间过往。\n万仙震惊，旧臣逼宫。\n可真正的秘密是：\n她不是天宫的污点。\n她是天国亲手藏入人间的最后希望。\n当黑龙破封，天宫将毁，\n她终于骑鹤升空，执弓封神。\nAI东方神话短剧《尘阙》\n四集完整版，正式开启。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/44e515a1f9eb49d081852306deebf0c1/1922194119c4f01d66888840eeab77cc8ccbdc8a.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/44e515a1f9eb49d081852306deebf0c1/bfafba91703e4a90a248d353817327f7861c79c2.mp4",
+      "snapshotId": 24730,
+      "auditStatus": 1,
+      "ownerId": 6283484,
+      "ownerUuid": "44e515a1f9eb49d081852306deebf0c1",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "nickname": "136****1151",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "6 【《尘阙》第四集 终章｜烬 - 松岩 | 小红书 - 你的生活兴趣社区】 😆 ZhAdWW8pDp2ZG8Z 😆 https://www.xiaohongshu.com/discovery/item/6a48fb140000000017008e89?source=webshare&xhsshare=pc_web&xsec_token=ABRvmoN4J_7HK3WK_gMvQmDw36CduM2gKEwcJjyt-DuGE=&xsec_source=pc_share",
+      "createAt": "2026年07月06日 21:23",
+      "updateAt": "2026年07月06日 23:22",
+      "publishAt": "2026年07月06日 21:44",
+      "playCount": 0,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 252,
+        "edges": 245
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "51527352-3a3d-9707-b157-4b465b56f91a"
+}

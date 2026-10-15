@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5c22ee4fab824286b286d271d053aa66",
+      "projectUuid": "71e06293823040d2aefcca6d5e5f79b1",
+      "name": "卖糖葫芦的武林高手",
+      "description": "一串糖葫芦称霸武林本人还不知道自己武功高",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/641472d8e807494d85812b1df944f00f/424369a2a47d33773ed1a7f9667fb16cc5c78a31.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/641472d8e807494d85812b1df944f00f/b1f161871f82314553c3ee7fff2fe2ee641ca2ad.mp4",
+      "snapshotId": 25159,
+      "auditStatus": 1,
+      "ownerId": 767763,
+      "ownerUuid": "641472d8e807494d85812b1df944f00f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/641472d8e807494d85812b1df944f00f/61b8c61e07c7de957a7a4f69ef6ac8859bec7ad357684c75189da67201a92175.jpg",
+      "nickname": "AZURE的AI日记",
+      "isLike": false,
+      "likeCount": 0,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://weibo.com/9143118172/R7DmLdCNe",
+      "createAt": "2026年07月08日 12:16",
+      "updateAt": "2026年07月15日 14:50",
+      "publishAt": "2026年07月08日 12:16",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 28,
+        "edges": 32
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d45a8123-388c-9e2e-b744-ef7ef988c193"
+}

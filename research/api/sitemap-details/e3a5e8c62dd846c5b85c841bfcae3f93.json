@@ -1,0 +1,71 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e3a5e8c62dd846c5b85c841bfcae3f93",
+      "projectUuid": "ae88a43c61ba49e690975bf9b6237271",
+      "name": "零点纪元",
+      "description": "为了再次遇见你，我又一次踏上了这片土地",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/828cf1dcaa14436592d2790b6f3f89ec/e3462a89113e78a8001337b15c000467a0fc3561.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/828cf1dcaa14436592d2790b6f3f89ec/baaba02fc32ecba41277827656c6b89aca2d8f1f.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 1824738,
+      "ownerUuid": "828cf1dcaa14436592d2790b6f3f89ec",
+      "avatar": "https://liblibai-online.liblib.cloud/img/828cf1dcaa14436592d2790b6f3f89ec/63eef09d1e9a060eb7942f2d3da484d1fdd35e10131e108724ecc5cd22150ed2.jpeg",
+      "nickname": "芄什蘑",
+      "isLike": false,
+      "likeCount": 42,
+      "tags": [
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1302,
+          "code": "game_art",
+          "tagLabel": "游戏美宣",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1302/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?modal_id=7658294654995090723",
+      "createAt": "2026年07月07日 11:54",
+      "updateAt": "2026年07月09日 22:11",
+      "publishAt": "2026年07月07日 11:54",
+      "playCount": 9,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "0164a35a-a3c0-9894-931d-d479defa28d8"
+}

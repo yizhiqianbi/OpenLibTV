@@ -1,0 +1,7 @@
+{
+  "url": "https://api.liblib.tv/api/course/v1/member/packages",
+  "method": "GET",
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "bytes": 1349
+}

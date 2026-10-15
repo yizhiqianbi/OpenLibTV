@@ -1,0 +1,369 @@
+/* Plugin scroll track, stepped conversation and generated media. */
+.plugin-upper {
+  position: relative;
+}
+.plugin-showcase-title {
+  margin-top: 80px !important;
+}
+.plugin-showcase {
+  container-type: inline-size;
+}
+.plugin-showcase-track {
+  --cli-showcase-height: calc(100dvh - var(--promo-height, 60px) - 64px);
+  --cli-card-height: min(768px, calc(var(--cli-showcase-height) - 120px));
+  --cli-stage-height: calc(var(--cli-card-height) + 80px);
+  --cli-stage-offset: max(
+    0px,
+    min(
+      calc((var(--cli-showcase-height) - var(--cli-stage-height)) * 36/101),
+      calc(var(--cli-showcase-height) - var(--cli-stage-height) - 40px)
+    )
+  );
+  position: relative;
+  height: calc(
+    var(--cli-showcase-height) * 1.5 + var(--cli-stage-offset) + var(--cli-stage-height)
+  );
+}
+.plugin-showcase-anchor {
+  pointer-events: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+.plugin-showcase-stage {
+  position: sticky;
+  top: calc(var(--promo-height, 60px) + 64px + var(--cli-stage-offset));
+  display: flex;
+  flex-direction: column;
+  height: var(--cli-stage-height);
+}
+.plugin-showcase-content {
+  height: var(--cli-card-height);
+  flex-shrink: 0;
+}
+.plugin-conversation {
+  --cli-conversation-padding: 24px;
+  position: relative;
+  padding: 0;
+  isolation: isolate;
+}
+.plugin-conversation > header {
+  position: absolute;
+  left: var(--cli-conversation-padding);
+  right: var(--cli-conversation-padding);
+  top: var(--cli-conversation-padding);
+  z-index: 2;
+  margin: 0;
+}
+.plugin-conversation > header > button:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+.plugin-conversation-scroll {
+  height: 100%;
+  padding: calc(36px + 2 * var(--cli-conversation-padding)) var(--cli-conversation-padding) 32px;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.plugin-user-prompt {
+  max-width: min(100%, 600px);
+  margin: 0 0 0 auto;
+  background: #242424;
+  white-space: pre-wrap;
+}
+.plugin-assistant-reply {
+  margin-top: 36px !important;
+  margin-left: 4px !important;
+  margin-bottom: 0 !important;
+  white-space: pre-wrap;
+}
+.plugin-demo-checks {
+  margin: 24px 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.plugin-demo-checks p {
+  margin: 0;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a8a8a8;
+  white-space: pre-wrap;
+}
+.plugin-demo-checks svg {
+  margin-top: 3px;
+}
+.plugin-demo-summary {
+  margin: 24px 0 0 4px !important;
+  white-space: pre-wrap;
+  line-height: 22px;
+}
+.plugin-tool {
+  margin-top: 24px;
+}
+.plugin-tool > strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-left: 4px;
+  flex-wrap: wrap;
+}
+.plugin-tool > strong > img {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid #ffffff14;
+}
+.plugin-tool > strong > span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.plugin-tool-card {
+  background: #2424244d;
+  border: 0.5px solid #ffffff14;
+  margin-top: 8px;
+  border-radius: 16px;
+  padding: 16px;
+}
+.plugin-tool-card p {
+  color: #f7f7f7;
+  font-size: 13px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  margin: 0 !important;
+}
+.plugin-tool-references {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.plugin-tool-references > img,
+.plugin-tool-references > span {
+  width: 36px;
+  height: 36px;
+  border-radius: 7px;
+  background: #242424;
+  overflow: hidden;
+}
+.plugin-tool-references > img {
+  object-fit: cover;
+}
+.plugin-tool-references > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a8a8a8;
+}
+.plugin-tool-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.plugin-tool-tags > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  border-radius: 999px;
+  height: 30px;
+  padding: 0 11px 0 9px;
+  background: #242424;
+  font-size: 12px;
+  line-height: 18px;
+}
+.plugin-message {
+  animation: secondary-reveal 0.25s ease-out;
+}
+.plugin-loading-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 36px;
+}
+.plugin-loading-dots i {
+  width: 6px;
+  height: 6px;
+  background: #a8a8a8;
+  border-radius: 50%;
+  animation: plugin-dot 0.9s ease-in-out infinite;
+}
+.plugin-loading-dots i:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.plugin-loading-dots i:nth-child(3) {
+  animation-delay: 0.24s;
+}
+.plugin-results {
+  padding: 24px 0 0;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.plugin-result-label {
+  padding: 0 24px;
+  flex-shrink: 0;
+}
+.plugin-result-scroll {
+  position: relative;
+  container-type: size;
+  min-height: 0;
+  flex: 1;
+  width: 100%;
+  margin-top: 32px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b transparent;
+}
+.plugin-result-media-row {
+  height: 100cqh;
+  min-width: 100%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 var(--cli-result-padding, 48px) 36px;
+}
+.plugin-video-result,
+.plugin-intermediate-result {
+  /* Keep var() intact: Prettier misparses division in this nested calc(). */
+  /* prettier-ignore */
+  height: min(
+    calc(100cqh - 68px),
+    calc((100cqw - var(--cli-result-padding, 48px) * 2) * 0.8 / var(--cli-media-ratio, 0.75))
+  );
+  aspect-ratio: var(--cli-media-ratio, 0.75);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(-16px);
+  border-radius: 16px;
+  background: #ffffff0a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  flex: none;
+}
+.plugin-video-result > video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+.plugin-intermediate-result span {
+  font-size: 12px;
+  color: #787878;
+}
+.plugin-video-progress {
+  pointer-events: none;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  border-radius: 999px;
+  background: #ffffff4d;
+  overflow: hidden;
+}
+.plugin-video-progress > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  background: #fff;
+  border-radius: 999px;
+}
+.plugin-mute {
+  bottom: 20px;
+  right: 12px;
+  background: transparent !important;
+  border-radius: 0;
+  padding: 0 !important;
+  opacity: 0;
+  transition: opacity 0.125s;
+}
+.plugin-video-result:hover .plugin-mute,
+.plugin-mute:focus-visible {
+  opacity: 1;
+}
+.plugin-treatment {
+  padding: 16px 16px 24px;
+  margin: 0;
+  container-type: size;
+  min-height: 420px;
+  flex: 1;
+  width: 100%;
+}
+.plugin-treatment-tabs {
+  margin: 16px 0 24px;
+  gap: 8px;
+}
+.plugin-treatment-tabs button {
+  height: 40px;
+  min-width: 86px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.plugin-treatment-frame {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff0a;
+  margin: auto 0;
+}
+.plugin-treatment-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: secondary-reveal 0.35s ease-in-out;
+}
+.plugin-pagination {
+  margin: 16px 0 0;
+}
+.plugin-pagination button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff08 !important;
+}
+.plugin-results.generating .plugin-video-result:after,
+.plugin-results.generating .plugin-intermediate-result:after,
+.plugin-results.generating .plugin-treatment-frame:after {
+  content: '';
+  position: absolute;
+  inset: 0 -25%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #ffffff08 40%,
+    #ffffff10 50%,
+    #ffffff08 60%,
+    transparent 100%
+  );
+  animation: plugin-sweep 1.5s ease-in-out infinite;
+  pointer-events: none;
+}
+.plugin-workflow {
+  margin-top: 48px;
+  visibility: hidden;
+  opacity: 0;
+}
+.plugin-workflow[data-visible='true'] {
+  visibility: visible;
+  opacity: var(--cli-surrounding-opacity, 1);
+}

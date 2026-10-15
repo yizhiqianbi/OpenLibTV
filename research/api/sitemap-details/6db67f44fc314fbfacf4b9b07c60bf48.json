@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "6db67f44fc314fbfacf4b9b07c60bf48",
+      "projectUuid": "7f35503882df4a0c96c8815270dd076b",
+      "name": "民间故事-姐妹易嫁",
+      "description": "《姊妹易嫁》是清代文学家蒲松龄创作的文言短篇小说，收录于《聊斋志异》 故事讲述张家长女因嫌毛家贫穷拒婚，次女代嫁后毛纪高中状元并官至宰相，长女所嫁富家子败光家产，其削发为尼的戏剧性转折。因为是短片，娶了中间一小段改编。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/683aebaa736b4bbdb2a6b56ba43052a7/474f210e5fba6ec1dfd4d5abc90ed85aa1f5a886.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/683aebaa736b4bbdb2a6b56ba43052a7/4248a1c56816468b44bad94cddd8ff865f1120a0.mp4",
+      "snapshotId": 4409,
+      "auditStatus": 1,
+      "ownerId": 1922849,
+      "ownerUuid": "683aebaa736b4bbdb2a6b56ba43052a7",
+      "avatar": "https://liblibai-online.liblib.cloud/img/683aebaa736b4bbdb2a6b56ba43052a7/830dc562e56def872078ed4baec5568e3c97bc91408cff12c8d015f129b69032.png",
+      "nickname": "YFY",
+      "isLike": false,
+      "likeCount": 26,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3023,
+          "code": "test",
+          "tagLabel": "创意单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3023",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/1uZj462YAUc",
+      "createAt": "2026年04月11日 22:02",
+      "updateAt": "2026年04月20日 15:02",
+      "publishAt": "2026年04月11日 22:02",
+      "playCount": 18,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 50,
+        "edges": 37
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2a4008e0-94c2-9a10-9f5c-bf0911efda9b"
+}

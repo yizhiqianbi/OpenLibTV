@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "bf160118346e48528b09e1fcbda41e6f",
+      "projectUuid": "2b5f036528014bf592dc855ec10eba74",
+      "name": "《浊香》原创AI短片|根据《搜神记》“病龙雨”故事改编",
+      "description": "本作品根据《搜神记》“病龙雨”故事改编，古事新说，重述新章。\n——\n魏郡大旱三月，赤地千里，龙王庙前浊香不绝，百姓祈福不休，却无人知晓，龙神早已深陷沉疴，一场异常的龙雨，正引着深陷困局的龙神，寻向那位能解其厄的通透之人……",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ae7d99db1605447d857a765a71817425/eaabceb6f86636d6e1622fc2fad5f9ab369a836c.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ae7d99db1605447d857a765a71817425/166ed4001e5d1352135ad19ad2c641b6c4a29b6d.mp4",
+      "snapshotId": 18849,
+      "auditStatus": 1,
+      "ownerId": 430378,
+      "ownerUuid": "ae7d99db1605447d857a765a71817425",
+      "avatar": "https://liblibai-online.liblib.cloud/img/ae7d99db1605447d857a765a71817425/781e142eee2f4a7f356140d545c7b9caca219934d3405845b71fe952ec4bb5bd.png",
+      "nickname": "PixGro像素生长",
+      "isLike": false,
+      "likeCount": 20,
+      "tags": [
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月12日 22:52",
+      "updateAt": "2026年06月15日 22:25",
+      "publishAt": "2026年06月12日 22:52",
+      "playCount": 11,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 18,
+        "edges": 7
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "33bb4c44-557e-9604-adec-38fb4529ed3b"
+}

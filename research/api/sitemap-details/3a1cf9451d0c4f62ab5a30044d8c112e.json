@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "3a1cf9451d0c4f62ab5a30044d8c112e",
+      "projectUuid": "fa72e41d9c794e0f8a3fddf4ad453203",
+      "name": "《神君歌》pv",
+      "description": "二郎神杨戬的成长故事",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4dd27982fe6b476ca002d741fef5715f/b79dfd43fb563e83825cb31842799245a9c19b6b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4dd27982fe6b476ca002d741fef5715f/81964c743e94a00e97b39a33c4bc208c53089be1.mp4",
+      "snapshotId": 20699,
+      "auditStatus": 1,
+      "ownerId": 9516201,
+      "ownerUuid": "4dd27982fe6b476ca002d741fef5715f",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "191****4267",
+      "isLike": false,
+      "likeCount": 28,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "91 【《神君歌》AI漫剧预告片— - 神君歌 | 小红书 - 你的生活兴趣社区】 😆 HnNc4t9N0ClVVoQ 😆 https://www.xiaohongshu.com/discovery/item/6a35a49a00000000070119fe?source=webshare&xhsshare=pc_web&xsec_token=ABnaET6QDvWvJHq_qFsvA3kUxSwWHHdwWDwIlD1ILJ-PE=&xsec_source=pc_share",
+      "createAt": "2026年06月20日 04:24",
+      "updateAt": "2026年06月20日 15:14",
+      "publishAt": "2026年06月20日 04:24",
+      "playCount": 20,
+      "viewCreationProcessCount": 9,
+      "copyCanvasCount": 5,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 117,
+        "edges": 137
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2d63b323-7113-9f49-8bd3-c2420752bdcd"
+}

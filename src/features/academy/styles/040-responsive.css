@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+  .academy-video-meta {
+    padding: 16px;
+  }
+  .academy-watch-columns > aside {
+    width: 100%;
+    border: 0;
+    padding: 12px 16px;
+    overflow: visible;
+  }
+  .academy-thumbnail-row > img {
+    width: 172px;
+  }
+  .academy-master-teaser {
+    max-width: 500px;
+  }
+  .academy-comments {
+    padding: 24px 16px 40px;
+  }
+}

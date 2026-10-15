@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "9ab2a69b48d94b4fb274cc46c8ae3c5c",
+      "projectUuid": "c545036ffcb0442cbaa83c50f17956c2",
+      "name": "迈克尔贝环绕运镜（三角洲）",
+      "description": "迈克尔贝环绕运镜",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/16d8126b2b264f2eafce379d5f3846da/799460116_9caf75907ed547f4932708743b30564b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/16d8126b2b264f2eafce379d5f3846da/3cbbcb932649b80950498fe9cab64a2eefe5376d.mp4",
+      "snapshotId": 25086,
+      "auditStatus": 1,
+      "ownerId": 9579948,
+      "ownerUuid": "16d8126b2b264f2eafce379d5f3846da",
+      "nickname": "AIGC雪",
+      "isLike": false,
+      "likeCount": 27,
+      "tags": [
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月08日 00:34",
+      "updateAt": "2026年07月08日 00:40",
+      "publishAt": "2026年07月08日 00:34",
+      "playCount": 149,
+      "viewCreationProcessCount": 95,
+      "copyCanvasCount": 31,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 18,
+        "edges": 14
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2167a1aa-c24b-9c12-901d-472f9c69c503"
+}

@@ -1,0 +1,77 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "163197a9ac10457196927ee8c50daf07",
+      "projectUuid": "5093e27e89e54c52bc5011c1a150d42b",
+      "name": "甜梦",
+      "description": "一个甜甜的梦",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d3cf23e544f14a5abc33ac739fba5c07/389c06d394bce75cd1e6de1f1ef80c83374418e3.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d3cf23e544f14a5abc33ac739fba5c07/c0e82f89e08da4848cbc9368f526339088872d64.mp4",
+      "snapshotId": 24948,
+      "auditStatus": 1,
+      "ownerId": 9414914,
+      "ownerUuid": "d3cf23e544f14a5abc33ac739fba5c07",
+      "nickname": "微信用户2254cb",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "2.89 复制打开抖音，看看【禾姐的日常的作品】甜梦 # Lib 广告导演请就位 皮克斯质感动画短... https://v.douyin.com/flscREL3IHw/ wSL:/ 02/01 S@Y.zG :0pm",
+      "createAt": "2026年07月07日 16:28",
+      "updateAt": "2026年07月07日 16:31",
+      "publishAt": "2026年07月07日 16:28",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 123,
+        "edges": 139
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d270b9dd-a862-9d79-878e-9a9fe29a77be"
+}

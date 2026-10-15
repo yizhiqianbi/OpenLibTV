@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "477fe8d761d94c108a12f78da1c33872",
+      "projectUuid": "26ec31110368416ca482364cc92b6092",
+      "name": "爱死机—暗黑赛博朋克《俄狄浦斯》",
+      "description": "人性的抉择",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5bfba5ffe39740b097218f35c0fdcb10/e4df42d12bbc6a7e25c3d1a00076882ea83c239d.jpeg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5bfba5ffe39740b097218f35c0fdcb10/667b04aebf500f63eb59fa7e7fe891af56dfccc2.mp4",
+      "snapshotId": 20062,
+      "auditStatus": 1,
+      "ownerId": 1085945,
+      "ownerUuid": "5bfba5ffe39740b097218f35c0fdcb10",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5bfba5ffe39740b097218f35c0fdcb10/7d73d4fa636aadb28f967e5216c7d625c637085a87b957bc25a12244fdde2944.jpg",
+      "nickname": "蚀刻Etch",
+      "isLike": false,
+      "likeCount": 132,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "6.48 复制打开抖音，看看【蚀刻Etch的作品】谁能拒绝突然刷到一集〈爱死机〉呢？ # 即梦AI成... https://v.douyin.com/gvS-zpGX6SA/ M@J.II pqR:/ :2pm 03/27",
+      "createAt": "2026年06月17日 12:38",
+      "updateAt": "2026年06月23日 23:27",
+      "publishAt": "2026年06月17日 12:38",
+      "playCount": 55,
+      "viewCreationProcessCount": 18,
+      "copyCanvasCount": 2,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 62,
+        "edges": 124
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9dfea0b2-5df1-92b5-ad4e-76d36268658e"
+}

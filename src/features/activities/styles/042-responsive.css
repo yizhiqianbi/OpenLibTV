@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+  .activity-detail-heading h1 {
+    font-size: 18px;
+  }
+  .activity-detail-heading > div {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .activity-detail-heading {
+    position: static;
+  }
+  .activity-description {
+    padding: 16px;
+  }
+  .activity-awards > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .registration-contact select {
+    width: 104px;
+  }
+}

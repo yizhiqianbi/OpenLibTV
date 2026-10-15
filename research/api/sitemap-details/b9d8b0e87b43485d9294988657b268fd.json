@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b9d8b0e87b43485d9294988657b268fd",
+      "projectUuid": "2a9ac7ac9dc14feaa3cd25f7edb28526",
+      "name": "Zero第13集",
+      "description": "他们终于抵达第三主城！\n这里没有机甲，只有以本源凝聚的五行符箓。\n但等待他们的，是更加恐怖的兽潮。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c58ee25b27da45bd94c62bd27335666e/48503e4ba9e50f2a5530fc2253560b31a29e51ed.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c58ee25b27da45bd94c62bd27335666e/2f3d73c06045a4f43ef024e40cb9e60d7f813d0d.mp4",
+      "snapshotId": 25329,
+      "auditStatus": 1,
+      "ownerId": 10564756,
+      "ownerUuid": "c58ee25b27da45bd94c62bd27335666e",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "139****5400",
+      "isLike": false,
+      "likeCount": 1,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "3.02 01/16 sRK:/ :1pm e@O.xs 原创漫剧《Zero》：第三主城，全员提升 # 抖音AI创作大赛 # AI创作浪潮计划 # Zero # 抖音精选 # 原创动画  https://v.douyin.com/yzQ5ZO9XyuY/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年07月08日 19:42",
+      "updateAt": "2026年07月09日 10:31",
+      "publishAt": "2026年07月09日 02:14",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 315,
+        "edges": 155
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9917f1e3-059c-980d-add4-d6facd0b08a0"
+}

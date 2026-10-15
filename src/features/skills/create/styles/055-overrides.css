@@ -1,0 +1,4 @@
+:root[data-theme='light'] .secondary-skill-input input::placeholder,
+:root[data-theme='light'] .secondary-skill-input textarea::placeholder {
+  color: #919191;
+}

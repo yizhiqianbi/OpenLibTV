@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "98261cfb91a44248a398342391abf139",
+      "projectUuid": "74a5549d579540caa42dd0a449b96cc6",
+      "name": "《封神劫》",
+      "description": "封神IP系列，东方奇幻史诗巨制",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ba277b01a89a41ab8271f7db753ddc14/c016e2976e3315334229d80f02e4dff0d3e168e6.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ba277b01a89a41ab8271f7db753ddc14/61f6b68eea7bcc9d9e1332b847ee92eb5c74059c.mp4",
+      "snapshotId": 23206,
+      "auditStatus": 1,
+      "ownerId": 8747153,
+      "ownerUuid": "ba277b01a89a41ab8271f7db753ddc14",
+      "avatar": "https://liblibai-online.liblib.cloud/img/ba277b01a89a41ab8271f7db753ddc14/de321c91695fec9d299ffe826fbee68ae70496b39bfb7f903968edcceb6bd21f.jpg",
+      "nickname": "AIGC导演王觉仁",
+      "isLike": false,
+      "likeCount": 14,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "3.89 复制打开抖音，看看【王觉仁的作品】《封神劫》 东方奇幻史诗巨制！震撼来袭！# AI漫... https://v.douyin.com/ZxFDdnQAPuo/ qrR:/ g@O.xS 07/14 :9pm",
+      "createAt": "2026年06月30日 20:13",
+      "updateAt": "2026年07月03日 00:02",
+      "publishAt": "2026年06月30日 20:13",
+      "playCount": 42,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 111,
+        "edges": 68
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "231443b0-7e23-984f-b54f-28e1d6c1c155"
+}

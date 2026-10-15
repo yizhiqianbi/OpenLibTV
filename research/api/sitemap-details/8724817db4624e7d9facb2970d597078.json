@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8724817db4624e7d9facb2970d597078",
+      "projectUuid": "b48ed064af8441b786abf7b22260c706",
+      "name": "《危险女孩》夏星柚Yuna 出道全记录",
+      "description": "夏星柚Yuna的EP《Dangerous Girl》终于来了！\n这个短片是采访+VCR+初舞台+MV的完整记录版哦，期待大家多多关注啦~\n这首歌是对“危险又迷人、掌控自我”的女性力量的全新诠释。\n流行、电子与说唱的碰撞，只为营造那份冷峻飒爽、气场全开的独特魅力。\n希望这首歌能点燃你们内心深处最耀眼的光芒，一起做自己的女王！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ac14759d277946fba917438f56715f08/30402334b310c335f99b389c2780b8d4a276a013.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ac14759d277946fba917438f56715f08/be922fae4b875feccd79c2e0782ecf305ebf6882.mp4",
+      "snapshotId": 11060,
+      "auditStatus": 1,
+      "ownerId": 1644391,
+      "ownerUuid": "ac14759d277946fba917438f56715f08",
+      "nickname": "Maple8023",
+      "isLike": false,
+      "likeCount": 24,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1505,
+          "code": "resume_card",
+          "tagLabel": "简历模卡",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1505/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV1dP5x6iEbx/?share_source=copy_web",
+      "createAt": "2026年05月14日 10:54",
+      "updateAt": "2026年05月18日 15:55",
+      "publishAt": "2026年05月14日 10:54",
+      "playCount": 34,
+      "viewCreationProcessCount": 13,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 105,
+        "edges": 71
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "551dccb5-001a-98d8-85e6-6095ff946397"
+}

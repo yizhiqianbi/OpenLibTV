@@ -1,0 +1,54 @@
+.cv-modal-overlay.cv-storyboard-unlink-overlay {
+  padding: 16px;
+}
+.cv-dialog.cv-storyboard-unlink-dialog {
+  width: min(344px, calc(100vw - 32px));
+  max-width: none;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--canvas-controls-border, #363636);
+  background: var(--canvas-controls-bg, #262626);
+  box-shadow: var(--canvas-shadow-menu, 0 8px 32px #00000026, 0 2px 8px #0000001a);
+  backdrop-filter: blur(16px);
+}
+.cv-dialog.cv-storyboard-unlink-dialog > header {
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+.cv-dialog.cv-storyboard-unlink-dialog h2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.cv-storyboard-unlink-dialog .cv-batch-run-content {
+  gap: 0;
+  line-height: 1.5;
+}
+.cv-storyboard-unlink-dialog .cv-batch-run-content > p {
+  color: var(--color-fg-muted, #bdbdbd);
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+}
+.cv-storyboard-unlink-dialog .cv-batch-dialog-actions {
+  margin-top: 16px;
+  gap: 12px;
+}
+.cv-storyboard-unlink-dialog .cv-batch-dialog-actions button {
+  height: 32px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.cv-storyboard-unlink-dialog .cv-batch-dialog-actions .cv-batch-primary {
+  background: #f7f7f7;
+  color: #171717;
+}
+.cv-storyboard-unlink-dialog .cv-batch-dialog-actions .cv-batch-primary:hover {
+  background: #fff;
+}
+.cv-storyboard-unlink-dialog .cv-batch-dialog-actions .cv-batch-primary:active {
+  background: rgb(247 247 247 / 90%);
+}

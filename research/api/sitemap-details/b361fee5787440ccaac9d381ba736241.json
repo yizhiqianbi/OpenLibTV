@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b361fee5787440ccaac9d381ba736241",
+      "projectUuid": "5d481cdd3c454a54b457c0441cabea53",
+      "name": "镜外之徒-OUTLIERS IN THE MIRROR",
+      "description": "关于这部短片，我尝试用70秒的极致视觉流，探讨“皮囊”与“真我”的对抗。\n🎧 禁欲修女化身狂热DJ\n🧘‍♂ 狂暴维京人的宁静峡谷瑜伽\n🏍 满脸皱纹大爷的机车狂飙\n镜头里的他们，都是打破了社会固有“镜像认知”的异类。\n《镜外之徒》——献给每一个不被驯服的灵魂。\n⚠️ 警告：强烈建议佩戴耳机观看！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/06be231d58af4236af88db03941f2980/37aaece1e6fe0830c764ded2b9899af5b93ff475.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/06be231d58af4236af88db03941f2980/9ae71541c52189ae1d250869df17f8f6c9b81abe.mp4",
+      "snapshotId": 11124,
+      "auditStatus": 1,
+      "ownerId": 1342004,
+      "ownerUuid": "06be231d58af4236af88db03941f2980",
+      "avatar": "https://liblibai-online.liblib.cloud/img/06be231d58af4236af88db03941f2980/77c8a9f61cf332dd28150ee83c40a7ec7c938c1a67974c506004ec0af6f64b6f.jpg",
+      "nickname": "动不动就饿",
+      "isLike": false,
+      "likeCount": 708,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年05月14日 16:08",
+      "updateAt": "2026年06月14日 22:06",
+      "publishAt": "2026年05月14日 16:08",
+      "playCount": 105,
+      "viewCreationProcessCount": 73,
+      "copyCanvasCount": 26,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 123,
+        "edges": 135
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "0eeab03a-09e5-9283-83fc-1c92d87a5c80"
+}

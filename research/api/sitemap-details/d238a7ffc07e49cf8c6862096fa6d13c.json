@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d238a7ffc07e49cf8c6862096fa6d13c",
+      "projectUuid": "13e51824502043079a9e757e60f3c41e",
+      "name": "黄沙信使",
+      "description": "核爆百年后的荒芜戈壁通讯断绝，无攻击模块的白黄三轮 XL 储能机甲作为黄沙信使，背负储能背包运送维系人类聚落的电力与藏有各聚居点、伤员、物资信息的数据芯片，黑市掠夺机甲会截杀信使抢夺能源与坐标以扫荡营地；独行途中 XL 收到绿洲村落孩童辐射灼伤的求救信号，途中偶遇废弃营地孩童布偶心生柔软，不久便遭数台掠夺机甲合围，对方以所有村落安危要挟交出背包与芯片，无路可退的 XL 突破自身程序限制启动储能单元与数据芯片双重自毁，能源冲击波击退劫匪，自身机身严重破损、储能背包彻底报废，掠夺者无利可图后离去，最终只剩残躯的机甲依靠微弱应急电力，顶着卡顿变形的车轮，独自缓慢向着远方求救的绿洲前行，孤寂身影消融在漫天黄沙之中。",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/c1d6e288a25f4ee8b43826741289d1b1/30ad9215798ae7191b9e8bb6999d6b55d6f3793cdaea48e6332c01ea06968296.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c1d6e288a25f4ee8b43826741289d1b1/c44543a346ecff7f82c2893f4d2d07ad7ced749b.mp4",
+      "snapshotId": 21176,
+      "auditStatus": 1,
+      "ownerId": 1197088,
+      "ownerUuid": "c1d6e288a25f4ee8b43826741289d1b1",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c1d6e288a25f4ee8b43826741289d1b1/12abf5ff1eb0b4d4d96515546aec2adfd4688ce3e1bfc8e60432712d009ae632.jpg",
+      "nickname": "QifengArt",
+      "isLike": false,
+      "likeCount": 17,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.71 t@r.rr :6pm 08/02 Tlp:/ 复制打开抖音极速版，看看【QifengArt的作品】《黄沙信使》 核爆百年后的荒芜戈壁通讯断绝，无攻击... https://v.douyin.com/S4MavpqP5NI/",
+      "createAt": "2026年06月22日 20:53",
+      "updateAt": "2026年06月24日 20:58",
+      "publishAt": "2026年06月22日 21:09",
+      "playCount": 2,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 114,
+        "edges": 246
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a6e272ef-84eb-9469-8eb4-851e2a5070eb"
+}

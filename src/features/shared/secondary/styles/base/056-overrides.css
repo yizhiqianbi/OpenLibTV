@@ -1,0 +1,5 @@
+:root[data-theme='light'] .secondary-skill-create > header button,
+:root[data-theme='light'] .secondary-skill-share > header > div:last-child > button.use {
+  background: #141414;
+  color: #fff;
+}

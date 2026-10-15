@@ -1,0 +1,42 @@
+.cv-mark-tool-shell {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.cv-mark-tool-shell .cv-mark-mode-bar {
+  position: relative;
+  left: auto;
+  max-width: calc(100vw - 24px);
+  transform: none;
+}
+
+.cv-mark-operation-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100vw - 24px);
+  padding: 8px 12px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 8px;
+  background: #252525;
+  color: #f5ce9f;
+  font-size: 12px;
+  line-height: 18px;
+  pointer-events: auto;
+}
+
+.cv-mark-operation-status button {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgb(255 255 255 / 12%);
+  color: #fff;
+}

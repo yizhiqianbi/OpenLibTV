@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .academy-player-volume input {
+    display: none;
+  }
+  .academy-player-control-row {
+    gap: 0;
+  }
+  .academy-player-control-row > span {
+    font-size: 11px;
+    padding: 0 4px;
+  }
+  .academy-player-controls {
+    padding: 24px 12px 6px;
+  }
+}

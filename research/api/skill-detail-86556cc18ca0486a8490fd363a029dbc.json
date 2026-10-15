@@ -1,0 +1,69 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "86556cc18ca0486a8490fd363a029dbc",
+      "skillUuid": "9d4436fe4be04a4393f3881b21eaf41a",
+      "skillKey": "cinematic-image-transformer-9d8925c591a643bbad8ca8cfbb87922c",
+      "name": "电影质感画面专业生成",
+      "version": "1.0.2",
+      "description": "一句大白话就能生成超质感电影级多风格图片",
+      "resultType": 2,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f91b91c3de22e17a6509f8a2219754a03743eff9.png",
+      "snapshotId": 26087,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f91b91c3de22e17a6509f8a2219754a03743eff9.png\",\"description\":\"一句大白话就能生成超质感电影级多风格图片\",\"evalResult\":\"\",\"inputType\":\"用户只需要输入想要的画面描述，例如“一个女人在雨夜拿着伞独自走在大街，氛围感强”。也可以指定方向，例如“做成末日感”不需要你会多\",\"name\":\"电影质感画面专业生成\",\"outputContent\":\"电影感静帧图像，默认16:9宽银幕比例。MJ模型输出高度风格化电影剧照，image2模型输出高质量无噪点无脏污的写实电影感图像。所有风格的电影感图片\",\"productionCaseUrls\":[\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/557e9b80642bface4f498697a3e2d2894feac74d.png\",\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f0c955c21091570b71a321d5d6160eb185ba25c7.png\",\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/b9f078a421893a4e2c8871f4e21d9a3835998d3e.png\",\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/7d18f7a21f6622166d519833114cded5fef294c8.png\"],\"resultType\":2,\"showMarkdown\":false,\"skillKey\":\"cinematic-image-transformer-9d8925c591a643bbad8ca8cfbb87922c\",\"skillUuid\":\"9d4436fe4be04a4393f3881b21eaf41a\",\"sourceType\":1,\"useScenario\":\"适用于用户用大白话描述画面，不知道该用什么风格、镜头、光线或提示词时。Skill 会自动识别文字和画面情绪与题材，匹配合适的电影感风格方向，例如冷寂雨夜、悲凉胶片、末日孤城、霓虹都市、荒漠史诗等，而从帮助用户读取风格库和参数库生成图片。\",\"version\":\"1.0.2\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 3159,
+      "usePv": 8846,
+      "useUv": 5093,
+      "publishAt": "2026-07-11 15:13:14",
+      "ownerId": 363604,
+      "ownerName": "星曜AG",
+      "ownerAvatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "useScenario": "适用于用户用大白话描述画面，不知道该用什么风格、镜头、光线或提示词时。Skill 会自动识别文字和画面情绪与题材，匹配合适的电影感风格方向，例如冷寂雨夜、悲凉胶片、末日孤城、霓虹都市、荒漠史诗等，而从帮助用户读取风格库和参数库生成图片。",
+      "inputType": "用户只需要输入想要的画面描述，例如“一个女人在雨夜拿着伞独自走在大街，氛围感强”。也可以指定方向，例如“做成末日感”不需要你会多",
+      "outputContent": "电影感静帧图像，默认16:9宽银幕比例。MJ模型输出高度风格化电影剧照，image2模型输出高质量无噪点无脏污的写实电影感图像。所有风格的电影感图片",
+      "sourceType": 1,
+      "nickname": "星曜AG",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/557e9b80642bface4f498697a3e2d2894feac74d.png",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f0c955c21091570b71a321d5d6160eb185ba25c7.png",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/b9f078a421893a4e2c8871f4e21d9a3835998d3e.png",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/7d18f7a21f6622166d519833114cded5fef294c8.png",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "b1cd9e30-88e5-94c2-b1c0-0671bcb99ef8"
+}

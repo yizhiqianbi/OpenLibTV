@@ -1,0 +1,221 @@
+{
+  "defaultMode": {
+    "modeKey": "default",
+    "name": "默认模式",
+    "icon": "lucide:scissors",
+    "description": "自由剪辑：添加视频素材并描述想剪成什么效果",
+    "urlInput": null,
+    "materialSlots": [
+      {
+        "slotKey": "video",
+        "nodeTypes": [
+          "video"
+        ],
+        "required": true,
+        "min": 1,
+        "max": 30
+      }
+    ],
+    "promptRequired": true
+  },
+  "modes": [
+    {
+      "modeKey": "explainerVideo",
+      "name": "讲解视频",
+      "icon": "libtv:audio-lines",
+      "description": "添加音频参考与文字稿，AI自动生成讲解视频",
+      "urlInput": null,
+      "materialSlots": [
+        {
+          "slotKey": "audio",
+          "nodeTypes": [
+            "audio"
+          ],
+          "required": true,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "slotKey": "text",
+          "nodeTypes": [
+            "text"
+          ],
+          "required": false,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "promptRequired": true,
+      "preset": {
+        "prompt": "根据我的音色和主题，生成讲解视频。我的主题是‘神经网络发展历史科普’",
+        "materials": [
+          {
+            "slotKey": "audio",
+            "nodeType": "audio",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/d1ddfc1be40a56892133fb1090683a265c431273.wav"
+          }
+        ]
+      },
+      "skill": {
+        "skillKey": "faceless-commentary-video-5ef327e771bd41dd9256289dd7127f5a",
+        "name": "讲解视频",
+        "resultType": 3
+      }
+    },
+    {
+      "modeKey": "batchAd",
+      "name": "批量广告",
+      "icon": "libtv:projects-shell",
+      "description": "上传产品图与参考视频，批量生成同款广告",
+      "urlInput": null,
+      "materialSlots": [
+        {
+          "slotKey": "productImage",
+          "nodeTypes": [
+            "image"
+          ],
+          "required": true,
+          "min": 1,
+          "max": 10
+        },
+        {
+          "slotKey": "refVideo",
+          "nodeTypes": [
+            "video"
+          ],
+          "required": true,
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "promptRequired": true,
+      "preset": {
+        "prompt": "参考这支视频的节奏和运镜，用我的产品图批量制作广告",
+        "materials": [
+          {
+            "slotKey": "refVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/d7ca400a8074fbffe9c463a8c85882b82335690f.mp4",
+            "width": 400,
+            "height": 712
+          },
+          {
+            "slotKey": "productImage",
+            "nodeType": "image",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/9febab9d5fc3d3cd530620a834dab4f2805cfedb.png",
+            "width": 400,
+            "height": 400
+          }
+        ]
+      },
+      "skill": {
+        "skillKey": "batch-ad-replicator-5ef327e771bd41dd9256289dd7127f5a",
+        "name": "批量广告",
+        "resultType": 3
+      }
+    },
+    {
+      "modeKey": "smartMixCut",
+      "name": "素材混剪",
+      "icon": "libtv:icon-agent",
+      "description": "把我的视频素材，进行卡点快剪。",
+      "urlInput": null,
+      "materialSlots": [
+        {
+          "slotKey": "generatedVideo",
+          "nodeTypes": [
+            "video"
+          ],
+          "required": true,
+          "min": 5,
+          "max": 30
+        }
+      ],
+      "promptRequired": true,
+      "preset": {
+        "prompt": "把我的素材进行智能混剪，要卡点并突出产品",
+        "materials": [
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/33a7f8e176490cf0b600a2e88e1b9503278d28b6.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/9984324b846237385ab2caa282bdb1e66b0b6528.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/8940a8f77f889fbe806e596c0e4ed6b2922f926a.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/0eee802338880e48664fa18c53ba05b1c8977e8b.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/755ee683eb465025945afc886a5b0a7697c66b11.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/012898ae9816834e882ccb4ae1929cbcbe5a2393.mp4",
+            "width": 400,
+            "height": 225
+          },
+          {
+            "slotKey": "generatedVideo",
+            "nodeType": "video",
+            "url": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/3126c510f6330315bc4d8e1d95b956d75425e449.mp4",
+            "width": 400,
+            "height": 225
+          }
+        ]
+      },
+      "skill": {
+        "skillKey": "beat-sync-video-producer-ad7396f8e0a5497ab352f403f290c82f",
+        "name": "卡点视频制作工作流",
+        "resultType": 3
+      }
+    }
+  ],
+  "params": {
+    "aspectRatios": [
+      "21:9",
+      "16:9",
+      "9:16",
+      "1:1",
+      "4:3",
+      "3:4"
+    ],
+    "durationRange": {
+      "min": 0,
+      "max": 300,
+      "default": 30
+    },
+    "resolutions": [
+      "480P",
+      "720P",
+      "1080P"
+    ],
+    "defaults": {
+      "aspectRatio": "16:9",
+      "duration": 30,
+      "resolution": "720P"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "85e83a10c8be4e899f834d1d4ea666db",
+      "projectUuid": "f6493c0b72e844f4ba214124b1f65b70",
+      "name": "we are the world动画MV",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8f75e082cdfa44498e30f60a65645447/9fb67242c004e69cb207862867bb44af45bd9334.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8f75e082cdfa44498e30f60a65645447/1317f4ef467b9a33e1211ebd0a66823fe43e489d.mp4",
+      "snapshotId": 1398,
+      "auditStatus": 1,
+      "ownerId": 3786906,
+      "ownerUuid": "8f75e082cdfa44498e30f60a65645447",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8f75e082cdfa44498e30f60a65645447/821646d5948dd555955987542f2bda9239f68cd5424f935d0bb43acbda276dba.PNG",
+      "nickname": "百变爆芙Fizz",
+      "isLike": false,
+      "likeCount": 256,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年03月23日 13:18",
+      "updateAt": "2026年04月16日 02:23",
+      "publishAt": "2026年03月24日 20:41",
+      "playCount": 109,
+      "viewCreationProcessCount": 56,
+      "copyCanvasCount": 13,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 166,
+        "edges": 135
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "baafa1af-3006-91aa-ac65-e4c7da14ed7f"
+}

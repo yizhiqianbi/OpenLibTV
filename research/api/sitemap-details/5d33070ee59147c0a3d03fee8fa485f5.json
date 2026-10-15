@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5d33070ee59147c0a3d03fee8fa485f5",
+      "projectUuid": "66e1076c09af445384cb5860158c9242",
+      "name": "我做了一支有点“离谱”的植物视频🌿",
+      "description": "这些植物不太正常——会动、会呼吸，甚至像有自己的想法。花在空中慢慢长出来，枝叶自己游走，整个画面像做梦一样。#RED新生代创作大赛\n一开始只是想做点不一样的视觉，结果越做越上头，好像真的在创造一个新的物种世界。\n如果现实里的植物也这样，大概没人会无聊吧。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c1349bc934d64d97887d3b9c9271d36a/6d840036db6521fb2e2dffd8382b8d3c85c7b65e.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c1349bc934d64d97887d3b9c9271d36a/6762c7b5ad5b8fe6272a5c6c07f558d92e8e9c5f.mp4",
+      "snapshotId": 8378,
+      "auditStatus": 1,
+      "ownerId": 7771840,
+      "ownerUuid": "c1349bc934d64d97887d3b9c9271d36a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c1349bc934d64d97887d3b9c9271d36a/987b6ea5f9b35175b68b7cf746cb76357e6523a09f2342ff90d7b8307dd1a558.png",
+      "nickname": "夢境制造室",
+      "isLike": false,
+      "likeCount": 368,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3023,
+          "code": "test",
+          "tagLabel": "创意单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3023",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "我做了一支有点“离谱”的植物视频🌿 这些植物不太正... http://xhslink.com/o/20gcMUZz3dx  把文字复制下来，打开【小红书】查看详情。",
+      "createAt": "2026年04月30日 11:42",
+      "updateAt": "2026年05月09日 15:41",
+      "publishAt": "2026年04月30日 11:42",
+      "playCount": 63,
+      "viewCreationProcessCount": 33,
+      "copyCanvasCount": 5,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 50,
+        "edges": 16
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "20af81d4-3de9-9e0e-b471-cbefad40d1f0"
+}

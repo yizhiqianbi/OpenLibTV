@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "a0b142493a304e8c871523089812dfd1",
+      "projectUuid": "9282544cdb044efd9d15aca02a4f91b7",
+      "name": "青城夜巡人-序章",
+      "description": "黯影垂天，一钉叩地。\n万邪骤起，千魂同泣。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/89584a9050a54c5c8a41fb52c7de6177/24136e0341f717dda172678fbd61a30b29a56281.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/89584a9050a54c5c8a41fb52c7de6177/7df0aa47131192a4c9af42392f9e711b1ac23a93.mp4",
+      "snapshotId": 22515,
+      "auditStatus": 1,
+      "ownerId": 10015082,
+      "ownerUuid": "89584a9050a54c5c8a41fb52c7de6177",
+      "avatar": "https://liblibai-online.liblib.cloud/img/89584a9050a54c5c8a41fb52c7de6177/851a2a18cbf1c1915bccaa091f3ee0c6ca1fa0e317e1659cca21526712e805e5.png",
+      "nickname": "X临界点",
+      "isLike": false,
+      "likeCount": 55,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?modal_id=7656355588649127208",
+      "createAt": "2026年06月28日 18:14",
+      "updateAt": "2026年06月29日 17:47",
+      "publishAt": "2026年06月29日 17:43",
+      "playCount": 70,
+      "viewCreationProcessCount": 37,
+      "copyCanvasCount": 11,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 122,
+        "edges": 308
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "158df2d1-c0e3-9980-9b0d-f3f5999e572b"
+}

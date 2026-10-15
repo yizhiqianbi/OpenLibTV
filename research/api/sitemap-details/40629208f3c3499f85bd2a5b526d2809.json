@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "40629208f3c3499f85bd2a5b526d2809",
+      "projectUuid": "b066eb1572ed48bfbeb6bca8191361ae",
+      "name": "《双子星：无尽蚀夜》",
+      "description": "在三界上城，双子星蚀月与噬星被包装成宇宙最昂贵的血腥竞技偶像；当她们进入一场以四川神话地貌打造的终极试炼，争夺能让机械躯壳长出血肉的“太初神髓”时，却发现神髓的真正规则是逼她们互相吞噬。面对“天空只需要一个太阳”的神庭算法，她们选择让一人擦除独立生命进程、转入另一人副脑共生，骗过系统，击穿上城。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/3434a3e6a3304377919504204378b14f/b0446cd8ec06a56d524fbd03409e098b7ecf3514.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/3434a3e6a3304377919504204378b14f/dc4cc17d80bd5fc0d2f7f4d1b2eadb4d2292feea.mp4",
+      "snapshotId": 22091,
+      "auditStatus": 1,
+      "ownerId": 8976306,
+      "ownerUuid": "3434a3e6a3304377919504204378b14f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/3434a3e6a3304377919504204378b14f/fe35028270371a38a8cfe7ff559ea2492954e4847d8515be6d758ba8a4025fc7.png",
+      "nickname": "Wasabi_Z",
+      "isLike": false,
+      "likeCount": 26,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7655598271151734769",
+      "createAt": "2026年06月26日 15:14",
+      "updateAt": "2026年06月26日 15:19",
+      "publishAt": "2026年06月26日 15:14",
+      "playCount": 21,
+      "viewCreationProcessCount": 14,
+      "copyCanvasCount": 3,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 107,
+        "edges": 98
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "0c2cb0b7-64eb-93ce-aeb2-c3dc5674140f"
+}

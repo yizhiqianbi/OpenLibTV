@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5ed2718d4a8e49b78deed55bda290c8d",
+      "projectUuid": "a1809faef9cf4923885839ab711cc77b",
+      "name": "诡厝.第三集（大结局）",
+      "description": "AICG电影短片《诡厝》大结局终于上线！\n\n当十五年前，年轻阿嬷收过一个厉鬼，怨念深到附身过好几个少男少女，阿嬷将它封进玻璃罐十五年后，那个罐子被洋洋无意打碎\n那个厉鬼，回来了\n而这一次，阿嬷不再年轻⋯\n*本片含有大量惊悚恐怖画面，请谨慎观看！！\n\n《诡厝》大结局终于做好了⋯从一开始的AI作业，到如今被一些朋友看见、喜欢，心里真的很感激！\n现在的AI影片很多，大家喜欢做宏大的、炫目的内容，这些都很酷都很好～\n只是我个人的偏好，还是想回到影像本身，把剧本写好一点，故事讲得稳一点，把镜头做得像电影一点，有一些留白，有一些情绪可以让大家慢慢去感受到.\n创作的热情会让我继续坚持下去，不着急，慢一点，期待自己更多优秀的作品。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d5b8766e1e214280b38b55c052dca050/85ae32ddce6527fc3f71dce95d0342a2d6683c46.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d5b8766e1e214280b38b55c052dca050/703c325847c0e01d39cacc597234a85e4bdb038f.mp4",
+      "snapshotId": 20552,
+      "auditStatus": 1,
+      "ownerId": 8929220,
+      "ownerUuid": "d5b8766e1e214280b38b55c052dca050",
+      "avatar": "https://liblibai-online.liblib.cloud/img/d5b8766e1e214280b38b55c052dca050/7d2a4a62aa0cd2d7ecc2cce9c14b3b205b070ab480e8cc24d4e194bcef1e8ec4.jpg",
+      "nickname": "非著名电影观众",
+      "isLike": false,
+      "likeCount": 12,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "AICG电影短片《诡厝》大结局终于上线🎬 十五年前，年... http://xhslink.com/o/AfCoiLiAyl1 去【小红书】逛逛，这篇笔记超有料！",
+      "createAt": "2026年06月14日 14:38",
+      "updateAt": "2026年06月26日 21:13",
+      "publishAt": "2026年06月18日 20:02",
+      "playCount": 22,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 146,
+        "edges": 193
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8534028a-895c-9e43-a6f9-4b3c1486856b"
+}

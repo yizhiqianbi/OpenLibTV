@@ -1,0 +1,100 @@
+.cv-script-empty-card {
+  --script-empty-default: #f7f7f7;
+  --script-empty-muted: #919191;
+  --script-empty-disabled: #525252;
+  --script-empty-hover: #ffffff1a;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+.canvas-light .cv-script-empty-card {
+  --script-empty-default: #141414;
+  --script-empty-muted: #525252;
+  --script-empty-disabled: #919191;
+  --script-empty-hover: #0000000d;
+}
+.cv-script-empty-card.is-empty_generate {
+  padding: 0 24px;
+}
+.cv-script-empty-icon-slot {
+  flex-shrink: 0;
+}
+.cv-script-empty-card.has-hints .cv-script-empty-icon-slot {
+  margin-bottom: 16px;
+}
+.cv-script-empty-icon {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: var(--fg-disabled, var(--script-empty-disabled));
+  -webkit-mask: url('/assets/icons/list-detail.svg') center / contain no-repeat;
+  mask: url('/assets/icons/list-detail.svg') center / contain no-repeat;
+}
+.cv-script-empty-hints {
+  width: 100%;
+}
+.cv-script-empty-try {
+  margin-bottom: 8px;
+  color: var(--fg-muted, var(--script-empty-muted));
+  font-size: 14px;
+  line-height: 20px;
+}
+.cv-script-empty-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.cv-script-empty-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fg-default, var(--script-empty-default));
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+.cv-script-empty-action:hover:not(:disabled) {
+  background: var(--canvas-controls-hover, var(--script-empty-hover));
+}
+.cv-script-empty-action:focus-visible {
+  outline: 2px solid var(--canvas-node-border-selected, #a78bfa);
+  outline-offset: 2px;
+}
+.cv-script-empty-action:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.cv-script-empty-action-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  background: currentColor;
+}
+.cv-script-empty-action-icon.is-script {
+  -webkit-mask: url('/assets/icons/text-align-center.svg') center / contain no-repeat;
+  mask: url('/assets/icons/text-align-center.svg') center / contain no-repeat;
+}
+.cv-script-empty-action-icon.is-character {
+  -webkit-mask: url('/assets/icons/perspnal-n.svg') center / contain no-repeat;
+  mask: url('/assets/icons/perspnal-n.svg') center / contain no-repeat;
+}
+.cv-script-empty-action-icon.is-write {
+  -webkit-mask: url('/assets/icons/text-file.svg') center / contain no-repeat;
+  mask: url('/assets/icons/text-file.svg') center / contain no-repeat;
+}

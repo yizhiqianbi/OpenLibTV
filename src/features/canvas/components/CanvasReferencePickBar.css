@@ -1,0 +1,213 @@
+.cv-reference-pick-bar {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 16px;
+  background: #1f6dff;
+  color: #fff;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--canvas-shadow-panel);
+  pointer-events: auto;
+  transition: top 180ms ease-out;
+}
+
+.cv-reference-pick-bar-heading,
+.cv-reference-pick-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-reference-pick-bar-heading {
+  min-width: 0;
+}
+
+.cv-reference-pick-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 20%);
+}
+
+.cv-reference-pick-bar-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.cv-reference-pick-bar-return,
+.cv-reference-pick-bar-exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+.cv-reference-pick-bar-return {
+  padding: 0 12px;
+  font-size: 13px;
+  background: rgb(255 255 255 / 20%);
+}
+
+.cv-reference-pick-bar-exit {
+  width: 32px;
+  padding: 0;
+  background: transparent;
+}
+
+.cv-reference-pick-bar-return:hover,
+.cv-reference-pick-bar-exit:hover {
+  opacity: 0.8;
+}
+
+.cv-reference-pick-bar-exit:hover {
+  background: rgb(255 255 255 / 20%);
+}
+
+.cv-reference-pick-bar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.cv-reference-pick-mask {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+}
+
+.cv-reference-pick-box {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px dashed #1f6dff;
+  background: rgb(31 109 255 / 8%);
+  z-index: 200;
+  pointer-events: none;
+}
+
+.cv-reference-pick-mask.is-pickable {
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.cv-reference-pick-mask.is-pickable:hover,
+.cv-reference-pick-mask.is-pickable:focus-visible {
+  box-shadow: 0 0 0 2px #1f6dff;
+}
+
+.cv-node:has(.cv-reference-pick-mask.is-pickable):hover {
+  filter: brightness(1.05);
+}
+
+.cv-reference-pick-mask.is-pickable:disabled {
+  cursor: not-allowed;
+}
+
+.cv-reference-pick-mask.is-blocked {
+  z-index: 50;
+  background: rgb(0 0 0 / 50%);
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+.cv-reference-pick-mask.is-blocked.is-limit {
+  background: transparent;
+}
+
+.cv-reference-pick-mask.is-group {
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.cv-reference-pick-mask.is-connected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  background: rgb(0 0 0 / 45%);
+  pointer-events: none;
+}
+
+.cv-reference-pick-disconnect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(0 0 0 / 70%);
+  box-shadow:
+    0 10px 15px -3px #0000001a,
+    0 4px 6px -4px #0000001a;
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0;
+  transform-origin: center;
+  transition:
+    opacity 150ms,
+    background-color 150ms;
+}
+
+.cv-node:hover .cv-reference-pick-disconnect,
+.cv-reference-pick-disconnect:focus-visible {
+  opacity: 1;
+}
+
+.cv-reference-pick-disconnect:hover {
+  background: rgb(0 0 0 / 85%);
+}
+
+.cv-reference-pick-disconnect:disabled {
+  cursor: not-allowed;
+}
+
+.cv-reference-pick-active .cv-edges {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .cv-reference-pick-bar {
+    width: max-content;
+    max-width: calc(100% - 24px);
+    gap: 8px;
+  }
+
+  .cv-reference-pick-bar-title {
+    white-space: normal;
+    line-height: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-reference-pick-bar,
+  .cv-reference-pick-bar-return,
+  .cv-reference-pick-bar-exit,
+  .cv-reference-pick-disconnect {
+    transition: none;
+  }
+}

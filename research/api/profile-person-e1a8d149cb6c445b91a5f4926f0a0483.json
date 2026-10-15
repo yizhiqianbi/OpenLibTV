@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "userDetail": {
+      "id": 3238672,
+      "avatar": "https://liblibai-online.liblib.cloud/img/e1a8d149cb6c445b91a5f4926f0a0483/5c53177d7da5a17da9928dd08969204e22c462dff3ed42dbcb959fd7ee0d3a48.jpg",
+      "nickname": "Rick",
+      "mobile": "156****2738",
+      "uuid": "e1a8d149cb6c445b91a5f4926f0a0483",
+      "homepages": [],
+      "personalSpaceInformation": {
+        "briefIntroduction": "",
+        "coverImage": "https://liblibai-online.liblib.cloud/img/e1a8d149cb6c445b91a5f4926f0a0483/2a82c5bcb4fe0135953111715722722c9d909389d68649506a359f19bca99c87.png",
+        "xiaohongshuLink": "",
+        "xiaohongshuIcon": "",
+        "tiktokLink": "",
+        "tiktokIcon": "",
+        "bliLink": "",
+        "bliIcon": "",
+        "webLink": "",
+        "webIcon": "",
+        "huggingFaceLink": "",
+        "huggingFaceIcon": "",
+        "twitterLink": "",
+        "twitterIcon": "",
+        "facebookLink": "",
+        "facebookIcon": "",
+        "instagramLink": "",
+        "instagramIcon": "",
+        "discordLink": "",
+        "discordIcon": "",
+        "otherLink": "",
+        "otherIcon": "",
+        "openBusiness": 0,
+        "openLike": 1,
+        "openRecommend": 1
+      },
+      "authorDetail": "",
+      "authAuthorStatus": 0
+    },
+    "counter": {
+      "uploadCount": 0,
+      "followerCount": 236,
+      "followCount": 4,
+      "likeCount": 0,
+      "picLikeCount": 0,
+      "modelLikeCount": 0,
+      "downloadCount": 0,
+      "commentCount": null,
+      "imageCount": null,
+      "subscribeCount": null,
+      "hitCount": null,
+      "runCount": 0,
+      "heat": null,
+      "useCount": 0,
+      "modelUseCount": null,
+      "imageUseCount": null,
+      "imageDownCount": null,
+      "imageRunCount": null,
+      "isFollow": 0,
+      "isLike": null
+    },
+    "tags": [
+      "authorship"
+    ]
+  }
+}

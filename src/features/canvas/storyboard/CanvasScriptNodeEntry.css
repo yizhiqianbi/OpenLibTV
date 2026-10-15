@@ -1,0 +1,33 @@
+.cv-script-node-load-state {
+  display: flex;
+  min-height: 96px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  color: #a3a3a3;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+.cv-script-node-load-state p {
+  margin: 0;
+}
+.cv-script-node-load-state button {
+  padding: 4px 8px;
+  border: 1px solid #ffffff1a;
+  border-radius: 6px;
+  background: #ffffff0d;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.cv-script-node-load-state button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.cv-script-node-load-state button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

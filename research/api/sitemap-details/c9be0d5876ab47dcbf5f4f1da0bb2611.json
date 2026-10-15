@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "c9be0d5876ab47dcbf5f4f1da0bb2611",
+      "projectUuid": "af9d1d2bc8304947a0eec21c94551976",
+      "name": "关于《轻》的运动鞋概念片",
+      "description": "一支跑鞋的概念短片尝试，如果“轻”可以是被看见的状态，它会是什么？\n这是一场关于“轻”的视觉实验和艺术想象。整支片子以“轻盈、透气、弹力、原生态”为核心概念，将缓震转译成半透明的凝胶世界，将自然材料想象成正在生长的植物结构。每一次落地，都像水面涟漪被重新点亮；每一次跃起，都像身体短暂脱离重力。\n让科技变轻，让自然有弹性，让脚步从重力里释放。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e0f36951510b4b3e82f2f3a8896ee72c/f9efb22fbbb6e2bcefda057206ff3fcb26941a44.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e0f36951510b4b3e82f2f3a8896ee72c/7f467ebcf1d0709a22776a6daff3ee6d29cf3066.mp4",
+      "snapshotId": 11634,
+      "auditStatus": 1,
+      "ownerId": 762715,
+      "ownerUuid": "e0f36951510b4b3e82f2f3a8896ee72c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e0f36951510b4b3e82f2f3a8896ee72c/e79837fd7ded336e9aacb10473ad034c13d3db4f706c3e8337b54b7750fa6551.jpg",
+      "nickname": "阿浪Alang",
+      "isLike": false,
+      "likeCount": 279,
+      "tags": [
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/7AsNwrAFORB",
+      "createAt": "2026年05月16日 20:30",
+      "updateAt": "2026年06月01日 22:44",
+      "publishAt": "2026年05月16日 20:30",
+      "playCount": 94,
+      "viewCreationProcessCount": 41,
+      "copyCanvasCount": 10,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 138,
+        "edges": 135
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6a5a5eb7-79e8-98f9-92a1-c80447054920"
+}

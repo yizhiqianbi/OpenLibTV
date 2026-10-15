@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b80812cb95f14e8ab09b359176f066d2",
+      "projectUuid": "37c476098e8d4de389c7c4e62a228bc1",
+      "name": "《查无此神》",
+      "description": "古风志怪×悬疑探案。当\"神迹\"成了杀人的刀、骗人的局，一个逃出造神组织的顶尖机关巧匠、一个隐姓埋名的女暗探、一个被夺去脸的伶人、一个算尽人心的黑市账房，四个各怀心事的人，携手破获借用“神迹”行凶的奇案，每一桩案件都指向一个隐藏百年的惊天骗局。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/70c71e5bc230402c8b1131bf452501b8/0b832a89dc30f2262a9fef0c8ad3e373a788d619.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/70c71e5bc230402c8b1131bf452501b8/9f95d81fbd680e58dab7a068a7d6988c506ec021.mp4",
+      "snapshotId": 22723,
+      "auditStatus": 1,
+      "ownerId": 8061804,
+      "ownerUuid": "70c71e5bc230402c8b1131bf452501b8",
+      "avatar": "https://liblibai-online.liblib.cloud/img/70c71e5bc230402c8b1131bf452501b8/2208410a160f992761e0537fa7cd82b30a7ed3a213cd82aa6d6a18128437bf1d.png",
+      "nickname": "方大钊",
+      "isLike": false,
+      "likeCount": 130,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/hG4pjE6fpmI/ 06/27 :6pm rrR:/ V@y.tE",
+      "createAt": "2026年06月29日 15:22",
+      "updateAt": "2026年06月29日 18:50",
+      "publishAt": "2026年06月29日 15:22",
+      "playCount": 49,
+      "viewCreationProcessCount": 27,
+      "copyCanvasCount": 3,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 161,
+        "edges": 150
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "17fb4d5c-882c-90c1-91fc-8606007a3945"
+}

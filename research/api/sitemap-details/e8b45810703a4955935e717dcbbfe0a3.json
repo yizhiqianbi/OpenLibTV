@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e8b45810703a4955935e717dcbbfe0a3",
+      "projectUuid": "e404834989184765adc223d488f0281a",
+      "name": "《say my name》AIMV",
+      "description": "《say my name》-Elizabeth；MV制作：芄什蘑事务所",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/828cf1dcaa14436592d2790b6f3f89ec/f7c7d0110fa051ca33e0c4bd1d5842756fcb4d35.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/828cf1dcaa14436592d2790b6f3f89ec/a46b2fedccf1b145eedc847a870d2617a3ad173f.mp4",
+      "snapshotId": 8597,
+      "auditStatus": 1,
+      "ownerId": 1824738,
+      "ownerUuid": "828cf1dcaa14436592d2790b6f3f89ec",
+      "avatar": "https://liblibai-online.liblib.cloud/img/828cf1dcaa14436592d2790b6f3f89ec/63eef09d1e9a060eb7942f2d3da484d1fdd35e10131e108724ecc5cd22150ed2.jpeg",
+      "nickname": "芄什蘑",
+      "isLike": false,
+      "likeCount": 19,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3023,
+          "code": "test",
+          "tagLabel": "创意单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3023",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/WatrYoxxqoI/ v@S.lc bNW:/ 09/21",
+      "createAt": "2026年05月01日 10:50",
+      "updateAt": "2026年05月09日 21:23",
+      "publishAt": "2026年05月01日 10:50",
+      "playCount": 5,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 97,
+        "edges": 109
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a3cb8779-2199-954d-b252-2bf8a4d50cbc"
+}

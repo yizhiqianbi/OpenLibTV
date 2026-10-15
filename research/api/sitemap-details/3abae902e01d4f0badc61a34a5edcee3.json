@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "3abae902e01d4f0badc61a34a5edcee3",
+      "projectUuid": "c86c9bd3fff64b339d8cbf88bd887253",
+      "name": "手持呼吸震颤·真实街拍质感短片",
+      "description": "这条片子，镜头从头晃到尾。\n不是AI抽风。是我故意的。\n我给它写了动态模糊、写了呼吸震颤、写了曲线变速。每一个抖动的频率，都是写进提示词里的。\n泡泡破裂，画面震一下。鞋底扫过镜头，黑屏。她凑近说“嘘”，镜头跟着心跳一起颤。\nAI不知道什么叫真实感。但你告诉它怎么晃，它就还你一条像真的。\n后期没加任何配乐。全程同期声。脚步声、呼吸声、泡泡破裂那一声脆响。够了。\n这就是手持呼吸震颤·真实质感。不是拍出来的，是写出来的。\n提示词格式：【视频核心】【人物】【视觉风格】【画面描述】【场景】【镜头语言】【声音】【动感参数设定】【特效】【转场】【动画 In / Out / Combo 画面运镜动画】【核心逻辑】。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/46987de339ac47e0965172f7ccd1b939/3ac8ae6c4ebe1b29de5706b02626cad87bd3e20e.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/46987de339ac47e0965172f7ccd1b939/8e7c8b9ce88cf166a1c5ef4dfc8b9f5ffdabbc6a.mp4",
+      "snapshotId": 17893,
+      "auditStatus": 1,
+      "ownerId": 839640,
+      "ownerUuid": "46987de339ac47e0965172f7ccd1b939",
+      "avatar": "https://liblibai-online.liblib.cloud/img/46987de339ac47e0965172f7ccd1b939/6f3c05bcb51db93b89d922af0e17493ebc8a39b02bf3320f66c83f5f1b790ee5.png",
+      "nickname": "野猪A6",
+      "isLike": false,
+      "likeCount": 113,
+      "tags": [
+        {
+          "id": 1402,
+          "code": "vlog",
+          "tagLabel": "vlog",
+          "parentTag": 1400,
+          "categoryId": 0,
+          "path": "1400/1402/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1405,
+          "code": "talent",
+          "tagLabel": "才艺颜值",
+          "parentTag": 1400,
+          "categoryId": 0,
+          "path": "1400/1405/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1503,
+          "code": "teaching",
+          "tagLabel": "教学教程",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1503/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/video/7649316041083948315",
+      "createAt": "2026年06月09日 16:59",
+      "updateAt": "2026年07月02日 20:26",
+      "publishAt": "2026年06月09日 16:59",
+      "playCount": 232,
+      "viewCreationProcessCount": 115,
+      "copyCanvasCount": 33,
+      "shareCount": 5,
+      "snapshotSummary": {
+        "nodes": 110,
+        "edges": 110
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b2ffbbd2-23ef-9944-8b43-5eaf5c199ead"
+}

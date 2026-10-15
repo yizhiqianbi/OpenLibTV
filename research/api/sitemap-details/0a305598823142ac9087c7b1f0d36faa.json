@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "0a305598823142ac9087c7b1f0d36faa",
+      "projectUuid": "e6d6b80a150e460582d129f4362c9189",
+      "name": "《尘阙》",
+      "description": "一个被藏在人间的女子，回到天宫成为王妃。\n她以为自己只是被命运选中。\n直到神镜照出她的凡间过往。\n万仙震惊，旧臣逼宫。\n可真正的秘密是：\n她不是天宫的污点。\n她是天国亲手藏入人间的最后希望。\n当黑龙破封，天宫将毁，\n她终于骑鹤升空，执弓封神。\nAI东方神话短剧《尘阙》\n四集完整版，正式开启。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/44e515a1f9eb49d081852306deebf0c1/def49eb4a3130565fdb1c2221733659169c6e331.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/44e515a1f9eb49d081852306deebf0c1/bfafba91703e4a90a248d353817327f7861c79c2.mp4",
+      "snapshotId": 24720,
+      "auditStatus": 1,
+      "ownerId": 6283484,
+      "ownerUuid": "44e515a1f9eb49d081852306deebf0c1",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "nickname": "136****1151",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月06日 21:23",
+      "updateAt": "2026年07月07日 00:10",
+      "publishAt": "2026年07月06日 21:23",
+      "playCount": 0,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 252,
+        "edges": 245
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "0245e86d-91f9-9bb1-8df8-ca1e80ef301f"
+}

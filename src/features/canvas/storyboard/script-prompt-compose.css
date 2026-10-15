@@ -1,0 +1,348 @@
+.cv-script-compose-portal .cv-modal-overlay {
+  z-index: 4300;
+  padding: 16px;
+}
+.cv-script-compose-portal .cv-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(760px, calc(100vw - 32px));
+  max-width: 760px;
+  max-height: 85vh;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #212121;
+}
+.cv-script-compose-portal .cv-dialog > header {
+  margin: 0;
+  padding: 12px 16px;
+  border-bottom: 1px solid #363636;
+}
+.cv-script-compose-portal .cv-dialog > header h2 {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+}
+.cv-script-compose-history-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.cv-script-compose-task-info {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.cv-script-compose-portal .cv-script-compose-task-info button {
+  display: block;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff66;
+  font: inherit;
+  font-family: monospace;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-compose-portal .cv-script-compose-task-info button:hover {
+  color: #ffffffb3;
+  background: transparent;
+}
+.cv-script-compose-task-info > span {
+  min-width: 0;
+  overflow: hidden;
+  color: #f87171;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-compose-history-error {
+  margin: 8px 0 0;
+  color: #ef9696;
+  font-size: 12px;
+}
+.cv-script-compose-batch .cv-dialog {
+  width: min(800px, calc(100vw - 32px));
+  max-width: 800px;
+  border: 1px solid #363636;
+  border-radius: 16px;
+}
+.cv-script-compose-content {
+  min-height: 0;
+  overflow: auto;
+  padding: 16px;
+}
+.cv-script-compose-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cv-script-compose-track-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.cv-script-compose-track-heading strong {
+  font-weight: 500;
+}
+.cv-script-compose-state {
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  background: #ffffff0a;
+  color: #999;
+}
+.cv-script-compose-state-synced {
+  color: #71c991;
+}
+.cv-script-compose-state-stale {
+  color: #e8b676;
+}
+.cv-script-compose-autosave {
+  margin-left: auto;
+  color: #999;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+.cv-script-compose-track textarea {
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  max-height: 368px;
+  resize: vertical;
+  padding: 12px;
+  color: #eee;
+  background: #191919;
+  border: 1px solid #363636;
+  border-radius: 6px;
+  font: inherit;
+  line-height: 1.6;
+}
+.cv-script-compose-track .script-prompt-input {
+  padding: 0;
+  overflow: hidden;
+  border: 0.5px solid #363636;
+  border-radius: 12px;
+  background: #141414;
+}
+.cv-script-compose-track .script-prompt-editor {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.cv-script-compose-footer {
+  padding: 12px 16px;
+  border-top: 1px solid #363636;
+}
+.cv-script-compose-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cv-script-compose-modes {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+.cv-script-compose-modes label,
+.cv-script-compose-selection label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.cv-script-compose-portal input[type='radio'],
+.cv-script-compose-portal input[type='checkbox'] {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  accent-color: #f7f7f7;
+}
+.cv-script-compose-model {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 12px;
+}
+.cv-script-compose-model select {
+  min-width: 0;
+  max-width: 190px;
+  padding: 5px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #292929;
+  color: #eee;
+}
+.cv-script-compose-portal button {
+  cursor: pointer;
+}
+.cv-script-compose-portal button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.cv-script-compose-portal .cv-script-compose-submit {
+  flex-shrink: 0;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff;
+  color: #141414;
+  font-size: 12px;
+}
+.cv-script-compose-portal .cv-script-compose-submit:hover:not(:disabled) {
+  background: #ffffffe6;
+}
+.cv-script-compose-selection-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #aaa;
+  font-size: 12px;
+}
+.cv-script-compose-selection {
+  max-height: 420px;
+  overflow-y: auto;
+  border: 1px solid #363636;
+  border-radius: 8px;
+}
+.cv-script-compose-selection-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 36px;
+  gap: 16px;
+  padding: 12px;
+  border-top: 1px solid #363636;
+}
+.cv-script-compose-selection-row:first-child {
+  border-top: 0;
+}
+.cv-script-compose-selection-row.is-expanded label {
+  align-items: flex-start;
+}
+.cv-script-compose-selection-row.is-expanded label > span:last-of-type {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.cv-script-compose-selection-row label > span:first-of-type {
+  flex-shrink: 0;
+}
+.cv-script-compose-selection-row label > span:last-of-type {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #aaa;
+}
+.cv-script-compose-portal .cv-script-compose-selection-row > button {
+  border: 0;
+  background: transparent;
+  color: #aaa;
+}
+.cv-script-compose-portal .cv-script-compose-selection-row > button:hover {
+  background: transparent;
+  color: #f7f7f7;
+}
+.cv-script-compose-selection-row > p {
+  grid-column: 1 / -1;
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.cv-script-compose-notice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #aaa;
+}
+.cv-script-compose-notice [role='alert'] {
+  color: #ef9696;
+}
+.cv-script-compose-undo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.cv-script-compose-notice .cv-script-compose-undo button {
+  padding: 2px 5px;
+  border: 0;
+  background: transparent;
+  color: #3b82f6;
+  text-decoration: underline;
+}
+.cv-script-compose-confirm .cv-modal-overlay {
+  z-index: 4400;
+}
+.cv-script-compose-confirm .cv-dialog {
+  width: min(420px, calc(100vw - 32px));
+  padding-bottom: 16px;
+}
+.cv-script-compose-confirm .cv-dialog > p {
+  margin: 16px;
+  font-size: 13px;
+}
+.cv-script-compose-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 16px;
+}
+.cv-script-compose-portal .cv-script-compose-confirm-actions button {
+  padding: 7px 16px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #292929;
+  color: #eee;
+}
+.cv-script-compose-portal .cv-script-compose-confirm-actions button:last-child {
+  border-color: transparent;
+  background: #fff;
+  color: #141414;
+}
+.cv-script-compose-portal .cv-script-compose-confirm-actions button:last-child:hover {
+  background: #ffffffe6;
+}
+@media (max-width: 600px) {
+  .cv-script-compose-task-info {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .cv-script-compose-controls {
+    flex-wrap: wrap;
+  }
+  .cv-script-compose-modes {
+    margin-left: 0;
+  }
+  .cv-script-compose-portal .cv-script-compose-submit {
+    margin-left: auto;
+  }
+  .cv-script-compose-autosave {
+    max-width: 50%;
+    text-align: right;
+  }
+}

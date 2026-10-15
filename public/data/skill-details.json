@@ -1,0 +1,1223 @@
+{
+  "e49f644764a8425aaae9e7c04c3bf5ea": {
+    "skill": {
+      "templateUuid": "e49f644764a8425aaae9e7c04c3bf5ea",
+      "skillUuid": "2a69fbd8ff444cdab84999a539948e23",
+      "skillKey": "xianxia-drama-planner-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "东方巨构美学短剧",
+      "version": "1.0.15",
+      "description": "一站式生成东方巨构美学短剧",
+      "resultType": 3,
+      "coverUrl": "/assets/e3c92ccc5b5f8a27.webp",
+      "snapshotId": 36413,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550585680.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550594074.mp4\"}],\"coverUrl\":\"/assets/e3c92ccc5b5f8a27.webp\",\"description\":\"一站式生成东方巨构美学短剧\",\"evalResult\":\"\",\"inputType\":\"一份剧本或一句话，可选人脸/造型参考图\",\"name\":\"东方巨构美学短剧\",\"outputContent\":\"角色/道具/场景资产图、逐镜分镜表格、仙侠短剧视频成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"xianxia-drama-planner-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"2a69fbd8ff444cdab84999a539948e23\",\"sourceType\":1,\"useScenario\":\"东方美学短剧、国风电视剧\",\"version\":\"1.0.15\"}",
+      "auditStatus": 1,
+      "tags": [
+        {
+          "id": 4002,
+          "code": "",
+          "tagLabel": "短剧漫剧",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4002/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 2871,
+      "usePv": 9050,
+      "useUv": 6483,
+      "publishAt": "2026-08-13 00:08:39",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "/assets/7800f324c8e32af1.webp",
+      "useScenario": "东方美学短剧、国风电视剧",
+      "inputType": "一份剧本或一句话，可选人脸/造型参考图",
+      "outputContent": "角色/道具/场景资产图、逐镜分镜表格、仙侠短剧视频成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "/assets/7800f324c8e32af1.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550585680.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550594074.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "d691506be62d4b93b8af4fceb9d0e2c3": {
+    "skill": {
+      "templateUuid": "d691506be62d4b93b8af4fceb9d0e2c3",
+      "skillUuid": "f141c3c562774a8bb893fd525e482e5d",
+      "skillKey": "oriental-aesthetic-film-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "仙侠氛围美学短片",
+      "version": "1.0.10",
+      "description": "仙侠氛围美学短片",
+      "resultType": 3,
+      "coverUrl": "/assets/26af37ec6e10fb14.webp",
+      "snapshotId": 36414,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550518690.mov\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550529504.mov\"}],\"coverUrl\":\"/assets/26af37ec6e10fb14.webp\",\"description\":\"仙侠氛围美学短片\",\"evalResult\":\"\",\"inputType\":\"输入人像参考图\",\"name\":\"仙侠氛围美学短片\",\"outputContent\":\"角色/道具/场景资产图、逐镜分镜表格、仙侠氛围感短片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"oriental-aesthetic-film-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"f141c3c562774a8bb893fd525e482e5d\",\"sourceType\":1,\"useScenario\":\"国风人像写真大片、仙侠氛围向短视频、社媒美学向短片\",\"version\":\"1.0.10\"}",
+      "auditStatus": 1,
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 2367,
+      "usePv": 4632,
+      "useUv": 3428,
+      "publishAt": "2026-08-13 00:08:47",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "/assets/7800f324c8e32af1.webp",
+      "useScenario": "国风人像写真大片、仙侠氛围向短视频、社媒美学向短片",
+      "inputType": "输入人像参考图",
+      "outputContent": "角色/道具/场景资产图、逐镜分镜表格、仙侠氛围感短片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "/assets/7800f324c8e32af1.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550518690.mov",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550529504.mov",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "c817aabdb71348faa38b2db294ad5026": {
+    "skill": {
+      "templateUuid": "c817aabdb71348faa38b2db294ad5026",
+      "skillUuid": "51358dd3716d499b99371e4715a567cb",
+      "skillKey": "dreamcore-generator-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "梦核美学",
+      "version": "1.0.6",
+      "description": "从概念到成片一体化创作梦核视觉短片",
+      "resultType": 3,
+      "coverUrl": "/assets/8f53bbad5b436441.webp",
+      "snapshotId": 33695,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1785931333745.mp4\"}],\"coverUrl\":\"/assets/8f53bbad5b436441.webp\",\"description\":\"从概念到成片一体化创作梦核视觉短片\",\"evalResult\":\"\",\"inputType\":\"音乐音频、人脸参考图、造型参考图、产品参考图\",\"name\":\"梦核美学\",\"outputContent\":\"人物造型三视图、场景图、音乐、分镜 prompt、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"dreamcore-generator-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"51358dd3716d499b99371e4715a567cb\",\"sourceType\":1,\"useScenario\":\"音乐视频、创意短片、甜美型广告片\",\"version\":\"1.0.6\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 8/10，命中 2 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1302,
+      "usePv": 1972,
+      "useUv": 1605,
+      "publishAt": "2026-08-05 20:03:35",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "/assets/7800f324c8e32af1.webp",
+      "useScenario": "音乐视频、创意短片、甜美型广告片",
+      "inputType": "音乐音频、人脸参考图、造型参考图、产品参考图",
+      "outputContent": "人物造型三视图、场景图、音乐、分镜 prompt、完整成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "/assets/7800f324c8e32af1.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1785931333745.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "431c9845bf894e1fbc1352adee6adc3d": {
+    "skill": {
+      "templateUuid": "431c9845bf894e1fbc1352adee6adc3d",
+      "skillUuid": "9898c8437b9a4c249f0328f662f31691",
+      "skillKey": "a24-cinematic-aesthetic-ad7396f8e0a5497ab352f403f290c82f",
+      "name": "A24电影美学",
+      "version": "1.0.17",
+      "description": "高级怪诞电影美学，以作者视角，用粗粝真实的表皮包裹荒诞底色",
+      "resultType": 3,
+      "coverUrl": "/assets/c9e69de06be11b03.webp",
+      "snapshotId": 33725,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=rWdxENmCi9\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/b366d673d5e785c6fb060bc22752d8c5dbfa9e5e.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/75d04e7de45bffe3e05bc7441ce914117a8c454f.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/fd33dc163b8bb7ded7df5c38c2d13d148e4e194d.mp4\"}],\"coverUrl\":\"/assets/c9e69de06be11b03.webp\",\"description\":\"高级怪诞电影美学，以作者视角，用粗粝真实的表皮包裹荒诞底色\",\"evalResult\":\"\",\"inputType\":\"输入故事、剧本\",\"name\":\"A24电影美学\",\"outputContent\":\"情绪版、角色图，道具图、场景图，音乐、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"a24-cinematic-aesthetic-ad7396f8e0a5497ab352f403f290c82f\",\"skillUuid\":\"9898c8437b9a4c249f0328f662f31691\",\"sourceType\":1,\"useScenario\":\"独立电影、cult电影、荒诞电影、恐怖电影\",\"version\":\"1.0.17\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1385,
+      "usePv": 2549,
+      "useUv": 1767,
+      "publishAt": "2026-08-05 22:08:19",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "/assets/7800f324c8e32af1.webp",
+      "useScenario": "独立电影、cult电影、荒诞电影、恐怖电影",
+      "inputType": "输入故事、剧本",
+      "outputContent": "情绪版、角色图，道具图、场景图，音乐、完整成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "/assets/7800f324c8e32af1.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/b366d673d5e785c6fb060bc22752d8c5dbfa9e5e.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=rWdxENmCi9",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/75d04e7de45bffe3e05bc7441ce914117a8c454f.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/fd33dc163b8bb7ded7df5c38c2d13d148e4e194d.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "c04b3b7a24264608a32ae4575cf7fa24": {
+    "skill": {
+      "templateUuid": "c04b3b7a24264608a32ae4575cf7fa24",
+      "skillUuid": "3636fd24fa334cf28bb4b2f318bcedc1",
+      "skillKey": "pop-music-video-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "POP MV",
+      "version": "1.0.25",
+      "description": "聚焦国际一线流行音乐MV创作体系，一句话自动完成 MV 创作",
+      "resultType": 3,
+      "coverUrl": "/assets/06f372583a09ade8.webp",
+      "snapshotId": 33696,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1785931292211.mp4\"}],\"coverUrl\":\"/assets/06f372583a09ade8.webp\",\"description\":\"聚焦国际一线流行音乐MV创作体系，一句话自动完成 MV 创作\",\"evalResult\":\"\",\"inputType\":\"音乐音频、人脸参考图、造型参考图、产品参考图\",\"name\":\"POP MV\",\"outputContent\":\"人物造型三视图、场景图、音乐、分镜 prompt、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"pop-music-video-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"3636fd24fa334cf28bb4b2f318bcedc1\",\"sourceType\":1,\"useScenario\":\"给自己的流行 / 说唱 / hip-hop 单曲做音乐视频，适合发布新歌预告、单曲视觉化、社媒短视频。\",\"version\":\"1.0.25\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10，命中 2 条阻断级问题",
+      "tags": [
+        {
+          "id": 4004,
+          "code": "",
+          "tagLabel": "音乐MV",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4004/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 878,
+      "usePv": 3985,
+      "useUv": 3018,
+      "publishAt": "2026-08-05 20:03:42",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "/assets/7800f324c8e32af1.webp",
+      "useScenario": "给自己的流行 / 说唱 / hip-hop 单曲做音乐视频，适合发布新歌预告、单曲视觉化、社媒短视频。",
+      "inputType": "音乐音频、人脸参考图、造型参考图、产品参考图",
+      "outputContent": "人物造型三视图、场景图、音乐、分镜 prompt、完整成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "/assets/7800f324c8e32af1.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1785931292211.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "8c423d5450e44d91a52c1ae116081756": {
+    "skill": {
+      "templateUuid": "8c423d5450e44d91a52c1ae116081756",
+      "skillUuid": "25256f95a2354c7fa631bba9782558b1",
+      "skillKey": "beauty-blogger-reviewer-5e17f63c20b64ca1a5571efe67cc2d04",
+      "name": "真人感美妆UGC产品测评",
+      "version": "1.0.1",
+      "description": "一键把美妆卖点变成可见证据与自然口播",
+      "resultType": 3,
+      "coverUrl": "/assets/9f652d8d7f63cc7d.webp",
+      "snapshotId": 34113,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/065eb09c4c429e290d5aaf6dfcbc5dcdbc4870cb.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/756e22b99eebd44f544fa3d54b6cdc4f0160312d.mp4\"}],\"coverUrl\":\"/assets/9f652d8d7f63cc7d.webp\",\"description\":\"一键把美妆卖点变成可见证据与自然口播\",\"evalResult\":\"\",\"inputType\":\"上传一张清晰产品图，可选达人参考和核心卖点。Skill 会判断素材与声明风险，把卖点转成可拍证据和自然中文口播，再确认测评路径、场景、气质与时长。\",\"name\":\"真人感美妆UGC产品测评\",\"outputContent\":\"输出卖点转译卡、最终口播脚本、测评证据链、参考图片清单，以及一条经过规则校验、可直接用于 Seedance 2.5 的4–30秒竖屏UGC测评提示词。\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"beauty-blogger-reviewer-5e17f63c20b64ca1a5571efe67cc2d04\",\"skillUuid\":\"25256f95a2354c7fa631bba9782558b1\",\"sourceType\":1,\"useScenario\":\"适合护肤、彩妆、香氛和个人护理产品，希望通过真人试用、质地表现和即时感受建立可信种草内容，并需要控制功效声明风险的品牌或创作者。\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 9/10",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 888,
+      "usePv": 2841,
+      "useUv": 2307,
+      "publishAt": "2026-08-06 22:40:39",
+      "ownerId": 759898,
+      "ownerName": "刘不住Wander",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "useScenario": "适合护肤、彩妆、香氛和个人护理产品，希望通过真人试用、质地表现和即时感受建立可信种草内容，并需要控制功效声明风险的品牌或创作者。",
+      "inputType": "上传一张清晰产品图，可选达人参考和核心卖点。Skill 会判断素材与声明风险，把卖点转成可拍证据和自然中文口播，再确认测评路径、场景、气质与时长。",
+      "outputContent": "输出卖点转译卡、最终口播脚本、测评证据链、参考图片清单，以及一条经过规则校验、可直接用于 Seedance 2.5 的4–30秒竖屏UGC测评提示词。",
+      "sourceType": 1,
+      "nickname": "刘不住Wander",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/065eb09c4c429e290d5aaf6dfcbc5dcdbc4870cb.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/756e22b99eebd44f544fa3d54b6cdc4f0160312d.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "b6bc45650728457baeebfb2ba5b4b5fb": {
+    "skill": {
+      "templateUuid": "b6bc45650728457baeebfb2ba5b4b5fb",
+      "skillUuid": "637837cc275e43969eb7c14db5c804f5",
+      "skillKey": "ecommerce-ugc-ad-planner-8f1dabacbf094425b9d28edcda999dff",
+      "name": "北美电商出海UGC",
+      "version": "1.0.0",
+      "description": "为跨境电商策划 30 秒内的本地化 UGC 信息流带货视频。",
+      "resultType": 3,
+      "coverUrl": "/assets/7977bbd0492665c7.webp",
+      "snapshotId": 34045,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8f1dabacbf094425b9d28edcda999dff/ba58536476accdd56e46c16cd2f81308a1226aa7.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8f1dabacbf094425b9d28edcda999dff/f75b4100178342ee3fc2d9c429b7abe0376fbd17.mp4\"}],\"coverUrl\":\"/assets/7977bbd0492665c7.webp\",\"description\":\"为跨境电商策划 30 秒内的本地化 UGC 信息流带货视频。\",\"evalResult\":\"\",\"inputType\":\"输入目标市场，语言，产品\",\"name\":\"北美电商出海UGC\",\"outputContent\":\"视频\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"ecommerce-ugc-ad-planner-8f1dabacbf094425b9d28edcda999dff\",\"skillUuid\":\"637837cc275e43969eb7c14db5c804f5\",\"sourceType\":1,\"useScenario\":\"出海\",\"version\":\"1.0.0\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10，命中 1 条阻断级问题",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 956,
+      "usePv": 1943,
+      "useUv": 1378,
+      "publishAt": "2026-08-06 18:17:50",
+      "ownerId": 4116253,
+      "ownerName": "星星",
+      "ownerAvatar": "/assets/4b2407f4f61b9ca0.webp",
+      "useScenario": "出海",
+      "inputType": "输入目标市场，语言，产品",
+      "outputContent": "视频",
+      "sourceType": 1,
+      "nickname": "星星",
+      "avatar": "/assets/4b2407f4f61b9ca0.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8f1dabacbf094425b9d28edcda999dff/ba58536476accdd56e46c16cd2f81308a1226aa7.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8f1dabacbf094425b9d28edcda999dff/f75b4100178342ee3fc2d9c429b7abe0376fbd17.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "77608cf97c9b4bcd8f268a76d58c9738": {
+    "skill": {
+      "templateUuid": "77608cf97c9b4bcd8f268a76d58c9738",
+      "skillUuid": "bcb6e710a43d469b89b01405f5c88e76",
+      "skillKey": "casting-director-ad7396f8e0a5497ab352f403f290c82f-bcb6e710",
+      "name": "选角Casting",
+      "version": "1.0.1",
+      "description": "你的专属选角导演，一键为你挑选最合适的角色",
+      "resultType": 2,
+      "coverUrl": "/assets/a7edcdca47a9aa38.webp",
+      "snapshotId": 40423,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/42f502ea5c1867f0.webp\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/9f299cd9e45daf72.webp\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/b623d6f9f19d704c.webp\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/0f0bccf9b0a1db05.webp\"}],\"coverUrl\":\"/assets/a7edcdca47a9aa38.webp\",\"description\":\"你的专属选角导演，一键为你挑选最合适的角色\",\"evalResult\":\"\",\"inputType\":\"输入剧本、人物表、角色描述\",\"name\":\"选角Casting\",\"outputContent\":\"高质量面部特写图、全身图、表情九宫格、人物三视图\",\"resultType\":2,\"showMarkdown\":false,\"skillKey\":\"casting-director-ad7396f8e0a5497ab352f403f290c82f-bcb6e710\",\"skillUuid\":\"bcb6e710a43d469b89b01405f5c88e76\",\"sourceType\":1,\"useScenario\":\"模特设定、短剧、电影角色\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 9/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 4407,
+      "usePv": 10533,
+      "useUv": 6694,
+      "publishAt": "2026-08-25 11:11:47",
+      "ownerId": 5925404,
+      "ownerName": "苏打绿豆",
+      "ownerAvatar": "/assets/a757f4f9b14ccc7a.webp",
+      "useScenario": "模特设定、短剧、电影角色",
+      "inputType": "输入剧本、人物表、角色描述",
+      "outputContent": "高质量面部特写图、全身图、表情九宫格、人物三视图",
+      "sourceType": 1,
+      "nickname": "苏打绿豆",
+      "avatar": "/assets/a757f4f9b14ccc7a.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/42f502ea5c1867f0.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/9f299cd9e45daf72.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/b623d6f9f19d704c.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/0f0bccf9b0a1db05.webp",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "f39174669ea04c9f88dfd5cd6a4bdedd": {
+    "skill": {
+      "templateUuid": "f39174669ea04c9f88dfd5cd6a4bdedd",
+      "skillUuid": "eb155ef3f0544b13bc41222ed89d634e",
+      "skillKey": "ai-model-talkshow-producer-5e17f63c20b64ca1a5571efe67cc2d04",
+      "name": "AI模特脱口秀skill",
+      "version": "1.0.4",
+      "description": "自动生成模特，场景，脱口秀文案和脚本，并输出完整的脱口秀短片",
+      "resultType": 3,
+      "coverUrl": "/assets/38b4d0e175577a56.webp",
+      "snapshotId": 26398,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/ae8ce0a21295fff0.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/c80601ab1c744d02.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/fe95c8c83e0b7a65.mp4\"}],\"coverUrl\":\"/assets/38b4d0e175577a56.webp\",\"description\":\"自动生成模特，场景，脱口秀文案和脚本，并输出完整的脱口秀短片\",\"evalResult\":\"\",\"inputType\":\"先提供模特图、品牌 logo 或舞台参考；如果没有，也可以让 Skill 自动生成。确认模特和舞台预览图后，再提供中文脱口秀主题\",\"name\":\"AI模特脱口秀skill\",\"outputContent\":\"输出模特设定图提示词、舞台图提示词、演讲预览合成图提示词、中文脱口秀文稿、笑点结构表、表演节奏表、观众反应表、字幕梗点表，以及可直接用于生成 15 秒、30 秒或 60 秒竖屏视频的视频提示词。\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"ai-model-talkshow-producer-5e17f63c20b64ca1a5571efe67cc2d04\",\"skillUuid\":\"eb155ef3f0544b13bc41222ed89d634e\",\"sourceType\":1,\"useScenario\":\"适合想用 AI 模特制作中文脱口秀、品牌活动开场、产品轻植入、职场吐槽、生活观察、恋爱吐槽、热点轻吐槽等竖屏短片的场景。尤其适合需要“小剧场观众席手机拍摄感”的 UGC 风格视频。\",\"version\":\"1.0.4\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 8/10",
+      "tags": [
+        {
+          "id": 4005,
+          "code": "",
+          "tagLabel": "自媒体创作",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4005/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 894,
+      "usePv": 1852,
+      "useUv": 1446,
+      "publishAt": "2026-07-12 22:36:47",
+      "ownerId": 759898,
+      "ownerName": "刘不住Wander",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "useScenario": "适合想用 AI 模特制作中文脱口秀、品牌活动开场、产品轻植入、职场吐槽、生活观察、恋爱吐槽、热点轻吐槽等竖屏短片的场景。尤其适合需要“小剧场观众席手机拍摄感”的 UGC 风格视频。",
+      "inputType": "先提供模特图、品牌 logo 或舞台参考；如果没有，也可以让 Skill 自动生成。确认模特和舞台预览图后，再提供中文脱口秀主题",
+      "outputContent": "输出模特设定图提示词、舞台图提示词、演讲预览合成图提示词、中文脱口秀文稿、笑点结构表、表演节奏表、观众反应表、字幕梗点表，以及可直接用于生成 15 秒、30 秒或 60 秒竖屏视频的视频提示词。",
+      "sourceType": 1,
+      "nickname": "刘不住Wander",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/ae8ce0a21295fff0.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/c80601ab1c744d02.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/fe95c8c83e0b7a65.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "9662f7b185a84ff7a86790b1cb640b6d": {
+    "skill": {
+      "templateUuid": "9662f7b185a84ff7a86790b1cb640b6d",
+      "skillUuid": "e8dd75d20f3b4fa0a48bda3fad96faa7",
+      "skillKey": "xingrannvpin-0bfcda928d704e8da3d20977029a31b8",
+      "name": "精品女频短剧一键成片",
+      "version": "1.0.1",
+      "description": "告别粗糙流水线成片，纯精品短剧工业化全流程一键出片",
+      "resultType": 3,
+      "coverUrl": "/assets/c2f07166f2cc8c42.webp",
+      "snapshotId": 26314,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/fb643a0b6725b6fd5a3592fb05c0d3d47dd89624.mp4\"}],\"coverUrl\":\"/assets/c2f07166f2cc8c42.webp\",\"description\":\"告别粗糙流水线成片，纯精品短剧工业化全流程一键出片\",\"evalResult\":\"\",\"inputType\":\"短剧素材/网文文本\",\"name\":\"精品女频短剧一键成片\",\"outputContent\":\"视频文件\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"xingrannvpin-0bfcda928d704e8da3d20977029a31b8\",\"skillUuid\":\"e8dd75d20f3b4fa0a48bda3fad96faa7\",\"sourceType\":2,\"useScenario\":\"覆盖甜宠、逆袭、虐恋等高热度题材，支持从剧本切分到成片输出的自动化流程，旨在帮助创作者以较低成本批量产出具备爆款潜质的短剧内容\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 6/10",
+      "tags": [
+        {
+          "id": 4002,
+          "code": "",
+          "tagLabel": "短剧漫剧",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4002/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 3941,
+      "usePv": 34259,
+      "useUv": 18585,
+      "publishAt": "2026-07-12 18:17:03",
+      "ownerId": 2886492,
+      "ownerName": "星燃AI",
+      "ownerAvatar": "/assets/8b9c1bea9afdbe38.webp",
+      "useScenario": "覆盖甜宠、逆袭、虐恋等高热度题材，支持从剧本切分到成片输出的自动化流程，旨在帮助创作者以较低成本批量产出具备爆款潜质的短剧内容",
+      "inputType": "短剧素材/网文文本",
+      "outputContent": "视频文件",
+      "sourceType": 2,
+      "nickname": "星燃AI",
+      "avatar": "/assets/8b9c1bea9afdbe38.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/fb643a0b6725b6fd5a3592fb05c0d3d47dd89624.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "74b462f926b149f2ac1693995191e4c2": {
+    "skill": {
+      "templateUuid": "74b462f926b149f2ac1693995191e4c2",
+      "skillUuid": "8ff7406e4d674a2cb52f4a60f172c47e",
+      "skillKey": "wes-anderson-aesthetics-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "韦斯安德森电影美学",
+      "version": "1.0.7",
+      "description": "深度还原韦氏标志性视听语言，适用15秒-5分钟电影短片或广告",
+      "resultType": 3,
+      "coverUrl": "/assets/71fc5cfeeccf8a67.webp",
+      "snapshotId": 28091,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=HHcwG6xmqD\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/bc56b497cee0eb7ee0b7938770185acd1e019754.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/af3a6f3d62a00ede.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/d56bdee7bcce5551.mp4\"}],\"coverUrl\":\"/assets/71fc5cfeeccf8a67.webp\",\"description\":\"深度还原韦氏标志性视听语言，适用15秒-5分钟电影短片或广告\",\"evalResult\":\"\",\"inputType\":\"剧本、故事文本；有对白效果更出彩\",\"name\":\"韦斯安德森电影美学\",\"outputContent\":\"人物造型三视图、场景图、BGM、分镜 prompt、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"wes-anderson-aesthetics-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"8ff7406e4d674a2cb52f4a60f172c47e\",\"sourceType\":1,\"useScenario\":\"创意短片、品牌故事、MV 片段\",\"version\":\"1.0.7\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10，命中 1 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1445,
+      "usePv": 4157,
+      "useUv": 3055,
+      "publishAt": "2026-07-17 14:00:08",
+      "ownerId": 5925397,
+      "ownerName": "omom",
+      "ownerAvatar": "/assets/2098886d410515c0.webp",
+      "useScenario": "创意短片、品牌故事、MV 片段",
+      "inputType": "剧本、故事文本；有对白效果更出彩",
+      "outputContent": "人物造型三视图、场景图、BGM、分镜 prompt、完整成片",
+      "sourceType": 1,
+      "nickname": "omom",
+      "avatar": "/assets/2098886d410515c0.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/bc56b497cee0eb7ee0b7938770185acd1e019754.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=HHcwG6xmqD",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/af3a6f3d62a00ede.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/d56bdee7bcce5551.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "e34caf9cbad3423fafde536334a91f03": {
+    "skill": {
+      "templateUuid": "e34caf9cbad3423fafde536334a91f03",
+      "skillUuid": "8cf1df0c1ac741e6b0cbc27d4c1f41c6",
+      "skillKey": "cinematic-vfx-creator-9d8925c591a643bbad8ca8cfbb87922c",
+      "name": "影视打斗特效skill",
+      "version": "1.0.8",
+      "description": "一句话生成角色人物影视特效支持文字参考图/视频",
+      "resultType": 3,
+      "coverUrl": "/assets/411317e341562261.webp",
+      "snapshotId": 26953,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/70c2ecb45d47ad77c0fda7a37a0b7514c291b7e1.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/ee0f3bc39416828679b9135288f3e87162a6001e.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f1f83c6466f64f930840928cbb45ee3807017499.mp4\"},{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/share?spaceId=1736822\\u0026projectId=18aa61c9c3e148b48c655dbb6586d4a2\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/50af9d483827edbcae9c8e3291b7e336daa46073.mp4\"}],\"coverUrl\":\"/assets/411317e341562261.webp\",\"description\":\"一句话生成角色人物影视特效支持文字参考图/视频\",\"evalResult\":\"\",\"inputType\":\"只需要一句话即可，如果希望是什么风火雷电系列都可以说明，可自由搭配组合技能名称，用户描述的场景、角色、风格意图、情绪基调、特效诉\",\"name\":\"影视打斗特效skill\",\"outputContent\":\"支持15-最高30秒的技能打斗特效竖版和横板视频\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"cinematic-vfx-creator-9d8925c591a643bbad8ca8cfbb87922c\",\"skillUuid\":\"8cf1df0c1ac741e6b0cbc27d4c1f41c6\",\"sourceType\":1,\"useScenario\":\"真人漫剧/打斗/短片/动画/热血漫画/3D动漫等\",\"version\":\"1.0.8\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 2327,
+      "usePv": 5155,
+      "useUv": 2915,
+      "publishAt": "2026-07-14 16:32:26",
+      "ownerId": 363604,
+      "ownerName": "星曜AG",
+      "ownerAvatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "useScenario": "真人漫剧/打斗/短片/动画/热血漫画/3D动漫等",
+      "inputType": "只需要一句话即可，如果希望是什么风火雷电系列都可以说明，可自由搭配组合技能名称，用户描述的场景、角色、风格意图、情绪基调、特效诉",
+      "outputContent": "支持15-最高30秒的技能打斗特效竖版和横板视频",
+      "sourceType": 1,
+      "nickname": "星曜AG",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/70c2ecb45d47ad77c0fda7a37a0b7514c291b7e1.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/ee0f3bc39416828679b9135288f3e87162a6001e.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/f1f83c6466f64f930840928cbb45ee3807017499.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/50af9d483827edbcae9c8e3291b7e336daa46073.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/share?spaceId=1736822&projectId=18aa61c9c3e148b48c655dbb6586d4a2",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "0aedb9538231408ba019be33d451636a": {
+    "skill": {
+      "templateUuid": "0aedb9538231408ba019be33d451636a",
+      "skillUuid": "fad812331b074c74aeb1495976ab876f",
+      "skillKey": "cuyezhuyi-baaef88d964b47489b276e1ee4d804f8",
+      "name": "苏联粗野主义",
+      "version": "1.0.2",
+      "description": "深构苏联粗粝美学，一键生成纪念碑式视觉大片",
+      "resultType": 3,
+      "coverUrl": "/assets/e400ca7864636363.webp",
+      "snapshotId": 27073,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/ddedd6c8f977cc50.mp4\"}],\"coverUrl\":\"/assets/e400ca7864636363.webp\",\"description\":\"深构苏联粗粝美学，一键生成纪念碑式视觉大片\",\"evalResult\":\"\",\"inputType\":\"从光影对比、混凝土质感、宏大荒凉的构图比例，到叙事节奏上的沉重与疏离感，进行全链路的风格迁移与生成。无论是弥漫着工业迷雾的科幻废\",\"name\":\"苏联粗野主义\",\"outputContent\":\"视频文件\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"cuyezhuyi-baaef88d964b47489b276e1ee4d804f8\",\"skillUuid\":\"fad812331b074c74aeb1495976ab876f\",\"sourceType\":2,\"useScenario\":\"影视风格短片\",\"version\":\"1.0.2\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 6/10，命中 4 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 514,
+      "usePv": 537,
+      "useUv": 458,
+      "publishAt": "2026-07-14 21:29:43",
+      "ownerId": 1353321,
+      "ownerName": "翻山计划",
+      "ownerAvatar": "/assets/42c6d92ae3700c1c.webp",
+      "useScenario": "影视风格短片",
+      "inputType": "从光影对比、混凝土质感、宏大荒凉的构图比例，到叙事节奏上的沉重与疏离感，进行全链路的风格迁移与生成。无论是弥漫着工业迷雾的科幻废",
+      "outputContent": "视频文件",
+      "sourceType": 2,
+      "nickname": "翻山计划",
+      "avatar": "/assets/42c6d92ae3700c1c.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/ddedd6c8f977cc50.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "d474c84673f544adafd7d3060087b098": {
+    "skill": {
+      "templateUuid": "d474c84673f544adafd7d3060087b098",
+      "skillUuid": "b1133e37e9e24d33862f06153c0f23da",
+      "skillKey": "absurdist-comedy-maker-8db3e80ed29a49109eb6c801f13bb76c",
+      "name": "无厘头喜剧",
+      "version": "1.0.8",
+      "description": "将任意主题转成无厘头创意短片，支持剧本改写和照片玩梗。",
+      "resultType": 3,
+      "coverUrl": "/assets/3bd6c7a8b73cb190.webp",
+      "snapshotId": 29789,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=aatl6DZ2iV\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/448416a35ec6846a439a642a080de6d3c0117141.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/1d30dd51b194721961eae9de0918118af765393c.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/01f21a12113a9df2bfedf9b5595e676e9bad3715.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/c10c0ef9814e5329.mp4\"}],\"coverUrl\":\"/assets/3bd6c7a8b73cb190.webp\",\"description\":\"将任意主题转成无厘头创意短片，支持剧本改写和照片玩梗。\",\"evalResult\":\"\",\"inputType\":\"输入一句话创意、产品图、产品卖点\",\"name\":\"无厘头喜剧\",\"outputContent\":\"脚本、情绪版、角色三视图、场景图、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"absurdist-comedy-maker-8db3e80ed29a49109eb6c801f13bb76c\",\"skillUuid\":\"b1133e37e9e24d33862f06153c0f23da\",\"sourceType\":1,\"useScenario\":\"短视频、广告或品牌创意\",\"version\":\"1.0.8\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10，命中 1 条阻断级问题",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1115,
+      "usePv": 6376,
+      "useUv": 4549,
+      "publishAt": "2026-07-22 14:31:03",
+      "ownerId": 5925400,
+      "ownerName": "捏捏AI",
+      "ownerAvatar": "/assets/a9e2dc50f7453183.webp",
+      "useScenario": "短视频、广告或品牌创意",
+      "inputType": "输入一句话创意、产品图、产品卖点",
+      "outputContent": "脚本、情绪版、角色三视图、场景图、完整成片",
+      "sourceType": 1,
+      "nickname": "捏捏AI",
+      "avatar": "/assets/a9e2dc50f7453183.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/448416a35ec6846a439a642a080de6d3c0117141.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=aatl6DZ2iV",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/1d30dd51b194721961eae9de0918118af765393c.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/8db3e80ed29a49109eb6c801f13bb76c/01f21a12113a9df2bfedf9b5595e676e9bad3715.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/c10c0ef9814e5329.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "6f1f72f4055f485f85c3a521318fd2f4": {
+    "skill": {
+      "templateUuid": "6f1f72f4055f485f85c3a521318fd2f4",
+      "skillUuid": "5aa40fdff55447efb4de912a404a8da1",
+      "skillKey": "wander-high-energy-fashion-ad-5e17f63c20b64ca1a5571efe67cc2d04",
+      "name": "高机能时尚风配饰酷炫广告",
+      "version": "1.0.3",
+      "description": "上传眼镜、手表等配饰图，自动生成节奏强、质感高级的时尚广告。",
+      "resultType": 3,
+      "coverUrl": "/assets/c68772a21922d86a.webp",
+      "snapshotId": 26308,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/ab6424489f1820f1.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/601f188b3dcf2572.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/d7b6a33280779d3d39c01f513a3704e8037f8282.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"/assets/43587cb591574388.mp4\"}],\"coverUrl\":\"/assets/c68772a21922d86a.webp\",\"description\":\"上传眼镜、手表等配饰图，自动生成节奏强、质感高级的时尚广告。\",\"evalResult\":\"\",\"inputType\":\"上传一张清晰的配饰产品图，Skill 会自动判断产品类型和图片质量，选择人物佩戴或纯产品渲染路径，生成产品参考图、模特/佩戴图、\",\"name\":\"高机能时尚风配饰酷炫广告\",\"outputContent\":\"视频文件\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"wander-high-energy-fashion-ad-5e17f63c20b64ca1a5571efe67cc2d04\",\"skillUuid\":\"5aa40fdff55447efb4de912a404a8da1\",\"sourceType\":2,\"useScenario\":\"眼镜广告、手表广告、首饰广告、时尚配饰种草、品牌高能短片、配饰新品发布。\",\"version\":\"1.0.3\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 6/10",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 227,
+      "usePv": 327,
+      "useUv": 285,
+      "publishAt": "2026-07-12 18:12:05",
+      "ownerId": 759898,
+      "ownerName": "刘不住Wander",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "useScenario": "眼镜广告、手表广告、首饰广告、时尚配饰种草、品牌高能短片、配饰新品发布。",
+      "inputType": "上传一张清晰的配饰产品图，Skill 会自动判断产品类型和图片质量，选择人物佩戴或纯产品渲染路径，生成产品参考图、模特/佩戴图、",
+      "outputContent": "视频文件",
+      "sourceType": 2,
+      "nickname": "刘不住Wander",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/ab6424489f1820f1.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/601f188b3dcf2572.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/d7b6a33280779d3d39c01f513a3704e8037f8282.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/43587cb591574388.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "473f446619d643acac34272fa434b2ad": {
+    "skill": {
+      "templateUuid": "473f446619d643acac34272fa434b2ad",
+      "skillUuid": "218b8f6cef894f18be4ded697900c92a",
+      "skillKey": "hujinquanwuxia-a015ad0682e441c5a70fd7cac0fc563a",
+      "name": "古典武侠电影全流程导演",
+      "version": "1.0.7",
+      "description": "一键把武侠灵感转化为胡金铨，邵氏，古典武侠等美学风格视频",
+      "resultType": 3,
+      "coverUrl": "/assets/6513cbf9d915d7b4.webp",
+      "snapshotId": 26880,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/9dbbe63afee8abb004a3266f39c0c6882d522c7a.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/cfe7ae8d1950d8f4a308ab89484edfb558009d34.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/8b6fc1748847e91d0b7b51a1445e9127a295da3b.mp4\"}],\"coverUrl\":\"/assets/6513cbf9d915d7b4.webp\",\"description\":\"一键把武侠灵感转化为胡金铨，邵氏，古典武侠等美学风格视频\",\"evalResult\":\"\",\"inputType\":\"用户可以输入一句武侠创意、完整剧情、角色关系、场景地点、时长比例、是否打斗、已有角色/场景/道具资产或参考图。Skill 会先提\",\"name\":\"古典武侠电影全流程导演\",\"outputContent\":\"输出需求理解、创作脊柱、角色/场景/道具/状态资产规划、首帧与尾帧设计、图片生成提示词、视频节拍表、分镜表、逐镜头视频提示词、运镜与切镜规则、声音设计、剪辑方案、审核清单和返修建议。\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"hujinquanwuxia-a015ad0682e441c5a70fd7cac0fc563a\",\"skillUuid\":\"218b8f6cef894f18be4ded697900c92a\",\"sourceType\":2,\"useScenario\":\"适合制作古典武侠角色图、场景图、电影首帧、5 秒图生视频、15 秒氛围段、30/60/75/90 秒完整短片、武侠分镜、逐镜头视频提示词、剪辑音效方案和返修诊断。适用于雪夜客栈、竹林对峙、寺庙听风、江湖暗号、侠客独行、门外脚步、雨夜追杀等克制但有张力的武侠影像。\",\"version\":\"1.0.7\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 8/10，命中 1 条阻断级问题",
+      "likeCount": 2186,
+      "usePv": 20133,
+      "useUv": 15503,
+      "publishAt": "2026-07-14 14:40:27",
+      "ownerId": 2614518,
+      "ownerName": "虾饺o",
+      "ownerAvatar": "/assets/6fad7ab43d6e2c0d.webp",
+      "useScenario": "适合制作古典武侠角色图、场景图、电影首帧、5 秒图生视频、15 秒氛围段、30/60/75/90 秒完整短片、武侠分镜、逐镜头视频提示词、剪辑音效方案和返修诊断。适用于雪夜客栈、竹林对峙、寺庙听风、江湖暗号、侠客独行、门外脚步、雨夜追杀等克制但有张力的武侠影像。",
+      "inputType": "用户可以输入一句武侠创意、完整剧情、角色关系、场景地点、时长比例、是否打斗、已有角色/场景/道具资产或参考图。Skill 会先提",
+      "outputContent": "输出需求理解、创作脊柱、角色/场景/道具/状态资产规划、首帧与尾帧设计、图片生成提示词、视频节拍表、分镜表、逐镜头视频提示词、运镜与切镜规则、声音设计、剪辑方案、审核清单和返修建议。",
+      "sourceType": 2,
+      "nickname": "虾饺o",
+      "avatar": "/assets/6fad7ab43d6e2c0d.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/9dbbe63afee8abb004a3266f39c0c6882d522c7a.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/cfe7ae8d1950d8f4a308ab89484edfb558009d34.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/8b6fc1748847e91d0b7b51a1445e9127a295da3b.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "5b7e6dc66a0a496d92b166a29125546c": {
+    "skill": {
+      "templateUuid": "5b7e6dc66a0a496d92b166a29125546c",
+      "skillUuid": "768ae5a58d354828bc0920bfabcfd9b4",
+      "skillKey": "conceptual-character-creator-e1a8d149cb6c445b91a5f4926f0a0483",
+      "name": "概念角色SSS级技能展示",
+      "version": "1.0.1",
+      "description": "输入一个角色想法，自动生成原创概念角色、角色板和15秒视频",
+      "resultType": 3,
+      "coverUrl": "/assets/94b12312deb432ed.webp",
+      "snapshotId": 25400,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"/assets/94b12312deb432ed.webp\",\"description\":\"输入一个角色想法，自动生成原创概念角色、角色板和15秒视频\",\"evalResult\":\"\",\"inputType\":\"输入角色原型、外观气质、武器、能力元素、世界观和视频比例。\\n例如：机械修女，黑金神权世界，巨型圣枪，雷电审判，生成15秒SSS大\",\"name\":\"概念角色SSS级技能展示\",\"outputContent\":\"原创角色设定：角色身份、外观记忆点、服装、武器、能力元素、世界观气质。\\n角色概念图提示词：适合 MJ / 图像模型生成高辨识度角色。\\n角色板提示词：白底转视图、角色肖像、武器细节、服装结构。\\nSSS大招设计：技能名称、释放逻辑、视觉奇观、伤害表现。\\n15秒技能演示视频提示词：包含动作、镜头、特效、节奏、同期声。\",\"productionCaseUrls\":[\"/assets/eba31111793ee6ca.mp4\",\"/assets/ecf241be24350321.mp4\",\"https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/458e8bbbecb11b635949bebb55839461388f30ee.mp4\",\"https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/b1786868708af56b8103b75bb90c6ef3e8fee528.mp4\"],\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"conceptual-character-creator-e1a8d149cb6c445b91a5f4926f0a0483\",\"skillUuid\":\"768ae5a58d354828bc0920bfabcfd9b4\",\"sourceType\":1,\"useScenario\":\"生成原创角色、Boss设定、英雄大招、游戏技能、AI短片角色、角色板、概念图、技能特效视频和15秒SSS终极技能演示提示词。\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 8/10，命中 2 条阻断级问题",
+      "tags": [
+        {
+          "id": 4003,
+          "code": "",
+          "tagLabel": "动漫游戏",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4003/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1183,
+      "usePv": 1619,
+      "useUv": 1080,
+      "publishAt": "2026-07-08 23:22:33",
+      "ownerId": 3238672,
+      "ownerName": "Rick",
+      "ownerAvatar": "/assets/1a49902a29e8acd3.webp",
+      "useScenario": "生成原创角色、Boss设定、英雄大招、游戏技能、AI短片角色、角色板、概念图、技能特效视频和15秒SSS终极技能演示提示词。",
+      "inputType": "输入角色原型、外观气质、武器、能力元素、世界观和视频比例。\n例如：机械修女，黑金神权世界，巨型圣枪，雷电审判，生成15秒SSS大",
+      "outputContent": "原创角色设定：角色身份、外观记忆点、服装、武器、能力元素、世界观气质。\n角色概念图提示词：适合 MJ / 图像模型生成高辨识度角色。\n角色板提示词：白底转视图、角色肖像、武器细节、服装结构。\nSSS大招设计：技能名称、释放逻辑、视觉奇观、伤害表现。\n15秒技能演示视频提示词：包含动作、镜头、特效、节奏、同期声。",
+      "sourceType": 1,
+      "nickname": "Rick",
+      "avatar": "/assets/1a49902a29e8acd3.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/eba31111793ee6ca.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/ecf241be24350321.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/458e8bbbecb11b635949bebb55839461388f30ee.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/b1786868708af56b8103b75bb90c6ef3e8fee528.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "86556cc18ca0486a8490fd363a029dbc": {
+    "skill": {
+      "templateUuid": "86556cc18ca0486a8490fd363a029dbc",
+      "skillUuid": "9d4436fe4be04a4393f3881b21eaf41a",
+      "skillKey": "cinematic-image-transformer-9d8925c591a643bbad8ca8cfbb87922c",
+      "name": "电影质感画面专业生成",
+      "version": "1.0.2",
+      "description": "一句大白话就能生成超质感电影级多风格图片",
+      "resultType": 2,
+      "coverUrl": "/assets/7964fcd66aedeeb6.webp",
+      "snapshotId": 26087,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"/assets/7964fcd66aedeeb6.webp\",\"description\":\"一句大白话就能生成超质感电影级多风格图片\",\"evalResult\":\"\",\"inputType\":\"用户只需要输入想要的画面描述，例如“一个女人在雨夜拿着伞独自走在大街，氛围感强”。也可以指定方向，例如“做成末日感”不需要你会多\",\"name\":\"电影质感画面专业生成\",\"outputContent\":\"电影感静帧图像，默认16:9宽银幕比例。MJ模型输出高度风格化电影剧照，image2模型输出高质量无噪点无脏污的写实电影感图像。所有风格的电影感图片\",\"productionCaseUrls\":[\"/assets/9e84b8484afaaff1.webp\",\"/assets/0b5369ed622f443f.webp\",\"/assets/e83473b588b6901f.webp\",\"/assets/2e91826fff1ab325.webp\"],\"resultType\":2,\"showMarkdown\":false,\"skillKey\":\"cinematic-image-transformer-9d8925c591a643bbad8ca8cfbb87922c\",\"skillUuid\":\"9d4436fe4be04a4393f3881b21eaf41a\",\"sourceType\":1,\"useScenario\":\"适用于用户用大白话描述画面，不知道该用什么风格、镜头、光线或提示词时。Skill 会自动识别文字和画面情绪与题材，匹配合适的电影感风格方向，例如冷寂雨夜、悲凉胶片、末日孤城、霓虹都市、荒漠史诗等，而从帮助用户读取风格库和参数库生成图片。\",\"version\":\"1.0.2\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 3159,
+      "usePv": 8846,
+      "useUv": 5093,
+      "publishAt": "2026-07-11 15:13:14",
+      "ownerId": 363604,
+      "ownerName": "星曜AG",
+      "ownerAvatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "useScenario": "适用于用户用大白话描述画面，不知道该用什么风格、镜头、光线或提示词时。Skill 会自动识别文字和画面情绪与题材，匹配合适的电影感风格方向，例如冷寂雨夜、悲凉胶片、末日孤城、霓虹都市、荒漠史诗等，而从帮助用户读取风格库和参数库生成图片。",
+      "inputType": "用户只需要输入想要的画面描述，例如“一个女人在雨夜拿着伞独自走在大街，氛围感强”。也可以指定方向，例如“做成末日感”不需要你会多",
+      "outputContent": "电影感静帧图像，默认16:9宽银幕比例。MJ模型输出高度风格化电影剧照，image2模型输出高质量无噪点无脏污的写实电影感图像。所有风格的电影感图片",
+      "sourceType": 1,
+      "nickname": "星曜AG",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "/assets/9e84b8484afaaff1.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/0b5369ed622f443f.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/e83473b588b6901f.webp",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/2e91826fff1ab325.webp",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "de24190352784d4798302e9e915bf6f0": {
+    "skill": {
+      "templateUuid": "de24190352784d4798302e9e915bf6f0",
+      "skillUuid": "9fff7c0690db45cf9776d860d9259608",
+      "skillKey": "product-short-drama-generator-020b92eb952140af9a99e594358a115b",
+      "name": "带货爆款短剧",
+      "version": "1.0.0",
+      "description": "把一张商品图转化为一条 3 分镜、约 15 秒的带货短剧成片",
+      "resultType": 3,
+      "coverUrl": "/assets/848dd00cf19a04ad.webp",
+      "snapshotId": 25984,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"/assets/848dd00cf19a04ad.webp\",\"description\":\"把一张商品图转化为一条 3 分镜、约 15 秒的带货短剧成片\",\"evalResult\":\"\",\"inputType\":\"提供商品图和商品信息，剧集内容和方向\",\"name\":\"带货爆款短剧\",\"outputContent\":\"约 15 秒的带货短剧成片（剧本 → 资产 → 分镜图 → 分镜视频 → 剪辑成片），全自动一次跑完，把商品与强反转的短剧情节结合在一起\",\"productionCaseUrls\":[\"https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/760aff0235064cb3b6205c7f60106b40ac6a429c.mp4\"],\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"product-short-drama-generator-020b92eb952140af9a99e594358a115b\",\"skillUuid\":\"9fff7c0690db45cf9776d860d9259608\",\"sourceType\":1,\"useScenario\":\"适合电商商家或者带货博主，用于生产带货视频。可以把商品跟短剧剧情自然的融合起来，在短剧天然吸引人的情节里，自然而然地种草给观众。\",\"version\":\"1.0.0\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10，命中 3 条阻断级问题",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 883,
+      "usePv": 2287,
+      "useUv": 1838,
+      "publishAt": "2026-07-10 19:58:45",
+      "ownerId": 7940353,
+      "ownerName": "188****7392",
+      "ownerAvatar": "/assets/8385143ae482ebeb.webp",
+      "useScenario": "适合电商商家或者带货博主，用于生产带货视频。可以把商品跟短剧剧情自然的融合起来，在短剧天然吸引人的情节里，自然而然地种草给观众。",
+      "inputType": "提供商品图和商品信息，剧集内容和方向",
+      "outputContent": "约 15 秒的带货短剧成片（剧本 → 资产 → 分镜图 → 分镜视频 → 剪辑成片），全自动一次跑完，把商品与强反转的短剧情节结合在一起",
+      "sourceType": 1,
+      "nickname": "188****7392",
+      "avatar": "/assets/8385143ae482ebeb.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/760aff0235064cb3b6205c7f60106b40ac6a429c.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "dd04bed176c74d198c13a81db200403a": {
+    "skill": {
+      "templateUuid": "dd04bed176c74d198c13a81db200403a",
+      "skillUuid": "eb174512e0b44d519639bdf5a2c0c018",
+      "skillKey": "high-impact-car-tvc-9d8925c591a643bbad8ca8cfbb87922c",
+      "name": "一键爽感轰炸流汽车TVC",
+      "version": "1.0.1",
+      "description": "上传图片或简单文字叙述即可一键打造超爽感轰炸流TVC广告",
+      "resultType": 3,
+      "coverUrl": "/assets/b6b52d4717572153.webp",
+      "snapshotId": 25397,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"/assets/b6b52d4717572153.webp\",\"description\":\"上传图片或简单文字叙述即可一键打造超爽感轰炸流TVC广告\",\"evalResult\":\"\",\"inputType\":\"可输入最简单的一条指令如：我想生成一条超跑TVC，Skill会根据互动和你确定风格/产品/画面/风格/特点/时长以及分辨率等信息\",\"name\":\"一键爽感轰炸流汽车TVC\",\"outputContent\":\"15-30秒高级快切爽感轰炸流汽车TVC广告，只需要一句话或者一张图片即可生成，哪怕剪辑小白也能生成超有质感的超真实感大片\",\"productionCaseUrls\":[\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/9eeee05a64c453839a90bcaa90e3b8ebe51f6c1a.mp4\",\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/e5964fa18bf2adc52851c2f4e54c40b9defd6e85.mp4\",\"https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/ca801672619ceba424405bff9a41f98c69cb028d.mp4\"],\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"high-impact-car-tvc-9d8925c591a643bbad8ca8cfbb87922c\",\"skillUuid\":\"eb174512e0b44d519639bdf5a2c0c018\",\"sourceType\":1,\"useScenario\":\"适用于汽车广告、高端消费品TVC、信息流广告等场景。\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10，命中 2 条阻断级问题",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 844,
+      "usePv": 3313,
+      "useUv": 2712,
+      "publishAt": "2026-07-08 23:20:46",
+      "ownerId": 363604,
+      "ownerName": "星曜AG",
+      "ownerAvatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "useScenario": "适用于汽车广告、高端消费品TVC、信息流广告等场景。",
+      "inputType": "可输入最简单的一条指令如：我想生成一条超跑TVC，Skill会根据互动和你确定风格/产品/画面/风格/特点/时长以及分辨率等信息",
+      "outputContent": "15-30秒高级快切爽感轰炸流汽车TVC广告，只需要一句话或者一张图片即可生成，哪怕剪辑小白也能生成超有质感的超真实感大片",
+      "sourceType": 1,
+      "nickname": "星曜AG",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLNicLQxFRMSUt8ECGKK14s1LqNHzCNV4PftlRpia1tibztwUhHpPFmYxuqwRfpsbhUvgPcLW8ZZ1AQg/132",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/9eeee05a64c453839a90bcaa90e3b8ebe51f6c1a.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/e5964fa18bf2adc52851c2f4e54c40b9defd6e85.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/9d8925c591a643bbad8ca8cfbb87922c/ca801672619ceba424405bff9a41f98c69cb028d.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "8a9e8bac7b0146f3a770749838f94495": {
+    "skill": {
+      "templateUuid": "8a9e8bac7b0146f3a770749838f94495",
+      "skillUuid": "92c0da428f484fcf8d0196d8652fe865",
+      "skillKey": "viral-video-replicator-3fdf06a4c10a4f96b98f779e197578c8",
+      "name": "爆款拉片复刻",
+      "version": "1.0.5",
+      "description": "AI拆解爆款视频，一键复刻同款",
+      "resultType": 3,
+      "coverUrl": "/assets/50d3f01940414c66.webp",
+      "snapshotId": 25688,
+      "snapshotData": "{\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=6mhEdMgP4x\",\"coverUrl\":\"/assets/50d3f01940414c66.webp\",\"description\":\"AI拆解爆款视频，一键复刻同款\",\"evalResult\":\"\",\"inputType\":\"导入爆款视频和替换的内容\",\"name\":\"爆款拉片复刻\",\"outputContent\":\"同款视频\",\"productionCaseUrls\":[\"https://libtv-res.liblib.art/upload-images/3fdf06a4c10a4f96b98f779e197578c8/2e2f6a50d105edbba2891cbb526905809be5a020.mp4\",\"/assets/c47d5d7ac7731039.mp4\",\"/assets/bb8ada5b21d0e928.mp4\"],\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"viral-video-replicator-3fdf06a4c10a4f96b98f779e197578c8\",\"skillUuid\":\"92c0da428f484fcf8d0196d8652fe865\",\"sourceType\":1,\"useScenario\":\"带货短视频、创意特效视频\",\"version\":\"1.0.5\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 5/10",
+      "tags": [
+        {
+          "id": 4006,
+          "code": "",
+          "tagLabel": "通用技能",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4006/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 2507,
+      "usePv": 46272,
+      "useUv": 26042,
+      "publishAt": "2026-07-09 20:23:52",
+      "ownerId": 5925405,
+      "ownerName": "江户川阿伟",
+      "ownerAvatar": "/assets/650b1932be28b5fb.webp",
+      "useScenario": "带货短视频、创意特效视频",
+      "inputType": "导入爆款视频和替换的内容",
+      "outputContent": "同款视频",
+      "sourceType": 1,
+      "nickname": "江户川阿伟",
+      "avatar": "/assets/650b1932be28b5fb.webp",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/3fdf06a4c10a4f96b98f779e197578c8/2e2f6a50d105edbba2891cbb526905809be5a020.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=6mhEdMgP4x",
+          "canvasCasePower": 297
+        },
+        {
+          "productionCaseUrl": "/assets/c47d5d7ac7731039.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "/assets/bb8ada5b21d0e928.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  }
+}

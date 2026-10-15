@@ -1,0 +1,196 @@
+.agent-rich-input {
+  position: relative;
+  min-width: 0;
+}
+.agent-rich-surface {
+  min-height: 64px;
+  max-height: 250px;
+  overflow-y: auto;
+  outline: none;
+  color: #f7f7f7;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding-bottom: 8px;
+}
+.agent-rich-surface p {
+  margin: 0;
+}
+.agent-rich-surface p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #ffffff55;
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.agent-rich-surface[contenteditable='false'] {
+  opacity: 0.6;
+}
+.agent-inline-reference {
+  display: inline-flex !important;
+  vertical-align: middle;
+  align-items: center;
+  gap: 4px;
+  max-width: min(260px, 100%);
+  height: 24px;
+  padding: 1px 5px;
+  margin: 0 2px 2px;
+  border-radius: 6px;
+  background: #ffffff14;
+  border: 1px solid #ffffff18;
+  color: #f7f7f7;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.agent-inline-reference.is-selected {
+  border-color: #aab4ff;
+  background: #6974cb35;
+}
+.agent-inline-reference > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.agent-inline-reference img {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+.agent-inline-reference > button {
+  padding: 0;
+  flex: none;
+  width: 16px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+.agent-inline-reference > button:hover {
+  opacity: 1;
+}
+.agent-inline-reference small {
+  font-size: 10px;
+  color: #ffffff70;
+}
+.agent-rich-suggestions {
+  position: fixed;
+  z-index: 7000;
+  max-height: 320px;
+  overflow: auto;
+  padding: 10px 8px;
+  background: #292929;
+  border: 1px solid #ffffff20;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px #0006;
+  color: #f7f7f7;
+}
+.agent-rich-suggestions > strong {
+  display: block;
+  font-size: 14px;
+  padding: 0 8px 7px;
+}
+.agent-rich-suggestions > p {
+  margin: 8px;
+  color: #ffffff60;
+  font-size: 12px;
+}
+.agent-rich-suggestions > button {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.agent-rich-suggestions > button[aria-selected='true'],
+.agent-rich-suggestions > button:hover {
+  background: #ffffff10;
+}
+.agent-rich-suggestions small {
+  display: block;
+  color: #ffffff60;
+  font-size: 10px;
+  margin-top: 3px;
+  overflow-wrap: anywhere;
+}
+.agent-rich-suggestions.is-grouped {
+  z-index: 10050;
+  padding: 0 4px 4px;
+  background: #171717;
+  border-color: #ffffff1f;
+}
+.agent-rich-suggestions.is-grouped > * + * {
+  margin-top: 4px;
+}
+.agent-rich-suggestions.is-grouped > button {
+  height: 32px;
+  gap: 8px;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1;
+}
+.agent-rich-suggestions.is-grouped > button:hover {
+  background: #ffffff1a;
+}
+.agent-rich-suggestions.is-grouped > button[aria-selected='true'] {
+  background: #ffffff26;
+}
+.agent-rich-suggestions.is-grouped > button > span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-rich-suggestions.is-grouped > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.agent-rich-suggestions.is-grouped > button:disabled:hover {
+  background: transparent;
+}
+.agent-mention-header {
+  color: #ffffff73;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 8px 8px 4px;
+}
+.agent-mention-empty {
+  color: #ffffff73;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+}
+.agent-mention-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  border-radius: 3px;
+  object-fit: cover;
+}
+.agent-rich-suggestions .agent-mention-vip {
+  margin: 0;
+  color: #ffc65d;
+  flex: none;
+}
+.agent-reference-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  padding: 20px;
+}
+.agent-reference-preview img,
+.agent-reference-preview video {
+  max-width: 100%;
+  max-height: 70dvh;
+  object-fit: contain;
+}
+.agent-reference-preview audio {
+  width: min(480px, 100%);
+}

@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "banners": [
+      {
+        "url": "",
+        "pic": "",
+        "title": "",
+        "startTime": "2026-10-09T11:00:00.000+00:00",
+        "endTime": "2026-10-12T15:59:59.000+00:00",
+        "displayOrder": 1,
+        "type": 40,
+        "extendInfo": "{\n  \"id\": \"postholiday-20261009-36\",\n  \"showDuration\": \"daily\",\n  \"showCountdown\": true,\n  \"countdownEndTime\": [\n    \"2026-10-13T00:00:00+08:00\"\n  ],\n  \"text\": \"<span style='font-weight:600;'>节后回归特惠｜年会员最高立减300元，</span>Seedance 2.5 720P 生成低至 0.35元/秒\",\n  \"btn\": \"限时抢购\",\n  \"link\": \"https://www.liblib.art/?paywall=personal\",\n  \"action\": {\n    \"type\": \"modal-popup\",\n    \"modalParams\": {\n      \"id\": \"paywall\"\n    }\n  },\n  \"bg\": [\n    \"#001328\",\n    \"#02c6c4\"\n  ],\n  \"bgAnimation\": \"aurora\",\n  \"bgAnimationDuration\": 20,\n  \"color\": \"#FFFFFF\",\n  \"textStyle\": {\n    \"color\": \"#FFFFFF\",\n    \"fontSize\": \"15px\",\n    \"fontWeight\": \"500\",\n    \"lineHeight\": \"22px\"\n  },\n  \"btStyle\": {\n    \"background\": \"#FFFFFF\",\n    \"border\": \"none\",\n    \"borderRadius\": \"8px\",\n    \"color\": \"#000\",\n    \"fontSize\": \"14px\",\n    \"fontWeight\": \"500\",\n    \"height\": \"32px\",\n    \"lineHeight\": \"18px\",\n    \"padding\": \"7px 10px\"\n  },\n  \"countdownStyle\": {\n    \"backgroundColor\": \"#FFF\",\n    \"color\": \"#04202F\",\n    \"borderRadius\": \"8px\",\n    \"fontSize\": \"15px\",\n    \"fontWeight\": \"600\"\n  },\n  \"closeStyle\": {\n    \"iconSize\": \"18px\",\n    \"opacity\": 1\n  }\n}"
+      },
+      {
+        "url": "",
+        "pic": "",
+        "title": "",
+        "startTime": "2026-09-29T16:00:00.000+00:00",
+        "endTime": "2099-12-31T15:59:59.000+00:00",
+        "displayOrder": 2,
+        "type": 40,
+        "extendInfo": "{\n  \"id\": \"libtv-evergreen-20260930\",\n  \"showDuration\": \"daily\",\n  \"showCountdown\": false,\n  \"countdownEndTime\": [\n    \"2026-09-29T23:59:59+08:00\"\n  ],\n  \"text\": \"年会员低至 45 折，创作更划算，Seedance 2.0 720P 生成低至 0.46元/秒\",\n  \"btn\": \"限时抢购\",\n  \"link\": \"https://www.liblib.art/?paywall=personal\",\n  \"action\": {\n    \"type\": \"modal-popup\",\n    \"modalParams\": {\n      \"id\": \"paywall\"\n    }\n  },\n  \"bg\": [\n    \"linear-gradient(90deg, #18C5EC 0%, #18C5EC 100%)\"\n  ],\n  \"bgAnimation\": \"ribbon\",\n  \"color\": \"#FFFFFF\",\n  \"textStyle\": {\n    \"color\": \"#FFFFFF\",\n    \"fontSize\": \"15px\",\n    \"fontWeight\": \"500\",\n    \"lineHeight\": \"22px\"\n  },\n  \"btStyle\": {\n    \"background\": \"#FFFFFF\",\n    \"border\": \"none\",\n    \"borderRadius\": \"8px\",\n    \"color\": \"#000\",\n    \"fontSize\": \"14px\",\n    \"fontWeight\": \"500\",\n    \"height\": \"32px\",\n    \"lineHeight\": \"18px\",\n    \"padding\": \"7px 10px\"\n  },\n  \"countdownStyle\": {\n    \"backgroundColor\": \"#E9F5F9\",\n    \"color\": \"#04202F\",\n    \"borderRadius\": \"8px\",\n    \"fontSize\": \"15px\",\n    \"fontWeight\": \"600\"\n  },\n  \"closeStyle\": {\n    \"iconSize\": \"18px\",\n    \"opacity\": 1\n  }\n}"
+      }
+    ]
+  }
+}

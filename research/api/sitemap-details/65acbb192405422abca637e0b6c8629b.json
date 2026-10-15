@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "65acbb192405422abca637e0b6c8629b",
+      "projectUuid": "1efbef153a434cab9733425ca5dc3a42",
+      "name": "潘神的项圈",
+      "description": "从子宫开始，人就被装进了隔间。在这个没有天然动植物的世界里，城市是一座巨大的\"养殖场\"，透明，干净，没有门锁。\n学校、公司、养老院——每一处都敞亮得让人无处可逃，每一处都恰好够一个人待完一个阶段。人长期困于单一环境，反复的日常慢慢催生麻木。\n我们机械地跟随环境前行，被外界标准推着走，久而久之便失去了感知与思考的能力，再也说不清自己真正想要什么。\n我们对此一无所知——殊不知生来就在参与一场无声的筛选游戏，而规则，只掌握在极少数\"系统内部\"的人手中。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/640f59f88ecc41ceb9b3d4685a8b6f92/f5ff21fd1757ca3f0284265fb72411bb60b336a3.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/640f59f88ecc41ceb9b3d4685a8b6f92/d87e454cb96c67afd7656a67a9bf2a423296bd5d.mp4",
+      "snapshotId": 24343,
+      "auditStatus": 1,
+      "ownerId": 8739082,
+      "ownerUuid": "640f59f88ecc41ceb9b3d4685a8b6f92",
+      "avatar": "https://liblibai-online.liblib.cloud/web/1656e2f1b3c74f1ba823b610f1b2cbdf/0c3eb5e2-1dc0-405c-a823-07b2570237f8.jpg",
+      "nickname": "淼淼要喝水",
+      "isLike": false,
+      "likeCount": 13,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.56 复制打开抖音，看看【淼淼不喝水的作品】《潘神的项圈》 I AI短片| 你们有没有想过？你... https://v.douyin.com/5Zl5xjo96dY/ o@Q.kC dAG:/ :7pm 06/18",
+      "createAt": "2026年07月05日 12:10",
+      "updateAt": "2026年07月08日 23:11",
+      "publishAt": "2026年07月05日 12:10",
+      "playCount": 9,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 523,
+        "edges": 803
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1b77a210-6092-9f17-8609-4ccdc2cd3bef"
+}

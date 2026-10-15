@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "6bec1e038fdd471184b1e6b21cbe22cd",
+      "projectUuid": "093135f6712f4aafb03c26223fa7535d",
+      "name": "《草船借箭》",
+      "description": "愿我们面对难题时，\n不只会用力，\n也能学会看局、等时机、借势而行！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/33ef00f9bdab4866aee4e9473fbde102/6a698d08ed8ec9b30fae7ea4af2d0a66ba697ef5.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/33ef00f9bdab4866aee4e9473fbde102/2bf38305e3c079728866a18eac25d0718b5e9013.mp4",
+      "snapshotId": 24749,
+      "auditStatus": 1,
+      "ownerId": 8937994,
+      "ownerUuid": "33ef00f9bdab4866aee4e9473fbde102",
+      "avatar": "https://liblibai-online.liblib.cloud/img/33ef00f9bdab4866aee4e9473fbde102/8bc813fb434a5ef7d5fc5ba91195008fd53bd3bc1d3967d2dc34cc57f01321e6.png",
+      "nickname": "戴雯静",
+      "isLike": false,
+      "likeCount": 15,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.liblib.tv/canvas/share?spaceId=2012788&projectId=8aa52264dbdb4601aa9c7fe5b1c0046b",
+      "createAt": "2026年07月06日 22:42",
+      "updateAt": "2026年07月06日 22:49",
+      "publishAt": "2026年07月06日 22:42",
+      "playCount": 15,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 123,
+        "edges": 182
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "cc3fcee8-62ae-9018-bd47-351805c928b0"
+}

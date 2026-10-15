@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f53a94861cc9442f9e312ac81e709245",
+      "projectUuid": "c5a7df7aca2c4db496c43fccbcfd5935",
+      "name": "《山海有灵》预告",
+      "description": "江湖~江湖~侠之大者，为国为民。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/04fd4e789a45490798df60155d161763/1172ec28c8a9464aabf6fa1d8ea14167424155a5.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/04fd4e789a45490798df60155d161763/76f168e92940f8ddef315acfa8352613a3b90963.mp4",
+      "snapshotId": 22399,
+      "auditStatus": 1,
+      "ownerId": 6397647,
+      "ownerUuid": "04fd4e789a45490798df60155d161763",
+      "avatar": "https://liblibai-online.liblib.cloud/img/04fd4e789a45490798df60155d161763/a63eb9a9720f3ad2e77e20cb1449e3eaf136b18de4d91e8253d4d100cfe1c0a1.png",
+      "nickname": "横空出世AI工作室",
+      "isLike": false,
+      "likeCount": 47,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "# AI漫剧精卫计划  https://v.douyin.com/I8DJm2Yu3tA/",
+      "createAt": "2026年06月28日 00:52",
+      "updateAt": "2026年06月28日 01:03",
+      "publishAt": "2026年06月28日 00:52",
+      "playCount": 36,
+      "viewCreationProcessCount": 17,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 136,
+        "edges": 145
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f2212506-59ac-949c-ae1a-3ff317123dfa"
+}

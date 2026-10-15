@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "9a952f05e4d9421592512bf86ac32e97",
+      "projectUuid": "28e1e8df93454ef2bc1fdd8865ed9332",
+      "name": "原创漫剧《致命追击》第一季第一集",
+      "description": "原创科幻漫剧《致命追击》第一集：作废，预告片可知全季剧情，长期连载：2147 年，AI 技术大爆发，伪造泛滥到真假再也无法分辨，文明濒临信任崩塌。为终结混乱，誊本市加入\"联邦协议\"，签署一号文件，发起\"大断联\"——切断全部网络与智能，整座城市倒退回非智能时代。从此，纸质档案成为唯一被法律承认的真实，警察的签字与档案局的钢印是唯一的\"真相裁决权\"。市民必须随身携带\"身份折\"，每月到档案局盖章续期；一旦档案被销毁，人就沦为\"白身\"——活着，却成了这座城市档案上不存在的幽灵，无法买卖、上学、工作。这是一座用纸与火漆运转、把\"真实\"变成稀缺商品的城市。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e475dfaf6e0a472f99fb3c4d65f06b14/0ba452c31c576fb0187c89f43996eab3e05712bc.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e475dfaf6e0a472f99fb3c4d65f06b14/8e6ce8a9500e85731d346252b6d044ad689beca7.mp4",
+      "snapshotId": 23251,
+      "auditStatus": 1,
+      "ownerId": 5734303,
+      "ownerUuid": "e475dfaf6e0a472f99fb3c4d65f06b14",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e475dfaf6e0a472f99fb3c4d65f06b14/6c6a270db46543946e800e33fc84db783b9edcc436fce8fa01d3fd7c1e993aae.png",
+      "nickname": "AME",
+      "isLike": false,
+      "likeCount": 56,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1801,
+          "code": "2d",
+          "tagLabel": "2D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1801/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/qSTprjLYmSI/ kcA:/ 11/26 :5pm V@L.Jv   http://xhslink.com/o/AOp15Fw0pAH",
+      "createAt": "2026年06月30日 22:04",
+      "updateAt": "2026年06月30日 22:39",
+      "publishAt": "2026年06月30日 22:04",
+      "playCount": 19,
+      "viewCreationProcessCount": 10,
+      "copyCanvasCount": 6,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 462,
+        "edges": 670
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1f6ca230-b8c8-9331-9e99-da1d5a95c1f5"
+}

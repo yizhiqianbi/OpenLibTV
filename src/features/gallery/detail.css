@@ -1,0 +1,148 @@
+.detail-page {
+  padding: 0 20px 40px;
+}
+.detail-page > header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+}
+.detail-player {
+  aspect-ratio: 16/9;
+  background: #080808;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.detail-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.detail-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 4px;
+  gap: 12px;
+}
+.detail-title-row h1 {
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+}
+.detail-title-row .pill-button {
+  font-size: 13px;
+  padding: 7px 14px;
+}
+.detail-title-row .round-button {
+  background: #232323;
+}
+.liked {
+  color: #fc668d;
+}
+.detail-page .detail-author {
+  margin: 0 4px 16px;
+}
+.detail-author .avatar {
+  width: 42px;
+  height: 42px;
+}
+.detail-author .text-button {
+  text-align: left;
+  font-size: 14px;
+}
+.detail-author small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.author-badge {
+  width: 15px;
+  height: 15px;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+.follow-button {
+  border-radius: 24px;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.work-description {
+  background: #232323;
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+.work-description > span {
+  font-size: 13px;
+}
+.work-description p {
+  line-height: 1.8;
+  white-space: pre-line;
+  margin: 4px 0;
+}
+.work-description .clamped {
+  max-height: 44px;
+  overflow: hidden;
+}
+.work-description > button {
+  margin-bottom: 4px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #aaa;
+}
+.work-description > small {
+  display: block;
+  color: #686868;
+  font-size: 11px;
+}
+.recommendation-rail h2 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.recommendation-rail > button {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 4px;
+  border-radius: 12px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.recommendation-rail > button:hover,
+.recommendation-rail > button.active {
+  background: #252525;
+}
+.recommendation-rail > button > img {
+  width: 106px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.recommendation-rail > button > div {
+  min-width: 0;
+  flex: 1;
+}
+.recommendation-rail strong {
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.recommendation-rail small {
+  display: block;
+  color: #5b5b5b;
+  font-size: 11px;
+  margin-top: 2px;
+}

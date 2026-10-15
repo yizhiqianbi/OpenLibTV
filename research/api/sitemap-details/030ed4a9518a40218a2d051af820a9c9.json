@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "030ed4a9518a40218a2d051af820a9c9",
+      "projectUuid": "5052e1f8b1444e6bb1fb1de070d83d22",
+      "name": "我是地狱11",
+      "description": "个人原创系列短片，犯罪悬疑题材，喜欢的朋友可以去抖音，B站搜索剧名（我是地狱）。然后制作画布公开这一集给大家，希望对大家有所帮助。共同进步。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a65d740e1a0e43e4b04d41ac592c89bd/9be52375fc1ce48d69b4b57d059a6b81f2989934.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a65d740e1a0e43e4b04d41ac592c89bd/5602a6bc3c21273d0fab810bf3ae34094db15c96.mp4",
+      "snapshotId": 24638,
+      "auditStatus": 1,
+      "ownerId": 8543546,
+      "ownerUuid": "a65d740e1a0e43e4b04d41ac592c89bd",
+      "avatar": "https://liblibai-online.liblib.cloud/img/a65d740e1a0e43e4b04d41ac592c89bd/2c521f0205b4491a4a51433d77e84b5a804062dcbb276ec629f793a1a6edfc1f.png",
+      "nickname": "大坏蛋",
+      "isLike": false,
+      "likeCount": 48,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7659325153822712027",
+      "createAt": "2026年07月06日 16:20",
+      "updateAt": "2026年07月13日 23:31",
+      "publishAt": "2026年07月06日 16:20",
+      "playCount": 11,
+      "viewCreationProcessCount": 5,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 51,
+        "edges": 68
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "7292c0ed-17c5-95fb-a2af-b198b817c0b0"
+}

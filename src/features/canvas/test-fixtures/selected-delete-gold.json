@@ -1,0 +1,3246 @@
+{
+  "G0": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedImageGroupId": "story-group",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptNodeId": "script",
+          "sourceScriptVersion": "v1",
+          "storyboardTitle": "完整保留标题",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "ordinary-a",
+        "source": "image-a",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EA"
+          }
+        }
+      },
+      {
+        "id": "ordinary-b",
+        "source": "image-b",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EB"
+          }
+        }
+      },
+      {
+        "id": "association-a",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SA"
+          }
+        }
+      },
+      {
+        "id": "association-b",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SB"
+          }
+        }
+      },
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "G1": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedImageGroupId": "story-group",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptNodeId": "script",
+          "sourceScriptVersion": "v1",
+          "storyboardTitle": "完整保留标题",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "association-a",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SA"
+          }
+        }
+      },
+      {
+        "id": "association-b",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SB"
+          }
+        }
+      },
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "G2": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptVersion": "v1",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "associationAccepted": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptVersion": "v1",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "ordinary-a",
+        "source": "image-a",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EA"
+          }
+        }
+      },
+      {
+        "id": "ordinary-b",
+        "source": "image-b",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EB"
+          }
+        }
+      },
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "imageDeletedWhileAssociationPending": {
+    "nodes": [
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedImageGroupId": "story-group",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptNodeId": "script",
+          "sourceScriptVersion": "v1",
+          "storyboardTitle": "完整保留标题",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "ordinary-b",
+        "source": "image-b",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EB"
+          }
+        }
+      },
+      {
+        "id": "association-a",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SA"
+          }
+        }
+      },
+      {
+        "id": "association-b",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SB"
+          }
+        }
+      },
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "scriptAccepted": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptVersion": "v1",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "oldGroupAccepted": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "openingAccepted": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptVersion": "v1",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "clipG0": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "script",
+        "type": "script",
+        "position": {
+          "x": 40,
+          "y": 900
+        },
+        "width": 800,
+        "height": 400,
+        "measured": {
+          "width": 800,
+          "height": 400
+        },
+        "data": {
+          "type": "script",
+          "name": "关联脚本",
+          "action": "script_generate",
+          "linkedImageGroupId": "story-group",
+          "linkedVideoGroupId": "unrelated-video-group",
+          "rows": [
+            {
+              "id": "row-1",
+              "hiddenUuid": "hidden-1",
+              "shotNumber": 10,
+              "durationSeconds": 5,
+              "plotDescription": "固定原剧情",
+              "imageGenerationPrompt": "固定图片提示词",
+              "videoMotionPrompt": "固定视频提示词",
+              "characters": [],
+              "scenes": [],
+              "props": []
+            }
+          ],
+          "assets": {
+            "characters": [],
+            "scenes": [],
+            "props": []
+          },
+          "views": [
+            {
+              "id": "default",
+              "type": "table",
+              "name": "脚本视图"
+            },
+            {
+              "id": "creative",
+              "type": "creative",
+              "name": "创意视图"
+            }
+          ],
+          "viewMode": "table",
+          "activeViewId": "default",
+          "params": {
+            "model": "aurora-3-prime",
+            "prompt": "固定脚本输入"
+          },
+          "retainedMetadata": {
+            "serial": "S"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptNodeId": "script",
+          "sourceScriptVersion": "v1",
+          "storyboardTitle": "完整保留标题",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      },
+      {
+        "id": "clip",
+        "type": "video-clip",
+        "position": {
+          "x": 1500,
+          "y": 900
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video-clip",
+          "name": "独立剪辑目标",
+          "timeline": {
+            "duration": 12,
+            "playhead": 3,
+            "videoTracks": [
+              {
+                "id": "clip-track",
+                "segments": [
+                  {
+                    "id": "clip-segment",
+                    "sourceNodeId": "opening",
+                    "start": 0,
+                    "duration": 12
+                  }
+                ]
+              }
+            ]
+          },
+          "retainedMetadata": {
+            "serial": "CLIP"
+          }
+        },
+        "measured": {
+          "width": 566,
+          "height": 350
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "ordinary-a",
+        "source": "image-a",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EA"
+          }
+        }
+      },
+      {
+        "id": "ordinary-b",
+        "source": "image-b",
+        "target": "ordinary-target",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EB"
+          }
+        }
+      },
+      {
+        "id": "association-a",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SA"
+          }
+        }
+      },
+      {
+        "id": "association-b",
+        "source": "script",
+        "target": "story-group",
+        "data": {
+          "retainedMetadata": {
+            "serial": "SB"
+          }
+        }
+      },
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      },
+      {
+        "id": "clip-edge",
+        "source": "opening",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EC"
+          }
+        }
+      }
+    ]
+  },
+  "scriptAcceptedClip": {
+    "nodes": [
+      {
+        "id": "image-a",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片甲",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "A"
+          }
+        }
+      },
+      {
+        "id": "image-b",
+        "type": "image",
+        "position": {
+          "x": 40,
+          "y": 440
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "普通图片乙",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "retainedMetadata": {
+            "serial": "B"
+          }
+        }
+      },
+      {
+        "id": "ordinary-target",
+        "type": "text",
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "普通连线目标",
+          "action": "text_resource",
+          "content": ["普通目标正文保留"],
+          "retainedMetadata": {
+            "serial": "T"
+          }
+        }
+      },
+      {
+        "id": "story-group",
+        "type": "group",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "width": 420,
+        "height": 300,
+        "data": {
+          "type": "group",
+          "name": "旧关联分镜图组",
+          "sourceScriptVersion": "v1",
+          "storyboardGroupType": "image",
+          "childNodeIds": ["shot"],
+          "storyboardSourceRowHiddenUuids": ["hidden-1"],
+          "retainedMetadata": {
+            "serial": "G"
+          }
+        }
+      },
+      {
+        "id": "shot",
+        "type": "image",
+        "parentId": "story-group",
+        "extent": "parent",
+        "position": {
+          "x": 20,
+          "y": 30
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "image",
+          "name": "固定分镜图",
+          "action": "image_resource",
+          "url": ["/assets/16921729b1e11174.webp"],
+          "scriptRowHiddenUuid": "hidden-1",
+          "retainedMetadata": {
+            "serial": "C"
+          }
+        }
+      },
+      {
+        "id": "opening",
+        "type": "video",
+        "position": {
+          "x": 1000,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "创意片头视频",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/opening.mp4"],
+          "openingUsed": true,
+          "retainedMetadata": {
+            "serial": "O"
+          }
+        }
+      },
+      {
+        "id": "protected",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 80
+        },
+        "width": 260,
+        "height": 160,
+        "deletable": false,
+        "data": {
+          "type": "text",
+          "name": "受保护节点",
+          "action": "text_resource",
+          "content": ["受保护节点原文"],
+          "retainedMetadata": {
+            "serial": "P"
+          }
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1500,
+          "y": 440
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "独立无关节点",
+          "action": "text_resource",
+          "content": ["完整保留无关内容"],
+          "retainedMetadata": {
+            "serial": "U"
+          }
+        }
+      },
+      {
+        "id": "clip",
+        "type": "video-clip",
+        "position": {
+          "x": 1500,
+          "y": 900
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video-clip",
+          "name": "独立剪辑目标",
+          "timeline": {
+            "duration": 12,
+            "playhead": 3,
+            "videoTracks": [
+              {
+                "id": "clip-track",
+                "segments": [
+                  {
+                    "id": "clip-segment",
+                    "sourceNodeId": "opening",
+                    "start": 0,
+                    "duration": 12
+                  }
+                ]
+              }
+            ]
+          },
+          "retainedMetadata": {
+            "serial": "CLIP"
+          }
+        },
+        "measured": {
+          "width": 350,
+          "height": 350
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "protected-edge",
+        "source": "image-b",
+        "target": "protected",
+        "deletable": false,
+        "data": {
+          "retainedMetadata": {
+            "serial": "EP"
+          }
+        }
+      }
+    ]
+  },
+  "unconfirmedClipBefore": {
+    "nodes": [
+      {
+        "id": "video-delete",
+        "type": "video",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "待断视频素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/delete.mp4"],
+          "retainedMetadata": {
+            "serial": "VD"
+          }
+        }
+      },
+      {
+        "id": "audio-delete",
+        "type": "audio",
+        "position": {
+          "x": 40,
+          "y": 400
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "待断音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/delete.mp3"],
+          "retainedMetadata": {
+            "serial": "AD"
+          }
+        }
+      },
+      {
+        "id": "video-keep",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留主轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/keep.mp4"],
+          "retainedMetadata": {
+            "serial": "VK"
+          }
+        }
+      },
+      {
+        "id": "video-overlay",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 400
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留叠加轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/overlay.mp4"],
+          "retainedMetadata": {
+            "serial": "VO"
+          }
+        }
+      },
+      {
+        "id": "audio-keep",
+        "type": "audio",
+        "position": {
+          "x": 450,
+          "y": 750
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "保留音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/keep.mp3"],
+          "retainedMetadata": {
+            "serial": "AK"
+          }
+        }
+      },
+      {
+        "id": "clip",
+        "type": "video-clip",
+        "position": {
+          "x": 1000,
+          "y": 150
+        },
+        "width": 500,
+        "height": 350,
+        "data": {
+          "type": "video-clip",
+          "name": "真实多源剪辑目标",
+          "action": "video_clip_resource",
+          "clipTimelineData": {
+            "videoSourceNodeIds": ["video-delete", "video-keep", "video-keep", "video-overlay"],
+            "audioSourceNodeIds": ["audio-delete", "audio-keep"],
+            "videoTrackCount": 2,
+            "totalDuration": 40,
+            "currentTime": 31,
+            "mutedTrackIds": ["deleted-video", "other-muted"],
+            "hiddenTrackIds": ["overlay"],
+            "aspectRatio": "16:9",
+            "scaleFactor": 2,
+            "retainedTimelineMetadata": {
+              "stamp": "timeline-fields-survive"
+            },
+            "clips": [
+              {
+                "id": "deleted-video",
+                "type": "video",
+                "sourceNodeId": "video-delete",
+                "startTime": 0,
+                "duration": 4,
+                "zIndex": 1,
+                "retainedClipMetadata": {
+                  "serial": "deleted-video"
+                }
+              },
+              {
+                "id": "main-a",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 12,
+                "duration": 5,
+                "zIndex": 1,
+                "transitionIn": "remove-first-main",
+                "retainedClipMetadata": {
+                  "serial": "main-a"
+                }
+              },
+              {
+                "id": "overlay",
+                "type": "video",
+                "sourceNodeId": "video-overlay",
+                "startTime": 20,
+                "duration": 2,
+                "zIndex": 0,
+                "transitionIn": "keep-overlay",
+                "retainedClipMetadata": {
+                  "serial": "overlay"
+                }
+              },
+              {
+                "id": "main-b",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 30,
+                "duration": 3,
+                "zIndex": 1,
+                "transitionIn": "keep-second-main",
+                "retainedClipMetadata": {
+                  "serial": "main-b"
+                }
+              },
+              {
+                "id": "deleted-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-delete",
+                "startTime": 2,
+                "duration": 9,
+                "zIndex": 2,
+                "audioTrack": 0,
+                "linkedVideoClipId": "deleted-video",
+                "retainedClipMetadata": {
+                  "serial": "deleted-audio"
+                }
+              },
+              {
+                "id": "linked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 11,
+                "duration": 2,
+                "zIndex": 2,
+                "audioTrack": 0,
+                "linkedVideoClipId": "main-a",
+                "retainedClipMetadata": {
+                  "serial": "linked-audio"
+                }
+              },
+              {
+                "id": "unlinked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 19,
+                "duration": 1,
+                "zIndex": 3,
+                "audioTrack": 1,
+                "linkedVideoClipId": "deleted-video",
+                "retainedClipMetadata": {
+                  "serial": "unlinked-audio"
+                }
+              }
+            ]
+          },
+          "retainedMetadata": {
+            "serial": "CLIP-TARGET"
+          }
+        },
+        "measured": {
+          "width": 566,
+          "height": 350
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1700,
+          "y": 150
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "剪辑无关节点",
+          "action": "text_resource",
+          "content": ["不能更改剪辑之外的数据"],
+          "retainedMetadata": {
+            "serial": "CLIP-OUTSIDE"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "remove-video-edge",
+        "source": "video-delete",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVD"
+          }
+        }
+      },
+      {
+        "id": "remove-audio-edge",
+        "source": "audio-delete",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EAD"
+          }
+        }
+      },
+      {
+        "id": "keep-video-edge",
+        "source": "video-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVK"
+          }
+        }
+      },
+      {
+        "id": "keep-overlay-edge",
+        "source": "video-overlay",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVO"
+          }
+        }
+      },
+      {
+        "id": "keep-audio-edge",
+        "source": "audio-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EAK"
+          }
+        }
+      }
+    ]
+  },
+  "unconfirmedClipAfter": {
+    "nodes": [
+      {
+        "id": "video-delete",
+        "type": "video",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "待断视频素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/delete.mp4"],
+          "retainedMetadata": {
+            "serial": "VD"
+          }
+        }
+      },
+      {
+        "id": "audio-delete",
+        "type": "audio",
+        "position": {
+          "x": 40,
+          "y": 400
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "待断音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/delete.mp3"],
+          "retainedMetadata": {
+            "serial": "AD"
+          }
+        }
+      },
+      {
+        "id": "video-keep",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留主轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/keep.mp4"],
+          "retainedMetadata": {
+            "serial": "VK"
+          }
+        }
+      },
+      {
+        "id": "video-overlay",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 400
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留叠加轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/overlay.mp4"],
+          "retainedMetadata": {
+            "serial": "VO"
+          }
+        }
+      },
+      {
+        "id": "audio-keep",
+        "type": "audio",
+        "position": {
+          "x": 450,
+          "y": 750
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "保留音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/keep.mp3"],
+          "retainedMetadata": {
+            "serial": "AK"
+          }
+        }
+      },
+      {
+        "id": "clip",
+        "type": "video-clip",
+        "position": {
+          "x": 1000,
+          "y": 150
+        },
+        "width": 500,
+        "height": 350,
+        "data": {
+          "type": "video-clip",
+          "name": "真实多源剪辑目标",
+          "action": "video_clip_resource",
+          "clipTimelineData": {
+            "videoSourceNodeIds": ["video-keep", "video-keep", "video-overlay"],
+            "audioSourceNodeIds": ["audio-keep"],
+            "videoTrackCount": 2,
+            "totalDuration": 22,
+            "currentTime": 22,
+            "mutedTrackIds": ["deleted-video", "other-muted"],
+            "hiddenTrackIds": ["overlay"],
+            "aspectRatio": "16:9",
+            "scaleFactor": 2,
+            "retainedTimelineMetadata": {
+              "stamp": "timeline-fields-survive"
+            },
+            "clips": [
+              {
+                "id": "main-a",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 0,
+                "duration": 5,
+                "zIndex": 1,
+                "retainedClipMetadata": {
+                  "serial": "main-a"
+                }
+              },
+              {
+                "id": "main-b",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 5,
+                "duration": 3,
+                "zIndex": 1,
+                "transitionIn": "keep-second-main",
+                "retainedClipMetadata": {
+                  "serial": "main-b"
+                }
+              },
+              {
+                "id": "overlay",
+                "type": "video",
+                "sourceNodeId": "video-overlay",
+                "startTime": 20,
+                "duration": 2,
+                "zIndex": 0,
+                "transitionIn": "keep-overlay",
+                "retainedClipMetadata": {
+                  "serial": "overlay"
+                }
+              },
+              {
+                "id": "linked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 0,
+                "duration": 2,
+                "zIndex": 2,
+                "linkedVideoClipId": "main-a",
+                "retainedClipMetadata": {
+                  "serial": "linked-audio"
+                }
+              },
+              {
+                "id": "unlinked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 19,
+                "duration": 1,
+                "zIndex": 3,
+                "retainedClipMetadata": {
+                  "serial": "unlinked-audio"
+                }
+              }
+            ]
+          },
+          "retainedMetadata": {
+            "serial": "CLIP-TARGET"
+          }
+        },
+        "measured": {
+          "width": 566,
+          "height": 350
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1700,
+          "y": 150
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "剪辑无关节点",
+          "action": "text_resource",
+          "content": ["不能更改剪辑之外的数据"],
+          "retainedMetadata": {
+            "serial": "CLIP-OUTSIDE"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "keep-video-edge",
+        "source": "video-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVK"
+          }
+        }
+      },
+      {
+        "id": "keep-overlay-edge",
+        "source": "video-overlay",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVO"
+          }
+        }
+      },
+      {
+        "id": "keep-audio-edge",
+        "source": "audio-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EAK"
+          }
+        }
+      }
+    ]
+  },
+  "busyClipBefore": {
+    "nodes": [
+      {
+        "id": "video-delete",
+        "type": "video",
+        "position": {
+          "x": 40,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "待断视频素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/delete.mp4"],
+          "retainedMetadata": {
+            "serial": "VD"
+          }
+        }
+      },
+      {
+        "id": "audio-delete",
+        "type": "audio",
+        "position": {
+          "x": 40,
+          "y": 400
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "待断音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/delete.mp3"],
+          "retainedMetadata": {
+            "serial": "AD"
+          }
+        }
+      },
+      {
+        "id": "video-keep",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 80
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留主轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/keep.mp4"],
+          "retainedMetadata": {
+            "serial": "VK"
+          }
+        }
+      },
+      {
+        "id": "video-overlay",
+        "type": "video",
+        "position": {
+          "x": 450,
+          "y": 400
+        },
+        "width": 350,
+        "height": 230,
+        "data": {
+          "type": "video",
+          "name": "保留叠加轨素材",
+          "action": "video_resource",
+          "url": ["/selected-delete-fixture/overlay.mp4"],
+          "retainedMetadata": {
+            "serial": "VO"
+          }
+        }
+      },
+      {
+        "id": "audio-keep",
+        "type": "audio",
+        "position": {
+          "x": 450,
+          "y": 750
+        },
+        "width": 350,
+        "height": 180,
+        "data": {
+          "type": "audio",
+          "name": "保留音频素材",
+          "action": "audio_resource",
+          "url": ["/selected-delete-fixture/keep.mp3"],
+          "retainedMetadata": {
+            "serial": "AK"
+          }
+        }
+      },
+      {
+        "id": "clip",
+        "type": "video-clip",
+        "position": {
+          "x": 1000,
+          "y": 150
+        },
+        "width": 500,
+        "height": 350,
+        "data": {
+          "type": "video-clip",
+          "name": "真实多源剪辑目标",
+          "action": "video_clip_resource",
+          "clipTimelineData": {
+            "videoSourceNodeIds": ["video-delete", "video-keep", "video-keep", "video-overlay"],
+            "audioSourceNodeIds": ["audio-delete", "audio-keep"],
+            "videoTrackCount": 2,
+            "totalDuration": 40,
+            "currentTime": 31,
+            "mutedTrackIds": ["deleted-video", "other-muted"],
+            "hiddenTrackIds": ["overlay"],
+            "aspectRatio": "16:9",
+            "scaleFactor": 2,
+            "retainedTimelineMetadata": {
+              "stamp": "timeline-fields-survive"
+            },
+            "clips": [
+              {
+                "id": "deleted-video",
+                "type": "video",
+                "sourceNodeId": "video-delete",
+                "startTime": 0,
+                "duration": 4,
+                "zIndex": 1,
+                "retainedClipMetadata": {
+                  "serial": "deleted-video"
+                }
+              },
+              {
+                "id": "main-a",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 12,
+                "duration": 5,
+                "zIndex": 1,
+                "transitionIn": "remove-first-main",
+                "retainedClipMetadata": {
+                  "serial": "main-a"
+                }
+              },
+              {
+                "id": "overlay",
+                "type": "video",
+                "sourceNodeId": "video-overlay",
+                "startTime": 20,
+                "duration": 2,
+                "zIndex": 0,
+                "transitionIn": "keep-overlay",
+                "retainedClipMetadata": {
+                  "serial": "overlay"
+                }
+              },
+              {
+                "id": "main-b",
+                "type": "video",
+                "sourceNodeId": "video-keep",
+                "startTime": 30,
+                "duration": 3,
+                "zIndex": 1,
+                "transitionIn": "keep-second-main",
+                "retainedClipMetadata": {
+                  "serial": "main-b"
+                }
+              },
+              {
+                "id": "deleted-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-delete",
+                "startTime": 2,
+                "duration": 9,
+                "zIndex": 2,
+                "audioTrack": 0,
+                "linkedVideoClipId": "deleted-video",
+                "retainedClipMetadata": {
+                  "serial": "deleted-audio"
+                }
+              },
+              {
+                "id": "linked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 11,
+                "duration": 2,
+                "zIndex": 2,
+                "audioTrack": 0,
+                "linkedVideoClipId": "main-a",
+                "retainedClipMetadata": {
+                  "serial": "linked-audio"
+                }
+              },
+              {
+                "id": "unlinked-audio",
+                "type": "audio",
+                "sourceNodeId": "audio-keep",
+                "startTime": 19,
+                "duration": 1,
+                "zIndex": 3,
+                "audioTrack": 1,
+                "linkedVideoClipId": "deleted-video",
+                "retainedClipMetadata": {
+                  "serial": "unlinked-audio"
+                }
+              }
+            ]
+          },
+          "retainedMetadata": {
+            "serial": "CLIP-TARGET"
+          },
+          "agentEditing": {
+            "state": "running",
+            "task": "保留运行中任务"
+          }
+        },
+        "measured": {
+          "width": 350,
+          "height": 350
+        }
+      },
+      {
+        "id": "unrelated",
+        "type": "text",
+        "position": {
+          "x": 1700,
+          "y": 150
+        },
+        "width": 260,
+        "height": 160,
+        "data": {
+          "type": "text",
+          "name": "剪辑无关节点",
+          "action": "text_resource",
+          "content": ["不能更改剪辑之外的数据"],
+          "retainedMetadata": {
+            "serial": "CLIP-OUTSIDE"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "remove-video-edge",
+        "source": "video-delete",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVD"
+          }
+        }
+      },
+      {
+        "id": "remove-audio-edge",
+        "source": "audio-delete",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EAD"
+          }
+        }
+      },
+      {
+        "id": "keep-video-edge",
+        "source": "video-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVK"
+          }
+        }
+      },
+      {
+        "id": "keep-overlay-edge",
+        "source": "video-overlay",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EVO"
+          }
+        }
+      },
+      {
+        "id": "keep-audio-edge",
+        "source": "audio-keep",
+        "target": "clip",
+        "data": {
+          "retainedMetadata": {
+            "serial": "EAK"
+          }
+        }
+      }
+    ]
+  }
+}

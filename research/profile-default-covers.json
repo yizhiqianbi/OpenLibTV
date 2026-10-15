@@ -1,0 +1,11 @@
+{
+  "covers": [
+    "https://libtv-res.liblib.art/upload-images/ef0097ae9da74189a0f5d604e98c77cd/2c02733263f8df22282d6bc7cc4813f805c43cf9.png",
+    "https://libtv-res.liblib.art/upload-images/ef0097ae9da74189a0f5d604e98c77cd/c9094181ebb1e19b706717654e0bc607bdf6e4a9.png",
+    "https://libtv-res.liblib.art/upload-images/ef0097ae9da74189a0f5d604e98c77cd/40e90c4be5a16a6ecf1afe47440fac0e43703b8c.png"
+  ],
+  "hash": "DJB2: initial5381, iterate signed32bit h=(h<<5)+h+charCode, index=abs(h)%length",
+  "headerHeight": 200,
+  "fit": "cover",
+  "requestWidth": 1920
+}

@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b8b50fa8aaab47d6a6808169d93f3873",
+      "projectUuid": "15676a7eeefa4593803f6f0e1958bfc7",
+      "name": "镇灵",
+      "description": "本项目为国风非遗民俗无限流AI真人，构建现实人间与怨灵灵域双层世界观，灵域副本全部取材传统戏曲、木偶、婚嫁等民俗非遗。女主沈清辞因一枚银簪误入灵域，解锁独有隐藏职业御灵师，不靠杀戮，通过共情怨灵执念收服戏伶等灵体伙伴，穿梭各大民俗副本闯关，集齐七大镇域重建圣庭，寻找失散闺蜜并揭开两界真相。故事创新反套路御灵养成玩法，中式惊悚搭配轻喜剧日常，兼具东方传统文化美学与强叙事爽感。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c5e4ff4bda2e4d2887ee0632507a0d4b/7aabf8ebb84e051b764296581b7eaa5730773a46.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c5e4ff4bda2e4d2887ee0632507a0d4b/9277891504e4b43b7ce17c1c51a3a096de1127e2.mp4",
+      "snapshotId": 21533,
+      "auditStatus": 1,
+      "ownerId": 10348575,
+      "ownerUuid": "c5e4ff4bda2e4d2887ee0632507a0d4b",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "130****9579",
+      "isLike": false,
+      "likeCount": 6,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "5.30 e@B.TL :8pm lcN:/ 12/14 镇灵 国风非遗民俗无限流AI真人，构建现实人间与怨灵灵域双层世界观，灵域副本全部取材传统戏曲、木偶、婚嫁等民俗非遗。# AI漫剧精卫计划# AI视频 # 非遗文化  https://v.douyin.com/IUa1LxWZxoA/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月24日 13:42",
+      "updateAt": "2026年06月26日 21:13",
+      "publishAt": "2026年06月24日 13:42",
+      "playCount": 0,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 1,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "89fb3086-c489-9f94-8d05-ba3d1e103f8b"
+}

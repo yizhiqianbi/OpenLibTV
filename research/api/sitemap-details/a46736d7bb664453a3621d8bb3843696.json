@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "a46736d7bb664453a3621d8bb3843696",
+      "projectUuid": "a3e3fe674caf44e4a903392c0ed0b890",
+      "name": "欢迎来到蔬菜小镇",
+      "description": "每天傍晚，都会有一个世纪难题——今晚吃什么？\n女主走进超市，面对五颜六色、琳琅满目的蔬菜，再次陷入了选择困难。正当她犹豫不决时，一颗活泼的番茄突然眨了眨眼“活”了过来。\n\n为了帮助女主找到今晚的“最佳晚餐主角”，在番茄精灵的邀请下，女主意外缩小，踏入了一个充满惊喜的蔬菜小镇，正在展开趣味十足美食节。一路探索、一路欢笑，女主发现了每种蔬菜独特的魅力，也找到了今晚的“最佳晚餐主角”。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f0de1895f3324e2bada3d1790c51c613/340dd92e449cc10ed985490a96f4f0249b6893fb.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f0de1895f3324e2bada3d1790c51c613/1cf6282829f189e06d2c655bba3f5af32a196713.mp4",
+      "snapshotId": 24838,
+      "auditStatus": 1,
+      "ownerId": 10010929,
+      "ownerUuid": "f0de1895f3324e2bada3d1790c51c613",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f0de1895f3324e2bada3d1790c51c613/faf1caf4eab746dfeed100d8f4330e405fd9b84b381ea76115b8899c406ace0c.png",
+      "nickname": "小谷同学",
+      "isLike": false,
+      "likeCount": 3,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月07日 10:22",
+      "updateAt": "2026年07月07日 10:54",
+      "publishAt": "2026年07月07日 10:50",
+      "playCount": 3,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 134,
+        "edges": 152
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "40f1f767-ffb3-9dfb-9755-55d6cd412532"
+}

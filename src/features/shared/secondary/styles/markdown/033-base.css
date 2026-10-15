@@ -1,0 +1,116 @@
+.secondary-markdown {
+  line-height: 2;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.secondary-markdown p {
+  color: inherit;
+  margin: 0 0 1em;
+  line-height: 2;
+  white-space: pre-line;
+}
+.secondary-markdown h1,
+.secondary-markdown h2 {
+  margin: 2em 0 1em;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 600;
+}
+.secondary-markdown h1 {
+  font-size: 26px;
+}
+.secondary-markdown h3 {
+  margin: 1.5em 0 0.75em;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 600;
+}
+.secondary-markdown h4 {
+  font-size: 16px;
+}
+.secondary-markdown blockquote {
+  border-left: 2px solid #ffffff14;
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  margin: 1.5em 0;
+}
+.secondary-markdown blockquote p {
+  color: #a8a8a8;
+  margin-bottom: 0;
+}
+.secondary-markdown ul,
+.secondary-markdown ol {
+  margin: 0 0 1em;
+  padding-left: 24px;
+}
+.secondary-markdown li {
+  margin: 0.5em 0;
+}
+.secondary-markdown pre {
+  padding: 16px;
+  background: #202020;
+  border-radius: 8px;
+  overflow: auto;
+  margin: 1.5em 0;
+}
+.secondary-markdown code {
+  font-family: monospace;
+  background: #ffffff0d;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.secondary-markdown pre code {
+  padding: 0;
+  background: none;
+}
+.secondary-markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+.secondary-markdown video {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+  border-radius: 8px;
+}
+.secondary-markdown hr {
+  border: 0;
+  border-top: 1px solid #ffffff14;
+  margin: 2em 0;
+}
+.secondary-markdown a {
+  color: #08b6dd;
+  text-decoration: none;
+}
+.secondary-markdown a:hover {
+  text-decoration: underline;
+}
+.secondary-markdown .markdown-media {
+  line-height: 0;
+}
+.secondary-markdown > :first-child {
+  margin-top: 0;
+}
+.secondary-markdown > :last-child {
+  margin-bottom: 0;
+}
+.markdown-table {
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+.markdown-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.markdown-table th,
+.markdown-table td {
+  border: 1px solid #ffffff14;
+  padding: 8px 12px;
+  text-align: left;
+}
+.markdown-table th {
+  background: #202020;
+}

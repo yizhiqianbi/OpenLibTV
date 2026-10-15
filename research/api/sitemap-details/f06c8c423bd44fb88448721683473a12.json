@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f06c8c423bd44fb88448721683473a12",
+      "projectUuid": "1d57d244121b4e0fac9985b4e57979c1",
+      "name": "不要在凯里看表",
+      "description": "在黔东南，时间不是用来看表的，是用来过节的。\n\t\n《不要在凯里看表》是一部用 AIGC 完成的苗侗非遗短片。我们把苗绣、银饰、酸汤、斗牛、村BA、凯里方言和苗侗风情园，放进一个折叠起来的影像宇宙里。\n\t\n它不是一支传统非遗的旅游广告。我们更想把它做成一个故事：一个人在熟悉又陌生的凯里重新看见家乡，看见节日、手艺、烟火气，也看见那些仍然活在今天的民族文化。\n\t\n尝试把它作为 AI 非遗创生影像的一次奇幻之行——“”越是民族的，越是世界的“；这一次，我们用 AI 来讲。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d4a7a9586c13499a8538afa624ab8430/42106b28d9adf8480b03759a61889e7c00d049b9.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d4a7a9586c13499a8538afa624ab8430/9a18d2ef9987a0bec5c33a49d709045114f9e93a.mp4",
+      "snapshotId": 22535,
+      "auditStatus": 1,
+      "ownerId": 5919496,
+      "ownerUuid": "d4a7a9586c13499a8538afa624ab8430",
+      "avatar": "https://liblibai-online.liblib.cloud/img/d4a7a9586c13499a8538afa624ab8430/10b972e1283d4b59b1933e2cda4c1c1bf2b6cef43303c64acee6ac4f6c2f64c6.jpg",
+      "nickname": "有無劇院",
+      "isLike": false,
+      "likeCount": 5,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "96 【用AI讲一个苗侗非遗故事《不要在凯里看表》 - 雀鸟 | 小红书 - 你的生活兴趣社区】 😆 T206ASP08xb0MsW 😆 https://www.xiaohongshu.com/discovery/item/6a3e77ac0000000021015c4f?source=webshare&xhsshare=pc_web&xsec_token=ABYqRsVptQ7x1wiUloFIcBVfFIA4iqBd8nFmNqPluX6T8=&xsec_source=pc_share",
+      "createAt": "2026年06月28日 20:51",
+      "updateAt": "2026年07月03日 14:43",
+      "publishAt": "2026年06月28日 20:51",
+      "playCount": 6,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 1265,
+        "edges": 1095
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a97e06f3-7033-9424-b9f8-59f55fc046d8"
+}

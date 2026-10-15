@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2683f50d093f4ea79dbbb35bb2285623",
+      "projectUuid": "81dac7e559ec48119eda6cc3c0616b9d",
+      "name": "一年级《端午》",
+      "description": "漫剧用七分钟，从一年级孩童视角解读端午的来源。全剧分为三个篇章：第一幕：上古黄河·恶月护生；第二幕：战国黄河·屈子风骨；第三幕：现代黄河·烟火龙舟。传承中国文化，解读端午从「求生驱疫」到「家国风骨」再到「人间传承」的千年蜕变。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/3efa6101f940450ebdb144eb40ca3eb5/88e87b3d00289019608ac6558489d9ba5135086f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/3efa6101f940450ebdb144eb40ca3eb5/0a6bba7fb7e24edf9c4d3269aca6977fa5b3f721.mov",
+      "snapshotId": 21021,
+      "auditStatus": 1,
+      "ownerId": 5886392,
+      "ownerUuid": "3efa6101f940450ebdb144eb40ca3eb5",
+      "avatar": "https://liblibai-online.liblib.cloud/img/3efa6101f940450ebdb144eb40ca3eb5/d2a8f6d9866ecc33720784765c889edee88455abda3738932f557a3c8a0c273d.jpg",
+      "nickname": "小强乖乖",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/bM-ZAjG9fhk/",
+      "createAt": "2026年06月22日 10:49",
+      "updateAt": "2026年06月24日 13:05",
+      "publishAt": "2026年06月22日 11:04",
+      "playCount": 9,
+      "viewCreationProcessCount": 5,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 312,
+        "edges": 500
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "66282d02-a5dd-93f0-ab90-6c1781ed75a6"
+}

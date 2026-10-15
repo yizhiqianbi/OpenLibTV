@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 3792516,
+      "uuid": "58961dda7b084850b7036bf60707f3dd",
+      "nickname": "O_BenriO_O",
+      "avatar": "https://liblibai-online.liblib.cloud/img/58961dda7b084850b7036bf60707f3dd/bde335d22cc1a7300a4c9c9303a6d649d575e89451f5569eae08890483996cf3.png",
+      "backgroundImage": ""
+    },
+    "counter": {
+      "totalLikeCount": 68,
+      "projectCount": 1,
+      "viewCreationProcessCount": 1694,
+      "copyCanvasCount": 160,
+      "followerCount": 6,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "a5f60808-7556-9f78-8ec6-a98d84a9ca5e"
+}

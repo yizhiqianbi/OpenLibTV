@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "20585be21a2f483c9764a60e68f4ac31",
+      "projectUuid": "1f40754b3e9647ae97e7e73d08093f56",
+      "name": "vivo S60 我喜欢我，有独特星光",
+      "description": "本支广告片以「我喜欢我，有独特星光」为核心主题，围绕年轻人对自我个性与内在光芒的表达展开。\n\n影片通过星星海、流动光影与手机质感的结合，营造出梦幻、自由且充满情绪张力的视觉氛围。星光不仅是画面中的视觉元素，也象征着每个人与生俱来的独特性：不必迎合标准，不必被定义，每个人都可以在自己的节奏里闪闪发光。\n\n在叙事上，广告片将 vivo S60 作为“记录自我、表达自我”的视觉载体，让手机与人物情绪、星光能量产生连接。随着画面推进，星光由远及近，从背景中的浩瀚星海逐渐汇聚到产品本身，强化 vivo S60 轻盈、精致、闪耀的产品印象。\n\n整体创作希望传达一种温柔而坚定的态度：喜欢自己，不是张扬的口号，而是看见自己的特别，接纳自己的光芒。每个人都有属于自己的星轨，而 vivo S60，陪你记录这份独一无二的闪耀。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7a936396e1d940aa8e0460a8d5f459f3/a88aa9d32cbb4e44f0037cb538587fc71813d0a3.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7a936396e1d940aa8e0460a8d5f459f3/d07c9c1d8e58eae40b3bcaf3dfac3b83a7ff4368.mp4",
+      "snapshotId": 24911,
+      "auditStatus": 1,
+      "ownerId": 976456,
+      "ownerUuid": "7a936396e1d940aa8e0460a8d5f459f3",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyNIia6IFvSwg6fgEhKtHU4EjdoibDP9hRcuxwNmUymeZViciaZBFlj6eqiaCibRukrkTPPwB5gxvN0DJg/132",
+      "nickname": "清凉兔",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "/",
+      "createAt": "2026年07月07日 10:56",
+      "updateAt": "2026年07月07日 19:10",
+      "publishAt": "2026年07月07日 15:03",
+      "playCount": 4,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 18,
+        "edges": 19
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "5aedcfa6-8a86-986c-ba90-3ee5b6495179"
+}

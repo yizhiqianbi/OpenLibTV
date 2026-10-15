@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "09242076c5244662aa16c4598a3fec7d",
+      "projectUuid": "c3a7d6c58afe46a1996b6dff82590bc0",
+      "name": "《古法凝祁香》一盏祁红里的百年非遗",
+      "description": "以非遗传承为情感线，完整呈现祁门红茶从采摘到精制装盒的全流程，讲述 “手艺淬炼为商品” 的故事 —— 让百年古法技艺，通过标准化商业流转，走进当代生活，获得长久生命力。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bf92561b4c274b70858a8adbedcf8e15/5a46c860a5ab32796c1d80963c3df7b9a6bf62b9.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bf92561b4c274b70858a8adbedcf8e15/93ba5bbda0971d2f566a458bf8468d50304ce5fa.mp4",
+      "snapshotId": 21105,
+      "auditStatus": 1,
+      "ownerId": 8845671,
+      "ownerUuid": "bf92561b4c274b70858a8adbedcf8e15",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bf92561b4c274b70858a8adbedcf8e15/9b86685d5100e4e8b9d866f909c0458a0556b126aa488207cd05b5d37d3236a2.jpeg",
+      "nickname": "海盗与强盗",
+      "isLike": false,
+      "likeCount": 18,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "7.17 r@r.eo :2pm gOk:/ 07/25 《古法凝祁香》一盏祁红里的百年非遗 以非遗传承为情感线，完整呈现祁门红茶从采摘到精制装盒的全流程，讲述 “手艺淬炼为商品” 的故事 —— 让百年古法技艺，通过标准化商业流转，走进当代生活，获得长久生命力。# 茶农茶事 # 制茶人 # 茶山行 # AI # 让百年古法技  https://v.douyin.com/-hNkKA5kBDA/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月22日 16:18",
+      "updateAt": "2026年06月26日 14:31",
+      "publishAt": "2026年06月22日 16:18",
+      "playCount": 23,
+      "viewCreationProcessCount": 6,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 29,
+        "edges": 22
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e0dd0ced-ff1d-9871-9b97-5ae7a5251bca"
+}

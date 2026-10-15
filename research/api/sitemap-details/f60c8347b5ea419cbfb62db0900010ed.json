@@ -1,0 +1,97 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f60c8347b5ea419cbfb62db0900010ed",
+      "projectUuid": "f44903bef366460f86e77cd77095ca56",
+      "name": "没人给历史书这么做广告片——《中华五千年》",
+      "description": "一开始做这条片子的时候，我不想把它做成那种简单的历史画面拼接。\n因为《中华五千年》这个题目太大了，如果只是把甲骨、青铜、长城、唐宋、战争这些元素一个个切出来，其实很容易散，也很容易像资料片。\n所以我后来定了一个核心感觉：所有历史，都从同一片大雾里出现。\n这片雾不是普通的天气，它更像时间。我们看不清全部，但能看见一些重要的瞬间：最早的火种、甲骨上的刻痕、青铜器上的纹路、长城、驼队、书院、战火，还有近代风雨里的那些人。\n创作的时候，我一直想平衡两件事：一边是中华五千年的荣光，一边是历史里真实存在的伤痕。它不能只有漂亮和宏大，也要有战争、动荡、破碎和重新站起来的力量。\n所以最后书出现的时候，我希望它不是一个硬切出来的商品，而像是这些历史记忆慢慢沉淀成了一本书。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8933980512c44d88befd7af034bb540d/c23439c5e8c4099232633288c2ade4ea182f0d33.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8933980512c44d88befd7af034bb540d/522107a5c94155aeda6bcf0d8aca0e0274e7d8f9.mp4",
+      "snapshotId": 25319,
+      "auditStatus": 1,
+      "ownerId": 6896182,
+      "ownerUuid": "8933980512c44d88befd7af034bb540d",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8933980512c44d88befd7af034bb540d/a1fb60461ae91bc41d7ae93536eb1c4121260e0e9ec36f0c21614f013dc013d5.jpg",
+      "nickname": "Clown一鸿",
+      "isLike": false,
+      "likeCount": 49,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "56 【没人给历史书这么拍广告片，那我来试试 - Clown一鸿 | 小红书 - 你的生活兴趣社区】 😆 q677XNNPBFvkkVi 😆 https://www.xiaohongshu.com/discovery/item/6a4e2d6f0000000011016ca0?source=webshare&xhsshare=pc_web&xsec_token=YB7QpG5fRDX2PrbOxiuT98y029emm0JjYBxn2QLfqBuuw=&xsec_source=pc_share",
+      "createAt": "2026年07月08日 19:02",
+      "updateAt": "2026年07月08日 19:11",
+      "publishAt": "2026年07月08日 19:02",
+      "honors": [
+        "故事短片-提名奖"
+      ],
+      "awardedTag": [
+        "故事短片-提名奖"
+      ],
+      "playCount": 25,
+      "viewCreationProcessCount": 6,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 81,
+        "edges": 112
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "44bdad03-90d8-9be1-bf15-e78f6e2bccd4"
+}

@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8f22cc72aa5942a3853e5c4fcb533142",
+      "projectUuid": "7e8f010b34ab4e6da4d86dff0cf7bebf",
+      "name": "“𝑆𝑢𝑚𝑚𝑒𝑟🍋 南法夏日旧梦”",
+      "description": "整个视频全部由libTV完成",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5392c619b74e4010bf591ebff17478ab/223b04de31678746102b86acd0e7b642fe38bb7e.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5392c619b74e4010bf591ebff17478ab/be4e06027a77aff94f39ac90ea9d17a4d1ff80fc.mp4",
+      "snapshotId": 23702,
+      "auditStatus": 1,
+      "ownerId": 380057,
+      "ownerUuid": "5392c619b74e4010bf591ebff17478ab",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5392c619b74e4010bf591ebff17478ab/8d331d5f716a823488007f53800ad5013ff993856a6bb68dbd66a49318baca62.png",
+      "nickname": "瞎画师Carina",
+      "isLike": false,
+      "likeCount": 76,
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "0.56 02/26 icN:/ :3pm x@F.UL 南法假日入梦 Summer🍋‍🟩 # 创作者中心 # 创作灵感 # 南法的夏天 # 南法假日入梦 # ai全能艺术家计划  https://v.douyin.com/hRc1g8CpCkc/ 复制此链接，打开Dou音搜索，直接观看视频！   14 【“𝑆𝑢𝑚𝑚𝑒𝑟🍋 南法夏日旧梦” - 瞎画师Carina | 小红书 - 你的生活兴趣社区】 😆 ojTSmAZzCawnFSv 😆 https://www.xiaohongshu.com/discovery/item/6a4231af0000000011015d20?source=webshare&xhsshare=pc_web&xsec_token=AB3vGKrmMyL5HO2tPab8AWrfskGeux_QStlhh4ZiPjWqM=&xsec_source=pc_share",
+      "createAt": "2026年07月02日 13:00",
+      "updateAt": "2026年07月09日 22:11",
+      "publishAt": "2026年07月02日 13:00",
+      "playCount": 10,
+      "viewCreationProcessCount": 5,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 86,
+        "edges": 80
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a848f419-644b-9a6a-a466-68b66c5e3e73"
+}

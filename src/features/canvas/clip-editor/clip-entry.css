@@ -1,0 +1,214 @@
+.cv-node-video-clip[data-clip-presentation] > .cv-node-feedback-surface > .cv-node-title {
+  top: -28px;
+  height: 26px;
+}
+
+.cv-node-video-clip[data-clip-presentation] > .cv-node-feedback-surface > .cv-node-feedback-body {
+  border-color: #262626;
+  border-radius: var(--cv-clip-border-radius, 12px);
+}
+
+.cv-node-video-clip[data-clip-presentation].cv-selected
+  > .cv-node-feedback-surface
+  > .cv-node-feedback-body {
+  border-color: #13d5ff;
+}
+
+.cv-node-video-clip[data-clip-presentation] .cv-node-content {
+  border-radius: var(--cv-clip-border-radius, 12px);
+}
+
+.cv-clip-composer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  color: #f5f5f5;
+  min-width: 0;
+}
+
+.cv-clip-composer button,
+.cv-clip-mode-menu button {
+  font-size: 13px;
+}
+
+.cv-clip-composer button:focus-visible,
+.cv-clip-mode-menu button:focus-visible {
+  outline: 2px solid #13d5ff;
+  outline-offset: 2px;
+}
+
+.cv-clip-composer-add {
+  padding: 4px 0 0 4px;
+}
+
+.cv-clip-composer-add button,
+.cv-clip-composer-mode,
+.cv-clip-mode-menu button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.cv-clip-composer-add button {
+  height: 28px;
+  padding: 4px 8px;
+}
+
+.cv-clip-composer button:hover:enabled,
+.cv-clip-mode-menu button:hover:enabled {
+  background: #ffffff14;
+}
+
+.cv-clip-composer-references {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 4px;
+}
+
+.cv-clip-composer-reference {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.cv-clip-composer-reference > button:first-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #ffffff0f;
+  overflow: hidden;
+  padding: 0;
+}
+
+.cv-clip-composer-reference img,
+.cv-clip-composer-reference video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cv-clip-composer-reference span {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  padding: 0 2px;
+  font-size: 8px;
+  border-radius: 3px;
+  background: #0009;
+}
+
+.cv-clip-composer-reference-text {
+  width: auto;
+  min-width: 64px;
+}
+
+.cv-clip-composer-reference-text > button:first-child {
+  padding: 0 8px;
+  gap: 5px;
+}
+
+.cv-clip-composer-reference-text span {
+  position: static;
+  font-size: 12px;
+  background: none;
+}
+
+.cv-clip-composer-reference .cv-clip-composer-reference-delete {
+  position: absolute;
+  right: -4.5px;
+  top: -4.5px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  opacity: 0;
+}
+
+.cv-clip-composer-reference:hover .cv-clip-composer-reference-delete,
+.cv-clip-composer-reference:focus-within .cv-clip-composer-reference-delete {
+  opacity: 1;
+}
+
+.cv-clip-composer-footer,
+.cv-clip-composer-options {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.cv-clip-composer-footer {
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cv-clip-composer-mode {
+  height: 32px;
+  padding: 4px 8px;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.cv-clip-composer-mode span {
+  max-width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cv-clip-composer .cv-clip-composer-send {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.cv-clip-composer .cv-clip-composer-send:hover:enabled {
+  background: #fff;
+  filter: brightness(1.1);
+}
+
+.cv-clip-composer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cv-clip-mode-menu {
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  background: #242424;
+  color: #fff;
+  padding: 4px;
+  box-shadow: 0 4px 14px #0004;
+  overflow: auto;
+}
+
+.cv-clip-mode-menu button {
+  width: 100%;
+  gap: 8px;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.cv-clip-mode-menu button span {
+  flex: 1;
+}

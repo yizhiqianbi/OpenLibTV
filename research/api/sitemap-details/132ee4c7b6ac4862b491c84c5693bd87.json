@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "132ee4c7b6ac4862b491c84c5693bd87",
+      "projectUuid": "98aff4cdad7147f4a82dd0c0dae2f3b0",
+      "name": "《人间先施》AI电影",
+      "description": "这是全国首部以正宗中山石岐话为主的 AI 历史电影。\n讲的是中山知名华侨、先施公司创始人马应彪的传奇故事，\n也讲了马应彪与孙中山的革命友谊，\n也是中山“四大百货”走向上海南京路的故事。\n\n中山话。\n中山人。\n中山华侨。\n中山商业精神。\n敢为天下先。\n\n这些词条，都是中山人的光。\n\n本片没有投资，没有商业行为，纯为爱而创作，如有不足，还望多包涵，谨希望在孙中山160周年诞辰之际，以此片，致敬和献给我们的家乡——广东中山。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/03d4a3f5cbfc4ef59ceb0b41a505b41b/cf34528790a08a699c5b2e67451fb0396794d379.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/03d4a3f5cbfc4ef59ceb0b41a505b41b/c77c70f896d4185bc2bad88755a749d7a6bc6ad1.mp4",
+      "snapshotId": 24586,
+      "auditStatus": 1,
+      "ownerId": 9366173,
+      "ownerUuid": "03d4a3f5cbfc4ef59ceb0b41a505b41b",
+      "avatar": "https://liblibai-online.liblib.cloud/img/03d4a3f5cbfc4ef59ceb0b41a505b41b/193e678a6be1f6996f3c85d5f06cdf15e9a9f8ced502f2073f3c61034ce8dbeb.jpg",
+      "nickname": "花房午后",
+      "isLike": false,
+      "likeCount": 9,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://weixin.qq.com/sph/AMp1NCVqoq",
+      "createAt": "2026年07月06日 13:44",
+      "updateAt": "2026年07月08日 11:00",
+      "publishAt": "2026年07月06日 13:44",
+      "playCount": 4,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 88,
+        "edges": 172
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a8bfd06d-3fa8-9a70-a583-b48e41b6b62b"
+}

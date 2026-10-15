@@ -1,0 +1,139 @@
+@property --cv-node-glow-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes cv-node-connection-spin {
+  to {
+    --cv-node-glow-angle: 360deg;
+  }
+}
+
+.cv-node-connection-ambient,
+.cv-node-connection-diffuse,
+.cv-node-connection-border,
+.cv-node-connection-invalid,
+.cv-node-connection-frosted {
+  position: absolute;
+  pointer-events: none;
+}
+
+.cv-node-connection-ambient {
+  inset: -4px;
+  border-radius: 16px;
+  z-index: 49;
+  filter: blur(4px);
+  opacity: 0.6;
+  background: transparent;
+  border: 1px solid #ffffff1f;
+}
+
+.cv-node-connection-diffuse,
+.cv-node-connection-border {
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position:
+    0 0,
+    0 0;
+  mask-position:
+    0 0,
+    0 0;
+  -webkit-mask-size: auto, auto;
+  mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  mask-repeat: repeat, repeat;
+  -webkit-mask-clip: content-box, border-box;
+  mask-clip: content-box, border-box;
+  -webkit-mask-origin: content-box, border-box;
+  mask-origin: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask-mode: match-source, match-source;
+  animation: cv-node-connection-spin 1.2s linear infinite;
+}
+
+.cv-node-connection-border {
+  inset: 0;
+  border-radius: 12px;
+  z-index: 50;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--cv-node-glow-angle),
+    #ffffff26 0%,
+    #ffffff26 20%,
+    #fff8eb40 30%,
+    #fffaf080 38%,
+    #fffdf8d9 44%,
+    #fff 50%,
+    #fffdf8d9 56%,
+    #fffaf080 62%,
+    #fff8eb40 70%,
+    #ffffff26 80%,
+    #ffffff26 100%
+  );
+}
+
+.cv-node-connection-diffuse {
+  inset: -2px;
+  border-radius: 14px;
+  z-index: 49;
+  padding: 4px;
+  filter: blur(6px);
+  background: conic-gradient(
+    from var(--cv-node-glow-angle),
+    transparent 0%,
+    transparent 15%,
+    #fffaf00a 25%,
+    #fffcf51f 35%,
+    #fffefa40 43%,
+    #ffffff59 50%,
+    #fffefa40 57%,
+    #fffcf51f 65%,
+    #fffaf00a 75%,
+    transparent 85%,
+    transparent 100%
+  );
+}
+
+@keyframes cv-node-connection-invalid-pulse {
+  0%,
+  100% {
+    border-color: #ffffff26;
+    box-shadow: 0 0 #fff0;
+  }
+  50% {
+    border-color: #ffffff80;
+    box-shadow: 0 0 8px 2px #ffffff26;
+  }
+}
+
+.cv-node-connection-invalid {
+  inset: 0;
+  border-radius: 12px;
+  z-index: 50;
+  border: 1.5px solid #ffffff40;
+  animation: cv-node-connection-invalid-pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.cv-node-connection-frosted {
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 50;
+  pointer-events: all;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-node-connection-diffuse,
+  .cv-node-connection-border,
+  .cv-node-connection-invalid {
+    animation: none;
+  }
+  .cv-node-feedback-surface {
+    transform: none !important;
+    transition: none !important;
+  }
+}

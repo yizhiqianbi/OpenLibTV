@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d1c651a6b6b9459c9a916b942a86f7e6",
+      "projectUuid": "d20a5f76aff04d778e868f72cf3ac5b5",
+      "name": "历史题材AAA级游戏《战国风云》",
+      "description": "一款以战国史诗为背景题材的 AAA级魂类 + RPG 游戏3分钟 DEMO，突然炸穿国外各大社区平台。\n\t\n据传，这支互动影视级 DEMO 由杭州一家 「不记名」影视游戏工作室，在 172795秒 的极限打磨中硬生生推了出来。\n\t\n更离谱的是，消息才刚放出，海外讨论度已经开始一路飙升。\n不少人都在问：这到底是哪来的团队，怎么突然就把战国题材狠狠干到了这个级别。\n\t\n而据 万物灵汐 相关知情人士透露，\n这支作品的全球首发日期，预计已经定档：2027年4月1日\n游戏主题专辑MV相关CG已于2026年4月23日公开\n\t\n如果这消息最终坐实，\n那这很可能不是一次普通的新作曝光，\n而是国产战国题材，第一次真正意义上朝着 AAA级大作 正面开火。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/edd8e67e9cba4d5babee74b681f3df9d/7cf706c1e7ddb67a04928a5e1882a1c266aff079.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/edd8e67e9cba4d5babee74b681f3df9d/a2ab9df94258782ce5930208d597c03473754c71.mp4",
+      "snapshotId": 7424,
+      "auditStatus": 1,
+      "ownerId": 6501656,
+      "ownerUuid": "edd8e67e9cba4d5babee74b681f3df9d",
+      "avatar": "https://liblibai-online.liblib.cloud/img/edd8e67e9cba4d5babee74b681f3df9d/994cec1314c9326894667c46a464f93c6cb0fbaca96311239d657f526f7f41a5.jpg",
+      "nickname": "法兰西泥瓦匠",
+      "isLike": false,
+      "likeCount": 163,
+      "tags": [
+        {
+          "id": 3031,
+          "code": "test",
+          "tagLabel": "大乱斗｜vol.1 显形记",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3031/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3034,
+          "code": "test",
+          "tagLabel": "3-创意与超现实",
+          "parentTag": 3031,
+          "categoryId": 0,
+          "path": "3031/3034",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1302,
+          "code": "game_art",
+          "tagLabel": "游戏美宣",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1302/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/69ea382a000000001901e005?xsec_token=ABIfL12riXbAszYhUa3M7i1ZyaeyqlfvuhLE_KDo-hA-M=&xsec_source=pc_user",
+      "createAt": "2026年04月25日 14:22",
+      "updateAt": "2026年05月11日 22:38",
+      "publishAt": "2026年04月25日 14:22",
+      "playCount": 72,
+      "viewCreationProcessCount": 26,
+      "copyCanvasCount": 4,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 23,
+        "edges": 11
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ea09ffca-988c-97be-b658-b10bb566545b"
+}

@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "473f446619d643acac34272fa434b2ad",
+      "skillUuid": "218b8f6cef894f18be4ded697900c92a",
+      "skillKey": "hujinquanwuxia-a015ad0682e441c5a70fd7cac0fc563a",
+      "name": "古典武侠电影全流程导演",
+      "version": "1.0.7",
+      "description": "一键把武侠灵感转化为胡金铨，邵氏，古典武侠等美学风格视频",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/dc55d9e87089601b6c6dc9bd26105f4f56dbe7e6.png",
+      "snapshotId": 26880,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/9dbbe63afee8abb004a3266f39c0c6882d522c7a.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/cfe7ae8d1950d8f4a308ab89484edfb558009d34.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/8b6fc1748847e91d0b7b51a1445e9127a295da3b.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/dc55d9e87089601b6c6dc9bd26105f4f56dbe7e6.png\",\"description\":\"一键把武侠灵感转化为胡金铨，邵氏，古典武侠等美学风格视频\",\"evalResult\":\"\",\"inputType\":\"用户可以输入一句武侠创意、完整剧情、角色关系、场景地点、时长比例、是否打斗、已有角色/场景/道具资产或参考图。Skill 会先提\",\"name\":\"古典武侠电影全流程导演\",\"outputContent\":\"输出需求理解、创作脊柱、角色/场景/道具/状态资产规划、首帧与尾帧设计、图片生成提示词、视频节拍表、分镜表、逐镜头视频提示词、运镜与切镜规则、声音设计、剪辑方案、审核清单和返修建议。\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"hujinquanwuxia-a015ad0682e441c5a70fd7cac0fc563a\",\"skillUuid\":\"218b8f6cef894f18be4ded697900c92a\",\"sourceType\":2,\"useScenario\":\"适合制作古典武侠角色图、场景图、电影首帧、5 秒图生视频、15 秒氛围段、30/60/75/90 秒完整短片、武侠分镜、逐镜头视频提示词、剪辑音效方案和返修诊断。适用于雪夜客栈、竹林对峙、寺庙听风、江湖暗号、侠客独行、门外脚步、雨夜追杀等克制但有张力的武侠影像。\",\"version\":\"1.0.7\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 8/10，命中 1 条阻断级问题",
+      "likeCount": 2186,
+      "usePv": 20133,
+      "useUv": 15503,
+      "publishAt": "2026-07-14 14:40:27",
+      "ownerId": 2614518,
+      "ownerName": "虾饺o",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/img/a015ad0682e441c5a70fd7cac0fc563a/e5a649c226fd8287038062d261ec8f61d146a9fa1b49e3eef3d5f423fa2749da.png",
+      "useScenario": "适合制作古典武侠角色图、场景图、电影首帧、5 秒图生视频、15 秒氛围段、30/60/75/90 秒完整短片、武侠分镜、逐镜头视频提示词、剪辑音效方案和返修诊断。适用于雪夜客栈、竹林对峙、寺庙听风、江湖暗号、侠客独行、门外脚步、雨夜追杀等克制但有张力的武侠影像。",
+      "inputType": "用户可以输入一句武侠创意、完整剧情、角色关系、场景地点、时长比例、是否打斗、已有角色/场景/道具资产或参考图。Skill 会先提",
+      "outputContent": "输出需求理解、创作脊柱、角色/场景/道具/状态资产规划、首帧与尾帧设计、图片生成提示词、视频节拍表、分镜表、逐镜头视频提示词、运镜与切镜规则、声音设计、剪辑方案、审核清单和返修建议。",
+      "sourceType": 2,
+      "nickname": "虾饺o",
+      "avatar": "https://liblibai-online.liblib.cloud/img/a015ad0682e441c5a70fd7cac0fc563a/e5a649c226fd8287038062d261ec8f61d146a9fa1b49e3eef3d5f423fa2749da.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/9dbbe63afee8abb004a3266f39c0c6882d522c7a.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/cfe7ae8d1950d8f4a308ab89484edfb558009d34.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/a015ad0682e441c5a70fd7cac0fc563a/8b6fc1748847e91d0b7b51a1445e9127a295da3b.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "5b12065f-015a-92b5-85f4-252d0aef8d6c"
+}

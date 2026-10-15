@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "bca9bfe047014c0c99d7eaefd6e34164",
+      "projectUuid": "df8987a742cd467f95b27f520268202a",
+      "name": "曾经的王！见证王的诞生！《王和女王》MV",
+      "description": "曾经的王！一起见证王的诞生！王回归初舞台，全新单曲《王和女王》！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/19708184cdcf0d1cdf78d88f82e79be8282d7485.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/aebfe95fc26133dceacba717e29641c8c2d6711b.mp4",
+      "snapshotId": 10309,
+      "auditStatus": 1,
+      "ownerId": 797672,
+      "ownerUuid": "c124bbc3b9ff4c60b4311c1b77d90a0f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c124bbc3b9ff4c60b4311c1b77d90a0f/5f3158331c60f14b5828e3e3d8df99229d9c492346dd8f7457f00f1a6c37de89.jpg",
+      "nickname": "牛斗",
+      "isLike": false,
+      "likeCount": 150,
+      "tags": [
+        {
+          "id": 3031,
+          "code": "test",
+          "tagLabel": "大乱斗｜vol.1 显形记",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3031/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3034,
+          "code": "test",
+          "tagLabel": "3-创意与超现实",
+          "parentTag": 3031,
+          "categoryId": 0,
+          "path": "3031/3034",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/f5bmX0JzaNY/",
+      "createAt": "2026年05月10日 22:44",
+      "updateAt": "2026年05月31日 16:47",
+      "publishAt": "2026年05月10日 22:44",
+      "playCount": 103,
+      "viewCreationProcessCount": 31,
+      "copyCanvasCount": 9,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 163,
+        "edges": 186
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "258657aa-8928-94c0-9b3a-4fe6ac78d1dc"
+}

@@ -1,0 +1,35 @@
+.activity-awards .gallery-card {
+  min-width: 0;
+}
+.activity-awards .gallery-card .gallery-cover > img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.activity-awards .gallery-card .gallery-meta {
+  margin-top: 8px;
+}
+.activity-awards .gallery-card .avatar-button {
+  display: block;
+  flex-direction: row;
+}
+.activity-awards .gallery-card .avatar-button > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.activity-awards .gallery-card .gallery-overlay > button {
+  background: #fff;
+  color: #141414;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+}
+.activity-awards .gallery-card .gallery-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.activity-awards .gallery-card .gallery-caption button {
+  display: block;
+}

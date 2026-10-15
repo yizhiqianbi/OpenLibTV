@@ -1,0 +1,107 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d2fa24ea2fd5477a93569d0101cf12a6",
+      "projectUuid": "336772ae3e704533acb77d8ce5653697",
+      "name": "影视TVC电影短片《1小时59分30秒》| 讲述人类速度极限的故事",
+      "description": "关于人类的速度极限，从来不是一场比赛，一条赛道的故事。从平民窟出发，用时1小时59分30秒，我们告诉你TA的故事。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/17f101c4b5d545aa8f50fa799ba55e93/5f57399693679920b8b02e4aec8f4ca62ccf3e70.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/17f101c4b5d545aa8f50fa799ba55e93/1f7091114e38de700f45cc1db41d2f4a3641605a.mp4",
+      "snapshotId": 25083,
+      "auditStatus": 1,
+      "ownerId": 8622038,
+      "ownerUuid": "17f101c4b5d545aa8f50fa799ba55e93",
+      "avatar": "https://liblibai-online.liblib.cloud/img/17f101c4b5d545aa8f50fa799ba55e93/59ac4085a3b4beb540064033c5efb1e5c4e6474ce57969c6227d26d66ca5158c.png",
+      "nickname": "环屿AI",
+      "isLike": false,
+      "likeCount": 76,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "0.02 复制打开抖音，看看【环屿 AI Lab的作品】《1小时59分30秒》| AIGC影视广告短片 是... https://v.douyin.com/tWq1bgCd8AQ/ e@o.DU :5pm 12/06 wfO:/",
+      "createAt": "2026年07月03日 15:57",
+      "updateAt": "2026年07月14日 17:51",
+      "publishAt": "2026年07月08日 00:22",
+      "honors": [
+        "故事短片-最动人故事"
+      ],
+      "awardedTag": [
+        "故事短片-最动人故事"
+      ],
+      "playCount": 54,
+      "viewCreationProcessCount": 14,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 108,
+        "edges": 95
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "47bbf3b4-a57b-94c4-a852-68d311cb7762"
+}

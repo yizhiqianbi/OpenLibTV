@@ -1,0 +1,292 @@
+{
+  "items": [
+    {
+      "modelKey": "star-video2",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedance 2.0 VIP",
+      "description": "最强视频模型，会员专属通道,15s音画同步",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "role": {
+        "personal": false,
+        "team": true
+      },
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/220c84f8fb5191f5d054458f981049e0612ace1f.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "star-video2-fast",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedance 2.0 Fast VIP",
+      "description": "最强视频模型快速版，会员专属通道，15s音画同步",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "role": {
+        "personal": false,
+        "team": true
+      },
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/220c84f8fb5191f5d054458f981049e0612ace1f.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "kling-video-o1",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Kling O1",
+      "description": "可灵一代编辑模型、支持多模态输入",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2db40556bb3eecf270635541d94cf247ce59965e.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "kling-video-o3",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Kling 3.0",
+      "description": "视频生成模型，高质感、支持多镜头",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2db40556bb3eecf270635541d94cf247ce59965e.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "kling-v3-omni",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Kling O3",
+      "description": "视频编辑模型、参考一致性、音画同出、多镜头",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2db40556bb3eecf270635541d94cf247ce59965e.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "wanxiang-v2-6",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Wan 2.6",
+      "description": "音画同步，支持多机位镜头，最长可生15秒视频",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "midjourney-video",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Style Video",
+      "description": "图生视频效果稳定，画面表现力强",
+      "requiresWhitelistPermission": false,
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/538045210cdc7b90d61704f96d1be52bc3830c13.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "MiniMax-Hailuo-2.3-Fast",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Hailuo 2.3 Fast",
+      "description": "善于表达动作、表情、镜头，更快速",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/7f62d6d3837bdc432b69a56cd81157a93e055d2e.png",
+      "estimatedTime": "1min"
+    },
+    {
+      "modelKey": "MiniMax-Hailuo-2.3",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Hailuo 2.3",
+      "description": "善于表达动作、表情、镜头，更高质感",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/7f62d6d3837bdc432b69a56cd81157a93e055d2e.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "MiniMax-Hailuo-o2",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Hailuo 02",
+      "description": "画质稳定，适合打造运动特效场景",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/7f62d6d3837bdc432b69a56cd81157a93e055d2e.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "viduq2-pro",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Vidu Q2 Pro",
+      "description": "Vidu Q2 Pro",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/932d967dc1acd105797ad0a4cf30a45b59b340ca.png",
+      "estimatedTime": ""
+    },
+    {
+      "modelKey": "viduq2-turbo",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Vidu Q2 Turbo",
+      "description": "Vidu Q2 Turbo",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/932d967dc1acd105797ad0a4cf30a45b59b340ca.png",
+      "estimatedTime": ""
+    },
+    {
+      "modelKey": "viduq3-pro",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Vidu Q3 Pro",
+      "description": "支持主体参考，精确控制效果佳",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/932d967dc1acd105797ad0a4cf30a45b59b340ca.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "kling-2.1",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Kling 2.1",
+      "description": "支持首尾帧，图生视频效果更出色",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2db40556bb3eecf270635541d94cf247ce59965e.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "kling-v2-5-turbo-pro",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Kling 2.5",
+      "description": "速度快、效果稳定、性价比高",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2db40556bb3eecf270635541d94cf247ce59965e.png",
+      "estimatedTime": "2min"
+    },
+    {
+      "modelKey": "wanxiang-plus",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Wan 2.2",
+      "description": "支持特效、玩法千变万化",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "wanxiang-preview",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Wan 2.5",
+      "description": "支持特效、直出音画同步",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "pixverse-v5.5",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Pixverse V5.5",
+      "description": "支持特效、玩法丰富",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/c4a3e99e9ba39868128ad87bdf2f5d2454d59234.png",
+      "estimatedTime": "3min"
+    },
+    {
+      "modelKey": "pixverse-v5",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Pixverse V5",
+      "description": "支持特效、玩法丰富",
+      "prefix": [],
+      "labels": [],
+      "vip": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/c4a3e99e9ba39868128ad87bdf2f5d2454d59234.png",
+      "estimatedTime": "3min"
+    }
+  ]
+}

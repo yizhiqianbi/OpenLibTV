@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2625a0aec491473a97f3ec942c024e88",
+      "projectUuid": "d7b4cd71d0f84e9190c67613f397746e",
+      "name": "AI短片《南方物候志》",
+      "description": "一个关于胶片、橘子和梦境的故事",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/6a02da97cd6941999d8976c563381718/700fb9bd44df04c37d9029f014936c1f7867ee87.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/6a02da97cd6941999d8976c563381718/6b509f993068e1774cb4a5bd099d21c55b2e0307.mp4",
+      "snapshotId": 7986,
+      "auditStatus": 1,
+      "ownerId": 8683032,
+      "ownerUuid": "6a02da97cd6941999d8976c563381718",
+      "avatar": "https://liblibai-online.liblib.cloud/img/6a02da97cd6941999d8976c563381718/47f1cb29fb2588b94fef2110340f6358224de172d7032fa5a45dfd2f4cbcc79e.JPG",
+      "nickname": "Thxfish",
+      "isLike": false,
+      "likeCount": 63,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3022,
+          "code": "test",
+          "tagLabel": "短片单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3022",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/m7RezmwNYPE/ JVY:/ E@h.ba 06/21",
+      "createAt": "2026年04月28日 16:38",
+      "updateAt": "2026年05月09日 17:53",
+      "publishAt": "2026年04月28日 16:38",
+      "playCount": 104,
+      "viewCreationProcessCount": 28,
+      "copyCanvasCount": 7,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 155,
+        "edges": 160
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e6d99c00-0088-93b5-914e-82e262eda024"
+}

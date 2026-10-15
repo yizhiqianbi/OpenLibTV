@@ -1,0 +1,9 @@
+@media (max-width: 991px) {
+  .feature-updates-page {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .feature-version-meta {
+    width: 160px;
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8b6a99c3f0e64943ad2ee9138639564f",
+      "projectUuid": "20e3715f5b704bd38a9c83489af86457",
+      "name": "我aii辣椒炒肉",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7e906ea16a8d49b3b9f99e8be7eb959c/31b88ee6ed2243dad8976b43f18bb88a651ee1a2.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7e906ea16a8d49b3b9f99e8be7eb959c/2df6454fef37e292fba40012027502cb9aa1b96a.mp4",
+      "snapshotId": 11566,
+      "auditStatus": 1,
+      "ownerId": 7835443,
+      "ownerUuid": "7e906ea16a8d49b3b9f99e8be7eb959c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/7e906ea16a8d49b3b9f99e8be7eb959c/894132c3fe5009229932714130dd715c44a4d5f6671780172973d6cc3969bbb8.jpg",
+      "nickname": "zerone泽万",
+      "isLike": false,
+      "likeCount": 7,
+      "tags": [
+        {
+          "id": 1503,
+          "code": "teaching",
+          "tagLabel": "教学教程",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1503/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年05月16日 15:54",
+      "updateAt": "2026年05月16日 16:02",
+      "publishAt": "2026年05月16日 15:54",
+      "playCount": 6,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 81,
+        "edges": 59
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f6f152db-4272-9291-993a-584a772a6a01"
+}

@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "17e32bb5ed0246bfa24f50da54a9e730",
+      "projectUuid": "977c7498473f42bbad1f00970f423a3c",
+      "name": "创意MV：属于我们的主场",
+      "description": "本作品是为中国移动AI视频大赛打造的魔性玩梗MV，创意灵感源自世界杯时间差的网络热点。往届世界杯多在深夜开赛，是年轻人熬夜看球的专属娱乐，本届赛事集中在早间，让习惯早起的中老年群体成为观赛主力军，强烈的场景反差成为核心创作切入点。\n摒弃了千篇一律的球赛热血剪辑，精准捕捉世界杯清晨开赛的独特热点，以市井烟火气为切入点，塑造全员在线的趣味观赛名场面。开篇将夜宵店改造为早餐店，足球造型的面点呼应晨间观赛场景，公园内遛鸟大爷用手机看球赛、大妈舞剑搭配足球、棋桌推演足球战术、登山老人山顶观赛绝杀，用趣味生活化镜头展现长辈花式追球的画面。中段设计趣味转折，当歌词唱至“属于我们的主场”，将人物进入迷你足球场后画面变为lowpoly低多边形模糊画质，模拟网络观看痛点，通过中国移动APP领取咪咕钻石会员一键切换高清画质，直观体现移动网络与会员服务优势，结尾以老年足球友谊赛收尾，呼应主场主题。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/56f16240970e44f0aecf050f8292769e/1d8e0ebdf6472d42495332062dfc9cd33d7aa79b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/56f16240970e44f0aecf050f8292769e/bda55b661aa88ad7c6cc9386494c07b5d48f012b.mp4",
+      "snapshotId": 22546,
+      "auditStatus": 1,
+      "ownerId": 6506744,
+      "ownerUuid": "56f16240970e44f0aecf050f8292769e",
+      "avatar": "https://liblibai-online.liblib.cloud/img/56f16240970e44f0aecf050f8292769e/cf7da0ec04dfec2157fed426dcdc24888d968abaf6d617b8dbfa888b570d065f.jpg",
+      "nickname": "不是猫Notcat",
+      "isLike": false,
+      "likeCount": 21,
+      "tags": [
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a40be300000000020039671?app_platform=android&ignoreEngage=true&app_version=9.33.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBIIlvp9Xh-dPtOLpNXuGuXBuTpty3xFJJs8bnM9kdLTU=&author_share=1&shareRedId=Nz0zMDc2PEs3SjU5TU4ySTk4PEk5SUk6&apptime=1782653273&share_id=059f74e9c29640c49a78c4419fcd2ac5&share_channel=copy_link&appuid=5710418b1c07df2c353b5dc1&xhsshare=CopyLink&wechatWid=f31a7fca17401488eb9efd7e89a71f4a&wechatOrigin=menu",
+      "createAt": "2026年06月28日 21:30",
+      "updateAt": "2026年06月30日 23:43",
+      "publishAt": "2026年06月28日 21:30",
+      "playCount": 25,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 141,
+        "edges": 215
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6d3774cb-0d84-9c59-a7c0-c1efe7f27684"
+}

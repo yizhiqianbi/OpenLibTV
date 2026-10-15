@@ -1,0 +1,191 @@
+.cv-group-node {
+  --canvas-group-bg: #ffffff1a;
+  --canvas-group-border: #ffffff1a;
+}
+.canvas-light .cv-group-node {
+  --canvas-group-bg: #0000000d;
+  --canvas-group-border: #00000014;
+  --storyboard-group-shell-bg: #fff;
+}
+.canvas-light .cv-general-group-toolbar {
+  --canvas-controls-bg: #fff;
+  --canvas-controls-border: #0000000f;
+  --canvas-controls-text: #111;
+  --canvas-controls-hover: #0000000d;
+}
+.cv-general-group-toolbar {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 0.5px solid var(--canvas-controls-border, #363636);
+  border-radius: 14px;
+  background: var(--canvas-controls-bg, #262626);
+  box-shadow: 0 4px 10px #00000014;
+  backdrop-filter: blur(16px);
+  overflow-x: auto;
+  white-space: nowrap;
+  pointer-events: auto;
+}
+.cv-general-group-toolbar > button,
+.cv-general-group-toolbar .cv-storyboard-control-tooltip-anchor > button {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 10px;
+  color: var(--canvas-controls-text, #fff);
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cv-general-group-toolbar > button:hover:not(:disabled),
+.cv-general-group-toolbar .cv-storyboard-control-tooltip-anchor > button:hover:not(:disabled) {
+  background: var(--canvas-controls-hover, #ffffff1a);
+}
+.cv-general-group-toolbar button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.cv-general-group-toolbar > .cv-general-group-color-trigger {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.cv-general-group-color-trigger > span {
+  width: 20px;
+  height: 20px;
+  border: 0.5px solid #00000026;
+  border-radius: 50%;
+}
+.cv-general-group-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  background: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+.cv-general-group-divider {
+  flex-shrink: 0;
+  width: 1px;
+  height: 24px;
+  margin: 0 2px;
+  align-self: center;
+  background: var(--canvas-controls-border, #363636);
+}
+.cv-general-group-toolbar .cv-general-group-brand {
+  color: var(--fg-brand, #5ddcff);
+}
+.cv-general-group-toolbar .cv-general-group-brand:hover:not(:disabled) {
+  background: var(--Components-Brand-button-secondary-Hover, #3cb5cc26);
+}
+.cv-general-group-toolbar .cv-general-group-running {
+  color: #f87171;
+}
+.cv-general-group-toolbar .cv-general-group-running:hover:not(:disabled) {
+  background: #ef444433;
+}
+.cv-general-group-toolbar .cv-general-group-zip-running {
+  border: 1px solid #ff3b30;
+  background: #000c;
+}
+.cv-general-group-toolbar .cv-general-group-zip-running:hover:not(:disabled) {
+  background: #ef444433;
+}
+.cv-general-group-toolbar .cv-general-group-download {
+  width: 36px;
+  padding: 0;
+}
+.cv-general-group-color-menu {
+  display: grid;
+  grid-template-columns: repeat(5, 36px);
+  gap: 12px;
+  width: max-content;
+  padding: 12px;
+}
+.cv-general-group-color-menu > button {
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+}
+.cv-general-group-color-menu > button:hover {
+  background: transparent;
+  transform: scale(1.1);
+}
+.cv-general-group-color-menu > button > span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.cv-general-group-layout-menu {
+  gap: 4px;
+}
+.cv-general-group-toolbar :focus-visible {
+  outline: 2px solid #5ddcff;
+  outline-offset: 2px;
+}
+.cv-general-group-hand-cue {
+  position: absolute;
+  right: -8px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 1.6px 1.6px var(--scriptv2-run-group-hand-shadow, #0000006b));
+  animation: cv-script-group-hand-cue 1.15s ease-in-out infinite;
+}
+.canvas-light .cv-general-group-hand-cue {
+  --scriptv2-run-group-hand-fill: #fff;
+  --scriptv2-run-group-hand-stroke: #2f3640;
+  --scriptv2-run-group-hand-shadow: #0000003d;
+}
+@keyframes cv-script-group-hand-cue {
+  0%,
+  100% {
+    opacity: 0.82;
+    transform: translate(8px, 8px) rotate(-40deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-4px, -4px) rotate(-40deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv-general-group-hand-cue {
+    animation: none;
+    transform: rotate(-40deg);
+  }
+}
+.cv-group-title.cv-group-external-title {
+  position: absolute;
+  padding: 0;
+  gap: 0;
+  color: var(--fg-muted, #aaa);
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cv-group-title-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+}
+.cv-group-title-label:focus-visible {
+  outline: 2px solid #5ddcff;
+  outline-offset: 2px;
+}

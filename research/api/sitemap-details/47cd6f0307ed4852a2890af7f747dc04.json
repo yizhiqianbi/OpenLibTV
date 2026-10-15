@@ -1,0 +1,77 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "47cd6f0307ed4852a2890af7f747dc04",
+      "projectUuid": "f857d2310ef34719a97b6bb5f8225265",
+      "name": "非遗扎染&AIGC",
+      "description": "以祖孙一问一答的温情对话为载体，科普古人依靠栀子、苏木、蓝草等天然植物染色的古法扎染工艺，讲述草木染色起源的偶然故事，展现纯手工慢染、花纹独一无二的手作之美，传递非遗绞缬手艺代代传承、匠人坚守初心的内核。\n视频形式：横版16:9",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/14d307ad3f2d4823ab4638554150f832/ea9c169db2a59655a5c009b038ab50f051b0faa6.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/14d307ad3f2d4823ab4638554150f832/9969aa07e94c6742bfc060a9c24418e99a59ad43.mp4",
+      "snapshotId": 22799,
+      "auditStatus": 1,
+      "ownerId": 9977645,
+      "ownerUuid": "14d307ad3f2d4823ab4638554150f832",
+      "nickname": "微信用户1408f4",
+      "isLike": false,
+      "likeCount": 3,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "2.30 复制打开抖音，看看【性感母蟑螂爱上特离谱的作品】第一次用libtv做视频，先是文生图，然后再是图生... https://v.douyin.com/g72QyuZ2mqM/ Qxs:/ S@Y.zG 08/20 :0pm",
+      "createAt": "2026年06月29日 17:19",
+      "updateAt": "2026年06月29日 19:43",
+      "publishAt": "2026年06月29日 17:19",
+      "playCount": 13,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 2,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 50,
+        "edges": 44
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f6eacff0-e836-9452-bd3f-4dec2aa6bfe3"
+}

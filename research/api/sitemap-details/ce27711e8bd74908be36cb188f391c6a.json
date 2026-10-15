@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ce27711e8bd74908be36cb188f391c6a",
+      "projectUuid": "abe30342428d4cdc99d2414ce7b060fb",
+      "name": "怖嘿怖嘿秀",
+      "description": "小怖和小嘿的首次脱口秀来啦",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b53f92e93db84996bd4d1bebfefeccf4/56b8dc00e95f7f930b6eaeacc7bd45dbb56bb9db.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b53f92e93db84996bd4d1bebfefeccf4/0f58e6733b8e264a474bab8ad6940989e22e2964.mov",
+      "snapshotId": 18810,
+      "auditStatus": 1,
+      "ownerId": 1102189,
+      "ownerUuid": "b53f92e93db84996bd4d1bebfefeccf4",
+      "avatar": "https://liblibai-online.liblib.cloud/img/b53f92e93db84996bd4d1bebfefeccf4/fcd7839769c65c57ab75988e691f963d285610dfdc1503bbdd8fe0e96fb3b29d.png",
+      "nickname": "森海荧光",
+      "isLike": false,
+      "likeCount": 50,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年05月20日 22:35",
+      "updateAt": "2026年06月12日 20:07",
+      "publishAt": "2026年06月12日 20:04",
+      "playCount": 13,
+      "viewCreationProcessCount": 6,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 83,
+        "edges": 93
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d2790022-f10a-967f-83db-0fa683d14530"
+}

@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "92ef7b70e7a242a19abcd319324078b9",
+      "projectUuid": "2b33a9a26881464f8aa3ef2ab629d229",
+      "name": "《天机变谪仙人》第四集 爱与勇气",
+      "description": "能够操纵时间的小和尚阿福的过去究竟是怎样的？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b7d909f5eaa54c51b888657323f71645/7b5f1e4c0ce7113c5a44b3fb7d7e4680fb9fd909.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b7d909f5eaa54c51b888657323f71645/e25a3e07590b4d128c6baf9a2baca5b3c3e3ce59.mov",
+      "snapshotId": 18507,
+      "auditStatus": 1,
+      "ownerId": 4883748,
+      "ownerUuid": "b7d909f5eaa54c51b888657323f71645",
+      "avatar": "https://liblibai-online.liblib.cloud/img/b7d909f5eaa54c51b888657323f71645/d2c3d2fda23c65140922ba49bf13ff9ab8cb6f3f860aa93b59cd238f143f0843.png",
+      "nickname": "阿伟2号机",
+      "isLike": false,
+      "likeCount": 102,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月11日 18:13",
+      "updateAt": "2026年06月17日 19:39",
+      "publishAt": "2026年06月11日 18:13",
+      "playCount": 30,
+      "viewCreationProcessCount": 16,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 187,
+        "edges": 271
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ba9dd3d9-ad9f-99bc-a960-500b331ff184"
+}

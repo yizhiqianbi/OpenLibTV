@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "61bbe73c6d434f1381a0b7d22303dee0",
+      "projectUuid": "073b7a77551f41c5aef50a4a9d5d869e",
+      "name": "类高达机甲科幻题材预告片：《紫色火焰》",
+      "description": "类高达机甲科幻题材电影预告片：《紫色火焰》",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/39528aa7094a47a18a414763e5952427/ad294627893fd460dfb6b11cfdf493d6f9237079.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/39528aa7094a47a18a414763e5952427/a73b022f62119dd6001d1b3fbba56bb8ec630933.mp4",
+      "snapshotId": 21174,
+      "auditStatus": 1,
+      "ownerId": 9878596,
+      "ownerUuid": "39528aa7094a47a18a414763e5952427",
+      "avatar": "http://thirdqq.qlogo.cn/ek_qqapp/AQC6nibIadrLmxicAXGV0RW5Qs1dcZETvp5zYngskOyAzwCeVdsVFFE2wXfCbwnUlGjFzSjYeNOYahn7NeVjNuz8805xURM9rjzDrUwKbtT1WibquG2OhI/100",
+      "nickname": "sunone999",
+      "isLike": false,
+      "likeCount": 114,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "7.66 复制打开抖音，看看【-Anonymous_User的作品】《紫色火焰》AI自制原创机甲科幻预告片# 抖音AI... https://v.douyin.com/RK638CaXHUw/ Vlc:/ 07/03 k@P.XZ :3pm",
+      "createAt": "2026年06月22日 20:58",
+      "updateAt": "2026年06月22日 21:10",
+      "publishAt": "2026年06月22日 20:58",
+      "playCount": 111,
+      "viewCreationProcessCount": 61,
+      "copyCanvasCount": 8,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 61,
+        "edges": 57
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "c02c2b11-dcf8-9d91-81a5-b8acf0945d8c"
+}

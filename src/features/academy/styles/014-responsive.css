@@ -1,0 +1,9 @@
+@media (max-width: 1279px) {
+  .academy-master-image {
+    width: 440px;
+  }
+  .academy-master-copy {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}

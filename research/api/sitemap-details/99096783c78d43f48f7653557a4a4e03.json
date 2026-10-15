@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "99096783c78d43f48f7653557a4a4e03",
+      "projectUuid": "6aa0dda7d0584f2792d6b427a2549db8",
+      "name": "居家节点指南",
+      "description": "居家节点指南",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8c39b5e9723b4fd7bf448be06d88a7c0/db5ade91728955dfc433efa104ceed69f89791aa.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8c39b5e9723b4fd7bf448be06d88a7c0/fb174f2b0d2b20aa28349abfec32c7460e8e15f7.mp4",
+      "snapshotId": 19894,
+      "auditStatus": 1,
+      "ownerId": 3079111,
+      "ownerUuid": "8c39b5e9723b4fd7bf448be06d88a7c0",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8c39b5e9723b4fd7bf448be06d88a7c0/a539810ca695dae105ae520e7bad58a33a71e04fce92c8b142c73acb8ea35fa4.png",
+      "nickname": "萧风",
+      "isLike": false,
+      "likeCount": 18,
+      "tags": [
+        {
+          "id": 1106,
+          "code": "corporate",
+          "tagLabel": "企业宣传",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1106/",
+          "tagStatus": 1,
+          "tagOrder": 6,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1506,
+          "code": "rule_demo",
+          "tagLabel": "规则演示",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1506/",
+          "tagStatus": 1,
+          "tagOrder": 6,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月16日 20:50",
+      "updateAt": "2026年06月16日 20:57",
+      "publishAt": "2026年06月16日 20:50",
+      "playCount": 26,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 35,
+        "edges": 8
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "7aef5ed3-a2ca-9e1b-8140-9bf9b9ff65d9"
+}

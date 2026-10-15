@@ -1,0 +1,27 @@
+.node-prompt-asset-caption {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 6px;
+  color: var(--fg-muted, #999);
+  font-size: 13px;
+  line-height: 20px;
+}
+.node-prompt-asset-caption.is-at-capacity {
+  color: #e74c3c;
+}
+.node-prompt-asset-caption > svg,
+.node-prompt-asset-caption > img {
+  flex-shrink: 0;
+}
+.node-prompt-asset-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+.node-prompt-asset-actions > button {
+  min-height: 32px;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13px;
+}

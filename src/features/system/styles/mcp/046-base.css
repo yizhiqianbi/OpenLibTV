@@ -1,0 +1,189 @@
+/* Exact MCP authorization styles from the public route. */
+.mcp-page {
+  color: #f7f7f7;
+  background: radial-gradient(900px 420px at 50% -10%, #09caf51a 0%, #14141400 70%), #141414;
+  place-items: center;
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: grid;
+}
+.mcp-card {
+  width: 392px;
+  max-width: 92vw;
+}
+.mcp-pair {
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  display: flex;
+}
+.mcp-clientBadge {
+  color: #fff;
+  background: 0 0;
+  border-radius: 11px;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  overflow: hidden;
+}
+.mcp-clientIcon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.mcp-clientGlyph {
+  width: 24px;
+  height: 24px;
+}
+.mcp-dots {
+  background-image: linear-gradient(90deg, #525252 50%, #0000 50%);
+  background-size: 8px 2px;
+  width: 44px;
+  height: 2px;
+}
+.mcp-mark {
+  color: #fff;
+  background: #000;
+  border: 1px solid #ffffff14;
+  border-radius: 11px;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  display: grid;
+}
+.mcp-title {
+  text-align: center;
+  margin: 16px 0 4px;
+  font-size: 18.5px;
+  font-weight: 600;
+}
+.mcp-byline {
+  color: #ffffffb3;
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 12.5px;
+}
+.mcp-byline b {
+  color: #f7f7f7;
+  font-weight: 600;
+}
+.mcp-allow {
+  background: #161616;
+  border: 1px solid #ffffff14;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.mcp-allowHeader {
+  color: #ffffffb3;
+  background: #1c1c1c;
+  border-bottom: 1px solid #ffffff14;
+  padding: 10px 14px;
+  font-size: 12px;
+}
+.mcp-scopeList {
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+}
+.mcp-scopeItem {
+  border-bottom: 1px solid #ffffff0f;
+  padding: 8px 14px 8px 26px;
+  font-size: 13px;
+  position: relative;
+}
+.mcp-scopeItem:before {
+  content: '';
+  background: #ffffff5c;
+  border-radius: 50%;
+  width: 4.5px;
+  height: 4.5px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+.mcp-scopeItem:last-child {
+  border-bottom: 0;
+}
+.mcp-scopeTitle {
+  display: block;
+}
+.mcp-scopeDetail {
+  color: #ffffff80;
+  font-size: 11.5px;
+  display: block;
+}
+.mcp-rawScope {
+  color: #ffffff73;
+  word-break: break-all;
+  background: #101010;
+  border-top: 1px solid #ffffff14;
+  padding: 8px 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.mcp-actions {
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  display: grid;
+}
+.mcp-denyButton,
+.mcp-allowButton {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.mcp-denyButton {
+  color: #f7f7f7;
+  background: 0 0;
+  border: 1px solid #ffffff1f;
+}
+.mcp-denyButton:hover {
+  background: #ffffff0f;
+}
+.mcp-allowButton {
+  color: #141414;
+  background: #09caf5;
+  border: 1px solid #09caf5;
+}
+.mcp-allowButton:hover {
+  background: #04caf6;
+}
+.mcp-allowButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.mcp-status {
+  color: #ffffffb3;
+  text-align: center;
+  margin: 14px 0 4px;
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+.mcp-loginLink {
+  color: #09caf5;
+  font: inherit;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  margin-left: 6px;
+  padding: 0;
+  text-decoration: underline;
+}
+.mcp-returnLink {
+  color: #09caf5;
+  text-decoration: none;
+}
+.mcp-returnLink:hover {
+  text-decoration: underline;
+}
+
+.mcp-mark img {
+  width: 26px;
+  height: 26px;
+}

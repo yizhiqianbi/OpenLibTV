@@ -1,0 +1,84 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "44eabed077a1404cafde7cc4c7b8d147",
+      "projectUuid": "d93e8e97e54546deb93a55025a60453d",
+      "name": "茶祖吴理真IP原创 AI漫剧——《荼灵纪》预告片",
+      "description": "天缝泄魔气，凡人遭炼人丹。吴理真坠崖得大禹观茶术，神树被毁、听闻母亲遇害，血脉修罗觉醒西行寻阴种，却不知一切是天庭阴谋....",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d5516a909c204795a3c3a552cb7260f4/a981db5ee714f3c9622ac7fb6f51dfdcc7b7638d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d5516a909c204795a3c3a552cb7260f4/1395fa58ec5c47d8015f175a82da5e38882ae5b8.mp4",
+      "snapshotId": 22077,
+      "auditStatus": 1,
+      "ownerId": 4044905,
+      "ownerUuid": "d5516a909c204795a3c3a552cb7260f4",
+      "avatar": "https://liblibai-online.liblib.cloud/img/d5516a909c204795a3c3a552cb7260f4/c4b9745688002fb6dbf1cb96b19b800b0ce46e60f6ae670571959123d540103f.png",
+      "nickname": "星野AI",
+      "isLike": false,
+      "likeCount": 11,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/video/7655355007218339126",
+      "createAt": "2026年06月26日 13:57",
+      "updateAt": "2026年06月26日 14:40",
+      "publishAt": "2026年06月26日 14:35",
+      "honors": [
+        "非遗专项激励"
+      ],
+      "awardedTag": [
+        "非遗专项激励"
+      ],
+      "playCount": 42,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 133,
+        "edges": 82
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "75c7ff16-34f8-948c-a5f2-c7cfd5164678"
+}

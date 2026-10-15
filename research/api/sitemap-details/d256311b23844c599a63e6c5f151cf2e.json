@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d256311b23844c599a63e6c5f151cf2e",
+      "projectUuid": "5c4992021c614b15a528ff813bfaa8c9",
+      "name": "【街头信号】｜潮牌服装TVC",
+      "description": "《街头信号》是一支以潮牌服装为核心的实验视觉TVC。影片以城市街头为舞台，通过黑白灰摄影、撕纸拼贴、半调网点、荧光色块、霓虹手绘线条、液态金属元素和动态图形特效，构建出一个具有强烈视觉冲击力的潮流影像世界。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/41bfd86806a85d271ea8837d903773df5f24bdc7.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/6584f26a94c701e2168bfaf17c91ffaafa6cfd61.mp4",
+      "snapshotId": 25042,
+      "auditStatus": 1,
+      "ownerId": 7691513,
+      "ownerUuid": "bc19270a4e744fa38a01a9ebbdab3244",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bc19270a4e744fa38a01a9ebbdab3244/722e023f39d7dc69916f25658bdde4e848938d9d58c50b42700341045d12e52f.jpg",
+      "nickname": "追逐星辰",
+      "isLike": false,
+      "likeCount": 55,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "小红书：https://www.xiaohongshu.com/discovery/item/6a4d0fc500000000110179f4?source=webshare&xhsshare=pc_web&xsec_token=YB4gBSm7ymnE9DzxI1GPqRboSLg3KspUFDz5Buf5meMmc=&xsec_source=pc_share   抖音：https://v.douyin.com/GAO4474TKqU/",
+      "createAt": "2026年07月07日 23:00",
+      "updateAt": "2026年07月09日 22:11",
+      "publishAt": "2026年07月07日 23:00",
+      "playCount": 44,
+      "viewCreationProcessCount": 19,
+      "copyCanvasCount": 6,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 135,
+        "edges": 192
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "83805a45-1154-9606-8b37-bb98ee335cc8"
+}

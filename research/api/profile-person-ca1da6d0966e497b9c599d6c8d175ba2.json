@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "userDetail": {
+      "id": 9870156,
+      "avatar": "https://liblibai-online.liblib.cloud/img/ca1da6d0966e497b9c599d6c8d175ba2/27de3835015db05e15a767f3cb62404adb088867411589a89f4c1508b77446c9.png",
+      "nickname": "玄机动画",
+      "mobile": "172****7670",
+      "uuid": "ca1da6d0966e497b9c599d6c8d175ba2",
+      "homepages": [],
+      "personalSpaceInformation": {
+        "briefIntroduction": "",
+        "coverImage": "https://liblibai-online.liblib.cloud/img/ca1da6d0966e497b9c599d6c8d175ba2/862110de41684674df343ea4d23001e1c85e593c2f825c80b4d28cf08adc021b.jpg",
+        "xiaohongshuLink": "",
+        "xiaohongshuIcon": "",
+        "tiktokLink": "https://v.douyin.com/m9ujdiRCDDU/ 3@0.com :5pm",
+        "tiktokIcon": "",
+        "bliLink": "",
+        "bliIcon": "",
+        "webLink": "",
+        "webIcon": "",
+        "huggingFaceLink": "",
+        "huggingFaceIcon": "",
+        "twitterLink": "",
+        "twitterIcon": "",
+        "facebookLink": "",
+        "facebookIcon": "",
+        "instagramLink": "",
+        "instagramIcon": "",
+        "discordLink": "",
+        "discordIcon": "",
+        "otherLink": "",
+        "otherIcon": "",
+        "openBusiness": 0,
+        "openLike": 1,
+        "openRecommend": 1
+      },
+      "authorDetail": "",
+      "authAuthorStatus": 0
+    },
+    "counter": {
+      "uploadCount": 0,
+      "followerCount": 61,
+      "followCount": 0,
+      "likeCount": 0,
+      "picLikeCount": 0,
+      "modelLikeCount": 0,
+      "downloadCount": 0,
+      "commentCount": null,
+      "imageCount": null,
+      "subscribeCount": null,
+      "hitCount": null,
+      "runCount": 0,
+      "heat": null,
+      "useCount": 0,
+      "modelUseCount": null,
+      "imageUseCount": null,
+      "imageDownCount": null,
+      "imageRunCount": null,
+      "isFollow": 0,
+      "isLike": null
+    },
+    "tags": [
+      "authorship"
+    ]
+  }
+}

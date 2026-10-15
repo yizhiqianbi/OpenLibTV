@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f5ce6e7813d34a77a626553c5a60fa8a",
+      "projectUuid": "42203f1f5c044a99b2b905d30767fa32",
+      "name": "安顺地戏非遗",
+      "description": "戏是今人演，魂是古人留",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/f1ee00eb66a746a292c593c5886880c2/767721591_0e79b689bed245a4811ba0216cf1caf1.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f1ee00eb66a746a292c593c5886880c2/9bd653af9c34faa201f44679795730732b3b0fe3.mp4",
+      "snapshotId": 19961,
+      "auditStatus": 1,
+      "ownerId": 9201419,
+      "ownerUuid": "f1ee00eb66a746a292c593c5886880c2",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f1ee00eb66a746a292c593c5886880c2/03daff1638fa15175f168e09bb2c80e505f826206c54e3197daad22b08e9c86e.png",
+      "nickname": "七有此理",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1205,
+          "code": "culture_tourism",
+          "tagLabel": "文旅政媒",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1205/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.79 ZMW:/ 10/06 d@a.NW :6pm 安顺地戏，戏是今人演，魂是古人留。 # Lib广告导演请就位 # 非遗文化 # 地戏非物质文化遗产 # 创作阶梯计划  https://v.douyin.com/ZoEkl2B3jzk/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月17日 01:21",
+      "updateAt": "2026年07月03日 14:42",
+      "publishAt": "2026年06月17日 01:21",
+      "playCount": 21,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 116,
+        "edges": 165
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "987e8806-dd73-981b-8f05-14fbe986ef87"
+}

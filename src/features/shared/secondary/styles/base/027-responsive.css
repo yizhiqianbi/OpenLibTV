@@ -1,0 +1,8 @@
+@media (prefers-reduced-motion: reduce) {
+  .secondary-page *,
+  .blender-landing * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

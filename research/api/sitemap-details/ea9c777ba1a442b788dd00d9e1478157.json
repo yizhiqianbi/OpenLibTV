@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ea9c777ba1a442b788dd00d9e1478157",
+      "projectUuid": "481d24b018794a60b2ccb648a66648dd",
+      "name": "一半一半 AIMV 《半我》",
+      "description": "本次创作以歌曲中爱恨拉扯、自我分裂的情绪内核为基底，将 “一半爱、一半恨” 的内在矛盾，具象化为 Top Barry 与 IP 的双主角共生叙事。\n男主 Top Barry 是现实维度的显性自我：带着桀骜的戾气与嘴硬的伪装，在情绪低谷中自我放逐，以坚硬的外在外壳掩盖内里的脆弱与失重感；IP 形象则是潜意识维度的隐性自我，是被刻意推开、却始终未曾离去的另一半人格，承载着未被消磨的温柔、初心与执念，二者一体两面，共同构成完整的精神本体。\n故事中天台坠落的桥段并非物理层面的消亡，而是精神下坠的视觉外化 —— 是人陷入情绪深渊时的放任沉沦、认命式的自我放弃；高空牵手的救赎瞬间，也并非外来者的拯救，而是自我与自我的最终和解：你一度抗拒、急于推开的另一半自己，恰恰是在谷底托住你的终极力量。\n结尾梦醒的段落，完成了意识中的精神陪伴到现实里的情感寄托，精准回应歌曲内核对一半一半的内心纠结。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/30adc6dff51248ae9b49c567281f736e/8417a20a1d84dd0cd6deb002ffcd6cbd1be93448.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/30adc6dff51248ae9b49c567281f736e/b10ee31fa58e2515ee4c6ca7b0c100e3b08d44e9.mp4",
+      "snapshotId": 24836,
+      "auditStatus": 1,
+      "ownerId": 197654,
+      "ownerUuid": "30adc6dff51248ae9b49c567281f736e",
+      "avatar": "https://liblibai-online.liblib.cloud/web/46225cdb63809899c04ae0d56e6c7e9e3036748c43d1f5cdb3a7b02a617f2468.jpg",
+      "nickname": "粿条",
+      "isLike": false,
+      "likeCount": 5,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月07日 10:21",
+      "updateAt": "2026年07月07日 10:37",
+      "publishAt": "2026年07月07日 10:21",
+      "playCount": 4,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 60,
+        "edges": 100
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "eaa3672d-e9dd-9767-b37d-c972552d8c46"
+}

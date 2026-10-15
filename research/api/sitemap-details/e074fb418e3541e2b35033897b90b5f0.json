@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e074fb418e3541e2b35033897b90b5f0",
+      "projectUuid": "6d751009e7aa4796bec9a3b172758b87",
+      "name": "佐佐木竟然结婚了【躲在超市后门吞云吐雾的两人】",
+      "description": "【剧情提要】：\n超市的前泽主任意外撞见佐佐木与一位年轻女性同行，且他的手指上戴着一枚容易让人误解的“结婚指环”，随后前泽在聚餐时将这一发现当成八卦告诉了大家。这个消息让内心对佐佐木抱有微妙好感的山田（田山）备受打击，她不仅当场石化，在后续的相处中也变得极度别扭和失落，甚至默默与他保持距离并提起“既然您已经有奥さん（妻子）了……”。然而事实很快水落石出，原来当天与佐佐木在超市同行的女性其实是他的亲妹妹，而那枚所谓的“结婚戒指”也只是妹妹开玩笑强行套在他手上、一时摘不下来才产生的误会。随着真相大白，得知佐佐木依然独身且最想一起抽烟的人是自己后，田山重新找回了往日的活力，两人在后门喫烟所的默契关系也顺利回归正轨。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d20421bb9cac40fb99763d309111430a/c8c6f01141a8f6641078160847a8d83341a3e3d0.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d20421bb9cac40fb99763d309111430a/9f7d1c7a12db5873014285f63098780cd2e2eb4c.mp4",
+      "snapshotId": 26126,
+      "auditStatus": 1,
+      "ownerId": 3462983,
+      "ownerUuid": "d20421bb9cac40fb99763d309111430a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/d20421bb9cac40fb99763d309111430a/0564918b6d701c6471493c00c76d8cca97ab448fd9ee92b5962e510338053e5b.png",
+      "nickname": "大大大大大",
+      "isLike": false,
+      "likeCount": 47,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a3e804b000000000f01f1ee?xsec_token=ABdoVnvWhidRbQGqJdD01_J6BJMLZsA5YSBBP36FIyMqw=&xsec_source=pc_user",
+      "createAt": "2026年06月26日 21:55",
+      "updateAt": "2026年07月11日 17:14",
+      "publishAt": "2026年07月11日 16:55",
+      "playCount": 13,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 177,
+        "edges": 279
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "36ec096c-6584-9c65-a2ba-958a2256aba0"
+}

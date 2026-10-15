@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "dd864e0e43fe41d18e15c6c8ba572b90",
+      "projectUuid": "eb6178b3353f4f1488733b73a98de638",
+      "name": "拳瓦2026·幽影🆚火男篇",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/881a6f05cad94c738e105f724878261c/cbc697ac4dd2bf2c43dd456e2323de8cc526e628.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/881a6f05cad94c738e105f724878261c/6d0dd4b44d6e42e3b0da04419d61fb7337ae5fb7.mp4",
+      "snapshotId": 2028,
+      "auditStatus": 1,
+      "ownerId": 1772067,
+      "ownerUuid": "881a6f05cad94c738e105f724878261c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/881a6f05cad94c738e105f724878261c/6f1196f80e732330da360cd43e63308b459760dc572cebd85291ff18260b6ae8.jpg",
+      "nickname": "唐百万",
+      "isLike": false,
+      "likeCount": 106,
+      "tags": [
+        {
+          "id": 1302,
+          "code": "game_art",
+          "tagLabel": "游戏美宣",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1302/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "拳瓦2026✨幽影🆚火男🔥谁会赢？ 如果把无畏契约做成... http://xhslink.com/o/78YAJathNtr  复制后打开【小红书】查看笔记！",
+      "createAt": "2026年03月27日 18:08",
+      "updateAt": "2026年04月16日 02:27",
+      "publishAt": "2026年03月27日 18:11",
+      "playCount": 44,
+      "viewCreationProcessCount": 18,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 140,
+        "edges": 115
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "93aeeff9-9ff8-9f13-9b35-c6a354ec9491"
+}

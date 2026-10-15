@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "1b77e728a49141499a0dcddf9f03b75c",
+      "projectUuid": "3fb07997bf2e4d67a4f307d57cfc1490",
+      "name": "《绿色末日x赛博武侠》概念片",
+      "description": "《绿色末日x赛博武侠》概念片 ---何者为人？何时为人？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bc86cdd7d0dc451e97e7d7780552ace5/25cb0de875b9fa82085e9ed0cb1a043efaa9690b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bc86cdd7d0dc451e97e7d7780552ace5/fe408f114cd4a425a9ec2b965b47399d02683f7e.mp4",
+      "snapshotId": 23114,
+      "auditStatus": 1,
+      "ownerId": 5955183,
+      "ownerUuid": "bc86cdd7d0dc451e97e7d7780552ace5",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bc86cdd7d0dc451e97e7d7780552ace5/7f796908c807e3dc38051b0f36589b2d25a55c619bbf8e30b311d120015dc84c.png",
+      "nickname": "先锋薄荷",
+      "isLike": false,
+      "likeCount": 556,
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "2.38 S@L.jC 03/24 :8pm VlP:/ 《绿色末日x赛博武侠》概念片 # AI全能艺术家计划 《绿色末日x赛博武侠》概念片 ---何者为人？何时为人？# # 世界末日 # 抖音AI创作大赛 # 命题末日  https://v.douyin.com/wvVbRP611Jo/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月30日 16:50",
+      "updateAt": "2026年07月20日 23:29",
+      "publishAt": "2026年06月30日 16:50",
+      "playCount": 146,
+      "viewCreationProcessCount": 50,
+      "copyCanvasCount": 8,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 197,
+        "edges": 175
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b8d01679-e2fa-97f1-90c6-878d9313db90"
+}

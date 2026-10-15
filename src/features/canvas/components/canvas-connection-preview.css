@@ -1,0 +1,83 @@
+.cv-edges .cv-connection-preview path.cv-link-preview {
+  fill: none;
+  pointer-events: none;
+  stroke-dasharray: none;
+}
+.cv-edges .cv-connection-preview .cv-connection-underlay {
+  stroke: rgba(100, 180, 255, 0.4);
+  stroke-width: 6;
+}
+.cv-edges .cv-connection-preview .cv-connection-line {
+  stroke: var(--canvas-edge-hover, #c0c8d0);
+  stroke-width: 2;
+}
+.canvas-light .cv-edges .cv-connection-preview .cv-connection-line {
+  stroke: var(--canvas-edge-hover, #919191);
+}
+.cv-edges .cv-connection-preview.is-invalid .cv-connection-underlay {
+  stroke: rgba(180, 180, 180, 0.2);
+}
+.cv-edges .cv-connection-preview.is-invalid .cv-connection-line {
+  stroke: rgba(160, 160, 160, 0.6);
+}
+.cv-connection-preview-glow {
+  animation: cv-connection-breathe 1.5s ease-in-out infinite;
+}
+.cv-connection-flow {
+  animation: cv-connection-travel 3s linear infinite;
+}
+.cv-edges .cv-connection-preview path.cv-connection-flow-path {
+  stroke: rgb(100, 180, 255);
+  stroke-width: var(--cv-flow-width);
+  stroke-opacity: var(--cv-flow-opacity);
+  stroke-dasharray: var(--cv-flow-dash);
+  stroke-dashoffset: inherit;
+  animation: none;
+}
+.cv-connection-invalid-tooltip {
+  overflow: visible;
+  pointer-events: none;
+}
+.cv-connection-invalid-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  background: #2a2a2a;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  transform-origin: top left;
+}
+@keyframes cv-connection-breathe {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px #64b4ff66);
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #64b4ffe6);
+    opacity: 1;
+  }
+}
+@keyframes cv-connection-travel {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -300px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv-connection-preview-glow,
+  .cv-connection-flow {
+    animation: none;
+    filter: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,38 @@
+@media (max-width: 1023px) {
+  .secondary-skill-create {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 767px) {
+  .secondary-skill-create {
+    padding: 0 16px;
+    min-width: 0;
+  }
+  .secondary-skill-create > header {
+    top: calc(var(--promo-height, 60px) + 64px);
+  }
+  .secondary-skill-folder-editor > aside {
+    width: 145px;
+  }
+  .secondary-skill-content-field > header > div {
+    gap: 4px;
+  }
+  .secondary-skill-content-field > header {
+    font-size: 13px;
+  }
+  .secondary-skill-editor-mode button {
+    padding: 2px 3px;
+  }
+  .secondary-skill-file small {
+    display: none;
+  }
+  .secondary-skill-expanded {
+    width: 95vw !important;
+  }
+  .secondary-skill-expanded > header {
+    padding: 12px;
+  }
+  .secondary-skill-expanded > .secondary-skill-folder-editor {
+    margin: 0 12px 12px;
+  }
+}

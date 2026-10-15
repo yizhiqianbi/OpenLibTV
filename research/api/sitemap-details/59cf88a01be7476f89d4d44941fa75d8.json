@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "59cf88a01be7476f89d4d44941fa75d8",
+      "projectUuid": "0d7c34ce206c44a4bddedf1b33d4bbc6",
+      "name": "澪の空",
+      "description": "预告片，盛夏的城市，海忽然悬在天空，雨水开始逆流，白鲸掠过云层。能听见海声的少年森川朝陽，遇见被寄放在人间的少女七瀬澪。她终将回到归夏海，而他只想在世界忘记她以前，再一次抓住她的手。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/344b638c02e5476b9f346574301f79d5/5717fcb748e0cbe4b7a558a6a5b2800aa26cf8be.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/344b638c02e5476b9f346574301f79d5/4ec5feb20f738b9b50161a0a535bbd4e49072092.mp4",
+      "snapshotId": 25377,
+      "auditStatus": 1,
+      "ownerId": 9385789,
+      "ownerUuid": "344b638c02e5476b9f346574301f79d5",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "土豆子",
+      "isLike": false,
+      "likeCount": 20,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "8.28 :3pm D@U.lp Xzg:/ 09/28 原创AI二次元 原创作品《澪の空》新海诚导演画风，即使世界忘记你——我也想，再见你一次！# AI创作者浪潮计划# AI漫剧 # 二次元 # 新海诚 # 原创动画  https://v.douyin.com/diusP6bfLvY/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年07月08日 22:55",
+      "updateAt": "2026年07月09日 22:16",
+      "publishAt": "2026年07月08日 22:55",
+      "playCount": 19,
+      "viewCreationProcessCount": 7,
+      "copyCanvasCount": 3,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 77,
+        "edges": 228
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "addf423b-33b4-951c-be61-e23f765a34c0"
+}

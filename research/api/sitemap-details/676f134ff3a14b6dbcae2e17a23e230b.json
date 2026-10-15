@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "676f134ff3a14b6dbcae2e17a23e230b",
+      "projectUuid": "c14463bc2fc44d09ade79d226d86ed87",
+      "name": "dance",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/a7ecda1947f198856249e2de08f18456ae37bd85.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/2828cf10abeab958e7c4f97760fbb305943a6ab0.mp4",
+      "snapshotId": 221,
+      "auditStatus": 1,
+      "ownerId": 221940,
+      "ownerUuid": "289dfb82dbb444dab196cde0d1d39b7a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/289dfb82dbb444dab196cde0d1d39b7a/7bc5497b4b40a5bf429ada8d35aaa9ac44a9908c0451d149e8e1515d5af6c978.jpg",
+      "nickname": "绘梦",
+      "isLike": false,
+      "likeCount": 5,
+      "tags": [
+        {
+          "id": 1507,
+          "code": "other",
+          "tagLabel": "其他",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1507/",
+          "tagStatus": 1,
+          "tagOrder": 7,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年03月06日 14:08",
+      "updateAt": "2026年04月01日 23:53",
+      "publishAt": "2026年03月11日 21:42",
+      "playCount": 39,
+      "viewCreationProcessCount": 15,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 4,
+        "edges": 3
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "76cb0d9e-b5c5-9186-989e-5641049f6fcb"
+}

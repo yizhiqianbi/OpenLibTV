@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ad204d05832e4fd5bd5c6479db9a2a40",
+      "projectUuid": "3b61b219ddee42b7a19dfa0c0f2dcb51",
+      "name": "《当唐僧学会反诈》",
+      "description": "本片改编经典《西游记》三打白骨箱名场面，跳出原版中师徒误会的剧情，解锁全新反诈脑洞。白骨精照旧使出浑身解效，花招百出编织陷阱，妄图哄骗唐僧师徒四人上当。可唐僧这次半点不上当，反倒把白骨精套路一一拆穿。原来取经路上唐僧早做足反诈功课，熟记96110 反诈专线，学习国家反诈中心APP里各类诈骗案例，对各类伪装骗局早已烂熟于心。从前分不清人妖的软心肠师父，如今自带反诈体质，任凭妖魇千变万化都不会被骗。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/92e49633328e4e8181220f2ca24d0ba5/7002cf33c0211454b08ce9117fd9a4f787b68d03.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/92e49633328e4e8181220f2ca24d0ba5/99ec23d5ca6f80538ac3d6431b5a3504481ecb24.mp4",
+      "snapshotId": 22663,
+      "auditStatus": 1,
+      "ownerId": 2611007,
+      "ownerUuid": "92e49633328e4e8181220f2ca24d0ba5",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar5.png",
+      "nickname": "GM",
+      "isLike": false,
+      "likeCount": 42,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1108,
+          "code": "public_welfare",
+          "tagLabel": "公益广告",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1108/",
+          "tagStatus": 1,
+          "tagOrder": 8,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1506,
+          "code": "rule_demo",
+          "tagLabel": "规则演示",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1506/",
+          "tagStatus": 1,
+          "tagOrder": 6,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.58 复制打开抖音，看看【@高明的作品】当唐僧学会反诈 声明：本剧情取材《西游记三打白骨精... https://v.douyin.com/je_1PcU675w/ 11/22 O@k.Cu pqR:/ :8pm",
+      "createAt": "2026年06月29日 13:02",
+      "updateAt": "2026年07月03日 00:29",
+      "publishAt": "2026年06月29日 13:02",
+      "playCount": 46,
+      "viewCreationProcessCount": 16,
+      "copyCanvasCount": 2,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 94,
+        "edges": 191
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2e33a1e4-1428-959a-afee-352d3cbc9737"
+}

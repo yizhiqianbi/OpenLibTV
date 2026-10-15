@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 8353802,
+      "uuid": "aadb9a4396c449d385452443c960c4e7",
+      "nickname": "方兴未AI",
+      "avatar": "https://liblibai-online.liblib.cloud/img/aadb9a4396c449d385452443c960c4e7/7362f88a82b761ec6d6cce74c21051d29d93048cb25b66de3dffb243ea59b03d.png",
+      "backgroundImage": "",
+      "briefIntroduction": "“建立一个自己信任的梦境，控制梦的结构，走向、色彩、情绪，以上帝之手”。"
+    },
+    "counter": {
+      "totalLikeCount": 849,
+      "projectCount": 26,
+      "viewCreationProcessCount": 2883,
+      "copyCanvasCount": 445,
+      "followerCount": 100,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "728b42d6-645b-9579-aac7-9265c3b49a05"
+}

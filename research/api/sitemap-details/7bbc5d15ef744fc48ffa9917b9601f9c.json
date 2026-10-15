@@ -1,0 +1,94 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "7bbc5d15ef744fc48ffa9917b9601f9c",
+      "projectUuid": "19253a6703d843ef8df01a01180dc76a",
+      "name": "死于罗曼蒂克 - 某位来自洛圣都的NPCの爱情故事",
+      "description": "灵感来源于GTA中某位一直被无聊的我尾随的npc.",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a4c1b997d3f84fa8a871ed91d861f88f/996bd408ee659cf13c4ef989b9e84fa949134d1d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a4c1b997d3f84fa8a871ed91d861f88f/e537a0a6bd0aac20299c9963adab543351e845c8.mov",
+      "snapshotId": 20221,
+      "auditStatus": 1,
+      "ownerId": 884684,
+      "ownerUuid": "a4c1b997d3f84fa8a871ed91d861f88f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/a4c1b997d3f84fa8a871ed91d861f88f/ff003559bede02660ddbfe09b7f93856659fa613018b60102354847275711ff9.jfif",
+      "nickname": "yoimachigusa",
+      "isLike": false,
+      "likeCount": 852,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3035,
+          "code": "prod",
+          "tagLabel": "大乱斗｜vol.2《AI，想象和尖叫》",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3035/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/discovery/item/6a1d523a0000000007026c3b?source=webshare&xhsshare=pc_web&xsec_token=YBhyYGQjf2G2ocsYOdL4TYXBUv6iRzqMhZxKh96n9xBWs=&xsec_source=pc_share",
+      "createAt": "2026年06月01日 17:38",
+      "updateAt": "2026年06月30日 23:43",
+      "publishAt": "2026年06月17日 19:30",
+      "honors": [
+        "最佳画风"
+      ],
+      "awardedTag": [
+        "最佳画风"
+      ],
+      "playCount": 117,
+      "viewCreationProcessCount": 42,
+      "copyCanvasCount": 9,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 132,
+        "edges": 110
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1230414c-65ec-9dcc-b1bb-77a9585ad093"
+}

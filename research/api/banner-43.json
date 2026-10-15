@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "banners": [
+      {
+        "url": "libtv://creation/project/new",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541718475.webp",
+        "title": "",
+        "startTime": "2026-10-07T16:00:00.000+00:00",
+        "endTime": "2026-11-28T15:59:59.000+00:00",
+        "displayOrder": 1,
+        "type": 43,
+        "extendInfo": null
+      },
+      {
+        "url": "libtv://inspiration/home?categoryUuid=98d4be5c514f4896be50396b1bbf9486",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541173087.webp",
+        "title": "",
+        "startTime": "2026-10-08T16:00:00.000+00:00",
+        "endTime": "2026-11-27T15:59:59.000+00:00",
+        "displayOrder": 2,
+        "type": 43,
+        "extendInfo": null
+      },
+      {
+        "url": "libtv://onboard/creation/tool?toolKey=restyle",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541173087.webp",
+        "title": "",
+        "startTime": "2026-10-09T16:00:00.000+00:00",
+        "endTime": "2027-10-30T16:00:07.000+00:00",
+        "displayOrder": 3,
+        "type": 43,
+        "extendInfo": null
+      },
+      {
+        "url": "libtv://inspiration/home?categoryUuid=b95c47226a3e4531b545cd3ee9bf034f",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541173087.webp",
+        "title": "",
+        "startTime": "2026-10-09T16:00:00.000+00:00",
+        "endTime": "2027-10-30T15:59:59.000+00:00",
+        "displayOrder": 4,
+        "type": 43,
+        "extendInfo": null
+      },
+      {
+        "url": "libtv://creation/project/new",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541173087.webp",
+        "title": "",
+        "startTime": "2026-10-08T16:00:00.000+00:00",
+        "endTime": "2027-10-31T15:59:59.000+00:00",
+        "displayOrder": 5,
+        "type": 43,
+        "extendInfo": null
+      },
+      {
+        "url": "libtv://onboard/creation/tool?toolKey=video-hd",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1791541173087.webp",
+        "title": "",
+        "startTime": "2026-10-08T16:00:00.000+00:00",
+        "endTime": "2027-10-09T15:59:59.000+00:00",
+        "displayOrder": 6,
+        "type": 43,
+        "extendInfo": null
+      }
+    ]
+  }
+}

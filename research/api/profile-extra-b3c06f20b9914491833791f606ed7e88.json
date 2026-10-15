@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 6922878,
+      "uuid": "b3c06f20b9914491833791f606ed7e88",
+      "nickname": "野野也",
+      "avatar": "https://libtv-res.liblib.art/upload-images/b3c06f20b9914491833791f606ed7e88/2825909890ab5551f166dd7a4b4f673c294c9a65.png",
+      "backgroundImage": "",
+      "briefIntroduction": "Ye Ai Studio"
+    },
+    "counter": {
+      "totalLikeCount": 251,
+      "projectCount": 2,
+      "viewCreationProcessCount": 4819,
+      "copyCanvasCount": 977,
+      "followerCount": 79,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "f41523e4-b464-9eed-9888-c4ce8e7fe147"
+}

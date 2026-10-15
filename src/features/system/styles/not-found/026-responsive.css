@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .secondary-not-found {
+    gap: 12px;
+  }
+  .secondary-not-found h1 {
+    padding-right: 14px;
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f3d3fac43a3640619dda05fa073382f3",
+      "projectUuid": "32528c3858304baf9118554605c3c937",
+      "name": "照夜客栈 | 请君饮汤，入梦见真",
+      "description": "AIGC国风非遗短片\n——\n神明被工业化，记忆正在枯竭，世界也因此走向崩毁。\n照夜客栈，传闻中只有迷失于道途的旅人才能找到的地方。\n店长留取旧物，保存那些即将被遗忘的故事。\n三个问题，一次契约。\n你交故事，我予梦境。\n把被蚀灵侵染情绪的剥离，把原本的记忆还给你。\n这位客官，夜深路长……要来一碗骨头汤吗？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1e74b81795f140fcae28ea32ff28ccfe/fd7ea0ce4a5156276990456a947d17b95797b6c1.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1e74b81795f140fcae28ea32ff28ccfe/10e28e0e6a711d1769e09df8a76e8e6aade54495.mp4",
+      "snapshotId": 21901,
+      "auditStatus": 1,
+      "ownerId": 1015763,
+      "ownerUuid": "1e74b81795f140fcae28ea32ff28ccfe",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1e74b81795f140fcae28ea32ff28ccfe/8a8c627f46bdc0573445ec97c2a278b01acb3e32fab846b0b1e78289cc59ff89.png",
+      "nickname": "骨头先生的喵呜时刻",
+      "isLike": false,
+      "likeCount": 51,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV1FVjU62EBD/",
+      "createAt": "2026年06月25日 20:01",
+      "updateAt": "2026年07月02日 00:05",
+      "publishAt": "2026年06月25日 20:01",
+      "playCount": 7,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 380,
+        "edges": 426
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "950a9812-8ebe-9d23-b737-b7023fa7cf31"
+}

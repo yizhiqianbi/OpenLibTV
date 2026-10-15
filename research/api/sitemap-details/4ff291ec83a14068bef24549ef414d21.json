@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "4ff291ec83a14068bef24549ef414d21",
+      "projectUuid": "ca99883fb7494f308235ea0d2da15e5e",
+      "name": "《天机变谪仙人》第七集 诗云",
+      "description": "《天机变谪仙人》第七集 诗云",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b7d909f5eaa54c51b888657323f71645/18a069fc6eb23ba3f2e34e418b6bf87fa0095eb6.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b7d909f5eaa54c51b888657323f71645/b65feee58ab4d807c697fd8511280dcd8e99dd23.mov",
+      "snapshotId": 24359,
+      "auditStatus": 1,
+      "ownerId": 4883748,
+      "ownerUuid": "b7d909f5eaa54c51b888657323f71645",
+      "avatar": "https://liblibai-online.liblib.cloud/img/b7d909f5eaa54c51b888657323f71645/d2c3d2fda23c65140922ba49bf13ff9ab8cb6f3f860aa93b59cd238f143f0843.png",
+      "nickname": "阿伟2号机",
+      "isLike": false,
+      "likeCount": 12,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV16gTa63EpW/",
+      "createAt": "2026年07月05日 13:45",
+      "updateAt": "2026年07月07日 23:33",
+      "publishAt": "2026年07月05日 13:45",
+      "playCount": 6,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 161,
+        "edges": 326
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f6b03649-e81a-97dd-9979-af8e5d3912c1"
+}

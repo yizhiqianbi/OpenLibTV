@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "da45fdccbb424461971c8c3c2f5049b1",
+      "projectUuid": "fb70253925de4ba38197416302429934",
+      "name": "《呈坎灵韵》",
+      "description": "《呈坎灵韵》以徽州\"生生不息\"的八卦哲学为核，结合高德扫街榜整理的关于其受众广泛的非遗数据，通过80秒电影级影像演绎积木意象的聚散流转。影片采用呈坎色系哑光徽木积木，以榫卯咬合的精密结构呈现鱼灯、凤凰、龙溪等呈坎非遗的神性形象。镜头随积木悬浮、解构、重组与四时色变，构建\"气之聚散\"的视觉诗学。从龙溪河纹到永兴灯影，从三街九十九巷到阴阳二气，在静穆的木质纹理与流动的几何变幻间，诠释呈坎美学中虚实相生、天人合一的永恒意境，让千年八卦村的非遗根脉在数字时空涅槃新生，游呈坎一生无坎。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a7e2f42e6c3e4593811bb43ddcf333c4/9fca3eb181e5d88f0be759ddbd514423baab8a19.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a7e2f42e6c3e4593811bb43ddcf333c4/d91ea563dcc69efda880fedae72927ee01c41a32.mp4",
+      "snapshotId": 47420,
+      "auditStatus": 1,
+      "ownerId": 6286853,
+      "ownerUuid": "a7e2f42e6c3e4593811bb43ddcf333c4",
+      "avatar": "https://liblibai-online.liblib.cloud/img/a7e2f42e6c3e4593811bb43ddcf333c4/1973718f8de0e4cd74fd6a5dc33555244544e949947215ed16782ca78da176b8.jpg",
+      "nickname": "一帧一帧察细节",
+      "isLike": false,
+      "likeCount": 6,
+      "tags": [
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3057,
+          "code": "test",
+          "tagLabel": "一场戏的诞生 ",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3057/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3060,
+          "code": "test",
+          "tagLabel": "3. 盗梦空间",
+          "parentTag": 3057,
+          "categoryId": 0,
+          "path": "3057/3060",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/discovery/item/6a3c0bee000000002003827d?source=webshare&xhsshare=pc_web&xsec_token=ABoWx1ODw8vPGo3nLbZUK85ndABsKIPOYB_ajOjrCAjS4=&xsec_source=pc_share",
+      "createAt": "2026年06月29日 20:52",
+      "updateAt": "2026年09月17日 23:07",
+      "publishAt": "2026年09月17日 22:42",
+      "playCount": 6,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 10,
+        "edges": 5
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "eed23aa5-6bfe-9bbc-b0c5-bf7110632105"
+}

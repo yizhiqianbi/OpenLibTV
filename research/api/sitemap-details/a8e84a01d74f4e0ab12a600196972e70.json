@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "a8e84a01d74f4e0ab12a600196972e70",
+      "projectUuid": "9a894e15f3b94dc285e393371ce4d13e",
+      "name": "粉色凝视",
+      "description": "这次的实验短片，探讨在众目睽睽的社会审美下，个体如何从被定义的“客体”中挣脱。那股粘稠的粉色，是外界强加的标签，是需要冲破的舒适区。当华丽的外壳碎裂，真正的自我才在废墟中起舞。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e3babff6d1484ad1aa25b9bcd8e45640/93012803cdd9dbae983ae6e53743a5021755f196.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e3babff6d1484ad1aa25b9bcd8e45640/6c4b07938bf574c02019eaf3ad28adcf470528f7.mp4",
+      "snapshotId": 9363,
+      "auditStatus": 1,
+      "ownerId": 2515898,
+      "ownerUuid": "e3babff6d1484ad1aa25b9bcd8e45640",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e3babff6d1484ad1aa25b9bcd8e45640/31d1d69405192e6f99ab75a6c755c46aec22b1b6c403068bf413109e9dd3a961.jpg",
+      "nickname": "蒙太神奇",
+      "isLike": false,
+      "likeCount": 57,
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/koJYHVHC4Jg/",
+      "createAt": "2026年05月06日 15:24",
+      "updateAt": "2026年05月09日 21:32",
+      "publishAt": "2026年05月06日 15:24",
+      "playCount": 24,
+      "viewCreationProcessCount": 10,
+      "copyCanvasCount": 0,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 73,
+        "edges": 48
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "0c4c660a-0bf5-94b8-bd15-5733aafd249b"
+}

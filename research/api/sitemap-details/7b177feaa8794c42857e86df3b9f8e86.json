@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "7b177feaa8794c42857e86df3b9f8e86",
+      "projectUuid": "802de3b96cee4d77911270591019725c",
+      "name": "余烬之上",
+      "description": "2149年，全球核战落幕，八十亿人口锐减至三十亿。辐射尘埃终年悬浮在灰暗的天际，变异生物横行大地，律法、道德、秩序尽数崩塌。\n在这片只剩荒芜与杀戮的废土上，活下去，是唯一的特权。\n机械工程师林野驾驶着一台破旧房车，独自流浪三年。他不追寻救赎，不奢望重启文明，只靠着双手改装车辆、搜集资源，在怪物与恶人之间苟存。直到一场废墟偶遇，四名身世迥异的幸存者抱团集结。\n可安稳从不是废土的常态。掠食者组织黑鸦虎视眈眈，无处不在的变异生物伺机猎杀，弥漫天地的辐射持续侵蚀生命。\n是研制解药终结末日？是妥协本能与辐射共存？还是踏遍余烬，从零开始重建人类家园？\n没有人拥有标准答案。\n唯有一路前行，以凡人之躯，守护细碎火种。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4bba28a83ff34567b8ba46a2c14484b4/4715b15af9c739b489347148ccd1720f61fb0731.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4bba28a83ff34567b8ba46a2c14484b4/98860acfd3c16d0f89e151370f8a3f15a24e82c0.mp4",
+      "snapshotId": 21243,
+      "auditStatus": 1,
+      "ownerId": 2918604,
+      "ownerUuid": "4bba28a83ff34567b8ba46a2c14484b4",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4bba28a83ff34567b8ba46a2c14484b4/c255b0f3b599c8f075af8e395fe85c256eb8f874a1e6d00fda45d85abf16bd13.png",
+      "nickname": "Loong",
+      "isLike": false,
+      "likeCount": 22,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a39dd7e0000000022019f21?xsec_token=GB4EzQgPpRKxtNdZd5qloS5Z2uIw4B0-53zFlpzmwvUaA=&xsec_source=pc_creatormng",
+      "createAt": "2026年06月23日 09:59",
+      "updateAt": "2026年06月26日 14:36",
+      "publishAt": "2026年06月23日 10:23",
+      "playCount": 10,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 58,
+        "edges": 74
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8fd72f0e-e8fd-9eaa-a4e7-dbd6d9f6468e"
+}

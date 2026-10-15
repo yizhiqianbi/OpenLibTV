@@ -1,0 +1,64 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e9e748400dfa4a3ea4f1d2c9a589c018",
+      "projectUuid": "bb9bf63055974776b13c59a488d590be",
+      "name": "纪元斗室",
+      "description": "这是一个需要不断和历史人物boss对战的“密室”，常规的战斗手段并不太有效，只有找到历史人物boss的弱点，才能击败对方。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bc477af5aebb4d71a6dc9ef00bf64d5c/2101a3fc92a78c6fe5295274643811d7933fa4b7.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bc477af5aebb4d71a6dc9ef00bf64d5c/1845547c525c15886df406e297c82b5b4c15152b.mp4",
+      "snapshotId": 17954,
+      "auditStatus": 1,
+      "ownerId": 2728216,
+      "ownerUuid": "cb8df3d17a1c44d78081f93d4fdfe1b5",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "175****9324",
+      "isLike": false,
+      "likeCount": 10,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月09日 21:31",
+      "updateAt": "2026年07月09日 14:39",
+      "publishAt": "2026年06月09日 21:31",
+      "playCount": 7,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 102,
+        "edges": 181
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "5e2923ce-0245-91ee-a005-2463ab3b9c35"
+}

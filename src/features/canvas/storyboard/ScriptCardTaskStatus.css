@@ -1,0 +1,116 @@
+.cv-script-card-task {
+  --script-task-error: #f76560;
+  --script-task-reason: rgb(255 255 255 / 50%);
+  --script-task-id: rgb(255 255 255 / 30%);
+  --script-task-copy-hover: rgb(255 255 255 / 60%);
+  --script-task-copy-hover-bg: rgb(255 255 255 / 10%);
+}
+.cv-script-card-task-light,
+.canvas-light .cv-script-card-task {
+  --script-task-error: #f53f3f;
+  --script-task-reason: #919191;
+  --script-task-id: #c4c4c4;
+  --script-task-copy-hover: #86909c;
+  --script-task-copy-hover-bg: rgb(0 0 0 / 5%);
+}
+.cv-script-card-task-badge {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 32px;
+  padding: 8px 16px;
+  border: 0.5px solid rgb(196 196 196 / 60%);
+  border-radius: 8px;
+  background: rgb(0 0 0 / 45%);
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+.cv-script-card-task-badge > span {
+  white-space: nowrap;
+}
+.cv-script-card-task-badge.cv-script-card-task-light,
+.canvas-light .cv-script-card-task-badge {
+  border-color: rgb(0 0 0 / 12%);
+  background: rgb(255 255 255 / 85%);
+  color: #171717;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+.cv-script-card-task-failure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  min-height: 0;
+}
+.cv-script-card-task-warning {
+  flex-shrink: 0;
+  color: var(--script-task-error);
+}
+.cv-script-card-task-failure-label {
+  color: var(--script-task-error);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.cv-script-card-task-reason {
+  max-width: 90%;
+  color: var(--script-task-reason);
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+.cv-script-card-task-id {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 90%;
+  color: var(--script-task-id);
+  font-size: 10px;
+}
+.cv-script-card-task-id-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-card-task-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 2px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--script-task-id);
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+.cv-script-card-task-copy:hover {
+  background: var(--script-task-copy-hover-bg);
+  color: var(--script-task-copy-hover);
+}
+.cv-script-card-task-copy:focus-visible {
+  outline: 2px solid var(--canvas-node-border-selected, #a78bfa);
+  outline-offset: 2px;
+}
+.cv-script-card-task-copy-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  -webkit-mask: url('/assets/icons/copy.svg') center / contain no-repeat;
+  mask: url('/assets/icons/copy.svg') center / contain no-repeat;
+}
+.cv-script-card-task-copy-feedback {
+  color: var(--script-task-reason);
+  font-size: 11px;
+}

@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d2fe5fd9301f43319ac22990f89b323f",
+      "projectUuid": "6186cecdecd84704a7f910975e663ed8",
+      "name": "非遗潮州木雕x家居产品空间设计TVC",
+      "description": "产品设计空间设计非遗灵感元素演化",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/4516157ad4cf4175bef2cb448d41b9f3/e864efe3461a6850359ac231bfae472787fa10ce32ec14ce974bb989cf5c48c3.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4516157ad4cf4175bef2cb448d41b9f3/0f5b04ddffffe01c7bc9e9f9aadac36ee5df1914.mp4",
+      "snapshotId": 21727,
+      "auditStatus": 1,
+      "ownerId": 1740662,
+      "ownerUuid": "4516157ad4cf4175bef2cb448d41b9f3",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4516157ad4cf4175bef2cb448d41b9f3/df345921bdcbd6912a6992a2702f9916280444d89f01bc8674e855cdeb27d371.jpg",
+      "nickname": "三千问Atelier",
+      "isLike": false,
+      "likeCount": 48,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "39 【审美觉醒非遗木雕的新中式空间演绎 - 三千问Atelier | 小红书 - 你的生活兴趣社区】 😆 cSXZyI4ZIj4JuGM 😆 https://www.xiaohongshu.com/discovery/item/6a3c3252000000001602722e?source=webshare&xhsshare=pc_web&xsec_token=ABdysxuNCDYwZcmmy7L-tbBRAHruVxdaGHOakOksN_uSQ=&xsec_source=pc_share",
+      "createAt": "2026年06月25日 03:40",
+      "updateAt": "2026年06月29日 11:29",
+      "publishAt": "2026年06月25日 09:44",
+      "playCount": 35,
+      "viewCreationProcessCount": 5,
+      "copyCanvasCount": 1,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 233,
+        "edges": 348
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "346f927a-2fda-9a44-8ff3-19a132a60abd"
+}

@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "1ebd8d2001474f229e66c88b87edc5cb",
+      "projectUuid": "c062fc4d05a74a19a636007e989ba593",
+      "name": "琥珀色甜品梦境",
+      "description": "女孩在厨房桌面午睡，梦见自己坠入一个糖做的世界。蛋糕浮岛悬在奶油云海上，焦糖溪流缓缓流淌。她坐旋转马卡龙穿梭甜点群岛，爬上巨大的熊仔蛋糕顶层，向远方招手。糖珠摩天轮、布丁蹦床、甘草糖桥……每样甜品都藏着微小的奇迹。梦醒后，手里还握着那颗琥珀色糖珠。有些甜，只属于梦境——但手心的温度，是真的。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e5c05143074646b7ae70a88b81ec6c2a/f760e85b0a06cef9fc75908081b41cf55ab40c1d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e5c05143074646b7ae70a88b81ec6c2a/11f79071938db7d2daa314867e6aa53a00855238.MP4",
+      "snapshotId": 25047,
+      "auditStatus": 1,
+      "ownerId": 773892,
+      "ownerUuid": "e5c05143074646b7ae70a88b81ec6c2a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e5c05143074646b7ae70a88b81ec6c2a/8f0e35288b0c9168be6eb13c4b659ace7304ffb9ca361260378068b1a4d25de8.jpg",
+      "nickname": "星美Fine",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "抖音:https://v.douyin.com/kkK6gUVtb7A/ B站：https://www.bilibili.com/video/BV14zMh6xEDM/?spm_id_from=333.1387.homepage.video_card.click 小红书：https://www.xiaohongshu.com/explore/6a4d1474000000001101b58a?xsec_token=ABcl0dLx4-mm6Y5g3ugetZAlq-IdVbmKkHyzxJwyGtJIc=&xsec_source=pc_user",
+      "createAt": "2026年07月07日 23:32",
+      "updateAt": "2026年07月07日 23:42",
+      "publishAt": "2026年07月07日 23:32",
+      "playCount": 3,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 42,
+        "edges": 130
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "91f23329-463b-9ac0-a554-9946ffb747fc"
+}

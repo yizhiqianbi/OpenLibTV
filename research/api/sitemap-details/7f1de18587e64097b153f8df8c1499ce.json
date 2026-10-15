@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "7f1de18587e64097b153f8df8c1499ce",
+      "projectUuid": "d3a23ef7a78d43798b94050ff6e1020f",
+      "name": "士气第十周小案例",
+      "description": "此作品为士气第十周的课程演示，用时3天完成。",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/8a7cfabba0784bdeaa59578715f7762b/796650078_03721818a1bc447ab38ecaf4294dbe19.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8a7cfabba0784bdeaa59578715f7762b/5604a9d550953633aa6eae072f8ee14dee9e7f9a.mp4",
+      "snapshotId": 24530,
+      "auditStatus": 1,
+      "ownerId": 2270479,
+      "ownerUuid": "8a7cfabba0784bdeaa59578715f7762b",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8a7cfabba0784bdeaa59578715f7762b/79f9db415072759c2af2a89f0931ad20cc05b8c8a94d6b29b314f69511a86697.png",
+      "nickname": "林超黑",
+      "isLike": false,
+      "likeCount": 304,
+      "tags": [
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a4b0af6000000001603cea5?xsec_token=ABQz0qymZMm3jXgcqXYLAn1yadJzIyz9_bczSuvwUOumw=&xsec_source=pc_user",
+      "createAt": "2026年07月06日 10:00",
+      "updateAt": "2026年07月06日 10:06",
+      "publishAt": "2026年07月06日 10:00",
+      "playCount": 184,
+      "viewCreationProcessCount": 120,
+      "copyCanvasCount": 31,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 148,
+        "edges": 174
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "39f57d19-8e57-94b4-8cc3-d9ddfd8bc2ae"
+}

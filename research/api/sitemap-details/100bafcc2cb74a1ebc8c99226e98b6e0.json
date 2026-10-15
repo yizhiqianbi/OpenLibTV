@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "100bafcc2cb74a1ebc8c99226e98b6e0",
+      "projectUuid": "2d47b4b90116483fbad7ac34faab93a4",
+      "name": "QLT x AI 行李箱",
+      "description": "这不仅是一次视觉的震撼，更是对传统行李箱防护极限的彻底颠覆！本片采用极其暴力的视觉语言，将 QLT x AI 智能硬核行李箱 置于大自然的极端极境之中。\n\n从高空坠落的重击、悬崖翻滚的摩擦，到深水浸泡的侵蚀与极寒冰封的严酷考验，QLT x AI 凭借地表最强的抗冲击外壳、顶级的全密封防水性，交出了令人惊叹的完美答卷。\n\n视频通过节奏感极强的剪辑与充满力量感的音效，完美诠释了“WHAT GOES HERE GOES ANYWHERE”的产品理念——无论你的下一站是无人区越野、极端气象科考，还是跨国商务穿梭，装进 QLT x AI，你的行李便无所畏惧。它是科技发烧友、全地形探险及极限旅行者不容错过的终极机能装备！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7a936396e1d940aa8e0460a8d5f459f3/825b4c36ad40e9c5c0803659055b551374b03be6.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7a936396e1d940aa8e0460a8d5f459f3/b2fd39eb56e548c9cb43b345c3f9dff7d7f9c4af.mp4",
+      "snapshotId": 19029,
+      "auditStatus": 1,
+      "ownerId": 976456,
+      "ownerUuid": "7a936396e1d940aa8e0460a8d5f459f3",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIyNIia6IFvSwg6fgEhKtHU4EjdoibDP9hRcuxwNmUymeZViciaZBFlj6eqiaCibRukrkTPPwB5gxvN0DJg/132",
+      "nickname": "清凉兔",
+      "isLike": false,
+      "likeCount": 136,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "/",
+      "createAt": "2026年06月13日 19:13",
+      "updateAt": "2026年06月15日 22:25",
+      "publishAt": "2026年06月13日 19:13",
+      "playCount": 273,
+      "viewCreationProcessCount": 110,
+      "copyCanvasCount": 26,
+      "shareCount": 2,
+      "snapshotSummary": {
+        "nodes": 35,
+        "edges": 15
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "22b3e48d-0dac-9c48-9321-4c736375fc70"
+}

@@ -1,0 +1,13 @@
+.git
+.github
+.openai
+.playwright-cli
+node_modules
+dist
+artifacts
+research
+.env*
+AGENTS.md
+agent.md
+**/*.test.*
+**/SOURCE_AUDIT.md

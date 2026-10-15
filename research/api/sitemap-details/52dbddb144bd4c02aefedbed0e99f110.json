@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "52dbddb144bd4c02aefedbed0e99f110",
+      "projectUuid": "f431ff9fb75548c8af4084c773654323",
+      "name": "一万年保修",
+      "description": "机器人男友",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b983c73bbcd44d41b3fba62ddeb94d36/38cb3a691fe6d37de8c59b08f7a25c67b0c38949.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b983c73bbcd44d41b3fba62ddeb94d36/eff5ec90bb67cc6776a00bc38e35197bf68781e4.mp4",
+      "snapshotId": 24733,
+      "auditStatus": 1,
+      "ownerId": 8426891,
+      "ownerUuid": "b983c73bbcd44d41b3fba62ddeb94d36",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "nickname": "151****9664",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "5.35 复制打开抖音，看看【miller的作品】# 抖音AI创作大赛 、# 开放赛道 # 机器人男... https://v.douyin.com/wSH8Hjre_b4/ e@B.go uFu:/ :1pm 10/12",
+      "createAt": "2026年07月06日 21:49",
+      "updateAt": "2026年07月06日 23:09",
+      "publishAt": "2026年07月06日 21:49",
+      "playCount": 3,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 234,
+        "edges": 388
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "7aef575b-4ab3-93c6-9cbe-df69069a80c9"
+}

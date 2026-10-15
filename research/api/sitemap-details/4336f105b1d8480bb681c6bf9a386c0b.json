@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "4336f105b1d8480bb681c6bf9a386c0b",
+      "projectUuid": "e01268f373ba4cfbb7826ba9f1d26693",
+      "name": "一键生成智能家电产品模板",
+      "description": "小米空气净化器",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f1ef5335e79f4120951c069df659ce48/34f4a9e9235b433ff9c9356e212e8acfbea7fe2f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f1ef5335e79f4120951c069df659ce48/84e071654ce664b8a370e84791cef4ddc8e5bca2.mp4",
+      "snapshotId": 21348,
+      "auditStatus": 1,
+      "ownerId": 6940061,
+      "ownerUuid": "f1ef5335e79f4120951c069df659ce48",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f1ef5335e79f4120951c069df659ce48/d960acb4e15909c44684296cdca47fc3dae38fbaf59cee4c90f2c36d3f8864fc.jpg",
+      "nickname": "郭同学AIGC",
+      "isLike": false,
+      "likeCount": 141,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a3a49420000000020038793?xsec_token=YBpAf-N9fssm8ZrprRvlUbDc4xCd1SCf7RYsi3n4DqTwE%3D&xsec_source=pc_creatormng",
+      "createAt": "2026年06月23日 16:54",
+      "updateAt": "2026年06月23日 17:00",
+      "publishAt": "2026年06月23日 16:54",
+      "playCount": 91,
+      "viewCreationProcessCount": 55,
+      "copyCanvasCount": 14,
+      "shareCount": 4,
+      "snapshotSummary": {
+        "nodes": 41,
+        "edges": 56
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8644bbbe-56ce-9b58-85f4-d34f4950a99e"
+}

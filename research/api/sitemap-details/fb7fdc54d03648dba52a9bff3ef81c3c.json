@@ -1,0 +1,107 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "fb7fdc54d03648dba52a9bff3ef81c3c",
+      "projectUuid": "ff65ebf0a39e4922821c0f6dc4467c6f",
+      "name": "未送达的春天",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/515789f0c70e4a36b83bab30c4b40839/a925c5fa0368ce6a2f85812e1c31251038e58ed1.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/515789f0c70e4a36b83bab30c4b40839/798cbf2e449e28bf4b28b3a9f21436c144f2e9d6.mp4",
+      "snapshotId": 9460,
+      "auditStatus": 1,
+      "ownerId": 3986519,
+      "ownerUuid": "515789f0c70e4a36b83bab30c4b40839",
+      "avatar": "https://liblibai-online.liblib.cloud/img/515789f0c70e4a36b83bab30c4b40839/6c1b4f1583d5465ca707f7e87f614ab1b892d8b4265eb36397b97e20d9333da6.jpg",
+      "nickname": "高枝枝",
+      "isLike": false,
+      "likeCount": 596,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3022,
+          "code": "test",
+          "tagLabel": "短片单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3022",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "未送达的春天 | AI公益短片 我们无法对抗ai的发展，那... http://xhslink.com/o/1LoeInUoswm  复制后打开【小红书】查看笔记！",
+      "createAt": "2026年05月06日 21:12",
+      "updateAt": "2026年06月01日 15:28",
+      "publishAt": "2026年05月06日 21:12",
+      "honors": [
+        "短片单元-入围"
+      ],
+      "awardedTag": [
+        "短片单元-入围"
+      ],
+      "playCount": 129,
+      "viewCreationProcessCount": 45,
+      "copyCanvasCount": 11,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 98,
+        "edges": 92
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d6d7350c-e8ed-9c8f-a2e4-e13c5bc60b59"
+}

@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5184b19f0ca64706885fd010082e4bd0",
+      "projectUuid": "f73116da5ebd47d2b0da50a745985f41",
+      "name": "回家",
+      "description": "2026年4月22日，第十三批在韩中国人民志愿军烈士遗骸回国。人民空军新媒体推出AI微短剧《回家》，致敬所有为国出征的英雄！当年他们以血肉卫家国，如今我们以最高礼仪接忠烈回家。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7ad857d73fa44da3a178ed06a98d86ec/12a5ba72ebba8f62d87dbf87b95eb9f297870982.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7ad857d73fa44da3a178ed06a98d86ec/861a081377dc7a26c4cd154505880046dda0551c.mp4",
+      "snapshotId": 25290,
+      "auditStatus": 1,
+      "ownerId": 6703048,
+      "ownerUuid": "7ad857d73fa44da3a178ed06a98d86ec",
+      "avatar": "https://liblibai-online.liblib.cloud/img/7ad857d73fa44da3a178ed06a98d86ec/c758f510e23b5833ac7dbe33ae9a6ca84ee2f9e02b15ea1f26a125c77f314728.png",
+      "nickname": "元十五AIGC",
+      "isLike": false,
+      "likeCount": 27,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/GNQoEABE5Ao/",
+      "createAt": "2026年07月08日 17:34",
+      "updateAt": "2026年07月10日 22:01",
+      "publishAt": "2026年07月08日 17:34",
+      "playCount": 35,
+      "viewCreationProcessCount": 14,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 359,
+        "edges": 392
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "c0fb0adb-5b49-9736-bb4b-11da51d61aa8"
+}

@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2e0b2574202143b4bf3d9852e4975119",
+      "projectUuid": "73b3339aedaf437987d7858c23988cb4",
+      "name": "悬浮镜",
+      "description": "这是一支以“镜子即艺术入口”为核心概念的 LED悬浮镜品牌大片，通过美术馆、超现实水域、城市与浴室空间的连续转换，展现产品的悬浮光感、高级设计和空间美学价值。",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/6ba8cb6564c549049200978ce6bb7aac/791661771_2bfd304ed4e844fbb3e7a396b1d2aa79.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/6ba8cb6564c549049200978ce6bb7aac/6f2379666501b5618bcc5b57f7d9e39594d0fee8.mp4",
+      "snapshotId": 22719,
+      "auditStatus": 1,
+      "ownerId": 8852334,
+      "ownerUuid": "6ba8cb6564c549049200978ce6bb7aac",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "麻Fat",
+      "isLike": false,
+      "likeCount": 61,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/video/7656700558406216561",
+      "createAt": "2026年06月29日 15:18",
+      "updateAt": "2026年07月02日 23:25",
+      "publishAt": "2026年07月02日 13:59",
+      "playCount": 44,
+      "viewCreationProcessCount": 30,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 240,
+        "edges": 477
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2a8f4b15-a683-9c79-b6aa-4692839b4ad6"
+}

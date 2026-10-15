@@ -1,0 +1,77 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d6ba7fa84fdf4ca2b4d63ec8883ff1f9",
+      "projectUuid": "5e865daf5727461ba108b17710fb43a2",
+      "name": "我家公寓住神仙",
+      "description": "毕业大学生姜涯继承了一座祖传的神秘四合院公寓，没想到住进来的竟是杨戬、哪吒、哮天犬等神仙房客。从此，平凡生活被彻底打乱：神仙租客鸡飞狗跳，现代都市笑料不断，危机却也悄然降临。当上古秘密逐渐浮出水面，他将与众神并肩迎战未知敌人，在爆笑日常中开启一段热血又治愈的都市神话传奇。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5abca9c9b0db435c8b6ca7fbd03a8752/e168fca2118c595837a0b3abbce11729fce217d2.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5abca9c9b0db435c8b6ca7fbd03a8752/e87650cd7882d44622326f10e9b45cc648077a81.mp4",
+      "snapshotId": 22935,
+      "auditStatus": 1,
+      "ownerId": 9624772,
+      "ownerUuid": "5abca9c9b0db435c8b6ca7fbd03a8752",
+      "nickname": "微信用户e17a6c",
+      "isLike": false,
+      "likeCount": 17,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "4.61 复制打开抖音，看看【异想剪辑室的作品】《我家公寓住神仙》预告片 毕业大学生姜涯继承了一座... https://v.douyin.com/T6jJ6vSlcrg/ I@v.fb :9pm fBg:/ 07/13",
+      "createAt": "2026年06月30日 09:54",
+      "updateAt": "2026年06月30日 10:02",
+      "publishAt": "2026年06月30日 09:54",
+      "playCount": 16,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 48,
+        "edges": 81
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2b15c1df-4a57-9c23-a122-9d9ca736be39"
+}

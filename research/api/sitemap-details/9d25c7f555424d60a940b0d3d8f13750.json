@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "9d25c7f555424d60a940b0d3d8f13750",
+      "projectUuid": "57964daed4624aeab25994fcc387625f",
+      "name": "全世界无产阶级联合起来，建党105周年献礼片《星火》",
+      "description": "从1848年伦敦马恩的一行字，到1887年的巴黎，再到1917年的莫斯科，最后到1921年上海嘉兴南湖的红船——一条横贯欧亚、跨越73年的思想长河，终于在中国，汇成了新的源头；",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/81ab1376a763465f9834c715dbf068a7/71025ff5504c6ec4df6686b710487eac63cdf03b.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/81ab1376a763465f9834c715dbf068a7/e5b04dd98565f62e372b8650ab382730337e5750.mp4",
+      "snapshotId": 25057,
+      "auditStatus": 1,
+      "ownerId": 8543130,
+      "ownerUuid": "81ab1376a763465f9834c715dbf068a7",
+      "avatar": "https://liblibai-online.liblib.cloud/img/81ab1376a763465f9834c715dbf068a7/dd8e7615c8f0cc6c5f92a5345f648a8cb603fc2747834f97e0c0b73031a0d62c.png",
+      "nickname": "者行孙AIGC",
+      "isLike": false,
+      "likeCount": 130,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/Iaa9d_oCRsg/",
+      "createAt": "2026年07月07日 23:51",
+      "updateAt": "2026年07月14日 17:51",
+      "publishAt": "2026年07月07日 23:51",
+      "playCount": 46,
+      "viewCreationProcessCount": 12,
+      "copyCanvasCount": 4,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 68,
+        "edges": 47
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8cc6a94f-9f82-92e9-a3b8-fd442f8f09cf"
+}

@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 3238672,
+      "uuid": "e1a8d149cb6c445b91a5f4926f0a0483",
+      "nickname": "Rick",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e1a8d149cb6c445b91a5f4926f0a0483/5c53177d7da5a17da9928dd08969204e22c462dff3ed42dbcb959fd7ee0d3a48.jpg",
+      "backgroundImage": "https://liblibai-online.liblib.cloud/img/e1a8d149cb6c445b91a5f4926f0a0483/2a82c5bcb4fe0135953111715722722c9d909389d68649506a359f19bca99c87.png"
+    },
+    "counter": {
+      "totalLikeCount": 1135,
+      "projectCount": 15,
+      "viewCreationProcessCount": 6995,
+      "copyCanvasCount": 1691,
+      "followerCount": 236,
+      "followCount": 4
+    }
+  },
+  "msg": "",
+  "trace_id": "0088cb5b-4fd9-994c-98f6-24986f6a2b32"
+}

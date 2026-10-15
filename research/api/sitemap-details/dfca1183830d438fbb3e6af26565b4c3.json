@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "dfca1183830d438fbb3e6af26565b4c3",
+      "projectUuid": "7c8496df4413413a8a899db531f63ae0",
+      "name": "《异星骸城》最新混剪",
+      "description": "目前4季计划，第一季剧本已完成。\n本作品为无限流，可在无数行星上进行经历和内容创作，是一款可以长期更新的IP系列。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1fabd7e3958345a893d8d7e4a37868f0/f5db04df5896bac16d6495d9d6268312e46002a8.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1fabd7e3958345a893d8d7e4a37868f0/99cf8353260ffb84c96875783111e8012589d0fc.mp4",
+      "snapshotId": 22568,
+      "auditStatus": 1,
+      "ownerId": 1096368,
+      "ownerUuid": "1fabd7e3958345a893d8d7e4a37868f0",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1fabd7e3958345a893d8d7e4a37868f0/4f43e87eaab4fc666b4f0c2ef5e4f28df309004a9f7451949e7e77a198edcc72.png",
+      "nickname": "AIGC佬猫",
+      "isLike": false,
+      "likeCount": 11,
+      "tags": [
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "7.15 复制打开抖音，看看【AIGC佬猫的作品】异星骸城—高燃 # 抖音AI创作大赛 # 命题末日... https://v.douyin.com/FWrnM0fK4FU/ L@j.pd 05/14 :5pm rEh:/",
+      "createAt": "2026年06月28日 22:00",
+      "updateAt": "2026年06月28日 22:54",
+      "publishAt": "2026年06月28日 22:44",
+      "playCount": 10,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 34,
+        "edges": 1
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "380da28f-4ea3-9b07-9f3c-0872bf572c23"
+}

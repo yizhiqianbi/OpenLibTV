@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "63c21e73f6514e54aa1dd918cb38f69f",
+      "projectUuid": "8ccd182090e844f989333920a73a4e5d",
+      "name": "《灰烬王座：禁林》",
+      "description": "AI原创魔幻史诗系列《灰烬王座：禁林》 流浪商人携来的黄金琥珀，既是叩开永恒极乐的无上秘钥，亦是达斯维尔大陆无尽财富的象征。抵不住这极致诱惑，瓦伦霍德的国王贝尔蒙特亲率大军，毅然踏入了这片生人勿近的远古禁林。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/041d14ba57f64be8bb9088fff930464c/0c1803e83fea8f7e8a61b03fbba5ddf2c824e384.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/041d14ba57f64be8bb9088fff930464c/0feceb63feebc0934707988006af8112e5be9590.mp4",
+      "snapshotId": 16501,
+      "auditStatus": 1,
+      "ownerId": 6926708,
+      "ownerUuid": "041d14ba57f64be8bb9088fff930464c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/041d14ba57f64be8bb9088fff930464c/7af743215eacc6b7c3514f17bf9db542134cda3792c2463582f6aae2efbdd04d.jpg",
+      "nickname": "造梦国度",
+      "isLike": false,
+      "likeCount": 217,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/jingxuan?modal_id=7643834669410159907",
+      "createAt": "2026年06月03日 00:56",
+      "updateAt": "2026年09月02日 21:56",
+      "publishAt": "2026年09月02日 21:37",
+      "playCount": 42,
+      "viewCreationProcessCount": 25,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 361,
+        "edges": 442
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "bfbdedf7-7dea-9c67-a0ce-dbb160a00a53"
+}

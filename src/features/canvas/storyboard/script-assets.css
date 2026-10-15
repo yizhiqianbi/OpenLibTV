@@ -1,0 +1,579 @@
+.cv-script-assets-view {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+  padding: 12px 24px;
+  color: #f7f7f7;
+}
+.cv-script-assets-view h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.cv-script-asset-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cv-script-asset-cards > article {
+  position: relative;
+  width: 277px;
+  max-width: 100%;
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  overflow: visible;
+  cursor: pointer;
+  background: #ffffff04;
+}
+.cv-script-asset-cards > article:focus-visible {
+  outline: 2px solid #5ddcff;
+  outline-offset: 2px;
+}
+.cv-script-asset-cover {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px 8px 0 0;
+  background: #ffffff05;
+}
+.cv-script-asset-cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.cv-script-asset-cover > span {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #ffffff50;
+}
+.cv-script-asset-cover > small {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  border-radius: 4px;
+  padding: 3px 5px;
+  color: #ffc66b;
+  background: #4d310ddd;
+  font-size: 10px;
+}
+.cv-script-asset-cards > article > strong {
+  display: block;
+  padding: 12px 12px 0;
+  font-size: 13px;
+  font-weight: 500;
+  min-height: 28px;
+}
+.cv-script-asset-cards > article > p {
+  margin: 4px 12px 12px;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.cv-script-asset-cover-actions {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+}
+.cv-script-asset-cards > article:hover .cv-script-asset-cover-actions,
+.cv-script-asset-cards > article:focus-within .cv-script-asset-cover-actions {
+  opacity: 1;
+}
+.cv-script-asset-cover-actions > button,
+.cv-script-asset-menu > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ffffff30;
+  background: #181818d9;
+  color: white;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+}
+.cv-script-asset-menu {
+  position: relative;
+}
+.cv-script-asset-menu-dropdown {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  overflow: auto;
+  border: 1px solid #ffffff20;
+  background: #242424;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 8px 24px #0006;
+}
+.cv-script-asset-menu-dropdown button {
+  text-align: left;
+  padding: 8px 10px;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  color: #f7f7f7;
+  border-radius: 4px;
+}
+.cv-script-asset-menu-dropdown button:hover:enabled {
+  background: #ffffff0d;
+}
+.cv-script-assets-view button:disabled,
+.cv-script-asset-picker button:disabled,
+.cv-script-asset-drawer button:disabled,
+.cv-script-asset-delete button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.cv-script-asset-cards > .cv-script-asset-add {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 156px;
+  height: 156px;
+  border: 1px dashed #ffffff26;
+  border-radius: 8px;
+  background: #ffffff05;
+  color: #ffffff50;
+  font-size: 10px;
+}
+.cv-script-asset-recognition {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #ffffff0d;
+  font-size: 12px;
+}
+.cv-script-asset-recognition > svg {
+  color: #ff7d00;
+  flex-shrink: 0;
+}
+.cv-script-asset-recognition > div {
+  flex: 1;
+}
+.cv-script-asset-recognition small {
+  display: block;
+  margin-top: 2px;
+  color: #ffffff80;
+}
+.cv-script-asset-recognition button,
+.cv-script-asset-footer button {
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #171717;
+  background: #f7f7f7;
+  border: 0;
+  font-size: 12px;
+}
+.cv-script-asset-global-style {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding-right: 35%;
+}
+.cv-script-asset-global-style > span {
+  flex-shrink: 0;
+  padding: 1px 8px;
+  font-size: 12px;
+  color: #5ddcff;
+  background: #3cb5cc1a;
+  border-radius: 4px;
+}
+.cv-script-asset-global-style p {
+  white-space: pre-wrap;
+  margin: 0;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.cv-script-asset-compliance {
+  display: block;
+  margin: 8px 12px;
+  color: #aaa;
+}
+.cv-script-asset-footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid #363636;
+  font-size: 12px;
+}
+.cv-script-asset-footer p {
+  margin: 0;
+}
+.cv-script-asset-error {
+  color: #ff8989;
+  font-size: 12px;
+  margin: 12px 0;
+}
+.cv-script-asset-muted {
+  color: #888;
+  font-size: 12px;
+}
+/* EditorDialog's base layer is 4000; nested asset dialogs must stay above it. */
+.cv-script-asset-picker .cv-modal-overlay,
+.cv-script-asset-drawer .cv-modal-overlay,
+.cv-script-asset-delete .cv-modal-overlay,
+.cv-script-asset-rename .cv-modal-overlay {
+  z-index: 4010;
+}
+.cv-script-asset-picker .cv-modal-overlay,
+.cv-script-asset-delete .cv-modal-overlay {
+  z-index: 4020;
+}
+.cv-script-asset-rename .cv-modal-overlay {
+  z-index: 4030;
+}
+.cv-script-asset-preview .cv-modal-overlay {
+  z-index: 4040;
+}
+.cv-script-asset-picker .cv-dialog {
+  width: 800px;
+  max-width: calc(100vw - 24px);
+  padding: 20px;
+}
+.cv-script-asset-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 1px solid #ffffff15;
+  padding-bottom: 12px;
+}
+.cv-script-asset-tabs button {
+  border: 0;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #aaa;
+  font-size: 13px;
+}
+.cv-script-asset-tabs button[aria-pressed='true'] {
+  color: #f7f7f7;
+  background: #ffffff15;
+}
+.cv-script-asset-picker-body {
+  height: 480px;
+  max-height: 65vh;
+  overflow: auto;
+  padding-top: 16px;
+}
+.cv-script-asset-candidates {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.cv-script-asset-picker .cv-script-asset-candidates > button {
+  display: block;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: white;
+  padding: 0;
+}
+.cv-script-asset-candidates > button > span {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #333;
+}
+.cv-script-asset-candidates img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cv-script-asset-candidates em {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  background: #0008;
+}
+.cv-script-asset-candidates strong {
+  display: block;
+  margin-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 12px;
+}
+.cv-script-asset-unavailable {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  text-align: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.cv-script-asset-unavailable p {
+  margin: 0;
+}
+.cv-script-asset-unavailable textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  border: 1px solid #ffffff20;
+  background: #ffffff05;
+  border-radius: 8px;
+  padding: 12px;
+  color: #aaa;
+}
+.cv-script-asset-unavailable button {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+.cv-script-asset-drawer .cv-modal-overlay {
+  justify-content: flex-end;
+  padding: 0;
+  background: #0006;
+}
+.cv-script-asset-drawer .cv-dialog {
+  width: 560px;
+  max-width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  border-radius: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.cv-script-asset-drawer-body {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  padding-top: 16px;
+}
+.cv-script-asset-drawer-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.cv-script-asset-editor-image {
+  position: relative;
+  min-height: 200px;
+  max-height: 55vh;
+  background: #ffffff05;
+}
+.cv-script-asset-editor-image img {
+  display: block;
+  width: 100%;
+  max-height: 55vh;
+  object-fit: contain;
+}
+.cv-script-asset-editor-image button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: white;
+  background: #181818dd;
+  padding: 8px;
+  border: 0;
+  border-radius: 6px;
+}
+.cv-script-asset-editor-empty {
+  display: flex;
+  width: 100%;
+  height: 346px;
+  max-height: 45vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px dashed #ffffff20;
+  border-radius: 8px;
+  background: #ffffff05;
+  color: #aaa;
+  font-size: 12px;
+}
+.cv-script-asset-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.cv-script-asset-field input,
+.cv-script-asset-field textarea {
+  width: 100%;
+  border: 1px solid #ffffff20;
+  background: #ffffff05;
+  color: #f7f7f7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font: inherit;
+}
+.cv-script-asset-field input {
+  height: 36px;
+}
+.cv-script-asset-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.cv-script-asset-save-name {
+  display: block;
+  margin: 8px 0 0 auto;
+  border: 0;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 7px 12px;
+  font-size: 12px;
+}
+.cv-script-asset-dialog-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.cv-script-asset-dialog-actions button {
+  border: 1px solid #ffffff20;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  background: #333;
+}
+.cv-script-asset-danger {
+  color: #ff8989 !important;
+}
+.cv-script-asset-delete-option {
+  display: block;
+  padding: 14px;
+  border: 1px solid #ffffff15;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.cv-script-asset-delete-option input {
+  margin-right: 8px;
+}
+.cv-script-asset-delete-option small {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+  line-height: 1.5;
+}
+.cv-script-asset-rename .cv-dialog {
+  width: 600px;
+}
+.cv-script-asset-rename-preview {
+  max-height: 40vh;
+  overflow: auto;
+}
+.cv-script-asset-rename-preview p {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  padding: 8px;
+  border: 1px solid #ffffff15;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+.cv-script-asset-rename-preview small {
+  color: #888;
+}
+.cv-script-asset-rename-preview del {
+  color: #aaa;
+}
+.cv-script-asset-rename-preview ins {
+  color: #5ddcff;
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .cv-script-assets-view {
+    padding: 12px;
+  }
+  .cv-script-asset-cards > article {
+    width: 100%;
+  }
+  .cv-script-asset-global-style {
+    padding-right: 0;
+  }
+  .cv-script-asset-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .cv-script-asset-recognition {
+    padding: 8px;
+  }
+  .cv-script-asset-candidates {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .cv-script-asset-picker .cv-dialog {
+    padding: 12px;
+  }
+  .cv-script-asset-drawer .cv-dialog {
+    padding: 16px;
+  }
+  .cv-script-asset-tabs button {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .cv-script-asset-cover-actions {
+    opacity: 1;
+  }
+}
+
+/* 272776 ii: only the image has a border; card text remains two compact lines. */
+.cv-script-asset-cards > article {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+}
+.cv-script-asset-cover {
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  overflow: visible;
+}
+.cv-script-asset-cards > article[data-has-image='false'] .cv-script-asset-cover {
+  border-style: dashed;
+}
+.cv-script-asset-cards > article > strong {
+  padding: 0;
+  min-height: 0;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-asset-cards > article > p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-asset-cards > article[data-has-image='false'] .cv-script-asset-cover-actions {
+  opacity: 1;
+}

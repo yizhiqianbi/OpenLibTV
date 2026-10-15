@@ -1,0 +1,224 @@
+{
+  "list": [
+    {
+      "id": 2,
+      "versionNo": "1.5",
+      "releaseDate": "2026-09-20",
+      "summary": "LibTV 1.5 版本更新｜五大独家功能升级创作全流程！",
+      "otherOptimizations": [
+        "【TV Director】支持新建、更新、运行画布节点。",
+        "【TV Director】支持Agent运行过程中，切换自动/手动模式。",
+        "【画布优化】画布打开速度显著提升。",
+        "【画布优化】优化大量节点的画布（数千节点），卡顿体验问题。",
+        "【画布优化】修复画布偶尔丢失节点的问题。"
+      ],
+      "optimizationTitle": "其他优化",
+      "features": [
+        {
+          "id": 16,
+          "onlineDate": "2026-09-20",
+          "name": "剧本原创与改编",
+          "description": "- 从一个想法到原创剧本，局部打磨，也照顾前后的故事。\n- LibTV 支持按题材、人设与背景辅助创作，和你一起原创剧本，并对台词、冲突等局部改写、对比确认；关联修改可提示对大纲、钩子与伏笔的影响，由你决定是否同步调整。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/6cc91e3dcdb1b5d2.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=9219602&sourceProjectUuid=b03bf6d733c241ce879427f462d738c0",
+          "versionId": 2,
+          "sortOrder": 1
+        },
+        {
+          "id": 17,
+          "onlineDate": "2026-09-20",
+          "name": "导演执导",
+          "description": "- 可调用的导演能力，帮你拆分镜、写提示词、批量推进。\n- LibTV 支持选择预设导演，或导入自己的创作方法与提示词模板，生成导演分身，辅助拆镜、创建节点、批量优化提示词。手动生成模式下，先审核计划，确认后再生成。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/08fc3cdd646b029f.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8991237&sourceProjectUuid=c9c36993b7df45d0a4cce4230ce88951",
+          "versionId": 2,
+          "sortOrder": 2
+        },
+        {
+          "id": 18,
+          "onlineDate": "2026-09-20",
+          "name": "角色造型室",
+          "description": "- 为你的故事塑造专属主角，积累可以反复出演的角色资产。\n- LibTV 支持从人设、参考图或已有角色出发，可视化调整五官、发型、服装，细化痣、雀斑、疤痕等特征，塑造更有辨识度的主角。可关联音色、保存角色卡，在后续项目中继续调用。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/9dc21eeb1b82532d.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=9252699&sourceProjectUuid=81c4811238044c63bf8403989c504e6e&guide=portrait-studio",
+          "versionId": 2,
+          "sortOrder": 3
+        },
+        {
+          "id": 19,
+          "onlineDate": "2026-09-20",
+          "name": "创意片头",
+          "description": "- 选一帧画面，设计属于这部作品的创意片头。\n- LibTV 支持基于选中画面设计片名、生成文字动效，并提供字幕识别与样式调整。口播视频还支持自动粗剪、画中画、B-Roll 匹配与音效配乐，并可继续修改。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/a2b6aaacbfb80214.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=9248730&sourceProjectUuid=6f5cd6f657ce43fc986482949af4c42c",
+          "versionId": 2,
+          "sortOrder": 4
+        },
+        {
+          "id": 20,
+          "onlineDate": "2026-09-20",
+          "name": "LibTV 3D-BOX",
+          "description": "- 不会建模，也能让自己的虚拟剧组开机\n- LibTV 3D-BOX 支持文字描述需求或上传参考图， Agent 帮你搭建场景、安排角色动作与机位，完成多分镜预演。手绘轨迹即可预演运镜，支持对话或手动调整场景与镜头。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/791cf588bcc90629.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/3d-box",
+          "versionId": 2,
+          "sortOrder": 5
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "versionNo": "1.0",
+      "releaseDate": "2026-09-11",
+      "summary": "LibTV 1.0 版本更新",
+      "otherOptimizations": [],
+      "optimizationTitle": "其他优化",
+      "features": [
+        {
+          "id": 3,
+          "onlineDate": "2026-09-11",
+          "name": "LibTV上线「深度动作捕捉」功能",
+          "description": "一键提取视频深度信息，让动作/运镜参考不再受原始风格、元素等特征干扰，参考效果更稳定。",
+          "mediaType": 1,
+          "mediaUrl": "/assets/7e1f2a87167a9307.webp",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8220061&sourceProjectUuid=5135e47a92cd4faf859f6a7000fc5982",
+          "versionId": 1,
+          "sortOrder": 1
+        },
+        {
+          "id": 2,
+          "onlineDate": "2026-09-11",
+          "name": "「宫格切分」功能支持自定义调节分割线位置",
+          "description": "【功能简介】进入宫格切分功能界面后，将鼠标 hover 在分割线上，鼠标箭头转换为左右箭头图标时，即可拖动修改分割线的位置。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/188d03c8924012c7.mp4",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8231148&sourceProjectUuid=e50da58cb19a4f9ba2c5a53543f4b33c",
+          "versionId": 1,
+          "sortOrder": 2
+        },
+        {
+          "id": 14,
+          "onlineDate": "2026-09-11",
+          "name": "LibTV上线图像「图层分离」功能",
+          "description": "【功能简介】将图片中的人物、物体、文字、背景等内容智能拆分为可独立编辑的图层，支持移动、缩放、旋转、层级调整和景深控制\n【适用场景】适用于人物站位调整、商品排布、海报重组、元素移除、构图优化及视频参考帧制作等场景",
+          "mediaType": 1,
+          "mediaUrl": "/assets/3c54397821af0e53.webp",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8533113&sourceProjectUuid=813d4b04adca4841a05e95968aea3adb",
+          "versionId": 1,
+          "sortOrder": 3
+        },
+        {
+          "id": 15,
+          "onlineDate": "2026-09-11",
+          "name": "「智能剪辑」功能优化",
+          "description": "1. 【素材粗剪】支持对多段原始素材进行粗剪（去口水词、停顿、重复），并添加\n   入口：链接多个视频视频至画布「视频剪辑」节点，在面板上点击「口播视频」\n2. 【文本添加】支持添加动态花字、人物画中画、音效、背景音乐\n3. 智能剪辑节点支持封面预览",
+          "mediaType": 1,
+          "mediaUrl": "/assets/3ea35f725e357431.webp",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8227440&sourceProjectUuid=58790a6bc0bb45659886b5178932e20f",
+          "versionId": 1,
+          "sortOrder": 4
+        },
+        {
+          "id": 10,
+          "onlineDate": "2026-09-11",
+          "name": "LibTV 上线视频「智能续写」功能",
+          "description": "- 支持从视频任意时间点开始续写。选择续写起点，输入后续内容描述\n- 可添加新的参考图/视频",
+          "mediaType": 3,
+          "mediaUrl": "/assets/78521845ab5debc7.mp4",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8577942&sourceProjectUuid=a22afdd3c06a40b9a433f55d18429025",
+          "versionId": 1,
+          "sortOrder": 5
+        },
+        {
+          "id": 13,
+          "onlineDate": "2026-09-11",
+          "name": "LibTV上线 Blender 插件",
+          "description": "安装后，可以直接录制界面上的3D白模视频或截取画面，一键发送到 LibTV",
+          "mediaType": 3,
+          "mediaUrl": "/assets/90b108c23d03f186.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/blender?entrySource=homepage_feature&entryItemKey=blender",
+          "versionId": 1,
+          "sortOrder": 6
+        },
+        {
+          "id": 7,
+          "onlineDate": "2026-09-11",
+          "name": "【独家】Seedance 2.5 超出5min视频直出",
+          "description": "- 一键直出 5 分钟 成片，成片完成度极高\n- 支持 查看过程片段 ，画布剪辑等精细化调优",
+          "mediaType": 3,
+          "mediaUrl": "/assets/6aac380585e85f65.mp4",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8577143&sourceProjectUuid=9102c1c4f0604583b745d46b271c1264",
+          "versionId": 1,
+          "sortOrder": 7
+        },
+        {
+          "id": 12,
+          "onlineDate": "2026-09-11",
+          "name": "【独家】LibTV上线「逐帧拉片」功能",
+          "description": "- 支持从多个维度（叙事分镜、精彩运镜、动作片段、音频参考）分析视频，\n- 输出准确、多样的素材供 Seedane 20/2.5 使用。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/8950c43d52b07475.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8220537&sourceProjectUuid=b9f2da32d7d347b188506d2aa2169d76",
+          "versionId": 1,
+          "sortOrder": 8
+        },
+        {
+          "id": 11,
+          "onlineDate": "2026-09-11",
+          "name": "【独家】LibTV上线「智能引用 AutoLink」功能",
+          "description": "输入提示词后，实时将相关参考素材进行智能@引用到对应的提示词后面，让你更便捷高效利用 Seedance 2.5  的多参功能。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/dcbf28abb3472ade.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8577380&sourceProjectUuid=10c2d000d6dd42549d752bbcbe189bfa",
+          "versionId": 1,
+          "sortOrder": 9
+        },
+        {
+          "id": 9,
+          "onlineDate": "2026-09-11",
+          "name": "【独家】LibTV 上线视频「片段重拍」功能",
+          "description": "- 支持毫秒级时间戳精准定位，通过时间轴预览自由选择一个或多个片段进行重拍\n- 可用文字描述每段需要修改的具体内容",
+          "mediaType": 3,
+          "mediaUrl": "/assets/6b0259b508347a32.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8577442&sourceProjectUuid=429d77e8bf704fb08dc75ac8f9a7547d",
+          "versionId": 1,
+          "sortOrder": 10
+        },
+        {
+          "id": 8,
+          "onlineDate": "2026-09-11",
+          "name": "【独家】LibTV 上线「智能剪辑」功能",
+          "description": "1. 支持不同剪辑场景（口播视频、批量广告、智能混剪、无人出镜解说视频），用智能剪辑代替繁琐重复的人工剪辑。\n2. 智能分析、编排多轨素材，自动匹配画面元素动效、卡点、布局等，一键剪辑。",
+          "mediaType": 3,
+          "mediaUrl": "/assets/811908a0728774a8.webm",
+          "buttonText": "去体验",
+          "linkUrl": "https://www.liblib.tv/canvas?sourceSpaceId=8577846&sourceProjectUuid=e3cc0bf384f94274aa72793b4c27fb24",
+          "versionId": 1,
+          "sortOrder": 11
+        }
+      ]
+    }
+  ],
+  "total": 2,
+  "hasMore": false
+}

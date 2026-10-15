@@ -1,0 +1,117 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "05c060a4a373425eab679c01570b8bd0",
+      "projectUuid": "d921b8ed7c554e81b3871919986314d7",
+      "name": "小将军",
+      "description": "大吴泥塑AICG短片",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4c051d0ebdac4ad382a1cf93c5bb47f3/a7f6e751ef2f2dd828aae028b1ff4af371221580.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4c051d0ebdac4ad382a1cf93c5bb47f3/6295c194e3e7612f36c5f36897589ef1f0b8e6f7.mp4",
+      "snapshotId": 25429,
+      "auditStatus": 1,
+      "ownerId": 2963778,
+      "ownerUuid": "4c051d0ebdac4ad382a1cf93c5bb47f3",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4c051d0ebdac4ad382a1cf93c5bb47f3/c039bd117eb101df79e1befd02feb3ae75302bee6c4fb75def6d048df250c23a.jpg",
+      "nickname": "ZHUHAN",
+      "isLike": false,
+      "likeCount": 9,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/discovery/item/6a4e698400000000160276c8?source=webshare&xhsshare=pc_web&xsec_token=ABcyu3VM5nN-FdTTzC33USq4qSd8FT0hXQ-2WIzFtxaGA=&xsec_source=pc_share",
+      "createAt": "2026年07月08日 23:38",
+      "updateAt": "2026年07月15日 14:40",
+      "publishAt": "2026年07月08日 23:48",
+      "playCount": 11,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 282,
+        "edges": 732
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e82913e3-8d96-9668-ac1b-fad8896b2597"
+}

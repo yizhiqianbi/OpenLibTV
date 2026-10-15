@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "979fad29f0414b039c97a9e19cd1ed5e",
+      "projectUuid": "41cc8db44c564e2cad9e691a5bbdff3c",
+      "name": "时代门 第二集",
+      "description": "爆炸吞没了实验室，火光映红了雨幕。而在天台的尽头，一个年轻的执法者举枪对准了他——\n“够了。”\n一声枪响，命运的齿轮开始转动。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5d862c19f3014846b8422ccea15580b0/016e2f23a45e05c6d5a062319a39e250e29d8499.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5d862c19f3014846b8422ccea15580b0/308da4ae7a487838e9a43d871910afb5ee029387.mp4",
+      "snapshotId": 23542,
+      "auditStatus": 1,
+      "ownerId": 9465642,
+      "ownerUuid": "5d862c19f3014846b8422ccea15580b0",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5d862c19f3014846b8422ccea15580b0/48c32e969616856c9e0293187ef439359a53097e8f6a314bb90238782f0b5a4e.jpg",
+      "nickname": "月自寒",
+      "isLike": false,
+      "likeCount": 43,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://t.bilibili.com/1208479273169453075?share_source=pc_native",
+      "createAt": "2026年06月16日 12:32",
+      "updateAt": "2026年07月01日 17:47",
+      "publishAt": "2026年07月01日 16:58",
+      "playCount": 13,
+      "viewCreationProcessCount": 11,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 143,
+        "edges": 109
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "aaec2704-036d-9db3-8b3e-e63c2bdb1686"
+}

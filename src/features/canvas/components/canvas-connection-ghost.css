@@ -1,0 +1,44 @@
+.cv-world .cv-connection-ghost {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1px;
+  height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  background: var(--Surface-secondary-background, #262626);
+  border: 1px solid var(--canvas-node-border, #3c3c3c);
+  pointer-events: none;
+  user-select: none;
+}
+
+.cv-connection-ghost-handle {
+  position: absolute;
+  top: 50%;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  min-width: 5px;
+  min-height: 5px;
+  border: 1px solid var(--xy-handle-border-color, var(--xy-handle-border-color-default, #fff));
+  border-radius: 100%;
+  background: var(--canvas-handle, #1a192b);
+  pointer-events: none;
+}
+
+.cv-connection-ghost-handle.is-target {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.cv-connection-ghost-handle.is-source {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+/* Keep the existing broad path rule from making this read-only temporary edge clickable. */
+.cv-edges path.cv-connection-ghost-edge {
+  stroke: var(--canvas-edge, #888);
+  stroke-width: 2;
+  pointer-events: none;
+}

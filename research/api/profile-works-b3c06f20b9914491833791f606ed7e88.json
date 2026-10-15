@@ -1,0 +1,55 @@
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "templateUuid": "2a8732dd2e454ea8a61a6d7351291931",
+        "projectUuid": "74aea35be9c048e8996b8dff5766ef81",
+        "name": "马踏新程，福启华年",
+        "description": "AI+实拍过往作品",
+        "coverUrl": "https://libtv-res.liblib.art/upload-images/b3c06f20b9914491833791f606ed7e88/4efa9828a9857fc8f0b2d94a6b1646b423fe424f.jpg",
+        "finalOutput": "https://libtv-res.liblib.art/upload-images/b3c06f20b9914491833791f606ed7e88/807777a3e01c1bce1aa29064f5ef823bf39688ab.mp4",
+        "snapshotId": 56673,
+        "auditStatus": 1,
+        "ownerId": 6922878,
+        "ownerUuid": "b3c06f20b9914491833791f606ed7e88",
+        "avatar": "https://libtv-res.liblib.art/upload-images/b3c06f20b9914491833791f606ed7e88/2825909890ab5551f166dd7a4b4f673c294c9a65.png",
+        "nickname": "野野也",
+        "isLike": false,
+        "likeCount": 0,
+        "isTop": false,
+        "score": 60,
+        "auditBy": 176,
+        "createAt": "2026年10月05日 01:54",
+        "updateAt": "2026年10月05日 02:11",
+        "publishAt": "2026年10月05日 01:54"
+      },
+      {
+        "templateUuid": "c6e94bfacd5a4f738813bc9e89afdcd6",
+        "projectUuid": "8a3beaf63fa4473d96bb35ca2832fcf0",
+        "name": "抵达之前 From Begin To Begin",
+        "description": "我寻找你，一遍又一遍。时间旅行并不总是美好的，在我的循环里，充斥噩梦与幻象，但我依然一遍又一遍，仅仅是为了延长我们彼此交汇的时间。",
+        "coverUrl": "https://libtv-res.liblib.art/upload-images/af4329a5a6d7493eaea95e0f4395160d/0d92b5eddd319f6128758d9d1d6e625f4628c42d.jpg",
+        "finalOutput": "https://libtv-res.liblib.art/upload-images/af4329a5a6d7493eaea95e0f4395160d/6cc8981415beb5f722682c67b557209cee36d9a6.mp4",
+        "snapshotId": 51207,
+        "auditStatus": 1,
+        "ownerId": 6922878,
+        "ownerUuid": "b3c06f20b9914491833791f606ed7e88",
+        "avatar": "https://libtv-res.liblib.art/upload-images/b3c06f20b9914491833791f606ed7e88/2825909890ab5551f166dd7a4b4f673c294c9a65.png",
+        "nickname": "野野也",
+        "isLike": false,
+        "likeCount": 242,
+        "isTop": false,
+        "score": 60,
+        "auditBy": 177,
+        "socialMediaUrl": "https://v.douyin.com/M1VFKfgIzdM/",
+        "createAt": "2026年09月30日 18:05",
+        "updateAt": "2026年10月08日 22:06",
+        "publishAt": "2026年09月30日 18:05"
+      }
+    ],
+    "total": 2
+  },
+  "msg": "",
+  "trace_id": "e61fb5f6-6570-9905-ac2d-c77f43b99b03"
+}

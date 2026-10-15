@@ -1,0 +1,98 @@
+.cv-v2-generation-chip {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #f7f7f7;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.cv-v2-generation-chip:hover {
+  background: #ffffff0f;
+}
+.cv-v2-generation-chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: transparent;
+}
+.cv-v2-generation-chip > svg:last-child {
+  opacity: 0.6;
+}
+.cv-v2-generation-light .cv-v2-generation-chip {
+  color: #262626;
+}
+.cv-v2-generation-light .cv-v2-generation-chip:hover {
+  background: #0000000a;
+}
+.cv-v2-generation-ratio-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+}
+.cv-v2-generation-ratio-icon > span {
+  display: block;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+}
+.cv-v2-generation-quality-icon {
+  font-size: 10px;
+  line-height: 14px;
+}
+.cv-v2-generation-menu {
+  width: max-content;
+  min-width: 120px;
+  max-width: calc(100vw - 16px);
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: #ffffffd9;
+  box-shadow: 0 4px 16px #0004;
+}
+.cv-v2-generation-menu > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  color: inherit;
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: left;
+}
+.cv-v2-generation-menu > button > span {
+  flex: 1;
+}
+.cv-v2-generation-menu > button:hover {
+  background: #ffffff0f;
+}
+.cv-v2-generation-menu > button[data-selected='true'] {
+  font-weight: 500;
+  color: #f7f7f7;
+}
+.cv-v2-generation-menu > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cv-v2-generation-menu.cv-v2-generation-light {
+  border-color: #0000001a;
+  background: white;
+  color: #404040;
+}
+.cv-v2-generation-menu.cv-v2-generation-light > button[data-selected='true'] {
+  color: #171717;
+}
+.cv-v2-generation-menu.cv-v2-generation-light > button:hover {
+  background: #0000000a;
+}

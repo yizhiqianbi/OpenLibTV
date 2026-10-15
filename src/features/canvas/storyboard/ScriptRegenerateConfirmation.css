@@ -1,0 +1,61 @@
+.cv-script-regenerate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-toast, 700);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #0006;
+}
+.cv-script-regenerate-confirm {
+  width: min(344px, calc(100vw - 32px));
+  padding: 16px;
+  border: 0.5px solid var(--canvas-controls-border, #363636);
+  border-radius: 12px;
+  color: var(--canvas-controls-text, #fff);
+  background: var(--canvas-controls-bg, #262626);
+  box-shadow: var(--canvas-shadow-dropdown, 0 4px 10px #00000014);
+  backdrop-filter: blur(16px);
+}
+.cv-script-regenerate-confirm h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cv-script-regenerate-confirm p {
+  margin: 0;
+  color: var(--canvas-controls-text-muted, #9f9f9f);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.cv-script-regenerate-confirm .cv-script-regenerate-unavailable {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.cv-script-regenerate-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+.cv-script-regenerate-buttons button {
+  height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cv-script-regenerate-buttons button:hover:not(:disabled) {
+  background: var(--canvas-controls-hover, #ffffff1a);
+}
+.cv-script-regenerate-buttons .cv-script-regenerate-start {
+  background: #f7f7f7;
+  color: #171717;
+}
+.cv-script-regenerate-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

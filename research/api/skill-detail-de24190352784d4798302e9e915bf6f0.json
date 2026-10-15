@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "de24190352784d4798302e9e915bf6f0",
+      "skillUuid": "9fff7c0690db45cf9776d860d9259608",
+      "skillKey": "product-short-drama-generator-020b92eb952140af9a99e594358a115b",
+      "name": "带货爆款短剧",
+      "version": "1.0.0",
+      "description": "把一张商品图转化为一条 3 分镜、约 15 秒的带货短剧成片",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/722dbacdc13d43c11b9ef7c1ed790d01224ab0d9.png",
+      "snapshotId": 25984,
+      "snapshotData": "{\"canvasCaseUrl\":null,\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/722dbacdc13d43c11b9ef7c1ed790d01224ab0d9.png\",\"description\":\"把一张商品图转化为一条 3 分镜、约 15 秒的带货短剧成片\",\"evalResult\":\"\",\"inputType\":\"提供商品图和商品信息，剧集内容和方向\",\"name\":\"带货爆款短剧\",\"outputContent\":\"约 15 秒的带货短剧成片（剧本 → 资产 → 分镜图 → 分镜视频 → 剪辑成片），全自动一次跑完，把商品与强反转的短剧情节结合在一起\",\"productionCaseUrls\":[\"https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/760aff0235064cb3b6205c7f60106b40ac6a429c.mp4\"],\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"product-short-drama-generator-020b92eb952140af9a99e594358a115b\",\"skillUuid\":\"9fff7c0690db45cf9776d860d9259608\",\"sourceType\":1,\"useScenario\":\"适合电商商家或者带货博主，用于生产带货视频。可以把商品跟短剧剧情自然的融合起来，在短剧天然吸引人的情节里，自然而然地种草给观众。\",\"version\":\"1.0.0\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10，命中 3 条阻断级问题",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 883,
+      "usePv": 2287,
+      "useUv": 1838,
+      "publishAt": "2026-07-10 19:58:45",
+      "ownerId": 7940353,
+      "ownerName": "188****7392",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "useScenario": "适合电商商家或者带货博主，用于生产带货视频。可以把商品跟短剧剧情自然的融合起来，在短剧天然吸引人的情节里，自然而然地种草给观众。",
+      "inputType": "提供商品图和商品信息，剧集内容和方向",
+      "outputContent": "约 15 秒的带货短剧成片（剧本 → 资产 → 分镜图 → 分镜视频 → 剪辑成片），全自动一次跑完，把商品与强反转的短剧情节结合在一起",
+      "sourceType": 1,
+      "nickname": "188****7392",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/020b92eb952140af9a99e594358a115b/760aff0235064cb3b6205c7f60106b40ac6a429c.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "04edfc66-b124-96be-a46c-931797559c8a"
+}

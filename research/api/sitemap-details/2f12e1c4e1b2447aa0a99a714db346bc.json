@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2f12e1c4e1b2447aa0a99a714db346bc",
+      "projectUuid": "9251d7e7f09b439696eecbae4430ddda",
+      "name": "宇宙终局",
+      "description": "宇宙最终的结局会是怎样……",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/56b7581b18294b7a9abf3a0fca18051d/fc42385ca82bf37d183e447848b7d46675e9b1e2.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/56b7581b18294b7a9abf3a0fca18051d/c5e6e34ef20c736cf2d273ad7b6b88f04dab5afa.mp4",
+      "snapshotId": 18049,
+      "auditStatus": 1,
+      "ownerId": 2496946,
+      "ownerUuid": "56b7581b18294b7a9abf3a0fca18051d",
+      "avatar": "https://liblibai-online.liblib.cloud/img/56b7581b18294b7a9abf3a0fca18051d/a4df13fceecd3fc2ed150f378925c202830c161f0b044ff73215deaaf4dd2653.png",
+      "nickname": "HUAN的克隆体",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月10日 11:37",
+      "updateAt": "2026年06月15日 10:05",
+      "publishAt": "2026年06月10日 11:37",
+      "playCount": 2,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 175,
+        "edges": 163
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "625cd936-85cb-9a49-817d-7a2a1cf84153"
+}

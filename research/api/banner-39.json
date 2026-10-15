@@ -1,0 +1,28 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "banners": [
+      {
+        "url": "https://liblibai.feishuapp.com/app/app_17dqr3ng2af",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1788783815679.webp",
+        "title": "新周榜",
+        "startTime": "2026-09-06T16:00:00.000+00:00",
+        "endTime": "2026-10-31T15:59:59.000+00:00",
+        "displayOrder": 10,
+        "type": 39,
+        "extendInfo": null
+      },
+      {
+        "url": "https://www.liblib.tv/activity/60",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1787644396291.webp",
+        "title": "",
+        "startTime": "2026-08-24T16:00:00.000+00:00",
+        "endTime": "2026-10-12T15:59:59.000+00:00",
+        "displayOrder": 11,
+        "type": 39,
+        "extendInfo": null
+      }
+    ]
+  }
+}

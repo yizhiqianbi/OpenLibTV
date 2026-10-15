@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "c26c30c02d5744a597e16c35f031de1d",
+      "projectUuid": "dd15d9b3cdf94831970e8a9be87a579c",
+      "name": "海底小纵队 解压助眠AMSR视频",
+      "description": "谁不想看一场痛快淋漓的维修解压大行动呢",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/9b4e132a72354f69ae7c31bf487aab22/e7aaf5481d2e1906ee72f7518099069d699c0141c5a3f68007907450f705057d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/9b4e132a72354f69ae7c31bf487aab22/c04fe9fbd86612286e026486f4adc524499d3607.mp4",
+      "snapshotId": 21321,
+      "auditStatus": 1,
+      "ownerId": 8369233,
+      "ownerUuid": "9b4e132a72354f69ae7c31bf487aab22",
+      "avatar": "https://liblibai-online.liblib.cloud/img/9b4e132a72354f69ae7c31bf487aab22/bc7ec2538fff2556cf38a56b72e9fd5cf0b926750054400cbd2fc1de6fac6107.png",
+      "nickname": "咕噜咕噜大王",
+      "isLike": false,
+      "likeCount": 50,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7651880798987670649",
+      "createAt": "2026年06月23日 14:53",
+      "updateAt": "2026年06月26日 21:13",
+      "publishAt": "2026年06月24日 23:28",
+      "playCount": 23,
+      "viewCreationProcessCount": 12,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 91,
+        "edges": 109
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "33d38577-c8dc-9ac8-8e59-9c41d90f7111"
+}

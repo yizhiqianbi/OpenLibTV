@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f0284e30f8264a00b363f273fa0043c9",
+      "projectUuid": "721ce520bed24a979c43877331108f89",
+      "name": "seedance2.0创作体验 | 逃亡系列：厨房大追缉",
+      "description": "seedance2.0创作体验",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/55eb64475cbd4bff8bdda4d44e966e91/b0f35dd8bc7ccdd0f72de7c1a59f7c3fe0b31bebc57f83e8999ac04121c027a6.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/55eb64475cbd4bff8bdda4d44e966e91/0623f4842d214f34ad025f00926c6eb1dc364372.mp4",
+      "snapshotId": 1677,
+      "auditStatus": 1,
+      "ownerId": 3302696,
+      "ownerUuid": "55eb64475cbd4bff8bdda4d44e966e91",
+      "avatar": "https://liblibai-online.liblib.cloud/img/55eb64475cbd4bff8bdda4d44e966e91/65e8998982f579adfa1f2439d338d05769d50fa667c1ac4e5fa8bb5e4436c830.png",
+      "nickname": "摸鱼studio",
+      "isLike": false,
+      "likeCount": 453,
+      "tags": [
+        {
+          "id": 1301,
+          "code": "premium_comic",
+          "tagLabel": "精品漫剧",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1301/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1700,
+          "code": "starvideo",
+          "tagLabel": "StarVideo2.0",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1700/",
+          "tagStatus": 1,
+          "tagOrder": 8,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年04月02日 11:15",
+      "updateAt": "2026年04月17日 01:12",
+      "publishAt": "2026年04月02日 11:15",
+      "playCount": 50,
+      "viewCreationProcessCount": 30,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 81,
+        "edges": 70
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1623eb1d-093f-9bc7-9459-c98e517712ad"
+}

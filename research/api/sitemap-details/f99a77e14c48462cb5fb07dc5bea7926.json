@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f99a77e14c48462cb5fb07dc5bea7926",
+      "projectUuid": "44b03d7cf43b4d5fbe29ae8cfd56ee50",
+      "name": "坝坝会 （打老虎A Tiger Skill）",
+      "description": "鬼糊糊嘞！！！\n那天晚上竹林里头风一吹，话事人口水一咽！\n怕是出大事咯~\n-------------------------\n搞AIGC的，哪个不是“大侠”？\n模型只老虎——刚开始凶得很，谁都怕。\n当七个烂摩托凑一起，Libtv放个大招，最后轻松把老虎按在地上。\n-------------------------\n酒拳要划起，声音要够大，想法要够野，老虎都会怕！\n你不信你看下这个“大侠”的鬼名堂\n-------------------------\n今晚，你的“老虎”是什么？\n嘘……点开视频——\n故事还没完。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d4a7a9586c13499a8538afa624ab8430/07890120320a9f3b79d6a71d3eb2beec7e0c3718.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d4a7a9586c13499a8538afa624ab8430/c5ac1f14cfd578923abf57eba31e323b63d0286e.mp4",
+      "snapshotId": 21415,
+      "auditStatus": 1,
+      "ownerId": 5919496,
+      "ownerUuid": "d4a7a9586c13499a8538afa624ab8430",
+      "avatar": "https://liblibai-online.liblib.cloud/img/d4a7a9586c13499a8538afa624ab8430/10b972e1283d4b59b1933e2cda4c1c1bf2b6cef43303c64acee6ac4f6c2f64c6.jpg",
+      "nickname": "有無劇院",
+      "isLike": false,
+      "likeCount": 28,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "66 【AIGC们，快点听到！开坝坝会啦~ 🏮 - 有 無 映 畫 | 小红书 - 你的生活兴趣社区】 😆 xNTR36s124vWc4I 😆 https://www.xiaohongshu.com/discovery/item/6a3a8afb0000000007024a25?source=webshare&xhsshare=pc_web&xsec_token=ABT8HytRThjv5DmDBpt_OmMPmUsYJanTfn5WplVS3snDc=&xsec_source=pc_share",
+      "createAt": "2026年06月23日 21:38",
+      "updateAt": "2026年07月02日 20:34",
+      "publishAt": "2026年06月23日 21:38",
+      "playCount": 27,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 382,
+        "edges": 387
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a0cceda3-d769-9e45-9c50-dfc228b4642b"
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://api.liblib.tv/api/course/v1/courses/purchase-info",
+  "method": "POST",
+  "payload": {
+    "skuCode": "unknown-course"
+  },
+  "status": 200,
+  "contentType": "application/json; charset=utf-8",
+  "bytes": 51,
+  "purpose": "Read-only source-declared detail query; no order purchase or progress write."
+}

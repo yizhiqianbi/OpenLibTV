@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "17d7be03c64a4aaf8207320ea644dabf",
+      "projectUuid": "fc93f940d8b24d3e95cabe858937603d",
+      "name": "《DEEP深海之门》幻想3D游戏CG短片",
+      "description": "幻想3D游戏CG短片",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/daa99867de450d9089c92ad663110b821997f0ce.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/289dfb82dbb444dab196cde0d1d39b7a/95e11a18e1ca526284941efed3c6dea09a07ac61.mp4",
+      "snapshotId": 12637,
+      "auditStatus": 1,
+      "ownerId": 221940,
+      "ownerUuid": "289dfb82dbb444dab196cde0d1d39b7a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/289dfb82dbb444dab196cde0d1d39b7a/7bc5497b4b40a5bf429ada8d35aaa9ac44a9908c0451d149e8e1515d5af6c978.jpg",
+      "nickname": "绘梦",
+      "isLike": false,
+      "likeCount": 29,
+      "tags": [
+        {
+          "id": 1302,
+          "code": "game_art",
+          "tagLabel": "游戏美宣",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1302/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年05月20日 08:17",
+      "updateAt": "2026年05月20日 08:28",
+      "publishAt": "2026年05月20日 08:17",
+      "playCount": 22,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 84,
+        "edges": 77
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "43a392c1-65a0-98bc-9cca-ae527d2dad6a"
+}

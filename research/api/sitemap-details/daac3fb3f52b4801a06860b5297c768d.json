@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "daac3fb3f52b4801a06860b5297c768d",
+      "projectUuid": "c7c6913c48734b27b8eb92d17a102b6d",
+      "name": "諸神之戰 - 墮落之火：第一集",
+      "description": "這是一部關於墮落之神帶領人類反抗神明的故事......",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c3315b336e544b258dd70089661c0605/ae1d32d93e1f7c41a60dce18dd1ecc4babcde2ca.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c3315b336e544b258dd70089661c0605/301fcb3c12178f727b8c6cb7c63a2ca302008000.mp4",
+      "snapshotId": 25284,
+      "auditStatus": 1,
+      "ownerId": 9436342,
+      "ownerUuid": "c3315b336e544b258dd70089661c0605",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c3315b336e544b258dd70089661c0605/f8c4fc805f05ac7460271844897c97dd686049c220344906395a1807abe4e05a.png",
+      "nickname": "南瓜先生",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月08日 17:20",
+      "updateAt": "2026年07月08日 21:20",
+      "publishAt": "2026年07月08日 17:20",
+      "playCount": 0,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 75,
+        "edges": 72
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f10998df-bed4-96ca-ae69-321f932c5d7e"
+}

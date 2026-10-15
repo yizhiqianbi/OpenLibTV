@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 8528792,
+      "uuid": "e905a91841694261b2f15f6cf57a7725",
+      "nickname": "不加班艺术中心",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e905a91841694261b2f15f6cf57a7725/b25385e21f3859c9660de106170104011e1f3230e21bb5e9eb4653b43887a02d.png",
+      "backgroundImage": ""
+    },
+    "counter": {
+      "totalLikeCount": 74,
+      "projectCount": 2,
+      "viewCreationProcessCount": 2230,
+      "copyCanvasCount": 344,
+      "followerCount": 13,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "591c355a-6a75-9185-8e3a-4f57425a6297"
+}

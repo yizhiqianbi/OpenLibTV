@@ -1,0 +1,100 @@
+{
+  "source": "research/source/0mfjq9o8b1v3d.js (module795032)",
+  "engine": "media-chrome/react with nativevideo",
+  "detailSource": "research/source/39q0gzvvu3i3_.js",
+  "autohideSeconds": 3,
+  "playbackRates": [
+    1,
+    1.5,
+    2
+  ],
+  "controlsLayout": "inline",
+  "playsInline": true,
+  "preload": "auto",
+  "objectFit": "contain",
+  "crossOriginDefault": "anonymous",
+  "detailExternalVideoCrossOrigin": null,
+  "speedInteraction": "click cycles rates",
+  "qualityInteraction": "menu abovebutton automaticindex-1 + providedlevels; clickoutside closes",
+  "inlineOrder": [
+    "play/pause",
+    "volume",
+    "currentTime",
+    "progress",
+    "duration",
+    "speed",
+    "quality",
+    "fullscreen"
+  ],
+  "stackedOrder": [
+    [
+      "play/pause",
+      "time/duration",
+      "speed",
+      "quality",
+      "volume",
+      "screenshot",
+      "fullscreen"
+    ],
+    [
+      "progress"
+    ]
+  ],
+  "hls": {
+    "progressive": true,
+    "startWithLowQuality": true
+  },
+  "styleVariables": {
+    "--media-primary-color": "#fff",
+    "--media-secondary-color": "transparent",
+    "--media-control-background": "transparent",
+    "--media-control-hover-background": "transparent",
+    "--media-range-bar-color": "#fff",
+    "--media-range-track-height": "4px",
+    "--media-range-thumb-width": "12px",
+    "--media-range-thumb-height": "12px",
+    "--media-range-thumb-background": "#fff",
+    "--media-range-thumb-border-radius": "50%",
+    "--media-control-padding": "4px 8px",
+    "--media-font-size": "14px",
+    "--media-button-icon-width": "18px",
+    "--media-button-icon-height": "18px",
+    "--media-background-color": "transparent",
+    "--media-time-range-buffered-color": "rgba(255, 255, 255, 0.3)",
+    "--media-range-track-background": "rgba(255, 255, 255, 0.2)",
+    "--media-tooltip-display": "none"
+  },
+  "responsive": {
+    "max560": [
+      "hidevolume",
+      "hidespeed",
+      "controlgap8",
+      "controlpadding12",
+      "playbutton32"
+    ],
+    "desktopPlayIcon": 22.86,
+    "fullscreenIcon": 18
+  },
+  "volume": {
+    "sliderWidth": 20,
+    "sliderHeight": 100,
+    "trackWidth": 3,
+    "thumbSize": 10,
+    "popupPadding": "8px 6px",
+    "popupBackground": "rgba(0,0,0,.75)",
+    "restoreMutedVolume": 0.5
+  },
+  "qualityMenu": {
+    "minWidth": 130,
+    "background": "rgba(0,0,0,.85)",
+    "radius": 8,
+    "topMargin": 4
+  },
+  "inlineBar": {
+    "background": "linear-gradient(to bottom, rgba(36,36,36,0), rgba(18,18,18,.8))",
+    "paddingTop": 40,
+    "paddingBottom": 20,
+    "sidePadding": 16,
+    "gap": 12
+  }
+}

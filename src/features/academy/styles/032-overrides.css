@@ -1,0 +1,227 @@
+/* Academy detail layouts and original Markdown typography. */
+.academy-article-detail,
+.academy-video-detail {
+  background: var(--bg-page, #141414);
+  color: var(--fg-default, #f7f7f7);
+  font-size: 14px;
+  min-height: 100dvh;
+}
+.academy-watch-header {
+  height: 64px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 24px;
+  background: var(--bg-page, #141414);
+  position: sticky;
+  top: 0;
+  z-index: 31;
+}
+.academy-watch-header button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.academy-watch-header button img {
+  height: 14px;
+  width: auto;
+}
+.academy-watch-header button strong {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.academy-watch-header > span {
+  color: #777;
+  flex-shrink: 0;
+}
+.academy-watch-header > p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.academy-article-detail > main {
+  display: flex;
+  width: 100%;
+  max-width: 1120px;
+  padding: 40px 16px 64px;
+  gap: 24px;
+  margin: auto;
+  align-items: flex-start;
+}
+.academy-article-detail article {
+  flex: 1;
+  min-width: 0;
+  max-width: 760px;
+}
+.academy-article-title {
+  background: var(--bg-page, #141414);
+  position: sticky;
+  top: 64px;
+  padding-bottom: 20px;
+  z-index: 30;
+}
+.academy-article-title h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.academy-article-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.academy-article-meta > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.academy-article-meta span {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg-surface-secondary, #202020);
+  color: var(--fg-muted, #a8a8a8);
+}
+.academy-article-meta > p {
+  margin: 0 0 0 auto;
+  color: #787878;
+  font-size: 13px;
+  line-height: 20px;
+}
+.academy-article-detail aside {
+  position: sticky;
+  top: 80px;
+  width: 240px;
+  flex-shrink: 0;
+  max-height: calc(100dvh - 112px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.academy-article-detail aside > nav {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ffffff14;
+}
+.academy-article-detail aside > nav button {
+  display: block;
+  text-align: left;
+  color: #a8a8a8;
+  border: 0;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+  padding: 8px 4px 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  background: none;
+  cursor: pointer;
+}
+.academy-article-detail aside > nav button.active {
+  color: #f7f7f7;
+  font-weight: 500;
+  border-left-color: currentColor;
+}
+.academy-article-detail aside > nav button:hover {
+  color: #f7f7f7;
+}
+.academy-canvas-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: #202020;
+  color: inherit;
+  cursor: pointer;
+}
+.academy-canvas-entry > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.academy-canvas-entry strong {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.academy-canvas-entry small {
+  font-size: 13px;
+  line-height: 20px;
+  color: #787878;
+}
+.academy-canvas-entry > svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 12px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+}
+.academy-article-pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid #ffffff14;
+  margin-top: 32px;
+  padding: 32px 0;
+}
+.academy-article-pagination button {
+  max-width: 48%;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+.academy-article-pagination button:last-child {
+  text-align: right;
+  align-items: flex-end;
+}
+.academy-article-pagination small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #777;
+  font-size: 13px;
+  line-height: 20px;
+}
+.academy-article-pagination span {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 4px;
+}
+.academy-canvas-banner {
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.academy-canvas-banner img {
+  display: block;
+  width: 100%;
+}

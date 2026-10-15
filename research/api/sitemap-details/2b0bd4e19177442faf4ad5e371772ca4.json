@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2b0bd4e19177442faf4ad5e371772ca4",
+      "projectUuid": "1657de56c4b04556a2b6999a22e230d2",
+      "name": "《觉醒》",
+      "description": "一天多做完属于我自己的《觉醒》我花了一天多把这\n个做好了。\n我做了一个属于自己的《觉醒》，在19年的时候，看\n完片子后我就觉得以后我也要做一个，那时候天真的觉\n得我用C4D慢慢磨也能磨一点点出来，7年过去了，如\n今AI时代，我花了一天多给做完了，或许还有很多可以\n调整的空间，但是我现在太忙了，要做的东西太多了。\n做完后我很开心，也算圆了自己一个心愿吧。角色的\n话也是非常快就弄出来了，后续的红发男角色和绿龙都\n算一个小亮点吧。\n我接下来还会做些其他主题的，以情绪为主题的。#AI\n#NiaoNiao #觉醒#CG#AIGC",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8eae7e3b513840a485ae2879b2249e44/94029061c17293a06995be15dc7e188f1eeabe2f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8eae7e3b513840a485ae2879b2249e44/a8c7de673b5589cc2a4278993b30423c3eef57f6.mp4",
+      "snapshotId": 17071,
+      "auditStatus": 1,
+      "ownerId": 9303324,
+      "ownerUuid": "8eae7e3b513840a485ae2879b2249e44",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8eae7e3b513840a485ae2879b2249e44/5239b2e8837e82a83997c34343d385ff66e9882d556f340c5c9c15d5b4779260.png",
+      "nickname": "NiaoNiao",
+      "isLike": false,
+      "likeCount": 77,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.53 复制打开抖音，看看【NiaoNiao的AI课堂的作品】一天多做完属于我自己的《觉醒》 我花了一天多把这个... https://v.douyin.com/_3sym51kY6w/ u@s.Eu 06/30 XMW:/ :1pm",
+      "createAt": "2026年06月05日 21:06",
+      "updateAt": "2026年06月05日 22:43",
+      "publishAt": "2026年06月05日 21:06",
+      "playCount": 42,
+      "viewCreationProcessCount": 32,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 0,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1628f45f-5672-9423-b98d-f0f5d68efe3e"
+}

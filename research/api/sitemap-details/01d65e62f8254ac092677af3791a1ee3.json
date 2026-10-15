@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "01d65e62f8254ac092677af3791a1ee3",
+      "projectUuid": "3076c4bd1b144c17b91fb473cf5dcc93",
+      "name": "沙僧终于不洗了",
+      "description": "取经的路上我在想是谁再给唐僧四徒洗衣服，想来想去应该只有沙僧，那沙僧又背行李又洗衣服，它会不会有怨言？\n视频的创意由此开始",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f574471b318b491695503813e0f553cf/56960880b85cc9d4564b61e3b2858304eaf4c427.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f574471b318b491695503813e0f553cf/6c973727a197c50000d51980cd46724315ad45c9.mp4",
+      "snapshotId": 17365,
+      "auditStatus": 1,
+      "ownerId": 381175,
+      "ownerUuid": "f574471b318b491695503813e0f553cf",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f574471b318b491695503813e0f553cf/f7a9e12155e7b224a9b4934a5ca8f6906e40cc650e6a6f352796eb5b88d1bbba.jpg",
+      "nickname": "迈克的AiGC世界",
+      "isLike": false,
+      "likeCount": 74,
+      "tags": [
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7648605206426504502&showTab=post",
+      "createAt": "2026年06月07日 18:59",
+      "updateAt": "2026年06月13日 00:19",
+      "publishAt": "2026年06月07日 18:59",
+      "playCount": 69,
+      "viewCreationProcessCount": 15,
+      "copyCanvasCount": 4,
+      "shareCount": 9,
+      "snapshotSummary": {
+        "nodes": 140,
+        "edges": 165
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d24aa52e-dfd4-9873-a395-198c8686c0cd"
+}

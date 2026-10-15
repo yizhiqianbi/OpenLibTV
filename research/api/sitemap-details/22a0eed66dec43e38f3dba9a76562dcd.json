@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "22a0eed66dec43e38f3dba9a76562dcd",
+      "projectUuid": "85d41e0f449d4039874445be0ffa2562",
+      "name": "头文字D-拉货王",
+      "description": "货拉拉软广",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/0bfa637c9b7d157affa497ae081c03c01f3b8dfb.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/fb6e47ad9de47a73610ffaae763f8ed6d36dd4a2.mp4",
+      "snapshotId": 23294,
+      "auditStatus": 1,
+      "ownerId": 797672,
+      "ownerUuid": "c124bbc3b9ff4c60b4311c1b77d90a0f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c124bbc3b9ff4c60b4311c1b77d90a0f/5f3158331c60f14b5828e3e3d8df99229d9c492346dd8f7457f00f1a6c37de89.jpg",
+      "nickname": "牛斗",
+      "isLike": false,
+      "likeCount": 51,
+      "tags": [
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/2OWLRON95qU/",
+      "createAt": "2026年06月26日 12:50",
+      "updateAt": "2026年07月02日 20:34",
+      "publishAt": "2026年06月30日 23:15",
+      "playCount": 92,
+      "viewCreationProcessCount": 23,
+      "copyCanvasCount": 6,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 170,
+        "edges": 257
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8a05768b-8791-9956-bbf4-f0202ef4e32d"
+}

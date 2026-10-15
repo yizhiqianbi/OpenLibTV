@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "81bff21f4831484c8cc15ce8067e4d97",
+      "projectUuid": "b05da28f37c149ffae9ce3d069ab784f",
+      "name": "污染星球",
+      "description": "孤独宇航员穿越平行污染世界",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/773a900ab6666c528814bc561585848da03ea603.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/7df7bb234ecf554e1f0f82e64978898e722afe13.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 797672,
+      "ownerUuid": "c124bbc3b9ff4c60b4311c1b77d90a0f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c124bbc3b9ff4c60b4311c1b77d90a0f/5f3158331c60f14b5828e3e3d8df99229d9c492346dd8f7457f00f1a6c37de89.jpg",
+      "nickname": "牛斗",
+      "isLike": false,
+      "likeCount": 121,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月26日 12:54",
+      "updateAt": "2026年07月09日 22:11",
+      "publishAt": "2026年06月26日 12:54",
+      "playCount": 15,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8cb0838a-f410-9a04-8ad2-a3e5311764d9"
+}

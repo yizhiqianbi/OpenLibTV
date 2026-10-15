@@ -1,0 +1,8 @@
+.secondary-spin {
+  animation: secondary-spin 1s linear infinite;
+}
+@keyframes secondary-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

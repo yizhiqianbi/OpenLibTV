@@ -1,0 +1,116 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d582fc74493f43b58a0a19701881e809",
+      "projectUuid": "dd3956a426f84f73b8c9dcb8da531162",
+      "name": "把风夹在身边-背夹小风扇广告片",
+      "description": "一张产品图，怎么用 AI 做出产品广告片？\n\n这次用一个Y30 小风扇 测试了 AI 产品视频流程：\n从产品外观、分镜设计、人物使用场景，到封面包装，基本都可以先用 AI 跑出一版。\n\n我觉得关键不是“会不会生成”，而是要把这几件事锁死：\n\n产品外观不能变\n镜头逻辑要顺\n场景风格要统一\n人物动作要真实\n产品卖点要看得懂\n\n最容易翻车的是产品结构和手部。\nAI 一不小心就会把小风扇做成神秘橙色仪器，真是热心但离谱。\n\n这套流程很适合电商新品、生活方式产品、小家电、夏日单品做前期测试。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a292679d4e9542e1bf346c540703173c/b05102e4973dc967d165afe90b059f06a6cd83fd.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a292679d4e9542e1bf346c540703173c/0250f25e50219258ea22797beca0612632cf93f7.mp4",
+      "snapshotId": 24951,
+      "auditStatus": 1,
+      "ownerId": 4417818,
+      "ownerUuid": "a292679d4e9542e1bf346c540703173c",
+      "nickname": "Lennox",
+      "isLike": false,
+      "likeCount": 6,
+      "tags": [
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "一张产品图，怎么用 AI 做出产品广告片？ 这次用一个 ... http://xhslink.com/o/5ADasjTz7pW  来【小红书】发现这篇笔记的精彩~",
+      "createAt": "2026年07月07日 15:01",
+      "updateAt": "2026年07月07日 20:37",
+      "publishAt": "2026年07月07日 16:34",
+      "playCount": 7,
+      "viewCreationProcessCount": 3,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 103,
+        "edges": 99
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e6ef26ea-566b-93e3-94e3-2cb9100346c4"
+}

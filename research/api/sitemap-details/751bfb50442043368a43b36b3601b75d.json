@@ -1,0 +1,104 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "751bfb50442043368a43b36b3601b75d",
+      "projectUuid": "156264257bdf4d97a01f6211c8a8c4e6",
+      "name": "三星存储卡T9 TVC广告",
+      "description": "为三星新品存储卡T9 制作的TVC广告",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7ded1c3544a54e3c8ab472308cb19681/bd5eb26186c161cdff4230295a070909ceeca067.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7ded1c3544a54e3c8ab472308cb19681/57cfbea5ab372a5cafc4470cffb3238a34e279e9.mp4",
+      "snapshotId": 18610,
+      "auditStatus": 1,
+      "ownerId": 757221,
+      "ownerUuid": "7ded1c3544a54e3c8ab472308cb19681",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaELmLVbjAiaT30eJ2N2CNwcK9wrXN7ZnjV4APrAdvmwAqicpRzCf3TC1TEZhmb8X6DJa7FZm5O2F6xOg/132",
+      "nickname": "幻翼",
+      "isLike": false,
+      "likeCount": 31,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/E6tQSB_lP38",
+      "createAt": "2026年06月12日 09:48",
+      "updateAt": "2026年06月15日 22:25",
+      "publishAt": "2026年06月12日 09:48",
+      "playCount": 17,
+      "viewCreationProcessCount": 7,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 46,
+        "edges": 31
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d12c7260-eb1b-94b7-8203-f177369281db"
+}

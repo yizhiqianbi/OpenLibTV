@@ -1,0 +1,114 @@
+.cv-agent-message {
+  min-width: 0;
+}
+.cv-agent-message-content {
+  min-width: 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 24px;
+}
+.cv-agent-message-content .cv-message-reference {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  max-width: min(135px, 100%);
+  height: 24px;
+  border: 0.5px solid #525252;
+  border-radius: 8px;
+  padding: 0 6px 0 4px;
+  background: transparent;
+  color: #f7f7f7;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+  font-weight: normal;
+}
+.cv-message-reference > svg {
+  flex-shrink: 0;
+}
+.cv-message-node-thumbnail {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+.cv-message-reference > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-message-reference:has(small) {
+  max-width: min(190px, 100%);
+}
+.cv-message-reference small {
+  flex-shrink: 0;
+  color: #ffffff8c;
+  font-size: 12px;
+}
+.cv-agent-message-content button.cv-message-reference {
+  cursor: pointer;
+}
+.cv-agent-message-content button.cv-message-reference:hover {
+  background: #ffffff0a;
+}
+.cv-message-reference:focus-visible {
+  outline: 2px solid #07b8dd;
+  outline-offset: 2px;
+}
+.cv-message-reference-hover {
+  position: fixed;
+  z-index: 400;
+  padding: 6px;
+  border: 1px solid #ffffff1f;
+  border-radius: 12px;
+  background: #1a1a1a;
+  box-shadow:
+    0 8px 24px #0007,
+    0 2px 8px #0006;
+}
+.cv-message-reference-hover img,
+.cv-message-reference-hover video {
+  display: block;
+  max-height: min(280px, 50dvh);
+  max-width: min(280px, calc(100vw - 36px));
+  border-radius: 8px;
+  object-fit: contain;
+}
+.cv-agent-message-markdown {
+  white-space: normal;
+}
+.cv-agent-message-markdown p {
+  white-space: pre-wrap;
+}
+.cv-agent-message-markdown p:last-child {
+  margin-bottom: 0;
+}
+.cv-agent-message-markdown ul,
+.cv-agent-message-markdown ol {
+  margin: 8px 0;
+  padding-left: 22px;
+}
+.cv-agent-message-markdown ul {
+  list-style: disc;
+}
+.cv-agent-message-markdown ol {
+  list-style: decimal;
+}
+.cv-agent-message-markdown pre,
+.cv-agent-message-markdown table {
+  max-width: 100%;
+  overflow: auto;
+}
+.cv-agent-message-markdown pre {
+  white-space: pre;
+}
+.cv-agent-message-markdown a {
+  color: #07b8dd;
+  text-decoration: underline;
+}

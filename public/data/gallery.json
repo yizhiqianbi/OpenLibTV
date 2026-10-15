@@ -1,0 +1,1601 @@
+{
+  "items": [
+    {
+      "id": "e0098a0a61f347a59aca05670f70318e",
+      "projectUuid": "be50c392810e409e9705a17f84ebef79",
+      "templateUuid": "e0098a0a61f347a59aca05670f70318e",
+      "description": "战火逼近，城市开始紧急撤离，动物园饲养员 Aldo 收到命令，要枪决一头已经无粮可喂的大象。在短暂停火的两小时里，他却没有扣下扳机，而是带着它穿过空城，想把它送到河对岸。抵达河边后，他们发现连最后的生路也已被战争侵蚀。一小壶水、一支枪，和越来越短的时间，让一人一象停在了“抵达之前”。暮色降临，河岸传来一声枪响。",
+      "name": "大象｜L’ELEFANTE",
+      "coverUrl": "/assets/980f0802723a00ed.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e905a91841694261b2f15f6cf57a7725/057b052c72b3d96e6786c6079e8ddf04edda1496.mp4",
+      "avatar": "/assets/161e3555c07ee759.webp",
+      "nickname": "不加班艺术中心",
+      "title": "大象｜L’ELEFANTE",
+      "likeCount": 80,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 51088,
+      "createAt": "2026年09月30日 12:18",
+      "ownerId": 8528792,
+      "ownerUuid": "e905a91841694261b2f15f6cf57a7725",
+      "tags": [
+        {
+          "id": 3062,
+          "code": "test",
+          "tagLabel": "LibTV·「X小时之后」AI短片黑客松",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3062/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "c6e94bfacd5a4f738813bc9e89afdcd6",
+      "projectUuid": "8a3beaf63fa4473d96bb35ca2832fcf0",
+      "templateUuid": "c6e94bfacd5a4f738813bc9e89afdcd6",
+      "description": "我寻找你，一遍又一遍。时间旅行并不总是美好的，在我的循环里，充斥噩梦与幻象，但我依然一遍又一遍，仅仅是为了延长我们彼此交汇的时间。",
+      "name": "抵达之前 From Begin To Begin",
+      "coverUrl": "/assets/63d492d6277542ff.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/af4329a5a6d7493eaea95e0f4395160d/6cc8981415beb5f722682c67b557209cee36d9a6.mp4",
+      "avatar": "/assets/a35ade1212ed348d.webp",
+      "nickname": "野野也",
+      "title": "抵达之前 From Begin To Begin",
+      "likeCount": 242,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 51207,
+      "createAt": "2026年09月30日 18:05",
+      "ownerId": 6922878,
+      "ownerUuid": "b3c06f20b9914491833791f606ed7e88",
+      "tags": [
+        {
+          "id": 3062,
+          "code": "test",
+          "tagLabel": "LibTV·「X小时之后」AI短片黑客松",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3062/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": [
+        "金奖&最佳导演奖"
+      ]
+    },
+    {
+      "id": "1f00659eead64135a97a42fe92619d41",
+      "projectUuid": "ccf01fbb2fd64829821c87f9d4d8119a",
+      "templateUuid": "1f00659eead64135a97a42fe92619d41",
+      "description": "五十岁的阿诚在火化场等候捡骨。这三年，他每晚设好闹钟，起来替中风的母亲翻身、换尿布。长椅上，母亲仿佛回来陪他坐着，说出他最怕听见的那句话：「我都听见了。」四十年前他发烧时叫母亲走开，她却在门外守了一整夜。嘴巴都叫人走，人都没走。",
+      "name": "想你",
+      "coverUrl": "/assets/9f48bfa8aeecdb02.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/58961dda7b084850b7036bf60707f3dd/4e1c2c18e6790920ff433f57d11490eec4abd44c.mp4",
+      "avatar": "/assets/dd0dbfcd5b02c203.webp",
+      "nickname": "O_BenriO_O",
+      "title": "想你",
+      "likeCount": 68,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 51113,
+      "createAt": "2026年09月30日 13:19",
+      "ownerId": 3792516,
+      "ownerUuid": "58961dda7b084850b7036bf60707f3dd",
+      "tags": [
+        {
+          "id": 3062,
+          "code": "test",
+          "tagLabel": "LibTV·「X小时之后」AI短片黑客松",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3062/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "695b45969e1d4383b4e541a07d705d65",
+      "projectUuid": "24aebe336a3f4433ba55555a512dd5b4",
+      "templateUuid": "695b45969e1d4383b4e541a07d705d65",
+      "description": "不公的对抗，压迫的争斗",
+      "name": "大闹天宫",
+      "coverUrl": "/assets/4c54f0d1b5adb74e.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ca1da6d0966e497b9c599d6c8d175ba2/a48d9372728e2f6454d80bf8fadb553f79848670.mp4",
+      "avatar": "/assets/93ee2d2fa9687c2f.webp",
+      "nickname": "玄机动画",
+      "title": "大闹天宫",
+      "likeCount": 233,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 45111,
+      "createAt": "2026年09月10日 17:53",
+      "ownerId": 9870156,
+      "ownerUuid": "ca1da6d0966e497b9c599d6c8d175ba2",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "9348a22a3e0e4de8b8bbc32c9f530d08",
+      "projectUuid": "6dd6edb36bf44404ac3cca90225e6ae4",
+      "templateUuid": "9348a22a3e0e4de8b8bbc32c9f530d08",
+      "description": "我的民俗玄幻ai短片《守村人》第四集",
+      "name": "《守村人》第四集",
+      "coverUrl": "/assets/0a4e7041ebeff53a.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/2e421188ac844034a3aaf0318b3294fc/f80c3d3998cfbe2fbf9c39c82deff6e5b962d15e.mp4",
+      "avatar": "/assets/db00575713d5607f.webp",
+      "nickname": "小编阿莫",
+      "title": "《守村人》第四集",
+      "likeCount": 24,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 45903,
+      "createAt": "2026年09月13日 18:18",
+      "ownerId": 11511767,
+      "ownerUuid": "2e421188ac844034a3aaf0318b3294fc",
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "b42aa08a01d2441c8af21192a50cc2eb",
+      "projectUuid": "dcd5c0c81e764b11903fa046863afa1e",
+      "templateUuid": "b42aa08a01d2441c8af21192a50cc2eb",
+      "description": "百鬼夜行·卷一·点睛纸",
+      "name": "百鬼夜行·卷一·点睛纸",
+      "coverUrl": "/assets/c8c7a561f4b3c7c8.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/aadb9a4396c449d385452443c960c4e7/e0c1539458e8762e370d2bdb53c025f489b03385.mov",
+      "avatar": "/assets/7d12250ef9436566.webp",
+      "nickname": "方兴未AI",
+      "title": "百鬼夜行·卷一·点睛纸",
+      "likeCount": 72,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 56854,
+      "createAt": "2026年10月06日 12:02",
+      "ownerId": 8353802,
+      "ownerUuid": "aadb9a4396c449d385452443c960c4e7",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "6bc8b8d159d04627a881c39bfa58a5fb",
+      "projectUuid": "56fdd3304dcc4ec296405fa67bd562fa",
+      "templateUuid": "6bc8b8d159d04627a881c39bfa58a5fb",
+      "description": "盛唐长安，一个年轻人跟着瞎眼师父学会了算命。\n临别时，师父只告诫他一句：\n“莫贪财，更莫贪色。”",
+      "name": "《长安异闻录》第一卷 | 算命",
+      "coverUrl": "/assets/ef0b26671ba8cf31.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e1a8d149cb6c445b91a5f4926f0a0483/e51151746557ae6b890ea3f477906fa3d1683bfd.mp4",
+      "avatar": "/assets/1a49902a29e8acd3.webp",
+      "nickname": "Rick",
+      "title": "《长安异闻录》第一卷 | 算命",
+      "likeCount": 530,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 42705,
+      "createAt": "2026年09月01日 22:38",
+      "ownerId": 3238672,
+      "ownerUuid": "e1a8d149cb6c445b91a5f4926f0a0483",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1903,
+          "code": "viral_likes_10w",
+          "tagLabel": "全网点赞10万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1903/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "5d06f09084c24cd1ae1dd0d4c8a3bd97",
+      "projectUuid": "61f01fd000aa419a998488e58844f706",
+      "templateUuid": "5d06f09084c24cd1ae1dd0d4c8a3bd97",
+      "description": "它真不是普通的鸭——它是贵州三穗麻鸭，鸭界的隐藏大佬：\n🏆 中国地方四大名鸭之一（跟北京鸭平起平坐）\n📜 600多年养殖历史，比很多老字号都老\n🥚 一年下蛋240枚，妥妥的\"鸭界劳模\n✨ 国家地理标志认证，官方盖章的鸭\n一只这么有排面的鸭子，没有自己的MV真说不过去！",
+      "name": "600年鸭界顶流，出单曲了",
+      "coverUrl": "/assets/91f8546adf06652c.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d4a7a9586c13499a8538afa624ab8430/744fa3fc091f9228c7ae6af8d4a51881b2439246.mp4",
+      "avatar": "/assets/3e3bb6164390ba95.webp",
+      "nickname": "有無劇院",
+      "title": "600年鸭界顶流，出单曲了",
+      "likeCount": 32,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 56875,
+      "createAt": "2026年10月06日 14:13",
+      "ownerId": 5919496,
+      "ownerUuid": "d4a7a9586c13499a8538afa624ab8430",
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1205,
+          "code": "culture_tourism",
+          "tagLabel": "文旅政媒",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1205/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "0.0000",
+          "sr_match_type": "6",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "force"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "dd52623a77ed4713955009228c621446",
+      "projectUuid": "1186475aabba4aa39c2a97d31166f07a",
+      "templateUuid": "dd52623a77ed4713955009228c621446",
+      "description": "胡来万事屋",
+      "name": "胡来万事屋",
+      "coverUrl": "/assets/0419594a0b842bc2.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ae6320d14c6644f6a6be9d5be338a9e6/3cb9a0a46b4ce7599cd21dc358d8c616224f68e1.mp4",
+      "avatar": "/assets/3a591b472a42eacc.webp",
+      "nickname": "蓝喵",
+      "title": "胡来万事屋",
+      "likeCount": 524,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 44046,
+      "createAt": "2026年09月07日 14:04",
+      "ownerId": 11358148,
+      "ownerUuid": "ae6320d14c6644f6a6be9d5be338a9e6",
+      "tags": [
+        {
+          "id": 3057,
+          "code": "test",
+          "tagLabel": "一场戏的诞生 ",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3057/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3058,
+          "code": "test",
+          "tagLabel": "1. 喜剧之王",
+          "parentTag": 3057,
+          "categoryId": 0,
+          "path": "3057/3058",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1902,
+          "code": "viral_likes_30w",
+          "tagLabel": "全网点赞30万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1902/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "11358148",
+          "sid_0": "72",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "500.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "8a8fe0fb83aa4bf186a764d59f9cd66f",
+      "projectUuid": "c2edf67b5f264ada869021236b0ccab0",
+      "templateUuid": "8a8fe0fb83aa4bf186a764d59f9cd66f",
+      "description": "王者荣耀官方世界观《王者荣耀 太古篇》 本剧尽可能还原官方世界观，人物设定。也请各位补充自己了解的世界观，和想看的人物故事。这是一个关于反抗的故事.....牛魔叛变，孙悟空起义失败，八戒千里寻猴哥。最终魔种和王者大陆将何去何从",
+      "name": "《王者荣耀 太古篇》",
+      "coverUrl": "/assets/15737a20d94427ab.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/04fd4e789a45490798df60155d161763/fa740ed71418e81984ce5a4cf4ab011fab672d49.mp4",
+      "avatar": "/assets/f015e0616d7c535f.webp",
+      "nickname": "横空出世AI工作室",
+      "title": "《王者荣耀 太古篇》",
+      "likeCount": 128,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 49585,
+      "createAt": "2026年09月23日 17:14",
+      "ownerId": 6397647,
+      "ownerUuid": "04fd4e789a45490798df60155d161763",
+      "tags": [
+        {
+          "id": 3063,
+          "code": "test",
+          "tagLabel": "王者无界剧场计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3063/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "6397647",
+          "sid_0": "240",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "499.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "10b86d68aa3b4d9db915f0f8b53fdd3c",
+      "projectUuid": "a623516805314651bd83f8a1b2bce295",
+      "templateUuid": "10b86d68aa3b4d9db915f0f8b53fdd3c",
+      "description": "AI短片《挺好的》 ｜“挺好的”不是中国人的超能力，而是他们爱人的方式。本视频由LibTV制作生成",
+      "name": "《挺好的》",
+      "coverUrl": "/assets/e2fdaeeac04ebc96.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/50231887474e4f56b7916aae67cd47e0/ad6cabd7c3b975755a3b2f7bbaec58e69f4d80b7.mp4",
+      "avatar": "/assets/870d1fd2d18f88f7.webp",
+      "nickname": "站立起来的影子",
+      "title": "《挺好的》",
+      "likeCount": 339,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 49184,
+      "createAt": "2026年09月22日 17:07",
+      "ownerId": 11380678,
+      "ownerUuid": "50231887474e4f56b7916aae67cd47e0",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "11380678",
+          "sid_0": "3",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "498.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "385c4036c86441a29994f53d57011e64",
+      "projectUuid": "6498135eda9a473b92e4e45b2d1b63fd",
+      "templateUuid": "385c4036c86441a29994f53d57011e64",
+      "description": "那分明是个姐姐啊！！！",
+      "name": "非妖哉-哑女小荷",
+      "coverUrl": "/assets/66604d06a0c1d48d.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/97dfbed962ab41a4a16ad1103d7df41e/99f7abd994dfab0abac74abcfcf450c87f76a9ef.mp4",
+      "avatar": "/assets/e3f4eacf2b660ccd.webp",
+      "nickname": "不吃榨菜",
+      "title": "非妖哉-哑女小荷",
+      "likeCount": 725,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 31190,
+      "createAt": "2026年07月27日 18:12",
+      "ownerId": 9074890,
+      "ownerUuid": "97dfbed962ab41a4a16ad1103d7df41e",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3049,
+          "code": "test",
+          "tagLabel": "LibTV Skill 导演大师赛",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3049/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "9074890",
+          "sid_0": "115",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "497.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "021812a93dff41bebcb62d4cb9b1469d",
+      "projectUuid": "f9788ca6921042f2b04733ef3ae31200",
+      "templateUuid": "021812a93dff41bebcb62d4cb9b1469d",
+      "description": "崖畔苍松守望仙阙，我待一人共赴天宫之约",
+      "name": "中式天宫",
+      "coverUrl": "/assets/5558cb56a3dae188.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/724b6635a6ff4a7d9b466997e10d8577/e2647db8d6b66765440877e02256cdee1475a5cc.mp4",
+      "avatar": "/assets/462162a9e2cbe35d.webp",
+      "nickname": "栖光",
+      "title": "中式天宫",
+      "likeCount": 827,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 0,
+      "createAt": "2026年08月09日 14:46",
+      "ownerId": 1119815,
+      "ownerUuid": "724b6635a6ff4a7d9b466997e10d8577",
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "1119815",
+          "sid_0": "123",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "496.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "b9e788c67fe54b0bb00d1d8bbac9cb8d",
+      "projectUuid": "8d61a7497c34497a8a7b69d4db9368b8",
+      "templateUuid": "b9e788c67fe54b0bb00d1d8bbac9cb8d",
+      "description": "水若是权，从哪来？最终又到哪里去？",
+      "name": "《窃丹-求水》",
+      "coverUrl": "/assets/288eae1e6f49b89e.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/aa6b2c19d55643aa8c63b5bc119fc235/78c1562b6c4202eda3935ba839638bc5bbe22b97.mp4",
+      "avatar": "/assets/959903a8da0080be.webp",
+      "nickname": "洋月亮鉴定师",
+      "title": "《窃丹-求水》",
+      "likeCount": 183,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 40728,
+      "createAt": "2026年08月26日 00:59",
+      "ownerId": 7555849,
+      "ownerUuid": "aa6b2c19d55643aa8c63b5bc119fc235",
+      "tags": [
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1903,
+          "code": "viral_likes_10w",
+          "tagLabel": "全网点赞10万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1903/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "7555849",
+          "sid_0": "",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "495.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "fe2160a1429d4dd79168bdcbaee5f3ce",
+      "projectUuid": "bb54e76dc6d148778068c48c73b5aa52",
+      "templateUuid": "fe2160a1429d4dd79168bdcbaee5f3ce",
+      "description": "画布全流程已整理公开",
+      "name": "国风武侠《江湖》",
+      "coverUrl": "/assets/c18fdba95f8d31af.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/785ad06f390049d4837e32aece721659/1cbc3a2a2c983539178c36df395e8f3ce864c84d.mp4",
+      "avatar": "/assets/bc0b830c60007925.webp",
+      "nickname": "Jcy樂多",
+      "title": "国风武侠《江湖》",
+      "likeCount": 259,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 43905,
+      "createAt": "2026年09月06日 21:40",
+      "ownerId": 833306,
+      "ownerUuid": "785ad06f390049d4837e32aece721659",
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "833306",
+          "sid_0": "127",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "494.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "5f6f114382594e4c839b934de706f417",
+      "projectUuid": "5c5769cebe9f40099864d54c4f96e33c",
+      "templateUuid": "5f6f114382594e4c839b934de706f417",
+      "description": "《弥寿计划》Ⅴ",
+      "name": "《弥寿计划》Ⅴ",
+      "coverUrl": "/assets/6401a5bed36493c6.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d57c1d0524784da190f4d7f58ef4d0d8/e7bed53e102c3f3428025999aac932f43c8b13de.mp4",
+      "avatar": "/assets/f649c0357d38aaae.webp",
+      "nickname": "小小汤AIGC",
+      "title": "《弥寿计划》Ⅴ",
+      "likeCount": 239,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 49203,
+      "createAt": "2026年09月16日 00:59",
+      "ownerId": 9213808,
+      "ownerUuid": "d57c1d0524784da190f4d7f58ef4d0d8",
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1901,
+          "code": "viral_likes_100w",
+          "tagLabel": "全网点赞100万+",
+          "parentTag": 1900,
+          "categoryId": 0,
+          "path": "1900/1901/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "9213808",
+          "sid_0": "111",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "493.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "cd3d1751f8924c38a683515d8d5fc86c",
+      "projectUuid": "b2decd2403ec4ec5b9bc7eb5df4d7ddb",
+      "templateUuid": "cd3d1751f8924c38a683515d8d5fc86c",
+      "description": "献给每一个相信光，也曾经想成为光的人。",
+      "name": "我的同桌赵晨阳",
+      "coverUrl": "/assets/d5a379fd5b38ff7f.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a4663829586248fea6592807722a4638/7ee110e5f34a2c68570411820aec25259b411a6d.mp4",
+      "avatar": "/assets/356f66158b0af3f4.webp",
+      "nickname": "两头人丨AI片场",
+      "title": "我的同桌赵晨阳",
+      "likeCount": 373,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 45366,
+      "createAt": "2026年09月11日 11:39",
+      "ownerId": 5230950,
+      "ownerUuid": "a4663829586248fea6592807722a4638",
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3057,
+          "code": "test",
+          "tagLabel": "一场戏的诞生 ",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3057/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3061,
+          "code": "test",
+          "tagLabel": "4. 无问西东",
+          "parentTag": 3057,
+          "categoryId": 0,
+          "path": "3057/3061",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "5230950",
+          "sid_0": "132",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "492.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "1918e4892bc54869b98fdac202d3b728",
+      "projectUuid": "f30a83022d894d598734f60ead369090",
+      "templateUuid": "1918e4892bc54869b98fdac202d3b728",
+      "description": "蝉鸣四起时，美好的事情总在夏天发生",
+      "name": "无尽蝉鸣的盛夏",
+      "coverUrl": "/assets/a9845eed8a8dc2c8.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/50e31a241ba4455ca090e8a09c2781a3/5f742d03f891f3526625d8c1cd4009a03e999b3f.mp4",
+      "avatar": "/assets/e0d40aeb8db55cda.webp",
+      "nickname": "Whitelang",
+      "title": "无尽蝉鸣的盛夏",
+      "likeCount": 642,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 32122,
+      "createAt": "2026年07月29日 23:32",
+      "ownerId": 6125227,
+      "ownerUuid": "50e31a241ba4455ca090e8a09c2781a3",
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "6125227",
+          "sid_0": "37",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "491.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "974e4a0dd24a491987eb29657198302e",
+      "projectUuid": "43739f9177074adea484d3638221fb49",
+      "templateUuid": "974e4a0dd24a491987eb29657198302e",
+      "description": "很多人以为“逍遥”就是想做什么就做什么。 其实不是的。逍遥，是不想做什么，就可以不做什么。 我们太习惯去扮演别人期待的角色了。 我们努力读书、找一份稳妥的生计，听着别人说“这没用”、“那不行”。 我们在乎父母的目光，在乎朋友的评价，在乎所有人的感受，唯独把那个最真实的自己，锁在了最深的角落。 甚至只为了别人能夸上一句，我们就心甘情愿地交出全部的自由。 如果一辈子都在为别人而活，谈什么人生逍遥？ 庄子言： \"至人无己、神人无功、圣人无名。\" 不在乎功利，不在乎名声，甚至不在乎那个被别人定义出来的“自己”。 那样，你才能找回真正的自由。",
+      "name": "东方曜|《查无此人》难道人只能为他人而活？",
+      "coverUrl": "/assets/c3d3e7daf975e50a.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5bfba5ffe39740b097218f35c0fdcb10/2821367685478ac57ecbf5efd188fac60d1c204e.mp4",
+      "avatar": "/assets/93afb4ab3006a668.webp",
+      "nickname": "蚀刻Etch",
+      "title": "东方曜|《查无此人》难道人只能为他人而活？",
+      "likeCount": 251,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 50377,
+      "createAt": "2026年09月23日 20:02",
+      "ownerId": 1085945,
+      "ownerUuid": "5bfba5ffe39740b097218f35c0fdcb10",
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3063,
+          "code": "test",
+          "tagLabel": "王者无界剧场计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3063/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "/assets/15bcb4d002b68470.webp",
+          "primaryIcon": "/assets/b40570481582e92f.webp",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "1085945",
+          "sid_0": "180",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "489.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    },
+    {
+      "id": "d3f34a5ebd584bbcb79b1e1ab146b28a",
+      "projectUuid": "f938b19e4a464e60ab6787dc8a2552ca",
+      "templateUuid": "d3f34a5ebd584bbcb79b1e1ab146b28a",
+      "description": "注：非商用，仅创作分享。\n这次的AI 广告片制作是想尝试尽量还原“果味”的那种极简的质感，所以在设定上，整体美学风格是克制是极简的纯白空间。\n制作全流程：\n1.先用AI策划整片的脚本、风格。\n2.把AI生成的视频脚本做手动检查修正（AI经常出夸张的特效，这个需要注意避免，容易产生廉价感）。\n3.用修正后的脚本及提示词生成分镜故事版或者关键帧画面。\n4.用把生成的分镜故事版或关键帧画面生成分镜视频\n5.后期剪辑成片。\n这算是一次对顶级商业质感的挑战和致敬。从分镜策划、视效生成到最后的混音定稿，虽然踩了不少坑，但是也学到不少知识。\n其中也遇到一些比较纠结大的问题。比如说这支广告片的配音和配乐。其实我做了两个方案。\n方案一，就是我现在已经发布的这个他的风格是偏向有背景音乐去引导情绪，然后再加上一些音效的铺垫而成。这种方案的好处就是呢背景音乐可以很好的引导情绪。但是会丧失一点点的苹果的那种。纯粹的高级感或者细腻感。\n方案二，我是没有做背景音乐全片都是由音效和旁白组成。其实这个方案我还挺喜欢，但是由于我在制作音效这一块还不是很成熟，整体来说。还是没有达到我想要的那种细腻感高级感",
+      "name": "《iPhone air》极简纯净风产品展示",
+      "coverUrl": "/assets/c0d41dc96a2e9502.webp",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ea845bc2267c4c1aa6df5099a6da594c/34ebe0618bc94fa1673e8e24fded935d5183f8cf.mp4",
+      "avatar": "/assets/9efbeeb0f2cc394c.webp",
+      "nickname": "Dave",
+      "title": "《iPhone air》极简纯净风产品展示",
+      "likeCount": 1071,
+      "isLiked": false,
+      "auditStatus": 1,
+      "snapshotId": 22495,
+      "createAt": "2026年06月28日 16:46",
+      "ownerId": 3990772,
+      "ownerUuid": "ea845bc2267c4c1aa6df5099a6da594c",
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "/assets/a31a6cc391430f72.webp",
+          "primaryIcon": "/assets/7097b07d2df12cc8.webp",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "recommendOtherRes": {
+        "utLogMap": {
+          "author_id": "3990772",
+          "sid_0": "67",
+          "sr_bucket_id": "25",
+          "sr_final_score": "0.0000",
+          "sr_match_score": "488.0000",
+          "sr_match_type": "12",
+          "sr_rel_score": "-1.0000",
+          "sr_scene_id": "20000",
+          "sr_trigger_cnt": "0",
+          "sr_trigger_mode": "intent",
+          "sr_triggers": "",
+          "tier": "hot"
+        }
+      },
+      "awardedTag": []
+    }
+  ],
+  "total": 20,
+  "hasMore": true
+}

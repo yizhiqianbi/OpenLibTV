@@ -1,0 +1,90 @@
+.cv-edges {
+  --canvas-edge: #86909c;
+  --canvas-edge-hover: #c0c8d0;
+  --canvas-edge-selected: #e0e4e8;
+}
+.canvas-light .cv-edges {
+  --canvas-edge: #c4c4c4;
+  --canvas-edge-hover: #919191;
+  --canvas-edge-selected: #525252;
+}
+.cv-edges .cv-real-edge {
+  outline: none;
+}
+.cv-edges .cv-real-edge-visual {
+  fill: none;
+  pointer-events: none;
+}
+.cv-edges .cv-real-edge:focus-visible .cv-real-edge-visual {
+  filter: drop-shadow(0 0 2px var(--canvas-edge-selected, #d8d8d8));
+}
+.cv-edges .cv-real-edge .cv-real-edge-flow {
+  pointer-events: none;
+  animation: cv-real-edge-flow-travel 3s linear infinite;
+}
+.cv-edges .cv-real-edge .cv-real-edge-flow > path {
+  stroke-dashoffset: inherit !important;
+  animation: none !important;
+  pointer-events: none;
+}
+.cv-edge-interacting .cv-real-edge-flow,
+.cv-panning .cv-real-edge-flow {
+  visibility: hidden;
+  animation-play-state: paused;
+}
+.cv-hand .cv-edges,
+.cv-hand .cv-edges *,
+.cv-reference-pick-active .cv-edges,
+.cv-reference-pick-active .cv-edges *,
+.cv-focus-mode-active .cv-edges,
+.cv-focus-mode-active .cv-edges *,
+.cv-mark-mode-active .cv-edges,
+.cv-mark-mode-active .cv-edges * {
+  pointer-events: none !important;
+}
+.cv-edges .cv-real-edge[data-edge-interaction-disabled='true'],
+.cv-edges .cv-real-edge[data-edge-interaction-disabled='true'] * {
+  pointer-events: none !important;
+}
+.cv-edges .cv-real-edge .cv-real-edge-cut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 50%;
+  background: rgb(30 30 30 / 95%);
+  cursor: pointer;
+  animation: cv-real-edge-scissors-enter 200ms forwards;
+}
+.cv-edges .cv-real-edge .cv-real-edge-scissors-icon {
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+}
+.cv-edges .cv-real-edge .cv-real-edge-scissors-icon :is(path, circle, line, polyline, polygon) {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  pointer-events: none;
+}
+@keyframes cv-real-edge-scissors-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes cv-real-edge-flow-travel {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -300px;
+  }
+}

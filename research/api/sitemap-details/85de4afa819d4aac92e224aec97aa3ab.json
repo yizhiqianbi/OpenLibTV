@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "85de4afa819d4aac92e224aec97aa3ab",
+      "projectUuid": "d3bc37fa055d46c2bd0d674f19b03855",
+      "name": "欢迎来到帝国魔法学院",
+      "description": "《维拉斯特帝国》系列作品",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7e6ede60d41f488386457523edce9a44/f9afbcc349d0d44b95fc436826c5bd7b9a0dd2f5.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7e6ede60d41f488386457523edce9a44/2daaed14336abe5c8056719e42501b487ea3dd8e.mp4",
+      "snapshotId": 17322,
+      "auditStatus": 1,
+      "ownerId": 8398310,
+      "ownerUuid": "7e6ede60d41f488386457523edce9a44",
+      "avatar": "https://liblibai-online.liblib.cloud/img/7e6ede60d41f488386457523edce9a44/bc33f30cb69299c2937935627a80671ac58fdd11530a30a55bbefae5a1a236f6.jpeg",
+      "nickname": "Ryan368",
+      "isLike": false,
+      "likeCount": 242,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a251e820000000036003641?xsec_token=ABhWiYxq6kVW8YV7adQynRTgV1_uTvZ95Iup-AgpbKWJk=&xsec_source=pc_user",
+      "createAt": "2026年06月07日 15:39",
+      "updateAt": "2026年07月02日 15:46",
+      "publishAt": "2026年06月07日 15:39",
+      "playCount": 89,
+      "viewCreationProcessCount": 45,
+      "copyCanvasCount": 9,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 143,
+        "edges": 380
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "fdcb00a8-a0c6-90ea-b17d-6a7d74d3b39b"
+}

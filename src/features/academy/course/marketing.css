@@ -1,0 +1,318 @@
+.academy-course-minute-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: var(--bg-bg-overlay, #2c2c2c);
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+}
+.academy-course-minute-bar:hover {
+  opacity: 0.8;
+}
+.academy-course-minute-bar svg {
+  flex-shrink: 0;
+  color: var(--nt-accent-amber, #f4b757);
+}
+.academy-course-minute-bar span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.academy-course-meta-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.academy-course-meta-title h1 {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin: 0;
+}
+.academy-course-marketing-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay, 1000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0009;
+}
+.academy-course-marketing-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+  width: 338px;
+  max-width: calc(100vw - 32px);
+  padding-bottom: 16px;
+  border-radius: 24px;
+  background: var(--bg-popover, #292929);
+  color: var(--text);
+}
+.academy-course-marketing-image {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+.academy-course-marketing-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.academy-course-marketing-image i {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 50%, #292929e6 90%);
+}
+.academy-course-marketing-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+.academy-course-marketing-copy header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.academy-course-marketing-copy h3 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+}
+.academy-course-marketing-copy header span {
+  display: none;
+  flex-shrink: 0;
+  border-radius: 6px;
+  padding: 2px 8px;
+  background: #3fdafd26;
+  color: #3fdafd;
+  font-size: 12px;
+  font-weight: 500;
+}
+.academy-course-marketing-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+.academy-course-marketing-actions {
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: center;
+  gap: 10px;
+  width: 280px;
+  max-width: 100%;
+  margin-top: 16px;
+}
+.academy-course-marketing-actions button {
+  height: 40px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--bg-btn-secondary, #414141);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.academy-course-marketing-actions button:last-child {
+  background: var(--text, #fff);
+  color: var(--bg, #111);
+}
+.academy-course-marketing-actions button:hover {
+  opacity: 0.85;
+}
+.academy-practice-intro-modal {
+  width: 820px;
+  max-width: calc(100vw - 32px);
+  padding: 8px;
+  border: 0;
+  border-radius: 28px;
+  background: var(--bg-popover, #292929);
+}
+.modal-overlay:has(> .academy-practice-intro-modal) {
+  background: #0009;
+  backdrop-filter: blur(2px);
+}
+.academy-practice-intro-layout {
+  position: relative;
+  display: flex;
+}
+.academy-practice-intro-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 1;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.academy-practice-intro-close:hover {
+  background: var(--bg-bg-overlay, #ffffff12);
+  color: var(--text);
+}
+.academy-practice-intro-visual {
+  flex: 1;
+  width: 448px;
+  height: 448px;
+  border-radius: 24px;
+  background: url('/assets/course-practice-intro.webp') center/cover;
+}
+.academy-practice-intro-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 360px;
+  flex-shrink: 0;
+  padding: 40px 40px 16px;
+}
+.academy-practice-intro-course {
+  align-self: flex-start;
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #3ed0ea26;
+  color: #3ed0ea;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.academy-practice-intro-copy h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.academy-practice-intro-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 24px;
+}
+.academy-practice-intro-copy strong {
+  color: #3ed0ea;
+  font-weight: 600;
+}
+.academy-practice-intro-copy ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.academy-practice-intro-copy li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.academy-practice-intro-copy li svg {
+  flex-shrink: 0;
+}
+.academy-practice-intro-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+.academy-practice-intro-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 288px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--text, #fff);
+  color: var(--bg, #111);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.academy-practice-intro-actions p {
+  text-align: center;
+  line-height: 20px;
+}
+.academy-course-marketing-error {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.academy-course-marketing-error button {
+  margin-left: 8px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .academy-course-marketing-dialog {
+    gap: 0;
+    width: 400px;
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 12px;
+  }
+  .academy-course-marketing-image img {
+    aspect-ratio: auto;
+    max-height: 240px;
+  }
+  .academy-course-marketing-image i {
+    display: none;
+  }
+  .academy-course-marketing-copy header {
+    justify-content: space-between;
+  }
+  .academy-course-marketing-copy h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .academy-course-marketing-copy header span {
+    display: block;
+  }
+  .academy-course-marketing-copy p {
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .academy-course-marketing-actions {
+    flex-direction: row;
+    align-items: center;
+    align-self: auto;
+    gap: 8px;
+    width: auto;
+    max-width: none;
+    margin-top: 12px;
+  }
+  .academy-course-marketing-actions button {
+    flex: 1;
+    width: auto;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+}

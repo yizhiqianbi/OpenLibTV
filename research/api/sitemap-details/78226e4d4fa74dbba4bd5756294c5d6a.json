@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "78226e4d4fa74dbba4bd5756294c5d6a",
+      "projectUuid": "ad4c9239f2fa4ba68efd9d4842195ebf",
+      "name": "方寸之极｜产品首发概念片",
+      "description": "产品首发概念片。“方寸”既指代1英寸大底，也指代可以握在手心、装进口袋的极小体积。“之极”则代表了画质、防抖、续航的极限表现。用违背常理的极致浓缩，赋予创作者颠覆想象的拍摄自由。突破物理的边界，让不可能成为可能。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/773f996dfdd543dbfe6bafa8bffffd79a442cc46.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bc19270a4e744fa38a01a9ebbdab3244/07620c30b452f918dc87541972dad4a3673bbed8.mp4",
+      "snapshotId": 7656,
+      "auditStatus": 1,
+      "ownerId": 7691513,
+      "ownerUuid": "bc19270a4e744fa38a01a9ebbdab3244",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bc19270a4e744fa38a01a9ebbdab3244/722e023f39d7dc69916f25658bdde4e848938d9d58c50b42700341045d12e52f.jpg",
+      "nickname": "追逐星辰",
+      "isLike": false,
+      "likeCount": 243,
+      "tags": [
+        {
+          "id": 3031,
+          "code": "test",
+          "tagLabel": "大乱斗｜vol.1 显形记",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3031/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3034,
+          "code": "test",
+          "tagLabel": "3-创意与超现实",
+          "parentTag": 3031,
+          "categoryId": 0,
+          "path": "3031/3034",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "小红书：https://www.xiaohongshu.com/discovery/item/69edf4d8000000003502bf46?source=webshare&xhsshare=pc_web&xsec_token=GBjKUP0unVWu9qNSK0xtf2yJm7Thx549TwVL3z-OU1rPo=&xsec_source=pc_share  B站： https://www.bilibili.com/video/BV1tGZFBxE8u/?share_source=copy_web&vd_source=ea3247674067f8cf42611d704779b968",
+      "createAt": "2026年04月26日 20:20",
+      "updateAt": "2026年05月21日 23:45",
+      "publishAt": "2026年04月26日 20:20",
+      "playCount": 150,
+      "viewCreationProcessCount": 99,
+      "copyCanvasCount": 26,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 149,
+        "edges": 154
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "50ffe5f7-1af4-9673-bae6-4d345c7bf314"
+}

@@ -1,0 +1,111 @@
+{
+  "capturedAt": "2026-10-10",
+  "source": "https://www.liblib.tv/",
+  "galleryDefault": 395,
+  "galleryUnique": 1136,
+  "galleryCategories": 10,
+  "sitemapDetailRoutes": 597,
+  "sitemapDetailMissingResponses": [
+    "5d4cb3d4a62d46768c33a9ba314dabd2",
+    "6a948628f160430688dc181d1d9705aa",
+    "2f5b52042a2d4f758c31c5235d45dad7",
+    "d91cc7c32531461c8d473db4f27308e1"
+  ],
+  "skillsDefault": 200,
+  "skillsRecommended": 40,
+  "activities": 12,
+  "tutorials": 9,
+  "articles": 11,
+  "masterclasses": 1,
+  "publicProfiles": 8,
+  "featureNews": 16,
+  "versions": 2,
+  "originalIconCount": 882,
+  "downloadedAssetCount": 2617,
+  "assetBytes": 478623746,
+  "remoteOnlyMedia": [
+    {
+      "source": "https://liblibai-online.liblib.cloud/banner/1789897497135.mp4",
+      "download": "https://liblibai-online.liblib.cloud/banner/1789897497135.mp4",
+      "local": "/assets/e1fbcb39424acb1d.mp4",
+      "status": "remote-only",
+      "bytes": 24609614
+    },
+    {
+      "source": "https://liblibai-online.liblib.cloud/web/ef0097ae9da74189a0f5d604e98c77cd/16694de8-db9a-4465-9a76-d6b470f5f239.mp4",
+      "download": "https://liblibai-online.liblib.cloud/web/ef0097ae9da74189a0f5d604e98c77cd/16694de8-db9a-4465-9a76-d6b470f5f239.mp4",
+      "local": "/assets/ec8277fa71522aaf.mp4",
+      "status": "remote-only",
+      "bytes": 12314105
+    },
+    {
+      "source": "https://liblibai-online.liblib.cloud/web/ef0097ae9da74189a0f5d604e98c77cd/3dcf05bf-e2ac-4486-8b5f-8566257995a2.mp4",
+      "download": "https://liblibai-online.liblib.cloud/web/ef0097ae9da74189a0f5d604e98c77cd/3dcf05bf-e2ac-4486-8b5f-8566257995a2.mp4",
+      "local": "/assets/710f3c3aa2120cfb.mp4",
+      "status": "remote-only",
+      "bytes": 11937952
+    },
+    {
+      "source": "https://libtv-res.liblib.art/upload-images/9c9ca63a3fd948e8abb9ab96ade97321/6f9bc1891b8d5c13806c11f438d18add669bd602.mp4",
+      "download": "https://libtv-res.liblib.art/upload-images/9c9ca63a3fd948e8abb9ab96ade97321/6f9bc1891b8d5c13806c11f438d18add669bd602.mp4",
+      "local": "/assets/5cfd2b6f8f1af0da.mp4",
+      "status": "remote-only",
+      "bytes": 43081297
+    },
+    {
+      "source": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/d7ca400a8074fbffe9c463a8c85882b82335690f.mp4",
+      "download": "https://libtv-res.liblib.art/upload-images/5ef327e771bd41dd9256289dd7127f5a/d7ca400a8074fbffe9c463a8c85882b82335690f.mp4",
+      "local": "/assets/f7e28e8f16ab94c1.mp4",
+      "status": "remote-only",
+      "bytes": 34413500
+    },
+    {
+      "source": "https://libtv-res.liblib.art/upload-images/b3348b389b854697b6dee9cad2631d97/06abc7228857cc85e8f9222f73ea2379fec30438.mp4",
+      "download": "https://libtv-res.liblib.art/upload-images/b3348b389b854697b6dee9cad2631d97/06abc7228857cc85e8f9222f73ea2379fec30438.mp4",
+      "local": "/assets/8647323f85bfac42.mp4",
+      "status": "remote-only",
+      "bytes": 51293230
+    },
+    {
+      "source": "https://liblibai-online.liblib.cloud/web/ea95cb51f3d94addbb92dc003cd33b49/7a21a9b9-503b-4168-b9c2-be0a3770f215.mp4",
+      "download": "https://liblibai-online.liblib.cloud/web/ea95cb51f3d94addbb92dc003cd33b49/7a21a9b9-503b-4168-b9c2-be0a3770f215.mp4",
+      "local": "/assets/61302d34297230bc.mp4",
+      "status": "remote-only",
+      "bytes": 10940879
+    },
+    {
+      "source": "https://libtv-res.liblib.art/upload-images/4e303b89c099425a93084d50cdcb10f4/e5d71224e151896d9ead9955953984aff3f293e4.mp4",
+      "download": "https://libtv-res.liblib.art/upload-images/4e303b89c099425a93084d50cdcb10f4/e5d71224e151896d9ead9955953984aff3f293e4.mp4",
+      "local": "/assets/e96e0960f9ad052a.mp4",
+      "status": "remote-only",
+      "bytes": 25900231
+    }
+  ],
+  "downloadErrors": [
+    {
+      "source": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "download": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "local": "/assets/4cec0a29d19e1284.mp4",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "error"
+    },
+    {
+      "source": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "download": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "local": "/assets/70bac369688eca96.mp4",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "error"
+    },
+    {
+      "source": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "download": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "local": "/assets/ad034d4f6e6646c7.mp4",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "error"
+    }
+  ],
+  "publicCanvasSnapshots": 19,
+  "memberFaqs": 9,
+  "remoteConfigCount": 23,
+  "activityAwardWorks": 170
+}

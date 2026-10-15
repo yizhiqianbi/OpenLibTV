@@ -1,0 +1,90 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "4f20ab5565fa42918ffefbba7b93a8d4",
+      "projectUuid": "d179d46d0d9a47849b5dfd22e466cca5",
+      "name": "非遗精灵墨团团",
+      "description": "一缕黄山古松的松烟，化作软萌小精灵「墨团团」。它穿行古法徽墨工坊，历经烧烟取髓、和胶融凝、千锤锻打、压模描金等非遗工序，最终蜕变为松元堂「墨团团」古法松烟墨条，以萌趣姿态走入现代日常，让千年墨韵焕发新生。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/d2672e03287b435882213a091b3351cd/f99b0997a1607a8d58d1fc4bab4f3477f1c65a71.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/d2672e03287b435882213a091b3351cd/abbc8c26c2c8ebed5ec3ad78e8af3ab123282a58.mp4",
+      "snapshotId": 24987,
+      "auditStatus": 1,
+      "ownerId": 9892585,
+      "ownerUuid": "aa705fd64cef4b35abd33d3e6207faf5",
+      "nickname": "微信用户bec0be",
+      "isLike": false,
+      "likeCount": 0,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "墨团团 一缕黄山古松的松烟，化作软萌小精灵「墨团团... http://xhslink.com/o/1XyERKvUqzv  戳进【小红书】阅读这篇分享笔记~",
+      "createAt": "2026年07月07日 18:28",
+      "updateAt": "2026年08月27日 20:22",
+      "publishAt": "2026年07月07日 18:28",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 11,
+        "edges": 11
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ee6893b3-640c-9402-ad9b-97f122a9e0e4"
+}

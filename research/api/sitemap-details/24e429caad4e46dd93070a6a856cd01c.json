@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "24e429caad4e46dd93070a6a856cd01c",
+      "projectUuid": "452f8388789241e782d24fa0d8a2165b",
+      "name": "承诺经纪人",
+      "description": "一个荒诞短片：如果“原谅”可以被买卖，一个父亲会开价多少？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/0d3cb629f4574ccab34d91734b62c518/57fcb0ee77ec12705622dead9148ef4bde18464d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/0d3cb629f4574ccab34d91734b62c518/1530083a99521e146fae2f596a69220f5d8f284b.mp4",
+      "snapshotId": 24898,
+      "auditStatus": 1,
+      "ownerId": 7528569,
+      "ownerUuid": "0d3cb629f4574ccab34d91734b62c518",
+      "avatar": "https://liblibai-online.liblib.cloud/img/0d3cb629f4574ccab34d91734b62c518/ef724c9321fc2c931bf815274f81d871681131fe3ee68cb8a5059e1573ac834b.png",
+      "nickname": "张加毛",
+      "isLike": false,
+      "likeCount": 3,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "5.17 复制打开抖音，看看【张加毛的作品】实验短片：一个关于原谅交易的荒诞短片 我做了一个荒... https://v.douyin.com/uw_hltKLrDY/ t@r.Rk 02/27 :2pm ZzT:/",
+      "createAt": "2026年07月07日 14:48",
+      "updateAt": "2026年07月07日 14:55",
+      "publishAt": "2026年07月07日 14:48",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 106,
+        "edges": 169
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "91719ede-05db-923c-af5c-632d1dc5cdc1"
+}

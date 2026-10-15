@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "7134e54433de48e6b73d2c391e4aef26",
+      "projectUuid": "da5c2629e4e74ba4b223ad31b31392ac",
+      "name": "峰谷电科普",
+      "description": "峰谷电科普",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8c39b5e9723b4fd7bf448be06d88a7c0/2045e9f51496ee01745abd0c2419778811b99bd7.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8c39b5e9723b4fd7bf448be06d88a7c0/641d5a12cc1dc133d218f1d8b28d4c0e4c0bbbea.mp4",
+      "snapshotId": 19233,
+      "auditStatus": 1,
+      "ownerId": 3079111,
+      "ownerUuid": "8c39b5e9723b4fd7bf448be06d88a7c0",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8c39b5e9723b4fd7bf448be06d88a7c0/a539810ca695dae105ae520e7bad58a33a71e04fce92c8b142c73acb8ea35fa4.png",
+      "nickname": "萧风",
+      "isLike": false,
+      "likeCount": 5,
+      "tags": [
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月14日 18:55",
+      "updateAt": "2026年06月14日 19:04",
+      "publishAt": "2026年06月14日 18:55",
+      "playCount": 33,
+      "viewCreationProcessCount": 11,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 21,
+        "edges": 3
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8e629eb1-8159-9429-bbcb-6b5f5280d855"
+}

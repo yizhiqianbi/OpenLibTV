@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "0909d447655245b289270585316b48d5",
+      "projectUuid": "708ae7e3e9174cd8917fbd38f88b3d21",
+      "name": "多巴胺世界",
+      "description": "A world filled with dopamine",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8d5ade1f022c453089e473c7e39dbb35/ead2c5d5a0bbfa062ee492dde53344724ab9b5b6.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8d5ade1f022c453089e473c7e39dbb35/7458ccbc2811b6d9ff73d91922d0d0bb577b393e.mp4",
+      "snapshotId": 23691,
+      "auditStatus": 1,
+      "ownerId": 169483,
+      "ownerUuid": "8d5ade1f022c453089e473c7e39dbb35",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8d5ade1f022c453089e473c7e39dbb35/11dfeff521f3749c0443bef81f42f5222ac241fa1bca32a87c6a0207d19a2712.png",
+      "nickname": "木木木亘",
+      "isLike": false,
+      "likeCount": 14,
+      "tags": [
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a45daa4000000002201ab91?xsec_token=YBZbdIwepjzhId-Na-nIZfgOYNTikRgeDVpOs_REyT1hw%3D&xsec_source=pc_creatormng",
+      "createAt": "2026年07月02日 11:29",
+      "updateAt": "2026年07月06日 23:50",
+      "publishAt": "2026年07月02日 11:29",
+      "playCount": 7,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 40,
+        "edges": 31
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "80268634-8962-97c6-aaa9-6152e872fd6f"
+}

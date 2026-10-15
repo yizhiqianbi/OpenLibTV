@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "79b076c3bcf8449eade9c7aed6f8fc2b",
+      "projectUuid": "c331567c266f41ef95a96deacf3a5ad6",
+      "name": "家居VLOG丨智能体实验短片丨空间一致",
+      "description": "智能体测试室内视频智能生成提示词与脚本",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4516157ad4cf4175bef2cb448d41b9f3/32a0b949c453c802bc6f3b0bc4fdf1e903688be5.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4516157ad4cf4175bef2cb448d41b9f3/40a1e051c81e48a86811653bc1f26d0e1cfc23f4.mp4",
+      "snapshotId": 23335,
+      "auditStatus": 1,
+      "ownerId": 1740662,
+      "ownerUuid": "4516157ad4cf4175bef2cb448d41b9f3",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4516157ad4cf4175bef2cb448d41b9f3/df345921bdcbd6912a6992a2702f9916280444d89f01bc8674e855cdeb27d371.jpg",
+      "nickname": "三千问Atelier",
+      "isLike": false,
+      "likeCount": 76,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "24 【以为砸10万实拍？AI家居大片提示词开源 - 三千问Atelier | 小红书 - 你的生活兴趣社区】 😆 C2G1rOiqJZEUMuT 😆 https://www.xiaohongshu.com/discovery/item/6a43cec500000000150262c5?source=webshare&xhsshare=pc_web&xsec_token=ABlyCe33b7-itlAMPttsYC2k5AHaJbT4kcqldvqcJ19Po=&xsec_source=pc_share",
+      "createAt": "2026年07月01日 00:24",
+      "updateAt": "2026年07月06日 23:50",
+      "publishAt": "2026年07月01日 00:24",
+      "playCount": 47,
+      "viewCreationProcessCount": 23,
+      "copyCanvasCount": 7,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 98,
+        "edges": 134
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ab852722-5f8c-9da6-921c-d485ffda76c5"
+}

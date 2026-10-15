@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "83bd0ef9a6d14a318cc99cf8e2531d21",
+      "projectUuid": "6427b87ce5324bc6840fa025b849e438",
+      "name": "落叶归根",
+      "description": "后来，她终于回到了自己的故乡 或许，我们每个人都是一只有着宿命的候鸟。无论走多远，飞多高，血脉里最深的牵绊，永远是指向家乡的那个罗盘。落叶总会归根，阿太，您真的到家了。",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/e3babff6d1484ad1aa25b9bcd8e45640/775641927_2868ace4251248c6b88f3e25307a5323.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e3babff6d1484ad1aa25b9bcd8e45640/dc2bfc718b938941f3c150b4c29fa6557d9cea37.mp4",
+      "snapshotId": 23104,
+      "auditStatus": 1,
+      "ownerId": 2515898,
+      "ownerUuid": "e3babff6d1484ad1aa25b9bcd8e45640",
+      "avatar": "https://liblibai-online.liblib.cloud/img/e3babff6d1484ad1aa25b9bcd8e45640/31d1d69405192e6f99ab75a6c755c46aec22b1b6c403068bf413109e9dd3a961.jpg",
+      "nickname": "蒙太神奇",
+      "isLike": false,
+      "likeCount": 20,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "9.71 :6pm d@A.go 05/19 zTl:/ 后来，她终于回到了自己的故乡 或许，我们每个人都是一只有着宿命的候鸟。无论走多远，飞多高，血脉里最深的牵绊，永远是指向家乡的那个罗盘。落叶总会归根，阿太，您真的到家了。 # 端午节 # AI创作者浪潮计划 # AI全能艺术家计划 # 抖音AI创作者大赛 # 命题后来  https://v.douyin.com/w1VS1_KMjOo/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年06月22日 16:36",
+      "updateAt": "2026年07月02日 20:21",
+      "publishAt": "2026年06月30日 16:21",
+      "playCount": 31,
+      "viewCreationProcessCount": 13,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 214,
+        "edges": 226
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b3f99869-b212-95fa-8b34-7e7b71a77baa"
+}

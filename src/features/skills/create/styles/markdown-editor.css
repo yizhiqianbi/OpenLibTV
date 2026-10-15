@@ -1,0 +1,234 @@
+.secondary-skill-rich-container,
+.secondary-skill-code {
+  height: 100%;
+  min-height: 0;
+  overflow: auto;
+}
+.secondary-skill-rich-container > div {
+  height: 100%;
+}
+.secondary-skill-rich.markdown-content {
+  height: 100%;
+  min-height: 100px;
+  white-space: pre-wrap;
+  color: var(--text);
+  caret-color: var(--text);
+}
+.secondary-skill-rich p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--muted, #919191);
+  pointer-events: none;
+  height: 0;
+  white-space: pre-wrap;
+}
+.secondary-skill-rich p {
+  margin: 0 0 12px;
+}
+.secondary-skill-rich h1 {
+  font-size: 24px;
+}
+.secondary-skill-rich h2 {
+  font-size: 20px;
+}
+.secondary-skill-rich h3 {
+  font-size: 18px;
+}
+.secondary-skill-rich h1,
+.secondary-skill-rich h2,
+.secondary-skill-rich h3 {
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.secondary-skill-rich ul,
+.secondary-skill-rich ol {
+  padding-left: 22px;
+  margin: 0 0 12px;
+}
+.secondary-skill-rich ul {
+  list-style: disc;
+}
+.secondary-skill-rich ol {
+  list-style: decimal;
+}
+.secondary-skill-rich blockquote {
+  border-left: 3px solid var(--border);
+  margin: 0 0 12px;
+  padding-left: 12px;
+}
+.secondary-skill-rich pre {
+  white-space: pre-wrap;
+  padding: 12px;
+  margin: 0 0 12px;
+  background: var(--bg-2, rgba(0, 0, 0, 0.2));
+  border-radius: 6px;
+}
+.secondary-skill-rich code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+}
+.secondary-skill-rich a {
+  color: #58a6ff;
+}
+.secondary-skill-code {
+  --skill-cm-caret: #e6edf3;
+  --skill-cm-code: #79c0ff;
+  --skill-cm-gutter: #6e7681;
+  --skill-cm-heading: #79c0ff;
+  --skill-cm-link: #58a6ff;
+  --skill-cm-meta: #ff7b72;
+  --skill-cm-placeholder: #919191;
+  --skill-cm-quote: #8b949e;
+  --skill-cm-selection: rgba(56, 139, 253, 0.3);
+}
+:root[data-theme='light'] .secondary-skill-code {
+  --skill-cm-caret: #1f2328;
+  --skill-cm-code: #0550ae;
+  --skill-cm-gutter: #8c959f;
+  --skill-cm-heading: #0550ae;
+  --skill-cm-link: #0969da;
+  --skill-cm-meta: #cf222e;
+  --skill-cm-placeholder: #8c959f;
+  --skill-cm-quote: #57606a;
+  --skill-cm-selection: rgba(9, 105, 218, 0.15);
+}
+.secondary-skill-code .cm-editor {
+  height: 100%;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+}
+.secondary-skill-code .cm-content {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  caret-color: var(--skill-cm-caret);
+  padding: 8px 0 32px;
+}
+.secondary-skill-code .cm-scroller {
+  overflow: auto;
+}
+.secondary-skill-code .cm-line {
+  padding: 0 8px;
+}
+.secondary-skill-code .cm-focused {
+  outline: none;
+}
+.secondary-skill-code .cm-gutters {
+  background: transparent;
+  color: var(--skill-cm-gutter);
+  border: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.secondary-skill-code .cm-lineNumbers .cm-gutterElement {
+  padding: 0 8px 0 12px;
+  min-width: 36px;
+}
+.secondary-skill-code .cm-selectionBackground,
+.secondary-skill-code .cm-focused .cm-selectionBackground {
+  background: var(--skill-cm-selection) !important;
+}
+.secondary-skill-code .cm-cursor {
+  border-left-color: var(--skill-cm-caret);
+}
+.secondary-skill-code .cm-placeholder {
+  color: var(--skill-cm-placeholder);
+  pointer-events: none;
+}
+.secondary-skill-code .cm-skillDiffChanged,
+.secondary-skill-diff-line.added {
+  background: color-mix(in srgb, var(--status-success, #32b978) 14%, transparent);
+  box-shadow: inset 3px 0 0 var(--status-success, #32b978);
+}
+.secondary-skill-code .cm-skillDiffChangedGutter,
+.secondary-skill-file-diff .added,
+.secondary-skill-diff-stat .added {
+  color: var(--status-success, #32b978);
+}
+.secondary-skill-code .cm-skillDiffRemovedLine,
+.secondary-skill-diff-line.removed {
+  background: color-mix(in srgb, var(--status-error, #f76560) 12%, transparent);
+  box-shadow: inset 3px 0 0 var(--status-error, #f76560);
+}
+.secondary-skill-code .cm-skillDiffRemoved {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.5em;
+  cursor: default;
+}
+.secondary-skill-code .cm-skillDiffRemovedLine {
+  padding: 0 8px;
+  min-height: 1.5em;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.secondary-skill-file-diff {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+  padding-left: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.secondary-skill-file-diff .removed,
+.secondary-skill-diff-stat .removed {
+  color: var(--status-error, #f76560);
+}
+.secondary-skill-file.deleted > span:first-of-type {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.secondary-skill-diff {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  font:
+    13px/1.5 ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Consolas,
+    monospace;
+}
+.secondary-skill-diff-stat {
+  display: flex;
+  gap: 12px;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.secondary-skill-diff-lines {
+  overflow: auto;
+  min-height: 0;
+  padding: 10px 0 32px;
+}
+.secondary-skill-diff-line {
+  display: flex;
+  min-height: 1.5em;
+}
+.secondary-skill-diff-line > span:last-child {
+  flex: 1;
+  min-width: 0;
+  padding-right: 16px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.secondary-skill-diff-number {
+  width: 44px;
+  flex-shrink: 0;
+  padding: 0 8px;
+  text-align: right;
+  color: var(--muted);
+  user-select: none;
+  font-size: 11px;
+}
+.secondary-skill-diff-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 16px;
+  color: var(--muted);
+}
+.secondary-skill-optimize-error {
+  margin: 6px 0;
+  font-size: 12px;
+  color: var(--status-error, #f76560);
+}

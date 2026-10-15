@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "6f1ef0f855744109b1765b3eab7aacb9",
+      "projectUuid": "19fea3aa55d241f59e5a14d25e212746",
+      "name": "“勇气”即是答案",
+      "description": "如此风浪都已迈过，人生又还有什么可惧怕的？",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/2fd6a3a0a03a4d12a19285625651c2c5/68a974a29989ebbe1c724f15371eae4beacd541b.PNG",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/2fd6a3a0a03a4d12a19285625651c2c5/13a6234a428c131e0c2054c7af65a78418e3a477.mov",
+      "snapshotId": 24491,
+      "auditStatus": 1,
+      "ownerId": 8771048,
+      "ownerUuid": "2fd6a3a0a03a4d12a19285625651c2c5",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar5.png",
+      "nickname": "185****2233",
+      "isLike": false,
+      "likeCount": 33,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "2.30 复制打开抖音，看看【Vista看天下的作品】用“少年派的奇幻漂流”打开你的高考之旅。比答案和分... https://v.douyin.com/RIoNax3dy70/ :2pm oDh:/ 12/03 k@p.da",
+      "createAt": "2026年07月06日 00:23",
+      "updateAt": "2026年07月10日 22:01",
+      "publishAt": "2026年07月06日 00:23",
+      "playCount": 3,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 496,
+        "edges": 466
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "65480e4a-10b9-948a-9033-91a7f26145ec"
+}

@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8cac79adb36e43ffbe8e0cb3718c0b59",
+      "projectUuid": "00360dede92140eab3b2e0d29974d317",
+      "name": "楼兰迷冢",
+      "description": "黄沙漫过千年城郭，传说沉埋地底深处。一支意外闯入禁地的旅行者，揭开了楼兰古国尘封的秘密。悬空古棺、诡异壁画、步步杀机的地宫机关，沉睡千年的女王与亡魂，正在等待闯入者的献祭。当古老的诅咒被唤醒，一场关乎生死与真相的绝境逃亡，就此拉开序幕。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b6c9c80e303748a58c69a902d9215d87/6ddce8f6344d8c552ff8952d1536e72c2a238e7c.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b6c9c80e303748a58c69a902d9215d87/7c3d14e1487a7a341597e7b4dd352766f0460305.mp4",
+      "snapshotId": 17817,
+      "auditStatus": 1,
+      "ownerId": 8976756,
+      "ownerUuid": "b6c9c80e303748a58c69a902d9215d87",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar3.png",
+      "nickname": "151****8363",
+      "isLike": false,
+      "likeCount": 34,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "4.61 复制打开抖音，看看【fans的作品】预告片，黄沙漫过千年城郭，传说沉埋地底深处。一支意... https://v.douyin.com/_irjkQ9OWKA/ p@d.an :5pm LjP:/ 06/06",
+      "createAt": "2026年06月09日 13:51",
+      "updateAt": "2026年06月11日 22:31",
+      "publishAt": "2026年06月09日 13:58",
+      "playCount": 9,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 276,
+        "edges": 304
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ab8117c7-de91-9586-91cd-dead54139580"
+}

@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8d5e083d39b445d4aa63f0dcfac5d97d",
+      "projectUuid": "61dd982642ba46bf892b64367bf9fa7f",
+      "name": "《逆光而行》毕业季",
+      "description": "B站官方活动宣传片",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/422c9e9bf57a46020401ef35d029aa1fdc4447ac.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c124bbc3b9ff4c60b4311c1b77d90a0f/b1cf797296da530485da3d3c5e59d5d174538b00.mp4",
+      "snapshotId": 25129,
+      "auditStatus": 1,
+      "ownerId": 797672,
+      "ownerUuid": "c124bbc3b9ff4c60b4311c1b77d90a0f",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c124bbc3b9ff4c60b4311c1b77d90a0f/5f3158331c60f14b5828e3e3d8df99229d9c492346dd8f7457f00f1a6c37de89.jpg",
+      "nickname": "牛斗",
+      "isLike": false,
+      "likeCount": 52,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5003,
+          "name": "荣誉",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/12be7429-3463-476c-ac65-bb0c6afc805a.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/d3a330c1-a5dc-4624-8a19-80248e9d71f2.png",
+          "desc": "LibTV荣誉作者",
+          "verifyLevel": 3
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV11FjA6ZEQT/?spm_id_from=333.337.search-card.all.click&vd_source=3faa75e5c6899670a8e49faa6956b043",
+      "createAt": "2026年06月26日 13:37",
+      "updateAt": "2026年07月08日 10:47",
+      "publishAt": "2026年07月08日 10:39",
+      "playCount": 39,
+      "viewCreationProcessCount": 19,
+      "copyCanvasCount": 2,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 149,
+        "edges": 129
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "ffd396ae-494c-9bbd-9fc3-c4d37ea06bde"
+}

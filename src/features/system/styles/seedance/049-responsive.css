@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+  .seedance-verify-page > header {
+    padding: 0 24px;
+  }
+  .seedance-verify-page > main {
+    width: 95%;
+    padding: 0 12px 24px;
+  }
+  .seedance-data-source {
+    padding: 16px;
+    gap: 12px;
+  }
+  .seedance-data-source strong {
+    font-size: 14px;
+  }
+  .seedance-input,
+  .seedance-result {
+    padding: 20px;
+  }
+  .seedance-input form {
+    gap: 8px;
+  }
+  .seedance-input button {
+    width: 104px;
+  }
+  .seedance-input input {
+    padding: 0 12px;
+  }
+  .seedance-readonly {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .seedance-verify-page aside {
+    padding: 16px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

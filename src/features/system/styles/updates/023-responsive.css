@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+  .feature-updates-page {
+    padding-top: 12px;
+  }
+  .feature-updates-page > h1 {
+    margin-bottom: 32px;
+  }
+  .feature-version {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .feature-version-meta {
+    width: auto;
+  }
+  .feature-version-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .feature-version-content > h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .feature-list {
+    gap: 28px;
+  }
+  .feature-item {
+    gap: 20px;
+  }
+}

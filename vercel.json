@@ -1,0 +1,29 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!assets/|data/|api/|film-runtime/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {
+    "api/film/complete.ts": {
+      "includeFiles": "dist-film/player.iife.js",
+      "maxDuration": 60
+    },
+    "api/film/start.ts": {
+      "includeFiles": "dist-film/player.iife.js",
+      "maxDuration": 60
+    },
+    "api/film/upload.ts": {
+      "maxDuration": 60
+    },
+    "api/film/release.ts": {
+      "maxDuration": 30
+    }
+  }
+}

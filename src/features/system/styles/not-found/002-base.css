@@ -1,0 +1,17 @@
+.secondary-not-found {
+  height: calc(100vh - 124px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fg-default, #f7f7f7);
+  gap: 20px;
+}
+.secondary-not-found h1 {
+  margin: 0;
+  border-right: 1px solid #ffffff35;
+  padding: 0 24px 0 0;
+  font: 500 24px/49px system-ui;
+}
+.secondary-not-found p {
+  font: 400 14px/49px system-ui;
+}

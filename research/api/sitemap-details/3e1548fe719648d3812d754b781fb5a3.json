@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "3e1548fe719648d3812d754b781fb5a3",
+      "projectUuid": "73f98363b80c4ae8a1e9c94661736140",
+      "name": "黄大仙客栈",
+      "description": "废柴误入“黄大仙客栈”，却引来各路精怪，在妖界史密斯夫妇的魔鬼特训下，潜能爆发反杀妖界，成为一代新王。（项目demo制作中，目前PV仅供展示故事类型及世界观，非最终画面）",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/a2d720a926a84da1beb8889358872296/aff49bd5af4ca6e137327c0e1fd19bd6af910511.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/a2d720a926a84da1beb8889358872296/8011da08a9431d9f863030276f0f51989ced5100.mp4",
+      "snapshotId": 23283,
+      "auditStatus": 1,
+      "ownerId": 8546433,
+      "ownerUuid": "a2d720a926a84da1beb8889358872296",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar5.png",
+      "nickname": "185****8552",
+      "isLike": false,
+      "likeCount": 11,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a43d404000000001003f181?xsec_token=YB8csm5c50Ee6AaoGs9qsCJKZoLp-pzVCe7DAscG2ukt4%3D&xsec_source=pc_creatormng",
+      "createAt": "2026年06月30日 23:02",
+      "updateAt": "2026年09月07日 17:31",
+      "publishAt": "2026年06月30日 23:02",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 105,
+        "edges": 71
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b7d05715-6e70-9dfe-b5d4-cc3430fdd663"
+}

@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "userDetail": {
+      "id": 8353802,
+      "avatar": "https://liblibai-online.liblib.cloud/img/aadb9a4396c449d385452443c960c4e7/7362f88a82b761ec6d6cce74c21051d29d93048cb25b66de3dffb243ea59b03d.png",
+      "nickname": "方兴未AI",
+      "mobile": "178****7997",
+      "uuid": "aadb9a4396c449d385452443c960c4e7",
+      "homepages": [],
+      "personalSpaceInformation": {
+        "briefIntroduction": "“建立一个自己信任的梦境，控制梦的结构，走向、色彩、情绪，以上帝之手”。",
+        "coverImage": "",
+        "xiaohongshuLink": "",
+        "xiaohongshuIcon": "",
+        "tiktokLink": "https://v.douyin.com/ewFx-2tqyuE/ 2@1.com :1pm",
+        "tiktokIcon": "",
+        "bliLink": "",
+        "bliIcon": "",
+        "webLink": "",
+        "webIcon": "",
+        "huggingFaceLink": "",
+        "huggingFaceIcon": "",
+        "twitterLink": "",
+        "twitterIcon": "",
+        "facebookLink": "",
+        "facebookIcon": "",
+        "instagramLink": "",
+        "instagramIcon": "",
+        "discordLink": "",
+        "discordIcon": "",
+        "otherLink": "",
+        "otherIcon": "",
+        "openBusiness": 0,
+        "openLike": 1,
+        "openRecommend": 1
+      },
+      "authorDetail": "",
+      "authAuthorStatus": 0
+    },
+    "counter": {
+      "uploadCount": 0,
+      "followerCount": 100,
+      "followCount": 0,
+      "likeCount": 0,
+      "picLikeCount": 0,
+      "modelLikeCount": 0,
+      "downloadCount": 0,
+      "commentCount": null,
+      "imageCount": null,
+      "subscribeCount": null,
+      "hitCount": null,
+      "runCount": 0,
+      "heat": null,
+      "useCount": 0,
+      "modelUseCount": null,
+      "imageUseCount": null,
+      "imageDownCount": null,
+      "imageRunCount": null,
+      "isFollow": 0,
+      "isLike": null
+    },
+    "tags": [
+      "authorship"
+    ]
+  }
+}

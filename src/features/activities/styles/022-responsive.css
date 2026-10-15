@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+  .activity-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .activity-card h3 {
+    font-size: 14px;
+  }
+  .activity-status {
+    top: 8px;
+    left: 8px;
+  }
+  .activity-reward {
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+  }
+}

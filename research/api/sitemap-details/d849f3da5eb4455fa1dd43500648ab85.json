@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d849f3da5eb4455fa1dd43500648ab85",
+      "projectUuid": "ad48d1e6dddd47a4b5dfde687e64c6b8",
+      "name": "非遗美学-当绒花遇上山海经",
+      "description": "从精卫衔石的神话意象，到古今三重时空的折叠呈现。以国家级非遗绒花技艺为创作核心，从“蚕蛾新生 — 野性自由 — 技艺传承 — 万物回归” 的叙事脉络，用生命循环的方式述说东方传承的美丽故事",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/88de51b91d1a45cd9b1ba0400db967a0/52a1c2525f5482332d36222945cb5d518d00e70c.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/88de51b91d1a45cd9b1ba0400db967a0/6c40ec3bfc9fa5194d8dd166ae670b0a301af94b.mp4",
+      "snapshotId": 23974,
+      "auditStatus": 1,
+      "ownerId": 5548079,
+      "ownerUuid": "88de51b91d1a45cd9b1ba0400db967a0",
+      "avatar": "https://liblibai-online.liblib.cloud/img/88de51b91d1a45cd9b1ba0400db967a0/1c84b8dc32d7ebe5a79f6309c129bcb7412f05aa2f6ff56c9fa3ba9ed4a72db8.jpg",
+      "nickname": "Satan女娲",
+      "isLike": false,
+      "likeCount": 26,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1.https://www.xiaohongshu.com/explore/6a435cd4000000001102d126?xsec_token=ABMKyWhG0HoiFFd783IPKbDmd9C8qT1uexA4whkCka3Yw=&xsec_source=pc_user 2.https://www.douyin.com/user/self?modal_id=7657445609527364910 3.https://weixin.qq.com/sph/AY5GVxdfP3",
+      "createAt": "2026年07月02日 20:32",
+      "updateAt": "2026年07月07日 23:33",
+      "publishAt": "2026年07月03日 11:53",
+      "playCount": 21,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 78,
+        "edges": 111
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a085d695-aa32-92bf-9ce9-f4b47da1a132"
+}

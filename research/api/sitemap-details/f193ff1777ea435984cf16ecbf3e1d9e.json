@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f193ff1777ea435984cf16ecbf3e1d9e",
+      "projectUuid": "52992733f80a40d483dcdd5fb8704f1c",
+      "name": "地表最强生物《水熊虫》",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/56b7581b18294b7a9abf3a0fca18051d/99e969b161580632bf55b3ae3a80651eb963aa0a.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/56b7581b18294b7a9abf3a0fca18051d/f9f1d7bc32f9309c1a972a8f2d9aa870a783b050.mp4",
+      "snapshotId": 7999,
+      "auditStatus": 1,
+      "ownerId": 2496946,
+      "ownerUuid": "56b7581b18294b7a9abf3a0fca18051d",
+      "avatar": "https://liblibai-online.liblib.cloud/img/56b7581b18294b7a9abf3a0fca18051d/a4df13fceecd3fc2ed150f378925c202830c161f0b044ff73215deaaf4dd2653.png",
+      "nickname": "HUAN的克隆体",
+      "isLike": false,
+      "likeCount": 26,
+      "tags": [
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年04月28日 17:31",
+      "updateAt": "2026年05月06日 16:22",
+      "publishAt": "2026年04月28日 17:31",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 69,
+        "edges": 34
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "7a162371-fc1a-9664-aa83-309e8df70841"
+}

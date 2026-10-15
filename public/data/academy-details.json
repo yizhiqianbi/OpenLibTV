@@ -1,0 +1,603 @@
+{
+  "tutorials": {
+    "01a057dad93c72eaae1650a7fc5f0ca8": {
+      "tutorialUuid": "01a057dad93c72eaae1650a7fc5f0ca8",
+      "title": "Agent一键成片",
+      "subtitle": "说出你的想法，自动从脚本做到成片",
+      "cover": "/assets/f47bd1bfc8ea4fae.webp",
+      "tags": [
+        "1min"
+      ],
+      "durationSec": 96,
+      "videoUrl": "/assets/26dc03381915cb75.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/b156c065-30f0-4bc8-9cc6-9033507b7fde/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "https://libtv-res.liblib.art/output/b156c065-30f0-4bc8-9cc6-9033507b7fde/720p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "/assets/26dc03381915cb75.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "480p"
+    },
+    "01a057d8b40279658c0a8e49067706a8": {
+      "tutorialUuid": "01a057d8b40279658c0a8e49067706a8",
+      "title": "人像与角色库",
+      "subtitle": "去掉 AI 塑料感，皮肤和光影更真实",
+      "cover": "/assets/19044de21a8ef10f.webp",
+      "tags": [],
+      "durationSec": 64,
+      "videoUrl": "/assets/e480197f8316afc5.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/09330a9f-175a-44e0-968e-4402737b2f59/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/e480197f8316afc5.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/09330a9f-175a-44e0-968e-4402737b2f59/480p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a057d75e677a50a5d63206d9956b53": {
+      "tutorialUuid": "01a057d75e677a50a5d63206d9956b53",
+      "title": "720全景功能",
+      "subtitle": "生成全景场景，任意角度取景出镜头",
+      "cover": "/assets/2db062f489e0c107.webp",
+      "tags": [],
+      "durationSec": 43,
+      "videoUrl": "/assets/a64e6dfd36f3f194.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/3287f993-8d20-4534-95cd-0f3a36997bab/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "https://libtv-res.liblib.art/output/3287f993-8d20-4534-95cd-0f3a36997bab/720p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "/assets/a64e6dfd36f3f194.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "480p"
+    },
+    "01a0ec81a2617c5fbf700bd187c8a909": {
+      "tutorialUuid": "01a0ec81a2617c5fbf700bd187c8a909",
+      "title": "深度动作捕捉",
+      "subtitle": "让复杂动态在不同角色和场景中稳定延续",
+      "cover": "/assets/4130a652b53b8501.webp",
+      "tags": [],
+      "durationSec": 27,
+      "videoUrl": "/assets/97b2a49ac3b3aff6.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/b8dfd195-f2c3-4113-a840-e84a4526b089/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:43+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/97b2a49ac3b3aff6.mp4",
+          "expireAt": "2026-10-10T22:06:43+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/b8dfd195-f2c3-4113-a840-e84a4526b089/480p.mp4",
+          "expireAt": "2026-10-10T22:06:43+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a0ec83e56a7d7fa4e4436c13cb7c34": {
+      "tutorialUuid": "01a0ec83e56a7d7fa4e4436c13cb7c34",
+      "title": "企业团队版",
+      "subtitle": "共享资产库多人协作，权限成本灵活管控，团队效率升级",
+      "cover": "/assets/a49a5e3163ef053c.webp",
+      "tags": [],
+      "durationSec": 50,
+      "videoUrl": "/assets/56a52a01eb6ee6ad.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/70935979-60cc-411f-9ed3-3d50a060c941/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/56a52a01eb6ee6ad.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/70935979-60cc-411f-9ed3-3d50a060c941/480p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a057d7fa8f7c729d95d1ab04b29c81": {
+      "tutorialUuid": "01a057d7fa8f7c729d95d1ab04b29c81",
+      "title": "分镜组功能",
+      "subtitle": "多图分镜成组，自由排序、编号、合并成图。",
+      "cover": "/assets/a9eb13ec75730a29.webp",
+      "tags": [],
+      "durationSec": 34,
+      "videoUrl": "/assets/9c84e31bd978d898.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/b3f0e6e5-7e20-4444-9df8-d9789cb1c09f/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/9c84e31bd978d898.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/b3f0e6e5-7e20-4444-9df8-d9789cb1c09f/480p.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a057da494978f1b6df6a6cba7773ba": {
+      "tutorialUuid": "01a057da494978f1b6df6a6cba7773ba",
+      "title": "字幕擦除",
+      "subtitle": "一键去掉画面字幕，不留痕迹",
+      "cover": "/assets/25d48a87407d58e2.webp",
+      "tags": [],
+      "durationSec": 32,
+      "videoUrl": "/assets/291bee0ccb84d111.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/01a9f402-61aa-42c0-926c-3d1e2f3e1d0c/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/291bee0ccb84d111.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/01a9f402-61aa-42c0-926c-3d1e2f3e1d0c/480p.mp4",
+          "expireAt": "2026-10-10T22:06:46+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a057d5717e75fb89f40b87c9a5c626": {
+      "tutorialUuid": "01a057d5717e75fb89f40b87c9a5c626",
+      "title": "3D导演台",
+      "subtitle": "在 3D 场景里摆角色、定机位、规划走位",
+      "cover": "/assets/3b480a96e977639e.webp",
+      "tags": [],
+      "durationSec": 49,
+      "videoUrl": "/assets/3f6b0db4e6b568fe.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/cebe1299-2944-491d-a11e-2f8c5997f2b3/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/3f6b0db4e6b568fe.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/cebe1299-2944-491d-a11e-2f8c5997f2b3/480p.mp4",
+          "expireAt": "2026-10-10T22:06:44+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    },
+    "01a057d942787bc891a569c13a0ef3fd": {
+      "tutorialUuid": "01a057d942787bc891a569c13a0ef3fd",
+      "title": "新脚本功能",
+      "subtitle": "粘贴剧本，自动拆镜头、写好提示词",
+      "cover": "/assets/1badb9e8778e6978.webp",
+      "tags": [],
+      "durationSec": 48,
+      "videoUrl": "/assets/09037e9317d68bac.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/b4b777e9-f8c0-4acd-98f0-18de5f262289/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "/assets/09037e9317d68bac.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "https://libtv-res.liblib.art/output/b4b777e9-f8c0-4acd-98f0-18de5f262289/480p.mp4",
+          "expireAt": "2026-10-10T22:06:45+08:00"
+        }
+      ],
+      "resumePositionSec": 0,
+      "localQuality": "720p"
+    }
+  },
+  "articles": {
+    "01a0d242d6e47b048f2a384f93f8e23f": {
+      "articleUuid": "01a0d242d6e47b048f2a384f93f8e23f",
+      "title": "「实用工具」视频节点功能",
+      "summary": "涉及功能：视频高清、片段重拍、智能续写、逐帧拉片、深度动作捕捉、音视频分离",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "视频功能"
+      ],
+      "readingMinutes": 10,
+      "contentMd": "> 涉及功能：视频高清、片段重拍、智能续写、逐帧拉片、深度动作捕捉、音视频分离\n\n对生成视频的局部片段效果不满意又不想重头再来？想要对素材做精细逐帧审视？亦或是希望画面自动续写来发散创意？视频节点的各类预设功能都可以帮你搞定。\n\n本节课将介绍视频节点下的各类预设工具，入口在视频节点的「上方工具栏」，帮助你高效完成视频修改、内容拆解与镜头续写，轻松实现视频内容的二次编辑与延展生成。\n\n---\n\n## 视频高清\n\n对当前画布的单个视频进行高清放大及帧率提升。「慢放倍数」可用于控制慢动作效果的参数，数值越高，动作越慢。\n\n点击视频节点顶部工具栏「高清」使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/35f71fab1171a959.webp\" width=\"80%\" />\n\n---\n\n## 片段重拍\n### 局部重绘，精准迭代\n\n在时间轴自由选择一个或多个片段进行重拍，使用文字描述每段需要修改的具体内容，即可对局部片段进行编辑。\n\n点击视频节点顶部工具栏「片段重拍」使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/0f79fc4d797286e8.gif\" width=\"80%\" />\n\n\n---\n\n## 智能续写\n\n在时间轴上自由选择续写起点，输入后续内容描述，还可以添加新的参考图片或视频，即可在延续原视频人物、场景与画面风格的基础上续写内容。\n\n点击视频节点顶部工具栏「片段重拍」下拉选项「智能续写」使用。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790153326503.mov\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n---\n\n## 逐帧拉片\n### 萃取成片的创作逻辑\n\n可以从叙事分镜、运镜动态、音频配乐等多个维度分析视频，把视频内容拆解为可复用的创作要素，用于后续镜头的再创作。\n\n点击视频节点顶部工具栏「逐帧拉片」即可使用。\n\n<p align=\"center\">\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790153516093.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n  <p align=\"center\">\n  <img src=\"/assets/d1eb63ddcc37186c.webp\" width=\"80%\" />\n\n\n---\n\n## 片段截取\n\n对画布上的单个视频进行基础剪辑操作，进行视频片段裁取。\n\n点击视频节点顶部工具栏「逐帧拉片」的下拉选项「片段截取」即可使用。目前仅可在时长不超过10分钟，分辨率不超过1080p，格式为Mp4的视频上使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/a3c192b1a18a3e12.webp\" width=\"80%\" />\n\n键盘快捷键\n\n- 移动选区 `键盘 ←/→`：裁取片段的长度不变，在时间轴上的位置左右移动。\n- 扩展/搜索选区 `键盘↑/↓`：以 0.1s 为单位，调整片段长度。\n- 精确模式 `键盘Shift键`：以 0.01s 为单位，调整片段长度。\n- 设置出点入点 `字母 I/O`：设置截取的起点和终点。\n\n  <p align=\"center\">\n  <img src=\"/assets/9432f1ca99670ad3.webp\" width=\"80%\" />\n\n---\n\n## 深度动作捕捉\n### 剥离表象，留存动作与空间\n\n一键提取视频深度信息，动作运镜参考不再受原始风格、元素等特征干扰，参考效果更稳定。\n\n### **如何使用？**\n\n**选择工具参数**\n\n- 点击顶部工具栏中「逐帧拉片」下拉选项中的「深度动作捕捉」，选择你需要的分辨率。\n\n  <p align=\"center\">\n  <img src=\"/assets/0c1ecd42ae9ebffd.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/bcbd1cc3c482dfb9.webp\" width=\"80%\" />\n\n**提取深度信息**\n\n- 提取完成后，深度信息视频会以节点的形式呈现在画布上，可作为下游视频节点使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/c917c1797d831f97.webp\" width=\"80%\" />\n\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790153829509.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n**将深度信息用作参考**\n\n- 将处理好的深度信息视频作为动作/运镜参考，输入提示词，继续创作你的内容。\n\n\n\n  <p align=\"center\">\n  <img src=\"/assets/e93fd4fd96b3af58.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/8f8c8f37c91ea3ef.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790153940711.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n---\n\n## 音视频分离\n\n将有声视频分离为无声的视频节点和独立的音频节点。点击顶部工具栏中的「音视频分离」即可使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/b98edcdf1c6a33c9.webp\" width=\"80%\" />\n\n---\n\n## 人声/背景音分离\n\n从视频中分离出干净的人声或者背景声。点击顶部工具栏中「音视频分离」的下拉选项「人声提取」或「背景音提取」即可使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/f5089402f9e70956.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/bf056361580594fb.webp\" width=\"80%\" />\n\n---\n\n## 智能剪辑\n\n代替繁琐重复的人工剪辑，智能分析编排多轨素材，自动匹配画面元素动效、卡点、布局等，一键剪辑成可发布成片。\n\n  <p align=\"center\">\n  <img src=\"/assets/b2e94bcb51978e01.gif\" width=\"80%\" />\n\n### 各种预设剪辑模式\n\n- **讲解视频**：输入参考音色、文稿或一句话描述主题，无需出镜即可生成社媒爆款讲解视频。\n- **批量广告**：输入产品信息与目标场景，一次直出多条带货视频。\n- **口播视频**：自动去除口水词、停顿，添加人物画中画、高亮文字动效上屏、转场、字幕等。\n- **素材混剪**：多个原始素材自动卡点、视觉聚焦剪辑，快速产出广告大片。\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10034547&projectId=f1820d53c3a74e18b82015c47aef5b6d&isTutorial=true",
+      "cover": "/assets/70f70cfc4a5b520f.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d23eb3d97128872f196e1f56ec34",
+        "title": "「实用工具」图片节点功能"
+      },
+      "next": {
+        "articleUuid": "01a0d243a69f72b482bce925fe2cb03b",
+        "title": "「实用工具」音频节点功能"
+      }
+    },
+    "01a0d24709f37af79589c9dbaa5303f1": {
+      "articleUuid": "01a0d24709f37af79589c9dbaa5303f1",
+      "title": "「进阶辅助」3D导演台",
+      "summary": "涉及功能：3D导演台、角色模型、相机机位、多视角截图、运动轨迹、运镜轨迹、Blender插件",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能",
+        "视频功能"
+      ],
+      "readingMinutes": 15,
+      "contentMd": "> 涉及功能：3D导演台、角色模型、相机机位、多视角截图、运动轨迹、运镜轨迹、Blender插件\n\n想要精准控制角色站位与镜头运动，却总觉得文字提示词「说不清」？想让 AI 准确还原你脑海中的构图？3D 导演台功能都可以帮你搞定。\n\n本节课将介绍3D导演台，从添加模型、摆布站位，到调整相机机位、多视角截图，帮助你将心中画面转写成精确的构图参考，让角色走位与镜头调度尽在掌握，为后续分镜与成片打好基础。\n\n---\n\n## 功能简述\n### 于虚拟片场，定格每一帧构想\n\nLibTV 导演台是一个的轻量级 3D 构图节点，在这个独立的空间里，你可以用摆积木的方式搭建故事空间，通过多视角截图，快速得到可被模型准确理解的构图参考。\n\n---\n\n## 导演台能实现什么效果？\n\n- 复杂站位与视角控制\n\n  <p align=\"center\">\n  <img src=\"/assets/d15bd1379dffdc7f.webp\" width=\"50%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/ae21a30df409e239.webp\" width=\"50%\" />\n\n\n  <p align=\"center\">\n  <img src=\"/assets/8eac3ddec72cc4af.webp\" width=\"50%\" />\n\n\n- 准确的场景与角色站位控制\n\n  <p align=\"center\">\n  <img src=\"/assets/1a5462386d92e8c2.webp\" width=\"50%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/ef0e63cda7f7fba2.webp\" width=\"50%\" />\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790167582650.mp4\" controls preload=\"metadata\" width=\"50%\"></video>\n\n---\n\n## 如何使用？✨\n\n### **进入导演台**\n\n双击画布空白处，新建「导演台」节点，点击「打开导演台」进入3D空间。\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/3efeb36c68400210.webp\" style=\"width:60%\" /></p>\n\n  <p align=\"center\">\n  <img src=\"/assets/8329a4c590bacce6.webp\" style=\"width:60%\" />\n\n\n### 1. 添加模型\n\n- 有人体素模、基础几何模型、群众阵列或者从本地上传四种类型。\n- **左侧栏**显示3D空间内所有元素的清单，可以进行删除、重命名、打组/解组、隐藏/显示等操作。\n- **右侧栏**可以查看和管理所选对象的属性信息，包括3D场景（整体空间）、角色（人体素模）、元素（基础形状）和摄像机（机位）。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226402779.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n### 2. 调整画布元素站位\n\n- 共有三种画布元素操作模式\n\n  - 移动位置（快捷键为 V）；\n  - 旋转（快捷键为 R）；\n  - 缩放体积（快捷键为 S），按住shift键时，可以等比缩放。\n\n- 选中3D模型后，可以在「右侧栏-属性」中调整模型颜色。\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226424676.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/e43d65dab833cbcc.webp\" style=\"width:80%\" /></p>\n\n### 3. 调整相机机位与截图\n\n机位视角\n\n- 用鼠标移动相机来调整相机位置，在顶部切换至「机位视角」，可以实时查看机位内容预览。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226553396.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n导演视角\n\n- 在顶部切换「导演视角」，可以自由调整视角，点击底部的「截图」时，会自动基于当前视角新增拍摄机位后截图。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226568862.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n\n摄像机调节\n\n- 在顶部切换「机位视角」后，可以在右侧栏「摄像机属性-FOV」中，调整摄像机焦距。\n- 在「摄像机属性-注视目标」中，将焦点绑定在某个角色身上，可以让镜头实现自动跟随。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/a16e86288ba2ba25.webp\" style=\"width:80%\" /></p>\n\n\n### 4. 发送参考图\n\n- 点击底部工具栏的相机图标进行「截图」。\n- 截图可以有各种比例，在「摄像机」右侧栏可以查看所有截图，不满意的截图可以删除。\n- 满意的截图可以发送到画布，作为参考图参与后续生成。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226640259.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226655030.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n---\n\n## 更多进阶玩法\n\n## 角色模型姿势控制\n### 定义肢体语言\n\n选中角色模型后，在右侧栏「姿势」中进行人物姿势调节。可以使用预设好的姿势，也可以精细化调整各个关节。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226705698.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n\n---\n\n## 全景图设置\n### 铺陈场景，拒绝空想\n\n通过本地上传、生成历史选择或者AI生成来获得全景图，让角色模型\"身临其境\"，更直观地浏览镜头效果。\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790226737597.mp4\" controls preload=\"metadata\" style=\"width:80%\"></video></p>\n\n---\n\n## 角色运动与运镜轨迹\n### 双轨并行，玩转画面的动与追\n\n### 1. 「角色运动轨迹」\n\n让角色在场景中按照指定路线移动，适合短剧人物走位、漫剧角色调度、电商广告人物展示等场景。\n\n**使用步骤**\n\n1. 通过点击模型或者左侧对象树选中角色，点击下方「动画时间轴」，选择合适的轨道后，点击「绘制轨道」；或者点击右侧「运动轨迹」。\n2. 你可以选择直线、圆形、矩形等路径模板，也可以手动绘制希望人物移动的路径。\n3. 时间轴会自动记录路径对应关键帧，通过「新增轨道」，可以同时让多个角色分别移动。\n4. 点击左下角「播放」或者直接按空格键，可以浏览角色沿路径运动的效果，调整至满意后，点击「导出视频到画布」即可用作后续生视频参考。\n\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/6d95fc80590c9186.gif\" style=\"width:80%\" /></p>\n\n\n---\n\n### 2. 「摄像机运镜轨迹」\n\n让摄像机按照指定路线进行移动，实现推、拉、摇、移、环绕、升降等镜头运动效果。\n\n**使用步骤**\n\n1. 通过点击机位模型或者左侧对象树选中机位，点击下方「动画时间轴」后，显示轨道。\n2. 点击左下方「绘制轨道」或者右侧「运动轨迹」后，可以选择直线、圆形、矩形等路径模板，也可以手动绘制希望镜头移动的路径。\n3. 你也可以在右侧「运动轨迹-预设运镜」中使用推近、拉远、横移、环绕、升镜、俯冲等模板。\n4. 系统会自动生成摄像机运镜路径、摄像机高度、注视目标和关键帧，你也可以选择注视角色、注视物体，或手动指定目标点。\n5. 点击左下角「播放」或者直接按空格键，可以查看机位实际拍摄画面。\n6. 调整运镜至满意后，点击「导出视频到画布」即可用作后续生视频参考。\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/39b535b9f6f777ba.gif\" style=\"width:80%\" /></p>\n\n\n---\n\n### 3. 「镜头+路径」组合，一键跟随拍摄\n\n不用手动设置复杂绑定关系，即可让镜头自动跟随角色移动，适合需要镜头跟随的角色移动、场景讲解情景。\n\n**使用步骤**\n\n1. 选中希望进行跟随的机位。\n2. 在右侧「属性-跟随目标」中选择希望跟随的角色，并调整跟随距离、摄像机高度、拍摄角度、镜头范围等参数。\n3. 点击播放后，角色沿自己的路径运动，摄像机会保持距离和高度跟随拍摄。\n\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/02a7e22f0c1f8a64.gif\" style=\"width:80%\" /></p>\n\n\n**使用镜头跟随时请注意**\n\n- 角色运动轨迹和摄像机运镜轨迹并不是同一条线。\n- 角色路径可以贴地，但摄像机不能直接复制角色的贴地路径。\n- 一键跟随的本质是\"打成镜头组\"，由系统自动维护摄像机和角色之间的距离、高度和注视关系。\n\n---\n\n### 导演台快捷键\n\n使用以下快捷键为你的创作提效。\n\n**模式切换**\n- 移动 V\n- 旋转 R\n- 缩放 S\n- 网格吸附 X\n\n**视角切换**\n- 俯视视角T\n- 正面视角Y\n- 重置视角 Q\n\n**基础操作**\n- 打组 ctrl+g\n- 解组 ctrl+shfit+g\n- 撤销 ctrl+z\n- 删除 delete\n\n---\n\n### Blender 插件\n\nLibTV 上线 Blender 插件，可以直接录制界面上的3D白模视频或截取画面，一键发送到 LibTV。无需反复下载上传，帮助你更高效地利用白模实现视频精准渲染。\n\n- 插件下载地址：[https://kol.liblib.tv/blender](https://kol.liblib.tv/blender)\n- 安装教程：[LibTV Blender 插件安装教程](https://resonate.feishu.cn/wiki/GwRpwYzGSiESYtkLPBEcvQ4knHd)\n\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/8c1f75a173c80e99.webp\" style=\"width:80%\" /></p>\n\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10075330&projectId=3baa698ea5bf45cdac19c0e5d3bfa950&isTutorial=true",
+      "cover": "/assets/44255f9ebe13f1c7.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d2463a39705baeffb9070227dc83",
+        "title": "「进阶辅助」脚本节点"
+      },
+      "next": {
+        "articleUuid": "01a0d247fa5572ce981ebfa79cd86fbc",
+        "title": "「热点速看」Seedance功能介绍"
+      }
+    },
+    "01a0d23c16477468aeb9a41755b6d420": {
+      "articleUuid": "01a0d23c16477468aeb9a41755b6d420",
+      "title": "「基础功能」工作流",
+      "summary": "涉及功能：工作流、打组、资产管理、智能引用",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能",
+        "视频功能"
+      ],
+      "readingMinutes": 10,
+      "contentMd": "> 涉及功能：工作流、打组、资产管理、智能引用\n\n本节课让我们一起来「搭积木」，介绍从节点到工作流的基本创作思路。无论多么复杂的创作工程，本质上都是上下游节点的连接拼合，运用好工作流思路，搭配资产管理的好习惯，让你的创作过程行云流水。\n\n---\n\n## 什么是工作流？\n### **串联节点，一键驱动创作任务**\n\n基于画布上已有的节点，你可以将它们之间连线，自由搭建出所需要的「任务工作流」，就像把积木块搭在一起，方便之后快速进行复杂任务的一键自动执行或者分发。\n\n连线方向表示上下游关系，好比管道，可以定向地传递信息。\n\n### **基础工作流 Showcase**\n\n这是一个简单的工作流，从文本、图片节点到视频节点，先参考指定风格生成图片，再让它动起来。\n\n<p = align=\"center\">\n<img src=\"/assets/c9f805d4aa160ed3.webp\" width=\"80%\" />\n\n<p = align=\"center\">\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790080414914.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n---\n\n## 如何搭建工作流？\n### **以「参考生图→图转视频」为例**\n### **1. 风格参考图上传**\n\n选择画布上你想要参考的图片，从右侧拉线，新建一个「图片节点」，参考图会自动上传至新节点的生成器中。\n\n<p = align=\"center\">\n<img src=\"/assets/ae99fa711bfa20e7.webp\" width=\"80%\" />\n\n\n### **2. 角色设定接入**\n\n将准备好的角色设定信息填入一个文本节点，然后将其连接至上一步的新节点，表示该信息会作为生成器提示词的一部分。\n\n<p = align=\"center\">\n<img src=\"/assets/896f1885e65201ea.webp\" width=\"80%\" />\n\n\n### **3. 图像生成**\n\n在图像生成器中输入你的生图需求。\n\n> 示例「参考图1的画面风格，生成一张图片」\n\n选择模型、比例、张数、画质等参数，点击生成，生成内容会在当前节点呈现。\n\n> 如果你不想有这么多文字节点，也可以直接将角色设定写进图片节点输入框，LibTV会保留图片生成的全部痕迹，可以随时返回查看。\n\n<p = align=\"center\">\n<img src=\"/assets/6621e9f65e39467a.webp\" width=\"80%\" />\n\n<p = align=\"center\">\n<img src=\"/assets/c930ce2a882fa0b3.webp\" width=\"80%\" />\n\n\n### **4. 视频生成**\n\n从生成好的图片右侧拉线新建「视频节点」，这张图片会被自动用作参考，再补充输入画面动态提示词，选择模型、比例、个数、画质、时长等参数。\n\n点击生成，你就完成了从参考图到视频的创作。\n\n<p = align=\"center\">\n<img src=\"/assets/2690efab44b776cc.webp\" width=\"80%\" />\n\n\n<p = align=\"center\">\n<img src=\"/assets/af02bdc4c685c4ee.webp\" width=\"80%\" />\n\n---\n\n## 对工作流进行操作\n### **组合、拆解你的「积木块」**\n利用好打组、创建工作流等功能，便捷批量化操作画布上的节点。\n## **打组**\n- 对于搭建好的工作流，按住鼠标右键并拖动，多选节点后点击右键进行打组；也可使用打组快捷键Ctrl / Cmd+G。\n- 打组后的节点们可作为一个整体，被同时移动或者执行。\n- 分镜表暂不支持打组功能。\n\n\n<p = align=\"center\">\n<img src=\"/assets/78f16ac35df79b1b.webp\" width=\"80%\" />\n\n\n## 创建工作流\n\n- 对于已打组的工作流，可以点击「添加到工具箱」将其保存，后续可在下方栏的「工具箱」中查看和调用。\n- 分镜表暂不支持创建工作流操作。\n\n<p = align=\"center\">\n<img src=\"/assets/451bece33893b6fd.webp\" width=\"80%\" />\n\n---\n\n## 资产管理\n### 保存好你的「积木块」\n画布上的每一张图片、每一段视频、每一个有创作价值的素材，都可以作为「**资产**」在LibTV中得到妥善保存，随时复用。\n### **如何获得与使用资产？**\n\n- 右键点击节点，选择「保存到我的资产」，输入名称、位置和标签来做好分类。\n- 点击画布左下角「资产管理」，即可查看当前画布全部节点，以及你所拥有的全部资产。\n- 点击资产来查看来源信息、生成信息等，或者添加到画布进行复用。\n\n \n <p = align=\"center\">\n<img src=\"/assets/633bc86c67982496.webp\" width=\"80%\" />\n\n <p = align=\"center\">\n<img src=\"/assets/fd796a8be35c240a.webp\" width=\"50%\" />\n\n---\n\n## 智能引用 AutoLink \n### **功能简介丨锚定参考，辅助内容填充**\n\n输入提示词后，实时将相关参考素材进行**智能@引用**到对应的提示词后，让你更便捷高效在提示词中指定参考，搭建更清晰的工作流，提升模型输出稳定性。\n\n<p = align=\"center\">\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790080733430.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n### **使用方式**\n\n- 确保图片/视频节点已和上游用作参考的节点相连，也即该节点中有参考内容输入。\n- 输入提示词，若提示词中有与参考图相关的关键词，系统会自动在对应位置预置一个引用标签。\n\n> 提示词与图片、视频、音频节点名称一致或相似时，会触发自动匹配。按照图片1、2、3 等的数字顺序描述时，也会触发自动匹配。\n\n- 「点击」或按「Tab键」确认单次引用，Shift Tab 全部引用；继续打字或者点击其他文字忽略引用。\n- 确认后，标签引用对象支持切换。\n\n\n<p = align=\"center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790080758344.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n<p = align=\"center\">\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790080776173.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n  ",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=9743924&projectId=47ad3c4cd8d94a2abf1110fd33f2d274&isTutorial=true",
+      "cover": "/assets/3aec1090a3775010.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d2362f7a7267bf58f4cb881b2e07",
+        "title": "「基础功能」画布与节点"
+      },
+      "next": {
+        "articleUuid": "01a0d23d8e597ae581acd80e36ef576b",
+        "title": "「实用工具」斜杠快捷功能"
+      }
+    },
+    "01a0d23d8e597ae581acd80e36ef576b": {
+      "articleUuid": "01a0d23d8e597ae581acd80e36ef576b",
+      "title": "「实用工具」斜杠快捷功能",
+      "summary": "涉及功能：故事板、剧情推演、多机位、设定图、人像调节",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能"
+      ],
+      "readingMinutes": 7,
+      "contentMd": "> 涉及功能：故事板、剧情推演、多机位、设定图、人像调节\n\nSlash即为键盘上的“/”键。本节课将介绍Slash键可以唤起的快捷窗口，提供多机位、剧情推演、角色三视图、画面推演、故事板、人像调节等实用预设功能，帮助你更快更好地编辑图像。\n\n---\n\n## 什么是 Slash 预设？\n### 轻敲斜杠，解锁创作工具箱\n\n- 可以自由选用的快捷功能，无需额外提示词输入，即可自动执行成套操作，产出规范化的结果。\n- 在图片节点中，「输入框输入 \"/\" 」或者点击生成器下方「预设」即可快速调起功能面板，点击你想要的功能。\n- 多数能力支持输入「文本」/「文本+图片」/「图片」，让生成更可控。\n\n  <p align ='center'>\n  <img src=\"/assets/58c44070900b1fc6.webp\" width=\"80%\" />\n\n---\n\n## 多机位九宫格\n### 一屏多镜，纵览多样取景\n\n基于已有图片生成多路镜头画面，同步预览多组取景，搭配「宫格」切分功能，高效对比与获取镜头表达。\n\n<p align ='center'>\n<img src=\"/assets/15f3d68b76d2c9e5.webp\" width=\"80%\" />\n\n---\n\n## 剧情推演四宫格\n\n一次性生成四段连贯画面，分镜排布叙事段落，快速推演故事走向。\n\n<p align ='center'>\n<img src=\"/assets/89cc4e860a2c0b31.webp\" width=\"80%\" />\n\n\n---\n\n## 25宫格连贯分镜\n\n量大管饱，高密度生成连续画面，高效铺展完整连贯的镜头叙事序列。\n\n<p align ='center'>\n<img src=\"/assets/6939f1477e59eb65.webp\" width=\"80%\" />\n\n\n---\n\n## 电影级光影矫正\n\n智能优化画面明暗光影质感，一键调出院线级视觉氛围。\n\n<p align ='center'>\n\n<img src=\"/assets/655c651ea61d2544.webp\" width=\"80%\" />\n\n---\n\n## 角色三视图生成\n\n一键产出角色正、侧、背标准视图，精准落地角色建模与设计参考。\n\n<p align ='center'>\n<img src=\"/assets/afc90ac5a76fff72.webp\" width=\"80%\" />\n\n\n---\n\n## 画面推演-3秒后\n\n基于当前画面智能顺延推演，预判生成三秒后的动态画面变化。\n\n<p align ='center'>\n<img src=\"/assets/aa7f6b5cab780113.webp\" width=\"80%\" />\n\n\n---\n\n## 画面推演-5秒前\n\n反向回溯画面动态，还原生成五秒前的前置画面状态。\n\n<p align ='center'>\n<img src=\"/assets/17e54211913ae244.webp\" width=\"80%\" />\n\n\n---\n\n## 角色设定图\n### 立绘成型，守住人物特征\n\n一键生成标准化角色立绘设定，定格人物风格、造型与细节特征。\n\n<p align ='center'>\n<img src=\"/assets/24398ee47f30ceee.webp\" width=\"80%\" />\n\n\n---\n\n## 故事板\n\n将 10‑15 秒剧情整理为可直接用于视频生成的连续分镜，拆解人物表演、动作、镜头语言与画面衔接，适配短剧、漫剧、广告片的前期策划。\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/5cbf1be7a28cf848.webp\" style=\"width:80%\" /></p>\n\n\n\n---\n\n## 调度故事板\n\n将 10‑15 秒剧情整理为带动作、视线、运镜与衔接提示的手绘分镜，补充人物走位、机位调度，为视频生成提供完整拍摄规划。\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/ad2041261386f65d.webp\" style=\"width:80%\" /></p>\n\n\n---\n\n## 人像调节专项\n### 刻画人物，形与感皆可调控\n\n专为人像打造的调节功能，分为质感调节和情绪调节两部分内容。\n\n### 质感调节\n\n点击生成器中「**人像质感调节**」右侧的选项按钮，可以设置人景融合、光影融合、皮肤、纹理、锐度等参数。\n\n- **降低 AI 感**  \n优化过度磨皮、塑料感皮肤、五官边缘过硬、纹理过假等问题，让人物看起来更真实。\n- **优化人像质感**  \n支持对皮肤质感、画面纹理、清晰度进行调节，保留自然肤质、毛发细节和真实的面部层次。\n- **提升人景融合**  \n让人物与背景在色温、清晰度、边缘过渡上更自然，减少“人物像贴上去”的感觉。\n- **优化光影融合**  \n根据场景光源调整脸部和身体光影，让人物受光、阴影、氛围与背景更一致。\n\n  <p align ='center'>\n  <img src=\"/assets/284ec84a4b7dc681.webp\" width=\"80%\" />\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/0dfd897338dc9dff.webp\" style=\"width:80%\" /></p>\n\n\n### **情绪调节**\n\n可在多人图中选择指定人物进行表情调节，但单次仅能修改一人的表情。\n功能入口在已有内容的图片节点的**上方工具栏**「**人像质感调节-情绪调节**」\n\n- 点击右侧点位板，可以自然且精确地改变人物表情，除情绪表情外，其他内容均会与原图保持一致。\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/ff09a3bf3edd4e27.webp\" style=\"width:80%\" /></p>\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/c52f6609f28dfc11.webp\" style=\"width:80%\" /></p>\n\n\n\n\n\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=9756811&projectId=bccece1a6fb4414ba6ff64641b3453ed&isTutorial=true",
+      "cover": "/assets/66d2223d7cec53ac.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d23c16477468aeb9a41755b6d420",
+        "title": "「基础功能」工作流"
+      },
+      "next": {
+        "articleUuid": "01a0d23eb3d97128872f196e1f56ec34",
+        "title": "「实用工具」图片节点功能"
+      }
+    },
+    "01a0d2463a39705baeffb9070227dc83": {
+      "articleUuid": "01a0d2463a39705baeffb9070227dc83",
+      "title": "「进阶辅助」脚本节点",
+      "summary": "涉及功能：脚本节点、批量产出分镜和视频",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能",
+        "视频功能"
+      ],
+      "readingMinutes": 12,
+      "contentMd": "> 涉及功能：脚本节点、批量产出分镜和视频\n\n想要让写好的脚本快速变为可视化的连贯分镜图？想要批量产出视频片段，免去反复手动\"抽卡\"的繁琐？想要节省连线步骤一劳永逸地稳定复用角色资产？脚本节点功能都可以帮你搞定。\n\n本节课将介绍升级后的脚本节点，带你走通从剧本拆解、资产提取到批量产出分镜与成片素材的完整流程，大幅提升你的内容创作效率。\n\n---\n\n## 功能概述\n### 付想于 AI，循参造镜。\n\n- 从“基础脚本工具”升级到“分镜故事板脚本工具”，可以更快完成完整流程：剧本拆解 → 角色/场景/道具资产提取 → 分镜脚本调整 → 批量生成分镜图 → 批量生成视频片段。\n- 适合流水漫、AI 短剧、动画短片、故事分镜等内容创作场景。\n\n---\n\n## 对比旧版，我们做出了哪些优化？\n\n- **资产化**：风格、角色、场景、道具等资产与脚本绑定并可被提示词引用。\n- **可编辑**：脚本的每一行、每一个字段、每一个资产都可以被修改并同步更新对应的提示词；脚本中的分镜支持新增、删除、调整顺序。\n- **可批量**：可自由选择生成范围、生成类型以及批量执行的模型类型。\n\n---\n\n## 如何使用脚本节点进行批量产出？\n\n## **1. 添加脚本节点**\n\n- 双击画布，或者打开底部的 \"+\"，选择「脚本 new」。\n- 你也可以先把剧本文本输入到文本节点里，再从节点拉出一条线，选择「脚本 new」。\n- 脚本节点的前置输入可以是剧本文本，或者角色设定、场景设定、风格等参考图。\n\n  <p align=\"center\">\n  <img src=\"/assets/65681f351f51d8e3.webp\" width=\"80%\" />\n\n\n  <p align=\"center\">\n  <img src=\"/assets/7410c03d374be5f3.webp\" width=\"80%\" />\n\n\n## **2. 先生成分镜故事板**\n\n- 将用作参考的**文本、图片节点与脚本节点连接**，或者直接在脚本节点输入框内输入剧本内容。\n- 选择合适的脚本拆解模型，推荐CVLM5.5 或 GVLM 3.1 。\n- 点击生成，可一键将剧本拆解为可编辑的分镜故事板，包括：\n\n  - 提取关键角色、场景、道具；\n  - 把剧本拆成结构化分镜，并整理每个分镜对应的画面信息；\n  - 为后续生图、生视频准备基础提示词。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/47b416c68f2a875a.webp\" style=\"width:80%\" /></p>\n\n\n## **3. 细化编辑脚本节点 ✨**\n\n脚本节点生成完成后，**不建议直接批量生图/视频，避免后续生成放大错误**。建议先检查分镜信息，管理好角色、场景、道具等资产，检查工作可以分为三步：\n\n### **确认镜头信息**\n- 每一行分镜都可新增、删除、调换顺序或标记颜色；脚本中的每个单元格都可单独编辑，你可以自由修改内容，输入@可以唤起资产卡片。\n\n  <p align=\"center\">\n  <img src=\"/assets/35f0c89c42c19c74.gif\" width=\"80%\" />\n\n\n### **确认资产信息**\n- 你可以将资产理解为特定人物/场景/道具的设定信息，作用是提升模型生成的一致性、稳定性。点击「准备资产」即可进入资产管理界面，按界面提示上传或生成各类参考图即可。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/dc9a6803c947a5c9.webp\" style=\"width:80%\" /></p>\n\n\n\n### **合成最终提示词**\n\n - 待镜头和资产信息都确认后，点击「待生成提示词」，可以根据分镜画面内容、资产关联情况、整体风格设定等合成最终用于视频生成的提示词。\n - 此处的提示词会进入下一环节的生成器，对某段提示词不满意时可以在生成器信息确认环节手动修改，暂**不建议在此处修改**。\n\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/cfb4321d7d6f15c0.webp\" style=\"width:80%\" /></p>\n\n\n## 4. 批量生成分镜图 / 视频\n### **批量生分镜图**\n\n- 确认镜头和资产信息并生成对应提示词后，可以选择批量生成分镜或者视频。\n\n \n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/58e82a8835cd3eac.webp\" style=\"width:80%\" /></p>\n\n\n\n- **先创建生成器**\n- 选择对应的镜头和模型后，点击「确认并创建生成器组」，会出现填充了提示词、资产连线、对应参数的生成器组。点击生成器可查看并编辑详情，例如微调提示词信息、调整单分镜生成参数等。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/8a70a80e22572110.webp\" style=\"width:80%\" /></p>\n\n\n- **再批量执行**\n- 确认生成器组信息无误后，点击「整组执行」进行批量生成。\n- 信息的流动是从脚本到生成器组的，在下游的生成器内修改信息，**不会影响**上游的脚本节点内容。\n\n \n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/8601ee5ca46bf95a.webp\" style=\"width:80%\" /></p>\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/dd32e94d3a6cd839.webp\" style=\"width:80%\" /></p>\n\n\n\n### **批量生成视频**\n\n- 步骤和批量生成分镜相同，先批量创建视频生成器，再统一执行。\n- 目前**暂不支持分镜图直接转视频**，可以手动连接参考分镜图与视频生成器，提升生成准确度。\n- 视频生成完成后，可以继续把片段合成为完整视频。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/029deebd50678052.webp\" style=\"width:80%\" /></p>\n\n\n  <p align=\"center\">\n  <img src=\"/assets/6be7992486097c46.webp\" width=\"80%\" />\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10063432&projectId=b31c60973a3242f09b0cf96bf25b2e73&isTutorial=true",
+      "cover": "/assets/b5bdf173a5769c42.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d2456af572bd8354dce139d68872",
+        "title": "「进阶辅助」视频生成器"
+      },
+      "next": {
+        "articleUuid": "01a0d24709f37af79589c9dbaa5303f1",
+        "title": "「进阶辅助」3D导演台"
+      }
+    },
+    "01a0d247fa5572ce981ebfa79cd86fbc": {
+      "articleUuid": "01a0d247fa5572ce981ebfa79cd86fbc",
+      "title": "「热点速看」Seedance功能介绍",
+      "summary": "涉及功能：Seedance 2.5模型能力、真人素材使用、专属提示词优化",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "视频功能"
+      ],
+      "readingMinutes": 10,
+      "contentMd": "> 涉及功能：Seedance 2.5模型能力、真人素材使用、专属提示词优化\n\n---\n\n## Seedance 2.5 🔥\n### 最新视频模型，支持超长5min视频直出\n\n**功能亮点**：一键直出**5分钟**成片，成片完成度极高，并支持查看过程片段，画布剪辑等精细化调优。\n\n**使用入口**：新建节点生成器，选择「5分钟超长视频」\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/5427c1091219646d.webp\" style=\"width:80%\" /></p>\n\n\n---\n\n## **使用真人素材时，你需要注意这些**\n\n### 素材审核标准\n\n- 正常的个人、原创的影视角色素材在通过合规校验后即可正常使用。\n- 版权内容、明星、公众人物之类的素材有严格限制，通常会被拦截。\n- 通过新增的「人像授权」能力，可将通过检测的人物设定加入角色库，随时复用。\n\n### **真人素材有哪些使用场景？**\n\n- AI演员出镜\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790230863655.mp4\" controls preload=\"metadata\" style=\"width:60%\"></video></p>\n\n   <p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790230888148.mp4\" controls preload=\"metadata\" style=\"width:60%\"></video></p>\n\n- 虚拟主播讲解\n\n> 把 @视频1 中 播报的男生换成 @图片1 中的女生\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/e12d380727ffe7b3.webp\" style=\"width:60%\" /></p>\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790230996139.mp4\" controls preload=\"metadata\" style=\"width:60%\"></video></p>\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790231051901.mp4\" controls preload=\"metadata\" style=\"width:60%\"></video></p>\n\n\n- 数字分身创作\n\n> 需对角色完成人脸授权，创建为数字分身后，可作为角色创建视频\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/6a9e7f720d6fa62d.webp\" style=\"width:60%\" /></p>\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><video src=\"https://liblibai-online.liblib.cloud/academy/video/1790231109771.mp4\" controls preload=\"metadata\" style=\"width:60%\"></video></p>\n\n\n## 如何进行真人素材合规校验？\n### 释放真人素材鲜活表现力\n\n**1. 常规素材校验**\n\n「单素材」校验\n\n- 上传或生成各种素材后，点击「**Seedance 2.0合规校验**」，等待审核完成，即可使用Seedance 2.0生成写实真人视频内容。\n- 校验通过后，会有专属标识。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/e4f868edd97a0c4e.webp\" style=\"width:80%\" /></p>\n\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/c2b9bfadf10c87cf.webp\" style=\"width:80%\" /></p>\n\n「多素材」批量校验\n\n- 视频生成器中选择 Seedance 2.0模型，**点击顶部「角色库」功能，进入素材库。**\n- 可批量上传素材进行核验，支持**本地上传/历史图库**上传，支持音频、视频和图像。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/b7452ad34951231a.webp\" style=\"width:80%\" /></p>\n\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/ac05983fa514e426.webp\" style=\"width:80%\" /></p>\n\n\n**2. 真人人像授权**\n\n- 点击视频节点中的角色库，选择「真人资产录入」或「真人人像」。\n- 手机扫码，需要真人完成识别检测进行授权，授权完成后角色创建。创建时注意要填写文件名称\n- 在创建好的真人文件夹中，上传对应真人的不同妆造图或三视图。\n\n  - **注意**💡：后台会进行图片和真人的比对，若比对为一个人，则审核成功，图片上方会有合规标记\n  - 若不是同一人，或图片中出现多人，则审核不通过，仍然无法使用此张图片生视频。\n  - 可以创建多个真人资产文件夹，记得写清楚文件夹的名称方便后续查找。\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/0ef632826eab6d50.webp\" style=\"width:80%\" /></p>\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/e07a772729f8fefd.webp\" style=\"width:80%\" /></p>\n\n\n\n  <p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/6b7494669281621e.webp\" style=\"width:80%\" /></p>\n\n---\n\n## Seedance 2.0 专属提示词优化\n### 简单一步，提升成片可靠度\n\n### **如何优化？**\n\n- 将你的提示词按官方优化改写为 Seedance 2.0 更容易执行的结构化提示词，降低\"模型不听指令\"的概率。\n- 适合多角色的复杂场景；视频时长较短时，可能无法完全执行优化后的扩充提示词，请适度选择\n\n### 如何使用？\n> 此功能仅在seedance2.0系列模型生效。\n\n- 找寻入口：进入视频节点下方，模型选择**seedance2.0**，提示词输入框下方可见。\n- 1. 输入提示词，先完成你的创作。\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/55edba3863ac1f81.webp\" style=\"width:60%\" /></p>\n\n\n\n- 2. 点击提示词优化按钮，剩下的事交给AI。\n\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/0f225de7edc48939.webp\" style=\"width:60%\" /></p>\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/09688dd0c82d3b56.webp\" style=\"width:60%\" /></p>\n\n\n- 3. 优化完成后再次点击按钮，查看优化后提示词，点击「填充到输入框」。\n\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/2a60ead5602b322f.webp\" style=\"width:60%\" /></p>\n\n\n<p style=\"text-align:center;display:flex;justify-content:center\"><img src=\"/assets/046845c27706929d.webp\" style=\"width:60%\" /></p>\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10080622&projectId=044a99f6b7ba464487499f4b07f1e949&isTutorial=true",
+      "cover": "/assets/9c6f967c9c102830.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d24709f37af79589c9dbaa5303f1",
+        "title": "「进阶辅助」3D导演台"
+      },
+      "next": null
+    },
+    "01a0d2456af572bd8354dce139d68872": {
+      "articleUuid": "01a0d2456af572bd8354dce139d68872",
+      "title": "「进阶辅助」视频生成器",
+      "summary": "涉及功能：视频主体库、运镜预设",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "视频功能"
+      ],
+      "readingMinutes": 5,
+      "contentMd": "> 涉及功能：视频主体库、运镜预设\n\n生成的视频前后不连贯？想让同一个角色在不同镜头中保持形象统一，或者让镜头按你的想法丝滑运动？视频生成器的进阶辅助功能都可以帮你搞定。\n\n本节课将介绍视频主体库与运镜预设功能，帮助你为角色建立稳定的数字分身，并为每个镜头配上恰到好处的运镜，让视频连贯又出彩。\n\n---\n\n## **视频主体库**\n### 一次锁定，多轮复用\n\n通过多张图片或单段视频创建一个可复用的主体身份，用于后续在支持的生成模型中调用，实现角色/商品/宠物/人物的跨次生成一致性。目前适用模型为Kling O3。\n\n### 如何创建主体？\n\n1. **进入界面**。右键图片或视频节点选择「**创建主体**」。\n\n   <p align=\"center\">\n   <img src=\"/assets/47ffb6a5c58de438.webp\" width=\"80%\" />\n\n\n   <p align=\"center\">\n   <img src=\"/assets/0d3ec63c50693de4.webp\" width=\"80%\" />\n\n\n2. **补全主体视图**。使用图片创建主体时，可以上传多张图片；使用视频创建主体时，仅支持单段视频。你也可以使用「智能补全」生成主体的其他视角图。\n\n   <p align=\"center\">\n   <img src=\"/assets/8846433006b526df.webp\" width=\"80%\" />\n\n3. **补全名称、音色与描述。**\n- 填写主体名称，为主体添加音色，可以使用本地上传或历史生成的音频、视频自动生成音色。\n- 填写描述时，内容不会只作为备注，也会被系统自动拼接到提示词中参与生成。你可以使用「智能生成」一键填充主体描述。\n\n  <p align=\"center\">\n  <img src=\"/assets/77a514626bd6d03d.webp\" width=\"80%\" />\n\n4. **使用主体**。创建好主体后，点击视频节点中的「主体」，选择你需要的主题，输入提示词后点击生成即可。\n\n   <p align=\"center\">\n   <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790165792929.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n---\n\n## 运镜\n### 随心调度，编制动态\n\n提供二十余种运镜方式预设，高效、便捷、专业的运镜控制方式。\n\n### 如何使用？\n\n### 官方预设\n\n- 点击视频节点的「运镜」，进入运镜预设库，点击你需要的预设，补充提示词后生成即可。\n- 鼠标悬停在预设上，点击「★」即可收藏，再次点击可取消，收藏后预设会保存在「我的收藏」中，方便快捷选用。\n\n  <p align=\"center\">\n  <img src=\"/assets/7b4ef8d2ea5d43db.webp\" width=\"80%\" />\n\n\n### 自定义运镜\n\n- 点击运镜界面的「自定义」，输入运镜提示词来自定义运镜，便于后续复用，省去反复输入运镜提示词的繁琐。\n\n  <p align=\"center\">\n  <img src=\"/assets/85b371b446ce1d24.webp\" width=\"80%\" />\n\n## 运镜控制使用小技巧\n\n- 不同的运镜有不同的应用场景，运镜需要和提示词已有画面描述相适应，否则会导致冲突失效。例如，“高空航拍”运镜会和画面中的“近距离、特写”等描述发生冲突。\n- 为适应不同的模型和场景，预设提示词普遍比较简单和宽泛，可能出现不同模型表现不一，画面复杂、主体动作幅度大时运镜效果不佳的情况。\n- 在运镜预设之外，额外添加镜头与主体、环境的关系描述，使用“首先、然后、最后”等词语有序描述运镜，有助于模型处理效果提升。\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10054826&projectId=8700c63b7f0742149bee5ba519b3d869&isTutorial=true",
+      "cover": "/assets/1c4254c6a63d013d.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d2449b4d746f8330a4e55ae1be11",
+        "title": "「进阶辅助」图像生成器"
+      },
+      "next": {
+        "articleUuid": "01a0d2463a39705baeffb9070227dc83",
+        "title": "「进阶辅助」脚本节点"
+      }
+    },
+    "01a0d2362f7a7267bf58f4cb881b2e07": {
+      "articleUuid": "01a0d2362f7a7267bf58f4cb881b2e07",
+      "title": "「基础功能」画布与节点",
+      "summary": "涉及功能：画布，文本、图片、视频、音频节点",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "文字功能",
+        "图片功能",
+        "视频功能",
+        "音频功能"
+      ],
+      "readingMinutes": 15,
+      "contentMd": "> 涉及功能：画布，文本、图片、视频、音频节点\n\n\n欢迎来到 LibTV！这节课将带你认识创作的核心阵地——无限画布，了解画布的基本操作方式，并逐一认识文本、图片、视频、音频四大基础节点。\n\n**把 AI 创作理解为「搭积木」的过程，「画布」就是你搭积木的桌面，而「节点」就是一个个积木块。**\n\n学完这一课，你就能独立在画布上创建和管理自己的创作素材，为后续的工作流搭建打下基础。\n\n---\n\n## 什么是画布？\n\n画布是你在 LibTV 中进行所有创作的主战场。与传统文档不同，画布没有固定的页面边界，你可以自由地在任意位置放置内容、拖动排列，让灵感不受空间限制。在画布上，你主要会做两件事：\n\n- **新建节点**：画布支持**文本、图片、视频、音频** 4 种基本节点，你可以根据创作需要随时添加对应类型的节点来承载内容。\n- **节点编辑与连接**：你可以对任意节点进行修改、删除、复制复用，还可以通过连线建立不同节点之间的关系，让内容按照你的创作逻辑串联起来。\n\n<p align=\"center\">\n<img src=\"/assets/1b2b3cbad0ed8304.webp\" width=\"80%\" />\n\n\n---\n\n## 新建画布\n\n第一次进入 LibTV，你可以从首页快速开始创作。在「最新项目」区域中点击「开始创作」按钮，系统会自动为你创建一个全新的项目，并直接进入无限画布操作界面。\n\n---\n\n## 管理全部项目\n\n如果你想查看或管理之前创建的所有项目，可以通过以下两种方式进入「全部项目」页面：\n\n- 官方首页 - 最近项目 - 右侧「查看全部」\n- 项目画布 - 左上角项目菜单栏 - 「全部项目」\n\n---\n\n## 四大画布功能\n\n无限画布上有4大功能模块：**「项目菜单栏」「画布下方栏」「个人中心」和「小地图导航」**\n\n### **项目菜单栏**\n\n一个无限画布就是一个项目，点击画布左上角的 Logo 会弹出「项目菜单栏」。在这里，你可以浏览、管理自己的所有项目，创建新项目，删除当前项目。\n\n- 双击画布名称，可以进行画布重命名。\n\n<p align=\"center\">\n<img src=\"/assets/17ddcdb7453066b6.webp\" width=\"30%\" />\n\n### **画布下方栏**\n\n画布下方栏设有「**添加**」「**移动/抓手**」「**工具箱**」「**素材库**」「**角色库**」「**生成历史**」「**教程**」7大功能。\n\n\n<p align=\"center\">\n<img src=\"/assets/64b4f95b9b4dd25b.webp\" width=\"50%\" />\n</p>\n\n- **添加**：新建各类型节点，或上传本地资源到画布。\n- **移动/抓手**：切换鼠标和画布交互的形式。\n- **工具箱**：查看已经创建为资产的工作流，点击可将整套工作流应用到画布。\n- **素材库**：查看并使用风格和特效模板。\n- **角色库**：查看并使用完整角色外观预设。\n- **生成历史**：查看并使用在 LibTV 内生成的所有的图片、视频、音频等。\n- **教程**：跳转至客服和使用手册文档。\n\n### **个人中心**\n\n画布右上角是用户相关功能，包括「**发布与分享**」「**积分超市**」「**会员中心**」「**积分消耗**」「**个人中心**」。\n\n<p align=\"center\">\n<img src=\"/assets/35fc80c020a0e802.webp\" width=\"50%\" />\n\n- **发布与分享**\n\n  - 发布：可以将当前画布以及对应的视频作品发布到LibTV社区首页，发布且通过审核后，会在首页曝光展示。\n  - 分享：可以将当前的画布分享给其他人，对方可以看见当前画布以及后续在画布上操作的所有内容\n- **积分超市**：单独购买积分卡或模型卡。\n- **会员中心**：查看会员购买信息，了解促销优惠。\n- **积分消耗**：直观展示剩余积分额度。\n- **个人中心**：查看各类订阅信息及系统通知，开具发票，管理个人账户。\n\n### **小地图导航**\n\n当画布内容较多时，点击画布左下角的地图图标，在弹出的「小地图」中查看当前画布节点的全局分布情况\n\n- 鼠标拖动「小地图」中的高亮框，可快速让画布视图聚焦在对应位置\n- 百分比数值表示当前画布缩放比例，滚动鼠标滑轮以放大/缩小画布。\n\n<p align=\"center\">\n<img src=\"/assets/260bfeefb143ed06.webp\" width=\"30%\" />\n\n---\n\n## 认识四大基础节点\n\n## **文本节点 📝**\n\n**文本节点是你在画布上承载和展示文字内容的基础单元**。无论是一段剧本、一句提示词，还是一篇文案，都可以放在文本节点中。\n\n<p align=\"center\">\n<img src=\"/assets/b02f25ef633ce1da.webp\" width=\"80%\" />\n\n\n### **获取文本内容**\n### **撷取所想，亦可交由 AI 落笔成文**\n\n文本节点支持两种不同的内容获取方式，你可以根据创作需求灵活选择：\n\n**手动输入**\n\n- 如果你已经有写好的文案或剧本，可以选择「自己编写内容」，然后直接在节点框内手动输入，或者从外部复制粘贴文本内容。这种方式适合你已经明确知道要写什么的场景。\n\n  <p align=\"center\">\n  <img src=\"/assets/664de0d426fb9a03.webp\" width=\"80%\" />\n\n\n**语言大模型生成**\n\n- 文本生成器接入了顶尖大语言模型，你可以输入自然语言需求或结构化提示词，让语言模型完成对应的文本生成任务，生成结果会展示在「文本节点框」中。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790072955479.MP4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n---\n\n## 图片节点 🎨\n\n**图片节点是你在画布上承载和展示视觉素材的核心单元**。无论是角色设定图、场景参考图，还是 AI 生成的成品图，都可以放在图片节点中。\n\n<p align=\"center\">\n<img src=\"/assets/45c379da2bd00e9b.webp\" width=\"80%\" />\n\n\n### **获取图片内容**\n### **随心上传，亦可交由 AI 构筑画面**\n\n图片节点支持两种不同的内容获取方式，你可以根据创作需求灵活选择：\n\n**手动上传**\n\n- 如果你已经有准备好的图片素材，可以直接从电脑文件夹拖入画布，或者在画布空白处点击鼠标右键，选择「上传」，从文件选择器中选取图片文件。\n\n  <p align=\"center\">\n  <img src=\"/assets/679afb88603d9530.webp\" width=\"80%\" />\n\n\n**图像模型生成**\n\n- 图片生成器中接入了多款主流大模型，你可以根据风格需求选择合适的模型。\n- 支持**文生图、图生图、多图参考融合、图像编辑**等丰富的创作任务，满足不同场景的图片需求。\n- 生成完成后，结果会自动展示在「图片节点框」中，你可以直接查看、编辑和继续使用。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790072998444.MP4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n---\n\n## **视频节点 🎥**\n\n**视频节点是你在画布上承载和展示动态影像的核心单元**。无论是参考视频素材，还是 AI 生成的视频片段，都可以放在视频节点中。\n\n<p align=\"center\">\n<img src=\"/assets/5080093a9937727b.webp\" width=\"80%\" />\n\n\n### **获取视频内容**\n### **汇入影像，亦可交由 AI 演绎动态**\n\n视频节点支持两种不同的内容获取方式，你可以根据创作需求灵活选择：\n\n**手动上传**\n\n- 如果你已经有准备好的视频素材，可以直接从电脑文件夹拖入画布，或者在画布空白处点击鼠标右键，选择「上传」，从文件选择器中选取视频文件。\n\n  <p align=\"center\">\n  <img src=\"/assets/7e67abe03f9065fc.webp\" width=\"80%\" />\n\n**视频模型生成**\n\n- 视频生成器中接入了多款顶级视频模型，你可以根据风格效果和成本需求选择合适的模型。\n- 生成完成后，结果会自动展示在「视频节点框」中，你可以直接预览、编辑和继续使用。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790073103546.MP4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n- 视频生成有多种方式，生成后也可以进行编辑、续写等丰富的创作操作，具体操作可以浏览「**实用工具丨视频节点功能**」一课。\n  - **文生视频**：输入一段文字提示词，直接生成视频。\n  - **图生视频**：输入参考图和提示词，根据图片和文字内容生成视频。\n  - **首尾帧控制**：输入两张图片分别作为首帧和尾帧，补充提示词，生成视频会以首尾帧的画面分别为开头和结尾。\n  - **多模态参考生视频**：输入图片、文字、视频、音频等参考信息，有效控制视频生成的效果，适合对视频结果有明确预期的情况。\n\n  <p align=\"center\"> \n   <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790073120147.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n---\n\n## 音频节点 🎵\n\n**音频节点是你在画布上承载和展示声音素材的核心单元**。无论是背景音乐、音效，还是 AI 生成的语音，都可以放在音频节点中。\n\n<p align=\"center\">\n<img src=\"/assets/61490b57b65c68ae.webp\" width=\"80%\" />\n\n\n### **获取音频内容**\n### **收录声息，亦可交由 AI 赋以声律**\n\n音频节点支持两种不同的内容获取方式，你可以根据创作需求灵活选择：\n\n**手动上传**\n\n- 如果你已经有准备好的音频素材，可以直接从电脑文件夹拖入画布，或者在画布空白处点击鼠标右键，选择「上传」，从文件选择器中选取音频文件。\n\n  <p align=\"center\">\n  <img src=\"/assets/4efebea42ad658da.webp\" width=\"80%\" />\n\n**音频模型生成**\n\n- 支持文本生成音乐、音效，以及文字转语音等多种音频创作能力，满足不同场景的声音需求。\n- 生成完成后，结果会自动展示在音频节点中，你可以直接播放、预览和继续使用。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790073178581.MP4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=9738171&projectId=95c6c3836bd64483a911e3c43c3ce108&isTutorial=true",
+      "cover": "/assets/2f20834b40e29ae1.webp",
+      "coverVideo": "",
+      "prev": null,
+      "next": {
+        "articleUuid": "01a0d23c16477468aeb9a41755b6d420",
+        "title": "「基础功能」工作流"
+      }
+    },
+    "01a0d23eb3d97128872f196e1f56ec34": {
+      "articleUuid": "01a0d23eb3d97128872f196e1f56ec34",
+      "title": "「实用工具」图片节点功能",
+      "summary": "涉及功能：全景、多角度、打光、九宫格、图像基础编辑、标注、分镜组",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能"
+      ],
+      "readingMinutes": 15,
+      "contentMd": "> 涉及功能：全景、多角度、打光、九宫格、图像基础编辑、标注、分镜组\n\n对生成图片的景别不满意？想要获得同一场景的更多机位？亦或是想要提升画面的光影质感？图片节点功能都可以帮你搞定。\n\n本节课将介绍图片节点下的各类预设工具，涵盖全景生成、多角度视图、光影打光、基础编辑等能力，带你快速完成图像创作与画面调整。\n\n---\n\n## 如何使用图片工具？\n\n「图片工具栏」位于图片节点顶部，选中已填充了内容的图像节点时会自动弹出，点击对应功能即可使用，下面让我们按顺序认识它们。\n\n  <p align ='center'>\n  <img src=\"/assets/b0f588c7fc3448c7.webp\" width=\"80%\" />\n\n---\n\n## 全景720°\n### 构筑环绕空间，尽览场景细节\n\n可通过文本或参考图生成 720° 全景画面，可以在其中自由浏览，还能快速截取场景快照，让场景一致性的把控更简单精准。\n\n   <p align ='center'>\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790133857649.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n### **为实现较好效果，请注意这些**\n\n- 生成空旷的、无明确物体做参考的户外场景，如草原、沙漠、大海时，可能出现全景特征不明显的问题。\n- 模型生成存在不可避免的随机性：\n\n  - 偶然出现全景图特征不明显的问题，可通过再次生成解决；\n  - 闭合处有缝、空间轻微扭曲等问题无法完全避免，但对后续用作参考生成来说影响不大；\n  - 可在截图后，使用图片模型进行二次修复处理。\n\n### **如何使用？**\n\n**入口所在**\n\n- 点击图像节点顶部菜单栏「全景」或者点击图像节点下方预设「720°全景」。\n- 可以输入额外的参考图和提示词描述你的需求。\n\n   <p align ='center'>\n  <img src=\"/assets/33197e8096de37ef.webp\" width=\"80%\" />\n\n   <p align ='center'>\n  <img src=\"/assets/4373196c4faa0f19.webp\" width=\"80%\" />\n\n\n**生成全景图后可以做哪些？**\n\n- 直接在全景图上拖动鼠标，即可全方位浏览全景图。\n   <p align ='center'>\n  <img src=\"/assets/ddf57c8632b3a36f.webp\" width=\"80%\" />\n\n- **视角截图**：自动截取当前显示角度或预设角度的画面，可用作后续生图生视频的参考。\n   <p align ='center'>\n  <img src=\"/assets/c39b031da6b92b7b.webp\" width=\"80%\" />\n\n- **构图参考线**：用于辅助构图。\n   <p align ='center'>\n  <img src=\"/assets/25ab42fa01820958.webp\" width=\"80%\" />\n\n - **重置视角**：回到全景图初始角度。\n   <p align ='center'>\n    <img src=\"/assets/b0dc849c29bd9198.webp\" width=\"80%\" />\n\n\n\n---\n\n## **多角度**\n### **摄像机随你动**\n\n- 选择你需要的视角，以原图作为参考，重构出全新视点下的主体画面，获得多机位素材，方便后续分镜与生成参考。\n\n  <p align ='center'>\n  <img src=\"/assets/dcc66c0222646e29.webp\" width=\"80%\" />\n\n### 如何使用？\n\n**相机视角设置**\n\n- **三维网格坐标球**：以鼠标拖动相机图标，或者通过坐标球周围的四个箭头图标进行调节。\n- **数值滑块**：用鼠标拖动滑块调节。\n\n\n  <p align ='center'>\n  <img src=\"/assets/6d8fb11041331b9c.webp\" width=\"80%\" />\n\n\n**提示词辅助**\n\n- 开启「提示词」选项，可以额外输入提示词，优化视角生成效果。\n\n  <p align ='center'>\n  <img src=\"/assets/fa113035ea1f7677.webp\" width=\"80%\" />\n> 输入\"极度特写镜头，广角镜头，边缘带有鱼眼畸变效果\"，可以在指定拍摄视角之外添加\"鱼眼镜头\"效果。\n\n**预设视角**\n\n- 一键直出同款视角，点击顶部视角预设选项，可以直接加载对应的相机参数，点击生成即可。\n\n   <p align ='center'>\n   <img src=\"/assets/ee761b540998e5bb.webp\" width=\"80%\" />\n\n---\n\n## **打光**\n### **灯光就位！**\n\n自由调节图片的打光角度、光源颜色、画面亮度，还可以增加轮廓光，依靠光影塑造画面质感，烘托情绪传达。\n\n\n  <p align ='center'>\n  <img src=\"/assets/e4be8a178e91970b.webp\" width=\"80%\" />\n\n\n### 如何使用？\n\n**三维坐标球**\n\n- 支持通过**鼠标拖动**设置打光角度，主光和轮廓光都需要手动开启。\n- 轮廓光开启后，主光不支持设置在轮廓光背光点范围内，否则轮廓光无法使用。\n\n  <p align ='center'>\n  <img src=\"/assets/7445a52df3b527c4.webp\" width=\"80%\" />\n\n\n**亮度**\n\n- 用于调节画面的亮度，操作滑块后其变成蓝色，才表示生效。\n- 最低档10%可营造暗调氛围，最高档100%将形成过曝效果。\n\n  <p align ='center'>\n  <img src=\"/assets/2a957cbd9b54c3ab.webp\" width=\"80%\" />\n\n\n**颜色**\n\n- 通过调色板选色，用于控制**主光源颜色。**\n- 默认无色值，可点击调出调色板，进行颜色设置。\n\n  <p align ='center'>\n  <img src=\"/assets/757e41dc73a2f577.webp\" width=\"80%\" />\n\n**智能模式**\n\n- 需要手动开启，支持通过提示词或参考图快速实现想要的打光效果。\n- **提示词**：你可以简述想要的打光效果、情绪氛围或者画面色调。\n\n  > 例如，输入\"让画面拥有《赛博朋克2077》同款**打光方式**和**画面质感**\"，或者\n  > 输入\"让画面氛围变得更加绝望、压抑\"\n\n- **参考图**：上传一张打光参考图，无需提示词，可以直接得到想要的打光氛围。\n- **打光预设**：官方提供6种打光预设，点击后会加载对应的参数，直接点击生成即可。\n\n  <p align ='center'>\n  <img src=\"/assets/30d55b5283af7750.webp\" width=\"80%\" />\n\n  <p align ='center'>\n  <img src=\"/assets/00a7094c0f2bb5ff.webp\" width=\"80%\" />\n\n---\n\n## 九宫格\n\n功能和「实用工具丨斜杠快捷功能」中的作用相同，可以前往查看。\n\n---\n\n## 图像基础编辑\n\n点击「高清」，下拉菜单中包括多种基础编辑功能。\n\n- **高清放大**：对图像进行多倍高清放大处理，可选通用、低分辨率、3D动画、高保真、文本优化5种模式。\n- **扩图**：基于当前图像向外扩展，可自定图像分辨率和生成张数。\n- **重绘**：使用画笔涂抹或选取图像中需要修改的部分，使用提示词进行修改。\n- **擦除**：使用画笔框选，选取图片特定部位加以擦除。\n- **抠图**：自动去除图片背景，保留主体。\n- **裁剪**：自由对图像进行裁切。\n\n---\n\n## 宫格切分\n\n专为多宫格图像推出的拆分功能。你可以自由提取对应的分镜切片，然后进行重新渲染或高清放大等操作。\n\n<p align ='center'>\n<img src=\"/assets/1796fba3f7e64c50.webp\" width=\"80%\" />\n\n<p align ='center'>\n<img src=\"/assets/6cedaf8571069115.webp\" width=\"80%\" />\n\n\n### 如何使用？\n\n- 点击「宫格」切分按键后，选择你需要的宫格份数。\n- 点击对应的宫格即可选中并批量导出并自动打组。\n- 用鼠标拖动分界线，可以自定义分割线位置，调节宫格比例。\n\n  <p align ='center'>\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790136406980.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n---\n\n## 标注\n### 巧思也需要落笔留痕\n\n- 使用涂鸦笔或框选工具在图像上圈定具体区域并添加文字。\n- 标注信息会被保存，可以直接让AI按照标注内容生成图像。\n- 在删除 / 修改画面内容时，推荐在提示词中添加\"修后不可以留下任何标注痕迹\"。\n\n  <p align ='center'>\n  <img src=\"/assets/818a3286fd14ddc6.webp\" width=\"80%\" />\n\n\n---\n\n## **旋转与镜像**\n\n- 点击上方菜单栏各个选项，输入旋转角度，或者直接用鼠标拖动旋转图片，对图片进行任意角度的旋转处理与镜像翻转。\n\n  <p align ='center'>\n  <img src=\"/assets/51a9989620044355.webp\" width=\"80%\" />\n\n\n  <p align ='center'>\n  <img src=\"/assets/922087416cfd25be.webp\" width=\"80%\" />\n\n---\n\n## **分镜组**\n### **镜头成组，随心排布**\n\n专为分镜设计的「打组」功能，可以将多张图片整合到规整的**宫格布局**中，进行统一查看、排序和管理。\n\n宫格的位置、数量和画幅都可以自定义，适合电影分镜组、故事板等使用场景。\n\n<p align ='center'>\n<video src=\"https://liblibai-online.liblib.cloud/academy/video/1790138147050.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n### **如何使用？**\n\n**多选图像节点创建**\n\n- 在画布上框选多张图片节点，点击顶部工具栏「打组」，选择「合并分镜组」，系统会根据图片数量自动生成合适宫格布局。\n\n  <p align ='center'>\n  <img src=\"/assets/0efba898bf0329b7.webp\" width=\"80%\" />\n\n**转换已有普通组**\n> 分镜组快捷键\n> **Command + Option + G** (Mac)\n> **Ctrl + Alt + G** (Windows)\n- 选中只包含图片节点的普通组，点击顶部工具栏「转分镜组」即可。\n   <p align ='center'>\n  <img src=\"/assets/0bfcd4ef052e267c.webp\" width=\"80%\" />\n\n\n\n\n\n**从「宫格切分」工具创建**\n\n- 使用「宫格切分」功能切分完成后，点击顶部工具栏「创建分镜组」。\n\n  <p align ='center'>\n  <img src=\"/assets/a3e1c626fd947c44.webp\" width=\"80%\" />\n\n\n### **分镜组工具栏有哪些功能？**\n\n- **比例切换**：修改每个宫格的画幅比。\n- **宫格数量**：修改组内宫格的行列布局；减少宫格时，多余的图像会自动解组并排列在右侧。\n- **拼接**：将所有分镜合并为一张新的大图；若分镜组内图像宽度不足，则导出时会被强制放大而非自动高清。\n- **序号**：启用后在每个分镜右下角显示序号。\n- **清空**：一键移除分镜组内所有图像节点及连线，请谨慎使用。\n- **转普通组**：将分镜组转回普通组，组内图片会自动排列。\n- **解组**：解散分镜组，各个图像恢复为独立节点。\n- **右键功能**：创建副本，删除、复制、粘贴等常规操作。\n\n  <p align ='center'>\n  <img src=\"/assets/3b497ed1c477ee89.webp\" width=\"80%\" />\n\n  <p align ='center'>\n  <img src=\"/assets/7aad9026c1aa9dcd.webp\" width=\"30%\" />\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=9763239&projectId=4116e86e540f425aa052c6c66b885f29&isTutorial=true",
+      "cover": "/assets/7be8a7cd78e75dff.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d23d8e597ae581acd80e36ef576b",
+        "title": "「实用工具」斜杠快捷功能"
+      },
+      "next": {
+        "articleUuid": "01a0d242d6e47b048f2a384f93f8e23f",
+        "title": "「实用工具」视频节点功能"
+      }
+    },
+    "01a0d2449b4d746f8330a4e55ae1be11": {
+      "articleUuid": "01a0d2449b4d746f8330a4e55ae1be11",
+      "title": "「进阶辅助」图像生成器",
+      "summary": "涉及功能：标记、风格、聚焦、摄像机控制",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "图片功能"
+      ],
+      "readingMinutes": 7,
+      "contentMd": "> 涉及功能：标记、风格、聚焦、摄像机控制\n\n生成的图片总差点意思？想要一键套用心仪的风格模板，从已有画面中自由提取元素，或者像专业摄影师一样掌控相机参数？图像生成器的进阶辅助功能都可以帮你搞定。\n\n本节课将介绍图像生成器下的进阶能力，涵盖风格模板、焦点编辑、镜头聚焦、摄像机控制，帮你进一步掌控画面的质感、细节与光影，让每一张作品都更贴合你的创作意图。\n\n---\n\n## 元素标记\n### 哪里需要点哪里\n\n从当前画布中的任意一张或多张图像中，自动识别并提取元素，进行精细化的参考引用。\n\n### 如何使用？\n\n- 在图片节点的生成器中点击「**标记**」，进入沉浸模式（按esc可退出）。\n- 在画布的任意图片上点击需要提取的元素，系统会自动进行识别与命名，识别完成后元素会被框出并自动引用到生成器中。\n- 元素标记完毕后，按需完善提示词，最后点击生成图像即可。\n\n  <p align=\"center\">\n  <img src=\"/assets/07a45893346b3712.webp\" width=\"80%\" />\n\n\n\n---\n\n## 风格模板\n### 美学范式，一键浸染\n\n提供丰富的风格模板库，涵盖多种视觉表现类型，选择任意风格后，生成的作品将自动应用该风格模板。\n\n适用模型：General Image pro、General Image V2、Seedream5.0 lite、Seedream4.5、Z-image Turbo 、Seedream4.0等。\n\n### 如何使用？\n\n### 使用预设好的风格模板\n\n- 在图片节点的生成器中点击「风格」，进入风格库。\n- 风格库支持分类浏览与关键词搜索，包括摄影写真、电商营销、动漫游戏等分类。\n- 点击想要的风格，风格标签会被自动填入生成器，按需完善提示词，最后点击生成图像即可。\n\n  <p align=\"center\">\n  <img src=\"/assets/1f87952d1cdaf85a.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/34c58bbdc6ceedbe.webp\" width=\"80%\" />\n\n\n### 自定义风格模板\n\n通过添加5-20张同风格的图片，快速学会风格特征，发布为模板后可以快捷调用。\n\n**适用模型**：General Image Pro、General Image V2、Seedream5.0 lite、Seedream4.5等。\n\n### 定制方式\n\n- 前往 LiblibAI 自定义风格模板： [https://www.liblib.art/ai-tool/upload-template](https://www.liblib.art/ai-tool/upload-template)，按照步骤完成模板上传。\n- 通过审核发布后即可在风格库内搜索调用，使用时按需完善画面提示词，最后点击生成图像即可。\n\n  <p align=\"center\">\n  <img src=\"/assets/7a8ecb410757be35.webp\" width=\"80%\" />\n\n\n  <p align=\"center\">\n  <img src=\"/assets/0c4cc2225ba37d6b.webp\" width=\"80%\" />\n\n\n---\n\n## 镜头聚焦\n### 框选一隅，深挖细节\n\n在单张图像上进行框选，快速生成该画面的细节特写分镜，进行精细化的图片编辑与再生成。\n\n### 如何使用？\n\n- 在图片节点的生成器中点击「**聚焦**」，进入沉浸模式（按esc可退出）。\n- 在画布的图片上框选需要聚焦的画面细节。\n- 在确认后，可直接点击生成特写分镜；或者输入提示词优化特写效果，比如人物的表情、动作或拍摄角度等细节。\n\n  <p align=\"center\">\n  <img src=\"/assets/c99316e660eaad1c.webp\" width=\"80%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/16e790246f580eb6.webp\" width=\"80%\" />\n\n\n\n---\n\n## 摄像机控制\n### 架机，调参，开拍\n\n在生成写实风格图像时，启用此功能可以设置相机型号、镜头、焦距和光圈，让\"摄影效果\"更符合你的需要。\n\n### 如何使用？\n\n- 点击图片节点右下角的镜头图标，调出控制面板，确保开启后，设置你需要的相机、镜头、焦距和光圈参数。\n- 「摄像机」会自动引用在生成器中，按需完善画面提示词，最后点击生成图像即可。\n\n  <p align=\"center\">\n  <video src=\"https://liblibai-online.liblib.cloud/academy/video/1790164796050.mp4\" controls preload=\"metadata\" width=\"80%\"></video>\n\n\n### 效果示例\n\n- 所用模型：General Image V2\n- 生图提示词：专业人像摄影，一个美丽的中国女孩，她穿着黑色无袖上衣，长发披肩，头顶戴黑色墨镜，面带微笑。背景是沿海大道，天气晴朗。\n- 摄像机参数：相机 Sony Venic，镜头 Helios。从上至下的参数依次为：焦距125mm，光圈 f/11；焦距125mm，光圈 f/4；焦距35mm，光圈 f/4。\n\n  <p align=\"center\">\n  <img src=\"/assets/06ebd6814730bcc0.webp\" width=\"50%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/971d112e51817a21.webp\" width=\"50%\" />\n\n  <p align=\"center\">\n  <img src=\"/assets/2095a53183172cee.webp\" width=\"50%\" />\n\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10052890&projectId=18c6e441d7624de893ac7225ecc1325b&isTutorial=true",
+      "cover": "/assets/13f5717e4ad5274a.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d243a69f72b482bce925fe2cb03b",
+        "title": "「实用工具」音频节点功能"
+      },
+      "next": {
+        "articleUuid": "01a0d2456af572bd8354dce139d68872",
+        "title": "「进阶辅助」视频生成器"
+      }
+    },
+    "01a0d243a69f72b482bce925fe2cb03b": {
+      "articleUuid": "01a0d243a69f72b482bce925fe2cb03b",
+      "title": "「实用工具」音频节点功能",
+      "summary": "涉及功能：音频截取、变速、切分、音色克隆",
+      "source": "",
+      "tags": [
+        "基础教程",
+        "音频功能"
+      ],
+      "readingMinutes": 5,
+      "contentMd": "> 涉及功能：音频截取、变速、切分、音色克隆\n\n只需要音频的部分片段却无从下手？需要念稿口播却怯于发声？使用音频节点的功能来帮你搞定声音问题。\n\n本节课将介绍针对音频节点的预设功能。对于已有的音频内容，你可以进行截取、变速和自定义切分操作；借助音色克隆功能，你也可以一键产出口播稿、旁白音等定制化音频。\n\n---\n\n## 音频截取\n\n对音频片段精准裁剪，保留最精彩的声音。\n\n点击音频节点顶部工具栏中的「截取」即可使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/c052f6cc9cbab97f.webp\" width=\"80%\" />\n\n\n---\n\n## 音频变速\n\n调节声音快慢，完美匹配视频节奏。\n\n点击音频节点顶部工具栏中的「变速」即可使用。\n\n  <p align=\"center\">\n  <img src=\"/assets/73d3d8b42e20fb94.webp\" width=\"80%\" />\n\n\n---\n\n## 智能/自定义切分\n\n使用智能切分，可以根据歌词和节拍自拍切分音频。\n\n使用自定义切分时，用文字表述你的切分需求即可。\n\n点击音频节点顶部工具栏中的「智能切分/自定义切分」进行使用。\n\n> 例如，可以输入\"截取0-3s，在8s处断开，删除10-12秒。\"\n\n <p align=\"center\">\n <img src=\"/assets/bd72424b8c4814f0.gif\" width=\"80%\" />\n\n---\n\n## 音色克隆\n### 留存声息，复刻独属于你的言语质感\n\n### **功能简述**\n\n录制对应的声音样本，创建你的专属音色。后续输入文本，即可用这个音色持续生成新的配音内容。\n\n### **已克隆的音色如何使用？**\n\n- 新建音频节点，模型选择 Minimax Speech，进入高级设置，选择「切换音色」。\n- 进入音色库，选择「我的音色」，即可使用已克隆的音色。\n- 如果你需要克隆新的音色，点击顶部「克隆新音色」。\n\n  <p align=\"center\">\n  <img src=\"/assets/dcb36deeb67e92d4.webp\" width=\"70%\" />\n\n### **如何克隆音色？**\n\n1. **进入克隆界面**：在音频节点右下角进入「切换音色」界面，选择「我的音色-克隆新音色」即可。\n2. **朗读音频**：建议在相对安静的环境下，进行清晰、语速适中的朗读，尽量读115s以上，这样克隆出的音色结果才更准确。朗读时带入你的情绪，可以让克隆出的音色携带这种情绪。\n3. **生成并试听**：音色生成后，建议先用一段短文本试听，重点检查与原音色的相似度、是否清晰无杂音糊音爆音、语速是否稳定、听感是否自然，情绪表达是否到位。\n4. **填写信息，进行音色信息登录**：登录相关音色信息，完成后即可完成克隆音色的创建。\n> 注意：创建音色后7天内未使用，会被MiniMax官方api清除，建议你创建完立刻使用一次，即可永久保存在自己的音色库中。\n   <p align=\"center\">\n   <img src=\"/assets/333aa8ace5c608df.webp\" width=\"50%\" />\n\n\n\n",
+      "canvasUrl": "https://www.liblib.tv/canvas/share?spaceId=10052326&projectId=f3a45abdc2ab45138740a1953f285e0c&isTutorial=true",
+      "cover": "/assets/3f60037a58e9da59.webp",
+      "coverVideo": "",
+      "prev": {
+        "articleUuid": "01a0d242d6e47b048f2a384f93f8e23f",
+        "title": "「实用工具」视频节点功能"
+      },
+      "next": {
+        "articleUuid": "01a0d2449b4d746f8330a4e55ae1be11",
+        "title": "「进阶辅助」图像生成器"
+      }
+    }
+  },
+  "masterclasses": {
+    "01a0e7626f9471b7af3c2bc8012fe26a": {
+      "masterclassUuid": "01a0e7626f9471b7af3c2bc8012fe26a",
+      "title": "LibTV x 抖音联合出品｜别让“一眼AI”困住你的创作！",
+      "cover": "/assets/eec81824711d97e3.webp",
+      "description": "LibTV AI 大师公开课首期，邀请金奖短片《合龙》创作团队 2XLabs 的导演刘树恒、王语宸。他们将结合《合龙》创作历程，拆解叙事逻辑、美术资产、人物表演，分享核心创作认知。",
+      "seriesName": "AI大师公开课",
+      "episodeNo": 1,
+      "authorAvatar": "/assets/30d0f75a8b455d7c.webp",
+      "authorName": "刘树恒，王语宸",
+      "authorTitle": "2XLabs导演",
+      "durationSec": 972,
+      "videoUrl": "/assets/c1f25e35985efc9b.mp4",
+      "videoUrlExpireAt": null,
+      "videoType": "mp4",
+      "qualities": [
+        {
+          "label": "1080p",
+          "url": "https://libtv-res.liblib.art/output/d50b5070-d4cb-440b-9c99-a54b9de1ce9d/1080p.mp4",
+          "expireAt": "2026-10-10T22:06:51+08:00"
+        },
+        {
+          "label": "720p",
+          "url": "https://libtv-res.liblib.art/output/d50b5070-d4cb-440b-9c99-a54b9de1ce9d/720p.mp4",
+          "expireAt": "2026-10-10T22:06:51+08:00"
+        },
+        {
+          "label": "480p",
+          "url": "/assets/c1f25e35985efc9b.mp4",
+          "expireAt": null
+        }
+      ],
+      "resumePositionSec": 0,
+      "commentEnabled": true,
+      "likeCount": 376,
+      "commentCount": 68,
+      "liked": false,
+      "disliked": false,
+      "moreMasterclasses": [],
+      "recommendArticles": [
+        {
+          "articleUuid": "01a0d247fa5572ce981ebfa79cd86fbc",
+          "title": "「热点速看」Seedance功能介绍",
+          "summary": "涉及功能：Seedance 2.5模型能力、真人素材使用、专属提示词优化",
+          "cover": "/assets/9c6f967c9c102830.webp",
+          "readingMinutes": 10
+        },
+        {
+          "articleUuid": "01a0d24709f37af79589c9dbaa5303f1",
+          "title": "「进阶辅助」3D导演台",
+          "summary": "涉及功能：3D导演台、角色模型、相机机位、多视角截图、运动轨迹、运镜轨迹、Blender插件",
+          "cover": "/assets/44255f9ebe13f1c7.webp",
+          "readingMinutes": 15
+        },
+        {
+          "articleUuid": "01a0d2463a39705baeffb9070227dc83",
+          "title": "「进阶辅助」脚本节点",
+          "summary": "涉及功能：脚本节点、批量产出分镜和视频",
+          "cover": "/assets/b5bdf173a5769c42.webp",
+          "readingMinutes": 12
+        },
+        {
+          "articleUuid": "01a0d2456af572bd8354dce139d68872",
+          "title": "「进阶辅助」视频生成器",
+          "summary": "涉及功能：视频主体库、运镜预设",
+          "cover": "/assets/1c4254c6a63d013d.webp",
+          "readingMinutes": 5
+        }
+      ],
+      "localQuality": "480p"
+    }
+  }
+}

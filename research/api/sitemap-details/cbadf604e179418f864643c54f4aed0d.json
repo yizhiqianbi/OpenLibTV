@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "cbadf604e179418f864643c54f4aed0d",
+      "projectUuid": "19f4e3900d7649d49cb7351fc5a8c5af",
+      "name": "After Party",
+      "description": "音乐节早已结束，但after party刚刚开始。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5b5da88ef89b4ec4958c105bc2d8d849/519178cb6bef7089153af3d3a23c0bd7a33515c9.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5b5da88ef89b4ec4958c105bc2d8d849/72b40bddabe139f882d3bd97f4b690a787a90b61.mp4",
+      "snapshotId": 24704,
+      "auditStatus": 1,
+      "ownerId": 10016810,
+      "ownerUuid": "5b5da88ef89b4ec4958c105bc2d8d849",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5b5da88ef89b4ec4958c105bc2d8d849/ee601aa14b1bfe78f1f086b335a4818e1c5b8eabcbb24cdf3b36d052aab859e6.JPG",
+      "nickname": "45",
+      "isLike": false,
+      "likeCount": 9,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月06日 20:23",
+      "updateAt": "2026年07月08日 23:11",
+      "publishAt": "2026年07月06日 20:23",
+      "playCount": 3,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 24,
+        "edges": 24
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "5f8a99de-56f0-90ae-a2c1-36e0b409eb3f"
+}

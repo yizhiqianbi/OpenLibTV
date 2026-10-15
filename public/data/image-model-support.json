@@ -1,0 +1,292 @@
+{
+  "items": [
+    {
+      "modelKey": "lib-image-2.5-s",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Lib Image 2.5 Pro",
+      "description": "精准生成与编辑，复杂指令稳定还原",
+      "prefix": [],
+      "icon": "https://liblibai-online.liblib.cloud/img/26867b52384f44d6ad5f717dbd710ff7/44e937c59a92e1316948f60d25f5b3ef3c2ea3f6ead2178ef7b85f4cd6b055aa.png",
+      "estimatedTime": "30s"
+    },
+    {
+      "modelKey": "lib-image-2.5-f",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Lib Image 2.5 Fast",
+      "description": "极速高质量图像生成，兼顾效果与效率",
+      "prefix": [],
+      "icon": "https://liblibai-online.liblib.cloud/img/26867b52384f44d6ad5f717dbd710ff7/44e937c59a92e1316948f60d25f5b3ef3c2ea3f6ead2178ef7b85f4cd6b055aa.png",
+      "estimatedTime": "20s"
+    },
+    {
+      "modelKey": "lib-image-2",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Lib Image",
+      "description": "最新图片模型、长文本能力突出",
+      "prefix": [],
+      "labels": [],
+      "studio": true,
+      "icon": "https://liblibai-online.liblib.cloud/img/26867b52384f44d6ad5f717dbd710ff7/44e937c59a92e1316948f60d25f5b3ef3c2ea3f6ead2178ef7b85f4cd6b055aa.png",
+      "estimatedTime": "60s"
+    },
+    {
+      "modelKey": "nebula-ultra",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "General image Pro",
+      "description": "最强图片编辑模型，一致性好",
+      "prefix": [],
+      "labels": [],
+      "studio": true,
+      "icon": "https://liblibai-online.liblib.cloud/img/26867b52384f44d6ad5f717dbd710ff7/a648ead572dfc3292bf97afa915056222848383e345a342d6aa06ae0adf96899.png",
+      "estimatedTime": "50s"
+    },
+    {
+      "modelKey": "nebula-2.1",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "General image V2.1",
+      "description": "多图参考更一致，文字排版更精准",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/2cf82d508e9c2d7af35f031507c1244a025e5fdd.png",
+      "estimatedTime": "25s"
+    },
+    {
+      "modelKey": "nebula-2-flash",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "General image V2",
+      "description": "支持联网搜索、文字准确、速度更快",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://liblibai-online.liblib.cloud/img/26867b52384f44d6ad5f717dbd710ff7/a648ead572dfc3292bf97afa915056222848383e345a342d6aa06ae0adf96899.png",
+      "estimatedTime": "25s"
+    },
+    {
+      "modelKey": "doubao-seedream-5-0-pro",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedream 5.0 Pro",
+      "description": "精准交互式编辑，支持原生多语言排版",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png",
+      "estimatedTime": "20s"
+    },
+    {
+      "modelKey": "flux-3-image",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Genesis F.3",
+      "description": "角色稳定一致，支持局部与图内文字编辑",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d0a5bef9f4a21c2601059203fb17983ce51e0f4e.png",
+      "estimatedTime": "30s"
+    },
+    {
+      "modelKey": "qwen-image-3",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Qwen image 3.0",
+      "description": "擅长复杂版面与精准文字的高质量生图模型",
+      "prefix": [],
+      "labels": [
+        "上新"
+      ],
+      "vip": false,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "60s"
+    },
+    {
+      "modelKey": "mj-v8.2",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Style Image V8.2",
+      "description": "电影感全面升级，精准还原光影、人物与真实材质",
+      "requiresWhitelistPermission": false,
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/538045210cdc7b90d61704f96d1be52bc3830c13.png",
+      "estimatedTime": "50s"
+    },
+    {
+      "modelKey": "mj-v8.1",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Style Image V8.1",
+      "description": "生图更连贯、细节更丰富、美学水准大幅提升",
+      "requiresWhitelistPermission": false,
+      "prefix": [],
+      "labels": [],
+      "studio": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/538045210cdc7b90d61704f96d1be52bc3830c13.png",
+      "estimatedTime": "50s"
+    },
+    {
+      "modelKey": "mj-v7",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Style Image V7",
+      "description": "最佳美学，电影质感，创意能力强",
+      "requiresWhitelistPermission": false,
+      "prefix": [],
+      "studio": true,
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/538045210cdc7b90d61704f96d1be52bc3830c13.png",
+      "estimatedTime": "50s"
+    },
+    {
+      "modelKey": "mj-niji7",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Style Image Niji 7",
+      "description": "动漫高审美模型，风格多样",
+      "requiresWhitelistPermission": false,
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/538045210cdc7b90d61704f96d1be52bc3830c13.png",
+      "estimatedTime": "50s"
+    },
+    {
+      "modelKey": "jimeng-4.6",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedream 4.6",
+      "description": "提升人像一致性、平面设计效果",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png",
+      "estimatedTime": "20s"
+    },
+    {
+      "modelKey": "seedream-5",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedream 5.0 Lite",
+      "description": "支持联网搜索，擅长中式风格、审美提升",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png",
+      "estimatedTime": "20s"
+    },
+    {
+      "modelKey": "seedream-4.5",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedream 4.5",
+      "description": "多角色一致性、擅长中式风格",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png",
+      "estimatedTime": "15s"
+    },
+    {
+      "modelKey": "z-image",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Z-image Turbo",
+      "description": "极速生成，适合真实感图片",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/edd01cd754fe106fdaecfe65f89bde412ceb4343.png",
+      "estimatedTime": "10s"
+    },
+    {
+      "modelKey": "qwen",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Qwen Image",
+      "description": "Qwen 生图模型，文字排版能力强",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "60s"
+    },
+    {
+      "modelKey": "qwen-edit",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Qwen Edit",
+      "description": "Qwen系编辑模型，精细可控",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/d031349093e34e87240f833e6299223cbac7fc06.png",
+      "estimatedTime": "60s"
+    },
+    {
+      "modelKey": "seedream-4",
+      "platform": [
+        "web",
+        "app",
+        "pc"
+      ],
+      "modelName": "Seedream 4.0",
+      "description": "极速高质出图，支持中文文字与海报设计",
+      "prefix": [],
+      "labels": [],
+      "icon": "https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png",
+      "estimatedTime": "15s"
+    }
+  ]
+}

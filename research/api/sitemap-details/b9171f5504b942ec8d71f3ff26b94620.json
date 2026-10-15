@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b9171f5504b942ec8d71f3ff26b94620",
+      "projectUuid": "8a42c5c1f2d44bb493ee3fd5aa439259",
+      "name": "【侦探与雾都怪盗】第一集：初遇怪盗",
+      "description": "作品简介\n片名：《初遇怪盗》（Episode 1 of 妹侦PROJECT）\n类型：哥特悬疑短片\n时长：2分18秒\n故事概要：\n哥特少女侦探诺琳在追查一张\"仅有背影\"的通缉令时，被她最信任的助手一步步引入雾巷深处的\"13号\"门。当机关触发、紫色烟雾散去，她发现等待自己的不是怪盗的巢穴，而是一整面为她量身定制的华丽衣柜——而那个从警局门口起就站在她身旁的\"教授\"，正是怪盗本人。\n核心叙事：\n本片采用\"观众与主角同步受骗\"的受限视角结构。从第一帧开始，反派即以\"同伴\"身份嵌入叙事核心，通过光影遮蔽、声音误导与情感信任完成双重欺骗。全片不依赖 jump scare，而以信息差与认知错位制造宿命般的反转张力。\n视觉风格：\n以低饱和青橙色调为基础，结合蒸汽朋克微量元素与魔法紫烟机关，构建\"月光—油灯\"双光源体系，越是接近真相，场景就越是明亮",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/0750ed76773647bca0e926dd6c321a59/33d110f37461e832373daaf7c68a74ebfc263158.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/0750ed76773647bca0e926dd6c321a59/c7943fd5be341fa70f9cce8bf38e6a060a4d700f.mp4",
+      "snapshotId": 25037,
+      "auditStatus": 1,
+      "ownerId": 9800455,
+      "ownerUuid": "0750ed76773647bca0e926dd6c321a59",
+      "avatar": "https://liblibai-online.liblib.cloud/img/0750ed76773647bca0e926dd6c321a59/df4d654e5db14939eb3d86eaa92eb0be534671d35a8b436ae9549f84c346d200.jpg",
+      "nickname": "中举",
+      "isLike": false,
+      "likeCount": 1,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "6.69 01/24 b@N.jC ytR:/ :6pm 【侦探与雾都怪盗】第一集：初遇怪盗 哥特少女侦探 × 偏执怪盗，谁才是猎物？ # Lib广告导演请就位 # AIGC # AI漫剧 # 妹侦PROJECT # 原创动画  https://v.douyin.com/UJQ6Z1ej1WE/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年07月07日 22:27",
+      "updateAt": "2026年07月07日 22:39",
+      "publishAt": "2026年07月07日 22:27",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 78,
+        "edges": 195
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "57906ea1-368d-904c-85a1-853b21593702"
+}

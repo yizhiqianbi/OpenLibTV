@@ -1,0 +1,75 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2711bd1629a342569bcd1106ebe2b613",
+      "projectUuid": "4f8716baaf4c4e1a958cee035c86476f",
+      "name": "《鼻塞》陈一豪说唱MV（已授权）",
+      "description": "牢牢抓住歌名的隐喻内核：借用鼻塞呼吸受阻的感受，映射亲密关系中的心理闭塞状态。在这段感情的进程中，主角多次退让付出，积攒了大量难以倾诉的情绪，话语与真心长久被阻隔，只能对外伪装麻木洒脱，陷入难以透气的精神内耗。\n视觉层面围绕立意搭建叙事：深埋地下的石窟作为封存过往回忆的牢笼，六组造型互不重复的爱神雕像依次记录恋爱不同阶段的付出与裂痕；专属 IP 鸭嘴兽以嘴部雾气直观表现被禁锢的表达欲。叙事采用高潮前置的倒叙手法，开篇就释放积压到顶峰的压抑情绪；中段用特写角色面部情绪变化细节，细节刻画嘴上逞强、心绪早已慌乱的反差。\n剧情的突破节点：石窟回忆壁垒碎裂，主角和鸭嘴兽一同飞向高空完成造型蜕变，空中漂浮自转的骰子承担「过滤执念」的意象，最终落地城市天台，长久堵塞的心理情绪慢慢疏解，完成歌曲想要表达的走出精神桎梏、接纳遗憾的主题。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e14ed7c37a3741d88e05fc61a441e265/1ae9286bdbf4a63319b5667f1f88c5d2ea99d4f2.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e14ed7c37a3741d88e05fc61a441e265/b37c3062cd7f1794cf27d4dbf1e0d3bc55a489f0.mp4",
+      "snapshotId": 24718,
+      "auditStatus": 1,
+      "ownerId": 75093,
+      "ownerUuid": "e14ed7c37a3741d88e05fc61a441e265",
+      "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJuekIOk7sCOJy8ibjicz14Yia9XcMZYpv6rLItRr5ZKZu6SVJ0sg44Bg6WX1Oibv8EkH26fAfDggpM4w/132",
+      "nickname": "油条",
+      "isLike": false,
+      "likeCount": 173,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a4ba9f300000000060315a4?xsec_token=ABPyeXHMg-4A-c0eudg2vqtYhifELPQrk0P35bn7dj3oA=&xsec_source=pc_user&m_source=ludashi",
+      "createAt": "2026年07月06日 21:17",
+      "updateAt": "2026年07月14日 17:51",
+      "publishAt": "2026年07月06日 21:17",
+      "playCount": 78,
+      "viewCreationProcessCount": 29,
+      "copyCanvasCount": 4,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 122,
+        "edges": 122
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6d713464-aff6-97f1-9240-9d1c9518ccd4"
+}

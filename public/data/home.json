@@ -1,0 +1,246 @@
+{
+  "isLogin": false,
+  "communityFeedPromise": "$@5f",
+  "homeBannerInitialData": null,
+  "homeSeedance25Config": {
+    "version": 3,
+    "enabled": true,
+    "quickActions": [
+      {
+        "id": "wanx3.0",
+        "title": "Wan 3.0",
+        "iconUrl": "/assets/b8835437148daec6.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=11008163&sourceProjectUuid=6e581772f0124be79faae9549c5a2f71",
+          "target": "_blank",
+          "requiresLogin": true
+        }
+      },
+      {
+        "id": "vidu Q4",
+        "title": "Vidu Q4 Preview",
+        "badge": "new",
+        "iconUrl": "/assets/04e207eef0e382f6.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=10760288&sourceProjectUuid=1276822191f144b6a4692b5e7e295fdc",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=10760288&sourceProjectUuid=1276822191f144b6a4692b5e7e295fdc&guideSeenKey=viduQ4Preview&hideDirectorGuides=1",
+          "userGroup": [
+            "all"
+          ]
+        }
+      },
+      {
+        "id": "seedance-25",
+        "title": "Seedance 2.5",
+        "badge": "多参创作",
+        "iconUrl": "/assets/aead600e574c6d64.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=4626566&sourceProjectUuid=21637f0b34644ea9a8ab2cb778814a33",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=8668416&sourceProjectUuid=ca8391af00524d1badcdcbb02b6fb40e&guideSeenKey=videoModelGuide&hideDirectorGuides=1",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      },
+      {
+        "id": "video-generate",
+        "title": "视频生成",
+        "iconUrl": "/assets/aa34dfa29d3991f4.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9251111&sourceProjectUuid=f2e850090d854b25857044a3dbbb1472",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9779221&sourceProjectUuid=7ac08a6b790549a3aab32c5f9e8757cf&guideSeenKey=videogenerate&hideDirectorGuides=1",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      },
+      {
+        "id": "image-generate",
+        "title": "图片生成",
+        "iconUrl": "/assets/a808cac1c19e6f80.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9251183&sourceProjectUuid=3ee0102f822d4e479e7a74d0b3eb6f2d",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9779784&sourceProjectUuid=3834cf9984c54cc594ec3cf0b58875f7&guideSeenKey=imagegenerate&hideDirectorGuides=1",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      },
+      {
+        "id": "audio-generate",
+        "title": "音频生成",
+        "iconUrl": "/assets/44914f800f30a185.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9251258&sourceProjectUuid=4fe05aec54fc40b590925466aa8e5f6c",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=8601501&sourceProjectUuid=0c7c72505aca4edf838897238ad3f0df&guideSeenKey=audiogenerate&hideDirectorGuides=1",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      },
+      {
+        "id": "script",
+        "title": "剧本生成",
+        "iconUrl": "/assets/4045c2969315c907.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9251294&sourceProjectUuid=d48476214c2d48ffa5fb01639fefb6df",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9778012&sourceProjectUuid=4963e028c3404c59aa665c350a4b9f66&guideSeenKey=createScript&guideConfig=project&hideDirectorGuides=1&forceAgent=1&agent_mode=script_original",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      },
+      {
+        "id": "smart-edit",
+        "title": "智能剪辑",
+        "iconUrl": "/assets/b010033b43d86502.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9251337&sourceProjectUuid=da729cb161e24fbc8286eead35893821",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=8602185&sourceProjectUuid=85bbb8e129574b8ba9a3e859a71af1bb&guideSeenKey=autocut&hideDirectorGuides=1",
+          "userGroup": [
+            "UG_72b489d37a0a43a9b2ea10c289fae8dd"
+          ]
+        }
+      }
+    ]
+  },
+  "homeFeatureHighlightsConfig": {
+    "version": 3,
+    "enabled": true,
+    "quickActions": [
+      {
+        "id": "activity",
+        "title": "王者荣耀联名投稿活动",
+        "description": "辅助用户进行提示词创作、提示词批量优化、一键拆分镜、根据不同内容类型自定义导演角色",
+        "badge": "活动",
+        "activityId": 62,
+        "badgeStyle": {
+          "light": {
+            "color": "rgba(155, 124, 255, 1)",
+            "background": "rgba(155, 124, 255, 0.1)"
+          },
+          "dark": {
+            "color": "rgba(191, 165, 255, 1)",
+            "background": "rgba(191, 165, 255, 0.1)"
+          }
+        },
+        "coverUrl": "/assets/bf3937219d1b96a4.webp",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/activity/62",
+          "target": "_blank",
+          "requiresLogin": true
+        }
+      },
+      {
+        "id": "script-creation",
+        "title": "剧本原创与改编",
+        "description": "进行原创剧本辅助创作、剧本精细化编辑、故事/剧本改编",
+        "badge": "独家",
+        "coverUrl": "/assets/a75e933f5f0edba9.webp",
+        "hoverVideoUrl": "/assets/5111dd50192e8a78.webm",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9389264&sourceProjectUuid=14977fa6a1934c839ba78481d4a7b389&guideSeenKey=createScript&guideConfig=project&hideDirectorGuides=1&forceAgent=1&agent_mode=script_original",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9778012&sourceProjectUuid=4963e028c3404c59aa665c350a4b9f66&guideSeenKey=createScript&guideConfig=project&hideDirectorGuides=1&forceAgent=1&agent_mode=script_original",
+          "userGroup": [
+            "all"
+          ]
+        }
+      },
+      {
+        "id": "director-guide",
+        "title": "导演执导",
+        "description": "辅助用户进行提示词创作、提示词批量优化、一键拆分镜、根据不同内容类型自定义导演角色",
+        "badge": "独家",
+        "coverUrl": "/assets/6393c4e4ac8886bc.webp",
+        "hoverVideoUrl": "/assets/352f28f1f153de47.webm",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9522778&sourceProjectUuid=b80035450ead47d6897c5a41220ae899&guideSeenKey=copilotDirector&guideConfig=project&hideDirectorGuides=1&forceAgent=1&agent_mode=directing",
+          "target": "_blank",
+          "requiresLogin": true
+        },
+        "guide": {
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9522778&sourceProjectUuid=b80035450ead47d6897c5a41220ae899&guideSeenKey=copilotDirector&guideConfig=project&hideDirectorGuides=1&forceAgent=1&agent_mode=directing",
+          "userGroup": [
+            "all"
+          ]
+        }
+      },
+      {
+        "id": "portrait-studio",
+        "title": "角色造型室",
+        "description": "主动给角色捏出独特长相和签名特征(痣、雀斑、疤、专属五官体型),造出一个有辨识度、立得住的角色,并沉淀为角色资产",
+        "badge": "独家",
+        "coverUrl": "/assets/0050324eb2b801d4.webp",
+        "hoverVideoUrl": "/assets/c66dc9561b97c6b9.webm",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9257917&sourceProjectUuid=6e53f1be144c4d589f5dccf4a3c13d76&guide=portrait-studio",
+          "target": "_blank",
+          "requiresLogin": true
+        }
+      },
+      {
+        "id": "creative-title",
+        "title": "创意片头",
+        "description": "用户只需选取视频画面、输入片名，即可一站式完成片名设计与文字动效制作，让作品开场更有辨识度",
+        "badge": "独家",
+        "coverUrl": "/assets/b8d35ea43ec7260a.webp",
+        "hoverVideoUrl": "/assets/ff7a148e41f04833.webm",
+        "action": {
+          "type": "link",
+          "href": "https://www.liblib.tv/canvas?sourceSpaceId=9256180&sourceProjectUuid=fb2b48521b324c569c4c60afb33e178c",
+          "target": "_blank",
+          "requiresLogin": true
+        }
+      }
+    ]
+  },
+  "homeFeatureActivityStatuses": {
+    "62": 2
+  },
+  "homeSeedance25ZoneConfig": null,
+  "homeQuickActions": []
+}

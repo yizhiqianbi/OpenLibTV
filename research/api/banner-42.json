@@ -1,0 +1,38 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "banners": [
+      {
+        "url": "https://www.liblib.tv/academy",
+        "pic": "https://liblibai-online.liblib.cloud/banner/1790699751254.png",
+        "title": "",
+        "startTime": "2026-09-29T16:00:00.000+00:00",
+        "endTime": "2026-10-31T15:59:59.000+00:00",
+        "displayOrder": 1,
+        "type": 42,
+        "extendInfo": null
+      },
+      {
+        "url": "https://www.liblib.tv/activity/62",
+        "pic": "https://liblibai-online.liblib.cloud/web/474dd6d63f8847f19a43c104a0919985/18d31685-341d-409f-ad2c-141f4832c8f7.png",
+        "title": "",
+        "startTime": "2026-09-20T16:00:00.000+00:00",
+        "endTime": "2026-11-22T15:59:59.000+00:00",
+        "displayOrder": 6,
+        "type": 42,
+        "extendInfo": null
+      },
+      {
+        "url": "https://resonate.feishu.cn/wiki/RWVLw2X4JiPMc8kRFX4cpNaDnvc",
+        "pic": "https://libtv-res.liblib.art/upload-images/8244a30ac2e94d9289e7216922b50a09/b305a648ffb99486574b7c11cf44cb89b092a8c7.webp",
+        "title": "",
+        "startTime": "2026-09-05T16:00:00.000+00:00",
+        "endTime": "2026-12-31T15:59:59.000+00:00",
+        "displayOrder": 7,
+        "type": 42,
+        "extendInfo": null
+      }
+    ]
+  }
+}

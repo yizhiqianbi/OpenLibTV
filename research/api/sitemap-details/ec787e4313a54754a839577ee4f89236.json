@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ec787e4313a54754a839577ee4f89236",
+      "projectUuid": "a78b329b8f634412aef2acfb13adfe01",
+      "name": "《今天先别删我》",
+      "description": "她说：“今天先别删我。”\n像玩笑，\n也像很多年轻人没说出口的求救。\n长大以后才发现，\n崩溃不能太大声，\n生活也不会等你准备好。\n但如果今天真的很累，\n也先别急着否定自己。\n你不是没用，\n你只是还在加载中。\n《今天先别删我》第一集上线。\n送给每个嘴上说没事、其实很努力的人。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/80717e6a902e43d5bbce8d4c21f0c107/0acfcfccceaef0821bed7efc5a357f123c4256b6.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/80717e6a902e43d5bbce8d4c21f0c107/4f01710bb86bee202758450abf2ed499260cb2e9.mp4",
+      "snapshotId": 25266,
+      "auditStatus": 1,
+      "ownerId": 3172681,
+      "ownerUuid": "80717e6a902e43d5bbce8d4c21f0c107",
+      "avatar": "https://liblibai-online.liblib.cloud/img/80717e6a902e43d5bbce8d4c21f0c107/81bf143f0dcd2be2af87f256967a0da25a0f13429b70f12e7c54842604ecdd5c.JPG",
+      "nickname": "Berber",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a4ddb7b0000000008000a25?xsec_token=AB6gRjIfbp-DKuny8RiS-k0NHdSA2uhVRXElVuprRsl1I=&xsec_source=pc_user",
+      "createAt": "2026年07月08日 16:48",
+      "updateAt": "2026年07月08日 16:55",
+      "publishAt": "2026年07月08日 16:48",
+      "playCount": 9,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 258,
+        "edges": 348
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e5df1568-49d5-9c41-a105-185ffd7b5340"
+}

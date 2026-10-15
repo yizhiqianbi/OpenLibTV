@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f2034f1f6abe4546af0dc38602f6a996",
+      "projectUuid": "fcf949d65e7e4fddb48715ed4d9efc4d",
+      "name": "山神未语",
+      "description": "季节轮回，林木更替。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f2cec4ceb813477d87435ea3ffaef907/7bb1c5f81fe04b9c76959d158800bfd6943096a0.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f2cec4ceb813477d87435ea3ffaef907/28c2fcb146252c5e10d93a2879b2c2139d7027b7.mp4",
+      "snapshotId": 20440,
+      "auditStatus": 1,
+      "ownerId": 3035162,
+      "ownerUuid": "f2cec4ceb813477d87435ea3ffaef907",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f2cec4ceb813477d87435ea3ffaef907/f457fd34302e212a092ccf384dcd1e35e55b760c6df7279de5bef89474360b63.png",
+      "nickname": "NOOOPB",
+      "isLike": false,
+      "likeCount": 83,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "3.00 复制打开抖音，看看【讨人嫌的作品】我们飞到北方 来了一场特殊的文化体验~！ 我们的新... https://v.douyin.com/zLbKWaIiv38/ nda:/ 08/11 J@i.Cu :9pm",
+      "createAt": "2026年06月17日 17:30",
+      "updateAt": "2026年07月21日 11:43",
+      "publishAt": "2026年06月18日 15:02",
+      "playCount": 23,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 236,
+        "edges": 115
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "e17726c1-412c-9bf8-9349-324ae7aeda93"
+}

@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "8f275db419684fe8b464ae2e3d58fdea",
+      "projectUuid": "a6b7b92622444be88ae09e0d7334e07b",
+      "name": "三体番外《地球往事》| 人类文明的另一种可能",
+      "description": "二向箔，真的是人类的末日吗？\n可是明明在最后全宇宙回归的时候，出现了地球的文字。\n或许，即使有降维打击，人类文明也会在二维中留下点什么。\n而这种信息，或许在很多年之后，会成为另一个文明的源点。\n人类文明从未消逝。\n\n故事从一个很像人类的新文明出发，倒序讲述人类的地球往事。\n在二向箔打击警报开始之后的极限时间内，萨伊的“人类文明纪念工程”被民众自发重拾。吴峰是吴岳的后代，也是海军舰长，而这一次他航行在了时间的尽头。\n曾连任两届联合国秘书长的萨伊，在离任后发起了人类纪念工程，目标是全面收集人类文明的资料和纪念实物，最后用无人飞船发向宇宙。其中最具影响力的是一个名为“人类日记”的活动，让普通人在网站记录日常，作为文明资料的一部分。\n而此刻，大部分人都绝望地相信，在二维中没有任何东西可以保存。\n但有一个例外，就是信息，信息本身是一种超越维度的存在。虽然大部分信息都需要三维载体，但拓扑结构的信息，是可以在二维中被读取的。\n那么最后，人类用这种方式保存什么信息内容呢？\n这里的答案是：一种特殊的算法——选择。人类之所以成为人类的选择。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/0286885c17f746cfbc172724635f42ef/2fda6bbd84579409a3b52e64e43f90a27656a6df.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/0286885c17f746cfbc172724635f42ef/a82f6f85d7b9b30a833b485d621e4ab9bc89a0ad.mp4",
+      "snapshotId": 1420,
+      "auditStatus": 1,
+      "ownerId": 6815234,
+      "ownerUuid": "0286885c17f746cfbc172724635f42ef",
+      "avatar": "https://liblibai-online.liblib.cloud/img/0286885c17f746cfbc172724635f42ef/c4f69cbbaf07d6f8e0f9852d30ce8a367244681a0db9811f5c0cb6cade0a199d.png",
+      "nickname": "像素时间PixelTime",
+      "isLike": false,
+      "likeCount": 28,
+      "tags": [
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年03月23日 15:57",
+      "updateAt": "2026年05月20日 18:53",
+      "publishAt": "2026年03月25日 01:23",
+      "playCount": 17,
+      "viewCreationProcessCount": 12,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 149,
+        "edges": 125
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a1cd1091-1ffd-9200-a40f-02ec4690ab4c"
+}

@@ -1,0 +1,67 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "431c9845bf894e1fbc1352adee6adc3d",
+      "skillUuid": "9898c8437b9a4c249f0328f662f31691",
+      "skillKey": "a24-cinematic-aesthetic-ad7396f8e0a5497ab352f403f290c82f",
+      "name": "A24电影美学",
+      "version": "1.0.17",
+      "description": "高级怪诞电影美学，以作者视角，用粗粝真实的表皮包裹荒诞底色",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/d4267c4085217778d9492177f0af736549d8e057.jpg",
+      "snapshotId": 33725,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"canvasCaseUrl\":\"https://www.liblib.tv/canvas/chat-share?shareId=rWdxENmCi9\",\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/b366d673d5e785c6fb060bc22752d8c5dbfa9e5e.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/75d04e7de45bffe3e05bc7441ce914117a8c454f.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/fd33dc163b8bb7ded7df5c38c2d13d148e4e194d.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/d4267c4085217778d9492177f0af736549d8e057.jpg\",\"description\":\"高级怪诞电影美学，以作者视角，用粗粝真实的表皮包裹荒诞底色\",\"evalResult\":\"\",\"inputType\":\"输入故事、剧本\",\"name\":\"A24电影美学\",\"outputContent\":\"情绪版、角色图，道具图、场景图，音乐、完整成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"a24-cinematic-aesthetic-ad7396f8e0a5497ab352f403f290c82f\",\"skillUuid\":\"9898c8437b9a4c249f0328f662f31691\",\"sourceType\":1,\"useScenario\":\"独立电影、cult电影、荒诞电影、恐怖电影\",\"version\":\"1.0.17\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 7/10",
+      "tags": [
+        {
+          "id": 4000,
+          "code": "",
+          "tagLabel": "专业影视",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4000/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 1385,
+      "usePv": 2549,
+      "useUv": 1767,
+      "publishAt": "2026-08-05 22:08:19",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/3eb73ab3cfcfa4500021809b4f8f9b9dc3da085d.png",
+      "useScenario": "独立电影、cult电影、荒诞电影、恐怖电影",
+      "inputType": "输入故事、剧本",
+      "outputContent": "情绪版、角色图，道具图、场景图，音乐、完整成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/3eb73ab3cfcfa4500021809b4f8f9b9dc3da085d.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/b366d673d5e785c6fb060bc22752d8c5dbfa9e5e.mp4",
+          "canvasCaseUrl": "https://www.liblib.tv/canvas/chat-share?shareId=rWdxENmCi9",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/75d04e7de45bffe3e05bc7441ce914117a8c454f.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/ad7396f8e0a5497ab352f403f290c82f/fd33dc163b8bb7ded7df5c38c2d13d148e4e194d.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "msg": "",
+  "trace_id": "f8753b1c-0036-9f54-b529-1b003b25bc51"
+}

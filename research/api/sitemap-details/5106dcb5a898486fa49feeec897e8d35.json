@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5106dcb5a898486fa49feeec897e8d35",
+      "projectUuid": "d679094042074187a92195730ad889b6",
+      "name": "镇魂谣 NUO",
+      "description": "是一部中式民俗志怪短漫剧。年轻傩面匠林隐为神秘“无脸客”制面，却在交货前发现客人从人间消失，只剩面具还记得他。她追入妖市后发现，那里以真名、记忆和寿数交易，每一张面具背后都刻着无法反悔的魂契。林隐本想找回失踪者，却逐渐发现自己的名字早已被刻在傩面背后。故事以“人带上了面具，而面具也寄生并控制人身”为核心命题，融合东方民俗、悬疑反转与强视觉奇幻，讲述少女在命运债务中寻找身份真相的故事。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/baaef88d964b47489b276e1ee4d804f8/94ce97a0057fe8fe79dfb8f700c55a40c741af4a.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/baaef88d964b47489b276e1ee4d804f8/0290c6334c090dee615a827d48f792f5f90f7e20.mp4",
+      "snapshotId": 19613,
+      "auditStatus": 1,
+      "ownerId": 1353321,
+      "ownerUuid": "baaef88d964b47489b276e1ee4d804f8",
+      "avatar": "https://liblibai-online.liblib.cloud/img/baaef88d964b47489b276e1ee4d804f8/b48faa2b8ce7712923e8410d7b6b0c2d3c2f07f3bfd70488b9a3e405b14bc6af.png",
+      "nickname": "翻山计划",
+      "isLike": false,
+      "likeCount": 130,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a2fbc8100000000070112ac?xsec_token=ABOrsWb8HZD7Rx9SKEfc_H9iCcd8PnFofDhK_epH7pcuo=&xsec_source=pc_user&m_source=pwa",
+      "createAt": "2026年06月15日 17:38",
+      "updateAt": "2026年06月15日 21:26",
+      "publishAt": "2026年06月15日 21:11",
+      "playCount": 71,
+      "viewCreationProcessCount": 34,
+      "copyCanvasCount": 9,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 145,
+        "edges": 166
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "29bda838-36c1-93a5-a064-7c56d093cc3b"
+}

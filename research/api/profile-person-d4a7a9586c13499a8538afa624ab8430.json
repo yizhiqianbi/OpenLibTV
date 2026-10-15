@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "userDetail": {
+      "id": 5919496,
+      "avatar": "https://liblibai-online.liblib.cloud/img/d4a7a9586c13499a8538afa624ab8430/10b972e1283d4b59b1933e2cda4c1c1bf2b6cef43303c64acee6ac4f6c2f64c6.jpg",
+      "nickname": "有無劇院",
+      "mobile": "151****0530",
+      "uuid": "d4a7a9586c13499a8538afa624ab8430",
+      "homepages": [],
+      "personalSpaceInformation": {
+        "briefIntroduction": "AIGC I 影像 I 音乐 I\n中国创新影像大赛AIGC专业组一等奖\nCCTV6 AI影像大赛银奖",
+        "coverImage": "https://liblibai-online.liblib.cloud/img/d4a7a9586c13499a8538afa624ab8430/ebe4ade3c301b6bba81636ef19c97f7803c5b7dca40b6eb200beb181d2b261cb.png",
+        "xiaohongshuLink": "https://www.xiaohongshu.com/user/profile/5afa88e3e8ac2b359ff1e932",
+        "xiaohongshuIcon": "",
+        "tiktokLink": "",
+        "tiktokIcon": "",
+        "bliLink": "",
+        "bliIcon": "",
+        "webLink": "",
+        "webIcon": "",
+        "huggingFaceLink": "",
+        "huggingFaceIcon": "",
+        "twitterLink": "",
+        "twitterIcon": "",
+        "facebookLink": "",
+        "facebookIcon": "",
+        "instagramLink": "",
+        "instagramIcon": "",
+        "discordLink": "",
+        "discordIcon": "",
+        "otherLink": "",
+        "otherIcon": "",
+        "openBusiness": 0,
+        "openLike": 1,
+        "openRecommend": 1
+      },
+      "authorDetail": "",
+      "authAuthorStatus": 0
+    },
+    "counter": {
+      "uploadCount": 0,
+      "followerCount": 74,
+      "followCount": 1,
+      "likeCount": 0,
+      "picLikeCount": 0,
+      "modelLikeCount": 0,
+      "downloadCount": 0,
+      "commentCount": null,
+      "imageCount": null,
+      "subscribeCount": null,
+      "hitCount": null,
+      "runCount": 0,
+      "heat": null,
+      "useCount": 0,
+      "modelUseCount": null,
+      "imageUseCount": null,
+      "imageDownCount": null,
+      "imageRunCount": null,
+      "isFollow": 0,
+      "isLike": null
+    },
+    "tags": [
+      "authorship"
+    ]
+  }
+}

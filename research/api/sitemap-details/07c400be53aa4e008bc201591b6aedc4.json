@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "07c400be53aa4e008bc201591b6aedc4",
+      "projectUuid": "157ffbe026d047d493631b0bb9852304",
+      "name": "「好的收到」🐳 | 你的摸鱼小妙招是什么？",
+      "description": "打工人嘴上：好的收到\n打工人心里：明天再搞 🐳\n献给每一个打工人\n🐟 请交出你的摸鱼小妙招~",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/512db55f75114e88885efdd5974208e1/0c551b84b970e6c9f9ccb9184a047171bc0f8dda.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/512db55f75114e88885efdd5974208e1/296df24a623569697ec4146b23e7a8496fc0c173.mp4",
+      "snapshotId": 20162,
+      "auditStatus": 1,
+      "ownerId": 98406,
+      "ownerUuid": "512db55f75114e88885efdd5974208e1",
+      "avatar": "https://liblibai-online.liblib.cloud/img/512db55f75114e88885efdd5974208e1/2cc2a71b4b4a711d3f64e0802719069b9a186bdf0c752e7b12f5dfbd34801e49.jpg",
+      "nickname": "大摸鱼家_Xr",
+      "isLike": false,
+      "likeCount": 146,
+      "tags": [
+        {
+          "id": 1204,
+          "code": "mv",
+          "tagLabel": "MV",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1204/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/6FRxNMBvUdJ",
+      "createAt": "2026年06月17日 16:22",
+      "updateAt": "2026年06月30日 23:43",
+      "publishAt": "2026年06月17日 16:22",
+      "playCount": 3,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 162,
+        "edges": 348
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "55fe2d2b-511c-98cf-8f46-bbd9cd14fab8"
+}

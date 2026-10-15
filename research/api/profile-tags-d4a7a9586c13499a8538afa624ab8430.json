@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "data": {
+    "userTagList": [
+      {
+        "tagId": 5002,
+        "name": "专业",
+        "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+        "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+        "desc": "LibTV专业作者",
+        "verifyLevel": 2
+      }
+    ]
+  },
+  "msg": "",
+  "trace_id": "b425f4f3-d690-9783-afb6-e3a0ef9d748a"
+}

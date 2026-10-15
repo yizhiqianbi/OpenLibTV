@@ -1,0 +1,52 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "b442ee82c9264a43bc912afd698a6b6b",
+      "projectUuid": "b15485279ae2427fa4aa909af55c8aea",
+      "name": "AI玻璃合成思路分享",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/904f350a75e74531919f10a526e5df51/ce02f5ec4b20430dbb6b5a1e5baaac75837f1c8f.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/904f350a75e74531919f10a526e5df51/2dfccfa4aeacf46818b216e2284c6f7475a7d6dd.mp4",
+      "snapshotId": 5119,
+      "auditStatus": 1,
+      "ownerId": 3569780,
+      "ownerUuid": "904f350a75e74531919f10a526e5df51",
+      "avatar": "https://liblibai-online.liblib.cloud/img/904f350a75e74531919f10a526e5df51/3843f17a4fbe5f7a71de4da417458895ca3ffdbe9138f5cac1f5f06d62fff2c7.jpg",
+      "nickname": "Enzo",
+      "isLike": false,
+      "likeCount": 4,
+      "tags": [
+        {
+          "id": 1503,
+          "code": "teaching",
+          "tagLabel": "教学教程",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1503/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/user/profile/5c769acf000000001101e120",
+      "createAt": "2026年04月15日 09:19",
+      "updateAt": "2026年04月20日 17:36",
+      "publishAt": "2026年04月15日 09:19",
+      "playCount": 4,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 7,
+        "edges": 5
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6512044f-0dce-9b41-9119-db552d3811a8"
+}

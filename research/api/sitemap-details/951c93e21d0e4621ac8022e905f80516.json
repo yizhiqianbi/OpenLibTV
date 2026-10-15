@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "951c93e21d0e4621ac8022e905f80516",
+      "projectUuid": "80fa2b25d1a94876b170559d08be6569",
+      "name": "灰烬之夜",
+      "description": "在荒芜颓败的末世城市废墟中，-个幸存者女孩与一匹黑狼生死相依，然而，危机骤临。无数的变异丧尸群正潮水般涌来，在这座充满死寂与空虚的城市里，她们必须同心协力......才可能改变一切。",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/1908101cab8d4c9ba8e32fdeed29fa85/faa3f19629cd5dbf71f666c4b8d544fb2feb784fbc830d65ef546f6cd74a26f8.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1908101cab8d4c9ba8e32fdeed29fa85/59ede187dc9a42d531ade5a218423e6d25718f19.mp4",
+      "snapshotId": 24930,
+      "auditStatus": 1,
+      "ownerId": 51041,
+      "ownerUuid": "1908101cab8d4c9ba8e32fdeed29fa85",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1908101cab8d4c9ba8e32fdeed29fa85/d3955f5504ba53b1084fa5bd39bf4d74d48ab79104b7f78e9c6be5372acabc17.png",
+      "nickname": "AIGC东哥",
+      "isLike": false,
+      "likeCount": 12,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a4c856e000000000f006869?xsec_token=ABTQHRXr64mg7q1_MbzMXiozbVkIApTe9K-bqNjfdoPSo=&xsec_source=pc_user",
+      "createAt": "2026年07月07日 15:22",
+      "updateAt": "2026年07月07日 20:45",
+      "publishAt": "2026年07月07日 17:13",
+      "playCount": 0,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 97,
+        "edges": 64
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "f5899252-a38c-9fdf-b684-fdea0fad7d57"
+}

@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "06d7971f8d904e62bae1b16f81e19e62",
+      "projectUuid": "cd526815c5b543069ded46c8730c686c",
+      "name": "永恒之冠-《Eternal Crown》",
+      "description": "浪迹在虚空大陆的流浪猎魔人，为了夺回被异兽族攻占的家园，穿过净空之门，来到了女巫的城堡，为了让她们归还自己的长剑，与女巫签下了灵魂的契约，成为他们的守护者，拿到长剑的猎魔人，慢慢发现，原来异兽族就是靠着女巫的献祭，来逐步扩大他靠着自己的军队，猎魔人把女巫一族也纳入了清理的目标，一步一步的杀向曾经光芒万丈的灭世王座，挑战最终的异兽人将军，展开一场对决。",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/eeb44f231b6e49eab9212b9a572fa491/8b856cf3868084578295bc6df8e074e873bd7e8818e870d11653e10c087f9cf8.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/eeb44f231b6e49eab9212b9a572fa491/0f9bfa2370a4aee019a5c9a42d4284a10187f604.mp4",
+      "snapshotId": 24803,
+      "auditStatus": 1,
+      "ownerId": 854987,
+      "ownerUuid": "eeb44f231b6e49eab9212b9a572fa491",
+      "avatar": "https://liblibai-online.liblib.cloud/img/eeb44f231b6e49eab9212b9a572fa491/4a5926fdbf34f30539a453b0b2db4667e9718204e71d60a5a05694b98b97e961.jpg",
+      "nickname": "VnJack",
+      "isLike": false,
+      "likeCount": 67,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 3035,
+          "code": "prod",
+          "tagLabel": "大乱斗｜vol.2《AI，想象和尖叫》",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3035/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/73JByPPyhzp",
+      "createAt": "2026年05月31日 04:35",
+      "updateAt": "2026年07月07日 10:05",
+      "publishAt": "2026年07月07日 09:24",
+      "playCount": 18,
+      "viewCreationProcessCount": 12,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 220,
+        "edges": 276
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9ea21d26-0e44-910d-9bdf-040c9235c5a7"
+}

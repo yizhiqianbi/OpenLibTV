@@ -1,0 +1,60 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "e49f644764a8425aaae9e7c04c3bf5ea",
+      "skillUuid": "2a69fbd8ff444cdab84999a539948e23",
+      "skillKey": "xianxia-drama-planner-beda8103d1a8414aa15aa0eb1db95a07",
+      "name": "东方巨构美学短剧",
+      "version": "1.0.15",
+      "description": "一站式生成东方巨构美学短剧",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/fe71a81a2cd92399f292aa8073c38a36a238ce13.jpg",
+      "snapshotId": 36413,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550585680.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://liblibai-online.liblib.cloud/skill/case/1786550594074.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/beda8103d1a8414aa15aa0eb1db95a07/fe71a81a2cd92399f292aa8073c38a36a238ce13.jpg\",\"description\":\"一站式生成东方巨构美学短剧\",\"evalResult\":\"\",\"inputType\":\"一份剧本或一句话，可选人脸/造型参考图\",\"name\":\"东方巨构美学短剧\",\"outputContent\":\"角色/道具/场景资产图、逐镜分镜表格、仙侠短剧视频成片\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"xianxia-drama-planner-beda8103d1a8414aa15aa0eb1db95a07\",\"skillUuid\":\"2a69fbd8ff444cdab84999a539948e23\",\"sourceType\":1,\"useScenario\":\"东方美学短剧、国风电视剧\",\"version\":\"1.0.15\"}",
+      "auditStatus": 1,
+      "tags": [
+        {
+          "id": 4002,
+          "code": "",
+          "tagLabel": "短剧漫剧",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4002/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 2871,
+      "usePv": 9050,
+      "useUv": 6483,
+      "publishAt": "2026-08-13 00:08:39",
+      "ownerId": 5925411,
+      "ownerName": "鱿鱼chill",
+      "ownerAvatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/3eb73ab3cfcfa4500021809b4f8f9b9dc3da085d.png",
+      "useScenario": "东方美学短剧、国风电视剧",
+      "inputType": "一份剧本或一句话，可选人脸/造型参考图",
+      "outputContent": "角色/道具/场景资产图、逐镜分镜表格、仙侠短剧视频成片",
+      "sourceType": 1,
+      "nickname": "鱿鱼chill",
+      "avatar": "https://libtv-res.liblib.art/upload-images/ae93620a110f4bebbf8932e6a045ec4d/3eb73ab3cfcfa4500021809b4f8f9b9dc3da085d.png",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550585680.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://liblibai-online.liblib.cloud/skill/case/1786550594074.mp4",
+          "canvasCasePower": 0
+        }
+      ]
+    }
+  },
+  "msg": "",
+  "trace_id": "4d305536-a6d4-9059-bdac-2ed027df4839"
+}

@@ -1,0 +1,135 @@
+/* Version log */
+.feature-updates-page {
+  max-width: 1160px;
+  padding: 10px 80px 64px;
+}
+.feature-updates-page > h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+.feature-version {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+.feature-version-meta {
+  width: 198px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.feature-version-meta > span {
+  width: fit-content;
+  background: #ffffff08;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.feature-version-meta > p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #787878;
+}
+.feature-version-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.feature-version-content > h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.feature-media {
+  width: 100%;
+  aspect-ratio: 235/132.1875;
+  border: 1px solid #ffffff24;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1c1c1c;
+  position: relative;
+}
+.feature-media img,
+.feature-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.feature-item-copy {
+  padding-bottom: 12px;
+}
+.feature-item-copy h3,
+.feature-optimizations h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.feature-item-copy > p {
+  font-size: 14px;
+  line-height: 22px;
+  white-space: pre-wrap;
+  color: #787878;
+}
+.feature-item-copy > button {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  background: #f7f7f7;
+  color: #141414;
+  padding: 8px 14px;
+  border-radius: 10px;
+  height: 36px;
+  transition: background 0.15s;
+}
+.feature-item-copy > button:hover {
+  background: #d8d8d8;
+}
+.feature-optimizations {
+  margin-top: 32px;
+}
+.feature-optimizations ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #787878;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.feature-updates-sentinel {
+  width: 100%;
+  height: 1px;
+}
+
+.feature-updates-retry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  color: #787878;
+  font-size: 14px;
+}

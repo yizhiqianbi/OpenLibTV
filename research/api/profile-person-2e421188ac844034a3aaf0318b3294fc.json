@@ -1,0 +1,68 @@
+{
+  "code": 0,
+  "msg": null,
+  "data": {
+    "userDetail": {
+      "id": 11511767,
+      "avatar": "https://liblibai-online.liblib.cloud/img/2e421188ac844034a3aaf0318b3294fc/0dd0f01c429a6f788d4544668396c5440fd8c77751509b2f7d1572235ff7037c.JPG",
+      "nickname": "小编阿莫",
+      "mobile": "180****1252",
+      "uuid": "2e421188ac844034a3aaf0318b3294fc",
+      "homepages": [],
+      "personalSpaceInformation": {
+        "briefIntroduction": "路人",
+        "coverImage": "",
+        "xiaohongshuLink": "",
+        "xiaohongshuIcon": "",
+        "tiktokLink": "",
+        "tiktokIcon": "",
+        "bliLink": "",
+        "bliIcon": "",
+        "webLink": "",
+        "webIcon": "",
+        "huggingFaceLink": "",
+        "huggingFaceIcon": "",
+        "twitterLink": "",
+        "twitterIcon": "",
+        "facebookLink": "",
+        "facebookIcon": "",
+        "instagramLink": "",
+        "instagramIcon": "",
+        "discordLink": "",
+        "discordIcon": "",
+        "otherLink": "",
+        "otherIcon": "",
+        "openBusiness": 0,
+        "openLike": 1,
+        "openRecommend": 1
+      },
+      "authorDetail": "",
+      "authAuthorStatus": 0
+    },
+    "counter": {
+      "uploadCount": 0,
+      "followerCount": 13,
+      "followCount": 0,
+      "likeCount": 0,
+      "picLikeCount": 0,
+      "modelLikeCount": 0,
+      "downloadCount": 0,
+      "commentCount": null,
+      "imageCount": null,
+      "subscribeCount": null,
+      "hitCount": null,
+      "runCount": 0,
+      "heat": null,
+      "useCount": 0,
+      "modelUseCount": null,
+      "imageUseCount": null,
+      "imageDownCount": null,
+      "imageRunCount": null,
+      "isFollow": 0,
+      "isLike": null
+    },
+    "tags": [
+      "authorship"
+    ]
+  }
+}

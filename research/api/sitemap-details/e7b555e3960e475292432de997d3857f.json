@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e7b555e3960e475292432de997d3857f",
+      "projectUuid": "742fae12bfde4660be5f127d7ed89ec3",
+      "name": "文旅片《这就是自贡》",
+      "description": "姐妹花飞镖旅行游走自贡，自贡的井盐，自贡的兔子，自贡的恐龙，自贡的扎染，数不清的非遗，数不清的人间烟火。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/f6c97a2f24364d49b27e149796d72a07/2552fe719a193e08d7d204e4586da3b26ac6718a.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/f6c97a2f24364d49b27e149796d72a07/676f0af9791a96c2d9aaaa9105a7e80a44ee6bbc.mp4",
+      "snapshotId": 25082,
+      "auditStatus": 1,
+      "ownerId": 8276445,
+      "ownerUuid": "f6c97a2f24364d49b27e149796d72a07",
+      "avatar": "https://liblibai-online.liblib.cloud/img/f6c97a2f24364d49b27e149796d72a07/ed6d875a11382cb65b0c8c57b26c3baac2b09ee177efd02449e5a9a46a0135e1.png",
+      "nickname": "LYGLYGLYG",
+      "isLike": false,
+      "likeCount": 28,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1205,
+          "code": "culture_tourism",
+          "tagLabel": "文旅政媒",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1205/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "33 【文旅非遗宣传片《这就是自贡》 - Dir.Lincoln | 小红书 - 你的生活兴趣社区】 😆 2VX05jXSHi2TrbZ 😆 https://www.xiaohongshu.com/discovery/item/6a4d24de000000000f015429?source=webshare&xhsshare=pc_web&xsec_token=ABcnKkqcwQO4Yp0Ido-yWxq5qvAh1MLK3zVO9y9-WaItU=&xsec_source=pc_share",
+      "createAt": "2026年07月08日 00:10",
+      "updateAt": "2026年07月08日 00:17",
+      "publishAt": "2026年07月08日 00:11",
+      "playCount": 37,
+      "viewCreationProcessCount": 17,
+      "copyCanvasCount": 6,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 72,
+        "edges": 95
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6496aff0-4e8c-9b5e-b4fc-040f2faf0d74"
+}

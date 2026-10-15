@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ae43c59bda6a43c7a0200ca799a6a29e",
+      "projectUuid": "b8d1100339f74fab8b2d3e4fa7d6e727",
+      "name": "“一个女人是怎么被家族记忆写没的”",
+      "description": "“一个女人是怎么被家族记忆写没的”",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/aadb9a4396c449d385452443c960c4e7/be7c9b8a1d6c408aa1120fbf63eb881120a3e560.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/aadb9a4396c449d385452443c960c4e7/537910a283717749a93167ca74e0a0c67a2b9085.mov",
+      "snapshotId": 21267,
+      "auditStatus": 1,
+      "ownerId": 8353802,
+      "ownerUuid": "aadb9a4396c449d385452443c960c4e7",
+      "avatar": "https://liblibai-online.liblib.cloud/img/aadb9a4396c449d385452443c960c4e7/7362f88a82b761ec6d6cce74c21051d29d93048cb25b66de3dffb243ea59b03d.png",
+      "nickname": "方兴未AI",
+      "isLike": false,
+      "likeCount": 139,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "0.00 复制打开抖音，看看【方兴未AI的作品】做这部短片时，我一直在想：我们到底是怎么记住一个人... https://v.douyin.com/lMiBiOiqdkY/ :3pm CuS:/ 01/01 G@I.ic",
+      "createAt": "2026年06月23日 11:18",
+      "updateAt": "2026年07月14日 17:51",
+      "publishAt": "2026年06月23日 11:18",
+      "playCount": 38,
+      "viewCreationProcessCount": 17,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 170,
+        "edges": 122
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "61e46195-52ef-9226-a6b8-171035ccda92"
+}

@@ -1,0 +1,233 @@
+.show-page {
+  padding-top: 4px;
+}
+.gallery-section h2 {
+  padding: 0 8px;
+  margin-bottom: 14px;
+}
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.tab-scroll-wrap {
+  position: relative;
+  min-width: 0;
+  flex: 1;
+  border-bottom: 1px solid var(--border);
+}
+.gallery-tabs {
+  display: flex;
+  overflow: auto;
+  scrollbar-width: none;
+  gap: 28px;
+  height: 34px;
+  align-items: flex-start;
+  margin: 0 8px;
+  mask-image: linear-gradient(to right, #000 94%, transparent);
+}
+.gallery-tabs button {
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 12px;
+  height: 34px;
+  border-bottom: 1px solid transparent;
+  flex-shrink: 0;
+}
+.gallery-tabs button.active {
+  color: var(--text);
+  border-bottom-color: #fff;
+}
+.gallery-tabs button:hover {
+  color: var(--text);
+}
+.tab-next {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  background: var(--surface2);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.search-field {
+  border: 1px solid #ffffff14;
+  border-radius: 24px;
+  height: 40px;
+  padding: 0 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  flex-shrink: 0;
+  min-width: 0;
+  width: 280px;
+}
+.search-field input {
+  flex: 1;
+  width: 100%;
+  font-size: 13px;
+}
+.search-field:focus-within {
+  border-color: #ffffff40;
+}
+.search-field button {
+  display: flex;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px 24px;
+  padding: 0 4px;
+}
+.gallery-card {
+  min-width: 0;
+}
+.gallery-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: var(--surface);
+  cursor: pointer;
+}
+.gallery-cover > img,
+.gallery-cover > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-cover > video {
+  z-index: 1;
+}
+.award-label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  right: 8px;
+  color: #d8b64f;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 11px;
+  z-index: 2;
+  background: #0009;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: linear-gradient(0deg, #0009, transparent 55%);
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.gallery-overlay .white-button {
+  font-size: 12px;
+}
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+.play-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #0004;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 2;
+}
+.gallery-card:hover .play-indicator {
+  opacity: 1;
+}
+.gallery-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 4px 4px;
+}
+.avatar-button {
+  position: relative;
+  flex-shrink: 0;
+}
+.avatar-badge {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+}
+.gallery-caption {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.work-title {
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.work-author {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.work-author em {
+  font-style: normal;
+  font-size: 11px;
+  color: #dd3c60;
+  margin-right: 6px;
+}
+.load-more {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--faint);
+  font-size: 12px;
+}
+.help-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #252525;
+  width: 36px;
+  height: 36px;
+  z-index: 36;
+  font-size: 20px;
+  color: #fff8;
+  box-shadow: 0 2px 5px #0002;
+}
+.popover {
+  position: absolute;
+  z-index: 60;
+  background: #191919;
+  border: 1px solid #fff2;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px #0006;
+  padding: 8px;
+  color: #eee;
+}

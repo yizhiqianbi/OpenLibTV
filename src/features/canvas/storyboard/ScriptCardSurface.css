@@ -1,0 +1,125 @@
+.cv-script-node[data-script-card-kind] {
+  overflow: hidden;
+}
+.cv-script-card-surface {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+}
+.cv-script-card-surface:active {
+  cursor: grabbing;
+}
+.cv-script-card-local-feedback:empty {
+  display: none;
+}
+.cv-script-card-local-feedback {
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: default;
+}
+.cv-script-card-local-feedback p,
+.cv-script-card-local-feedback > [role='alert'] {
+  margin: 0;
+  padding: 4px 12px;
+  color: #fda4af;
+}
+.cv-script-card-local-feedback button {
+  color: inherit;
+}
+.cv-script-card-task-notice {
+  width: 100%;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  border-radius: 0;
+  border-top: 1px solid #ffffff1a;
+  background: #ffffff0a;
+  color: #ffffff8c;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1;
+}
+.cv-script-card-task-notice.is-failed {
+  color: #ff9e9e;
+}
+.cv-script-card-task-notice svg {
+  flex-shrink: 0;
+}
+.cv-script-card-task-notice span,
+.cv-script-card-task-notice small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cv-script-card-task-notice small {
+  max-width: 55%;
+  font-size: inherit;
+  font-family: monospace;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
+.cv-script-card-generating {
+  flex: 1;
+  min-height: 0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cv-script-card-skeleton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cv-script-card-skeleton > div {
+  display: flex;
+  gap: 8px;
+}
+.cv-script-card-skeleton i {
+  height: 24px;
+  flex: 1;
+  border-radius: 4px;
+  background: #ffffff1a;
+}
+.cv-script-card-task-status-slot {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+.cv-script-card-generating > small {
+  margin-top: 6px;
+  text-align: center;
+  color: #999;
+}
+.cv-node-script-v2[data-script-card-kind='resource'] .cv-node-feedback-body,
+.cv-node-script-v2[data-script-card-kind='generating'] .cv-node-feedback-body,
+.cv-node-script-v2[data-script-card-kind='failed'] .cv-node-feedback-body {
+  background: var(--Fill-Panel-background, #212121);
+}
+.cv-node-script-v2[data-script-card-kind='empty_generate'] .cv-node-feedback-body {
+  background: var(--Surface-secondary-background, #262626);
+}
+.cv-node-script-v2[data-script-card-kind='pending'] .cv-node-feedback-body {
+  background: var(--Surface-Panel-background, #171717);
+}
+.canvas-light .cv-node-script-v2[data-script-card-kind] .cv-node-feedback-body {
+  background: var(--Surface-secondary-background, #fff);
+}
+.canvas-light .cv-script-card-task-notice {
+  border-color: #0000001a;
+  background: #fafafa;
+  color: #919191;
+}
+.canvas-light .cv-script-card-task-notice.is-failed {
+  color: #e7000b;
+}
+.canvas-light .cv-script-card-skeleton i {
+  background: #d6d6d6;
+}

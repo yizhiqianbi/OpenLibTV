@@ -1,0 +1,94 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d38ad24924f440ef93b7cb432b1cb619",
+      "projectUuid": "b6cf338ff1e84728b5fce553b4ede90b",
+      "name": "山海劫",
+      "description": "剧情围绕拥有白泽画卷的绘卷行者—沈泽展开，是一场非常宏达神话冒险故事，打造中国版的神奇动物在哪里。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/c56847c0e4b540208e94164b031777d9/50799e265bbb7b57eec11e82f5012e18cd649ece.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/c56847c0e4b540208e94164b031777d9/b5b2c3bc2fa119261bedb7edf318fbdad3f66fb5.mp4",
+      "snapshotId": 23391,
+      "auditStatus": 1,
+      "ownerId": 9182561,
+      "ownerUuid": "c56847c0e4b540208e94164b031777d9",
+      "avatar": "https://liblibai-online.liblib.cloud/img/c56847c0e4b540208e94164b031777d9/9f48fdfa2aa7b2402f423ef1b6f5b80da367ebd655d7cb951baf1fc5742cbb6c.jpg",
+      "nickname": "狄凌DL",
+      "isLike": false,
+      "likeCount": 102,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV1h1Th6tEQi/?spm_id_from=333.1387.homepage.video_card.click&vd_source=c81e0822b72d806f95b6301430897aff",
+      "createAt": "2026年07月01日 10:52",
+      "updateAt": "2026年07月03日 23:51",
+      "publishAt": "2026年07月01日 10:52",
+      "honors": [
+        "非遗专项激励"
+      ],
+      "awardedTag": [
+        "非遗专项激励"
+      ],
+      "playCount": 210,
+      "viewCreationProcessCount": 83,
+      "copyCanvasCount": 24,
+      "shareCount": 5,
+      "snapshotSummary": {
+        "nodes": 126,
+        "edges": 213
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b237985c-ecdb-9ed3-8aa1-6cbc36e0e0f5"
+}

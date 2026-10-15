@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "2f18c36a94e34bac983625a32bb46a21",
+      "projectUuid": "37505a5d538f4d43815dadf23f81f8e3",
+      "name": "《判官赴宴》陆判“判心”国风动漫",
+      "description": "故事核心：\n朱尔旦是一个俊美但缺心眼、文章很差、胆子很大的清代书生。他在酒楼被朋友嘲笑文章差，又被激将去城北十王殿“请陆判喝酒”。他真的去了。陆判不是单纯鬼怪，而是掌人生死、像古代官员一样的阴司判官。第一集核心主线是：朱尔旦以为自己在赌胆，其实陆判已经盯上了他",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/4516157ad4cf4175bef2cb448d41b9f3/8a1c7953f9e8d828a78f8572bc5bd595d616b489.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/4516157ad4cf4175bef2cb448d41b9f3/525c1a0d2ba49076395ce8bd302f2c3b0a013ffa.mp4",
+      "snapshotId": 25092,
+      "auditStatus": 1,
+      "ownerId": 1740662,
+      "ownerUuid": "4516157ad4cf4175bef2cb448d41b9f3",
+      "avatar": "https://liblibai-online.liblib.cloud/img/4516157ad4cf4175bef2cb448d41b9f3/df345921bdcbd6912a6992a2702f9916280444d89f01bc8674e855cdeb27d371.jpg",
+      "nickname": "三千问Atelier",
+      "isLike": false,
+      "likeCount": 166,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "67 【以为赌胆去敬酒其实判官早看上了他的心 - 三千问Atelier | 小红书 - 你的生活兴趣社区】 😆 45lQEqBywmPHkRA 😆 https://www.xiaohongshu.com/discovery/item/6a4d32ec000000000702a5e5?source=webshare&xhsshare=pc_web&xsec_token=AB2CVhVKGWokNG4bylNBLdXr_DRJ9ZN39lM1N3odyTOb0=&xsec_source=pc_share",
+      "createAt": "2026年07月08日 01:18",
+      "updateAt": "2026年07月14日 17:51",
+      "publishAt": "2026年07月08日 01:26",
+      "playCount": 45,
+      "viewCreationProcessCount": 23,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 70,
+        "edges": 143
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "937ebc54-1c6c-9bd6-990d-74180755a92e"
+}

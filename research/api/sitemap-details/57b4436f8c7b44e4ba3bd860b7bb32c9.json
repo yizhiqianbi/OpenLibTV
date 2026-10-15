@@ -1,0 +1,94 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "57b4436f8c7b44e4ba3bd860b7bb32c9",
+      "projectUuid": "d7dcc245f1fc45c088f104907a0f930f",
+      "name": "视平线计划-预告版",
+      "description": "一个伟大且纯真的西幻冒险，超过400种生物，100+个种族，无数风格迥异的城市于大陆，冒险即将在此展开！",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1b0a744e8c9d4358b2932f2f7c1a419a/980decec0f6ecb324ca3ec4b0a3b7a50f336339e.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1b0a744e8c9d4358b2932f2f7c1a419a/7c0769d74239b64249b3704b3117758a37048c2a.mp4",
+      "snapshotId": 19561,
+      "auditStatus": 1,
+      "ownerId": 8646534,
+      "ownerUuid": "1b0a744e8c9d4358b2932f2f7c1a419a",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1b0a744e8c9d4358b2932f2f7c1a419a/dce9942b052aac0809acf4438a586e704a6f0ff535fd617818327b17ca5348be.jpg",
+      "nickname": "SandPLinestudio",
+      "isLike": false,
+      "likeCount": 197,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "2.35 复制打开抖音，看看【S+P Line Studio的作品】《视平线计划》 谁说中国人做不好异世界影片！我受够... https://v.douyin.com/YlY8o9tGAFc/ :2pm fbn:/ 05/08 u@s.eO",
+      "createAt": "2026年06月15日 17:06",
+      "updateAt": "2026年06月17日 19:39",
+      "publishAt": "2026年06月15日 17:06",
+      "honors": [
+        "传播潜力奖"
+      ],
+      "awardedTag": [
+        "传播潜力奖"
+      ],
+      "playCount": 187,
+      "viewCreationProcessCount": 114,
+      "copyCanvasCount": 10,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 99,
+        "edges": 70
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "29ba40e5-23ab-94da-95b2-3a0c972f1446"
+}

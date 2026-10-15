@@ -1,0 +1,77 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e8330076d07b4410aeddd26a1c1af44e",
+      "projectUuid": "807c7a45e31a4d0ca73aae92b6f5c9bf",
+      "name": "TVC广告湿巾短视频",
+      "description": "TVC广告湿巾短视频",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/7cd49fa6ffc54e23b47d35a3087d786e/fd466aae492206c60f5a6ec250011142e56fb271.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7cd49fa6ffc54e23b47d35a3087d786e/8e75b72148d302bd9dcc0216bb59c7a7488f4141.mp4",
+      "snapshotId": 25112,
+      "auditStatus": 1,
+      "ownerId": 1732052,
+      "ownerUuid": "7cd49fa6ffc54e23b47d35a3087d786e",
+      "avatar": "https://liblibai-online.liblib.cloud/img/7cd49fa6ffc54e23b47d35a3087d786e/e33ae2cc602200ac9f2f36e42ba3d4e2c5ccfc909c69b9077d8256502e8d54f6.jpg",
+      "nickname": "Hipocrita",
+      "isLike": false,
+      "likeCount": 98,
+      "tags": [
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月08日 09:36",
+      "updateAt": "2026年07月08日 09:38",
+      "publishAt": "2026年07月08日 09:37",
+      "playCount": 134,
+      "viewCreationProcessCount": 59,
+      "copyCanvasCount": 14,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 115,
+        "edges": 64
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "48c213be-308e-9986-a7e9-063e5e205c62"
+}

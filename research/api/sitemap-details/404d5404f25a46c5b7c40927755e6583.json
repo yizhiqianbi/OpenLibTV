@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "404d5404f25a46c5b7c40927755e6583",
+      "projectUuid": "922b7d8c9e3f41d7a045df55e6476723",
+      "name": "《洛城幻轴·万物生》",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/0aadcd3560a34e33aae43032fb120cfc/73c5aa971426a998e2776f7eb5d923adadc14b20.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/0aadcd3560a34e33aae43032fb120cfc/6cc340505e48fe3c14caea66bfdb71aa2e6e7c45.mp4",
+      "snapshotId": 5779,
+      "auditStatus": 1,
+      "ownerId": 855991,
+      "ownerUuid": "0aadcd3560a34e33aae43032fb120cfc",
+      "avatar": "https://liblibai-online.liblib.cloud/img/0aadcd3560a34e33aae43032fb120cfc/1a3c038af3685e541e479087a1d2b9a7d1df2497cc6c7f533d73e8f47b5d2d18.jpg",
+      "nickname": "青柠檬的AI日常",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3023,
+          "code": "test",
+          "tagLabel": "创意单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3023",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "92 【《洛城幻轴·万物生》 - 青柠檬的AI日记 | 小红书 - 你的生活兴趣社区】 😆 PWanhiOKkKQ3521 😆 https://www.xiaohongshu.com/discovery/item/69e0caa80000000023027d79?source=webshare&xhsshare=pc_web&xsec_token=ABJ9KP7Sewjvnm7gtJIqRseSzVI_fXaGeY_JF3XJDhEws=&xsec_source=pc_share",
+      "createAt": "2026年04月16日 21:43",
+      "updateAt": "2026年04月19日 04:30",
+      "publishAt": "2026年04月16日 21:43",
+      "playCount": 3,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 9,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "1ff32078-081d-93b9-9a26-a9c9b4406e36"
+}

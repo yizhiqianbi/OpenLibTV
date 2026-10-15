@@ -1,0 +1,295 @@
+.libtv-video-player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  border-radius: inherit;
+  container-type: inline-size;
+}
+.libtv-video-player:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+}
+.libtv-media-controller {
+  width: 100%;
+  height: 100%;
+  --media-primary-color: #fff;
+  --media-secondary-color: transparent;
+  --media-control-background: transparent;
+  --media-control-hover-background: transparent;
+  --media-range-bar-color: #fff;
+  --media-range-track-height: 4px;
+  --media-range-thumb-width: 12px;
+  --media-range-thumb-height: 12px;
+  --media-range-thumb-background: #fff;
+  --media-range-thumb-border-radius: 50%;
+  --media-control-padding: 4px 8px;
+  --media-font-size: 14px;
+  --media-button-icon-width: 18px;
+  --media-button-icon-height: 18px;
+  --media-background-color: transparent;
+  --media-time-range-buffered-color: rgba(255, 255, 255, 0.3);
+  --media-range-track-background: rgba(255, 255, 255, 0.2);
+  --media-tooltip-display: none;
+}
+.libtv-video-player video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  background: #000;
+}
+.libtv-control-bar {
+  display: flex;
+  width: 100%;
+  padding: 40px 0 0;
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0), rgba(18, 18, 18, 0.8));
+  overflow: visible;
+}
+.libtv-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 16px 20px;
+  box-sizing: border-box;
+}
+.libtv-control-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 20px;
+}
+.libtv-video-player button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 40px;
+  min-width: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.libtv-video-player button:hover {
+  opacity: 0.8;
+}
+.libtv-video-player button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.libtv-play-control,
+.libtv-volume-control > button {
+  width: 40px;
+}
+.libtv-fullscreen-control {
+  padding: 0 11px !important;
+}
+.libtv-player-time {
+  flex-shrink: 0;
+  min-width: 40px;
+  text-align: center;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  font-variant-numeric: tabular-nums;
+}
+.libtv-progress {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 12px;
+  min-height: 12px;
+  padding: 0;
+  --media-control-height: 12px;
+  --media-range-padding: 0;
+  --media-range-track-background: rgba(255, 255, 255, 0.25);
+  --media-range-thumb-opacity: 0;
+  --media-range-thumb-width: 0px;
+  --media-range-thumb-height: 0px;
+  --media-time-range-buffered-color: transparent;
+}
+.libtv-volume-control {
+  position: relative;
+}
+.libtv-volume-popup {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 6px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 2;
+}
+.libtv-volume-popup.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.libtv-volume-popup::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  content: '';
+}
+.libtv-volume-popup > span {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.libtv-volume-track {
+  position: relative;
+  width: 20px;
+  height: 100px;
+  touch-action: none;
+  cursor: pointer;
+}
+.libtv-volume-track i,
+.libtv-volume-track b {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  border-radius: 3px;
+  transform: translateX(-50%);
+}
+.libtv-volume-track i {
+  top: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.libtv-volume-track b {
+  background: #fff;
+}
+.libtv-volume-track em {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.libtv-quality-control {
+  position: relative;
+}
+.libtv-quality-menu {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  z-index: 3;
+  min-width: 130px;
+  margin-bottom: 4px;
+  padding: 4px 0;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.libtv-quality-menu button {
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  min-height: 30px;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+.libtv-quality-menu button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+.libtv-buffering {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.libtv-buffering > span {
+  width: 20px;
+  height: 20px;
+  padding: 12px 24px;
+  box-sizing: content-box;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.libtv-buffering > span::after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  content: '';
+  animation: libtv-player-spin 0.7s linear infinite;
+  box-sizing: border-box;
+}
+@keyframes libtv-player-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@container (max-width:560px) {
+  .libtv-controls {
+    gap: 8px;
+    padding: 0 12px 12px;
+  }
+  .libtv-control-group {
+    gap: 8px;
+  }
+  .libtv-volume-control,
+  .libtv-speed-control {
+    display: none !important;
+  }
+  .libtv-player-time {
+    min-width: 0;
+    font-size: 12px;
+  }
+  .libtv-play-control {
+    width: 32px;
+    min-width: 32px !important;
+    height: 32px !important;
+  }
+  .libtv-fullscreen-control {
+    height: 32px !important;
+    min-width: 26px !important;
+    padding: 0 4px !important;
+  }
+  .libtv-quality-control > button {
+    height: 32px;
+    min-width: 0;
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .libtv-video-player button,
+  .libtv-volume-popup {
+    transition: none;
+  }
+}

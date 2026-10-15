@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "9007495efc5d4efdae2e30dfdfa3070c",
+      "projectUuid": "282c52d268a34c7eba6c6249658b7e56",
+      "name": "好不容易重生，却拿到反派剧本？！",
+      "description": "夜枭，一个被上帝选中的穿越者，重生到《破灭的拂晓》异世界，满心期待拯救世界、迎娶公主，却拿到了注定与主角为敌的《反派剧本》。他必须遵守剧本规则——推进剧情、隐藏身份、保护主角团不死——否则将面临比死亡更可怕的惩罚。在无数次失败与重来中，与他相遇的那个银发魔法师少女次次鱼。随着剧情推进，夜枭发现自己是要觉醒为第三代魔王，与勇者小队展开宿命对决。在剧本的枷锁与内心的选择之间，他决定用自己的方式，为这个故事写下一个不一样的结局。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/9cae264a4ea7405690e23b3d6b4ddb2c/8d1d1de4b46572792283dd7f77d9904d1b6f361d.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/9cae264a4ea7405690e23b3d6b4ddb2c/a2d14937f4d52bd5163c150c115ca0048f9ce7e5.mp4",
+      "snapshotId": 16000,
+      "auditStatus": 1,
+      "ownerId": 8976478,
+      "ownerUuid": "9cae264a4ea7405690e23b3d6b4ddb2c",
+      "avatar": "https://liblibai-online.liblib.cloud/img/9cae264a4ea7405690e23b3d6b4ddb2c/c3adcfe8f9f2b9f47973938cd8769ff86790ba82d299ee21e8b06f7e559cd3d0.jpg",
+      "nickname": "木末",
+      "isLike": false,
+      "likeCount": 40,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "【好不容易重生，却拿到反派剧本？！】 https://www.bilibili.com/video/BV19kVf6dEpt/?share_source=copy_web&vd_source=dc9903e773bfed6ee395712a5a5826c4",
+      "createAt": "2026年06月01日 23:46",
+      "updateAt": "2026年06月03日 12:00",
+      "publishAt": "2026年06月01日 23:46",
+      "playCount": 19,
+      "viewCreationProcessCount": 13,
+      "copyCanvasCount": 4,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 19,
+        "edges": 20
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "839fe805-18f0-9b90-99e2-e25071d9fafa"
+}

@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "e1dba5483b2c459f89ce5087ac11e085",
+      "projectUuid": "40291583916b409ebfbd3ed7fcbc6354",
+      "name": "《端午节请勿偷“粽子”》微恐公益广告，慎入。",
+      "description": "答应我，端午，请别去墓里拆“粽子”。\n因为：\n盗墓不是探险。\n盗墓不是猎艳。\n盗墓，是犯罪。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/0b3c191849b34d31acd2a2f5fb63f821/c61753abdf654687ff99b58023f0b6614c3520cb.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/0b3c191849b34d31acd2a2f5fb63f821/dcef2c20baa8c3b2813a0bd0aac187444a176929.mp4",
+      "snapshotId": 20689,
+      "auditStatus": 1,
+      "ownerId": 1410406,
+      "ownerUuid": "0b3c191849b34d31acd2a2f5fb63f821",
+      "avatar": "https://liblibai-online.liblib.cloud/img/0b3c191849b34d31acd2a2f5fb63f821/37c5c748d16cf02e8c3982a2b4c0fecb8c84f04d77d0ba32ddfcf1d4dd25a7ed.png",
+      "nickname": "Miorning喵咛",
+      "isLike": false,
+      "likeCount": 7,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1108,
+          "code": "public_welfare",
+          "tagLabel": "公益广告",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1108/",
+          "tagStatus": 1,
+          "tagOrder": 8,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/lNrV6UHqRDg/ :7pm y@t.re ZMj:/ 04/04",
+      "createAt": "2026年06月20日 00:46",
+      "updateAt": "2026年06月20日 14:02",
+      "publishAt": "2026年06月20日 00:46",
+      "playCount": 6,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 43,
+        "edges": 109
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "dfec6c51-b0cf-9c39-8281-aef383e819e4"
+}

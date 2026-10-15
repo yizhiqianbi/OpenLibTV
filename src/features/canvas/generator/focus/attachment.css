@@ -1,0 +1,191 @@
+.cv-focus-attachment-chip {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 9999px;
+  color: var(--fg-muted, #919191);
+  background: rgb(255 255 255 / 5%);
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  transition:
+    background 150ms,
+    color 150ms;
+}
+
+.cv-focus-attachment-chip:hover:not(:disabled) {
+  background: rgb(255 255 255 / 10%);
+}
+
+.cv-focus-attachment-chip.is-active {
+  color: var(--canvas-controls-text, #fff);
+  background: var(--canvas-controls-active, #ffffff26);
+}
+
+.cv-focus-attachment-chip:disabled {
+  color: var(--fg-disabled, #525252);
+  cursor: not-allowed;
+}
+
+.cv-focus-attachment-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  mask: url('/assets/icons/focus.svg') center / contain no-repeat;
+}
+
+.cv-focus-attachment-card {
+  position: relative;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.cv-focus-attachment-edit {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  overflow: hidden;
+  border: 0.5px solid var(--border-default, #3a3a3a);
+  border-radius: 8px;
+  color: rgb(255 255 255 / 80%);
+  background: #1f2937;
+  cursor: pointer;
+}
+
+.cv-focus-attachment-edit > img,
+.cv-focus-attachment-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.cv-focus-attachment-shade {
+  background: rgb(0 0 0 / 40%);
+}
+
+.cv-focus-attachment-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+  line-height: 11px;
+  pointer-events: none;
+  transition: opacity 150ms;
+}
+
+.cv-focus-attachment-label .cv-focus-attachment-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.cv-focus-attachment-label.is-hover {
+  opacity: 0;
+}
+
+.cv-focus-attachment-card:hover .is-normal,
+.cv-focus-attachment-card:focus-within .is-normal {
+  opacity: 0;
+}
+
+.cv-focus-attachment-card:hover .is-hover,
+.cv-focus-attachment-card:focus-within .is-hover {
+  opacity: 1;
+}
+
+.cv-focus-attachment-delete {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  background: #333;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 150ms;
+}
+
+.cv-focus-attachment-card:hover .cv-focus-attachment-delete,
+.cv-focus-attachment-card:focus-within .cv-focus-attachment-delete {
+  opacity: 1;
+}
+
+.cv-focus-attachment-card button:disabled {
+  cursor: not-allowed;
+}
+
+.cv-focus-attachment-chip:focus-visible,
+.cv-focus-attachment-card button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.cv-focus-attachment-tutorial {
+  padding: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0.5px solid var(--border-muted, #363636);
+  border-radius: 12px;
+  background: rgb(38 38 38 / 95%);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 12%);
+  backdrop-filter: blur(16px);
+}
+
+.cv-focus-attachment-tutorial-video,
+.cv-focus-attachment-tutorial-fallback {
+  display: block;
+  width: 320px;
+  max-width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cv-focus-attachment-tutorial-fallback {
+  display: grid;
+  place-items: center;
+  color: #a3a3a3;
+  background: #1f2937;
+  font-size: 12px;
+}
+
+.canvas-light .cv-focus-attachment-chip {
+  color: #525252;
+  background: rgb(0 0 0 / 5%);
+}
+
+.canvas-light .cv-focus-attachment-chip:hover:not(:disabled) {
+  background: rgb(0 0 0 / 10%);
+}
+
+.canvas-light .cv-focus-attachment-chip.is-active {
+  color: var(--canvas-controls-text, #262626);
+  background: var(--canvas-controls-active, #00000014);
+}
+
+.canvas-light .cv-focus-attachment-chip:disabled {
+  color: var(--fg-disabled, #919191);
+}

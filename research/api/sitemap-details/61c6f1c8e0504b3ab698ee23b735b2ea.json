@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "61c6f1c8e0504b3ab698ee23b735b2ea",
+      "projectUuid": "7f4cf735597e44f5861dd17db89ec26e",
+      "name": "暗黑史诗- Genesis（AI小短片）",
+      "description": "个人很喜欢暗黑风，类魂类的游戏",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/7b11ffb64f74446faf8016e7230dd459/90207d3993fa7071494a0601e6a5f00c01fb217ca9db1c0ed549b9455584af65.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/7b11ffb64f74446faf8016e7230dd459/a204d73244082910231abae69b361417d90a62a1.mp4",
+      "snapshotId": 23971,
+      "auditStatus": 1,
+      "ownerId": 7807633,
+      "ownerUuid": "7b11ffb64f74446faf8016e7230dd459",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "皮蛋小哈",
+      "isLike": false,
+      "likeCount": 34,
+      "tags": [
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1305,
+          "code": "concept_design",
+          "tagLabel": "概念设计",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1305/",
+          "tagStatus": 1,
+          "tagOrder": 5,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.bilibili.com/video/BV1RLTE68ETe/?vd_source=87be14cba365f1b49733053bb84a1300",
+      "createAt": "2026年07月03日 11:39",
+      "updateAt": "2026年07月09日 14:22",
+      "publishAt": "2026年07月03日 19:02",
+      "playCount": 18,
+      "viewCreationProcessCount": 6,
+      "copyCanvasCount": 3,
+      "shareCount": 1,
+      "snapshotSummary": {
+        "nodes": 38,
+        "edges": 0
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "10443529-ec81-97fe-accb-cbab2f90677b"
+}

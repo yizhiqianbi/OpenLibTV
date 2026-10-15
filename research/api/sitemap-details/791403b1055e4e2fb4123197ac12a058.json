@@ -1,0 +1,78 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "791403b1055e4e2fb4123197ac12a058",
+      "projectUuid": "be03f933bec84bfea92eddb72670f28f",
+      "name": "《妖司夜录》",
+      "description": "沈家遗孤沈照在灭门之夜被逼至断崖，以祖母留下的旧契叩开妖司大门。为了查清沈家惨案真相，她吞下妖司妖墨，成为妖司司主白绫的司录，也就是“活人账笔”。从此，她以凡眼观阳、墨眼观阴，跟随白绫穿梭古今，追查人间旧账，清算被权贵、邪术与谎言掩埋的血债。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/9d8eaa43e7084ea59673aa1a8a038281/209fd71b5b1b0cecc63dbed60a8365e61a8dbebf.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/9d8eaa43e7084ea59673aa1a8a038281/61981dbb6e495d74135a3e4c8771d1287406c08c.mp4",
+      "snapshotId": 21181,
+      "auditStatus": 1,
+      "ownerId": 932053,
+      "ownerUuid": "9d8eaa43e7084ea59673aa1a8a038281",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar2.png",
+      "nickname": "麻否剧场",
+      "isLike": false,
+      "likeCount": 16,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "1、小红书：http://xhslink.com/o/4BhwvGfwJbV  2、抖音： https://v.douyin.com/3-ptrkN1B18/ Tlp:/ 07/11 :0pm c@n.DH",
+      "createAt": "2026年06月22日 21:43",
+      "updateAt": "2026年06月24日 13:04",
+      "publishAt": "2026年06月22日 21:43",
+      "playCount": 6,
+      "viewCreationProcessCount": 4,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 130,
+        "edges": 130
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2a9be794-a8f3-96ae-9d8a-d013a0b4e64b"
+}

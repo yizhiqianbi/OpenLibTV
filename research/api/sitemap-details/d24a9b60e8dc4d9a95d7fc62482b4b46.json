@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d24a9b60e8dc4d9a95d7fc62482b4b46",
+      "projectUuid": "0a91d97ef5de4e0c8b8307a747db06a6",
+      "name": "临水",
+      "description": "“天乌乌，海茫茫，王船载亲转回乡。”\n《临水》的故事发生在福建沿海一座被海风、神明与旧俗包裹的渔村。在这里，水连着生，也连着死；香火比姓名更重，血脉比生命更沉。我们用AI将一场将无辜骨肉推向祭坛的家族悲剧写成了童谣。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5fa689203558467eba9b8a3b388240bc/0274b4a5861b0be9867c476ab361beb383fb356f.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/5fa689203558467eba9b8a3b388240bc/b47f1e9bea6c39b1b0c71e9fed55d0a6e2eb3067.mov",
+      "snapshotId": 22864,
+      "auditStatus": 1,
+      "ownerId": 7063325,
+      "ownerUuid": "5fa689203558467eba9b8a3b388240bc",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5fa689203558467eba9b8a3b388240bc/7a70ad7b5452b7ddb19c4149154c9f1ebb6fe00f698c2744c146f82f4c661180.png",
+      "nickname": "YoRHa",
+      "isLike": false,
+      "likeCount": 151,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a3e3c63000000000803eec5?app_platform=android&ignoreEngage=true&app_version=9.33.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CB6NlKfqRkwcGvAIiPWiqBXih-odGO9HXOnXljtMFt_J4=&author_share=1&shareRedId=ODo6QzpIOTs2NzUyOTgwNjdJOTc4S0c7&apptime=1782707063&share_id=e3efec6a9fad41c79948f9034ec7ed3e&share_channel=copy_link&appuid=648c7c52000000001f004fa2&xhsshare=CopyLink",
+      "createAt": "2026年06月29日 22:04",
+      "updateAt": "2026年07月21日 23:53",
+      "publishAt": "2026年06月29日 22:04",
+      "playCount": 31,
+      "viewCreationProcessCount": 17,
+      "copyCanvasCount": 1,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 156,
+        "edges": 168
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "8315a7b5-5546-9ae9-b516-3aaeddd0e952"
+}

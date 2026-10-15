@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "87b81d6d547d4fb7a8647357ec8da6d6",
+      "projectUuid": "d5a63b358ac14364a4f03ed857fe34ab",
+      "name": "《喂！大橘》之决战野猪林",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/1d8ece7d4e714c8cbcb761b38798298e/ead4c3150ae60e1a926603956c928fe4d1edb958.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/1d8ece7d4e714c8cbcb761b38798298e/3c9fe58a0d919497fc91781d50a0d6ea254f71e0.mp4",
+      "snapshotId": 9375,
+      "auditStatus": 1,
+      "ownerId": 4220569,
+      "ownerUuid": "1d8ece7d4e714c8cbcb761b38798298e",
+      "avatar": "https://liblibai-online.liblib.cloud/img/1d8ece7d4e714c8cbcb761b38798298e/9b7c8a1286f9cca9bdd634368a057d121f141e8a23fe49fa7a486d4fa4dcd3f5.png",
+      "nickname": "史柏帆",
+      "isLike": false,
+      "likeCount": 231,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3022,
+          "code": "test",
+          "tagLabel": "短片单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3022",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/AJyhFCknOvo",
+      "createAt": "2026年05月06日 16:11",
+      "updateAt": "2026年05月09日 15:44",
+      "publishAt": "2026年05月06日 16:11",
+      "playCount": 24,
+      "viewCreationProcessCount": 8,
+      "copyCanvasCount": 5,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 54,
+        "edges": 101
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "685c239d-019a-9b25-93e0-315d6ddb1f72"
+}

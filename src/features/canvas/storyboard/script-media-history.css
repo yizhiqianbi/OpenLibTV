@@ -1,0 +1,174 @@
+.cv-dialog .cv-script-history-trigger,
+.cv-script-history-trigger {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(20 125 255 / 12%);
+  color: #147dff;
+  font-size: 10px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.cv-dialog .cv-script-history-trigger:hover,
+.cv-script-history-trigger:hover {
+  background: rgb(20 125 255 / 20%);
+}
+.cv-dialog .cv-script-history-trigger.cv-script-history-video,
+.cv-script-history-trigger.cv-script-history-video {
+  background: rgb(172 75 255 / 12%);
+  color: #c07eff;
+}
+.cv-dialog .cv-script-history-trigger.cv-script-history-video:hover,
+.cv-script-history-trigger.cv-script-history-video:hover {
+  background: rgb(172 75 255 / 20%);
+}
+.cv-script-history-menu {
+  position: fixed;
+  z-index: 4500;
+  width: max-content;
+  max-width: calc(100vw - 16px);
+  padding: 4px;
+  overflow-y: auto;
+  border: 1px solid #424242;
+  border-radius: 4px;
+  outline: 0;
+  background: #1d1d1d;
+  color: #fff;
+  box-shadow:
+    0 1px 3px rgb(0 0 0 / 5%),
+    0 20px 25px -5px rgb(0 0 0 / 5%),
+    0 10px 10px -5px rgb(0 0 0 / 4%);
+}
+.cv-script-history-menu::before {
+  position: fixed;
+  content: '';
+  top: var(--script-history-arrow-y);
+  left: var(--script-history-arrow-x);
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border-top: 1px solid #424242;
+  border-left: 1px solid #424242;
+  background: #1d1d1d;
+  pointer-events: none;
+}
+.cv-script-history-menu.is-above::before {
+  border-top: 0;
+  border-left: 0;
+  border-right: 1px solid #424242;
+  border-bottom: 1px solid #424242;
+}
+.cv-script-history-label,
+.cv-script-history-help {
+  padding: 5px 12px;
+  color: #919191;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.cv-script-history-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: calc(10px / 1.5) 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.cv-script-history-row:hover,
+.cv-script-history-row:focus-within {
+  background: #424242;
+}
+.cv-script-history-row.is-active {
+  background: rgb(20 125 255 / 12%);
+}
+.cv-script-history-video .cv-script-history-row.is-active {
+  background: rgb(172 75 255 / 12%);
+}
+.cv-script-history-menu .cv-script-history-jump {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+.cv-script-history-menu .cv-script-history-jump:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+.cv-script-history-number {
+  flex-shrink: 0;
+  width: 32px;
+  color: #919191;
+}
+.cv-script-history-video .cv-script-history-number {
+  width: 40px;
+}
+.cv-script-history-row.is-active .cv-script-history-number {
+  color: #147dff;
+}
+.cv-script-history-video .cv-script-history-row.is-active .cv-script-history-number {
+  color: #c07eff;
+}
+.cv-script-history-time {
+  flex-shrink: 0;
+  color: #919191;
+  font-size: 10px;
+}
+.cv-script-history-source {
+  flex-shrink: 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 5%);
+  color: #919191;
+  font-size: 9px;
+}
+.cv-script-history-menu .cv-script-history-set-active {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 2px 6px;
+  border: 0;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 5%);
+  color: #147dff;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+.cv-script-history-video .cv-script-history-set-active {
+  color: #c07eff;
+}
+.cv-script-history-menu .cv-script-history-set-active:hover:not(:disabled),
+.cv-script-history-menu .cv-script-history-set-active:focus-visible {
+  background: rgb(255 255 255 / 10%);
+}
+.cv-script-history-menu .cv-script-history-set-active:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.cv-script-history-divider {
+  margin-block: 4px;
+  border-top: 1px solid #424242;
+}
+.cv-script-history-help {
+  font-size: 10px;
+}
+.cv-script-history-error {
+  margin: 4px 8px;
+  color: #fca5a5;
+  font-size: 10px;
+}

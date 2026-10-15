@@ -1,0 +1,19 @@
+.cv-multi-connection-portal {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+}
+.cv-multi-connection-preview {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+.cv-multi-connection-preview path.cv-connection-flow-path {
+  stroke-dashoffset: inherit;
+  animation: none;
+}
+.canvas-light .cv-multi-connection-preview {
+  --canvas-edge-hover: #919191;
+}

@@ -1,0 +1,23 @@
+.cv-script-reference-import-status {
+  position: absolute;
+  left: 24px;
+  bottom: 80px;
+  max-width: min(400px, calc(100% - 48px));
+  max-height: 220px;
+  overflow: auto;
+  padding: 12px 16px;
+  border: 1px solid var(--canvas-border, #ffffff24);
+  border-radius: 12px;
+  background: var(--canvas-panel-bg, #242424);
+  box-shadow: 0 8px 24px #0005;
+  color: var(--canvas-text, #fff);
+  z-index: 110;
+}
+.cv-script-reference-import-status p {
+  margin: 0 0 8px;
+  font-size: 12px;
+}
+.cv-script-reference-import-status button {
+  font-size: 12px;
+  margin-right: 10px;
+}

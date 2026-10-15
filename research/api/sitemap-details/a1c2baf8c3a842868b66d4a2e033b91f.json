@@ -1,0 +1,87 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "a1c2baf8c3a842868b66d4a2e033b91f",
+      "projectUuid": "ef27fdbd6d304c0f926490d377c41910",
+      "name": "国际ai获奖作品《戏乐园》",
+      "description": "omni film festival 获 best score",
+      "coverUrl": "https://liblibai-online.liblib.cloud/img/bf86618e4dff4d29838dcc147e2e85f6/2c5ed5d40464abf78d35f06ea9de2eb68c43489ba08c325d55111683cde2bd1f.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/bf86618e4dff4d29838dcc147e2e85f6/6ca299bc516c44315b9a96f45a8f48f30930b10a.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 397466,
+      "ownerUuid": "bf86618e4dff4d29838dcc147e2e85f6",
+      "avatar": "https://liblibai-online.liblib.cloud/img/bf86618e4dff4d29838dcc147e2e85f6/f713334b35b58ef3287e9e4bb55e0a319c0d30107f201a5a989900be3c893493.png",
+      "nickname": "洋徉工坊",
+      "isLike": false,
+      "likeCount": 29,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3038,
+          "code": "test",
+          "tagLabel": "2-国风非遗专项",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3038",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1304,
+          "code": "classic_derivative",
+          "tagLabel": "经典衍生",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1304/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/6xL4V23CsFx",
+      "createAt": "2026年06月22日 15:18",
+      "updateAt": "2026年07月31日 22:19",
+      "publishAt": "2026年07月30日 21:46",
+      "playCount": 7,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "baf36cea-6370-91a6-8ecb-0927d147f3ba"
+}

@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f15920fb5f7646fd804eca452b932961",
+      "projectUuid": "e342a9ccd13b48a581241970b2d3b1b8",
+      "name": "画布 1",
+      "description": "有",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ed0b1f0786f740d4a9d96552b11e34b8/upload-1783499829111-hsdm7xjr.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ed0b1f0786f740d4a9d96552b11e34b8/upload-1783499825560-c7hnva19.mp4",
+      "snapshotId": 25263,
+      "auditStatus": 1,
+      "ownerId": 9821425,
+      "ownerUuid": "ed0b1f0786f740d4a9d96552b11e34b8",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar1.png",
+      "nickname": "155****5310",
+      "isLike": false,
+      "likeCount": 0,
+      "tags": [
+        {
+          "id": 1503,
+          "code": "teaching",
+          "tagLabel": "教学教程",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1503/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月08日 16:37",
+      "updateAt": "2026年07月08日 16:40",
+      "publishAt": "2026年07月08日 16:37",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 8,
+        "edges": 3
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "46e661ec-1096-9b70-8365-92f7e853f24a"
+}

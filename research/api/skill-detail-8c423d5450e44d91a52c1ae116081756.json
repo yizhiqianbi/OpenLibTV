@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "data": {
+    "skill": {
+      "templateUuid": "8c423d5450e44d91a52c1ae116081756",
+      "skillUuid": "25256f95a2354c7fa631bba9782558b1",
+      "skillKey": "beauty-blogger-reviewer-5e17f63c20b64ca1a5571efe67cc2d04",
+      "name": "真人感美妆UGC产品测评",
+      "version": "1.0.1",
+      "description": "一键把美妆卖点变成可见证据与自然口播",
+      "resultType": 3,
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/95641a59cc000d22ed03b92d22e7ca4ec60e5a64.png",
+      "snapshotId": 34113,
+      "snapshotData": "{\"caseItems\":[{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/065eb09c4c429e290d5aaf6dfcbc5dcdbc4870cb.mp4\"},{\"canvasCasePower\":0,\"productionCaseUrl\":\"https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/756e22b99eebd44f544fa3d54b6cdc4f0160312d.mp4\"}],\"coverUrl\":\"https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/95641a59cc000d22ed03b92d22e7ca4ec60e5a64.png\",\"description\":\"一键把美妆卖点变成可见证据与自然口播\",\"evalResult\":\"\",\"inputType\":\"上传一张清晰产品图，可选达人参考和核心卖点。Skill 会判断素材与声明风险，把卖点转成可拍证据和自然中文口播，再确认测评路径、场景、气质与时长。\",\"name\":\"真人感美妆UGC产品测评\",\"outputContent\":\"输出卖点转译卡、最终口播脚本、测评证据链、参考图片清单，以及一条经过规则校验、可直接用于 Seedance 2.5 的4–30秒竖屏UGC测评提示词。\",\"resultType\":3,\"showMarkdown\":false,\"skillKey\":\"beauty-blogger-reviewer-5e17f63c20b64ca1a5571efe67cc2d04\",\"skillUuid\":\"25256f95a2354c7fa631bba9782558b1\",\"sourceType\":1,\"useScenario\":\"适合护肤、彩妆、香氛和个人护理产品，希望通过真人试用、质地表现和即时感受建立可信种草内容，并需要控制功效声明风险的品牌或创作者。\",\"version\":\"1.0.1\"}",
+      "auditStatus": 1,
+      "evalResult": "机器评审 9/10",
+      "tags": [
+        {
+          "id": 4001,
+          "code": "",
+          "tagLabel": "商业广告",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "4001/",
+          "tagStatus": 0,
+          "tagOrder": 0,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 0
+        }
+      ],
+      "likeCount": 888,
+      "usePv": 2841,
+      "useUv": 2307,
+      "publishAt": "2026-08-06 22:40:39",
+      "ownerId": 759898,
+      "ownerName": "刘不住Wander",
+      "ownerAvatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "useScenario": "适合护肤、彩妆、香氛和个人护理产品，希望通过真人试用、质地表现和即时感受建立可信种草内容，并需要控制功效声明风险的品牌或创作者。",
+      "inputType": "上传一张清晰产品图，可选达人参考和核心卖点。Skill 会判断素材与声明风险，把卖点转成可拍证据和自然中文口播，再确认测评路径、场景、气质与时长。",
+      "outputContent": "输出卖点转译卡、最终口播脚本、测评证据链、参考图片清单，以及一条经过规则校验、可直接用于 Seedance 2.5 的4–30秒竖屏UGC测评提示词。",
+      "sourceType": 1,
+      "nickname": "刘不住Wander",
+      "avatar": "https://liblibai-online.liblib.cloud/img/5e17f63c20b64ca1a5571efe67cc2d04/1ce6fd70d2f36d5e7a6c2c06e639871e9a4a7a060c1a1ba24fdb228545a8397b.jfif",
+      "namespace": "libtv-user-generated",
+      "showMarkdown": false,
+      "caseItems": [
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/065eb09c4c429e290d5aaf6dfcbc5dcdbc4870cb.mp4",
+          "canvasCasePower": 0
+        },
+        {
+          "productionCaseUrl": "https://libtv-res.liblib.art/upload-images/5e17f63c20b64ca1a5571efe67cc2d04/756e22b99eebd44f544fa3d54b6cdc4f0160312d.mp4",
+          "canvasCasePower": 0
+        }
+      ],
+      "cornerTag": "[{\"icon\":\"https://libtv-res.liblib.art/upload-images/70a305c50c704a778db114468830617b/43df57d720f983795db62c96952a44a86d1bc27a.png\",\"label\":\"SD 2.5\"}]"
+    }
+  },
+  "msg": "",
+  "trace_id": "eb69116b-dc69-9fdb-a994-5bbf5efff248"
+}

@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "data": {
+    "userDetail": {
+      "id": 9870156,
+      "uuid": "ca1da6d0966e497b9c599d6c8d175ba2",
+      "nickname": "玄机动画",
+      "avatar": "https://liblibai-online.liblib.cloud/img/ca1da6d0966e497b9c599d6c8d175ba2/27de3835015db05e15a767f3cb62404adb088867411589a89f4c1508b77446c9.png",
+      "backgroundImage": "https://liblibai-online.liblib.cloud/img/ca1da6d0966e497b9c599d6c8d175ba2/862110de41684674df343ea4d23001e1c85e593c2f825c80b4d28cf08adc021b.jpg"
+    },
+    "counter": {
+      "totalLikeCount": 233,
+      "projectCount": 1,
+      "viewCreationProcessCount": 6471,
+      "copyCanvasCount": 1088,
+      "followerCount": 61,
+      "followCount": 0
+    }
+  },
+  "msg": "",
+  "trace_id": "06dc9a68-8ce7-98aa-b6c1-6f42865a4a4f"
+}

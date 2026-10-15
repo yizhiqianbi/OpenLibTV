@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "cc5d659b102940e7bc3669369db8766c",
+      "projectUuid": "5534b9afee9e4c95bb55e8fd7eb0d3fa",
+      "name": "TVC创意广告《不必时刻同频》",
+      "description": "耳机TVC广告",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/75291ffb8629448386a4521cc9f3ac42/53b7b49d8932b96ed27257acb3a3393d175bad3d.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/75291ffb8629448386a4521cc9f3ac42/c026565e3affbc0689cadc60ea23113434478b42.mp4",
+      "snapshotId": 22645,
+      "auditStatus": 1,
+      "ownerId": 2620585,
+      "ownerUuid": "75291ffb8629448386a4521cc9f3ac42",
+      "avatar": "https://liblibai-online.liblib.cloud/img/75291ffb8629448386a4521cc9f3ac42/8d6934ae625e76167bb03747c2abfde9b779483d8db144ff86c2e14255c21b01.jpg",
+      "nickname": "柯时不得了",
+      "isLike": false,
+      "likeCount": 131,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://v.douyin.com/PFxTFd5PBlE/",
+      "createAt": "2026年06月29日 11:59",
+      "updateAt": "2026年07月02日 00:05",
+      "publishAt": "2026年06月29日 11:59",
+      "playCount": 28,
+      "viewCreationProcessCount": 14,
+      "copyCanvasCount": 2,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 69,
+        "edges": 76
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "2d1918f3-11f3-903e-8cb8-44218a25ae47"
+}

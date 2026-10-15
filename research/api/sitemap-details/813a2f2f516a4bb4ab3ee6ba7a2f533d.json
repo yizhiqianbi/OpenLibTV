@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "813a2f2f516a4bb4ab3ee6ba7a2f533d",
+      "projectUuid": "0a02336183354a13929469500e5037b3",
+      "name": "3D风格短番 | 暗影之色 - 第一集",
+      "description": "(Psycho-Pass: Color of Shadows)\n\n22世纪的日本，由“西比拉系统”（Sibyl System）进行全面管控的社会。所有人类的心理状态和性格倾向都被量化为“色相”与“犯罪系数”。\n\n致敬我非常喜欢的2012年的动漫《#心理测量者》。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/74f3740c3b764ec6b782f1cff91c9050/e68bc552f2aa6698963e6d074580b141babd10ad.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/74f3740c3b764ec6b782f1cff91c9050/f52f37c1093ea66f35d69b7bd9bacd3effb04579.mp4",
+      "snapshotId": 2691,
+      "auditStatus": 1,
+      "ownerId": 217003,
+      "ownerUuid": "74f3740c3b764ec6b782f1cff91c9050",
+      "avatar": "https://liblibai-online.liblib.cloud/web/image/fbea5fdeb72062536bf3c9142b144b924f7427fbf027b23c54f5b697af7a47cf.png",
+      "nickname": "南墙_Rylee",
+      "isLike": false,
+      "likeCount": 30,
+      "tags": [
+        {
+          "id": 1802,
+          "code": "3d",
+          "tagLabel": "3D",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1802/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年04月01日 22:25",
+      "updateAt": "2026年05月20日 18:47",
+      "publishAt": "2026年04月01日 22:29",
+      "playCount": 28,
+      "viewCreationProcessCount": 22,
+      "copyCanvasCount": 3,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 61,
+        "edges": 112
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "6f60ac48-45d9-958d-81b6-03fe2c7e4bca"
+}

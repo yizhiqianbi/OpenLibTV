@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "5502eacb3cbe4460b594e0f23660f84b",
+      "projectUuid": "ce45dc6a353f45818d6063f5f8e52494",
+      "name": "AI短片｜3小时制作一支科幻短片《灰烬之城》",
+      "description": "在灰烬之城里，人们穿过沙暴，寻找重启文明的火种",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/9532b797fc044873ac6c02ec0085fb88/8e9d1bf722e189b6f8a8d5557120adc5dd4efcaa.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/9532b797fc044873ac6c02ec0085fb88/9a1be3e01b15170e798d8906996a63072c14bfed.mp4",
+      "snapshotId": 23011,
+      "auditStatus": 1,
+      "ownerId": 1668220,
+      "ownerUuid": "9532b797fc044873ac6c02ec0085fb88",
+      "avatar": "https://liblibai-online.liblib.cloud/img/9532b797fc044873ac6c02ec0085fb88/b4e27d2ebb42f98de29a667ff474d3a07242c5a99ed03c8cd547553bb7bc2f3c.JPG",
+      "nickname": "半生瓜AGUA",
+      "isLike": false,
+      "likeCount": 28,
+      "tags": [
+        {
+          "id": 3036,
+          "code": "test",
+          "tagLabel": "AI漫剧精卫计划",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3036/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3037,
+          "code": "test",
+          "tagLabel": "1-原创 IP 漫剧赛道",
+          "parentTag": 3036,
+          "categoryId": 0,
+          "path": "3036/3037",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1202,
+          "code": "style_aesthetic",
+          "tagLabel": "风格美学",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1202/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "https://www.xiaohongshu.com/explore/6a42df9e000000000803c1b2?xsec_token=ABaF_gZZowYL7yiRIqhWj0XkD8fmUM65Uy_DjKn4d8q4U=&xsec_source=pc_user",
+      "createAt": "2026年06月30日 13:29",
+      "updateAt": "2026年07月03日 00:11",
+      "publishAt": "2026年06月30日 13:29",
+      "playCount": 10,
+      "viewCreationProcessCount": 2,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 30,
+        "edges": 28
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "c1c33c58-039e-9c27-a02c-eebfb705a6b4"
+}

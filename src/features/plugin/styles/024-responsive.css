@@ -1,0 +1,80 @@
+@media (max-width: 767px) {
+  .plugin-upper {
+    gap: 36px;
+  }
+  .plugin-hero-art {
+    transform: scale(0.9);
+    margin-top: 32px;
+  }
+  .plugin-intro h1 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.4px;
+  }
+  .plugin-intro p {
+    max-width: 310px;
+    margin: 12px auto 0;
+  }
+  .plugin-install-toolbar {
+    justify-content: center;
+    padding: 0 4px 8px;
+  }
+  .plugin-agent-options {
+    max-width: 100%;
+    overflow: auto;
+  }
+  .plugin-install-steps {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .plugin-install-steps li {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .plugin-install-steps li + li {
+    border-left: 0;
+    border-top: 0.5px solid #ffffff14;
+    padding: 20px 0 8px;
+  }
+  .plugin-showcase-title {
+    margin-top: 64px !important;
+    font-size: 22px !important;
+  }
+  .plugin-showcase nav {
+    gap: 2px;
+  }
+  .plugin-showcase nav button {
+    font-size: 13px;
+    height: 40px;
+    padding: 0 8px;
+    gap: 4px;
+  }
+  .plugin-showcase-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .plugin-conversation {
+    height: 440px;
+  }
+  .plugin-results {
+    height: 460px;
+  }
+  .plugin-result-label {
+    height: 28px;
+  }
+  .plugin-video-result {
+    margin-top: 20px;
+  }
+  .plugin-workflow {
+    padding: 80px 0 100px;
+  }
+  .plugin-workflow h2 {
+    font-size: 22px;
+  }
+  .plugin-workflow p {
+    max-width: 340px;
+  }
+}

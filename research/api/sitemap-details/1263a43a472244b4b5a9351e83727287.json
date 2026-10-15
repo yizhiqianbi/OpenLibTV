@@ -1,0 +1,74 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "1263a43a472244b4b5a9351e83727287",
+      "projectUuid": "afb1dfa3633b49f0b1a3389da5d05be5",
+      "name": "拳魂-先行版",
+      "description": "1928 年上海北四川路月宫大戏院，一场中日美俄国际拳击赛上演屈辱一幕。四位中国拳手接连落败，日本拳手登顶后当众嘲讽中华武术，在场国人悲愤不已。开办武馆的朱家三兄弟朱国福、朱国禄、朱国桢眼见同胞受辱、武道蒙羞，三人决意挺身而出。\n激战之中，朱国桢身负重伤仍咬牙奋起，于绝境中融会三门武学，突破武道境界，奋力一击终结战局。最终朱家三虎力克对手，击碎日方狂妄挑衅，一雪前耻。这段改编自真实往事的故事，尽显武者风骨与民族气节，在旧上海的风雨里，用热血拳脚捍卫了国人尊严……",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/ae7d99db1605447d857a765a71817425/dd2944aeb8ebca82d6164c1d62813c9550d7ddaf.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/ae7d99db1605447d857a765a71817425/b04d19998a4f703aa911c9b39f844ff8759cac58.mp4",
+      "snapshotId": 19847,
+      "auditStatus": 1,
+      "ownerId": 430378,
+      "ownerUuid": "ae7d99db1605447d857a765a71817425",
+      "avatar": "https://liblibai-online.liblib.cloud/img/ae7d99db1605447d857a765a71817425/781e142eee2f4a7f356140d545c7b9caca219934d3405845b71fe952ec4bb5bd.png",
+      "nickname": "PixGro像素生长",
+      "isLike": false,
+      "likeCount": 6,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年06月16日 17:19",
+      "updateAt": "2026年06月17日 22:27",
+      "publishAt": "2026年06月16日 17:19",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 125,
+        "edges": 106
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a1a84c64-e1c2-97b1-8936-ff8b751481b5"
+}

@@ -1,0 +1,7 @@
+.plugin-intro h1 {
+  font-family: 'HuoshanQinghe CLI', var(--font-text, inherit);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+}

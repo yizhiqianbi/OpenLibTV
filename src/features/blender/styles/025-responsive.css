@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  .blender-nav {
+    gap: 12px;
+  }
+  .blender-subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: calc(100vw - 40px);
+  }
+  .blender-fallback {
+    flex-wrap: wrap;
+  }
+  .blender-preview {
+    min-width: 0;
+    width: calc(100vw - 40px);
+  }
+}

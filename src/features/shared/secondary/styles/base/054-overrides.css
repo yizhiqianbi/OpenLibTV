@@ -1,0 +1,18 @@
+.secondary-skill-create,
+.secondary-skill-share,
+.secondary-skill-expanded {
+  --bg: #141414;
+  --fg: #f7f7f7;
+  --border: #363636;
+  --muted: #a8a8a8;
+  --field-bg: rgba(255, 255, 255, 0.1);
+}
+:root[data-theme='light'] .secondary-skill-create,
+:root[data-theme='light'] .secondary-skill-share,
+:root[data-theme='light'] .secondary-skill-expanded {
+  --bg: #fff;
+  --fg: #262626;
+  --border: #e3e3e3;
+  --muted: #919191;
+  --field-bg: rgba(0, 0, 0, 0.04);
+}

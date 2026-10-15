@@ -1,0 +1,123 @@
+.popover-anchor {
+  position: relative;
+}
+.popover button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  white-space: nowrap;
+  padding: 9px 10px;
+  border-radius: 6px;
+  min-height: 32px;
+  width: 100%;
+  font-size: 12px;
+}
+.popover button:hover {
+  background: #fff1;
+}
+.help-menu {
+  position: fixed;
+  bottom: 60px;
+  right: 16px;
+  width: 214px;
+}
+.help-menu span {
+  margin-left: auto;
+  color: var(--muted);
+}
+.account-menu {
+  right: 0;
+  top: 42px;
+  width: 180px;
+}
+.account-menu > strong {
+  display: block;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+.user-button {
+  background: #444;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newcomer-card {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  width: 240px;
+  border-radius: 14px;
+  padding: 5px;
+  background: #383838;
+  z-index: 34;
+  box-shadow: 0 10px 36px #0006;
+  border: 1px solid #fff1;
+}
+.newcomer-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 2;
+  background: #2228;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newcomer-image {
+  height: 130px;
+  border-radius: 9px 9px 0 0;
+  background-position: center;
+  background-size: cover;
+}
+.newcomer-content {
+  padding: 16px 10px 10px;
+}
+.newcomer-content strong {
+  display: block;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.newcomer-content strong span {
+  color: #36dfff;
+}
+.newcomer-content .white-button {
+  height: 36px;
+  font-size: 13px;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  background: #303030f5;
+  color: #eee;
+  border: 1px solid #ffffff20;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px #0008;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  max-width: calc(100% - 32px);
+}
+.toast > .icon {
+  color: #13d5ff;
+}
+.toast button {
+  display: flex;
+  margin-left: 8px;
+}
+.mobile-drawer {
+  display: none;
+}

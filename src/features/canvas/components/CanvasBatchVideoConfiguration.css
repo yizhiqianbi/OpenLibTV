@@ -1,0 +1,137 @@
+.cv-batch-video-configuration {
+  position: fixed;
+  z-index: 40;
+  width: max-content;
+  transform-origin: top left;
+  color: var(--canvas-controls-text, #fff);
+  background: var(--canvas-controls-bg, #262626);
+  border: 0.5px solid var(--canvas-controls-border, #363636);
+  border-radius: 12px;
+  padding: 4px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 10px #0000001a;
+}
+.cv-batch-video-configuration-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+.cv-batch-video-configuration-row > * {
+  flex-shrink: 0;
+}
+.cv-batch-video-configuration button {
+  cursor: pointer;
+}
+.cv-batch-video-configuration button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.cv-batch-video-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+.cv-batch-video-close:hover {
+  background: #ffffff0d;
+}
+.cv-batch-video-divider {
+  width: 0;
+  height: 20px;
+  margin: 0 2px;
+  border-left: 0.5px solid var(--canvas-controls-border, #363636);
+}
+.cv-batch-video-configuration .cv-generator-settings {
+  margin: 0;
+}
+.cv-batch-video-configuration .cv-generator-trigger {
+  max-width: 260px;
+}
+.cv-batch-video-count {
+  padding: 0 8px;
+  color: inherit;
+  opacity: 0.7;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.cv-batch-video-fee {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.cv-batch-video-fee-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 20px;
+  line-height: 15px;
+}
+.cv-batch-video-fee del {
+  opacity: 0.6;
+}
+.cv-batch-video-fee-separator {
+  opacity: 0.6;
+}
+.cv-batch-video-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #eee;
+  color: #262626;
+}
+.cv-batch-video-submit:hover:enabled {
+  background: #fff;
+}
+.cv-batch-video-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  max-width: 100%;
+  padding: 4px 8px;
+  border-top: 0.5px solid var(--canvas-controls-border, #363636);
+  color: #aaa;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.cv-batch-video-message[role='alert'] {
+  color: #f5b74a;
+}
+.cv-batch-video-message button {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #ffffff0d;
+  color: #eee;
+}
+.cv-batch-video-configuration :focus-visible {
+  outline: 2px solid #09caf5;
+  outline-offset: -2px;
+}
+.cv-batch-video-loading {
+  animation: cv-batch-video-spin 1s linear infinite;
+}
+@keyframes cv-batch-video-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv-batch-video-loading {
+    animation: none;
+  }
+}

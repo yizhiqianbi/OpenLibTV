@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "71611db30c63478db9487caf24a46a0d",
+      "projectUuid": "721d959319f9495c8986e1fce7eaa688",
+      "name": "羚灵颂",
+      "description": "AIGC舞蹈短片电影《羚灵颂》，以可可西里生态保卫战的真实英雄事迹为创作根基，依托历史事实进行艺术化演绎与数字影像创新。影片采用全流程AIGC制作，聚焦以杰桑·索南达杰、奇卡·扎巴多杰为代表的高原守护者，讲述他们抵御盗猎、以生命捍卫藏羚羊与高原生态的壮烈故事。作品融合数字艺术与舞蹈美学，兼具人文力量与生态情怀，向可可西里一代代的生态守护者致以崇高敬意。影片目前已获得北京国际电影节舞蹈影像艺术大赏AIGC单元【最佳影片】、首尔国际人工智能电影节【最佳音效设计奖】等多个荣誉。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/719c795bd59d412f894adc0416e9c1fe/7604bd7f0f3cb8af790dad35085ea7a873201a8e.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/719c795bd59d412f894adc0416e9c1fe/69fe4cc284ee70a239b7ae47bc6cf3202ac0f49a.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 8555350,
+      "ownerUuid": "719c795bd59d412f894adc0416e9c1fe",
+      "avatar": "https://liblibai-online.liblib.cloud/img/719c795bd59d412f894adc0416e9c1fe/d393677274013d8412ca62708fd884a3eadbd995eb1b48eab70085e7cc5fab1a.jpg",
+      "nickname": "九霖",
+      "isLike": false,
+      "likeCount": 34,
+      "tags": [
+        {
+          "id": 1201,
+          "code": "short_series",
+          "tagLabel": "短片剧集",
+          "parentTag": 1200,
+          "categoryId": 0,
+          "path": "1200/1201/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月01日 16:37",
+      "updateAt": "2026年07月06日 23:50",
+      "publishAt": "2026年07月02日 12:21",
+      "playCount": 7,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "9fce49cd-84eb-996b-8211-e3a41b1090d8"
+}

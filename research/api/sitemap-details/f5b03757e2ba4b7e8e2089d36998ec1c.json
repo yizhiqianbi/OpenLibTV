@@ -1,0 +1,61 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "f5b03757e2ba4b7e8e2089d36998ec1c",
+      "projectUuid": "61be3d9497ac4efd865a2dc8071a51fa",
+      "name": "人间恶魔没人管，她站出来替孩子挡了",
+      "description": "不爱请别伤害。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/765346e3df054eee889dd01ad14a73c1/8b829e9c4a3a3f8b99d56e3e20e402df7ed39e52.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/765346e3df054eee889dd01ad14a73c1/8cb28c908620c241bfaf1aa14179083bf8dcdda5.mp4",
+      "snapshotId": 24843,
+      "auditStatus": 1,
+      "ownerId": 1025176,
+      "ownerUuid": "765346e3df054eee889dd01ad14a73c1",
+      "avatar": "https://liblibai-online.liblib.cloud/img/765346e3df054eee889dd01ad14a73c1/d36eb5c9f1f6e5e3de133783bc5e35aa11b6b9788ac812d71566aded3d6864ef.jpg",
+      "nickname": "阿米Amir",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1303,
+          "code": "short_animation",
+          "tagLabel": "动画短片",
+          "parentTag": 1300,
+          "categoryId": 0,
+          "path": "1300/1303/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月07日 10:26",
+      "updateAt": "2026年07月08日 21:44",
+      "publishAt": "2026年07月07日 10:26",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 63,
+        "edges": 149
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "d3c45094-3720-923e-930d-fff88fbb27ca"
+}

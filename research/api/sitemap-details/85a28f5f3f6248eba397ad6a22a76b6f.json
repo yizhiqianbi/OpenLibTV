@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "85a28f5f3f6248eba397ad6a22a76b6f",
+      "projectUuid": "e45800fac4224e0ba52ffbe897bb651b",
+      "name": "怨念点名册",
+      "description": "女团成员【程薇】被队长【王艳敏】指使【薛丽丽】泼洒指甲油，被困洗手间后怨念爆发。与此同时，天台邪魅女人选中她为\"怨念点名册\"的新主人，施法让点名册显现在【程薇】面前。【程薇】不受控制地在册上写下\"薛丽丽\"三字，猛然回神后惊恐喘息，点名册从她手中滑落砸地。",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/8d416045b4544a93bd327511431d8a00/88a7a4fe8128e613a957e90222d3c83137ae4202.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/8d416045b4544a93bd327511431d8a00/cd79fca8b9ffdb5d8b386d1fc04ed884f9fc11a4.mp4",
+      "snapshotId": 0,
+      "auditStatus": 1,
+      "ownerId": 8903813,
+      "ownerUuid": "8d416045b4544a93bd327511431d8a00",
+      "avatar": "https://liblibai-online.liblib.cloud/img/8d416045b4544a93bd327511431d8a00/ff548da81552271c00c08aec860a630f0106915196235fe2948c324d6691be7e.jpg",
+      "nickname": "爱创作的小Y",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "createAt": "2026年07月07日 11:16",
+      "updateAt": "2026年07月09日 17:38",
+      "publishAt": "2026年07月09日 17:34",
+      "playCount": 1,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "24a73a63-2df8-9772-abf4-4135a7c6c5bd"
+}

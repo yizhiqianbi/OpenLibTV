@@ -1,0 +1,145 @@
+/* Challenge listing */
+.activity-card > p {
+  margin: 0;
+  padding: 0 8px 8px;
+  color: var(--text-secondary, #999);
+  font-size: 12px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.activity-list-sentinel {
+  height: 1px;
+}
+.activity-list-error {
+  padding: 32px 0;
+  text-align: center;
+  color: var(--text-secondary, #999);
+}
+.activity-list-error button {
+  padding: 8px 18px;
+  border: 1px solid var(--border, #333);
+  border-radius: 8px;
+  color: var(--text, #eee);
+}
+.activity-card-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: activity-list-pulse 1.5s ease-in-out infinite;
+}
+.activity-card-skeleton > div {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.activity-card-skeleton > span {
+  height: 14px;
+  width: 75%;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.activity-card-skeleton > span:last-child {
+  width: 50%;
+  height: 12px;
+}
+@keyframes activity-list-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .activity-card-skeleton {
+    animation: none;
+  }
+}
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 16px;
+}
+.activity-card {
+  min-width: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.activity-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0.5px solid #ffffff26;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.activity-image:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 73%, #000b);
+  pointer-events: none;
+}
+.activity-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.activity-card:hover .activity-image > img {
+  transform: scale(1.02);
+}
+.activity-status {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 12px;
+  background: #0009;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+.activity-status.active {
+  color: #61d8a9;
+}
+.activity-reward {
+  position: absolute;
+  z-index: 1;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #eec657;
+}
+.activity-reward svg {
+  flex-shrink: 0;
+}
+.activity-reward span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.activity-card h3 {
+  padding: 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

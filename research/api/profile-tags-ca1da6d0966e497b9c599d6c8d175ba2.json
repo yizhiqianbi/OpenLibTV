@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "data": {
+    "userTagList": [
+      {
+        "tagId": 5001,
+        "name": "先锋",
+        "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+        "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+        "desc": "LibTV先锋作者",
+        "verifyLevel": 1
+      }
+    ]
+  },
+  "msg": "",
+  "trace_id": "487e28d8-60a0-93b4-bd35-e6ff84425fac"
+}

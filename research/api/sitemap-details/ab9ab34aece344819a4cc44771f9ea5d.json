@@ -1,0 +1,90 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ab9ab34aece344819a4cc44771f9ea5d",
+      "projectUuid": "4ab7104791fe49f49a054bd3c54c2d92",
+      "name": "凿壁偷光",
+      "description": "",
+      "coverUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/image/544bf9d72ad740bc9dcfc74aa5503112/335810c1d9a2c782bf70d5fef0fb1ac5d7e875bf38ae86df7057928da2623db3.png",
+      "finalOutput": "https://libtv-res.liblib.art/output/9bd58cdc-d75a-4eeb-b23a-f0e07f79d996/result.mp4",
+      "snapshotId": 5032,
+      "auditStatus": 1,
+      "ownerId": 5439303,
+      "ownerUuid": "544bf9d72ad740bc9dcfc74aa5503112",
+      "nickname": "微信用户c80c76",
+      "isLike": false,
+      "likeCount": 3,
+      "tags": [
+        {
+          "id": 3021,
+          "code": "test",
+          "tagLabel": "AI影像狂飙季",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3021/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3022,
+          "code": "test",
+          "tagLabel": "短片单元",
+          "parentTag": 3021,
+          "categoryId": 0,
+          "path": "3021/3022",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1501,
+          "code": "humanity_science",
+          "tagLabel": "人文科普",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1501/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "http://xhslink.com/o/5AXZhaCl3P6",
+      "createAt": "2026年04月14日 21:15",
+      "updateAt": "2026年04月20日 18:52",
+      "publishAt": "2026年04月14日 21:15",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 42,
+        "edges": 21
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "14241923-fa60-9682-932a-89dae4dc9788"
+}

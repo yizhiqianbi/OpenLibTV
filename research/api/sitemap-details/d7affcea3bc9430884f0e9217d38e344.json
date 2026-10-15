@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "d7affcea3bc9430884f0e9217d38e344",
+      "projectUuid": "ba3fde6855ab4707affc62efb98aa3fa",
+      "name": "冲出重围",
+      "description": "虚拟末世主题汽车宣发广告",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/e79f607fb8b1404189d23e674043d2bc/1d3c993013799ec53f76c7afc722271ed8e6b293.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/e79f607fb8b1404189d23e674043d2bc/e524f1503c21e581fa2899eaf7b5de5490c9390d.mp4",
+      "snapshotId": 25350,
+      "auditStatus": 1,
+      "ownerId": 9655399,
+      "ownerUuid": "e79f607fb8b1404189d23e674043d2bc",
+      "avatar": "https://liblibai-online.liblib.cloud/web/avatar/avatar4.png",
+      "nickname": "150****3864",
+      "isLike": false,
+      "likeCount": 8,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3041,
+          "code": "test",
+          "tagLabel": "1-创意TVC",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3041",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "用lbTV为AVt做的末世汽车创意宣传片 http://xhslink.com/o/1X2i6mWNLLM  复制这段话，进入【小红书】就能找到笔记。",
+      "createAt": "2026年07月08日 21:09",
+      "updateAt": "2026年07月10日 22:01",
+      "publishAt": "2026年07月08日 21:09",
+      "playCount": 2,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 20,
+        "edges": 30
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "14a8a1e8-20bb-98ba-8c94-15e4f86b507e"
+}

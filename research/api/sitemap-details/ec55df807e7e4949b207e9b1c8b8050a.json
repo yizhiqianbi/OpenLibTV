@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "ec55df807e7e4949b207e9b1c8b8050a",
+      "projectUuid": "3a86a4ca98324bb3b3a898423cce4a17",
+      "name": "高级感耳机TVC广告",
+      "description": "工作流一键复刻",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/785ad06f390049d4837e32aece721659/e34676579716385c201f979302a84e7f6814f045.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/785ad06f390049d4837e32aece721659/87c3b3a0c5730e976daef0300ab836c1ef1e7cef.mp4",
+      "snapshotId": 15510,
+      "auditStatus": 1,
+      "ownerId": 833306,
+      "ownerUuid": "785ad06f390049d4837e32aece721659",
+      "avatar": "https://liblibai-online.liblib.cloud/img/785ad06f390049d4837e32aece721659/cef0dbad98eb4a28e355c601a276433f0bdf90008b0b6bcebdd10fedc8bcd379.png",
+      "nickname": "Jcy樂多",
+      "isLike": false,
+      "likeCount": 141,
+      "tags": [
+        {
+          "id": 3035,
+          "code": "prod",
+          "tagLabel": "大乱斗｜vol.2《AI，想象和尖叫》",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3035/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1101,
+          "code": "product_show",
+          "tagLabel": "产品展示",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1101/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1102,
+          "code": "feature_selling",
+          "tagLabel": "功能卖点",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1102/",
+          "tagStatus": 1,
+          "tagOrder": 2,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1104,
+          "code": "creative_tvc",
+          "tagLabel": "创意TVC",
+          "parentTag": 1100,
+          "categoryId": 0,
+          "path": "1100/1104/",
+          "tagStatus": 1,
+          "tagOrder": 4,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        },
+        {
+          "id": 1000,
+          "code": "selected",
+          "tagLabel": "精选画布",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "1000/",
+          "tagStatus": 1,
+          "tagOrder": 1,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5002,
+          "name": "专业",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/3b24d49f-6600-4353-a27f-526d7043d02f.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/adf00aa8-60e1-4fcb-85fc-9f7b0e581ccd.png",
+          "desc": "LibTV专业作者",
+          "verifyLevel": 2
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "39 【高级感耳机TVC产品短片 - Jcy樂多 | 小红书 - 你的生活兴趣社区】 😆 6Pz9a90tUfJna6U 😆 https://www.xiaohongshu.com/discovery/item/6a1afa0300000000080308d6?source=webshare&xhsshare=pc_web&xsec_token=ABk20Mig5xhHcEdZvUidokfN_p928ePpdDjP5326l9dQs=&xsec_source=pc_share",
+      "createAt": "2026年05月30日 22:57",
+      "updateAt": "2026年06月02日 22:19",
+      "publishAt": "2026年05月30日 22:57",
+      "playCount": 160,
+      "viewCreationProcessCount": 89,
+      "copyCanvasCount": 23,
+      "shareCount": 3,
+      "snapshotSummary": {
+        "nodes": 40,
+        "edges": 52
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "a0b8c9e5-66a7-9b5d-a443-522a777144dd"
+}

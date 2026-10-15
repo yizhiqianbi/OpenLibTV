@@ -1,0 +1,88 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "0a50e497f0854fdcb904bd57acc09b46",
+      "projectUuid": "e7bcf56269eb480b880f2ca5305df8ec",
+      "name": "假面骑士X非遗吴川飘色",
+      "description": "假面骑士摩托第二集 飘色突袭",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/543b5d5a3aca4a78a8073e73f2a78b12/d5953768e4a6b03e1e8fd3a528c2cf5554cd0fe5.png",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/543b5d5a3aca4a78a8073e73f2a78b12/a8bca86b48f953f6411821d0a86dde60884e5ff5.mp4",
+      "snapshotId": 25365,
+      "auditStatus": 1,
+      "ownerId": 8481418,
+      "ownerUuid": "543b5d5a3aca4a78a8073e73f2a78b12",
+      "avatar": "https://liblibai-online.liblib.cloud/img/543b5d5a3aca4a78a8073e73f2a78b12/3924cfad3736456b7943d9cedecd2e82616a39a93f4d46bfecb31facacabf56f.jpg",
+      "nickname": "超级肥佬梁",
+      "isLike": false,
+      "likeCount": 2,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3043,
+          "code": "test",
+          "tagLabel": "3-非遗创生",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3043",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1803,
+          "code": "virtual_human",
+          "tagLabel": "仿真人",
+          "parentTag": 1800,
+          "categoryId": 0,
+          "path": "1800/1803/",
+          "tagStatus": 1,
+          "tagOrder": 3,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "userTags": [
+        {
+          "tagId": 5001,
+          "name": "先锋",
+          "icon": "https://liblibai-online.liblib.cloud/web/976652348270470eba25b9d8ca891fda/4791dc8d-8724-4174-aa5c-f802e50ac9d6.png",
+          "primaryIcon": "https://liblibai-online.liblib.cloud/web/8244a30ac2e94d9289e7216922b50a09/24e4dd04-49c7-47b1-b932-21971474d9c5.png",
+          "desc": "LibTV先锋作者",
+          "verifyLevel": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "5.15 s@e.ba 07/24 :1pm mdn:/ 【假面骑士X非遗吴川飘色】新骑士登场！ 假面骑士摩托第二集！飘色突袭 再次感谢@东方超人 老哥的音乐支持。# 非遗文化# 湛江吴川 # 假面骑士# Lib广告导演请就位# AI全能艺术家计划  https://v.douyin.com/hM858oTKXII/ 复制此链接，打开Dou音搜索，直接观看视频！",
+      "createAt": "2026年07月08日 21:47",
+      "updateAt": "2026年07月08日 22:07",
+      "publishAt": "2026年07月08日 21:55",
+      "playCount": 3,
+      "viewCreationProcessCount": 1,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 154,
+        "edges": 181
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "02b1f319-c5bf-929c-92a2-738b8e2443a0"
+}

@@ -1,0 +1,152 @@
+{
+  "sampleOnly": true,
+  "voices": [
+    {
+      "voiceId": "female-shaonv",
+      "name": "少女音色",
+      "language": "中文(普通话)",
+      "gender": "Female",
+      "voiceUrl": "https://libtv-res.liblib.art/sd-gen-save-img/genius_playground/audio/26867b52384f44d6ad5f717dbd710ff7/ed4975bb8d702870fb9a00bf1ba5ba423486311139c2e37177ea38751a58c6c9.mp3"
+    }
+  ],
+  "options": {
+    "languages": [
+      {
+        "label": "中文",
+        "value": "中文"
+      },
+      {
+        "label": "英文",
+        "value": "英文"
+      },
+      {
+        "label": "日文",
+        "value": "日文"
+      },
+      {
+        "label": "韩文",
+        "value": "韩文"
+      },
+      {
+        "label": "西班牙文",
+        "value": "西班牙文"
+      },
+      {
+        "label": "葡萄牙文",
+        "value": "葡萄牙文"
+      },
+      {
+        "label": "法文",
+        "value": "法文"
+      },
+      {
+        "label": "印尼文",
+        "value": "印尼文"
+      },
+      {
+        "label": "德文",
+        "value": "德文"
+      },
+      {
+        "label": "俄文",
+        "value": "俄文"
+      },
+      {
+        "label": "意大利文",
+        "value": "意大利文"
+      },
+      {
+        "label": "阿拉伯文",
+        "value": "阿拉伯文"
+      },
+      {
+        "label": "土耳其文",
+        "value": "土耳其文"
+      },
+      {
+        "label": "乌克兰文",
+        "value": "乌克兰文"
+      },
+      {
+        "label": "荷兰文",
+        "value": "荷兰文"
+      },
+      {
+        "label": "越南文",
+        "value": "越南文"
+      },
+      {
+        "label": "泰文",
+        "value": "泰文"
+      },
+      {
+        "label": "波兰文",
+        "value": "波兰文"
+      },
+      {
+        "label": "罗马尼亚文",
+        "value": "罗马尼亚文"
+      },
+      {
+        "label": "希腊文",
+        "value": "希腊文"
+      },
+      {
+        "label": "捷克文",
+        "value": "捷克文"
+      },
+      {
+        "label": "芬兰文",
+        "value": "芬兰文"
+      },
+      {
+        "label": "印地文",
+        "value": "印地文"
+      }
+    ],
+    "accents": {
+      "中文": [
+        {
+          "label": "中文(普通话)",
+          "value": "普通话"
+        },
+        {
+          "label": "中文(粤语)",
+          "value": "粤语"
+        }
+      ]
+    },
+    "genders": [
+      {
+        "label": "全部",
+        "value": ""
+      },
+      {
+        "label": "男",
+        "value": "Male"
+      },
+      {
+        "label": "女",
+        "value": "Female"
+      }
+    ],
+    "ageGroups": [
+      {
+        "label": "青年",
+        "value": "Youth"
+      },
+      {
+        "label": "成年",
+        "value": "Adult"
+      },
+      {
+        "label": "儿童",
+        "value": "Child"
+      },
+      {
+        "label": "老年",
+        "value": "Elder"
+      }
+    ]
+  }
+}

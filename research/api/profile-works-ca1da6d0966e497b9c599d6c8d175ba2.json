@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "templateUuid": "695b45969e1d4383b4e541a07d705d65",
+        "projectUuid": "24aebe336a3f4433ba55555a512dd5b4",
+        "name": "大闹天宫",
+        "description": "不公的对抗，压迫的争斗",
+        "coverUrl": "https://libtv-res.liblib.art/upload-images/ca1da6d0966e497b9c599d6c8d175ba2/2ffd5728111714eadc7ed5e75c76b91392c4d497.jpg",
+        "finalOutput": "https://libtv-res.liblib.art/upload-images/ca1da6d0966e497b9c599d6c8d175ba2/a48d9372728e2f6454d80bf8fadb553f79848670.mp4",
+        "snapshotId": 45111,
+        "auditStatus": 1,
+        "ownerId": 9870156,
+        "ownerUuid": "ca1da6d0966e497b9c599d6c8d175ba2",
+        "avatar": "https://liblibai-online.liblib.cloud/img/ca1da6d0966e497b9c599d6c8d175ba2/27de3835015db05e15a767f3cb62404adb088867411589a89f4c1508b77446c9.png",
+        "nickname": "玄机动画",
+        "isLike": false,
+        "likeCount": 233,
+        "isTop": false,
+        "score": 60,
+        "auditBy": 251,
+        "socialMediaUrl": "6.66 复制打开抖音，看看【玄机动画的作品】花费6.2W，个人自制惊天巨作《大闹天宫》# Li... https://v.douyin.com/s8sb_KKLGPY/ S@y.GI 05/06 IIi:/ :9pm",
+        "createAt": "2026年09月10日 17:53",
+        "updateAt": "2026年10月08日 22:06",
+        "publishAt": "2026年09月10日 18:10"
+      }
+    ],
+    "total": 1
+  },
+  "msg": "",
+  "trace_id": "af7dd913-692f-90cc-9a9f-45273a340401"
+}

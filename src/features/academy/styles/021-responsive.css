@@ -1,0 +1,43 @@
+@media (max-width: 767px) {
+  .academy-content {
+    gap: 60px;
+  }
+  .academy-heading {
+    padding-top: 32px;
+  }
+  .academy-master-card {
+    height: auto;
+    flex-direction: column;
+  }
+  .academy-master-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .academy-master-copy {
+    padding: 22px 20px;
+  }
+  .academy-master-copy p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .academy-page h2 {
+    text-align: center;
+  }
+  .academy-tabs {
+    justify-content: center;
+  }
+  .academy-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .academy-course-card h3 {
+    font-size: 16px;
+  }
+  .academy-course-card > p {
+    font-size: 13px;
+  }
+  .academy-learning {
+    scroll-margin-top: 130px;
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "code": 0,
+  "data": {
+    "detail": {
+      "templateUuid": "3ec3886d42174a4dbd0edd9132e9a710",
+      "projectUuid": "9f2ab27e93e44ae4acb267b55837ee14",
+      "name": "阿珍与阿强",
+      "description": "交警普法创意短视频",
+      "coverUrl": "https://libtv-res.liblib.art/upload-images/b7011f36f8194db7a89554ec3511b3e4/97dd24502342b85a7faba89f59c224534de27446.jpg",
+      "finalOutput": "https://libtv-res.liblib.art/upload-images/b7011f36f8194db7a89554ec3511b3e4/600ec952a52642c317e08bf1b611603a8db05a00.mp4",
+      "snapshotId": 20392,
+      "auditStatus": 1,
+      "ownerId": 4518038,
+      "ownerUuid": "b7011f36f8194db7a89554ec3511b3e4",
+      "nickname": "铁之贝克",
+      "isLike": false,
+      "likeCount": 0,
+      "tags": [
+        {
+          "id": 3040,
+          "code": "test",
+          "tagLabel": "广告导演请就位",
+          "parentTag": 0,
+          "categoryId": 0,
+          "path": "3040/",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 3042,
+          "code": "test",
+          "tagLabel": "2-故事短片",
+          "parentTag": 3040,
+          "categoryId": 0,
+          "path": "3040/3042",
+          "tagStatus": 1,
+          "tagOrder": 10,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 5
+        },
+        {
+          "id": 1506,
+          "code": "rule_demo",
+          "tagLabel": "规则演示",
+          "parentTag": 1500,
+          "categoryId": 0,
+          "path": "1500/1506/",
+          "tagStatus": 1,
+          "tagOrder": 6,
+          "tagIcon": "",
+          "children": null,
+          "tagType": 1
+        }
+      ],
+      "score": 0,
+      "socialMediaUrl": "暂未发布",
+      "createAt": "2026年06月18日 11:55",
+      "updateAt": "2026年06月26日 12:06",
+      "publishAt": "2026年06月18日 11:55",
+      "playCount": 3,
+      "viewCreationProcessCount": 0,
+      "copyCanvasCount": 0,
+      "shareCount": 0,
+      "snapshotSummary": {
+        "nodes": 127,
+        "edges": 274
+      }
+    },
+    "recommendList": []
+  },
+  "msg": "",
+  "trace_id": "b29fd583-32f2-9af1-8fff-e7539907bfee"
+}
