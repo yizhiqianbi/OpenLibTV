@@ -2,7 +2,7 @@
 import { readFile } from 'node:fs/promises';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import * as THREE from 'three';
-import { createViewportCommands } from './viewport-commands.js';
+import { createViewportCommands, resolveVideoMimeType } from './viewport-commands.js';
 import { createViewportEntityController } from './viewport-entities.js';
 import {
   glbBufferToDataUrl,
@@ -36,6 +36,14 @@ class TestFileReader {
 afterEach(() => vi.unstubAllGlobals());
 
 describe('real GLB import and export', () => {
+  it('chooses a supported desktop WebM recorder format and reports unavailable browsers', () => {
+    expect(
+      resolveVideoMimeType({ isTypeSupported: (type) => type === 'video/webm;codecs=vp8' }),
+    ).toBe('video/webm;codecs=vp8');
+    expect(resolveVideoMimeType({ isTypeSupported: () => false })).toBeNull();
+    expect(resolveVideoMimeType(undefined)).toBeNull();
+  });
+
   it('parses the saved binary data URL with its named geometry and original materials', async () => {
     const buffer = await fixtureBuffer();
     const source = glbBufferToDataUrl(buffer);

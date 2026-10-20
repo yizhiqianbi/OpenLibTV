@@ -6,7 +6,8 @@ import { createViewportCommands } from '../viewport-commands.js';
 import { applyViewportSelection } from '../viewport-controls.js';
 import { glbBufferToDataUrl, parseGlbBuffer } from '../glb.js';
 import { createAnimatedGlb, createNestedAnimatedGlb } from '../fixtures/animated-glb.js';
-import { patchStudioRow, studioOutlinerRows } from './model.js';
+import { createStudioNodeCopy } from '../model.js';
+import { patchStudioRow, studioNodeCopyId, studioOutlinerRows } from './model.js';
 import { viewportEntityId } from '../scene-resources.js';
 
 class TestFileReader {
@@ -142,6 +143,34 @@ describe('real GLB subtree ownership and edits', () => {
         .flatMap((clip) => clip.tracks)
         .some((track) => track.name.includes('MovingTriangle')),
     ).toBe(true);
+    rt.entityController.dispose();
+  });
+
+  it('clones an imported subtree with stable IDs, independent resources and export persistence', async () => {
+    vi.stubGlobal('FileReader', TestFileReader);
+    const hierarchy = vi.fn(),
+      rt = createController(hierarchy);
+    rt.entityController.reconcile([imported]);
+    await rt.entityController.waitForReady();
+    const subtree = hierarchy.mock.calls[0][1],
+      base = { ...imported, subtree },
+      branch = studioOutlinerRows([base]).find((row) => row.name === 'MovingTriangle'),
+      copy = createStudioNodeCopy(branch, () => 'copy-1'),
+      copied = { ...base, nodeCopies: [copy] };
+    rt.entityController.reconcile([copied]);
+    const copiedId = studioNodeCopyId('model', 'copy-1');
+    const sourceObject = rt.entities.get(branch.id);
+    const copiedObject = rt.entities.get(copiedId);
+    expect(copiedObject).toBeTruthy();
+    expect(copiedObject.name).toBe('MovingTriangle 副本');
+    expect(copiedObject.parent).toBe(sourceObject.parent);
+    expect(copiedObject.geometry).not.toBe(sourceObject.geometry);
+    expect(copiedObject.material).not.toBe(sourceObject.material);
+    const exported = await parseGlbBuffer(await rt.commands.exportGLB());
+    expect(exported.getObjectByName('MovingTriangle')).toBeTruthy();
+    expect(exported.getObjectByName('MovingTriangle_副本')).toBeTruthy();
+    rt.entityController.reconcile([base]);
+    expect(rt.entities.get(copiedId)).toBeUndefined();
     rt.entityController.dispose();
   });
 

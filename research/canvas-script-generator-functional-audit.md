@@ -1,5 +1,7 @@
 # ScriptV2 专用生成器、草稿与保存恢复验收
 
+> 当前状态修正（2026-10-18）：reference/mark/focus 的显式 target 已由 Canvas mode owner 提供，ScriptV2 eligibility 与普通单选保持 OR 关系。本文较早的“完整模式仍缺”描述是历史状态；当前专项见 `artifacts/canvas-explicit-target-verification.json`。
+
 2026-10-12，继续用户“节点交互不自然”的优化。上批已接空态参考建图，本批补专用生成器的提示词、三项模型、文本/媒体引用、参数/任务投影及本机保存。未登录、注册、使用账号资源或调用原站生成/费用/写服务。本机源码更新，不自动改变独立影游冻结部署或现有生产。
 
 ## 源码与实际接线

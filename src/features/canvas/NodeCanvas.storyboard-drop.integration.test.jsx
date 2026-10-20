@@ -10,9 +10,19 @@ vi.mock('../../hooks/useContent.ts', async (original) => ({
     data:
       name === 'models'
         ? models
-        : {
-            items: [{ templateUuid: 'sample', name: '代表图片', coverUrl: '/assets/sample.webp' }],
-          },
+        : name === 'gallery'
+          ? {
+              data: {
+                items: [
+                  { templateUuid: 'sample', name: '代表图片', coverUrl: '/assets/sample.webp' },
+                ],
+              },
+            }
+          : {
+              items: [
+                { templateUuid: 'sample', name: '代表图片', coverUrl: '/assets/sample.webp' },
+              ],
+            },
     loading: false,
     error: null,
     reload: vi.fn(),

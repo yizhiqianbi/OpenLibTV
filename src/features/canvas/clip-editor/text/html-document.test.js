@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { createTextOverlayHtml, readTextOverlayHtml, serializeTextHtml } from './html-document.js';
-import { applyTextOverlayPatches } from './html-patches.js';
+import {
+  createSubtitleHtml,
+  createTextOverlayHtml,
+  readSubtitleHtml,
+  readTextOverlayHtml,
+  serializeTextHtml,
+} from './html-document.js';
+import { applyTextOverlayPatches, applyTimedTextPatches } from './html-patches.js';
 import {
   planNewOverlayCue,
   placeTextCue,
@@ -247,6 +253,49 @@ describe('HTML text mutation transactions', () => {
     expect(style.getPropertyValue('--libtvSubtitleScale')).toBe('4');
     expect(result.cues[1].element.style.getPropertyValue('--libtvSubtitleColor')).toBe('');
     expect(result.root.style.getPropertyValue('--libtvSubtitleFontWeight')).toBe('700');
+  });
+  it('reorders all source rows atomically, remaps z order and preserves hidden state and anchor', () => {
+    const html = documentHtml([cue('a', 1, 1, 0), cue('b', 2, 1, 1), cue('c', 3, 1, 2)])
+      .replace(
+        'data-composition-id="source-composition"',
+        'data-composition-id="source-composition" data-libtv-overlay-group-anchor="0"',
+      )
+      .replace('data-track-index="1"', 'data-track-index="1" data-libtv-track-hidden="true"');
+    const result = read(
+      applyTextOverlayPatches(html, [{ kind: 'reorderTracks', order: [2, 0, 1] }]),
+    );
+    expect(result.trackIndexes).toEqual([0, 1, 2]);
+    expect(result.cues.map((entry) => [entry.cueId, entry.trackIndex, entry.z])).toEqual([
+      ['a', 1, 99],
+      ['b', 2, 98],
+      ['c', 0, 100],
+    ]);
+    expect(result.cues[1].trackHidden).toBe(true);
+    expect(result.root.getAttribute('data-libtv-overlay-group-anchor')).toBe('1');
+    expect(applyTextOverlayPatches(html, [{ kind: 'reorderTracks', order: [0, 2] }])).toMatchObject(
+      { ok: false, html },
+    );
+  });
+  it('reorders source subtitle rows without changing clip ownership or cue timing', () => {
+    const html = createSubtitleHtml({
+      compositionId: 'sub',
+      width: 1920,
+      height: 1080,
+      duration: 10,
+      cues: [
+        { ...cue('a', 1, 2, 0), clipId: 'left' },
+        { ...cue('b', 4, 1, 1), clipId: 'left' },
+      ],
+    });
+    const result = applyTimedTextPatches(html, [{ kind: 'reorderTracks', order: [1, 0] }], {
+      subtitle: true,
+    });
+    expect(result.ok).toBe(true);
+    const model = readSubtitleHtml(result.html);
+    expect(model.cues.map((entry) => [entry.cueId, entry.trackIndex, entry.clipId])).toEqual([
+      ['a', 1, 'left'],
+      ['b', 0, 'left'],
+    ]);
   });
   it('rescales source word timing with cue bounds and regenerates weighted words after editing', () => {
     const html = documentHtml([cue('words', 1, 2)])

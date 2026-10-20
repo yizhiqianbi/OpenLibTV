@@ -85,6 +85,10 @@ export const TEXT_NUMERIC_RULES = Object.freeze({
   backgroundOpacityPct: [0, 100],
   cornerRadiusPx: [0, 200],
   backgroundBlurPx: [0, 100],
+  paddingTopPx: [0, 200],
+  paddingRightPx: [0, 200],
+  paddingBottomPx: [0, 200],
+  paddingLeftPx: [0, 200],
 });
 export function textNumericValue(key, value) {
   const range = TEXT_NUMERIC_RULES[key];

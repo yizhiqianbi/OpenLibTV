@@ -50,6 +50,23 @@ afterEach(() => {
   vi.useRealTimers();
 });
 describe('HTML subtitle async source ownership', () => {
+  it('defers legacy transport validation and retries an empty rejected document instead of caching it as valid', async () => {
+    readClipTextHtml.mockResolvedValue(
+      '<html><body data-width="320" data-height="180"></body></html>',
+    );
+    const initial = state(),
+      { controller, rerender, unmount } = setup(initial);
+    await waitFor(() => expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledOnce());
+    expect(readClipTextHtml.mock.calls[0][1]).toMatchObject({ requireComposition: false });
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[0][1]).toEqual([]);
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[0][2][0].error).toContain('没有可读取的字幕');
+    readClipTextHtml.mockResolvedValue(html);
+    rerender({ value: { ...initial, htmlSubtitleRetry: 1 } });
+    await waitFor(() => expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledTimes(2));
+    expect(readClipTextHtml).toHaveBeenCalledTimes(2);
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[1][1]).toHaveLength(1);
+    unmount();
+  });
   it('deduplicates shared URLs but materializes separate node/clip ownership', async () => {
     readClipTextHtml.mockResolvedValue(html);
     const initial = state();
@@ -99,6 +116,21 @@ describe('HTML subtitle async source ownership', () => {
     expect(readClipTextHtml).toHaveBeenCalledOnce();
     unmount();
   });
+  it('does not turn media initialization into an implicit retry of rejected remote HTML', async () => {
+    readClipTextHtml.mockRejectedValue(new Error('remote failed'));
+    const initial = { ...state(), initialized: false };
+    const { controller, rerender, unmount } = setup(initial);
+    await waitFor(() => expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledOnce());
+    rerender({ value: { ...initial, initialized: true } });
+    await act(async () => {
+      await Promise.resolve();
+    });
+    expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledOnce();
+    expect(readClipTextHtml).toHaveBeenCalledOnce();
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[0][1]).toEqual([]);
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[0][2][0].error).toBe('remote failed');
+    unmount();
+  });
   it('reports a bounded timeout and allows the same plan to retry without consuming the archive', async () => {
     vi.useFakeTimers();
     readClipTextHtml.mockImplementation(() => new Promise(() => {}));
@@ -107,16 +139,55 @@ describe('HTML subtitle async source ownership', () => {
     await act(async () => {
       vi.advanceTimersByTime(15001);
     });
-    expect(controller.onHtmlSubtitleLoadStatus).toHaveBeenLastCalledWith(
+    expect(controller.onHtmlSubtitleLoaded).toHaveBeenLastCalledWith(
       expect.any(String),
-      'HTML字幕加载超时，请重试',
+      [],
+      [expect.objectContaining({ error: 'HTML字幕加载超时，请重试' })],
     );
-    expect(controller.onHtmlSubtitleLoaded).not.toHaveBeenCalled();
+    controller.onHtmlSubtitleLoaded.mockClear();
     readClipTextHtml.mockResolvedValue(html);
     await act(async () => {
       rerender({ value: { ...initial, htmlSubtitleRetry: 1 } });
     });
     expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledOnce();
+    unmount();
+  });
+  it('retains valid layers after parse/network rejection and retries failed sources without re-reading valid URLs', async () => {
+    let retry = false;
+    readClipTextHtml.mockImplementation(async (url) => {
+      if (url === '/parse.html' && !retry) return '<p>missing composition</p>';
+      if (url === '/network.html' && !retry) throw new Error('网络暂时不可用');
+      return html;
+    });
+    const initial = state();
+    initial.timeline.clips.push(
+      {
+        ...initial.timeline.clips[0],
+        id: 'b',
+        sourceNodeId: 'parse',
+        subtitleHtmlUrl: '/parse.html',
+      },
+      {
+        ...initial.timeline.clips[0],
+        id: 'c',
+        sourceNodeId: 'network',
+        subtitleHtmlUrl: '/network.html',
+      },
+    );
+    const { controller, rerender, unmount } = setup(initial);
+    await waitFor(() => expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledOnce());
+    const [, layers, failures] = controller.onHtmlSubtitleLoaded.mock.calls[0];
+    expect(layers.map((layer) => layer.nodeId)).toEqual(['video']);
+    expect(readSubtitleHtml(layers[0].html).cues[0].clipId).toBe('a');
+    expect(failures.map((failure) => failure.nodeId)).toEqual(['parse', 'network']);
+    expect(failures.find((failure) => failure.nodeId === 'network').error).toBe('网络暂时不可用');
+    retry = true;
+    rerender({ value: { ...initial, htmlSubtitleRetry: 1 } });
+    await waitFor(() => expect(controller.onHtmlSubtitleLoaded).toHaveBeenCalledTimes(2));
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[1][1]).toHaveLength(3);
+    expect(controller.onHtmlSubtitleLoaded.mock.calls[1][2]).toEqual([]);
+    expect(readClipTextHtml.mock.calls.filter(([url]) => url === '/same.html')).toHaveLength(1);
+    expect(readClipTextHtml.mock.calls.filter(([url]) => url === '/parse.html')).toHaveLength(2);
     unmount();
   });
   it('retains malformed archive errors and never treats them as an empty writable document', () => {

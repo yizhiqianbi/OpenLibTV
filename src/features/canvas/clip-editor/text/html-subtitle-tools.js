@@ -1,6 +1,10 @@
 import { createTimedTextCueIdSync } from '../../../../services/timed-text-id.js';
 import { htmlSubtitleLoadPlan } from '../domain/html-subtitle-sources.js';
 import {
+  describeSubtitleEditing,
+  subtitleSourceStates,
+} from '../domain/subtitle-ownership-model.js';
+import {
   planNewHtmlSubtitleCue,
   subtitleClipWindow,
   subtitleCueInstances,
@@ -12,6 +16,14 @@ import { textOutputScale } from '../domain/text-timing-model.js';
 import { placeHtmlSubtitleCue } from '../domain/html-subtitle-model.js';
 import { createSubtitleHtml, readSubtitleHtml } from './html-document.js';
 import { textOutputSize } from './document-model.js';
+import {
+  retrofitSubtitleStyles,
+  subtitleStyleCompatibility,
+  subtitleFieldAllowed,
+  subtitlePatchesAllowed,
+  subtitleBlockedVars,
+  convertSubtitleToEditable,
+} from './subtitle-style-compatibility.js';
 import {
   readHtmlSubtitleStyle as readTextStyle,
   htmlSubtitleStylePatches as textStylePatches,
@@ -25,7 +37,9 @@ import {
 export function effectiveHtmlSubtitleLayers(session) {
   if (!session) return [];
   const plan = htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl);
+  const states = subtitleSourceStates(session, plan);
   return plan.layers.flatMap((layer) => {
+    if (states.find((state) => state.key === layer.key)?.status === 'rejected') return [];
     const loaded = session.htmlSubtitleLayers?.find(
       (item) => item.key === layer.key && item.url === layer.url,
     );
@@ -56,7 +70,9 @@ export function projectHtmlSubtitleDraft(session) {
   const model = readSubtitleHtml(layer.html);
   if (!model.ok || !model.cues.some((cue) => cue.cueId === draft.cueId))
     throw new Error('字幕片段已改变，当前输入已保留');
-  const result = patchHtmlSubtitle(layer.html, [
+  const compatibility = subtitleStyleCompatibility(model.document);
+  if (compatibility.readOnly) throw new Error('当前字幕为只读还原，输入已保留');
+  const result = patchHtmlSubtitle(retrofitSubtitleStyles(layer.html).html, [
     { kind: 'text', cueId: draft.cueId, text: draft.text },
   ]);
   if (!result.ok) throw new Error(result.issues[0].detail);
@@ -90,7 +106,9 @@ export function createHtmlSubtitleTools({
   const modelFor = (html) => {
     if (!parsed.has(html)) {
       if (parsed.size > 24) parsed.clear();
-      parsed.set(html, readSubtitleHtml(html));
+      const model = readSubtitleHtml(html);
+      if (model.ok) model.styleCompatibility = subtitleStyleCompatibility(model.document);
+      parsed.set(html, model);
     }
     return parsed.get(html);
   };
@@ -99,6 +117,32 @@ export function createHtmlSubtitleTools({
       ...layer,
       model: modelFor(layer.html),
     }));
+  const reconcileSources = (session) => {
+    const plan = htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl);
+    if (session.htmlSubtitleLoadKey === plan.key) return session;
+    return {
+      ...session,
+      htmlSubtitleLoadKey: plan.key,
+      htmlSubtitleSourceStates: plan.layers.map((layer) => {
+        const previous = session.htmlSubtitleSourceStates?.find(
+          (state) => state.key === layer.key && state.url === layer.url,
+        );
+        return {
+          key: layer.key,
+          nodeId: layer.nodeId,
+          url: layer.url,
+          status:
+            layer.html && modelFor(layer.html).ok
+              ? modelFor(layer.html).styleCompatibility.readOnly
+                ? 'readonly'
+                : 'ready'
+              : !layer.html && previous
+                ? previous.status
+                : 'loading',
+        };
+      }),
+    };
+  };
   const safe =
     (action) =>
     (...args) => {
@@ -110,11 +154,13 @@ export function createHtmlSubtitleTools({
       }
     };
   const writable = () => {
-    const session = getSession();
-    if (!current(session) || !session.ready || session.conflicted) return null;
-    const plan = htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl);
+    const owner = getSession();
+    if (!current(owner) || !owner.ready || owner.conflicted) return null;
+    const session = reconcileSources(owner);
+    const editing = describeSubtitleEditing(session);
     if (
-      layersFor(session).length !== plan.layers.length ||
+      editing.error ||
+      !editing.canEditHtml ||
       layersFor(session).some((layer) => !layer.model.ok)
     )
       return null;
@@ -129,7 +175,9 @@ export function createHtmlSubtitleTools({
   const editDocument = (timeline, { key, patches, stamp = Date.now() }) => {
     const layer = layersFor({ ...getSession(), timeline }).find((item) => item.key === key);
     if (!layer) return { timeline, error: '字幕来源已改变，当前编辑已保留' };
-    const result = patchHtmlSubtitle(layer.html, patches);
+    if (!subtitlePatchesAllowed(layer.model.styleCompatibility, patches))
+      return { timeline, error: '当前字幕样式不支持此操作，原内容已保留' };
+    const result = patchHtmlSubtitle(retrofitSubtitleStyles(layer.html).html, patches);
     return !result.ok
       ? { timeline, error: result.issues[0].detail }
       : {
@@ -144,8 +192,22 @@ export function createHtmlSubtitleTools({
     let patches = options.patches;
     if (options.preset && (!options.preset.id || !options.preset.fields))
       return { timeline, error: '字幕预设无法读取，原样式已保留' };
-    const fields = options.preset?.fields || options.fields;
+    const incomingFields = options.preset?.fields || options.fields;
+    const fields =
+      options.preset && incomingFields
+        ? Object.fromEntries(
+            Object.entries(incomingFields).filter(([field]) =>
+              subtitleFieldAllowed(item.layer.model.styleCompatibility, field),
+            ),
+          )
+        : incomingFields;
     if (fields) {
+      if (
+        Object.keys(fields).some(
+          (field) => !subtitleFieldAllowed(item.layer.model.styleCompatibility, field),
+        )
+      )
+        return { timeline, error: '当前字幕样式不支持此属性，原内容已保留' };
       const style = readTextStyle(item.layer.model, item.cue.cueId, textOutputSize(session));
       if (
         !options.preset &&
@@ -173,7 +235,13 @@ export function createHtmlSubtitleTools({
       const bounds =
         item.layer.model.timeBase === 'source'
           ? subtitleClipWindow(clip)
-          : { start: 0, end: item.layer.model.duration };
+          : {
+              start: 0,
+              end:
+                item.layer.model.duration > 0
+                  ? item.layer.model.duration
+                  : session.timeline.totalDuration,
+            };
       const delta = options.delta * rate,
         cue = item.cue;
       let start = cue.start,
@@ -296,28 +364,59 @@ export function createHtmlSubtitleTools({
         htmlSubtitleLoadKey: key,
         htmlSubtitleStatus: error ? 'error' : 'loading',
         htmlSubtitleError: error,
+        htmlSubtitleSourceStates: subtitleSourceStates(
+          session,
+          htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl),
+        ).map((state) => ({
+          ...state,
+          status: ['ready', 'readonly'].includes(state.status) ? state.status : 'loading',
+        })),
       });
       return true;
     },
-    onHtmlSubtitleLoaded: (key, layers) => {
+    onHtmlSubtitleLoaded: (key, layers, failures = []) => {
       const session = getSession();
       if (!current(session) || keyFor(session) !== key) return false;
       for (const layer of layers) {
         const model = modelFor(layer.html);
         if (!model.ok) return controls.onHtmlSubtitleLoadStatus(key, model.issues[0].detail);
       }
+      const sourceStates = htmlSubtitleLoadPlan(
+        session.timeline,
+        session.nodeSubtitleHtmlUrl,
+      ).layers.map((layer) => ({
+        key: layer.key,
+        nodeId: layer.nodeId,
+        url: layer.url,
+        status: layers.some((item) => item.key === layer.key)
+          ? modelFor(layers.find((item) => item.key === layer.key).html).styleCompatibility.readOnly
+            ? 'readonly'
+            : 'ready'
+          : failures.some((item) => item.key === layer.key)
+            ? 'rejected'
+            : 'loading',
+      }));
+      const error = [...new Set(failures.map((failure) => failure.error))].join('；');
+      const status = sourceStates.some((state) => state.status === 'loading')
+        ? 'loading'
+        : error
+          ? 'error'
+          : 'ready';
       if (
         session.htmlSubtitleLoadKey === key &&
-        session.htmlSubtitleStatus === 'ready' &&
-        JSON.stringify(session.htmlSubtitleLayers) === JSON.stringify(layers)
+        session.htmlSubtitleStatus === status &&
+        session.htmlSubtitleError === error &&
+        JSON.stringify(session.htmlSubtitleLayers) === JSON.stringify(layers) &&
+        JSON.stringify(session.htmlSubtitleSourceStates) === JSON.stringify(sourceStates)
       )
         return true;
       publish({
         ...session,
         htmlSubtitleLoadKey: key,
-        htmlSubtitleStatus: 'ready',
-        htmlSubtitleError: '',
+        htmlSubtitleStatus: status,
+        htmlSubtitleError: error,
         htmlSubtitleLayers: layers,
+        htmlSubtitleSourceStates: sourceStates,
       });
       return true;
     },
@@ -326,7 +425,14 @@ export function createHtmlSubtitleTools({
       if (current(session))
         publish({ ...session, htmlSubtitleRetry: (session.htmlSubtitleRetry || 0) + 1 });
     },
-    onAddHtmlSubtitle: ({ key, cueId: afterId, clipId, force = false, trackIndex } = {}) => {
+    onAddHtmlSubtitle: ({
+      key,
+      cueId: afterId,
+      clipId,
+      force = false,
+      trackIndex,
+      createTrack = false,
+    } = {}) => {
       let session = writable();
       if (!session) return false;
       publish({
@@ -353,6 +459,7 @@ export function createHtmlSubtitleTools({
                 (!layer.model.cues.some((cue) => cue.clipId) &&
                   (!video.subtitleHtmlUrl || layer.url === video.subtitleHtmlUrl))),
           );
+      if (layer?.model.styleCompatibility.readOnly) return false;
       const after = afterId && layer?.model.cues.find((cue) => cue.cueId === afterId);
       const clip = after
         ? session.timeline.clips.find((clip) => clip.id === (after.clipId || clipId)) || video
@@ -369,8 +476,19 @@ export function createHtmlSubtitleTools({
         : timeBase === 'source'
           ? (session.timeline.currentTime - clip.startTime) * window.rate + clip.sourceOffset
           : session.timeline.currentTime;
+      const nextTrack = layer?.model.trackIndexes.length
+        ? Math.max(...layer.model.trackIndexes) + 1
+        : 0;
+      if (createTrack && (!Number.isInteger(trackIndex) || trackIndex !== nextTrack)) {
+        notify('新建字幕轨道顺序无效');
+        return false;
+      }
+      if (createTrack && layer?.model.trackIndexes.length >= 4) {
+        notify('字幕轨道已达到上限');
+        return false;
+      }
       const row = after?.trackIndex ?? trackIndex ?? layer?.model.trackIndexes[0] ?? 0;
-      if (!after && trackIndex == null && layer?.model.trackIndexes.length > 1) {
+      if (!after && !createTrack && trackIndex == null && layer?.model.trackIndexes.length > 1) {
         const hits = layer.model.cues.filter(
           (cue) =>
             (!cue.clipId || cue.clipId === clip.id) &&
@@ -406,7 +524,7 @@ export function createHtmlSubtitleTools({
         clipId: bindingClipId,
         tSource: time,
         maxEnd: Math.min(
-          layer?.model.duration ?? Infinity,
+          layer?.model.duration > 0 ? layer.model.duration : Infinity,
           timeBase === 'source' ? duration : session.timeline.totalDuration,
         ),
         trackIndex: row,
@@ -482,7 +600,12 @@ export function createHtmlSubtitleTools({
     },
     onHtmlSubtitleTextChange: (text) => {
       const session = writable();
-      if (!session || !selected(session)) return false;
+      if (
+        !session ||
+        !selected(session) ||
+        selected(session).layer.model.styleCompatibility.readOnly
+      )
+        return false;
       const identity = session.selectedHtmlSubtitle;
       publish({
         ...session,
@@ -510,15 +633,46 @@ export function createHtmlSubtitleTools({
         publish({ ...getSession(), selectedHtmlSubtitle: null, htmlSubtitleDraft: null });
       return result;
     },
+    onConvertHtmlSubtitle: () => {
+      const owner = getSession();
+      if (!current(owner) || !owner.ready || owner.conflicted) {
+        notify('字幕转换需要等待当前剪辑器准备完成');
+        return false;
+      }
+      const session = reconcileSources(owner),
+        item = selected(session);
+      if (!item || !item.layer.model.styleCompatibility?.convertible) {
+        notify('当前字幕样式无法转换');
+        return false;
+      }
+      const converted = convertSubtitleToEditable(item.layer.html);
+      if (!converted.ok) {
+        notify(converted.issues?.[0]?.detail || '字幕无法转为可编辑');
+        return false;
+      }
+      if (!converted.changed) return true;
+      const timeline = replaceArchive(session.timeline, item.layer, converted.html, Date.now());
+      if (!acceptEdit({ timeline })) {
+        notify('字幕转换未能保存，请重试');
+        return false;
+      }
+      publish({ ...getSession(), selectedHtmlSubtitle: item.identity, htmlSubtitleDraft: null });
+      return true;
+    },
     onCloseHtmlSubtitles: () => {
       if (!flushDraft() || !current(getSession())) return false;
-      publish({ ...getSession(), htmlSubtitlePanelOpen: false, htmlSubtitleTrackChoice: null });
+      publish({
+        ...getSession(),
+        htmlSubtitlePanelOpen: false,
+        subtitlePanelOpen: false,
+        htmlSubtitleTrackChoice: null,
+      });
       return true;
     },
     onBeginHtmlSubtitleStyle: ({ field, kind, readPending }) => {
       const session = writable(),
         item = session && selected(session);
-      if (!item) return null;
+      if (!item || !subtitleFieldAllowed(item.layer.model.styleCompatibility, field)) return null;
       const token = { ...item.identity, field, stamp: Date.now() };
       const project =
         kind === 'pointer'
@@ -568,41 +722,54 @@ export function createHtmlSubtitleTools({
     onApplyHtmlSubtitleToAll: () => {
       const session = writable(),
         item = session && selected(session);
-      if (!item) return false;
+      if (!item || item.layer.model.styleCompatibility.readOnly) return false;
       const style = readTextStyle(item.layer.model, item.cue.cueId, textOutputSize(session));
       return commit({
-        edits: layersFor(session).map((layer) => ({
-          key: layer.key,
-          patches: layer.model.cues
-            .filter(
-              (cue) =>
-                cue.trackIndex === item.cue.trackIndex &&
-                (layer.key !== item.layer.key || cue.cueId !== item.cue.cueId),
-            )
-            .flatMap((cue) => [
-              { kind: 'clearTextStyle', cueId: cue.cueId },
-              ...textStylePatches(
-                cue.cueId,
-                style,
-                {},
-                textOutputScale(layer.model, textOutputSize(session)),
-              ),
-              {
-                kind: 'copyTextAppearance',
-                cueId: cue.cueId,
-                sourceStyle:
-                  item.cue.element.querySelector('[data-libtv-text]')?.getAttribute('style') || '',
-                sourcePixelScale: textOutputScale(item.layer.model, textOutputSize(session)),
-                pixelScale: textOutputScale(layer.model, textOutputSize(session)),
-              },
-              {
-                kind: 'textPresetId',
-                cueId: cue.cueId,
-                presetId: item.cue.element.getAttribute('data-libtv-text-preset-id'),
-              },
-              { kind: 'animation', cueId: cue.cueId, ...readTextMotion(item.cue.element) },
-            ]),
-        })),
+        edits: layersFor(session)
+          .filter((layer) => !layer.model.styleCompatibility.readOnly)
+          .map((layer) => ({
+            key: layer.key,
+            patches: layer.model.cues
+              .filter(
+                (cue) =>
+                  cue.trackIndex === item.cue.trackIndex &&
+                  (layer.key !== item.layer.key || cue.cueId !== item.cue.cueId),
+              )
+              .flatMap((cue) => [
+                {
+                  kind: 'clearTextStyle',
+                  cueId: cue.cueId,
+                  preserveVars: subtitleBlockedVars(layer.model.styleCompatibility),
+                },
+                ...textStylePatches(
+                  cue.cueId,
+                  Object.fromEntries(
+                    Object.entries(style).filter(
+                      ([field]) =>
+                        subtitleFieldAllowed(item.layer.model.styleCompatibility, field) &&
+                        subtitleFieldAllowed(layer.model.styleCompatibility, field),
+                    ),
+                  ),
+                  {},
+                  textOutputScale(layer.model, textOutputSize(session)),
+                ),
+                {
+                  kind: 'copyTextAppearance',
+                  cueId: cue.cueId,
+                  sourceStyle:
+                    item.cue.element.querySelector('[data-libtv-text]')?.getAttribute('style') ||
+                    '',
+                  sourcePixelScale: textOutputScale(item.layer.model, textOutputSize(session)),
+                  pixelScale: textOutputScale(layer.model, textOutputSize(session)),
+                },
+                {
+                  kind: 'textPresetId',
+                  cueId: cue.cueId,
+                  presetId: item.cue.element.getAttribute('data-libtv-text-preset-id'),
+                },
+                { kind: 'animation', cueId: cue.cueId, ...readTextMotion(item.cue.element) },
+              ]),
+          })),
       });
     },
   };
@@ -611,15 +778,12 @@ export function createHtmlSubtitleTools({
       Object.entries(controls).map(([key, action]) => [key, safe(action)]),
     ),
     projectDraft: projectHtmlSubtitleDraft,
+    isVttEditingBlocked: () => describeSubtitleEditing(getSession()).ownsHtml,
     flushDraft: safe(flushDraft),
     prepareEdit: prepare,
     transformTimelineEdit: (session, result, operation) => {
       try {
-        if (
-          operation &&
-          htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl).layers.length !==
-            layersFor(session).length
-        )
+        if (operation && describeSubtitleEditing(session).readiness !== 'ready')
           return { ...result, error: 'HTML字幕仍在读取，请准备完成后再编辑片段' };
         return transformHtmlSubtitleTimeline(session, result, operation, layersFor(session));
       } catch (error) {
@@ -628,10 +792,10 @@ export function createHtmlSubtitleTools({
     },
     normalizeUI: (session) => {
       try {
+        session = reconcileSources(session);
         const layers = layersFor(session);
         if (
-          layers.length !==
-            htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl).layers.length ||
+          describeSubtitleEditing(session).readiness !== 'ready' ||
           layers.some((layer) => !layer.model.ok)
         )
           return session;
@@ -664,9 +828,10 @@ export function createHtmlSubtitleTools({
     isPlaybackBlocked: () => {
       const session = getSession();
       try {
+        const editing = describeSubtitleEditing(session);
         return (
-          htmlSubtitleLoadPlan(session.timeline, session.nodeSubtitleHtmlUrl).layers.length > 0 &&
-          (session.htmlSubtitleStatus !== 'ready' || session.htmlSubtitlePreviewReady !== true)
+          editing.readiness !== 'ready' ||
+          (editing.active && session.htmlSubtitlePreviewReady !== true)
         );
       } catch {
         return true;

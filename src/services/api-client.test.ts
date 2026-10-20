@@ -111,4 +111,36 @@ describe('API client', () => {
       code: 'HTTP_502',
     });
   });
+  it('keeps a successful Xumeng stream readable and exposes string errors', async () => {
+    const fetcher = vi
+      .fn<typeof fetch>()
+      .mockResolvedValueOnce(new Response('data', { headers: { 'Content-Type': 'text/plain' } }))
+      .mockResolvedValueOnce(new Response('{"error":"模型服务未配置"}', { status: 503 }));
+    const client = createApiClient({ baseUrl: '/api', fetcher });
+    const stream = await client.api.xumeng.chatStream({ messages: [] });
+    await expect(stream.text()).resolves.toBe('data');
+    await expect(client.api.xumeng.chatStream({ messages: [] })).rejects.toMatchObject({
+      status: 503,
+      message: '模型服务未配置',
+    });
+  });
+  it('sends generic Agent runs and Canvas revision headers through the backend boundary', async () => {
+    const fetcher = vi
+      .fn<typeof fetch>()
+      .mockImplementation(() =>
+        Promise.resolve(new Response('{"data":{"id":"run-1","status":"queued"}}')),
+      );
+    const client = createApiClient({ baseUrl: '/api/backend', fetcher });
+    await client.api.agent.create({
+      requestId: 'request-1',
+      projectId: 'project-1',
+      parts: [{ type: 'text', text: 'hello' }],
+      plainText: 'hello',
+      serialized: 'hello',
+    });
+    expect(fetcher.mock.calls[0][0]).toBe('/api/backend/agent/runs');
+    await client.api.canvas.save('project-1', { title: 'new' }, { ifMatch: 4 });
+    expect(fetcher.mock.calls[1][0]).toBe('/api/backend/projects/project-1/canvas');
+    expect(new Headers(fetcher.mock.calls[1][1]?.headers).get('If-Match')).toBe('4');
+  });
 });

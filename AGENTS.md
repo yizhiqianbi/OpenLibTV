@@ -1,10 +1,72 @@
 # PenStudio 前端：协作约定
 
-## Vercel 当前生产与互动影游（2026-10-14）
+## LibTV 通用后端与 Agent 接线（2026-10-19）
 
-当前生产 [PenStudio](https://penstudio-libtv.vercel.app/) 为 `dpl_3wkfrjAvEnsqBEYeDWkieUkEHm6V`，READY；不可变地址为 `https://penstudio-libtv-q38yqyrt3-bins-projects-795df2ea.vercel.app`。独立 [影游编辑器](https://penstudio-libtv.vercel.app/interactive-film) 与 [LibTV 风格匿名示例](https://penstudio-libtv.vercel.app/interactive-film/play/2ed10a7c-3009-41a9-aeae-0cf2a1610de3) 已上线。此次发布来自当前工作区，Node24.19.0完整check通过420文件/6261测试、格式/lint/核心strict/构建，日志 `artifacts/current-deploy-check.log`；生成包日志为 `artifacts/current-vercel-prepare.log`，不能沿用更早冻结候选的检查数字。
+本批新增 `/api/backend/[...path]` 通用服务端代理与 `src/services/agent-api.js` 统一 Agent 运行协议。客户端覆盖 content、projects/folders、assets/uploads、skills、Canvas、generation tasks、sessions/auth 和 Agent runs；Canvas Agent 发送会保留有序 parts、引用、节点快照、模式元数据和 requestId，通过 SSE/NDJSON 消费真实 assistant 事件。未配置 `VITE_API_BASE_URL` 时仍走本地样本；配置 `/api/backend` 后才请求运营后端，失败只保留草稿和结构化错误，不追加假成功消息。
 
-产物2621文件/89,998,819字节，保留4个Functions/config/routes，按90 MB目标、95 MB硬上限prebuilt发布；原public/不裁剪、不采集。三个新增大媒体使用已记录的原始公开CDN URL，其他样本与许可证闭包保留。影游发布使用Public Blob及服务端管理口令/HMAC，编辑与观看无需登录；当前首页、`/animation-preview?newProject=true`、互动影游编辑器、匿名试玩和四个Function路由已在线复验。实际证据及真机、跨设备创作同步等剩余边界见 [部署记录](./research/vercel-deployment.md) 与 [影游审计](./research/interactive-film-audit.md)。原生成、支付、认证和运营写服务继续未接，原站整体复刻目标未完成。
+代理使用服务端 `LIBTV_BACKEND_URL` HTTPS 根地址，严格白名单、同源变更、请求体上限、过滤 Cookie、ETag/If-Match、超时和流式转发。运营后端必须负责 actor/session、资源所有权、CAS、持久化、任务队列和模型调用；本地 workspace actor 不是认证。专项 Agent 协议与代理回归通过，真实运营后端未在本机配置，不能将代理测试当作账号、模型、生成任务或云端写入验收。
+
+## 叙梦 Agent API 可选适配（2026-10-18）
+
+叙梦工作台与 `/api/xumeng/[...path]` 作为独立可选适配保留，不替代 LibTV 通用后端。角色卡编辑、SillyTavern `chara_card_v2` 蛇形字段导入/导出、世界书、状态定义、记忆、会话资源、JSON 对话和 SSE/纯文本流式回复均经过专用契约；浏览器不保存角色卡或会话到本地，也不生成假回复。
+
+代理只接受白名单路径、HTTPS 根地址、同源变更请求和 5 MB 以内请求体，支持 `XUMENG_BACKEND_PROTOCOL=generic|dzmm`。`generic` 映射 `/health`、`/characters`、`/sessions`、`/chat`、`/memory`；`dzmm` 映射 IntVideoGameEditor 的 `/api/dzmm/chat`、`/api/dzmm/memory` 与 `/api/backend/v1`。密钥和上游地址只放服务端环境变量，未配置或上游失败返回明确错误，不能标记为保存或生成成功。上游仍负责认证、模型、会话持久化、CAS、状态补丁和记忆写入；当前页面会携带完整消息历史，刷新后的长期会话依赖上游会话接口。
+
+定向叙梦代理、角色卡和流式协议回归已通过；本批最后的格式、lint、核心 strict、生产构建也通过。真实上游未在本机配置，不能把代理测试当作模型服务、账号或生产写入验收。
+
+## Code Agent 工具化（2026-10-16）
+
+新增 `scripts/penstudio-mcp-server.mjs` 作为无需额外依赖的本地 MCP stdio server，并提供 `.codex-plugin/plugin.json`、`.mcp.json` 与 `skills/penstudio/SKILL.md`。Code Agent 可调用 `get_capabilities`、`list_routes`、`resolve_route`、`list_content`、`get_content` 和 `search_content` 读取当前 checkout 的路由及 `public/data` 公开快照；工具全部只读，明确不接账号、浏览器本地状态、生成、支付或生产写服务。`npm run test:mcp` 覆盖初始化、工具发现、路由解析、快照搜索、路径穿越拒绝和 stdio 调用；当前工作区最新完整 `npm run check` 已通过 **501 个测试文件、6751 项测试**及生产构建，日志 `artifacts/current-continuation-full-check.log`，浏览器回归见 `artifacts/current-continuation-verification.json`。
+
+## 当前验收范围（2026-10-18）
+
+用户已明确：协作、远程配置、多语言以及触摸/Safari 不纳入本轮完成度扣分项；本轮按桌面 Chromium、本地前端状态和已确认的服务边界评估。登录注册、小号资源、真实生成、支付、云端写入和运营服务仍未接入，仍需单独标记为服务边界。
+
+## Canvas 显式 target 模式（2026-10-18）
+
+参考拾取、区域聚焦、元素标记和 ScriptV2 显式 target 已接入当前 Canvas。`CanvasViewport` 维护普通单选与 reference → mark → focus target 的 eligibility，mode owner 负责候选/区域/点位、取消、遮罩和 pointer 隔离；ScriptV2 toolbar 与图片配置复用同一资格。专项 **25 个测试文件、440 项测试通过**，证据见 `artifacts/canvas-explicit-target-verification.json`。真实生成、审核、上传、账号权限和服务端写入仍未接入。
+
+## Studio 浮动机位预览（2026-10-18）
+
+Studio 监视器现在可把真实 Three monitor frame 打开为桌面浮动预览，支持机位标签、播放/暂停、关闭和标题栏拖动；`data-preview-pip` 让浮窗内部操作不触发外部收起。位置属于临时视口 chrome，不进入项目文档或自动保存。Studio 专项 **30 个测试文件、145 项测试通过**；最新完整 `npm run check` 通过 **498 个测试文件、6739 项测试**，3713 modules、build18.60s，证据 `artifacts/studio-floating-preview-verification.json`，日志 `artifacts/studio-pip-full-check.log`。
+
+## Studio WebM 视频导出（2026-10-19）
+
+Studio 导出面板已接入桌面浏览器 WebM 分支：动画存在时通过当前 Three canvas 的 `captureStream` 与 `MediaRecorder` 按时间轴逐帧采样，协商 VP9/VP8/WebM，导出 Blob 并下载；面板显示百分比进度并支持 AbortController 取消；不支持的浏览器、无动画和录制失败均显示明确状态。专项 **30 个测试文件、147 项测试通过**；最新完整 `npm run check` 通过 **499 个测试文件、6744 项测试**，3714 modules、build13.96s，证据 `artifacts/studio-video-export-verification.json`，日志 `artifacts/studio-video-progress-full-check.log`。服务端渲染、云端交付、触摸/Safari仍不在当前验收范围。
+
+## 选中边与混合删除覆盖校准（2026-10-18）
+
+当前源码已经接入选中边 Delete/Backspace、node+edge 混合删除、分镜关联确认以及 VIDEO/AUDIO→VIDEO_CLIP 断线；统一 coordinator 负责 owner、阶段顺序、局部取消、末次草稿、历史分段和本地 lease。真实 App 专项 19 项与桌面/390px GUI 文档 19 份通过；Node24.19.0 完整 `npm run check` 通过 **407 个测试文件、5862 项测试**，日志 `artifacts/canvas-selected-delete-validated-check.log`，详细证据见 [选中删除审计](./research/canvas-selected-delete-functional-audit.md)。这里的证据只覆盖本地前端事务，不把云锁、协作、媒体合成、完整 clip renderer 或服务端写入算作完成。
+
+## Studio 导入子树副本（2026-10-18）
+
+Studio 导入 GLB 的子节点现在可通过 Inspector 创建副本，也支持复制/粘贴；副本保留稳定的本地 copy ID、独立几何/材质资源、可编辑名称/变换、撤销/重做、刷新恢复和 GLB 导出。源 GLB 路径与原始 subtree metadata 不被改写。Studio 域专项 **29 文件/143 项**通过；最终完整 `npm run check` 通过 **495 个测试文件、6727 项测试**，测试193.43s、build13.61s、Vite3709 modules，格式/零警告 lint/核心 strict/生产构建均通过，日志 `artifacts/studio-subtree-copy-full-check.log`，证明 `artifacts/studio-subtree-copy-verification.json`。这是本地前端副本能力，不代表协作锁、云端项目写入或远程同步。
+
+## 画布资产库媒体类型（2026-10-18）
+
+画布资产库现在按当前标签解析对应媒体 URL：图片/角色使用图片封面或图片 URL，视频使用视频输出，音频使用音频 URL；视频记录不会再出现在音频标签中。点击音频资产会创建 `audio` 节点并保存选中的音频 URL，没有可用媒体时继续显示可上传的空态。定向 `CanvasDialogs.test.jsx` **1 文件/5 项**通过；Node24.19.0 最终完整 `npm run check` 通过 **495 个测试文件、6724 项测试**，测试 201.71s、build 14.71s、Vite 3709 modules，格式/零警告 lint/核心 strict/生产构建均通过，日志 `artifacts/canvas-asset-library-media-kind-check-final.log`，证明 `artifacts/canvas-asset-library-media-kind-verification.json`。CanvasPage 既有分包提示未改变；资产库仍是只读本地内容适配器，真实上传、生成、账号和服务端写入未接入。
+
+## 剪辑器 L2 字幕转换（2026-10-18）
+
+L2 HTML 字幕现在提供明确的“转为可编辑字幕”入口和确认弹窗；转换会保留正文、时间与布局，移除无法安全注入的脚本/动画入口，沿现有 CAS、自动保存和撤销/重做写入一次本地历史。工具动作已注册到 lazy text API，失败会保留只读原文并提示重试。专项 2 个测试文件、20 项通过；Chromium 合成 L2 源验证确认/取消、正文恢复、动画清理、同一视频、一次撤销/重做及 390px 无横溢，证据 `output/playwright/subtitle-l2-conversion/native-final.txt`。完整 `npm run check` 通过 494 个测试文件、6717 项测试，日志 `artifacts/subtitle-l2-full-check.log`，快照 `artifacts/subtitle-l2-code-snapshot.json`，证明 `artifacts/subtitle-l2-verification.json`。按用户收窄后的范围当前整体约75%（合理区间72%-80%）；复杂 CSS/runtime、多轨逐帧动画、生成/导出和服务端写入仍不在本批能力内。
+
+## 画布搜索空态（2026-10-18）
+
+画布“搜索节点”现在区分空画布与已有节点但无匹配结果：后者显示“暂无匹配节点”，不会留下空白弹窗。专项 2 项通过；完整 `npm run check` 通过 495 个测试文件、6719 项测试，日志 `artifacts/canvas-dialog-search-full-check.log`，验证 `artifacts/canvas-dialog-search-verification.json`。该修复不写入节点、连线或历史。
+
+## 画布资产库状态与重试（2026-10-18）
+
+画布资产库弹窗现在明确显示加载中、读取失败可重试和成功但为空三种状态，并正确读取公开图库的 `{items: [...]}` 包装，不再把成功目录误判为空。`openLibrary` 为重复打开/重试增加请求序号保护，旧请求不能覆盖较新的结果；资产目录仍是只读内容适配器，不伪造上传、生成或服务端写入。定向 NodeCanvas 与 CanvasDialogs 共 2 文件/30 项通过；最终完整 `npm run check` 通过 **495 个测试文件、6722 项测试**，测试 182.22s、build 13.65s、Vite 3709 modules，日志 `artifacts/canvas-asset-library-envelope-final-full-check.log`，证明 `artifacts/canvas-asset-library-verification.json`。CanvasPage 903.55 kB 的既有分包提示仍保留且未抬高阈值。
+
+## 分镜历史图片选择器数据兼容（2026-10-18）
+
+分镜宫格的“从历史记录中选择”现在同时兼容顶层 `items` 和 `{data:{items}}` 的只读图库包装，选中的图片继续沿现有单次图事务、焦点关闭和撤销协议插入空位。专项 `NodeCanvas.storyboard-drop.integration.test.jsx` **5 项**通过；随后最终完整 `npm run check` 通过 **495 个测试文件、6722 项测试**，测试 169.78s、build 13.12s、Vite 3709 modules，日志 `artifacts/storyboard-history-envelope-recheck-full-check.log`，证明 `artifacts/storyboard-history-envelope-verification.json`。CanvasPage 903.56 kB 的既有分包提示仍保留。
+
+## Vercel 当前生产与互动影游（2026-10-16）
+
+当前生产 [PenStudio](https://penstudio-libtv.vercel.app/) 为 `dpl_B4TDynikaEvefBAdbtz44ZM9fqc6`，READY；不可变地址为 `https://penstudio-libtv-nej2khde4-bins-projects-795df2ea.vercel.app`。独立 [影游编辑器](https://penstudio-libtv.vercel.app/interactive-film) 与 [LibTV 风格匿名示例](https://penstudio-libtv.vercel.app/interactive-film/play/2ed10a7c-3009-41a9-aeae-0cf2a1610de3) 已上线。此次发布来自当前工作区，Node24.19.0完整check通过483文件/6623测试、格式/lint/核心strict/构建，日志 `artifacts/oct16-deploy-check.log`；生成包日志为 `artifacts/oct16-vercel-prepare.log`，不能沿用更早冻结候选的检查数字。
+
+产物2563文件/94,192,140字节，保留4个Functions/config/routes，低于95 MB硬上限；代表性内容收敛为gallery1、canvas snapshot1、skills13、tutorial1、articles4、masterclass1、activities2、features2和chatShare1。原public/不裁剪、不采集。影游发布使用Public Blob及服务端管理口令/HMAC，编辑与观看无需登录；当前首页、`/animation-preview?newProject=true`、互动影游编辑器、匿名试玩和四个Function路由已在线复验。实际证据及真机、跨设备创作同步等剩余边界见 [部署记录](./research/vercel-deployment.md) 与 [影游审计](./research/interactive-film-audit.md)。原生成、支付、认证和运营写服务继续未接，原站整体复刻目标未完成。
 
 ## Vercel 历史代表性部署（2026-10-11）
 
@@ -177,7 +239,7 @@
 - 多选保存复用资产 canonical library，一次原子提交多个独立 v2 资产与标签；无实际内容的生成器 / 组不存为假资源。名称、位置、Quota 重试与损坏 legacy 防覆盖有组件回归。本地根目录 fallback 是适配，不能称原站 folder cascader 完整一致。
 - ZIP 服务 `services/download-archive.ts` 动态加载 fflate 0.8.3 / MIT；取消清理 fetch、reader 和 ZIP worker，不发布失败部分文件。水印服务缺失则阻断该下载，不能自去水印。容量上限和本机保存属于适配，不是源权益规则。
 - Studio camera 的 model / presets / scene / restore / runtime 与 hook / views 分开维护。六个可见预设和六个 easing 卡片按源（实际四种数学映射），CatmullRomCurve3.getPointAt 与世界→父级姿态变换用于实际 camera。30fps、≤2000 sample / ≤600s 等导出边界见域审计。没有 path extras 的已有 camera clips 不因打开面板改写，只有实际编辑才替换对应相机轨道。
-- 相机轨道、原导入 clips、nodeEdits 和稳定镜头 IDs 都需实际导出回读，不能只检查 metadata。监视器 thumbnails、手机 Inspector、部分 PIP / 快捷分支、通用 wrapper 帧、视频生成和真实多人服务仍未完成，不能因此宣称全站 perfect。
+- 相机轨道、原导入 clips、nodeEdits 和稳定镜头 IDs 都需实际导出回读，不能只检查 metadata。手机 Inspector、PIP 快捷键、通用 wrapper 帧、视频生成和真实多人服务仍未完成；桌面浮动机位预览已按上方专项接入，不能因此宣称全站 perfect。
 
 本批源码、适配与浏览器证据见 coverage / canvas-inline-generator-source / batch SOURCE_AUDIT / Studio SOURCE_AUDIT；登录注册及小号资源继续暂缓。
 
@@ -199,9 +261,87 @@
 
 ## 当前工程验证
 
+2026-10-19 当前工作区复核：桌面 Chromium 实际打开 `/3d-box`、`/animation-preview?newProject=true` 与 `/canvas?projectId=local-qa`。空白 3D-BOX 编辑器可打开；无动画时视频导出按钮保持禁用并显示明确提示；Canvas 添加节点菜单可打开并创建文本节点，节点属性面板保持可见；浏览器控制台无 error/warn。当前 Node24.19.0 `npm run check` 通过 **501 个测试文件、6751 项测试**，3714 modules、生产构建 11.46s，格式/零警告 lint/核心 strict/生产构建全部通过。日志 `artifacts/current-continuation-full-check.log`，机器可读证据 `artifacts/current-continuation-verification.json`。协作、远程配置、多语言、触摸/Safari按用户确认不计入本轮；登录、真实生成、支付和服务端写入仍是服务边界。
+
+2026-10-18 VTT→HTML迁移维护：VTT来源编辑现在按 source key/片段窗口/重复实例/样式/时间映射先验证，全部成功才生成HTML；来源等待时保留VTT正文和历史，失败时继续VTT，完成后HTML接管但VTT fallback保留。迁移与现有CAS/history共用，一次undo回原VTT，一次redo回HTML；未失焦正文、URL和片段绑定均保留。专项 **58文件/735项**，实际Chromium合成VTT样本确认localStorage HTML archive、HTML入口接管、同一video、undo/redo及390px布局。最终完整`npm run check` session25180 terminal0：**494文件/6714测试**、测试162.70s/build15.33s，格式/零警告lint/架构/核心strict通过，Vite3709 modules，1436份source/config无漂移。日志`artifacts/subtitle-migration-full-check.log`、证明`artifacts/subtitle-migration-verification.json`及 [迁移审计](./research/canvas-subtitle-vtt-migration-audit.md)。CanvasPage902.55kB提示保留，超过900kB阈值未抬高；完整降级/remote-config、L2、多语言、复杂runtime、触摸/Safari和真实服务仍缺。本机未部署，整体约70%，原目标未完成。
+
+2026-10-18 旧字幕兼容维护：字幕reader独立支持源的根回退、缺省/旧契约、稳定ID、轨道/时基正规化及非致命诊断，普通文字保持严格协议。未绑定旧字幕经片段物化才升级工作根为v4，已绑定v3保留内部版本，读取不自动存档；新增结构错误仍整批拒绝。字幕预览允许未知总时长0，仍用媒体时钟，并补源dark color-scheme/隐藏规则以恢复透明叠层。专项 **56文件/715项**；Chromium三种合成样本验证实际保存确认后一次undo/redo、完整重做时间轴、刷新后正文/ID/iframe恢复、原URL/片段关联、同一video及390px。最终完整`npm run check` session17461 terminal0：**492文件/6694测试**、测试215.43s/build18.02s，格式/零警告lint/架构/核心strict通过，Vite3706 modules，1431份source/config无漂移。日志`artifacts/subtitle-legacy-full-check.log`、证明`artifacts/subtitle-legacy-verification.json`及 [旧字幕审计](./research/canvas-subtitle-legacy-functional-audit.md)。原生首次未知时长错误及后续白底问题均修复并记录，不将仅功能断言通过冒充画面验收。Canvas901.36kB提示保留、阈值未提高。本机未部署；完整VTT迁移、remote-config、多语言、复杂CSS/runtime、重复ID歧义、巨量字幕/触摸/Safari仍需继续，整体约70%，原目标未完成。
+
+2026-10-18 字幕样式兼容维护：按源八项属性改写固定CSS/inline为变量fallback，保留原值、important、未知声明和动画；font shorthand/动画限制产生L1，八项全受限为L2只读，列表可选择定位，正文/时间/增删/布局及旧回调统一门控。L1预设/应用全部跳过受限字段并保留其变量；部分来源失败不再禁用成功图层。规则仍位于lazy文字工具边界。专项 **54文件/694项**通过，Chromium三个合成样本确认42→60px及一次undo/redo、部分禁用而字间距仍可编辑、只读预览、同一播放器和390px无溢出。最终完整`npm run check` session63947 terminal0：**490文件/6673测试**、测试352.20s/build15.18s，格式/零警告lint/架构/核心strict通过，Vite3704 modules，1427份source/config无漂移。日志`artifacts/subtitle-style-compatibility-final-full-check.log`、证明`artifacts/subtitle-style-compatibility-verification.json`与 [样式审计](./research/canvas-subtitle-style-compatibility-audit.md)。首轮ENOSPC及单个5000ms超时保留，清理531MB可再生旧编译缓存后原断言/预算未改而重跑通过。CanvasPage901.36kB提示保留，阈值未提高；旧版本/完整迁移、复杂CSS/runtime、remote-config、多语言和触摸/Safari仍缺，L2转换真实入口待核实。本机未部署、无账号资源，整体约70%，原目标未完成。
+
+2026-10-18 混合字幕编辑权与末次输入历史维护：按静态源将HTML/VTT共存与编辑权分开，HTML已创作/加载中/部分可用时保留编辑权，全部远程来源拒绝后才回退VTT；部分成功可编辑，失败来源保留并可重试。重试先提交VTT末次输入，自动保存确认后仍保留输入前历史基线，一次撤销/重做同步实际保存。媒体初始化不重发HTML请求，素材映射回调稳定，读取回执不写入时间轴，规则保留lazy边界。专项 **53文件/680项**通过；隔离Chromium合成双来源样本验证失败恢复、6.5秒请求稳定、同一播放器、实际保存与一次undo/redo、390px无溢出，无未捕获pageerror（预期503资源错误保留）。最终完整检查日志 **489文件/6659测试**、测试232.56s/build21.27s，格式/零警告lint/架构/核心strict通过，Vite3703 modules，1425份source/config无漂移。续接时原进程句柄已回收，成功依据为完整日志，不另标捕获terminal0。日志`artifacts/subtitle-ownership-final-full-check.log`、证明`artifacts/subtitle-ownership-verification.json`及 [编辑权审计](./research/canvas-subtitle-ownership-functional-audit.md)。CanvasPage901.36kB提示保留，900kB阈值未提高；旧版本/迁移、remote-config、多语言、触摸/Safari和真实服务仍缺。本机未部署，整体约70%（65%-75%）为工程估算，原目标未完成。
+
+2026-10-18 字幕来源与侧栏生命周期维护：`collectSubtitleSources` 按源保留每片段HTML→VTT顺序、来源/URL/标签trim、重复片段身份与首个有效非音频来源的节点HTML回退；缺少来源节点不猜clip ID，HTML加载计划共用纯入口并保留规范存档/显式清空优先级。列表/样式/预设切换现在保留预览子树，隐藏样式关闭预设状态，手动页头切换恢复焦点；列表默认宽度由372修正为源300px。最终剪辑专项 **52文件/671项**通过；真实Chromium恢复专属GUI样本验证1280/390宽度、媒体/iframe/Document身份和0.4秒暂停位置不变、焦点及无横向溢出，控制台0错误/0警告。Node24.19.0完整`npm run check` session65313 terminal0：**488文件/6650测试**、测试152.98s、build12.09s，格式/零警告lint/架构/核心strict通过，Vite3702 modules。日志`artifacts/subtitle-sidebar-lifecycle-full-check.log`，证据与此前超时/中断边界见 [侧栏生命周期审计](./research/canvas-subtitle-sidebar-lifecycle-audit.md)。CanvasPage900.44kB分包提示仍保留，未抬阈值；HTML开关仅纯协议输入，原remote-config、混合编辑权/降级/迁移、旧字幕版本、多语言、真实服务和触摸/Safari仍缺。本机未部署，整体约70%，原目标未完成。
+
 2026-10-16 混合字幕来源维护：静态源`collectClipSubtitleSources`确认同一非音频片段可同时追加HTML与VTT来源；本机新增`subtitle-source-mode`分型和混合轨道渲染，HTML/VTT各自保留加载、取消、缓存、错误和预览层。定向3文件/16项通过，lint零警告；随后Node24.19.0完整`npm run check` session40760 terminal0：**460文件/6562测试**，测试218.48s、标准build18.06s，格式/零警告lint/架构/核心strict通过，1376源码/config指纹无漂移，Canvas897382/ClipEditorWorkspace230231字节，900000预算未提高。日志`artifacts/subtitle-mixed-full-check.log`、证明`artifacts/subtitle-mixed-verification.json`；本机未部署，无需账号。范围和源摘录见 [混合字幕审计](./research/canvas-subtitle-mixed-source-audit.md)。
 
 2026-10-16 音视频分离维护：按公开源`clipDetachAv`与`extractEmbeddedAudioAsWavFromVideoClip`接入浏览器 AudioContext→PCM WAV→音频源节点→关联片段，并将原视频内嵌音轨写为`embedAudioMuted`；右键能力门控、无音轨/已分离/未准备错误、取消和历史/CAS保存已接。定向5文件/94项通过；Node24.19.0完整`npm run check` session77892 terminal0：**463文件/6570测试**，测试207.13s、标准build15.67s，格式/零警告lint/架构/核心strict通过，1382源码/config冻结无漂移，Canvas899867/ClipEditorWorkspace230417字节，900000预算未提高。日志`artifacts/audio-separation-final-check.log`、证明`artifacts/audio-separation-verification.json`；本机未部署，无需账号。人声分离、远程CORS/运营服务、真机Safari仍未完成，整体目标仍未完成。
+
+2026-10-16 人声分离入口维护：按公开文案接入“仅保留人声 / 仅保留背景音 / 仅保留音效”三项右键选择、三分钟/无音轨/重复处理等纯规则和服务边界；当前服务未连接时明确提示，不伪造任务、媒体或画布结果。定向3文件/90项通过；Node24.19.0完整`npm run check` session75730 terminal0：**464文件/6573测试**，测试135.76s、标准build11.52s，格式/零警告lint/架构/核心strict通过，1385源码/config冻结无漂移，Canvas899943/ClipEditorWorkspace230942字节，900000预算未提高。日志`artifacts/vocal-separation-final-check.log`、证明`artifacts/vocal-separation-verification.json`；源文案见`artifacts/vocal-separation-source-evidence.json`。本机未部署，无需账号；人声分离真实服务、结果回写、移动Safari仍未完成，整体目标仍未完成。
+
+2026-10-16 剪辑工程导出维护：按源文案接入“导出到本地”的 `.libtv.json` 工程文件，保留时间轴、片段参数、轨道状态和素材 URL；空时间轴、缺 URL、blob 素材按源错误边界阻断，远程 PR/成片导出继续由服务边界处理。定向3文件/92项通过；Node24.19.0完整`npm run check` session95319 terminal0：**465文件/6577测试**，测试143.94s、标准build12.15s，格式/零警告lint/架构/核心strict通过，1387源码/config冻结无漂移，Canvas899975/ClipEditorWorkspace232051字节，900000预算未提高。日志`artifacts/clip-export-final-check.log`、证明`artifacts/clip-export-verification.json`；源证据`artifacts/clip-export-source-evidence.json`。本机未部署，无需账号，整体目标仍未完成。
+
+2026-10-16 剪辑器音频波形维护：按公开 `waveformService.getPeaks` / `extractPeaks` / `drawAudioWaveform` 证据，音频片段对可访问 URL 使用浏览器 AudioContext 聚合真实多声道 min/max 峰值并绘制 SVG 波形；直接提供的已验证峰值也可渲染。波形仅是视图缓存，不进入时间轴文档、CAS、撤销历史或恢复副本；读取失败、取消、无 AudioContext、全无效采样或 CORS 不可达时保留音频片段和增益编辑，不绘制假样本。定向3文件/43项通过；Node24.19.0完整`npm run check`实际通过 **475文件/6605测试**，测试168.35s、Vite3695 modules、标准build12.39s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-waveform-full-check.log`、证明`artifacts/clip-waveform-verification.json`；视频内嵌音轨全量波形、远程跨域、真机Safari和服务端导出仍未完成。
+
+2026-10-16 剪辑器视频帧缩略图维护：按公开 `thumbnailStore` / `videoFrameCache` / `drawVideoThumbnails` 证据，视频片段按源偏移、片段时长和速度抽取最多6帧并显示真实 filmstrip；帧只属于视图缓存，不进入时间轴文档、历史、CAS或恢复副本，读取取消、CORS、编解码失败和不支持浏览器回退 poster。定向3文件/40项通过；Node24.19.0完整`npm run check`实际通过 **477文件/6611测试**，测试227.47s、Vite3698 modules、标准build13.26s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-thumbnail-full-check.log`、证明`artifacts/clip-thumbnail-verification.json`；远程跨域视频、所有codec、真机Safari和服务端媒体缓存仍未完成。
+
+2026-10-16 Studio 材质参数维护：公开 `object.material.set` 契约已确认 baseColor、metallic、roughness 和透明度，本地 Inspector 现在接入金属度、粗糙度、不透明度、透明材质和深度写入；history、autosave、刷新恢复和 GLB source 覆盖沿用既有协议。定向2文件/16项通过；Node24.19.0完整`npm run check`实际通过 **477文件/6611测试**，测试214.51s、Vite3698 modules、标准build12.62s，格式/零警告lint/架构/核心strict通过。日志`artifacts/studio-material-full-check.log`、证明`artifacts/studio-material-verification.json`；纹理、多材质槽、骨架、动画轨道属性、原站可见面板逐像素、真机和服务端 mutation 仍未完成。
+
+2026-10-16 视频片段内嵌波形维护：按公开 `drawVideoClipBottomWaveform` / `embedAudioMuted` 门控，选中的视频片段按需显示底部音频波形，未选中视频不主动读取，失败或静音回退 poster 和编辑能力。定向2文件/40项通过；Node24.19.0最终完整`npm run check`实际通过 **477文件/6612测试**，测试147.27s、Vite3698 modules、标准build11.32s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-video-waveform-full-check.log`、证明`artifacts/clip-video-waveform-verification.json`；远程跨域视频、所有codec、真机Safari和服务端媒体缓存仍未完成。
+
+2026-10-16 学院商品页重试维护：商品信息和简介错误状态现在都可按当前资源重试，重试不触发登录、支付、购买或已购状态。定向2文件/10项通过；Node24.19.0最终完整`npm run check`实际通过 **477文件/6613测试**，测试138.30s、Vite3698 modules、标准build12.20s，格式/零警告lint/架构/核心strict通过。日志`artifacts/academy-product-retry-full-check.log`、证明`artifacts/academy-product-retry-verification.json`；真实商品接口、订单、认证和课程权益仍未完成。
+
+2026-10-16 Seedance 验证页重试维护：查询失败状态新增明确“重试”按钮，重新进入 loading，保持官方查询服务未接入、只读和无账号写入边界。定向2文件/3项通过；Node24.19.0最终完整`npm run check`实际通过 **478文件/6614测试**，测试135.69s、Vite3698 modules、标准build11.44s，格式/零警告lint/架构/核心strict通过。日志`artifacts/seedance-retry-full-check.log`、证明`artifacts/seedance-retry-verification.json`；真实任务查询、账号和生成服务仍未完成。
+
+2026-10-16 MCP 授权页重试维护：授权提交失败状态新增明确“重试”按钮，重新进入提交中状态，保持 OAuth callback、token、账号和 MCP 服务未接入边界。定向2文件/4项通过；Node24.19.0最终完整`npm run check`实际通过 **478文件/6615测试**，测试148.32s、Vite3698 modules、标准build11.53s，格式/零警告lint/架构/核心strict通过。日志`artifacts/mcp-retry-full-check.log`、证明`artifacts/mcp-retry-verification.json`；真实授权服务仍未完成。
+
+2026-10-16 作品详情错误重试维护：`DetailPage` 统一读取详情、图库列表和初始样本的 loading/error 状态；读取失败且没有可展示作品时提供明确“作品加载失败”和“重试”，重试只刷新失败资源，未知 ID 保留“作品不存在或已下架”。定向2文件/4项通过；Node24.19.0最终完整`npm run check`实际通过 **479文件/6616测试**，测试136.94s、Vite3698 modules、标准build11.46s，格式/零警告lint/架构/核心strict通过。日志`artifacts/detail-retry-full-check.log`、证明`artifacts/detail-retry-verification.json`；真实作品服务、账号状态和写入接口仍未接入。
+
+2026-10-16 用户主页错误重试维护：`ProfilePage` 统一读取图库、公开样本、用户资料和外壳配置的 loading/error 状态；失败且没有可展示资料时提供明确“用户主页加载失败”和“重试”，加载期间显示 loading，重试只刷新失败资源。定向3文件/5项通过；Node24.19.0最终完整`npm run check`实际通过 **480文件/6617测试**，测试140.63s、Vite3698 modules、标准build11.52s，格式/零警告lint/架构/核心strict通过。日志`artifacts/profile-retry-full-check.log`、证明`artifacts/profile-retry-verification.json`；真实关注、账号资料和作品服务仍未接入。
+
+2026-10-16 首页内容错误重试维护：`HomePage` 统一读取首页内容的 loading/error 状态；首页配置未成功读取时提供明确“首页内容加载失败”和“重试”，加载期间显示 loading，已有缓存内容继续可见。定向3文件/3项通过；Node24.19.0最终完整`npm run check`实际通过 **481文件/6618测试**，测试158.53s、Vite3698 modules、标准build11.69s，格式/零警告lint/架构/核心strict通过。日志`artifacts/home-retry-full-check.log`、证明`artifacts/home-retry-verification.json`；真实首页运营内容、生成和账号服务仍未接入。
+
+2026-10-16 3D-BOX 入口错误重试维护：`StudioLandingPage` 统一读取外壳配置的 loading/error 状态；配置失败时提供明确“3D-BOX 配置加载失败”和“重试”，加载期间显示 loading，重试只刷新外壳配置。定向2文件/12项通过；Node24.19.0最终完整`npm run check`实际通过 **482文件/6619测试**，测试151.08s、Vite3698 modules、标准build15.24s，格式/零警告lint/架构/核心strict通过。日志`artifacts/studio-landing-retry-full-check.log`、证明`artifacts/studio-landing-retry-verification.json`；真实生成、项目写入和账号服务仍未接入。
+
+2026-10-16 会员弹窗错误重试维护：`MembershipModal` 统一读取会员/积分配置的 loading/error 状态；配置失败时保留弹窗外壳并提供明确“会员信息加载失败”和“重试”，已有缓存套餐继续显示。定向2文件/8项通过；Node24.19.0最终完整`npm run check`实际通过 **483文件/6620测试**，测试169.97s、Vite3698 modules、标准build14.75s，格式/零警告lint/架构/核心strict通过。日志`artifacts/membership-retry-full-check.log`、证明`artifacts/membership-retry-verification.json`；真实认证、支付、订单和会员写服务仍未接入。
+
+2026-10-16 源片段字幕操作维护：VTT 与 HTML 字幕均保留片段来源，片段右键菜单新增隐藏/显示和删除本片段字幕；VTT 走现有字幕编辑入口，HTML 走 `cueHidden` / `removeClipCues` patch，统一沿用 CAS、历史和刷新恢复，其他片段不受影响。定向2文件/38项通过；Node24.19.0最终完整`npm run check`实际通过 **483文件/6623测试**，测试174.47s、Vite3698 modules、标准build15.03s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-subtitle-clip-actions-full-check.log`、证明`artifacts/clip-subtitle-clip-actions-verification.json`；CanvasPage 900.41 kB 分包提示仍保留且未抬高阈值；字幕生成、云端写入和真实导出仍未接入。
+
+2026-10-16 文字/字幕轨道重排维护：按当前 HTML 文档轨道协议新增同一事务的轨道上移/下移按钮，普通文字与 HTML 字幕都重映射所有 cue、嵌套轨道容器、z-index、隐藏状态和 overlay group anchor；非法顺序整体拒绝，撤销/重做、CAS、刷新恢复沿用既有边界。定向2文件/29项通过；Node24.19.0最终完整`npm run check`实际通过 **483文件/6626测试**，测试131.70s、Vite3698 modules、标准build13.92s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-track-reorder-full-check-final.log`、证明`artifacts/clip-track-reorder-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。完整轨道新增/拖拽连续重排、字体/预设远程目录、字幕生成、云端写入、真实导出和账号服务仍未接入，整体估算维持约70%。
+
+2026-10-16 文字/字幕新增轨道维护：按源的 4/8 临时新行语义，普通文字和 HTML 字幕在轨道选择状态下可创建下一个连续轨道；普通文字上限 8 条、HTML 字幕上限 4 条，跳号、超限和失效请求均拒绝并保留当前文档，成功写入沿用同一历史/CAS/刷新恢复。定向4文件/53项通过；Node24.19.0最终完整`npm run check`实际通过 **483文件/6629测试**，测试153.93s、Vite3698 modules、标准build13.75s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-track-create-full-check.log`、证明`artifacts/clip-track-create-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。远程字体/预设目录、字幕生成、云端写入、真实导出和账号服务仍未接入，整体估算维持约70%。
+
+2026-10-16 文字/字幕连续拖动重排维护：轨道把手支持原生拖动到目标轨道，普通文字与 HTML 字幕都通过同一 `moveTrackOrder` 纯规则移动到目标行；拖动入口与片段移动/裁切指针手势隔离，drop 仍复用 `reorderTracks`、历史/CAS 和混合来源过滤。定向5文件/55项通过；Node24.19.0最终完整`npm run check`实际通过 **484文件/6631测试**，测试214.96s、Vite3698 modules、标准build15.36s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-track-drag-full-check.log`、证明`artifacts/clip-track-drag-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。触摸拖拽、跨浏览器原生拖放、远程字体/预设目录、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-16 文字字体目录维护：普通文字与 HTML 字幕样式面板新增只读 `fontSource.load({signal})` 适配器，支持取消、失败重试、字段校验和注入远程字体选项，同时保留已核实 fallback 字体；没有 source 时不伪造运营目录。定向2文件/13项通过；Node24.19.0最终完整`npm run check`实际通过 **485文件/6636测试**，测试136.50s、Vite3698 modules、标准build12.72s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-font-directory-full-check.log`、证明`artifacts/clip-font-directory-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。真实字体资源加载、完整预设 remote-config、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-16 文字字体资源维护：字体目录中的 HTTPS 资源现在由可取消的 `FontFace` loader 加入浏览器 `FontFaceSet`；单个字体失败显示部分失败并保留 fallback，source 变更或卸载会取消并清理已加载 face。定向2文件/14项通过；Node24.19.0最终完整`npm run check`实际通过 **485文件/6637测试**，测试135.00s、Vite3698 modules、标准build10.37s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-font-resource-full-check.log`、证明`artifacts/clip-font-resource-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。完整远程预设 remote-config、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-16 文字预设字段维护：预设/应用全部协议现在支持已核实的 paddingTop/Right/Bottom/Left 四边字段，按输出比例进行像素换算、写入和回读，沿用单次历史/CAS。定向3文件/32项通过；Node24.19.0最终完整`npm run check`实际通过 **485文件/6637测试**，测试156.69s、Vite3698 modules、标准build10.50s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-text-preset-fields-full-check.log`、证明`artifacts/clip-text-preset-fields-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。完整 remote-config 的 shadow/padding/语言目录、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-17 VTT 字幕字体目录维护：基础 VTT 字幕面板现在与普通文字/HTML 字幕共用只读 `fontSource` 协议，支持目录取消、错误重试、fallback 字体和可取消 HTTPS `FontFace` 加载；`ClipEditorWorkspace` 将 source 贯通三种面板。定向3文件/20项通过；Node24.19.0最终完整`npm run check`实际通过 **485文件/6638测试**，测试158.83s、Vite3698 modules、标准build12.14s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-vtt-font-directory-full-check.log`、证明`artifacts/clip-vtt-font-directory-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。完整字体运营目录、预设 remote-config、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-17 预览几何操作维护：依据公开客户端的 transform move/width/scale handles 与 `xPct`/`yPct`/`maxWidthPct`/`scalePct` layout patch，普通文字与 HTML 字幕的选中 cue 现在可在预览画面内移动、调宽和缩放；每次手势固定按按下时布局计算，连续移动不累加误差，结束进入现有单次历史/CAS，Escape/取消回滚。VTT 位置编辑仍按源证据保持 unsupported。定向4文件/12项通过；Node24.19.0最终完整`npm run check`实际通过 **487文件/6643测试**，测试168.04s、Vite3702 modules、标准build13.55s，格式/零警告lint/架构/核心strict通过。日志`artifacts/clip-preview-geometry-full-check.log`、证明`artifacts/clip-preview-geometry-verification.json`；CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。触摸/跨浏览器拖动、完整运营目录、字幕生成、云端写入和真实导出仍未接入，整体估算维持约70%。
+
+2026-10-17 Studio 本地关键帧编辑维护：已有本地位置/旋转/缩放关键帧在当前时间可直接编辑，只更新命中的 keyframe，Inspector 展示插值后的当前值，离开关键帧时间继续锁定；操作沿用 snapshot history、autosave 与刷新恢复。导入 GLB 原始 AnimationClip 轨道仍明确 unsupported。定向2文件/19项通过；Node24.19.0最终完整`npm run check`重跑实际通过 **487文件/6645测试**，测试138.75s、Vite3702 modules、标准build11.62s，格式/零警告lint/架构/核心strict通过。首次并发检查的4个worker启动超时保留在`artifacts/studio-keyframe-full-check.log`，不作为通过依据；最终日志`artifacts/studio-keyframe-final-full-check.log`、证明`artifacts/studio-keyframe-verification.json`。CanvasPage 900.44 kB 分包提示仍保留且未抬高阈值。云端动画 mutation、GLB轨道编辑和服务端导出仍未接入，整体估算维持约70%。
+
+2026-10-16 活动报名异步提交维护：依据公开报名 `ea()` / `submitRegistration` 接入纯 payload、手机号/微信前缀、作品链接归一化、提交中状态、失败提示和表单保留；默认本地 adapter 只在成功后保存，未来可由 `registrationSource.submit` 接入运营接口。定向3文件/12项通过；Node24.19.0完整`npm run check`实际通过 **467文件/6582测试**，测试140.35s、标准build12.09s，格式/零警告lint/架构/核心strict通过。详细证据见 [活动报名验收](./research/activity-registration-functional-audit.md)；真实报名、登录态、幂等/审核服务仍未接入。
+
+2026-10-16 Skill 结果类型选择器维护：按公开 `SkillResultTypeSelect` 补齐 listbox 语义、Enter/Space、ArrowUp/ArrowDown/Home/End、Escape 和外部 pointerdown 关闭；现有图片/视频封面入口与文本/音频清除规则保留，真实封面上传仍未接入。定向3文件/18项通过；Node24.19.0完整`npm run check`实际通过 **468文件/6584测试**，测试149.67s、标准build12.21s，格式/零警告lint/架构/核心strict通过。审计见 [Skill 创建编辑器](./src/features/skills/create/SOURCE_AUDIT.md)。
+
+2026-10-16 Skill 封面上传边界维护：`SkillCreatePage` 支持可注入 `coverSource.upload({file,dataUrl})`，上传中阻止保存，成功后才替换为返回 URL，失败保留原封面并提示重试；默认无 source 时继续本地 data URL。定向3文件/10项通过；Node24.19.0最新完整`npm run check`实际通过 **469文件/6586测试**，测试405.25s、标准build32.91s，格式/零警告lint/架构/核心strict通过。真实上传、登录态和运营写服务仍未接入。
+
+2026-10-16 学院文章错误状态维护：按公开 `getAcademyArticleDetail` 的状态映射接入可注入 article source；60016 显示“图文教程不存在或已下架”，60017 显示离线状态并可按同一文章 ID 重试，通用错误也保留重试。默认本地快照路径和画布 CTA 不变。定向2文件/9项通过；Node24.19.0最新完整`npm run check`实际通过 **470文件/6588测试**，测试267.57s、标准build15.12s，格式/零警告lint/架构/核心strict通过。真实文章接口、权限和登录态仍未接入。
+
+2026-10-16 学院卡片入口维护：按公开 gate 成功后的行为，学院大师课、图文教程和亮点功能卡片现在使用 `_blank`、`noopener,noreferrer` 新窗口打开；匿名点击仍只触发登录门槛。定向2文件/9项通过；Node24.19.0最新完整`npm run check`实际通过 **471文件/6590测试**，测试159.72s、标准build13.19s，格式/零警告lint/架构/核心strict通过。真实登录和服务端权限仍未接入。
+
+2026-10-16 Markdown frontmatter 维护：按公开 `parseFrontmatter` 规则解析 BOM、标量、折叠和值多行字段，渲染安全 Metadata 表格并从正文剥离；普通 Markdown 与媒体安全边界保持。定向3文件/17项通过；Node24.19.0最新完整`npm run check`实际通过 **472文件/6592测试**，测试209.18s、标准build13.69s，格式/零警告lint/架构/核心strict通过。完整嵌套语法、真实 sanitizer 能力矩阵和运营内容服务仍未接入。
+
+审计校准（2026-10-16）：学院播放器桌面滚动浮窗、冻结帧和 tutorial 横屏设置/教程抽屉已有实现、组件回归及本地 QA 证据；后续差距限定为 Safari、手机横屏原生 fullscreen、跨域截图失败和逐像素实测。活动报名的提交 loading/失败保留、Skill 封面上传 loading/失败保留也已接入；真实服务和登录态仍未接入。旧表格文字已在 `research/secondary-functional-audit.md` 与 `research/coverage.md` 更新。
+
+2026-10-16 Skill 分享媒体维护（前一轮）：案例切换补 360ms 过渡和边界门控，文档案例补加载失败/重试状态；图片/视频/音频控制协议保留。定向3文件/13项通过；Node24.19.0该轮完整`npm run check`实际通过 **473文件/6594测试**，测试213.93s、标准build13.76s，格式/零警告lint/架构/核心strict通过。随后错误边界批次已将全量结果更新为下方6595项；跨浏览器媒体输出和逐像素布局仍待实测。
+
+2026-10-16 Skill 分享媒体错误边界维护：图片、视频、音频失败统一显示可重试错误层，重试通过媒体版本号重新挂载资源；文档案例错误边界保持。定向1文件/3项新增通过；Node24.19.0最新完整`npm run check`实际通过 **473文件/6595测试**，测试198.46s、标准build12.81s，格式/零警告lint/架构/核心strict通过。
 
 2026-10-16 字幕侧栏与高亮最终验证：按源行为修正HTML字幕面板为同一右侧栏切换，默认“字幕”列表，双击条目进入“字幕样式”，样式页头返回列表；普通文字动画入口不再出现在字幕。真实390px下标题不换行、列表栏不越界，桌面列表/样式切换和焦点已验。此前逐词高亮、双alpha色盘、词时钟预览、一次历史/撤销重做、pagehide/迟到回调隔离继续通过。最终Node24.19.0完整check session87968 terminal0：**459文件/6559测试**，01:43:25开始、测试413.89s/标准build33.47s，格式/零警告lint/架构/核心strict通过。1374源码/config指纹未变，Canvas897382/ClipEditorWorkspace229409字节，900000预算未提高；日志 `artifacts/subtitle-sidebar-full-check.log`、证明 `artifacts/subtitle-sidebar-verification.json`。真实浏览器证据和源侧栏静态摘录见 [字幕高亮与侧栏审计](./research/canvas-subtitle-highlight-audit.md)。源侧栏修正前双栏属于历史差距；旧457/6544与41/646项不代表当前最新全量。本机未部署、无需账号，旧L1/L2/混合分类/完整轨道/字体目录/真实服务仍缺，整体约70%、目标未完成。
 
@@ -580,4 +720,10 @@ Modal800px/85vh、镜头list320px、每镜时长/只读prompt、普通模型chip
 
 本批剪辑撤销／恢复、片段字幕/转场/音量增益线与拖入素材专项通过；该历史批次 Node24.19.0 完整 `npm run check` 为 **431 文件／6353 测试**，格式、零警告 lint、核心 strict 和生产构建全部通过，最新检查以“当前工程验证”为准。拖入仅接收视频／音频，按目标世界坐标、incarnation 和一次 CAS 创建节点与边，权威时间轴在真实 metadata 就绪后加入待处理片段并保留恢复来源集合。音色筛选输入已覆盖语言／口音／性别搜索、清空和依赖重置；Studio 导入 mesh 已支持来源材质颜色覆盖、灯光类型/属性、撤销／重做和刷新恢复，顶层对象已支持源证据的复制/粘贴/重复快捷键、播放速率/缩放/进度键盘，完整材质参数仍缺。资产库文件夹封面支持从子树图片设置／清除与坏图回退；Agent 资产选择器按当前目录只显示直接子目录；混合删除确认校验候选 edge identity，避免旧请求误删新边。剪辑器收起预览在节点不可见时停止有界 portal 重试并提供回到节点；Studio 子节点删除使用稳定 path tombstone，恢复原 parent/index 并过滤导出轨道；Studio 键盘已接镜头 waypoint、工作区与相机视图导航；项目页补齐排序和移动到文件夹，挑战赛列表补齐分页、续载和错误重试；学院目录切换课程时恢复默认展开组并保持当前章节所在组展开，播放器桌面音量支持悬停/聚焦纵向滑块和完播遮罩关闭，跟练侧栏支持上一节/下一节；Canvas `shot-breakdown` 已接专属逐帧拉片卡片、真实画布点选替换和生成前媒体 ListOrder；学院文章页保留登录门槛并提供 source/itemKey 画布入口。该结果是本机当前源码验证，不改变已发布生产版本，也不代表真实云锁、协作、生成、费用、拉片任务、全局字幕／转场画面、WebAudio 跨浏览器、真机 Safari 或高 DPR 大图已完成。
 
-字幕、转场、真实波形／帧缓存、服务端导出、WebAudio 多轨在真实浏览器的全部 autoplay／高倍速分支、云锁／协作／生成／费用、真机 touch、Safari、高 DPR、大量节点性能仍未验收。登录注册、小号、原站账号资源继续延期；本地演示不代表真实服务。
+字幕、转场、视频内嵌音轨全量波形／帧缓存、服务端导出、WebAudio 多轨在真实浏览器的全部 autoplay／高倍速分支、云锁／协作／生成／费用、真机 touch、Safari、高 DPR、大量节点性能仍未验收。可访问音频源的本地波形已接入，但不代表远程 CORS 或视频内嵌音轨全量成功。登录注册、小号、原站账号资源继续延期；本地演示不代表真实服务。
+
+## 活动报名异步提交维护（2026-10-16）
+
+活动报名依据公开 `ea()` / `submitRegistration` 契约补齐可注入提交边界：`activity-registration-model.js` 负责昵称、`phone:`/`wechat:` 联系方式、作品链接归一化和描述 payload；`RegistrationModal` 现在有提交中状态、禁用取消与重复提交、服务失败提示和原表单保留。`ActivityPage` 默认使用本地成功 adapter，未来通过 `registrationSource.submit` 接入运营服务；本地保存只在提交成功后执行。登录、账号资源、真实报名接口和审核仍未接入。
+
+本批定向 3 文件 / 12 项通过，目标域 ESLint 零警告、Prettier 通过；Node24.19.0 全量 `npm run check` 实际 **467 文件 / 6582 项测试**通过，格式、零警告 lint、核心 strict 和生产构建通过。详细证据见 [活动报名验收](./research/activity-registration-functional-audit.md)。

@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { Eye, EyeOff, Type } from 'lucide-react';
+import { ChevronDown, ChevronUp, Eye, EyeOff, GripVertical, Type } from 'lucide-react';
 import { registerDialogChildDismissal } from '../../../services/dialog-stack.ts';
 
 export default function ClipSubtitleTimelineRow({
   timeline,
   selectedSubtitleId,
   blocked,
+  trackReadOnly = false,
   draftSession,
   onSelectSubtitle,
   onEditSubtitle,
@@ -13,6 +14,10 @@ export default function ClipSubtitleTimelineRow({
   onEditPreview,
   onEndEdit,
   onCancelEdit,
+  onMoveTrack,
+  onTrackDrop,
+  trackIndex,
+  trackOrder = [],
   label = '字幕',
   kind = 'subtitle',
   emptyLabel = '默认文本',
@@ -49,6 +54,7 @@ export default function ClipSubtitleTimelineRow({
     event.preventDefault();
     event.stopPropagation();
     onSelectSubtitle?.(cue.id);
+    if (cue.readOnly) return;
     if (onBeginEdit?.() !== true) return;
     const active = {
       pointerId: event.pointerId,
@@ -93,7 +99,7 @@ export default function ClipSubtitleTimelineRow({
       onSelectSubtitle(cue.id);
       return;
     }
-    if (!['ArrowLeft', 'ArrowRight'].includes(event.key) || blocked) return;
+    if (!['ArrowLeft', 'ArrowRight'].includes(event.key) || blocked || cue.readOnly) return;
     event.preventDefault();
     event.stopPropagation();
     onSelectSubtitle(cue.id);
@@ -106,20 +112,80 @@ export default function ClipSubtitleTimelineRow({
     });
     onEndEdit();
   };
+  const position = trackOrder.indexOf(trackIndex);
+  const canMoveUp = position > 0;
+  const canMoveDown = position >= 0 && position < trackOrder.length - 1;
+  const startTrackDrag = (event) => {
+    if (blocked || trackReadOnly || !onTrackDrop || !event.dataTransfer) return;
+    event.stopPropagation();
+    event.dataTransfer.effectAllowed = 'move';
+    event.dataTransfer.setData('text/plain', String(trackIndex));
+  };
+  const dropTrack = (event) => {
+    if (blocked || trackReadOnly || !onTrackDrop || !event.dataTransfer) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const source = Number(event.dataTransfer.getData('text/plain'));
+    if (Number.isInteger(source)) onTrackDrop(source, trackIndex);
+  };
   return (
-    <div ref={root} className="cv-clip-timeline-track-row cv-clip-subtitle-timeline-row">
+    <div
+      ref={root}
+      className="cv-clip-timeline-track-row cv-clip-subtitle-timeline-row"
+      onDragOver={(event) => {
+        if (onTrackDrop && !blocked && !trackReadOnly) {
+          event.preventDefault();
+          event.dataTransfer.dropEffect = 'move';
+        }
+      }}
+      onDrop={dropTrack}
+    >
       <div className="cv-clip-timeline-track-controls">
         <Type size={16} aria-hidden="true" />
+        {onTrackDrop && (
+          <button
+            type="button"
+            className="cv-clip-timeline-action cv-clip-timeline-track-drag"
+            aria-label={`拖动${label}`}
+            draggable={!blocked && !trackReadOnly}
+            disabled={blocked || trackReadOnly}
+            onDragStart={startTrackDrag}
+          >
+            <GripVertical size={14} />
+          </button>
+        )}
         <button
           type="button"
           className="cv-clip-timeline-action"
           aria-label={`${timeline.subtitles.visible === false ? '显示' : '隐藏'}${label}`}
           aria-pressed={timeline.subtitles.visible !== false}
-          disabled={blocked}
+          disabled={blocked || trackReadOnly}
           onClick={() => onEditSubtitle({ kind: 'visible' })}
         >
           {timeline.subtitles.visible === false ? <EyeOff size={16} /> : <Eye size={16} />}
         </button>
+        {onMoveTrack && (
+          <>
+            <button
+              type="button"
+              className="cv-clip-timeline-action"
+              aria-label={`${label}上移`}
+              disabled={blocked || trackReadOnly || !canMoveUp}
+              onClick={() => onMoveTrack(trackIndex, 'up')}
+            >
+              <ChevronUp size={14} />
+            </button>
+            <button
+              type="button"
+              className="cv-clip-timeline-action"
+              aria-label={`${label}下移`}
+              disabled={blocked || trackReadOnly || !canMoveDown}
+              onClick={() => onMoveTrack(trackIndex, 'down')}
+            >
+              <ChevronDown size={14} />
+            </button>
+          </>
+        )}
       </div>
       <div className="cv-clip-timeline-track" aria-label={`${label}轨道`}>
         {timeline.subtitles.cues.map((cue) => (
@@ -153,7 +219,7 @@ export default function ClipSubtitleTimelineRow({
                   type="button"
                   className={`cv-clip-subtitle-handle ${mode}`}
                   aria-label={`调整${label}${mode === 'resize-start' ? '开始时间' : '结束时间'} ${cue.id}`}
-                  disabled={blocked}
+                  disabled={blocked || cue.readOnly}
                   onPointerDown={(event) => start(event, cue, mode)}
                   onPointerMove={move}
                   onPointerUp={finish}

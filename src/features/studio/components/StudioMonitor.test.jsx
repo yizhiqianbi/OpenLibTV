@@ -21,6 +21,8 @@ describe('source monitor card interactions', () => {
       },
       setViewMode: view,
       onSelectCamera: select,
+      onOpenPip: view,
+      pipCameraId: null,
       viewMode: 'orbit',
     };
     const page = render(<StudioMonitor {...props} />);
@@ -28,6 +30,8 @@ describe('source monitor card interactions', () => {
     fireEvent.click(screen.getByTitle('机位 1'));
     expect(select).toHaveBeenCalledExactlyOnceWith('cam');
     expect(view).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button', { name: '浮动预览' }));
+    expect(view).toHaveBeenLastCalledWith('cam');
     fireEvent.doubleClick(screen.getByTitle('机位 1'));
     expect(view).toHaveBeenLastCalledWith('cam');
     fireEvent.click(screen.getByRole('button', { name: '进入俯视图' }));

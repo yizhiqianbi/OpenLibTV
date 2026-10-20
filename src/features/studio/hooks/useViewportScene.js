@@ -176,6 +176,7 @@ export function useViewportScene({ host, latest, runtime }) {
       axes,
       helper,
       renderFrame,
+      latest,
     };
     rt.navigation = createViewportNavigation(rt);
     rt.selectionController = createViewportSelectionController({ scene, content, entities });

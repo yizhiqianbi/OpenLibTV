@@ -23,6 +23,8 @@
 - 仍只通过 `services/storage.ts` 读写 `libtv-created-skills`；保存完成文案明确为本地演示。写入/配额失败保留原存储、当前表单和树编辑，恢复空间后可以重试；历史 `null` 空库仍可读取。
 - 本地草稿新增 `skillDirectories` 保存显式空目录，刷新后恢复。它是本地恢复 metadata，**不是**原站 API 字段：原 `3dre517zt-vqp.pretty.js:79` 的 `getSkillFiles` 只导出文件，`:83` 的 `setSkillFiles` 清空 extraDirs；`0u4skljmyhqlo.pretty.js:68` 的服务器提交不包含空目录。
 - 原文件数组 `{path,content,contentType,primary}`、`markdownContent` 及其他已有字段保留，未更改共享发布/handoff/services/router 协议。仅根 `SKILL.md` 被标为主文件。
+- 结果类型选择器已按公开 `SkillResultTypeSelect` 的 Select 行为补齐：触发器暴露 `aria-expanded`/`listbox` 语义，Enter/Space、上下/Home/End 可选择，Escape 关闭，外部 pointerdown 关闭；选择图片/视频时保留封面入口，选择文本/音频时清除封面。未来真实封面上传仍可由服务层接入。
+- 封面读取现在支持可注入 `coverSource.upload({ file, dataUrl })`：上传中会阻止保存，异步成功才替换封面 URL，失败保留旧封面并提示重试；没有 source 时继续使用本地 data URL，不能当作服务器上传成功。
 - Shift+F10 / ContextMenu、方向键 / Home / End、Escape、菜单按钮和回焦点是本批按任务补充的键盘操作。原菜单源码使用普通按钮，没有对应完整方向键实现，不能称作从原站发现的键盘设计。与公共 dialog-stack 共用生命周期，未另建 body 锁或全局 Escape listener。
 - 历史文件树批次保留了当时的代码 textarea / 基础富文本组件；本次已替换为真实编辑器，见下文。新增 CSS 使用 `secondary-skill-*` 前缀，直接由本域组件导入；没有修改全局 CSS 清单。
 
@@ -80,3 +82,11 @@ npx prettier --check src/features/skills/create
 剩余边界：本次采用官方 TipTap 3 Markdown serializer 替代原构建中的 legacy Markdown serializer，编辑后对等语义的空白、列表和转义形式可能规范化，不能称为所有 Markdown 字节格式逐项一致。未编辑旧正文仍原样保留。服务端优化的结果弹窗/取消/确认，真实上传/审核/写入仍待运营服务接入；本域未声称已经完成。鼠标 IME、复杂剪贴板和移动端触摸选区仍由真实浏览器继续验收。本次没有登录态或逐像素对照原站。Hirschberg 与源码矩阵 LCS 在多种同长最优匹配时可选择不同重复行归属，但正文、统计及编辑数据保持完整。
 
 Root 浏览器集成：实际键盘输入Markdown标题/正文，代码模式显示完整内容，全屏末尾追加后返回预览保持标题和正文；填表保存为本地草稿，刷新后通过Mine详情确认相同正文和字段。点击优化提示未连接并保留正文。修正富文本white-space为pre-wrap，消除ProseMirror编辑条件警告；Vite显式预构建新增编辑器依赖，避免首次lazy模式切换时开发服务器依赖发现刷新。复杂IME/剪贴板/移动触摸和原站像素仍未验。截图在 `artifacts/structure-editor-proof.jpg`，全量检查见根coverage。
+
+## 结果类型选择器维护（2026-10-16）
+
+公开 `SkillResultTypeSelect` 使用不可取消的 Select，并由 `SkillCreateForm` 消费结果类型变化；本地原先只有 click 展开的普通菜单。本批为同一入口补上 listbox 语义、Enter/Space 打开或提交、ArrowUp/ArrowDown/Home/End 选择、Escape 关闭和外部 pointerdown 关闭。选择文本/音频时仍按已有表单规则清除封面，图片/视频继续显示封面入口；没有创建真实上传请求或登录态。
+
+定向 `SkillCreateResultType.test.jsx`、`SkillCreatePage.test.jsx`、`SkillFileEditor.test.jsx` 共 **3 文件 / 18 项通过**，Skill create ESLint 零警告、Prettier 通过。随后 Node24.19.0 全量 `npm run check` 通过 **468 文件 / 6584 项测试**，格式、零警告 lint、核心 strict TypeScript 与生产构建通过；真实运营封面上传、优化服务、移动触摸和逐像素原站对照仍未完成。
+
+封面上传专项随后补齐 `coverSource.upload` 的异步成功/失败边界：定向 `SkillCreateCoverUpload.test.jsx`、`SkillCreateResultType.test.jsx`、`SkillCreatePage.test.jsx` 共 **3 文件 / 10 项通过**；Node24.19.0 最新完整检查为 **469 文件 / 6586 项测试**，格式、零警告 lint、核心 strict TypeScript 和生产构建通过。默认无 source 时仍只写本地 data URL，不能当作服务器上传。

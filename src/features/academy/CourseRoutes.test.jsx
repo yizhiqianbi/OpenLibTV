@@ -129,6 +129,39 @@ describe('independent anonymous academy routes', () => {
     expect(screen.getByText('内容加载失败，请刷新重试')).toBeTruthy();
     expect(screen.queryByRole('button', { name: '立即购买' })).toBeNull();
   });
+
+  it('retries product information without creating a checkout or owned state', async () => {
+    const product = vi
+      .fn()
+      .mockRejectedValueOnce(new Error('temporary product failure'))
+      .mockResolvedValueOnce({
+        courseId: 'fixture',
+        title: '重试商品',
+        owned: false,
+        priceCurrent: 100,
+        priceOriginal: 100,
+        clipTotal: 1,
+        creditsGrant: 1,
+        validDays: 0,
+      });
+    const repository = {
+      product,
+      intro: vi.fn().mockResolvedValue({
+        title: '重试商品',
+        cover: '/fixture.png',
+        tags: [],
+        intro: '简介',
+        outline: [],
+      }),
+      checkout: vi.fn(),
+    };
+    render(<ProductPage skuCode="retry-product" repository={repository} navigate={vi.fn()} />);
+    await screen.findByText('课程信息加载失败，请刷新重试');
+    fireEvent.click(screen.getAllByRole('button', { name: '重试' })[0]);
+    await screen.findByText('重试商品');
+    expect(product).toHaveBeenCalledTimes(2);
+    expect(repository.checkout).not.toHaveBeenCalled();
+  });
 });
 
 describe('injected local adapter states, without real enrollment or payment', () => {

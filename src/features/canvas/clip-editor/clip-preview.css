@@ -90,6 +90,44 @@
   overflow: hidden;
 }
 
+.cv-clip-preview-transform {
+  position: absolute;
+  inset: 0;
+  z-index: 180;
+  pointer-events: none;
+}
+
+.cv-clip-preview-transform button {
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: auto;
+  padding: 0;
+  border: 1px solid var(--color-primary, #478eff);
+  background: transparent;
+  color: inherit;
+}
+
+.cv-clip-preview-transform-move {
+  border-style: dashed !important;
+  cursor: move;
+}
+
+.cv-clip-preview-transform-width {
+  width: 12px;
+  height: 28px;
+  border-radius: 4px;
+  background: var(--color-primary, #478eff) !important;
+  cursor: ew-resize;
+}
+
+.cv-clip-preview-transform-scale {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary, #478eff) !important;
+  cursor: nwse-resize;
+}
+
 .cv-clip-preview-preparation {
   position: absolute;
   z-index: 20;

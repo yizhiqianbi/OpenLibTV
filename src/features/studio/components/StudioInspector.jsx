@@ -14,6 +14,58 @@ import { iconFor } from '../catalog.jsx';
 import { StudioEntityName, StudioOutliner } from '../outliner/StudioOutliner.jsx';
 import { StudioColorPicker } from './StudioColorPicker.jsx';
 
+function StudioMaterialControls({ active, onChange, onCommit }) {
+  const values = {
+    metallic: Number.isFinite(active.metallic) ? active.metallic : 0,
+    roughness: Number.isFinite(active.roughness) ? active.roughness : 0.62,
+    opacity: Number.isFinite(active.opacity) ? active.opacity : 1,
+  };
+  const setting = (key, label) => (
+    <label key={key} className="cv-studio-material-slider">
+      <span>{label}</span>
+      <input
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value={values[key]}
+        aria-label={label}
+        onChange={(event) => onChange?.({ [key]: event.target.valueAsNumber })}
+        onBlur={() => onCommit?.(active.id)}
+      />
+      <output>{values[key].toFixed(2)}</output>
+    </label>
+  );
+  return (
+    <fieldset className="cv-studio-material-properties">
+      <legend>材质</legend>
+      {setting('metallic', '金属度')}
+      {setting('roughness', '粗糙度')}
+      {setting('opacity', '不透明度')}
+      <label className="cv-studio-material-check">
+        <input
+          type="checkbox"
+          aria-label="透明材质"
+          checked={active.transparent === true}
+          onChange={(event) => onChange?.({ transparent: event.target.checked })}
+          onBlur={() => onCommit?.(active.id)}
+        />
+        透明材质
+      </label>
+      <label className="cv-studio-material-check">
+        <input
+          type="checkbox"
+          aria-label="写入深度"
+          checked={active.depthWrite !== false}
+          onChange={(event) => onChange?.({ depthWrite: event.target.checked })}
+          onBlur={() => onCommit?.(active.id)}
+        />
+        写入深度
+      </label>
+    </fieldset>
+  );
+}
+
 export function StudioInspector({
   active,
   addKey,
@@ -73,11 +125,9 @@ export function StudioInspector({
             <header>
               {React.createElement(iconFor(active), { size: 15 })}
               <StudioEntityName key={active.id} row={active} always onRename={renameObject} />
-              {!active.subtree && (
-                <button title="创建副本" onClick={duplicate}>
-                  <Copy size={13} />
-                </button>
-              )}
+              <button title="创建副本" aria-label={`创建副本 ${active.name}`} onClick={duplicate}>
+                <Copy size={13} />
+              </button>
               <button
                 title={active.subtree ? '删除子节点' : '删除'}
                 aria-label={active.subtree ? `删除子节点 ${active.name}` : `删除 ${active.name}`}
@@ -96,7 +146,10 @@ export function StudioInspector({
                   {label}
                   <button
                     title="重置"
-                    disabled={active.animatedProperties?.includes(property)}
+                    disabled={
+                      active.animatedProperties?.includes(property) &&
+                      !active.keyframeEditableProperties?.includes(property)
+                    }
                     onClick={() =>
                       transform(active.id, {
                         [property]: property === 'scale' ? [1, 1, 1] : [0, 0, 0],
@@ -124,7 +177,10 @@ export function StudioInspector({
                       <input
                         type="number"
                         aria-label={`${label} ${axis}`}
-                        disabled={active.animatedProperties?.includes(property)}
+                        disabled={
+                          active.animatedProperties?.includes(property) &&
+                          !active.keyframeEditableProperties?.includes(property)
+                        }
                         step={property === 'rotation' ? 1 : 0.1}
                         value={Number(active[property][index].toFixed(2))}
                         onChange={(e) => {
@@ -145,7 +201,9 @@ export function StudioInspector({
               ['position', 'rotation', 'scale'].includes(property),
             ) && (
               <p className="cv-studio-animation-owned">
-                动画轨道控制的属性随片段播放；其关键帧编辑尚未接入。
+                {active.keyframeEditableProperties?.length
+                  ? '当前时间关键帧可直接编辑；其它动画属性随片段播放。'
+                  : '动画轨道控制的属性随片段播放；请先选择一个本地关键帧。'}
               </p>
             )}
             {(active.type === 'mesh' ||
@@ -155,6 +213,17 @@ export function StudioInspector({
                 value={active.color || '#bfc2c9'}
                 onChange={(color) => onMaterialChange?.(active.id, { color })}
                 onCommit={() => onMaterialCommit?.(active.id)}
+              />
+            )}
+            {(active.type === 'mesh' ||
+              (!active.subtree &&
+                active.type !== 'camera' &&
+                active.type !== 'light' &&
+                active.type !== 'glb')) && (
+              <StudioMaterialControls
+                active={active}
+                onChange={(changes) => onMaterialChange?.(active.id, changes)}
+                onCommit={onMaterialCommit}
               />
             )}
             {active.type === 'camera' && (

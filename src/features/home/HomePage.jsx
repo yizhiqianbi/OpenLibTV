@@ -1,13 +1,34 @@
 import React, { useRef } from 'react';
 import Icon from '../../components/Icon.jsx';
 import Gallery from '../../components/Gallery.jsx';
-import { useData, asset, localHref } from '../../data.js';
+import { useContent, asset, localHref } from '../../data.js';
 
 export default function HomePage({ navigate, login, user }) {
-  const data = useData('home', {});
+  const homeResource = useContent('home', {});
+  const data = homeResource.data;
   const quick = data.homeSeedance25Config?.quickActions || [];
   const features = data.homeFeatureHighlightsConfig?.quickActions || [];
+  const hasHomeContent = Boolean(data.homeSeedance25Config || data.homeFeatureHighlightsConfig);
   const row = useRef();
+  const retry = () => void homeResource.reload().catch(() => undefined);
+  if (homeResource.error && !hasHomeContent) {
+    return (
+      <div className="empty-state">
+        <p role="alert">首页内容加载失败，请重试</p>
+        <button className="soft-button" onClick={retry}>
+          重试
+        </button>
+      </div>
+    );
+  }
+  if (homeResource.loading && !hasHomeContent) {
+    return (
+      <div className="empty-state" role="status">
+        <span className="spinner" />
+        <p>加载首页...</p>
+      </div>
+    );
+  }
   const open = (action) => {
     if (action?.requiresLogin && !user) return login();
     navigate(localHref(action?.href || '/canvas'));

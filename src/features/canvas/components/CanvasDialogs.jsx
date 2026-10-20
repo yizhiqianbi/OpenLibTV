@@ -4,6 +4,43 @@ import { download } from '../../editor/browser.js';
 import { typeInfo } from '../catalog.js';
 import { mediaUrl } from '../model.js';
 import { Download, Type, ArrowRight, Copy, Upload, FileText } from 'lucide-react';
+
+function firstMediaUrl(...values) {
+  for (const value of values) {
+    if (Array.isArray(value)) {
+      const nested = firstMediaUrl(...value);
+      if (nested) return nested;
+    } else if (typeof value === 'string' && value.trim()) {
+      return value.trim();
+    }
+  }
+  return '';
+}
+
+function libraryItemMedia(item, tab) {
+  const declaredType = String(item?.mediaType || item?.type || item?.mimeType || '').toLowerCase();
+  if (tab === '视频') {
+    return firstMediaUrl(
+      item?.finalOutput,
+      item?.videoUrl,
+      declaredType.includes('video') ? item?.url : '',
+    );
+  }
+  if (tab === '音频') {
+    return firstMediaUrl(
+      item?.audioUrl,
+      item?.audio?.url,
+      declaredType.includes('audio') ? item?.url : '',
+    );
+  }
+  return firstMediaUrl(
+    item?.coverUrl,
+    item?.imageUrl,
+    item?.characterUrl,
+    declaredType.includes('image') ? item?.url : '',
+  );
+}
+
 export function CanvasDialogs(p) {
   const {
     dialog,
@@ -26,6 +63,8 @@ export function CanvasDialogs(p) {
     share,
     notify,
     library,
+    libraryLoadState = 'ready',
+    retryLibrary,
     libraryTab,
     setLibraryTab,
     fileInput,
@@ -36,6 +75,15 @@ export function CanvasDialogs(p) {
     getSnapshot,
   } = p;
   const close = () => setDialog(null);
+  const libraryItems = (Array.isArray(library) ? library : [])
+    .map((item) => ({
+      item,
+      url: libraryItemMedia(item, libraryTab),
+    }))
+    .filter(({ url }) => url)
+    .slice(0, 36);
+  const libraryNodeType =
+    libraryTab === '视频' ? 'video' : libraryTab === '音频' ? 'audio' : 'image';
   if (dialog === 'shortcuts')
     return (
       <Dialog title="快捷键" onClose={close} wide>
@@ -199,7 +247,10 @@ export function CanvasDialogs(p) {
         </button>
       </Dialog>
     );
-  if (dialog === 'search')
+  if (dialog === 'search') {
+    const results = nodes
+      .filter((n) => JSON.stringify(n.data).toLowerCase().includes(search.toLowerCase()))
+      .slice(0, 80);
     return (
       <Dialog title="搜索节点" onClose={close}>
         <input
@@ -210,28 +261,26 @@ export function CanvasDialogs(p) {
           onChange={(e) => setSearch(e.target.value)}
         />
         <div className="cv-search-results">
-          {nodes
-            .filter((n) => JSON.stringify(n.data).toLowerCase().includes(search.toLowerCase()))
-            .slice(0, 80)
-            .map((n) => (
-              <button
-                key={n.id}
-                onClick={() => {
-                  setSelected([n.id]);
-                  fit([n]);
-                  close();
-                  setPanel(n.id);
-                }}
-              >
-                {React.createElement(typeInfo(n.type).icon, { size: 17 })}
-                <span>{n.data.name || typeInfo(n.type).label}</span>
-                <ArrowRight size={15} />
-              </button>
-            ))}
-          {!nodes.length && <p>暂无节点</p>}
+          {results.map((n) => (
+            <button
+              key={n.id}
+              onClick={() => {
+                setSelected([n.id]);
+                fit([n]);
+                close();
+                setPanel(n.id);
+              }}
+            >
+              {React.createElement(typeInfo(n.type).icon, { size: 17 })}
+              <span>{n.data.name || typeInfo(n.type).label}</span>
+              <ArrowRight size={15} />
+            </button>
+          ))}
+          {!results.length && <p>{nodes.length ? '暂无匹配节点' : '暂无节点'}</p>}
         </div>
       </Dialog>
     );
+  }
   if (dialog === 'assets')
     return (
       <Dialog title="资产库" onClose={close} wide>
@@ -250,36 +299,65 @@ export function CanvasDialogs(p) {
             上传
           </button>
         </nav>
-        <div className="cv-library-grid">
-          {library.slice(0, 36).map((item, i) => {
-            const url = libraryTab === '视频' ? item.finalOutput : item.coverUrl;
-            return (
-              <button
-                key={item.templateUuid || i}
-                onClick={() => {
-                  if (readonly) {
-                    notify('只读模式');
-                    return;
-                  }
-                  const n = addNode(libraryTab === '视频' ? 'video' : 'image');
-                  if (n) {
-                    setNodes((list) =>
-                      list.map((x) =>
-                        x.id === n.id
-                          ? { ...x, data: { ...x.data, name: item.name || '素材', url: [url] } }
-                          : x,
-                      ),
-                    );
-                    close();
-                  }
-                }}
-              >
-                <img src={src(item.coverUrl)} alt={item.name || '素材'} />
-                <span>{item.name}</span>
-              </button>
-            );
-          })}
-        </div>
+        {libraryLoadState === 'loading' ? (
+          <p className="cv-dialog-copy" role="status">
+            正在加载资产库…
+          </p>
+        ) : libraryLoadState === 'error' ? (
+          <div className="cv-dialog-copy" role="alert">
+            <p>资产库暂时无法加载，请重试。</p>
+            <button className="cv-wide-primary" type="button" onClick={retryLibrary}>
+              重试加载
+            </button>
+          </div>
+        ) : !libraryItems.length ? (
+          <div className="cv-dialog-copy" role="status">
+            <p>当前没有可用资产。</p>
+            <button
+              className="cv-wide-primary"
+              type="button"
+              disabled={readonly}
+              onClick={() => fileInput.current?.click()}
+            >
+              上传本地素材
+            </button>
+          </div>
+        ) : (
+          <div className="cv-library-grid">
+            {libraryItems.map(({ item, url }, i) => {
+              const thumbnail = firstMediaUrl(item.coverUrl, item.imageUrl, item.characterUrl);
+              return (
+                <button
+                  key={item.templateUuid || item.id || i}
+                  onClick={() => {
+                    if (readonly) {
+                      notify('只读模式');
+                      return;
+                    }
+                    const n = addNode(libraryNodeType);
+                    if (n) {
+                      setNodes((list) =>
+                        list.map((x) =>
+                          x.id === n.id
+                            ? { ...x, data: { ...x.data, name: item.name || '素材', url: [url] } }
+                            : x,
+                        ),
+                      );
+                      close();
+                    }
+                  }}
+                >
+                  {thumbnail ? (
+                    <img src={src(thumbnail)} alt="" aria-hidden="true" />
+                  ) : (
+                    <span aria-hidden="true">{libraryTab}</span>
+                  )}
+                  <span>{item.name}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </Dialog>
     );
   if (dialog?.preview)

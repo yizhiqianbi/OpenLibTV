@@ -7,6 +7,7 @@ export function StudioDialogs({
   dialog,
   duration,
   exportGLB,
+  exportVideo,
   exportType,
   frames,
   id,
@@ -15,6 +16,10 @@ export function StudioDialogs({
   objects,
   onProjectDeleted,
   ratio,
+  hasAnimation,
+  videoExporting,
+  videoExportProgress,
+  onCancelVideoExport,
   screenshot,
   setDialog,
   setExportType,
@@ -53,16 +58,31 @@ export function StudioDialogs({
           </div>
           {exportType === 'video' && (
             <p className="cv-dialog-copy">
-              {frames.length
-                ? '动画视频导出暂不可用，可导出 GLB 或 PNG。'
+              {hasAnimation
+                ? '将按当前画幅和时间轴导出 WebM 视频。'
                 : '当前场景没有动画，无法导出视频或转交画布'}
             </p>
           )}
+          {exportType === 'video' && videoExporting && (
+            <div className="cv-studio-video-export-progress" role="status">
+              <progress
+                aria-label="视频导出进度"
+                max="1"
+                value={Math.max(0, Math.min(1, videoExportProgress))}
+              />
+              <span>{Math.round(videoExportProgress * 100)}%</span>
+              <button type="button" onClick={onCancelVideoExport}>
+                取消
+              </button>
+            </div>
+          )}
           <div className="cv-studio-export-footer">
             <button
-              disabled={busy || exportType === 'video'}
+              disabled={busy || videoExporting || (exportType === 'video' && !hasAnimation)}
               onClick={() => {
-                exportType === 'asset' ? exportGLB() : screenshot();
+                if (exportType === 'asset') exportGLB();
+                else if (exportType === 'video') exportVideo?.();
+                else screenshot();
               }}
             >
               <Download size={15} />

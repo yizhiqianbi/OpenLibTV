@@ -5,9 +5,42 @@ import WatchHeader from './components/WatchHeader.jsx';
 import Markdown from '../shared/secondary/Markdown.jsx';
 import { academyArticleCanvasUrl } from '../../services/academy-article-entry.js';
 
-function ArticleDetail({ id, data, asset, navigate, login, user }) {
-  const item = data.details.articles[id],
-    [active, setActive] = useState('academy-article-section-0');
+function ArticleDetail({ id, data, asset, navigate, login, user, articleSource }) {
+  const snapshotItem = data.details.articles[id],
+    [active, setActive] = useState('academy-article-section-0'),
+    [remote, setRemote] = useState(() =>
+      articleSource ? { status: 'loading', detail: null, error: null } : null,
+    ),
+    [retry, setRetry] = useState(0);
+  useEffect(() => {
+    if (!articleSource?.load) {
+      setRemote(null);
+      return undefined;
+    }
+    let live = true;
+    setRemote({ status: 'loading', detail: null, error: null });
+    Promise.resolve()
+      .then(() => articleSource.load(id))
+      .then((result) => {
+        if (!live) return;
+        if (result?.status === 'ok' && result.detail) {
+          setRemote({ status: 'ok', detail: result.detail, error: null });
+        } else if (['notFound', 'offline', 'error'].includes(result?.status)) {
+          setRemote({ status: result.status, detail: null, error: result.error || null });
+        } else {
+          setRemote({ status: 'error', detail: null, error: '教程读取失败' });
+        }
+      })
+      .catch((error) => {
+        if (live)
+          setRemote({ status: 'error', detail: null, error: error?.message || '教程读取失败' });
+      });
+    return () => {
+      live = false;
+    };
+  }, [articleSource, id, retry]);
+  const item = articleSource ? remote?.detail : snapshotItem;
+  const status = articleSource ? remote?.status : item ? 'ok' : 'notFound';
   const headings = useMemo(
     () =>
       [...(item?.contentMd || '').matchAll(/^##\s+(.+)$/gm)].map((m, i) => ({
@@ -54,7 +87,29 @@ function ArticleDetail({ id, data, asset, navigate, login, user }) {
   return (
     <div className="academy-article-detail">
       <WatchHeader title="图文教程" navigate={navigate} />
-      {item ? (
+      {status === 'loading' ? (
+        <p className="secondary-empty" role="status">
+          正在加载教程…
+        </p>
+      ) : status === 'notFound' ? (
+        <p className="secondary-empty" role="alert">
+          图文教程不存在或已下架
+        </p>
+      ) : status === 'offline' ? (
+        <div className="secondary-empty" role="alert">
+          <p>图文教程暂时无法加载</p>
+          <button className="soft-button" onClick={() => setRetry((value) => value + 1)}>
+            重试
+          </button>
+        </div>
+      ) : status === 'error' ? (
+        <div className="secondary-empty" role="alert">
+          <p>{remote?.error || '图文教程加载失败'}</p>
+          <button className="soft-button" onClick={() => setRetry((value) => value + 1)}>
+            重试
+          </button>
+        </div>
+      ) : item ? (
         <main>
           <article>
             <div className="academy-article-title" ref={title}>
@@ -130,9 +185,7 @@ function ArticleDetail({ id, data, asset, navigate, login, user }) {
             )}
           </aside>
         </main>
-      ) : (
-        <p className="secondary-empty">链接有误或教程不存在</p>
-      )}
+      ) : null}
     </div>
   );
 }

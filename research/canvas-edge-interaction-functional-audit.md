@@ -54,9 +54,13 @@ selected flow 使用两层 glow 与6单位蓝线、pathLength300及3秒 dashoffs
 
 ![最终本机桌面连线状态](../artifacts/canvas-edge-interaction-native-final.jpg)
 
+## 后续维护校准
+
+2026-10-16 复核发现，本文件早期的“selected-edge Delete／Backspace、混合 node/edge 删除和 VIDEO_CLIP 异步断线”已由后续批次接入运行入口，不再作为当前缺口：实际证据、19 份 GUI 文档和完整检查见 [选中边、混合删除与剪辑素材断线验收](./canvas-selected-delete-functional-audit.md)。本文件保留当时的连线命中/悬停/剪刀证据，不重复计算后续批次。
+
 ## 尚未完成
 
-源selected-edge Delete、混合删除分段／聚合确认、VIDEO_CLIP async mD与真实锁／授权、全部特殊renderer、React Flow等价虚拟化及大图FPS继续另验。legacy warning、editing及末次非空输入主要由实际App回归覆盖，不扩大为本批普通3节点原生样本的能力。真实手机触摸、持续Space组合拖动、Safari、高DPR和跨设备仍未实测；本机分享不等于服务器服务。Core strict非全部JSX，远端CI未执行。当前全站进度继续采用 [约70%工程估算](./coverage.md#当前复刻进度估算2026-10-14)，不用新增测试数或独立影游上调。
+真实锁／授权、全部特殊 renderer、React Flow 等价虚拟化及大图 FPS 继续另验。legacy warning、editing 及末次非空输入主要由实际 App 回归覆盖，不扩大为本批普通 3 节点原生样本的能力。真实手机触摸、持续 Space 组合拖动、Safari、高 DPR 和跨设备仍未实测；本机分享不等于服务器服务。Core strict 非全部 JSX，远端 CI 未执行。当前全站进度继续采用 [约70%工程估算](./coverage.md#当前复刻进度估算2026-10-14)，不用新增测试数或独立影游上调。
 
 下一批的 [selected／mixed源审计](./canvas-selected-delete-source-audit.md) 与 [15文件／93摘录proof](../artifacts/canvas-selected-delete-source-proof.json) 已冻结并再独立核对SHA与三坐标。它区分RF初始node确认、edge callback先于node、普通先提交和单次关联warning、取消不rollback早期phase、confirmed flags绕过clip与第二确认，以及history微任务不立即finalize。这些是下一步实现依据，未据此标记selected／mixed已接入；原生行为与异步完成顺序仍须各自验收。
 

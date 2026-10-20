@@ -97,6 +97,17 @@
 .secondary-markdown > :last-child {
   margin-bottom: 0;
 }
+.secondary-markdown .markdown-frontmatter {
+  margin: 0 0 1em;
+}
+.secondary-markdown .markdown-frontmatter th {
+  white-space: nowrap;
+  vertical-align: top;
+}
+.secondary-markdown .markdown-frontmatter td {
+  width: 100%;
+  white-space: pre-wrap;
+}
 .markdown-table {
   overflow-x: auto;
   margin: 1.5em 0;

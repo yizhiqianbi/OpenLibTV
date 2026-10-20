@@ -1,10 +1,16 @@
 # PenStudio frontend
 
-基于 React 19 + Vite 的 PenStudio 前端，页面与交互以 LibTV 为调研参照。当前目标是页面、功能和交互；内容采用公开样本，后续由运营服务器提供。当前版本默认本地工作区，无需登录；登录注册与真实账号资源按用户要求暂缓，真实生成和支付服务尚未接入。工程结构已按业务域整理，功能是否与原站完全一致仍以 `research/coverage.md` 中的证据为准。
+基于 React 19 + Vite 的 PenStudio 前端，页面与交互以 LibTV 为调研参照。当前目标是页面、功能和交互；内容采用公开样本，后续由运营服务器提供。当前版本默认本地工作区，无需登录；登录注册与真实账号资源按用户要求暂缓。通用 LibTV API 代理与 Agent 运行协议已接入，配置运营后端后内容、项目、资产、Skill、Canvas、任务、会话和 Agent 可以走服务端；未配置时继续使用本地样本并明确保留离线边界。当前验收按桌面 Chromium、本地前端状态和已确认的服务边界执行，协作、远程配置、多语言以及触摸/Safari 不计入完成度扣分。工程结构已按业务域整理，功能是否与原站完全一致仍以 `research/coverage.md` 中的证据为准。
+
+Studio 导入 GLB 子节点现在支持 Inspector 创建副本、复制/粘贴、独立资源、局部属性编辑、撤销/重做、刷新恢复和 GLB 导出，源 GLB 路径不被改写。Studio 专项 29 文件/143 测试、全量 `npm run check` 495 文件/6727 测试通过；证据见 [Studio 子树副本验证](./artifacts/studio-subtree-copy-verification.json)。
+
+Studio 监视器现在支持桌面浮动机位预览：复用真实 Three monitor frame，提供机位标签、播放/暂停、关闭和标题栏拖动，位置只属于临时视口状态。专项 30 文件/145 测试、最新全量 `npm run check` 498 文件/6739 测试通过；证据见 [Studio 浮动预览验证](./artifacts/studio-floating-preview-verification.json)。
+
+Studio 导出面板现在支持桌面 WebM 视频导出：按时间轴采样当前 Three canvas，使用浏览器 `MediaRecorder` 下载视频，显示进度并支持取消，对能力缺失和无动画状态给出明确提示。专项 30 文件/147 测试、最新全量 `npm run check` 通过 501 文件/6751 测试；证据见 [Studio 视频导出验证](./artifacts/studio-video-export-verification.json) 和 [当前工作区回归](./artifacts/current-continuation-verification.json)。
 
 最新选中边／混合删除与VIDEO／AUDIO剪辑断线已接统一coordinator，部分取消、末次草稿、分阶段undo和按operation隔离的本机lease可操作。407文件／5862测试、格式／lint／核心strict／构建与1192源码冻结通过；首次旧Skill超时保留，同源码原配置完整重跑通过。19份真实GUI文档覆盖桌面／390混合删除和公开VIDEO clip的断线／撤销重做／刷新，见 [本批验收](./research/canvas-selected-delete-functional-audit.md)。完整剪辑renderer／timeline编辑与原生AUDIO、Studio高级工具、真实服务和跨浏览器细节仍缺；整体仍约70%工程估算，本机未部署。下方记录保留各历史批次范围。
 
-此前连线优化已接20世界单位透明命中、源曲线/选择/flow与1000ms悬停剪刀，双击不再删除；普通按下/松手、hand/Space与readonly保持当前owner门控。新5文件158项、实际App与14份GUI全字段比较及390px/10%/readonly边界见 [连线验收](./research/canvas-edge-interaction-functional-audit.md)，398文件/5617项完整检查与1171冻结通过。本机前端整体仍约70%的工程估算；selected-edge Delete/mixed批次、clip时间轴、特殊renderer/3D完整工具及跨浏览器细节仍缺，本机修改未部署。
+此前连线优化已接20世界单位透明命中、源曲线/选择/flow与1000ms悬停剪刀，双击不再删除；普通按下/松手、hand/Space与readonly保持当前owner门控。新5文件158项、实际App与14份GUI全字段比较及390px/10%/readonly边界见 [连线验收](./research/canvas-edge-interaction-functional-audit.md)，398文件/5617项完整检查与1171冻结通过。选中边 Delete/Backspace、混合 node/edge 删除和 VIDEO/AUDIO→VIDEO_CLIP 断线随后已接统一 coordinator，并以 19 份 GUI 文档和407文件/5862项完整检查复核，详见 [选中删除验收](./research/canvas-selected-delete-functional-audit.md)。本机前端整体仍约75%的工程估算；完整 clip renderer/timeline、特殊 renderer/3D 高级工具及真实服务仍缺，本机修改未部署。
 
 此前脚本/分镜组单边断线已接确认、精确解绑、editing优先及一次撤销；末次输入同次提交，取消不改图，quota只重试保存。393文件/5459项完整检查与1161冻结、首次focus等待失败修正、真实101节点GUI恢复及390确认见 [分镜断线验收](./research/canvas-storyboard-unlink-functional-audit.md)。本机未部署，无登录/小号；mixed edge batch、VIDEO_CLIP时间轴异步前端/源锁、完整renderer与真机/Safari/大图仍未完。整体目标未完成。
 
@@ -31,7 +37,21 @@ npm run dev
 
 Vercel 的当前部署使用独立的代表性样本包，保留全部页面入口和编译模块。本地 `public/` 不被裁剪；`npm run vercel:prepare` 先生成完整 Vercel Build Output，再仅替换静态样本并保留 Functions/config/routes，同时在 `artifacts/vercel-package-report.json` 记录保留样本、文件大小和范围。样本包超过 95 MB 时停止，不能通过删除正在使用的素材绕过检查。此包面向当前免费套餐，部署使用 `vercel deploy --prebuilt --prod`。常规 `npm run build` 仍包含本地全部公开样本。
 
-部署前确认 `vercel project inspect --non-interactive` 报告目标项目正确，再运行 `npm run check` 和样本打包。原 Canvas/Studio 生成、支付及运营写服务仍未连接；新增影游发布使用独立 Functions 与公共 Blob。创作项目、资产、Skill 与画布数据保存在当前站点的浏览器本地。部署域名与 `localhost` 的浏览器存储独立，不会自动同步本地项目。当前保持 `VITE_API_BASE_URL` 为空，未来内容服务器接入见下文接口约定。
+部署前确认 `vercel project inspect --non-interactive` 报告目标项目正确，再运行 `npm run check` 和样本打包。影游发布使用独立 Functions 与公共 Blob；LibTV 通用 API 通过下方的服务端代理接入。未配置运营后端时，创作项目、资产、Skill 与画布数据仍保存在当前站点的浏览器本地。部署域名与 `localhost` 的浏览器存储独立，不会自动同步本地项目。
+
+## LibTV 通用后端与 Agent
+
+通用客户端位于 `src/services/api-client.ts`，覆盖公开内容、项目/目录、资产与上传、Skill、Canvas、生成任务、订单、社交、会话和统一 Agent。Vercel 的 `/api/backend/*` 只允许这些明确路径，使用 `LIBTV_BACKEND_URL` 转发到运营服务器；它不会把任意路径、浏览器凭据或本地 actor 透传给上游。变更请求要求同源，Canvas 保存可通过 `If-Match` 做版本控制，流式 Agent 与任务保留 SSE/NDJSON 响应。
+
+复制 `.env.example` 后设置 `VITE_API_BASE_URL=/api/backend` 和服务端变量 `LIBTV_BACKEND_URL=https://<operator-api>`。上游负责认证/访客会话、所有权、CAS、项目与资产持久化、模型调用、任务队列和 Agent 结果；代理未配置或上游失败会返回结构化错误，前端保留草稿，不把失败显示成成功。现有本地仓库仍是未接入运营服务时的可逆 fallback。
+
+## 叙梦 Agent 可选适配
+
+`/xumeng` 提供独立的叙梦 Agent 工作台：角色卡编辑、SillyTavern `chara_card_v2` 导入/导出、世界书、状态、记忆和流式对话都通过 `/api/xumeng/*` 访问。浏览器只持有结构化请求和响应，外部模型服务地址与凭据留在 Vercel Function 的服务端环境变量中；页面不会用本地假回复替代服务结果。
+
+在通用 LibTV 后端之外，需要叙梦时再设置 `XUMENG_BACKEND_URL=https://<operator-api>`。默认 `XUMENG_BACKEND_PROTOCOL=generic`，要求上游提供 `/health`、`/characters`、`/sessions`、`/chat`、`/memory` 及角色卡导入导出接口；连接 IntVideoGameEditor 的兼容服务时使用 `XUMENG_BACKEND_PROTOCOL=dzmm`。未配置上游时接口返回明确的 503 配置错误，页面保持错误态，不伪造保存、生成或持久化成功。
+
+上游服务负责认证、模型调用、会话持久化、CAS/版本控制、状态补丁和记忆写入；本仓库的 Function 只做 HTTPS 白名单代理、请求大小/来源校验、协议适配和流式转发。当前前端在当前页面内携带完整消息历史，刷新后的长期会话依赖上游会话接口，不能把浏览器临时状态当作账号数据。
 
 ```sh
 npm run check         # 格式、lint、核心类型、回归测试、生产构建
@@ -40,6 +60,18 @@ npm run format       # 统一格式
 npm run build
 npm run preview
 ```
+
+## Code Agent 工具桥
+
+仓库提供一个无需额外依赖的本地 MCP stdio 工具桥，供 Code Agent 读取当前 checkout 的公开样本、路由和能力边界。它是只读工具：不读取浏览器存储，不发送账号凭据，不调用生产 API，也不假装完成生成、支付或 MCP 授权。
+
+```sh
+npm run tool:mcp
+```
+
+按插件方式注册时，Codex / 其他 MCP 客户端会读取根目录的 `.mcp.json` 自动启动它；手动配置时使用命令 `node scripts/penstudio-mcp-server.mjs`。当前工具包括 `get_capabilities`、`list_routes`、`resolve_route`、`list_content`、`get_content` 和 `search_content`。读取大数据集时请用 `jsonPointer` 与 `limit` 限定返回范围。`npm run test:mcp` 会验证 MCP 初始化、工具发现、工具调用和路径安全。
+
+仓库同时包含可打包的 `.codex-plugin/plugin.json`、`.mcp.json` 和 `skills/penstudio/SKILL.md`。将仓库作为本地插件注册时，Code Agent 会在本机启动这个只读 server；它不会自动获得账号、浏览器本地项目或生产生成权限。
 
 `.github/workflows/check.yml` 在 push / pull_request 执行 `npm ci` 和同一套 `npm run check`，只授予 contents:read，官方 actions 固定 commit，Node 版本从 `.nvmrc` 读取。配置依据 [checkout](https://github.com/actions/checkout) 与 [setup-node](https://github.com/actions/setup-node) 官方文档；本仓库当前没有 Git 远端，尚未产生远端 CI 运行记录。
 
@@ -114,7 +146,7 @@ const { data, loading, error, reload } = useContent('gallery', { items: [] });
 
 旧 `data.js` / `useData` 保留兼容出口，新的异步页面应显式显示 loading、error 和 retry。素材使用 `asset(url)`，由 `services/assets.ts` 映射本地样本；映射失败时保留原 URL，映射读取可重试。
 
-复制 `.env.example` 为 `.env.local`，填写 `VITE_API_BASE_URL` 后，**内容仓库**会读取运营服务器的 `GET /content/<name>`。返回可以是原有快照对象或 `{ "data": <快照对象> }`；内容字段目前保留源样本形状，服务器应按现有内容 key 提供兼容返回。页面写入状态仍是本地演示，设置该变量不会自动把项目、资产、草稿、生成或支付接入服务器。
+复制 `.env.example` 为 `.env.local`，设置 `VITE_API_BASE_URL=/api/backend` 后，内容仓库会读取运营服务器的 `GET /content/<name>`，项目、资产、Skill、Canvas、任务和 Agent 通过同一 API 客户端使用对应资源路径。返回可以是原有快照对象或 `{ "data": <快照对象> }`；内容字段目前保留源样本形状，服务器应按现有内容 key 提供兼容返回。未设置该变量时页面继续使用本地演示，不能把本地 actor 当作服务器认证。
 
 `services/api-client.ts` 是类型化请求入口，处理 JSON/FormData、HTTP 错误、取消和会话过期通知；`services/contracts.ts` 定义分页、项目、目录、资产、Skill、画布 revision、生成任务和订单等运营接口形状。接入下一类服务时，应在所属业务域新增 repository/adapter，将本地模型映射为这些契约，再切换页面调用。核心服务已使用 strict TypeScript；现有 JSX 页面逐步迁移，尚未做到全项目类型覆盖或所有响应的运行时 schema 校验。
 

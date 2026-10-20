@@ -205,30 +205,50 @@ export function serializeSubtitleVtt(value) {
 }
 
 export function mergeSubtitleSources(sources, clips) {
+  return mergeSubtitleSourcesWithOrigins(sources, clips).track;
+}
+export function mergeSubtitleSourcesWithOrigins(sources, clips) {
   const cues = [];
+  const origins = [];
   for (const { clipId, track } of sources) {
     const clip = clips.find((entry) => entry.id === clipId);
     if (!clip || track.visible === false) continue;
     const speed = Number(clip.speed) > 0 ? Number(clip.speed) : 1;
-    for (const cue of track.cues) {
+    for (const [sourceCueIndex, cue] of track.cues.entries()) {
       if (cue.hidden) continue;
       const start = Math.max(clip.sourceOffset, cue.startTime),
         end = Math.min(clip.sourceOffset + clip.duration * speed, cue.endTime);
       if (end - start < 0.01 || (end - start) / speed < 0.1) continue;
       cues.push({
         ...cue,
+        clipId,
         id: `${clip.sourceNodeId}-${clip.id}-${cue.id}-${cues.length + 1}`
           .replace(/[^a-zA-Z0-9_-]+/g, '-')
           .slice(0, 80),
         startTime: clip.startTime + (start - clip.sourceOffset) / speed,
         endTime: clip.startTime + (end - clip.sourceOffset) / speed,
       });
+      origins.push({
+        clipId,
+        timelineCueId: cues.at(-1).id,
+        sourceNodeId: clip.sourceNodeId,
+        sourceCueIndex,
+        timelineStartTime: cues.at(-1).startTime,
+        timelineEndTime: cues.at(-1).endTime,
+        clipStartTime: clip.startTime,
+        clipEndTime: clip.startTime + clip.duration,
+        sourceOffset: clip.sourceOffset,
+        playbackRate: speed,
+      });
     }
   }
-  return normalizeSubtitleTrack({
-    visible: sources.some(({ track }) => track.visible),
-    cues,
-    defaultStyle: sources.find(({ track }) => track.defaultStyle)?.track.defaultStyle,
-    classStyles: sources.find(({ track }) => track.classStyles)?.track.classStyles,
-  });
+  return {
+    origins,
+    track: normalizeSubtitleTrack({
+      visible: sources.some(({ track }) => track.visible),
+      cues,
+      defaultStyle: sources.find(({ track }) => track.defaultStyle)?.track.defaultStyle,
+      classStyles: sources.find(({ track }) => track.classStyles)?.track.classStyles,
+    }),
+  };
 }

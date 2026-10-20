@@ -98,6 +98,7 @@ describe('secondary route flows after domain extraction', () => {
   });
 
   it('preserves academy tab selection, the login gate, and tutorial navigation', () => {
+    const open = vi.spyOn(window, 'open').mockImplementation(() => null);
     const props = pageProps('/academy');
     const view = render(<AcademyPage {...props} />);
     fireEvent.click(screen.getByRole('button', { name: new RegExp(content.articles[0].title) }));
@@ -109,9 +110,12 @@ describe('secondary route flows after domain extraction', () => {
       'true',
     );
     fireEvent.click(screen.getByRole('button', { name: new RegExp(content.tutorials[0].title) }));
-    expect(props.navigate).toHaveBeenCalledWith(
+    expect(open).toHaveBeenCalledWith(
       `/academy/tutorial/${content.tutorials[0].tutorialUuid}`,
+      '_blank',
+      'noopener,noreferrer',
     );
+    open.mockRestore();
   });
 
   it('opens article canvas practice in a new attributed tab', () => {
@@ -134,7 +138,7 @@ describe('secondary route flows after domain extraction', () => {
     open.mockRestore();
   });
 
-  it('preserves activity registration and persists through the storage boundary', () => {
+  it('preserves activity registration and persists through the storage boundary', async () => {
     const activity = {
       activityId: 900,
       name: '本地挑战赛',
@@ -155,6 +159,7 @@ describe('secondary route flows after domain extraction', () => {
     });
     fireEvent.click(screen.getByRole('checkbox'));
     fireEvent.click(screen.getByRole('button', { name: '提交报名' }));
+    await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull());
 
     expect(storage.readStoredValue('libtv-activity-registration-900', null)).toMatchObject({
       activityId: 900,

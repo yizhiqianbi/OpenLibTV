@@ -316,6 +316,69 @@ describe('source-shaped clip timeline presentation and toolbar', () => {
     );
   });
 
+  it('renders a supplied real audio waveform beneath the gain interaction layer', async () => {
+    const input = props({
+      selectedClipIds: ['sound'],
+      mediaBySourceId: new Map([
+        [
+          'audio-source',
+          {
+            url: '/audio.wav',
+            name: '真实原声',
+            waveform: { peaks: [-1, 0.7, -0.4, 0.9, -0.2, 0.3] },
+          },
+        ],
+      ]),
+    });
+    const { container } = render(<VideoClipTimeline {...input} />);
+    await act(async () => {});
+    const waveform = container.querySelector('.cv-clip-timeline-waveform');
+    expect(waveform?.getAttribute('data-waveform-status')).toBe('ready');
+    expect(waveform?.querySelector('path')?.getAttribute('d')).toMatch(/^M0\.00 /);
+    expect(container.querySelector('[data-testid="clip-volume-line-sound"]')).toBeTruthy();
+  });
+
+  it('renders supplied real video frames as a filmstrip and keeps the poster fallback contract', async () => {
+    const input = props({
+      mediaBySourceId: new Map([
+        [
+          'main-source',
+          {
+            url: '/video.mp4',
+            poster: '/real-poster.jpg',
+            thumbnailFrames: ['data:image/jpeg;base64,one', 'data:image/jpeg;base64,two'],
+          },
+        ],
+      ]),
+    });
+    const { container } = render(<VideoClipTimeline {...input} />);
+    await act(async () => {});
+    const filmstrip = container.querySelector('.cv-clip-timeline-filmstrip');
+    expect(filmstrip?.getAttribute('data-thumbnail-status')).toBe('ready');
+    expect(filmstrip?.querySelectorAll('img')).toHaveLength(2);
+    expect(container.querySelector('.cv-clip-timeline-poster')).toBeNull();
+  });
+
+  it('renders an available embedded-audio waveform on the selected video strip', async () => {
+    const input = props({
+      mediaBySourceId: new Map([
+        [
+          'main-source',
+          {
+            url: '/video.mp4',
+            kind: 'video',
+            waveform: { peaks: [-1, 0.8, -0.3, 0.5] },
+          },
+        ],
+      ]),
+    });
+    const { container } = render(<VideoClipTimeline {...input} />);
+    await act(async () => {});
+    const waveform = container.querySelector('.cv-clip-timeline-waveform.is-video');
+    expect(waveform?.getAttribute('data-waveform-status')).toBe('ready');
+    expect(waveform?.querySelector('path')?.getAttribute('d')).toMatch(/^M0\.00 /);
+  });
+
   it('uses the original rendered two-pixel floor for tiny clips rather than unused config minimum20', () => {
     const saved = timeline();
     saved.clips[1].duration = 0.01;
@@ -858,6 +921,83 @@ describe('real document edits from timeline DOM input', () => {
     expect(screen.getByRole('group', { name: '人声分离方式' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: '仅保留背景音' }));
     expect(onVocalSplit).toHaveBeenCalledWith('main', 'background');
+  });
+
+  it('exposes source per-clip subtitle visibility and deletion actions', () => {
+    const onEditSubtitle = vi.fn();
+    const input = props({
+      timeline: {
+        ...timeline(),
+        subtitles: {
+          visible: true,
+          cues: [
+            { id: 'main-cue', clipId: 'main', startTime: 0, endTime: 1, text: '主片' },
+            { id: 'next-cue', clipId: 'next', startTime: 4, endTime: 5, text: '下一片' },
+          ],
+        },
+      },
+      onEditSubtitle,
+    });
+    const { container } = render(<VideoClipTimeline {...input} />);
+    fireEvent.contextMenu(container.querySelector('[data-clip-id="main"]'), {
+      clientX: 320,
+      clientY: 250,
+    });
+    fireEvent.click(screen.getByRole('menuitem', { name: '隐藏本片段字幕' }));
+    expect(onEditSubtitle).toHaveBeenCalledWith({
+      kind: 'clip-visible',
+      clipId: 'main',
+      visible: false,
+    });
+    fireEvent.contextMenu(container.querySelector('[data-clip-id="main"]'), {
+      clientX: 320,
+      clientY: 250,
+    });
+    fireEvent.click(screen.getByRole('menuitem', { name: '删除本片段字幕' }));
+    expect(onEditSubtitle).toHaveBeenCalledWith({ kind: 'clip-delete', clipId: 'main' });
+  });
+
+  it('routes HTML subtitle clip actions through the HTML patch protocol', () => {
+    const onEditHtmlSubtitle = vi.fn();
+    const input = props({
+      htmlSubtitleBlocks: [
+        {
+          clipId: 'main',
+          cueId: 'html-cue',
+          hidden: false,
+          trackHidden: false,
+          identity: { key: 'html-layer', cueId: 'html-cue', clipId: 'main' },
+        },
+      ],
+      onEditHtmlSubtitle,
+    });
+    const { container } = render(<VideoClipTimeline {...input} />);
+    fireEvent.contextMenu(container.querySelector('[data-clip-id="main"]'), {
+      clientX: 320,
+      clientY: 250,
+    });
+    fireEvent.click(screen.getByRole('menuitem', { name: '隐藏本片段字幕' }));
+    expect(onEditHtmlSubtitle).toHaveBeenCalledWith({
+      edits: [
+        {
+          key: 'html-layer',
+          patches: [{ kind: 'cueHidden', cueId: 'html-cue', hidden: true }],
+        },
+      ],
+    });
+    fireEvent.contextMenu(container.querySelector('[data-clip-id="main"]'), {
+      clientX: 320,
+      clientY: 250,
+    });
+    fireEvent.click(screen.getByRole('menuitem', { name: '删除本片段字幕' }));
+    expect(onEditHtmlSubtitle).toHaveBeenLastCalledWith({
+      edits: [
+        {
+          key: 'html-layer',
+          patches: [{ kind: 'removeClipCues', clipId: 'main', removeMeta: true }],
+        },
+      ],
+    });
   });
 });
 

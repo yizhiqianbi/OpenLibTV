@@ -4,6 +4,7 @@ import {
   TEXT_HTML_ATTRIBUTES as A,
   outerTimedElements,
   readSubtitleHtml,
+  canonicalTrack,
 } from './html-document.js';
 import { textNumericValue, textPixelValue } from '../domain/text-timing-model.js';
 import { applyTextMotion, syncTextMotionStart } from './motion-document.js';
@@ -103,6 +104,44 @@ function rememberAnchor(root) {
     .filter(Number.isFinite);
   if (indexes.length)
     root.setAttribute('data-libtv-overlay-group-anchor', String(Math.min(...indexes)));
+}
+
+function reorderTracks(root, order) {
+  const current = [
+    ...new Set(outerTimedElements(root).map((cue) => Number(cue.getAttribute(A.track)))),
+  ]
+    .filter(Number.isFinite)
+    .sort((a, b) => a - b);
+  if (
+    !Array.isArray(order) ||
+    order.length !== current.length ||
+    new Set(order).size !== order.length ||
+    order.some((index) => !current.includes(index))
+  )
+    return { ok: false, code: 'track-order-invalid', detail: '文字轨道顺序无效，原数据已保留' };
+  const next = new Map(order.map((index, position) => [index, position]));
+  if (order.every((index, position) => index === position)) return { ok: true, changed: false };
+  if (!root.hasAttribute(A.timeBase) || root.getAttribute(A.timeBase) === 'timeline')
+    rememberAnchor(root);
+  const marker = '__libtv-track-reorder__';
+  for (const element of root.querySelectorAll(`[${A.track}]`)) {
+    const index = canonicalTrack(element.getAttribute(A.track));
+    if (index == null || !next.has(index)) continue;
+    element.setAttribute(A.track, `${marker}${index}`);
+  }
+  for (const element of root.querySelectorAll(`[${A.track}]`)) {
+    const raw = element.getAttribute(A.track) || '';
+    if (!raw.startsWith(marker)) continue;
+    const index = Number(raw.slice(marker.length)),
+      target = next.get(index);
+    element.setAttribute(A.track, String(target));
+    element.setAttribute(A.z, String(100 - target));
+    element.style.zIndex = String(100 - target);
+  }
+  const anchor = canonicalTrack(root.getAttribute('data-libtv-overlay-group-anchor'));
+  if (anchor != null && next.has(anchor))
+    root.setAttribute('data-libtv-overlay-group-anchor', String(next.get(anchor)));
+  return { ok: true, changed: true };
 }
 
 /** Apply to a new inert document, validate the whole transaction, then serialize once. */
@@ -387,6 +426,13 @@ export function applyTimedTextPatches(html, patches, { subtitle = false } = {}) 
             else element.setAttribute(A.trackHidden, 'true');
           }
         break;
+      case 'reorderTracks':
+        {
+          const result = reorderTracks(root, patch.order);
+          if (!result.ok)
+            return { ok: false, html, issues: [{ code: result.code, detail: result.detail }] };
+        }
+        break;
       case 'zOrder':
         if (cue && Number.isFinite(patch.z)) {
           cue.setAttribute(A.z, String(Math.round(patch.z)));
@@ -413,6 +459,15 @@ export function applyTimedTextPatches(html, patches, { subtitle = false } = {}) 
             blur = textNumericValue('backgroundBlurPx', patch.backgroundBlurPx);
           if (radius != null) target.style.borderRadius = `${radius}px`;
           if (blur != null) target.style.backdropFilter = `blur(${blur}px)`;
+          for (const [field, property] of [
+            ['paddingTopPx', 'paddingTop'],
+            ['paddingRightPx', 'paddingRight'],
+            ['paddingBottomPx', 'paddingBottom'],
+            ['paddingLeftPx', 'paddingLeft'],
+          ]) {
+            const value = textNumericValue(field, patch[field]);
+            if (value != null) target.style[property] = `${value}px`;
+          }
           if (['normal', 'italic'].includes(patch.fontStyle))
             target.style.fontStyle = patch.fontStyle;
           if (['left', 'center', 'right'].includes(patch.textAlign))
@@ -428,7 +483,8 @@ export function applyTimedTextPatches(html, patches, { subtitle = false } = {}) 
       case 'clearTextStyle':
         if (cue)
           for (const key of [...cue.style])
-            if (key.startsWith('--libtvSubtitle')) cue.style.removeProperty(key);
+            if (key.startsWith('--libtvSubtitle') && !patch.preserveVars?.includes(key))
+              cue.style.removeProperty(key);
         break;
       case 'copyTextAppearance':
         if (cue) {
@@ -530,6 +586,26 @@ export function applyTimedTextPatches(html, patches, { subtitle = false } = {}) 
   const next = serializeTextHtml(document);
   if (next === before) return { ok: true, html, changed: false, model };
   const validated = read(next);
+  if (subtitle && validated.ok) {
+    // Legacy source warnings remain readable. A new edit must still be atomic
+    // and cannot introduce ambiguous anchors, overlaps or invalid word timing.
+    const counts = new Map();
+    const fingerprint = (issue) => JSON.stringify([issue.code, issue.subject]);
+    for (const issue of model.issues || [])
+      counts.set(fingerprint(issue), (counts.get(fingerprint(issue)) || 0) + 1);
+    const introduced = (validated.issues || []).filter((issue) => {
+      if (!['duplicate-cue-id', 'track-overlap', 'word-time-out-of-range'].includes(issue.code))
+        return false;
+      const key = fingerprint(issue),
+        count = counts.get(key) || 0;
+      if (count) {
+        counts.set(key, count - 1);
+        return false;
+      }
+      return true;
+    });
+    if (introduced.length) return { ok: false, html, issues: introduced };
+  }
   return validated.ok
     ? { ok: true, html: next, changed: true, model: validated }
     : { ok: false, html, issues: validated.issues };

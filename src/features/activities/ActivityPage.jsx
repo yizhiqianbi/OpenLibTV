@@ -7,7 +7,7 @@ import Registration from './components/RegistrationModal.jsx';
 import { GalleryCard } from '../../components/Gallery.jsx';
 import { readStoredString, writeStoredValue } from '../../services/storage.ts';
 
-function ActivityDetail({ id, data, asset, navigate, login, user, toast }) {
+function ActivityDetail({ id, data, asset, navigate, login, user, toast, registrationSource }) {
   const item = data.activities.find((a) => String(a.activityId) === id),
     [expanded, setExpanded] = useState(false),
     [register, setRegister] = useState(false),
@@ -104,6 +104,7 @@ function ActivityDetail({ id, data, asset, navigate, login, user, toast }) {
             <Registration
               item={item}
               user={user}
+              onSubmit={registrationSource?.submit}
               onClose={() => setRegister(false)}
               onSuccess={(form) => {
                 try {

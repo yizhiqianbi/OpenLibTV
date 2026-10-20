@@ -1,11 +1,12 @@
 import { prepareTimedTextPreviewHtml, seekTextPreview } from './preview-runtime.js';
+import { subtitleCompositionRoot } from './timed-text-dom.js';
 
 /** A source-time subtitle document is sanitized with the same closed, scriptless policy. */
 export const prepareSubtitlePreviewHtml = (html) =>
   prepareTimedTextPreviewHtml(html, { subtitle: true });
 
 export function seekSubtitlePreview(document, sourceTime, clipId, trackIndex) {
-  const root = document.querySelector('[data-composition-id]');
+  const root = subtitleCompositionRoot(document);
   const hidden = [...(root?.children || [])].some(
     (element) =>
       element.tagName.toLowerCase() === 'template' &&

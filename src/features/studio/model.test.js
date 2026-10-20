@@ -4,6 +4,7 @@ import {
   advanceStudioPlayback,
   createStudioObject,
   createStudioKeyframe,
+  patchStudioKeyframe,
   resolveStudioRoute,
   transformAt,
   upsertStudioKeyframe,
@@ -48,6 +49,25 @@ describe('studio timeline', () => {
     expect(result.find((frame) => frame.id === 'new').time).toBe(0.03);
     key.position[0] = 7;
     expect(object.position[0]).toBe(0);
+  });
+
+  it('patches only an existing local keyframe and rejects unknown objects or malformed vectors', () => {
+    const result = patchStudioKeyframe(frames, {
+      objectId: 'model',
+      time: 4.02,
+      changes: { position: [9, 8, 7], rotation: [1, 2] },
+    });
+    expect(result.find((frame) => frame.objectId === 'model' && frame.time === 4).position).toEqual(
+      [9, 8, 7],
+    );
+    expect(result.find((frame) => frame.objectId === 'other').position).toEqual([99, 99, 99]);
+    expect(
+      patchStudioKeyframe(frames, {
+        objectId: 'missing',
+        time: 4,
+        changes: { position: [1, 2, 3] },
+      }),
+    ).toBe(frames);
   });
 
   it('wraps loop playback and stops non-loop playback at the end', () => {

@@ -75,6 +75,42 @@ beforeEach(() => {
 });
 
 describe('canvas component boundaries', () => {
+  it('keeps the asset library recoverable when the catalogue fails or is empty', async () => {
+    vi.mocked(loadContent).mockImplementation(async (name) => {
+      if (name === 'gallery') throw new Error('offline');
+      return name === 'models' ? { default: {} } : { detail: { name: '匹配作品' } };
+    });
+    render(<NodeCanvas path="/canvas?projectId=asset-library-retry" user={{ name: 'local' }} />);
+    await readyPrompt();
+    fireEvent.click(screen.getByRole('button', { name: '资产库' }));
+    await waitFor(() =>
+      expect(screen.getByRole('alert').textContent).toContain('资产库暂时无法加载'),
+    );
+
+    vi.mocked(loadContent).mockImplementation(async (name) => {
+      if (name === 'gallery') return { items: [] };
+      return name === 'models' ? { default: {} } : { detail: { name: '匹配作品' } };
+    });
+    fireEvent.click(screen.getByRole('button', { name: '重试加载' }));
+    await waitFor(() =>
+      expect(screen.getByRole('status').textContent).toContain('当前没有可用资产'),
+    );
+  });
+
+  it('renders the public gallery items envelope instead of treating it as an empty catalogue', async () => {
+    vi.mocked(loadContent).mockImplementation(async (name) => {
+      if (name === 'gallery')
+        return {
+          items: [{ templateUuid: 'public-asset', name: '公开样本', coverUrl: '/sample.webp' }],
+        };
+      return name === 'models' ? { default: {} } : { detail: { name: '匹配作品' } };
+    });
+    render(<NodeCanvas path="/canvas?projectId=asset-library-items" user={{ name: 'local' }} />);
+    await readyPrompt();
+    fireEvent.click(screen.getByRole('button', { name: '资产库' }));
+    await waitFor(() => expect(screen.getByRole('button', { name: /公开样本/ })).toBeTruthy());
+  });
+
   it('cancels a pending node drag when the same document becomes readonly', async () => {
     const user = { name: 'local' };
     localStorage.setItem(

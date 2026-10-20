@@ -100,6 +100,34 @@
   border-radius: 12px;
   max-width: 100%;
 }
+.secondary-skill-media-stage.is-switching {
+  animation: secondary-skill-case-switch 360ms ease;
+}
+.secondary-skill-media-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 120px;
+  color: var(--muted, #a8a8a8);
+  font-size: 13px;
+}
+.secondary-skill-media-error button {
+  border: 0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: inherit;
+  background: #ffffff1a;
+  cursor: pointer;
+}
+@keyframes secondary-skill-case-switch {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .secondary-skill-media-stage.audio {
   height: 300px;
   width: 100%;

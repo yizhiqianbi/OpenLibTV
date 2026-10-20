@@ -5,6 +5,8 @@ describe('route resolution', () => {
   it.each([
     ['/show', 'gallery', 'shell'],
     ['/skill/create', 'skill-create', 'shell'],
+    ['/xumeng', 'xumeng', 'shell'],
+    ['/xumeng/agent', 'xumeng', 'shell'],
     ['/skill/share', 'skill-share', 'shell'],
     ['/detail/example', 'detail', 'standalone'],
     ['/canvas/share', 'canvas', 'standalone'],

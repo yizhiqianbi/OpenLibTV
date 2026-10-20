@@ -62,7 +62,16 @@ export function textStylePatches(cueId, fields, current = {}, pixelScale = 1) {
     } else if (key === 'lineHeightPct') {
       const value = raw === '' ? null : textNumericValue(key, Number(raw));
       if (value != null) vars[styleVars.lineHeight] = String(value / 100);
-    } else if (['cornerRadiusPx', 'backgroundBlurPx'].includes(key)) {
+    } else if (
+      [
+        'cornerRadiusPx',
+        'backgroundBlurPx',
+        'paddingTopPx',
+        'paddingRightPx',
+        'paddingBottomPx',
+        'paddingLeftPx',
+      ].includes(key)
+    ) {
       const value = raw === '' ? null : textNumericValue(key, Number(raw));
       if (value != null) appearance[key] = textPixelValue(value, 1 / pixelScale);
     } else if (['fontStyle', 'textAlign'].includes(key)) appearance[key] = raw;
@@ -162,6 +171,20 @@ export function readTextStyle(model, cueId, output) {
   if (!cue) return {};
   const target = cue.element.querySelector('[data-libtv-text]') || cue.element;
   const values = {};
+  const readFallbacks = (css) => {
+    const pattern = /var\(\s*(--libtvSubtitle[A-Za-z]+)\s*,/g;
+    for (const match of css.matchAll(pattern)) {
+      let level = 1,
+        end = match.index + match[0].length;
+      const start = end;
+      while (end < css.length && level > 0) {
+        if (css[end] === '(') level++;
+        else if (css[end] === ')') level--;
+        end++;
+      }
+      if (!level) values[match[1]] = css.slice(start, end - 1).trim();
+    }
+  };
   for (const tag of model.document.querySelectorAll('style')) {
     for (const rule of tag.textContent
       .replace(/\/\*[\s\S]*?\*\//g, '')
@@ -173,22 +196,12 @@ export function readTextStyle(model, cueId, output) {
         /* Ignore unsupported selectors, preserving source CSS. */
       }
       if (!matches) continue;
-      const pattern = /var\(\s*(--libtvSubtitle[A-Za-z]+)\s*,/g;
-      for (const match of rule[2].matchAll(pattern)) {
-        let level = 1,
-          end = match.index + match[0].length;
-        const start = end;
-        while (end < rule[2].length && level > 0) {
-          if (rule[2][end] === '(') level++;
-          else if (rule[2][end] === ')') level--;
-          end++;
-        }
-        if (!level) values[match[1]] = rule[2].slice(start, end - 1).trim();
-      }
+      readFallbacks(rule[2]);
     }
   }
   const chain = [];
   for (let element = target; element; element = element.parentElement) chain.push(element);
+  for (const element of [...chain].reverse()) readFallbacks(element.getAttribute('style') || '');
   for (const element of chain.reverse())
     for (const key of [
       ...Object.values(styleVars),
@@ -234,6 +247,10 @@ export function readTextStyle(model, cueId, output) {
       parseFloat(target.style.backdropFilter?.match(/blur\(([-\d.]+)px\)/)?.[1]) || 0,
       scale,
     ),
+    paddingTopPx: textPixelValue(parseFloat(target.style.paddingTop) || 0, scale),
+    paddingRightPx: textPixelValue(parseFloat(target.style.paddingRight) || 0, scale),
+    paddingBottomPx: textPixelValue(parseFloat(target.style.paddingBottom) || 0, scale),
+    paddingLeftPx: textPixelValue(parseFloat(target.style.paddingLeft) || 0, scale),
     fontStyle: target.style.fontStyle || 'normal',
     textAlign: target.style.textAlign || 'center',
     animationType: readTextMotion(cue.element).type,

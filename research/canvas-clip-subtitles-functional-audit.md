@@ -2,6 +2,8 @@
 
 本批接入基础 VTT 分支：新增、搜索、选择、正文、全局样式、应用全部、显示/隐藏、删除、时间轴拖动/裁边，以及既有本机历史、保存和主画面叠加。HTML 字幕与普通文本使用另一套协议，仍未实现；不把本批当作整个字幕/文字工具完成。没有原站写请求、登录、云锁、生成字幕或真实导出。
 
+2026-10-16 源片段字幕操作维护：公开 bundle 的片段右键分支提供本片段显示/隐藏与删除 cues；VTT 合并保留来源 `clipId`，HTML 视图块保留 layer/cue/clip identity。右键菜单通过各自协议执行“隐藏/显示本片段字幕”和“删除本片段字幕”：VTT 更新 cue hidden 或移除来源 cues，HTML 使用 `cueHidden` / `removeClipCues`。两者均沿用 CAS、历史、刷新恢复和 userCleared 边界，不改其他片段。定向 2 文件 / 38 项通过，最新全量检查 483 文件 / 6623 项通过；证据见 `artifacts/clip-subtitle-clip-actions-verification.json`。字幕生成、云端写入和真实导出仍未接入。
+
 ## 静态源依据
 
 仅静态读取已归档的公开脚本，不执行 bootstrap、遥测或写接口：
@@ -17,7 +19,7 @@
 
 `clip-subtitle-controls.js` 只协调会话动作；已有 `useCanvasClipEditor` 继续持owner、CAS、十步历史、冲突与恢复副本。正文输入留在UI草稿，失焦或后续编辑前一次提交；共享草稿投影负责pagehide/刷新时最后输入，保存失败保留输入并可重试。拖动使用既有begin/preview/end/cancel事务，不逐帧制造历史。选择字幕与视频/转场选择独立，删除字幕不删除素材。
 
-`ClipSubtitleWorkspace` 持两个non-modal面板；调宽复用提取后的 `ClipEditorSideRail`，转场面板沿用同一组件。Escape与回焦点仍复用dialog-stack，拖动中的Escape先取消手势，再由下一次Escape关闭面板。媒体宿主不因面板开关重建。`subtitle-preview-renderer` 是主runtime拥有的DOM层，按实际输出尺寸/媒体画幅缩放，z110高于转场canvas的z100，正文使用textContent，不执行HTML。字体目录/远程字体加载尚未接入，五个基础字体名称目前依赖可用字体与fallback，不能称字形完全一致。
+`ClipSubtitleWorkspace` 持两个non-modal面板；调宽复用提取后的 `ClipEditorSideRail`，转场面板沿用同一组件。Escape与回焦点仍复用dialog-stack，拖动中的Escape先取消手势，再由下一次Escape关闭面板。媒体宿主不因面板开关重建。`subtitle-preview-renderer` 是主runtime拥有的DOM层，按实际输出尺寸/媒体画幅缩放，z110高于转场canvas的z100，正文使用textContent，不执行HTML。普通文字、HTML字幕和基础VTT面板现在共用可注入字体目录 source；真实运营目录、跨浏览器字形一致性与服务端字体策略仍未验收。
 
 本机明确适配：规范化保留未知字段，重复cue ID拒绝读取并保留原文档；源class parts与未标记文本的边界换行会重复为VTT空块，本机合并该边界的重复换行，避免序列化回读丢失后续正文。原文rawVtt在首次有效编辑前保留；编辑后生成规范VTT，不承诺逐字节相等。全局样式按源只输出一个::cue规则，保留class正文协议，不额外启用源已关闭的class CSS。
 

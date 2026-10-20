@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { act, fireEvent, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useDialogBehavior } from '../../../hooks/useDialogBehavior.js';
 import ClipSubtitleWorkspace from './ClipSubtitleWorkspace.jsx';
@@ -149,6 +149,41 @@ describe('subtitle panels and gesture surface', () => {
     expect(input.controller.onCloseSubtitlePanel).toHaveBeenCalledTimes(1);
     expect(parentClose).not.toHaveBeenCalled();
     expect(document.activeElement).toBe(screen.getByTestId('clip-toolbar-subtitle'));
+  });
+  it('loads an injected font directory with retry while keeping VTT fallback families', async () => {
+    const input = props();
+    const fontSource = {
+      load: vi
+        .fn()
+        .mockRejectedValueOnce(new Error('字体目录离线'))
+        .mockResolvedValueOnce({
+          fonts: [
+            {
+              id: 'ops',
+              name: '运营字幕体',
+              family: 'Ops Subtitle',
+              src: 'https://fonts.example.test/ops.woff2',
+            },
+          ],
+        }),
+    };
+    render(
+      <ClipSubtitleWorkspace {...input} fontSource={fontSource}>
+        preview
+      </ClipSubtitleWorkspace>,
+    );
+    await screen.findAllByText('字体目录离线');
+    expect(screen.getByRole('option', { name: 'Source Han Sans CN' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: '重试字体目录' }));
+    await screen.findByRole('option', { name: '运营字幕体' });
+    fireEvent.change(screen.getByRole('combobox', { name: '字幕字体' }), {
+      target: { value: 'Ops Subtitle' },
+    });
+    expect(input.controller.onEditSubtitle).toHaveBeenLastCalledWith({
+      kind: 'style',
+      style: { fontFamily: 'Ops Subtitle' },
+    });
+    await waitFor(() => expect(fontSource.load).toHaveBeenCalledTimes(2));
   });
   it('commits the pointerup position once, cancels on blur and supports keyboard selection/trim', () => {
     const input = props();

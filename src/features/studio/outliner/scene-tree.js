@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { studioNodeId, studioNodePath } from './model.js';
+import { studioNodeCopyId, studioNodeId, studioNodePath } from './model.js';
 import { radians } from '../model.js';
 import { applyMaterialProperties, materialSnapshot } from '../material.js';
 
@@ -42,6 +42,8 @@ export function createStudioSceneTree(scene, ownerId) {
   const nodes = new Map(),
     metadata = [],
     parents = new Map();
+  const copyNodeIds = new Set(),
+    copyRoots = new Map();
   const animated = new Map();
   for (const clip of scene.animations || [])
     for (const track of clip.tracks) {
@@ -87,7 +89,11 @@ export function createStudioSceneTree(scene, ownerId) {
   return {
     nodes,
     metadata,
-    apply(edits = {}) {
+    apply(edits = {}, nodeCopies = []) {
+      for (const root of copyRoots.values()) root.removeFromParent();
+      for (const id of copyNodeIds) nodes.delete(id);
+      copyNodeIds.clear();
+      copyRoots.clear();
       const deleted = new Set();
       for (const source of metadata) {
         const path = source.path;
@@ -152,6 +158,58 @@ export function createStudioSceneTree(scene, ownerId) {
           else node[property].fromArray(value);
         }
       }
+      const cloneResources = (root) => {
+        root.traverse((node) => {
+          if (node.geometry?.clone) node.geometry = node.geometry.clone();
+          if (Array.isArray(node.material))
+            node.material = node.material.map((item) => item?.clone?.() || item);
+          else if (node.material?.clone) node.material = node.material.clone();
+        });
+        return root;
+      };
+      for (const copy of Array.isArray(nodeCopies) ? nodeCopies : []) {
+        const source = nodes.get(studioNodeId(ownerId, copy.sourcePath));
+        if (!source?.parent || !copy?.id) continue;
+        const clone = cloneResources(source.clone(true));
+        const rootId = studioNodeCopyId(ownerId, copy.id);
+        const sourcePosition = Array.isArray(copy.position)
+          ? copy.position
+          : source.position.toArray();
+        clone.position.fromArray(sourcePosition);
+        clone.name = copy.name || `${source.name} 副本`;
+        clone.visible = copy.visible !== false;
+        clone.userData = { ...clone.userData, studioNodeId: rootId, studioNodeCopyId: copy.id };
+        const sourcePath = Array.isArray(copy.sourcePath) ? copy.sourcePath : [];
+        const descendants = metadata.filter(
+          (entry) =>
+            entry.path.length >= sourcePath.length &&
+            sourcePath.every((part, index) => entry.path[index] === part),
+        );
+        for (const entry of descendants) {
+          const relativePath = entry.path.slice(sourcePath.length);
+          const target = relativePath.reduce((node, index) => node?.children?.[index], clone);
+          if (!target) continue;
+          const id = studioNodeCopyId(ownerId, copy.id, relativePath);
+          target.userData = { ...target.userData, studioNodeId: id, studioNodeCopyId: copy.id };
+          copyNodeIds.add(id);
+          nodes.set(id, target);
+          const override = copy.edits?.[studioNodePath(relativePath)] || {};
+          const edited = { ...entry, ...(relativePath.length === 0 ? copy : {}), ...override };
+          target.name = edited.name || target.name;
+          target.visible = edited.visible !== false;
+          for (const property of ['position', 'rotation', 'scale']) {
+            const value = edited[property];
+            if (!Array.isArray(value) || value.length !== 3 || !value.every(Number.isFinite))
+              continue;
+            if (property === 'rotation') target.rotation.set(...value.map(radians));
+            else target[property].fromArray(value);
+          }
+        }
+        source.parent.add(clone);
+        copyRoots.set(copy.id, clone);
+      }
+      return nodes;
     },
+    copyNodeIds,
   };
 }

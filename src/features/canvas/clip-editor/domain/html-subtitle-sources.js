@@ -3,6 +3,7 @@ import {
   subtitleDocumentSource,
   staleSubtitleDocument,
 } from './html-subtitle-model.js';
+import { collectSubtitleSources } from './subtitle-source-mode.js';
 
 /** Source collectClipSubtitleSources/aX: a stable plan independent of playhead and clip positions. */
 export function htmlSubtitleLoadPlan(timeline, nodeSubtitleHtmlUrl) {
@@ -28,13 +29,13 @@ export function htmlSubtitleLoadPlan(timeline, nodeSubtitleHtmlUrl) {
     if (layers.has(key) || layers.has(nodeId)) return;
     layers.set(key, { key, nodeId, url: url.trim() });
   };
-  for (const clip of clips) add(clip.sourceNodeId, clip.subtitleHtmlUrl);
-  if (
-    nodeSubtitleHtmlUrl &&
-    clips[0] &&
-    ![...layers.values()].some((layer) => layer.nodeId === clips[0].sourceNodeId)
-  )
-    add(clips[0].sourceNodeId, nodeSubtitleHtmlUrl);
+  for (const source of collectSubtitleSources({ clips, nodeSubtitleHtmlUrl })) {
+    if (source.kind !== 'html') continue;
+    // A saved local document replaces the node fallback, including an explicitly empty archive.
+    if (!source.clipId && [...layers.values()].some((layer) => layer.nodeId === source.nodeId))
+      continue;
+    add(source.nodeId, source.url);
+  }
   const result = [...layers.values()];
   return { key: JSON.stringify(result), layers: result };
 }

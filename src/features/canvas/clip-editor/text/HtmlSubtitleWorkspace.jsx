@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Plus, Trash2 } from 'lucide-react';
 import ClipEditorSideRail from '../ClipEditorSideRail.jsx';
 import ClipSubtitleTimelineRow from '../ClipSubtitleTimelineRow.jsx';
@@ -6,6 +6,9 @@ import ClipTextWorkspace from './ClipTextWorkspace.jsx';
 import { readSubtitleHtml } from './html-document.js';
 import { effectiveHtmlSubtitleLayers, projectHtmlSubtitleDraft } from './html-subtitle-tools.js';
 import { subtitleCueInstances } from '../domain/html-subtitle-model.js';
+import { moveTrackOrder } from '../domain/track-order-model.js';
+import { subtitleStyleCompatibility } from './subtitle-style-compatibility.js';
+import { describeSubtitleEditing } from '../domain/subtitle-ownership-model.js';
 
 const time = (value) => `${Math.floor(value / 60)}:${(value % 60).toFixed(2).padStart(5, '0')}`;
 export function useHtmlSubtitleView(state) {
@@ -35,7 +38,9 @@ export function useHtmlSubtitleView(state) {
       const layers = effectiveHtmlSubtitleLayers({ ...input, timeline }).map((layer) => {
         if (!cache.current.has(layer.html)) {
           if (cache.current.size > 32) cache.current.clear();
-          cache.current.set(layer.html, readSubtitleHtml(layer.html));
+          const model = readSubtitleHtml(layer.html);
+          if (model.ok) model.styleCompatibility = subtitleStyleCompatibility(model.document);
+          cache.current.set(layer.html, model);
         }
         return { ...layer, model: cache.current.get(layer.html) };
       });
@@ -55,6 +60,7 @@ export function useHtmlSubtitleView(state) {
                     ];
               return instances.map((instance) => ({
                 ...cue,
+                readOnly: layer.model.styleCompatibility.readOnly,
                 ...instance,
                 id: JSON.stringify([layer.key, cue.cueId, instance.clipId]),
                 identity: { key: layer.key, cueId: cue.cueId, clipId: instance.clipId },
@@ -85,6 +91,44 @@ export function useHtmlSubtitleView(state) {
 }
 
 export function HtmlSubtitleTimelineRows({ state, controller, view }) {
+  const trackOrder = view.rows.map((row) => row.index);
+  const moveTrack = (trackIndex, direction) => {
+    const position = trackOrder.indexOf(trackIndex);
+    const target = direction === 'up' ? position - 1 : position + 1;
+    if (position < 0 || target < 0 || target >= trackOrder.length) return;
+    const order = [...trackOrder];
+    [order[position], order[target]] = [order[target], order[position]];
+    controller.onEditHtmlSubtitle({
+      edits: view.layers
+        .filter((layer) => layer.model.ok)
+        .map((layer) => ({
+          key: layer.key,
+          patches: [
+            {
+              kind: 'reorderTracks',
+              order: order.filter((index) => layer.model.trackIndexes.includes(index)),
+            },
+          ],
+        })),
+    });
+  };
+  const dropTrack = (source, target) => {
+    const order = moveTrackOrder(trackOrder, source, target);
+    if (!order || order.every((value, index) => value === trackOrder[index])) return;
+    controller.onEditHtmlSubtitle({
+      edits: view.layers
+        .filter((layer) => layer.model.ok)
+        .map((layer) => ({
+          key: layer.key,
+          patches: [
+            {
+              kind: 'reorderTracks',
+              order: order.filter((index) => layer.model.trackIndexes.includes(index)),
+            },
+          ],
+        })),
+    });
+  };
   return view.rows.map((row) => {
     const hidden = row.blocks.length > 0 && row.blocks.every((block) => block.trackHidden);
     const selected = row.blocks.find(
@@ -110,7 +154,12 @@ export function HtmlSubtitleTimelineRows({ state, controller, view }) {
           },
         }}
         selectedSubtitleId={selected?.id}
-        blocked={!state.ready || state.conflicted || state.htmlSubtitleStatus !== 'ready'}
+        blocked={!state.ready || state.conflicted || !describeSubtitleEditing(state).active}
+        trackReadOnly={view.layers.some((layer) => layer.model.styleCompatibility?.readOnly)}
+        trackIndex={row.index}
+        trackOrder={trackOrder}
+        onMoveTrack={moveTrack}
+        onTrackDrop={dropTrack}
         draftSession={state.draftSession}
         onSelectSubtitle={(id) => controller.onSelectHtmlSubtitle(blockFor(id).identity)}
         onEditSubtitle={() => {
@@ -137,13 +186,46 @@ export function HtmlSubtitleTimelineRows({ state, controller, view }) {
   });
 }
 
-export default function HtmlSubtitleWorkspace({ state, controller, children, view }) {
+export default function HtmlSubtitleWorkspace({ state, controller, children, view, fontSource }) {
   const root = useRef(null);
-  const [width, setWidth] = useState(372),
+  const listTab = useRef(null),
+    styleTab = useRef(null),
+    focusTab = useRef(false);
+  const [width, setWidth] = useState(300),
     [query, setQuery] = useState(''),
     [presetsOpen, setPresetsOpen] = useState(false),
     [panel, setPanel] = useState('list');
   const open = Boolean(state.htmlSubtitlePanelOpen && state.previewExpanded);
+  const migrationRequest = useRef(null);
+  useLayoutEffect(() => {
+    const request = state.htmlSubtitleStyleRequest;
+    if (!open || !request || migrationRequest.current === request) return;
+    if (panel !== 'style') {
+      setPanel('style');
+      return;
+    }
+    migrationRequest.current = request;
+    if (request.focus && document.activeElement === document.body) {
+      const input = root.current?.querySelector('textarea[aria-label="字幕内容"]');
+      input?.focus({ preventScroll: true });
+      input?.setSelectionRange(
+        Math.min(request.focus.start, input.value.length),
+        Math.min(request.focus.end, input.value.length),
+        request.focus.direction,
+      );
+    }
+  }, [open, panel, state.htmlSubtitleStyleRequest]);
+  const changePanel = (next) => {
+    focusTab.current = true;
+    setPanel(next);
+  };
+  useLayoutEffect(() => {
+    if (!focusTab.current) return;
+    const target = (panel === 'style' ? listTab : styleTab).current;
+    if (open && !target) return;
+    focusTab.current = false;
+    target?.focus({ preventScroll: true });
+  }, [open, panel, presetsOpen]);
   useEffect(() => {
     if (!open) setPanel('list');
   }, [open]);
@@ -151,9 +233,9 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
   const model = layer?.model.ok ? layer.model : null;
   const aliasState = {
     ...state,
-    textPanelOpen: open,
+    textPanelOpen: open && panel === 'style',
     selectedTextCueId: state.selectedHtmlSubtitle?.cueId,
-    textStatus: state.htmlSubtitleStatus || 'idle',
+    textStatus: model ? 'ready' : state.htmlSubtitleStatus || 'idle',
     textError: state.htmlSubtitleError || view.error,
     textPreviewError: state.htmlSubtitlePreviewError,
     textDraft: state.htmlSubtitleDraft
@@ -161,6 +243,13 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
       : null,
     textTrackChoice: null,
     textScriptUnsupported: view.layers.some((layer) => layer.model.ok && layer.model.hasScript),
+    textReadOnly: model?.styleCompatibility.readOnly,
+    textStyleCompatibility: model?.styleCompatibility,
+    textCanConvert: Boolean(model?.styleCompatibility.convertible),
+    textConvertLosesAnimation: Boolean(
+      model?.styleCompatibility.hasAnimation || model?.styleCompatibility.hasScript,
+    ),
+    textSourceIssues: model?.issues,
   };
   const aliasController = {
     ...controller,
@@ -175,8 +264,9 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
     onEndTextStyle: controller.onEndHtmlSubtitleStyle,
     onCancelTextStyle: controller.onCancelHtmlSubtitleStyle,
     onApplyTextToAll: controller.onApplyHtmlSubtitleToAll,
+    onConvertText: controller.onConvertHtmlSubtitle,
   };
-  const blocked = !state.ready || state.conflicted || state.htmlSubtitleStatus !== 'ready';
+  const blocked = !state.ready || state.conflicted || !describeSubtitleEditing(state).canEditHtml;
   const close = () => {
     if (controller.onCloseHtmlSubtitles() !== false)
       root.current
@@ -192,7 +282,12 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
       maximum={300}
       setWidth={setWidth}
       leading={
-        <button type="button" className="cv-clip-rail-tab" onClick={() => setPanel('style')}>
+        <button
+          ref={styleTab}
+          type="button"
+          className="cv-clip-rail-tab"
+          onClick={() => changePanel('style')}
+        >
           样式
         </button>
       }
@@ -207,7 +302,11 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
         />
         <button
           type="button"
-          disabled={blocked}
+          disabled={
+            blocked ||
+            (view.layers.length > 0 &&
+              view.layers.every((layer) => layer.model.styleCompatibility?.readOnly))
+          }
           onClick={() => controller.onAddHtmlSubtitle({ force: true })}
         >
           <Plus size={14} />
@@ -222,6 +321,17 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
             重试读取字幕
           </button>
         </div>
+      )}
+      {view.layers.flatMap((layer) =>
+        (layer.model.issues || []).map((issue, index) => (
+          <p
+            role="status"
+            className="cv-clip-subtitle-note"
+            key={`${layer.key}:${issue.code}:${index}`}
+          >
+            {issue.detail}
+          </p>
+        )),
       )}
       {state.htmlSubtitleTrackChoice && (
         <div role="group" aria-label="选择字幕轨道">
@@ -240,6 +350,21 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
               字幕轨 {index + 1}
             </button>
           ))}
+          {state.htmlSubtitleTrackChoice.tracks.length < 4 && (
+            <button
+              type="button"
+              onClick={() =>
+                controller.onAddHtmlSubtitle({
+                  ...state.htmlSubtitleTrackChoice,
+                  trackIndex: Math.max(...state.htmlSubtitleTrackChoice.tracks) + 1,
+                  createTrack: true,
+                  force: true,
+                })
+              }
+            >
+              新建字幕轨道
+            </button>
+          )}
         </div>
       )}
       {view.blocks
@@ -267,7 +392,7 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
             <div className="cv-clip-subtitle-row-actions">
               <button
                 type="button"
-                disabled={blocked}
+                disabled={blocked || block.readOnly}
                 aria-label={`在字幕 ${block.cueId} 后插入`}
                 onClick={() => controller.onAddHtmlSubtitle({ ...block.identity, force: true })}
               >
@@ -275,7 +400,7 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
               </button>
               <button
                 type="button"
-                disabled={blocked}
+                disabled={blocked || block.readOnly}
                 aria-label={`删除字幕 ${block.cueId}`}
                 onClick={() => controller.onDeleteHtmlSubtitle(block.identity)}
               >
@@ -295,27 +420,29 @@ export default function HtmlSubtitleWorkspace({ state, controller, children, vie
       className={`cv-clip-transition-workspace cv-clip-html-subtitle-workspace${open ? ' is-open' : ''}`}
     >
       <div className="cv-clip-transition-main">
-        {panel === 'style' ? (
-          <ClipTextWorkspace
-            state={aliasState}
-            controller={aliasController}
-            modelOverride={model}
-            label="字幕"
-            variant="subtitle"
-            toolbarTestId="clip-toolbar-subtitle"
-            fieldOwnerKey={JSON.stringify(state.selectedHtmlSubtitle)}
-            onPresetsOpenChange={setPresetsOpen}
-            styleHeaderAction={
-              <button type="button" className="cv-clip-rail-tab" onClick={() => setPanel('list')}>
-                字幕
-              </button>
-            }
-          >
-            {children}
-          </ClipTextWorkspace>
-        ) : (
-          children
-        )}
+        <ClipTextWorkspace
+          state={aliasState}
+          controller={aliasController}
+          modelOverride={model}
+          label="字幕"
+          variant="subtitle"
+          fontSource={fontSource}
+          toolbarTestId="clip-toolbar-subtitle"
+          fieldOwnerKey={JSON.stringify(state.selectedHtmlSubtitle)}
+          onPresetsOpenChange={setPresetsOpen}
+          styleHeaderAction={
+            <button
+              ref={listTab}
+              type="button"
+              className="cv-clip-rail-tab"
+              onClick={() => changePanel('list')}
+            >
+              字幕
+            </button>
+          }
+        >
+          {children}
+        </ClipTextWorkspace>
       </div>
       {open && !presetsOpen && panel === 'list' && listPanel}
     </div>

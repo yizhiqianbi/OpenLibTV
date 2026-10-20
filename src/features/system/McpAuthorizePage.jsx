@@ -116,9 +116,14 @@ function McpAuthorize({ login, user, asset, toast }) {
         ) : (
           <>
             {status === 'error' && (
-              <p className="mcp-status" role="alert">
-                授权未完成，请重试。如果仍然失败，请回到客户端重新发起连接。
-              </p>
+              <>
+                <p className="mcp-status" role="alert">
+                  授权未完成，请重试。如果仍然失败，请回到客户端重新发起连接。
+                </p>
+                <button className="mcp-allowButton" onClick={decide}>
+                  重试
+                </button>
+              </>
             )}
             <div className="mcp-actions">
               <button className="mcp-denyButton" onClick={decide}>

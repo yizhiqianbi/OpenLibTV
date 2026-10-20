@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Camera, Focus, LocateFixed, Minimize2 } from 'lucide-react';
+import { Camera, Focus, LocateFixed, Minimize2, PictureInPicture2 } from 'lucide-react';
 import { MONITOR_ORBIT, MONITOR_TOP } from '../monitor/model.js';
 
 function MonitorCard({
@@ -57,6 +57,8 @@ export function StudioMonitor({
   viewMode,
   selectedCameraId,
   onSelectCamera,
+  onOpenPip,
+  pipCameraId,
   disabled,
 }) {
   const top = viewMode === 'top';
@@ -120,6 +122,18 @@ export function StudioMonitor({
                       onDoubleClick={(event) => event.stopPropagation()}
                     >
                       <LocateFixed size={16} />
+                    </button>
+                    <button
+                      type="button"
+                      className="cv-studio-monitor-locate"
+                      disabled={disabled}
+                      title={pipCameraId === camera.id ? '关闭浮动预览' : '浮动预览'}
+                      aria-label={pipCameraId === camera.id ? '关闭浮动预览' : '浮动预览'}
+                      aria-pressed={pipCameraId === camera.id}
+                      onClick={() => onOpenPip?.(pipCameraId === camera.id ? null : camera.id)}
+                      onDoubleClick={(event) => event.stopPropagation()}
+                    >
+                      <PictureInPicture2 size={16} />
                     </button>
                     <button
                       type="button"

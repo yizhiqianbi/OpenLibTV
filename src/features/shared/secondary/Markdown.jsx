@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { parseFrontmatter } from './frontmatter.js';
 
 function safeUrl(url) {
   return /^(?:https?:\/\/|\/|#|mailto:)/i.test(url || '') ? url : '#';
@@ -38,8 +39,9 @@ function inlineMarkdown(text, asset) {
 }
 
 function Markdown({ content = '', asset }) {
+  const parsed = useMemo(() => parseFrontmatter(content), [content]);
   const blocks = useMemo(() => {
-    const lines = content.replace(/\r\n/g, '\n').split('\n'),
+    const lines = parsed.body.replace(/\r\n/g, '\n').split('\n'),
       out = [];
     let section = 0;
     for (let i = 0; i < lines.length; i++) {
@@ -180,8 +182,29 @@ function Markdown({ content = '', asset }) {
       );
     }
     return out;
-  }, [content, asset]);
-  return <div className="secondary-markdown markdown-content">{blocks}</div>;
+  }, [parsed.body, asset]);
+  return (
+    <div className="secondary-markdown markdown-content">
+      {parsed.data.length > 0 && (
+        <table className="markdown-frontmatter">
+          <thead>
+            <tr>
+              <th colSpan="2">Metadata</th>
+            </tr>
+          </thead>
+          <tbody>
+            {parsed.data.map(({ key, value }) => (
+              <tr key={key}>
+                <th scope="row">{key}</th>
+                <td>{value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {blocks}
+    </div>
+  );
 }
 
 export default Markdown;

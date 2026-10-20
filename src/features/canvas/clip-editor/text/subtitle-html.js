@@ -40,7 +40,7 @@ export async function addHtmlSubtitleCue(html, options) {
   const plan = planNewHtmlSubtitleCue({
     ...options,
     existing: model.cues,
-    maxEnd: Math.min(options.maxEnd ?? Infinity, model.duration),
+    maxEnd: Math.min(options.maxEnd ?? Infinity, model.duration > 0 ? model.duration : Infinity),
   });
   if (!plan)
     return {

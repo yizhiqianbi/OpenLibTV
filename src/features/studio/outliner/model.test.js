@@ -3,11 +3,13 @@ import { describe, expect, it } from 'vitest';
 import {
   patchStudioRow,
   revealStudioRow,
+  studioNodeCopyId,
   studioNameError,
   studioOutlinerRows,
   toggleStudioSubtree,
   visibleStudioRows,
 } from './model.js';
+import { createStudioNodeCopy } from '../model.js';
 
 export const treeObjects = [
   {
@@ -102,5 +104,30 @@ describe('source Studio outliner contracts', () => {
       expect(studioNameError(rows, 'model:node:0', name)).not.toBe('');
     expect(studioNameError(rows, 'model:node:0', ' Unique part ')).toBe('');
     expect(studioNameError([{ id: 'id', name: 'original.glb' }], 'id', 'original.glb')).toBe('');
+  });
+
+  it('persists a copied imported subtree as a separate stable outliner branch', () => {
+    const source = studioOutlinerRows(treeObjects).find((row) => row.id === 'model:node:0');
+    const copy = createStudioNodeCopy(source, () => 'copy-1');
+    const objects = [{ ...treeObjects[0], nodeCopies: [copy] }];
+    const rows = studioOutlinerRows(objects);
+    expect(rows.map((row) => row.id)).toEqual([
+      'model',
+      'model:node:0',
+      'model:node:0.0',
+      'model:node:1',
+      studioNodeCopyId('model', 'copy-1'),
+      studioNodeCopyId('model', 'copy-1', [0]),
+    ]);
+    expect(rows.at(-2)).toMatchObject({
+      name: 'Branch 副本',
+      subtreeCopy: true,
+      parentId: 'model',
+    });
+    const renamed = patchStudioRow(objects, studioNodeCopyId('model', 'copy-1'), {
+      name: '复制分支',
+    });
+    expect(studioOutlinerRows(renamed).at(-2).name).toBe('复制分支');
+    expect(treeObjects[0].subtree[0].name).toBe('Branch');
   });
 });

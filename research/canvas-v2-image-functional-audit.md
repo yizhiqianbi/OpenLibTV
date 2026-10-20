@@ -42,4 +42,4 @@
 
 本批重新开独立 React 计数页45，原生 AX button click 后仍“原生点击计数0”、焦点 AXWebArea，已关闭临时页，保留用户 Vite5173服务。当前原生输入通道未实际到达页面，因此本批桌面/窄屏窗口操作、键盘默认激活、像素布局和手感尚未验收，无新版截图。组件 jsdom 及 mock390几何只能证明对应工程行为，不替代 native 或真实手机/Safari。
 
-共享 Selector 的 disabled reason 当前为 native title，源为专属右侧 Tooltip；公开 image20 当前无 disable 项，仍记录为分支视觉差距。源码包含关闭后 fade-down200ms，本机仅提供进入动画；退出渐隐、完整 source 脚本卡片/任务 renderer、显式 reference/mark/focus target、toolbox/角色工具栏和完整 run/stop、真实生成/审核/费用/协作/运营写服务、真机/Safari及大图性能继续未完成。无需登录注册或小号，当前整体复刻目标仍未完成。
+共享 Selector 的 disabled reason 当前为 native title，源为专属右侧 Tooltip；公开 image20 当前无 disable 项，仍记录为分支视觉差距。源码包含关闭后 fade-down200ms，本机仅提供进入动画；退出渐隐、完整 source 脚本卡片/任务 renderer、toolbox/角色工具栏和完整 run/stop、真实生成/审核/费用/协作/运营写服务、大图性能继续未完成。显式 reference/mark/focus target 已接入本地 mode owner 与 Canvas 交互，见 [显式 target 专项](../artifacts/canvas-explicit-target-verification.json)。触摸/Safari按当前用户范围不计入完成度；无需登录注册或小号，当前整体复刻目标仍未完成。

@@ -13,6 +13,8 @@ export function createClipSubtitleControls({
   acceptEdit,
   seek,
   notify,
+  isVttEditingBlocked = () => false,
+  commitVttEdit = null,
 }) {
   const planKey = (timeline) => {
     try {
@@ -26,7 +28,8 @@ export function createClipSubtitleControls({
     return current(session) &&
       session.ready &&
       !session.conflicted &&
-      session.subtitleStatus === 'ready'
+      session.subtitleStatus === 'ready' &&
+      !isVttEditingBlocked()
       ? session
       : null;
   };
@@ -39,6 +42,8 @@ export function createClipSubtitleControls({
     publish({
       ...session,
       subtitlePanelOpen: true,
+      htmlSubtitlePanelOpen: false,
+      selectedHtmlSubtitle: null,
       transitionPanelOpen: false,
       textPanelOpen: false,
       selectedTextCueId: null,
@@ -49,12 +54,20 @@ export function createClipSubtitleControls({
     });
     return true;
   };
-  const edit = (options) => {
+  const edit = (options, historyTimeline) => {
     const session = writable();
     if (!session) return false;
     const base = effectiveSubtitleTimeline(session);
     const result = prepareSubtitleEdit(base, options);
-    if (result.timeline !== base && !acceptEdit(result)) return false;
+    if (
+      (result.timeline !== base || historyTimeline) &&
+      !(commitVttEdit || acceptEdit)(
+        { ...result, ...(historyTimeline ? { historyTimeline } : {}) },
+        result.selectedSubtitleId ?? session.selectedSubtitleId,
+      )
+    )
+      return false;
+    if (isVttEditingBlocked()) return true;
     publish({
       ...getSession(),
       selectedSubtitleId: result.selectedSubtitleId ?? session.selectedSubtitleId,
@@ -65,7 +78,14 @@ export function createClipSubtitleControls({
     const session = getSession();
     const draft = session?.subtitleTextDraft;
     if (!draft) return true;
-    if (!edit({ kind: 'text', cueId: draft.cueId, text: draft.text })) return false;
+    const before = draft.beforeTimeline?.subtitles?.cues.find((cue) => cue.id === draft.cueId);
+    if (
+      !edit(
+        { kind: 'text', cueId: draft.cueId, text: draft.text },
+        before && before.text !== draft.text ? draft.beforeTimeline : undefined,
+      )
+    )
+      return false;
     publish({ ...getSession(), subtitleTextDraft: null });
     return true;
   };
@@ -105,10 +125,12 @@ export function createClipSubtitleControls({
       },
       onAddSubtitle: ({ afterId, force = false } = {}) => {
         const session = getSession();
-        if (!current(session)) return false;
+        if (!current(session) || isVttEditingBlocked()) return false;
         publish({
           ...session,
           subtitlePanelOpen: true,
+          htmlSubtitlePanelOpen: false,
+          selectedHtmlSubtitle: null,
           transitionPanelOpen: false,
           textPanelOpen: false,
           selectedTextCueId: null,
@@ -136,7 +158,7 @@ export function createClipSubtitleControls({
           return false;
         }
         if (!edit({ kind: 'add', afterId })) return false;
-        return select(getSession().selectedSubtitleId);
+        return isVttEditingBlocked() ? true : select(getSession().selectedSubtitleId);
       },
       onSelectSubtitle: select,
       onSeekSubtitle: (cueId) => {
@@ -155,7 +177,16 @@ export function createClipSubtitleControls({
           !effectiveSubtitleTimeline(session).subtitles?.cues.some((cue) => cue.id === cueId)
         )
           return false;
-        publish({ ...session, subtitleTextDraft: { cueId, text } });
+        publish({
+          ...session,
+          subtitleTextDraft: {
+            cueId,
+            text,
+            beforeTimeline:
+              session.subtitleTextDraft?.beforeTimeline ||
+              structuredClone(effectiveSubtitleTimeline(session)),
+          },
+        });
         return true;
       },
       onCommitSubtitleText: flushDraft,
@@ -163,7 +194,7 @@ export function createClipSubtitleControls({
         edit({ ...options, cueId: options.cueId ?? getSession()?.selectedSubtitleId }),
       onCloseSubtitlePanel: () => {
         if (!flushDraft() || !current(getSession())) return false;
-        publish({ ...getSession(), subtitlePanelOpen: false });
+        publish({ ...getSession(), subtitlePanelOpen: false, htmlSubtitlePanelOpen: false });
         return true;
       },
     },

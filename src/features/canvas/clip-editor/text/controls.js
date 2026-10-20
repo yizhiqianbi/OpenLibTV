@@ -13,6 +13,7 @@ import {
 } from './document-model.js';
 import { readTextMotion } from './motion-document.js';
 import { createHtmlSubtitleTools } from './html-subtitle-tools.js';
+import { createSubtitleMigrationControls } from './subtitle-migration-controls.js';
 
 function createOrdinaryTextTools({
   getSession,
@@ -206,7 +207,7 @@ function createOrdinaryTextTools({
         const session = getSession();
         if (current(session)) publish({ ...session, textRetry: (session.textRetry || 0) + 1 });
       },
-      onAddText: async ({ trackIndex, force = false } = {}) => {
+      onAddText: async ({ trackIndex, force = false, createTrack = false } = {}) => {
         let session = getSession();
         if (!current(session)) return false;
         publish({
@@ -235,14 +236,25 @@ function createOrdinaryTextTools({
                 endTime: cue.start + cue.duration,
               })),
           })) || [];
-        const entry = planTimedTextEntry({
-          kind: 'text',
-          currentTime: session.timeline.currentTime,
-          rows,
-          ...(trackIndex != null
-            ? { targetRowId: `overlay:${model?.compositionId}:${trackIndex}` }
-            : {}),
-        });
+        const nextTrack = model?.trackIndexes.length ? Math.max(...model.trackIndexes) + 1 : 0;
+        if (createTrack && (!Number.isInteger(trackIndex) || trackIndex !== nextTrack)) {
+          notify('新建文本轨道顺序无效');
+          return false;
+        }
+        if (createTrack && model?.trackIndexes.length >= 8) {
+          notify('文本轨道已达到上限');
+          return false;
+        }
+        const entry = createTrack
+          ? { type: 'insert-cue', rowId: `overlay:${model?.compositionId}:${trackIndex}` }
+          : planTimedTextEntry({
+              kind: 'text',
+              currentTime: session.timeline.currentTime,
+              rows,
+              ...(trackIndex != null
+                ? { targetRowId: `overlay:${model?.compositionId}:${trackIndex}` }
+                : {}),
+            });
         if (entry.type === 'request-track-choice') {
           publish({ ...session, textTrackChoice: model.trackIndexes });
           return false;
@@ -415,15 +427,28 @@ function createOrdinaryTextTools({
 export function createClipTextTools(options) {
   const text = createOrdinaryTextTools(options);
   const subtitles = createHtmlSubtitleTools(options);
+  const migration = createSubtitleMigrationControls(options);
   return {
     ...text,
     projectDraft: (session) =>
       subtitles.projectDraft({ ...session, timeline: text.projectDraft(session) }),
     flushDraft: () => text.flushDraft() && subtitles.flushDraft(),
-    normalizeUI: (session) => subtitles.normalizeUI(text.normalizeUI(session)),
+    normalizeUI: (session) =>
+      subtitles.normalizeUI(text.normalizeUI(migration.normalizeUI(session))),
+    commitVttEdit: migration.commitVttEdit,
     prepareSubtitleEdit: subtitles.prepareEdit,
     transformTimelineEdit: subtitles.transformTimelineEdit,
     isPlaybackBlocked: subtitles.isPlaybackBlocked,
-    controls: { ...text.controls, ...subtitles.controls },
+    isVttEditingBlocked: subtitles.isVttEditingBlocked,
+    controls: {
+      ...text.controls,
+      ...subtitles.controls,
+      ...migration.controls,
+      onTextLoaded: (...args) => {
+        const result = text.controls.onTextLoaded(...args);
+        migration.resume();
+        return result;
+      },
+    },
   };
 }

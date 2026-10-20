@@ -160,7 +160,7 @@ export function planTimedTextEntry({ kind, currentTime, rows, activeRowId, targe
 
 export function editSubtitleTrack(
   timeline,
-  { kind, cueId, text, style, afterId, mode, delta = 0 } = {},
+  { kind, cueId, text, style, afterId, mode, delta = 0, clipId, visible } = {},
 ) {
   const track = normalizeSubtitleTrack(timeline.subtitles);
   let next = track,
@@ -188,7 +188,26 @@ export function editSubtitleTrack(
       ].sort((a, b) => a.startTime - b.startTime),
     };
   } else if (kind === 'visible') next = { ...track, visible: !track.visible };
-  else if (kind === 'style' && cue) {
+  else if (kind === 'clip-visible' && typeof clipId === 'string') {
+    const scoped = track.cues.some((entry) => entry.clipId === clipId);
+    if (scoped)
+      next = {
+        ...track,
+        cues: track.cues.map((entry) => {
+          if (entry.clipId !== clipId) return entry;
+          if (visible === false) return { ...entry, hidden: true };
+          const { hidden: _hidden, ...rest } = entry;
+          return rest;
+        }),
+      };
+  } else if (kind === 'clip-delete' && typeof clipId === 'string') {
+    const cues = track.cues.filter((entry) => entry.clipId !== clipId);
+    if (cues.length !== track.cues.length) {
+      next = { ...track, cues, ...(!cues.length ? { userCleared: true } : {}) };
+      if (selectedId && !cues.some((entry) => entry.id === selectedId))
+        selectedId = cues[0]?.id ?? null;
+    }
+  } else if (kind === 'style' && cue) {
     const merged = { ...track.defaultStyle, ...style };
     delete merged.presetId;
     if (style.fontSizePx != null) delete merged.fontSizeVh;

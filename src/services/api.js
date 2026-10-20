@@ -4,6 +4,7 @@ export {
   apiBase,
   serverConnected,
   request,
+  requestStream,
   ServiceError,
   createApiClient,
 } from './api-client.ts';

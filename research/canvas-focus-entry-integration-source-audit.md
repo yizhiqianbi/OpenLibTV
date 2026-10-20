@@ -1,5 +1,7 @@
 # IMAGE focus 入口与当前生成器接线审计
 
+> 当前状态修正（2026-10-18）：generic inline 与 ScriptV2 均通过 `CanvasViewport.scriptEligible` 接收显式 target OR 资格；mode owner、遮罩和 pointer 门控已接入。旧段落中的“没有显式 focus target”属于历史快照，当前专项见 `artifacts/canvas-explicit-target-verification.json`。
+
 2026-10-12。本轮只静态读取归档公开客户端、当前本机实现及真实 `public/data/models.json`，不运行原站 JS、不操作浏览器、不读写本地工作区、不修改生产或测试。本文补充 [完整 focus / mark 源协议](./canvas-media-focus-mark-source-audit.md)，只讨论 IMAGE focus 的入口、schema、确认后卡片、删除和模型降级。建议不等于已实现或原生验收通过。
 
 所有 source 偏移为解码后 0-based 字符。原任务、上传、认证、费用与识别服务仍未接入。

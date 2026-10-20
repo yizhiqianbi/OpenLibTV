@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Trash2, SlidersHorizontal } from 'lucide-react';
 import { registerDialogChildDismissal } from '../../../../services/dialog-stack.ts';
+import Modal from '../../../../components/Modal.jsx';
 import {
   EMPTY_TEXT_PRESET_SOURCE,
   readTextPresetCatalogue,
@@ -17,6 +18,13 @@ import TextNumericSetting from './TextNumericSetting.jsx';
 import TextColorSetting from './TextColorSetting.jsx';
 import SubtitleHighlightSettings from './SubtitleHighlightSettings.jsx';
 import { readHtmlSubtitleStyle } from './subtitle-style-document.js';
+import { subtitleFieldAllowed } from './subtitle-style-compatibility.js';
+import { moveTrackOrder } from '../domain/track-order-model.js';
+import {
+  EMPTY_TEXT_FONT_SOURCE,
+  loadTextFontResources,
+  readTextFontCatalogue,
+} from '../../../../services/clip-text-fonts.js';
 const subtitleSections = ['布局', '文字', '背景', '高亮'];
 
 export function useTextModel(state, override) {
@@ -143,6 +151,7 @@ export default function ClipTextWorkspace({
   onPresetsOpenChange,
   variant = 'text',
   styleHeaderAction,
+  fontSource = EMPTY_TEXT_FONT_SOURCE,
 }) {
   const root = useRef(null),
     closeRef = useRef(null),
@@ -150,7 +159,14 @@ export default function ClipTextWorkspace({
     deleteTrigger = useRef(null);
   const [width, setWidth] = useState(300),
     [libraryWidth, setLibraryWidth] = useState(372),
-    [presetsOpen, setPresetsOpenState] = useState(false);
+    [presetsOpen, setPresetsOpenState] = useState(false),
+    [fontCatalogue, setFontCatalogue] = useState({ fonts: [] }),
+    [fontDirectoryState, setFontDirectoryState] = useState('idle'),
+    [fontDirectoryError, setFontDirectoryError] = useState(''),
+    [fontDirectoryRetry, setFontDirectoryRetry] = useState(0),
+    [fontResourceState, setFontResourceState] = useState('idle'),
+    [fontResourceError, setFontResourceError] = useState('');
+  const [convertOpen, setConvertOpen] = useState(false);
   const setPresetsOpen = (value) => {
     setPresetsOpenState(value);
     onPresetsOpenChange?.(value);
@@ -158,12 +174,87 @@ export default function ClipTextWorkspace({
   const model = useTextModel(state, modelOverride),
     selected = model?.ok && model.cues.find((cue) => cue.cueId === state.selectedTextCueId);
   const open = state.textPanelOpen && state.previewExpanded;
+  useEffect(() => {
+    if (!open && presetsOpen) {
+      setPresetsOpenState(false);
+      onPresetsOpenChange?.(false);
+    }
+  }, [open, presetsOpen, onPresetsOpenChange]);
+  useEffect(() => {
+    if (!open) return undefined;
+    const abort = new AbortController();
+    let live = true;
+    setFontDirectoryState('loading');
+    setFontDirectoryError('');
+    Promise.resolve()
+      .then(() => fontSource.load({ signal: abort.signal }))
+      .then((result) => {
+        if (!live) return;
+        setFontCatalogue(readTextFontCatalogue(result));
+        setFontDirectoryState('ready');
+      })
+      .catch((caught) => {
+        if (!live || caught.name === 'AbortError') return;
+        setFontDirectoryState('error');
+        setFontDirectoryError(caught.message || '字体目录加载失败');
+      });
+    return () => {
+      live = false;
+      abort.abort();
+    };
+  }, [open, fontSource, fontDirectoryRetry]);
+  useEffect(() => {
+    const remote = fontCatalogue.fonts.filter((font) => font.src);
+    if (!remote.length) {
+      setFontResourceState('ready');
+      setFontResourceError('');
+      return undefined;
+    }
+    const abort = new AbortController();
+    let live = true;
+    setFontResourceState('loading');
+    setFontResourceError('');
+    let faces = [];
+    loadTextFontResources(remote, { signal: abort.signal })
+      .then((result) => {
+        if (!live) return;
+        faces = result.faces;
+        setFontResourceState(result.status);
+        setFontResourceError(
+          result.failed?.length
+            ? `部分字体资源加载失败：${result.failed.map((item) => item.id).join('、')}`
+            : result.status === 'unsupported'
+              ? '当前浏览器不支持字体资源加载，已保留 fallback 字体'
+              : '',
+        );
+      })
+      .catch((caught) => {
+        if (live && caught.name !== 'AbortError') {
+          setFontResourceState('error');
+          setFontResourceError(caught.message || '字体资源加载失败');
+        }
+      });
+    return () => {
+      live = false;
+      abort.abort();
+      for (const face of faces) globalThis.document?.fonts?.delete?.(face);
+    };
+  }, [fontCatalogue.fonts]);
+  const fontOptions = [
+    ...SUBTITLE_FONTS.map((family) => ({ id: `fallback:${family}`, name: family, family })),
+    ...fontCatalogue.fonts,
+  ].filter((font, index, all) => all.findIndex((item) => item.family === font.family) === index);
   const blocked =
     !state.ready ||
     state.conflicted ||
     state.textStatus !== 'ready' ||
     state.textPending ||
+    state.textReadOnly ||
     Boolean(state.error || state.mediaError);
+  const fieldBlocked = (field) =>
+    blocked ||
+    !selected ||
+    (variant === 'subtitle' && !subtitleFieldAllowed(state.textStyleCompatibility, field));
   const style = selected
     ? (variant === 'subtitle' ? readHtmlSubtitleStyle : readTextStyle)(
         model,
@@ -204,7 +295,7 @@ export default function ClipTextWorkspace({
         min={min}
         max={max}
         step={step}
-        disabled={blocked || !selected}
+        disabled={fieldBlocked(key)}
         value={draft?.fields?.[key] ?? style[key]}
         owner={fieldOwner}
         suffix={key.endsWith('Pct') ? '%' : key.endsWith('Px') ? 'px' : undefined}
@@ -221,7 +312,7 @@ export default function ClipTextWorkspace({
       ariaLabel={`${label}${fieldLabel}`}
       value={style[key]}
       showOpacity={key !== 'backgroundColor'}
-      disabled={blocked || !selected}
+      disabled={fieldBlocked(key)}
       owner={fieldOwner}
       onInteractionStart={(options) => controller.onBeginTextStyle?.({ ...options, field: key })}
       onValueChange={controller.onPreviewTextStyle}
@@ -299,9 +390,47 @@ export default function ClipTextWorkspace({
                   </button>
                 </div>
               )}
+              {fontDirectoryError && (
+                <div role="alert">
+                  {fontDirectoryError}
+                  <button type="button" onClick={() => setFontDirectoryRetry((value) => value + 1)}>
+                    重试字体目录
+                  </button>
+                </div>
+              )}
+              {fontDirectoryState === 'loading' && <p role="status">字体目录加载中…</p>}
+              {fontResourceState === 'loading' && <p role="status">字体资源加载中…</p>}
+              {fontResourceError && (
+                <p
+                  role={
+                    fontResourceState === 'partial' || fontResourceState === 'error'
+                      ? 'alert'
+                      : 'status'
+                  }
+                >
+                  {fontResourceError}
+                </p>
+              )}
               {state.textScriptUnsupported && (
                 <p role="status">自定义脚本动画尚未支持，原HTML已保留。</p>
               )}
+              {state.textSourceIssues?.map((issue, index) => (
+                <p role="status" key={`${issue.code}:${index}`}>
+                  {issue.detail}
+                </p>
+              ))}
+              {state.textReadOnly ? (
+                <>
+                  <p role="status">当前字幕样式无法注入，已保留原内容并以只读方式预览。</p>
+                  {variant === 'subtitle' && state.textCanConvert && (
+                    <button type="button" onClick={() => setConvertOpen(true)}>
+                      转为可编辑字幕
+                    </button>
+                  )}
+                </>
+              ) : state.textStyleCompatibility?.level === 'L1' ? (
+                <p role="status">部分字幕样式无法注入，对应属性暂不可编辑。</p>
+              ) : null}
               {!!state.textTrackChoice?.length && (
                 <div role="group" aria-label="选择文本轨道">
                   {state.textTrackChoice.map((index) => (
@@ -313,6 +442,20 @@ export default function ClipTextWorkspace({
                       文本轨 {index + 1}
                     </button>
                   ))}
+                  {state.textTrackChoice.length < 8 && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        controller.onAddText({
+                          trackIndex: Math.max(...state.textTrackChoice) + 1,
+                          createTrack: true,
+                          force: true,
+                        })
+                      }
+                    >
+                      新建文本轨道
+                    </button>
+                  )}
                 </div>
               )}
               <textarea
@@ -348,24 +491,36 @@ export default function ClipTextWorkspace({
                     <span>字体</span>
                     <select
                       aria-label={`${label}字体`}
-                      disabled={blocked || !selected}
+                      disabled={fieldBlocked('fontFamily')}
                       value={style.fontFamily || ''}
                       onChange={(event) =>
                         controller.onEditText({ fields: { fontFamily: event.target.value } })
                       }
                     >
-                      {[...new Set([...SUBTITLE_FONTS, style.fontFamily].filter(Boolean))].map(
-                        (name) => (
-                          <option key={name}>{name}</option>
-                        ),
-                      )}
+                      {[
+                        ...fontOptions,
+                        ...(style.fontFamily &&
+                        !fontOptions.some((font) => font.family === style.fontFamily)
+                          ? [
+                              {
+                                id: `current:${style.fontFamily}`,
+                                name: style.fontFamily,
+                                family: style.fontFamily,
+                              },
+                            ]
+                          : []),
+                      ].map((font) => (
+                        <option key={font.id} value={font.family}>
+                          {font.name}
+                        </option>
+                      ))}
                     </select>
                   </label>
                   <label className="cv-clip-subtitle-setting">
                     <span>字重</span>
                     <select
                       aria-label={`${label}字重`}
-                      disabled={blocked || !selected}
+                      disabled={fieldBlocked('fontWeight')}
                       value={style.fontWeight ?? 600}
                       onChange={(event) =>
                         controller.onEditText({
@@ -444,12 +599,50 @@ export default function ClipTextWorkspace({
           </ClipEditorSideRail>
         </>
       )}
+      {convertOpen && (
+        <Modal title="转为可编辑字幕" onClose={() => setConvertOpen(false)}>
+          <div className="cv-clip-text-convert-confirm">
+            <h2>转为可编辑字幕</h2>
+            <p>
+              当前字幕包含无法直接改写的样式{state.textConvertLosesAnimation ? '或脚本动画' : ''}。
+              转换会保留正文、时间和布局，可能移除动画效果，并写入一次本地撤销历史。
+            </p>
+            <div className="cv-clip-text-convert-actions">
+              <button type="button" onClick={() => setConvertOpen(false)}>
+                取消
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  if (controller.onConvertText?.()) setConvertOpen(false);
+                }}
+              >
+                确认转为可编辑
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }
 export function ClipTextTimelineRows({ state, controller }) {
   const model = useTextModel(state);
   if (!model?.ok) return null;
+  const trackOrder = model.trackIndexes;
+  const moveTrack = (trackIndex, direction) => {
+    const position = trackOrder.indexOf(trackIndex);
+    const target = direction === 'up' ? position - 1 : position + 1;
+    if (position < 0 || target < 0 || target >= trackOrder.length) return;
+    const order = [...trackOrder];
+    [order[position], order[target]] = [order[target], order[position]];
+    controller.onEditText({ patches: [{ kind: 'reorderTracks', order }] });
+  };
+  const dropTrack = (source, target) => {
+    const order = moveTrackOrder(trackOrder, source, target);
+    if (!order || order.every((value, index) => value === trackOrder[index])) return;
+    controller.onEditText({ patches: [{ kind: 'reorderTracks', order }] });
+  };
   return model.trackIndexes.map((trackIndex) => {
     const cues = model.cues.filter((cue) => cue.trackIndex === trackIndex),
       hidden = cues.every((cue) => cue.trackHidden);
@@ -476,6 +669,10 @@ export function ClipTextTimelineRows({ state, controller }) {
         blocked={
           !state.ready || state.conflicted || state.textStatus !== 'ready' || state.textPending
         }
+        trackIndex={trackIndex}
+        trackOrder={trackOrder}
+        onMoveTrack={moveTrack}
+        onTrackDrop={dropTrack}
         draftSession={state.draftSession}
         onSelectSubtitle={controller.onSelectText}
         onEditSubtitle={() =>

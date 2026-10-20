@@ -43,6 +43,10 @@ describe('source ordinary text appearance and motion', () => {
           lineHeightPct: 175,
           backgroundColor: '#FF0000',
           backgroundOpacityPct: 62.5,
+          paddingTopPx: 5.125,
+          paddingRightPx: 7.25,
+          paddingBottomPx: 9,
+          paddingLeftPx: 11.5,
         },
         {},
         scale,
@@ -54,11 +58,19 @@ describe('source ordinary text appearance and motion', () => {
     expect(cue.element.style.getPropertyValue('--libtvSubtitleFontSize')).toBe('90.25px');
     expect(target.style.borderRadius).toBe('24.25px');
     expect(target.style.backdropFilter).toBe('blur(8.25px)');
+    expect(target.style.paddingTop).toBe('10.25px');
+    expect(target.style.paddingRight).toBe('14.5px');
+    expect(target.style.paddingBottom).toBe('18px');
+    expect(target.style.paddingLeft).toBe('23px');
     expect(readTextStyle(parsed, 'one', { width: 960, height: 540 })).toMatchObject({
       fontSizePx: 45.13,
       letterSpacingPx: -3.12,
       cornerRadiusPx: 12.13,
       backgroundBlurPx: 4.13,
+      paddingTopPx: 5.13,
+      paddingRightPx: 7.25,
+      paddingBottomPx: 9,
+      paddingLeftPx: 11.5,
       backgroundColor: 'rgba(255, 0, 0, 0.625)',
       lineHeightPct: 175,
     });

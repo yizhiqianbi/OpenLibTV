@@ -98,12 +98,50 @@ export function upsertStudioKeyframe(frames, keyframe, time = keyframe.time) {
   ];
 }
 
+/** Update only an existing local keyframe; base object state remains untouched. */
+export function patchStudioKeyframe(frames, { objectId, time, changes, tolerance = 0.04 } = {}) {
+  if (!Array.isArray(frames) || !objectId || !Number.isFinite(time) || !changes) return frames;
+  let changed = false;
+  const next = frames.map((frame) => {
+    if (frame.objectId !== objectId || Math.abs(frame.time - time) >= tolerance) return frame;
+    changed = true;
+    return {
+      ...frame,
+      ...Object.fromEntries(
+        Object.entries(changes).filter(
+          ([property, value]) =>
+            ['position', 'rotation', 'scale'].includes(property) &&
+            Array.isArray(value) &&
+            value.length === 3 &&
+            value.every(Number.isFinite),
+        ),
+      ),
+    };
+  });
+  return changed ? next : frames;
+}
+
 export function duplicateStudioObject(object, makeId = () => createLocalId('studio')) {
   return {
     ...cloneSnapshot(object),
     id: makeId(),
     name: `${object.name} 副本`,
     position: [object.position[0] + 1, ...object.position.slice(1)],
+  };
+}
+
+/** A copied imported subtree keeps the source GLB/path immutable. */
+export function createStudioNodeCopy(row, makeId = () => createLocalId('studio-copy')) {
+  if (!row?.subtree || !Array.isArray(row.path) || !row.path.length) return null;
+  return {
+    id: makeId(),
+    sourcePath: [...row.path],
+    name: `${row.name || '节点'} 副本`,
+    position: [(row.position?.[0] || 0) + 1, row.position?.[1] || 0, row.position?.[2] || 0],
+    rotation: Array.isArray(row.rotation) ? [...row.rotation] : [0, 0, 0],
+    scale: Array.isArray(row.scale) ? [...row.scale] : [1, 1, 1],
+    visible: row.visible !== false,
+    edits: {},
   };
 }
 

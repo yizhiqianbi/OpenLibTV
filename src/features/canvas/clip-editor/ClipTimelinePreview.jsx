@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { LoaderCircle } from 'lucide-react';
 import { useClipTimelinePlayback } from './useClipTimelinePlayback.js';
+import PreviewTransformOverlay from './text/PreviewTransformOverlay.jsx';
 
 /** The host stays mounted while the caller moves its container between portals. */
 const ClipTimelinePreview = forwardRef(function ClipTimelinePreview(
@@ -26,6 +27,11 @@ const ClipTimelinePreview = forwardRef(function ClipTimelinePreview(
     htmlSubtitleLayers,
     onHtmlSubtitlePreviewStatus,
     htmlSubtitleRetryKey,
+    previewSelection,
+    onBeginPreviewEdit,
+    onEditPreview,
+    onEndPreviewEdit,
+    onCancelPreviewEdit,
   },
   ref,
 ) {
@@ -55,6 +61,7 @@ const ClipTimelinePreview = forwardRef(function ClipTimelinePreview(
     htmlSubtitleRetryKey,
   });
   const [showWaiting, setShowWaiting] = useState(false);
+  const previewRoot = useRef(null);
   useEffect(() => {
     if (!playback.state.preparing) {
       setShowWaiting(false);
@@ -70,6 +77,7 @@ const ClipTimelinePreview = forwardRef(function ClipTimelinePreview(
   );
   return (
     <div
+      ref={previewRoot}
       className="cv-clip-preview"
       data-preview-ready={playback.state.ready}
       data-preview-expanded={previewExpanded}
@@ -77,6 +85,17 @@ const ClipTimelinePreview = forwardRef(function ClipTimelinePreview(
       aria-label="智能剪辑预览"
     >
       <div ref={hostRef} className="cv-clip-preview-stage" />
+      {playback.state.ready && (
+        <PreviewTransformOverlay
+          rootRef={previewRoot}
+          playback={playback}
+          selection={previewSelection}
+          onBeginEdit={onBeginPreviewEdit}
+          onEditPreview={onEditPreview}
+          onEndEdit={onEndPreviewEdit}
+          onCancelEdit={onCancelPreviewEdit}
+        />
+      )}
       {(playback.state.preparing || playback.state.error) && (
         <div
           className="cv-clip-preview-preparation"

@@ -1,28 +1,11 @@
-export const TEXT_HTML_ATTRIBUTES = Object.freeze({
-  contract: 'data-libtv-contract',
-  composition: 'data-composition-id',
-  width: 'data-width',
-  height: 'data-height',
-  timeBase: 'data-time-base',
-  start: 'data-start',
-  duration: 'data-duration',
-  cue: 'data-libtv-cue-id',
-  track: 'data-track-index',
-  z: 'data-z',
-  role: 'data-role',
-  mode: 'data-text-mode',
-  text: 'data-libtv-text',
-  wordStart: 'data-word-start',
-  wordDuration: 'data-word-duration',
-  hidden: 'data-libtv-hidden',
-  trackHidden: 'data-libtv-track-hidden',
-  clip: 'data-libtv-clip',
-  libraryCue: 'data-libtv-library-cue',
-  clipMeta: 'data-libtv-clip-meta',
-  materialized: 'data-libtv-materialized',
-  subtitlesHidden: 'data-libtv-subtitles-hidden',
-  sourceAssetKey: 'data-source-asset-key',
-});
+import { TEXT_HTML_ATTRIBUTES, canonicalTrack, outerTimedElements } from './timed-text-dom.js';
+import { readSourceSubtitleHtml } from './subtitle-source-document.js';
+export {
+  TEXT_HTML_ATTRIBUTES,
+  canonicalTrack,
+  outerTimedElements,
+  serializeTextHtml,
+} from './timed-text-dom.js';
 const A = TEXT_HTML_ATTRIBUTES;
 const number = (element, key) => {
   const raw = element.getAttribute(key);
@@ -30,22 +13,12 @@ const number = (element, key) => {
   const value = Number(raw);
   return Number.isFinite(value) ? value : null;
 };
-export const canonicalTrack = (raw) =>
-  /^(0|[1-9]\d*)$/.test(raw || '') && Number.isSafeInteger(Number(raw)) ? Number(raw) : null;
-export function outerTimedElements(root) {
-  return [...root.querySelectorAll(`[${A.start}][${A.duration}]`)].filter((element) => {
-    for (
-      let parent = element.parentElement;
-      parent && parent !== root;
-      parent = parent.parentElement
-    )
-      if (parent.hasAttribute(A.start) && parent.hasAttribute(A.duration)) return false;
-    return true;
-  });
-}
 
 /** Parsing is inert. Keep the source document, including unknown CSS/data/scripts, for round trips. */
 export function readTimedTextHtml(html, { subtitle = false } = {}) {
+  return subtitle ? readSourceSubtitleHtml(html) : readStrictTextHtml(html);
+}
+function readStrictTextHtml(html) {
   const document = new DOMParser().parseFromString(html, 'text/html');
   const roots = [...document.querySelectorAll(`[${A.composition}]`)];
   const issues = [];
@@ -64,11 +37,7 @@ export function readTimedTextHtml(html, { subtitle = false } = {}) {
     compositionId = root.getAttribute(A.composition)?.trim();
   if (!compositionId) issue('composition-id-empty', 'composition标识为空');
   const timeBase = root.getAttribute(A.timeBase);
-  if (timeBase !== 'timeline' && (!subtitle || timeBase !== 'source'))
-    issue(
-      'time-base-invalid',
-      subtitle ? '字幕composition时基无效' : '普通文字composition时基必须为timeline',
-    );
+  if (timeBase !== 'timeline') issue('time-base-invalid', '普通文字composition时基必须为timeline');
   if (root.getAttribute(A.contract) !== 'libtv-subtitle/4')
     issue('contract-version', '文字HTML契约版本尚未支持');
   const width = number(root, A.width),
@@ -137,7 +106,7 @@ export function readTimedTextHtml(html, { subtitle = false } = {}) {
   });
   const groups = new Map();
   for (const cue of cues) {
-    const key = JSON.stringify([cue.trackIndex, subtitle ? cue.clipId : null]);
+    const key = cue.trackIndex;
     const group = groups.get(key) || [];
     group.push(cue);
     groups.set(key, group);
@@ -150,14 +119,7 @@ export function readTimedTextHtml(html, { subtitle = false } = {}) {
         break;
       }
   }
-  const trackLimit = subtitle ? 4 : 8;
-  if (tracks.size > trackLimit)
-    issue(
-      subtitle ? 'track-limit-exceeded' : 'overlay-track-limit-exceeded',
-      `文字轨道超过${trackLimit}条`,
-    );
-  if (subtitle && cues.some((cue) => cue.start + cue.duration - duration > 0.001))
-    issue('duration-overflow', '字幕片段超出composition总时长');
+  if (tracks.size > 8) issue('overlay-track-limit-exceeded', '文字轨道超过8条');
   const clipMeta = {};
   for (const element of root.children) {
     if (element.tagName.toLowerCase() !== 'template' || !element.getAttribute(A.clipMeta)) continue;
@@ -196,13 +158,6 @@ export function readTimedTextHtml(html, { subtitle = false } = {}) {
 export const readTextOverlayHtml = (html) => readTimedTextHtml(html);
 export const readSubtitleHtml = (html) => readTimedTextHtml(html, { subtitle: true });
 
-export function serializeTextHtml(document) {
-  const type = document.doctype;
-  const doctype = type
-    ? `<!DOCTYPE ${type.name}${type.publicId ? ` PUBLIC "${type.publicId}"` : ''}${type.systemId ? ` "${type.systemId}"` : ''}>`
-    : '<!DOCTYPE html>';
-  return `${doctype}\n${document.documentElement.outerHTML}`;
-}
 export const escapeTextHtml = (text) =>
   String(text)
     .replace(/&/g, '&amp;')

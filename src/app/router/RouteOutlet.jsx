@@ -4,6 +4,7 @@ import RouteErrorBoundary from '../RouteErrorBoundary.jsx';
 const HomePage = lazy(() => import('../../features/home/HomePage.jsx'));
 const GalleryPage = lazy(() => import('../../features/gallery/GalleryPage.jsx'));
 const SkillPage = lazy(() => import('../../features/skills/SkillPage.jsx'));
+const XumengAgentPage = lazy(() => import('../../features/xumeng/XumengAgentPage.jsx'));
 const StudioPage = lazy(() => import('../../features/studio/StudioLandingPage.jsx'));
 const ProjectPage = lazy(() => import('../../features/projects/ProjectPage.jsx'));
 const AssetsPage = lazy(() => import('../../features/assets/AssetsPage.jsx'));
@@ -35,6 +36,7 @@ const pages = {
   home: HomePage,
   gallery: GalleryPage,
   skills: SkillPage,
+  xumeng: XumengAgentPage,
   studio: StudioPage,
   projects: ProjectPage,
   assets: AssetsPage,

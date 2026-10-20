@@ -28,6 +28,9 @@ import {
 } from './domain/timeline-edit-model.js';
 import { clipAudioFaderPosition } from './domain/audio-gain-model.js';
 import { VOCAL_SPLIT_CHOICES } from './domain/vocal-separation-model.js';
+import { waveformPath } from './domain/waveform-model.js';
+import { useClipWaveforms } from './useClipWaveforms.js';
+import { useClipThumbnails } from './useClipThumbnails.js';
 import ClipSubtitleTimelineRow from './ClipSubtitleTimelineRow.jsx';
 import './clip-timeline.css';
 
@@ -163,6 +166,40 @@ function ClipPoster({ poster }) {
   );
 }
 
+function ClipFilmstrip({ thumbnail, poster }) {
+  const frames = thumbnail?.frames || [];
+  if (!frames.length) return <ClipPoster poster={poster} />;
+  return (
+    <div
+      className="cv-clip-timeline-filmstrip"
+      data-thumbnail-status={thumbnail.status}
+      aria-hidden="true"
+    >
+      {frames.map((frame, index) => (
+        <img key={`${frame}-${index}`} src={frame} alt="" draggable={false} />
+      ))}
+    </div>
+  );
+}
+
+function ClipWaveform({ waveform, clip, video = false }) {
+  const path = waveformPath(waveform?.peaks, {
+    gain: clipAudioFaderPosition(clip),
+  });
+  if (!path) return null;
+  return (
+    <svg
+      className={`cv-clip-timeline-waveform${video ? ' is-video' : ''}`}
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      data-waveform-status={waveform.status}
+    >
+      <path d={path} />
+    </svg>
+  );
+}
+
 function ToolbarAction({ label, children, onClick, disabled, pressed, className = '', testId }) {
   return (
     <button
@@ -230,6 +267,8 @@ export default function VideoClipTimeline({
   onCloseSubtitlePanel,
   onSelectSubtitle,
   onEditSubtitle,
+  htmlSubtitleBlocks = EMPTY,
+  onEditHtmlSubtitle,
   onAddTransition,
   onToggleTransitionPanel,
   onCloseTransitionPanel,
@@ -240,8 +279,8 @@ export default function VideoClipTimeline({
   onDropFiles,
   onCanDetachAudio,
   onDetachAudio,
-  onCanVocalSplit,
   onVocalSplit,
+  onExportLocal,
 }) {
   const root = useRef(null);
   const scrollArea = useRef(null);
@@ -257,6 +296,8 @@ export default function VideoClipTimeline({
   const contextElement = useRef(null);
   const contextOpener = useRef(null);
   const blocked = !ready || Boolean(error);
+  const waveforms = useClipWaveforms(timeline.clips, mediaBySourceId, selectedClipIds);
+  const thumbnails = useClipThumbnails(timeline.clips, mediaBySourceId);
   const videoCount = resolveVideoTrackCount(timeline.clips, timeline.videoTrackCount);
   const main = getMainVideoTrackIndex(videoCount);
   const audioCount = timeline.clips.reduce(
@@ -321,7 +362,21 @@ export default function VideoClipTimeline({
   const deletionProtected =
     primary.length > 0 && primary.every((clip) => selectedClipIds.includes(clip.id));
   const detachAudioState = contextMenu ? onCanDetachAudio?.(contextMenu.id) : null;
-  const vocalSplitState = contextMenu ? onCanVocalSplit?.(contextMenu.id) : null;
+  const contextSubtitleCues = contextMenu
+    ? (timeline.subtitles?.cues || []).filter((cue) => cue.clipId === contextMenu.id)
+    : EMPTY;
+  const contextHtmlBlocks = contextMenu
+    ? htmlSubtitleBlocks.filter((block) => block.clipId === contextMenu.id)
+    : EMPTY;
+  const contextSubtitleSource = contextSubtitleCues.length
+    ? 'vtt'
+    : contextHtmlBlocks.length
+      ? 'html'
+      : null;
+  const contextSubtitleVisible = contextSubtitleCues.some((cue) => cue.hidden !== true);
+  const contextHtmlVisible = contextHtmlBlocks.some(
+    (block) => block.hidden !== true && block.trackHidden !== true,
+  );
   const [, interval, subdivisions] =
     INTERVALS.find(([minimum]) => timeline.scale >= minimum) ?? INTERVALS.at(-1);
   const rulerStep = interval / subdivisions;
@@ -997,11 +1052,11 @@ export default function VideoClipTimeline({
               <SourceIcon name="preview-expand" size={14} />
             </ToolbarAction>
           )}
-          {onCompose && (
+          {(onCompose || onExportLocal) && (
             <button
               type="button"
               className="cv-clip-timeline-compose"
-              onClick={onCompose}
+              onClick={onExportLocal || onCompose}
               disabled={blocked || !timeline.clips.some((clip) => clip.type !== 'audio')}
             >
               导出
@@ -1197,13 +1252,26 @@ export default function VideoClipTimeline({
                         }}
                       >
                         {row.kind === 'audio' ? (
-                          <Music
-                            size={16}
-                            className="cv-clip-timeline-audio-symbol"
-                            aria-hidden="true"
-                          />
+                          <>
+                            <Music
+                              size={16}
+                              className="cv-clip-timeline-audio-symbol"
+                              aria-hidden="true"
+                            />
+                            <ClipWaveform waveform={waveforms.get(clip.sourceNodeId)} clip={clip} />
+                          </>
                         ) : (
-                          <ClipPoster key={media?.poster || 'missing'} poster={media?.poster} />
+                          <>
+                            <ClipFilmstrip
+                              thumbnail={thumbnails.get(clip.id)}
+                              poster={media?.poster}
+                            />
+                            <ClipWaveform
+                              waveform={waveforms.get(clip.sourceNodeId)}
+                              clip={clip}
+                              video
+                            />
+                          </>
                         )}
                         <span className="cv-clip-timeline-clip-name">
                           {row.kind !== 'audio' &&
@@ -1370,9 +1438,8 @@ export default function VideoClipTimeline({
               role="menuitem"
               type="button"
               aria-label="人声分离"
-              disabled={blocked || !onVocalSplit || vocalSplitState?.allowed === false}
+              disabled={blocked || !onVocalSplit}
               aria-expanded={vocalMenuOpen}
-              title={vocalSplitState?.reason || undefined}
               onClick={() => setVocalMenuOpen((open) => !open)}
             >
               人声分离<span>›</span>
@@ -1383,7 +1450,7 @@ export default function VideoClipTimeline({
                   <button
                     key={choice.value}
                     type="button"
-                    disabled={blocked || vocalSplitState?.allowed === false}
+                    disabled={blocked || !onVocalSplit}
                     onClick={() => {
                       void onVocalSplit?.(contextMenu.id, choice.value);
                       setContextMenu(null);
@@ -1394,6 +1461,70 @@ export default function VideoClipTimeline({
                 ))}
               </div>
             )}
+            <button
+              role="menuitem"
+              type="button"
+              disabled={
+                blocked ||
+                !contextSubtitleSource ||
+                (contextSubtitleSource === 'vtt' ? !onEditSubtitle : !onEditHtmlSubtitle)
+              }
+              onClick={() => {
+                if (contextSubtitleSource === 'vtt')
+                  onEditSubtitle?.({
+                    kind: 'clip-visible',
+                    clipId: contextMenu.id,
+                    visible: !contextSubtitleVisible,
+                  });
+                else {
+                  const edits = new Map();
+                  for (const block of contextHtmlBlocks) {
+                    const patches = edits.get(block.identity.key) || [];
+                    patches.push({
+                      kind: 'cueHidden',
+                      cueId: block.cueId,
+                      hidden: contextHtmlVisible,
+                    });
+                    edits.set(block.identity.key, patches);
+                  }
+                  onEditHtmlSubtitle?.({
+                    edits: [...edits].map(([key, patches]) => ({ key, patches })),
+                  });
+                }
+                setContextMenu(null);
+              }}
+            >
+              {(contextSubtitleSource === 'vtt' ? contextSubtitleVisible : contextHtmlVisible)
+                ? '隐藏本片段字幕'
+                : '显示本片段字幕'}
+            </button>
+            <button
+              role="menuitem"
+              type="button"
+              disabled={
+                blocked ||
+                !contextSubtitleSource ||
+                (contextSubtitleSource === 'vtt' ? !onEditSubtitle : !onEditHtmlSubtitle)
+              }
+              onClick={() => {
+                if (contextSubtitleSource === 'vtt')
+                  onEditSubtitle?.({ kind: 'clip-delete', clipId: contextMenu.id });
+                else {
+                  const keys = new Set(contextHtmlBlocks.map((block) => block.identity.key));
+                  onEditHtmlSubtitle?.({
+                    edits: [...keys].map((key) => ({
+                      key,
+                      patches: [
+                        { kind: 'removeClipCues', clipId: contextMenu.id, removeMeta: true },
+                      ],
+                    })),
+                  });
+                }
+                setContextMenu(null);
+              }}
+            >
+              删除本片段字幕
+            </button>
             <button
               role="menuitem"
               type="button"

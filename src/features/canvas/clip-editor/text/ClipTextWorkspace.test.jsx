@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import ClipTextWorkspace from './ClipTextWorkspace.jsx';
+import ClipTextWorkspace, { ClipTextTimelineRows } from './ClipTextWorkspace.jsx';
 import { createSubtitleHtml, readSubtitleHtml, createTextOverlayHtml } from './html-document.js';
 import { within } from '@testing-library/react';
 const input = () => ({
@@ -218,5 +218,88 @@ describe('ordinary text inspector and read-only preset library', () => {
     fireEvent.click(screen.getAllByRole('button', { name: '默认样式' })[1]);
     await waitFor(() => expect(late.load).toHaveBeenCalled());
     await act(async () => pending.resolve({ categories: [], presets: [] }));
+  });
+  it('exposes keyboard reachable row reorder controls and sends one reorder patch', () => {
+    const props = input();
+    props.state.timeline.overlayHtmlInline = createTextOverlayHtml({
+      compositionId: 'text',
+      width: 1920,
+      height: 1080,
+      duration: 10,
+      cues: [
+        { cueId: 'one', start: 0, duration: 3, text: '一', trackIndex: 0 },
+        { cueId: 'two', start: 4, duration: 2, text: '二', trackIndex: 1 },
+      ],
+    });
+    props.state.timeline.scale = 1;
+    props.state.timeline.scrollX = 0;
+    render(<ClipTextTimelineRows {...props} />);
+    expect(screen.getByRole('button', { name: '文本轨 1上移' }).disabled).toBe(true);
+    fireEvent.click(screen.getByRole('button', { name: '文本轨 1下移' }));
+    expect(props.controller.onEditText).toHaveBeenCalledWith({
+      patches: [{ kind: 'reorderTracks', order: [1, 0] }],
+    });
+    props.controller.onEditText.mockClear();
+    const handle = screen.getByRole('button', { name: '拖动文本轨 1' });
+    expect(handle).toBeTruthy();
+    const dataTransfer = {
+      effectAllowed: '',
+      dropEffect: '',
+      setData: vi.fn(),
+      getData: vi.fn(() => '0'),
+    };
+    fireEvent.dragStart(handle, { dataTransfer });
+    const rows = document.querySelectorAll('[aria-label$="轨道"]');
+    fireEvent.dragOver(rows[1], { dataTransfer });
+    fireEvent.drop(rows[1], { dataTransfer });
+    expect(dataTransfer.getData).toHaveBeenCalledWith('text/plain');
+    expect(props.controller.onEditText).toHaveBeenCalledWith({
+      patches: [{ kind: 'reorderTracks', order: [1, 0] }],
+    });
+  });
+  it('offers a bounded new-track action when source asks the user to choose a row', () => {
+    const props = input();
+    props.state.textTrackChoice = [0, 1];
+    render(<ClipTextWorkspace {...props}>preview</ClipTextWorkspace>);
+    fireEvent.click(screen.getByRole('button', { name: '新建文本轨道' }));
+    expect(props.controller.onAddText).toHaveBeenCalledWith({
+      trackIndex: 2,
+      createTrack: true,
+      force: true,
+    });
+  });
+  it('loads an injected font directory with retry while keeping fallback families available', async () => {
+    const props = input();
+    const fontSource = {
+      load: vi
+        .fn()
+        .mockRejectedValueOnce(new Error('字体服务离线'))
+        .mockResolvedValueOnce({
+          fonts: [
+            {
+              id: 'remote',
+              name: '运营字体',
+              family: 'Ops Sans',
+              src: 'https://fonts.example.test/ops.woff2',
+            },
+          ],
+        }),
+    };
+    render(
+      <ClipTextWorkspace {...props} fontSource={fontSource}>
+        preview
+      </ClipTextWorkspace>,
+    );
+    await screen.findByText('字体服务离线');
+    expect(screen.getByRole('option', { name: 'Source Han Sans CN' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: '重试字体目录' }));
+    await screen.findByRole('option', { name: '运营字体' });
+    fireEvent.change(screen.getByRole('combobox', { name: '文本字体' }), {
+      target: { value: 'Ops Sans' },
+    });
+    expect(props.controller.onEditText).toHaveBeenLastCalledWith({
+      fields: { fontFamily: 'Ops Sans' },
+    });
+    expect(fontSource.load).toHaveBeenCalledTimes(2);
   });
 });

@@ -1,6 +1,12 @@
 # ScriptV2 工具栏显式 target 与选择协议审计
 
-2026-10-12。本轮仅静态读取归档公开源码和本机实现，不执行原站脚本，不读取账号，不请求生成、审核、费用或写服务。只新增本文件，没有修改生产代码或测试，没有运行测试或全量 check。这里记录工具栏 target 分支的证据和后续最小接口建议，**不将引用拾取、标记或区域聚焦模式标记为已实现**。
+2026-10-12。本文件保留原始 target 源码审计与当时的未接线结论。2026-10-18 的本机实现复核已将参考拾取、标记、区域聚焦和 ScriptV2 显式 target 接入 Canvas；当前证据见 [显式 target 专项](../artifacts/canvas-explicit-target-verification.json)。下文历史段落描述的是 2026-10-12 的状态，不能覆盖当前代码。
+
+## 当前实现复核（2026-10-18）
+
+`CanvasViewport` 的 `scriptEligible` 现在按 source 的普通单选与显式 target OR 规则计算资格，并保持 reference → mark → focus 的模式优先级；`useCanvasReferencePick`、`useCanvasMarkMode` 和 `useCanvasFocusMode` 分别持有异步 owner、候选/区域/点位、取消和 graph CAS。`CanvasNode`、`CanvasGroupNode` 和 `CanvasNodeInlineGenerator` 复用这些 mode owner，负责遮罩、候选状态、pointer 隔离、Escape/退出和当前节点 anchor，不把 DOM focus 或 selected 改写成持久 target。ScriptV2 toolbar 与 image configuration 共用这份 eligibility，readonly、拖动、面板、任务状态和服务不可用仍按各自门控保留。
+
+当前专项 **25 个测试文件 / 440 项通过**，证据见 `artifacts/canvas-explicit-target-verification.json`。这些测试证明本地桌面前端模式与节点交互，不证明真实生成、审核、上传、账号权限或服务端写入。
 
 偏移为归档文件解码后的 0-based 字符位置，不是字节或格式化行号。此前四按钮、工作流条件、确认窗和工具栏尺寸的完整证据见 [ScriptV2 工具栏审计](./canvas-script-node-toolbar-source-audit.md)；本文件专注其显隐入口与所有权。
 
@@ -80,7 +86,9 @@ Source 普通资源卡双击打开全屏、阶段跳转、表格行选择和资�
 
 这些模式包含图交互接管、退出 UI、候选/点/区域状态和异步生命周期。只增加 `targetId` 让工具栏出现，会遗漏实际动作，也会让普通 pointer 继续拖动/框选/连线。源 selector 不等于该模式的完整产品实现。
 
-## 4. 本机目前能准确对应什么
+## 4. 历史状态快照（2026-10-12）
+
+本节及后续第 5–8 节记录 2026-10-12 只读审计时的旧实现状态；当前实现与验证以文首“当前实现复核”和 `artifacts/canvas-explicit-target-verification.json` 为准。
 
 截至本轮只读检查，`src` 没有上述六个 mode active/target 字段或 mode controller。当前运行入口如下，不能因名称相似冒充原模式：
 

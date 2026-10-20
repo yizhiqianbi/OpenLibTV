@@ -7,7 +7,7 @@ import { skillFields, skillInitial, readLocalSkills, skillFileLimit } from './sk
 import { writeStoredValue } from '../../../services/storage.ts';
 import { template } from '../../shared/secondary/text.js';
 
-function SkillCreate({ data, login, user, navigate, toast, asset }) {
+function SkillCreate({ data, login, user, navigate, toast, asset, coverSource }) {
   const t = data.commonLocale,
     uuid = new URLSearchParams(location.search).get('skillUuid'),
     initialState = useMemo(() => {
@@ -52,7 +52,20 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
   const prompted = useRef(false),
     cover = useRef(null),
     coverReader = useRef(null),
+    typeTrigger = useRef(null),
     alive = useRef(true);
+  const resultTypeOptions = [
+    [2, t.skillTypeImage],
+    [3, t.skillTypeVideo],
+    [4, t.skillTypeAudio],
+    [1, t.skillTypeText],
+  ];
+  const [typeIndex, setTypeIndex] = useState(() =>
+    Math.max(
+      0,
+      resultTypeOptions.findIndex(([value]) => value === form.resultType),
+    ),
+  );
   useEffect(() => {
     alive.current = true;
     return () => {
@@ -61,6 +74,14 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
       coverReader.current = null;
     };
   }, []);
+  useEffect(() => {
+    if (!typeOpen) return undefined;
+    const dismiss = (event) => {
+      if (!event.target.closest('.secondary-skill-type')) setTypeOpen(false);
+    };
+    document.addEventListener('pointerdown', dismiss);
+    return () => document.removeEventListener('pointerdown', dismiss);
+  }, [typeOpen]);
   useEffect(() => {
     if (!user && !prompted.current) {
       prompted.current = true;
@@ -142,20 +163,79 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
     coverReader.current?.abort();
     coverReader.current = reader;
     setUploadingCover(true);
-    const finish = (failed) => {
+    const finish = (failed, value = reader.result) => {
       if (!alive.current || coverReader.current !== reader) return;
       coverReader.current = null;
       setUploadingCover(false);
       if (failed) toast?.(t.createSkillUploadFailedRetry);
-      else setField('coverUrl', reader.result);
+      else if (typeof value === 'string' && value) setField('coverUrl', value);
     };
-    reader.onload = () => finish(false);
+    reader.onload = async () => {
+      if (!alive.current || coverReader.current !== reader) return;
+      try {
+        const dataUrl = reader.result,
+          uploaded = coverSource?.upload ? await coverSource.upload({ file: f, dataUrl }) : dataUrl,
+          remoteUrl =
+            typeof uploaded === 'string'
+              ? uploaded
+              : typeof uploaded?.url === 'string'
+                ? uploaded.url
+                : dataUrl;
+        finish(false, remoteUrl);
+      } catch {
+        finish(true);
+      }
+    };
     reader.onerror = () => finish(true);
     try {
       reader.readAsDataURL(f);
     } catch {
       finish(true);
     }
+  }
+  function selectResultType(value) {
+    setField('resultType', value);
+    if (value === 1 || value === 4) setField('coverUrl', '');
+    setTypeOpen(false);
+    typeTrigger.current?.focus({ preventScroll: true });
+  }
+  function onResultTypeKeyDown(event) {
+    if (event.key === 'Escape') {
+      if (typeOpen) {
+        event.preventDefault();
+        setTypeOpen(false);
+      }
+      return;
+    }
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      if (typeOpen) selectResultType(resultTypeOptions[typeIndex][0]);
+      else {
+        setTypeIndex(
+          Math.max(
+            0,
+            resultTypeOptions.findIndex(([value]) => value === form.resultType),
+          ),
+        );
+        setTypeOpen(true);
+      }
+      return;
+    }
+    if (
+      event.key !== 'ArrowDown' &&
+      event.key !== 'ArrowUp' &&
+      event.key !== 'Home' &&
+      event.key !== 'End'
+    )
+      return;
+    event.preventDefault();
+    if (!typeOpen) setTypeOpen(true);
+    setTypeIndex((index) => {
+      if (event.key === 'Home') return 0;
+      if (event.key === 'End') return resultTypeOptions.length - 1;
+      const delta = event.key === 'ArrowDown' ? 1 : -1;
+      return (index + delta + resultTypeOptions.length) % resultTypeOptions.length;
+    });
   }
   if (!user) return <div className="secondary-skill-create" />;
   if (initialState.error)
@@ -225,7 +305,23 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
         ))}
         <div className="secondary-skill-type">
           <span>{t.createSkillFieldResultType}</span>
-          <button onClick={() => setTypeOpen((v) => !v)}>
+          <button
+            type="button"
+            ref={typeTrigger}
+            aria-haspopup="listbox"
+            aria-expanded={typeOpen}
+            aria-controls="secondary-skill-result-types"
+            onClick={() => {
+              setTypeIndex(
+                Math.max(
+                  0,
+                  resultTypeOptions.findIndex(([value]) => value === form.resultType),
+                ),
+              );
+              setTypeOpen((v) => !v);
+            }}
+            onKeyDown={onResultTypeKeyDown}
+          >
             {
               { 2: t.skillTypeImage, 3: t.skillTypeVideo, 4: t.skillTypeAudio, 1: t.skillTypeText }[
                 form.resultType
@@ -234,21 +330,19 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
             <ChevronDown size={14} />
           </button>
           {typeOpen && (
-            <div>
-              {[
-                [2, t.skillTypeImage],
-                [3, t.skillTypeVideo],
-                [4, t.skillTypeAudio],
-                [1, t.skillTypeText],
-              ].map(([value, label]) => (
+            <div id="secondary-skill-result-types" role="listbox" aria-label="结果类型">
+              {resultTypeOptions.map(([value, label], index) => (
                 <button
                   key={value}
+                  type="button"
+                  role="option"
+                  aria-selected={form.resultType === value}
+                  tabIndex={index === typeIndex ? 0 : -1}
                   className={form.resultType === value ? 'active' : ''}
-                  onClick={() => {
-                    setField('resultType', value);
-                    if (value === 1 || value === 4) setField('coverUrl', '');
-                    setTypeOpen(false);
-                  }}
+                  onMouseEnter={() => setTypeIndex(index)}
+                  onFocus={() => setTypeIndex(index)}
+                  onKeyDown={onResultTypeKeyDown}
+                  onClick={() => selectResultType(value)}
                 >
                   {label}
                   {value === form.resultType && <Check size={14} />}
@@ -260,7 +354,14 @@ function SkillCreate({ data, login, user, navigate, toast, asset }) {
         {(form.resultType === 2 || form.resultType === 3) && (
           <label className="secondary-skill-cover">
             <span>{t.createSkillFieldCoverOptional}</span>
-            <input type="file" hidden ref={cover} accept="image/*" onChange={uploadCover} />
+            <input
+              type="file"
+              hidden
+              ref={cover}
+              accept="image/*"
+              aria-label="上传封面"
+              onChange={uploadCover}
+            />
             <button onClick={() => cover.current.click()}>
               {form.coverUrl ? (
                 <>

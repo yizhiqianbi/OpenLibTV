@@ -2,19 +2,23 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Icon from '../../components/Icon.jsx';
 import Modal from '../../components/Modal.jsx';
 import VideoPlayer from '../../components/VideoPlayer.jsx';
-import { useData, useLocalState, asset } from '../../data.js';
+import { useContent, useLocalState, asset } from '../../data.js';
 const CanvasPage = lazy(() => import('../canvas/CanvasPage.jsx'));
 
 export default function DetailPage({ path, navigate, login, user, toast }) {
-  const initial = useData('gallery', { items: [] });
-  const all = useData('gallery-all', null);
-  const detailResponse = useData('gallery-details/' + path.split('/')[2], null);
-  const profiles = useData('profiles', {});
+  const id = path.split('/')[2];
+  const initialResource = useContent('gallery', { items: [] });
+  const allResource = useContent('gallery-all', null);
+  const detailResource = useContent('gallery-details/' + id, null);
+  const profilesResource = useContent('profiles', {});
+  const initial = initialResource.data;
+  const all = allResource.data;
+  const detailResponse = detailResource.data;
+  const profiles = profilesResource.data;
   const [expanded, setExpanded] = useState(false),
     [share, setShare] = useState(false),
     [preview, setPreview] = useState(new URLSearchParams(location.search).get('preview') === '1');
   const [liked, setLiked] = useLocalState('libtv-liked', []);
-  const id = path.split('/')[2];
   const list = all?.allItems || all?.items || initial.items;
   const item =
     detailResponse?.detail ||
@@ -33,10 +37,28 @@ export default function DetailPage({ path, navigate, login, user, toast }) {
   useEffect(() => {
     if (item) document.title = (item.name || item.title) + ' - PenStudio - 专业视频创作工具';
   }, [item]);
+  const retry = () => {
+    const requests = [];
+    if (detailResource.error) requests.push(detailResource.reload());
+    if (allResource.error) requests.push(allResource.reload());
+    if (initialResource.error) requests.push(initialResource.reload());
+    if (requests.length === 0) requests.push(detailResource.reload());
+    void Promise.allSettled(requests);
+  };
   if (!item)
     return (
       <div className="empty-state">
-        {all ? (
+        {detailResource.error || allResource.error || initialResource.error ? (
+          <>
+            <p role="alert">作品加载失败，请重试</p>
+            <button className="soft-button" onClick={retry}>
+              重试
+            </button>
+            <button className="text-button" onClick={() => navigate('/show')}>
+              返回 TV Show
+            </button>
+          </>
+        ) : all ? (
           <>
             <p>作品不存在或已下架</p>
             <button className="soft-button" onClick={() => navigate('/show')}>

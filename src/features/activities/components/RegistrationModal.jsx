@@ -1,23 +1,55 @@
 import React, { useState } from 'react';
 import Modal from '../../../components/Modal.jsx';
+import {
+  buildActivityRegistrationPayload,
+  localActivityRegistrationSource,
+} from '../activity-registration-model.js';
 
-function Registration({ item, user, onClose, onSuccess }) {
+function Registration({ item, user, onClose, onSuccess, onSubmit }) {
   const [contact, setContact] = useState(''),
     [method, setMethod] = useState('phone'),
     [social, setSocial] = useState(''),
     [work, setWork] = useState(''),
     [authentic, setAuthentic] = useState(false),
-    [errors, setErrors] = useState({});
-  function submit(e) {
+    [errors, setErrors] = useState({}),
+    [submitting, setSubmitting] = useState(false);
+  async function submit(e) {
     e.preventDefault();
     const next = {
+      ...(!user?.nickname && !user?.nickName && !user?.name ? { nickname: '请先填写昵称' } : {}),
       ...(!contact.trim() ? { contact: '请填写联系方式' } : {}),
       ...(!social.trim() ? { social: '请填写社媒主页链接' } : {}),
       ...(!authentic ? { authentic: '请确认信息真实性' } : {}),
     };
     setErrors(next);
-    if (Object.keys(next).length === 0)
-      onSuccess({ activityId: item.activityId, contact, method, social, work });
+    if (Object.keys(next).length > 0) return;
+    const payload = buildActivityRegistrationPayload({
+      item,
+      user,
+      contact,
+      method,
+      social,
+      work,
+    });
+    setSubmitting(true);
+    setErrors({});
+    try {
+      const source = onSubmit ? { submit: onSubmit } : localActivityRegistrationSource();
+      const result = await source.submit(payload);
+      if (result?.success === false) throw new Error(result.error || '报名失败，请重试');
+      onSuccess({
+        activityId: item.activityId,
+        contact,
+        method,
+        social,
+        work,
+        payload,
+      });
+    } catch (error) {
+      setErrors({ submit: error?.message || '报名失败，请重试' });
+    } finally {
+      setSubmitting(false);
+    }
   }
   return (
     <Modal title="挑战赛报名" onClose={onClose} className="secondary-registration">
@@ -29,7 +61,12 @@ function Registration({ item, user, onClose, onSuccess }) {
           </label>
           <label>
             昵称
-            <input readOnly value={user?.name || ''} />
+            <input
+              readOnly
+              aria-invalid={!!errors.nickname}
+              value={user?.nickname || user?.nickName || user?.name || ''}
+            />
+            {errors.nickname && <small>{errors.nickname}</small>}
           </label>
           <label>
             联系方式 <b>*</b>
@@ -48,7 +85,7 @@ function Registration({ item, user, onClose, onSuccess }) {
                 value={contact}
                 onChange={(e) => {
                   setContact(e.target.value);
-                  setErrors({});
+                  setErrors((current) => ({ ...current, contact: undefined, submit: undefined }));
                 }}
               />
             </div>
@@ -62,7 +99,7 @@ function Registration({ item, user, onClose, onSuccess }) {
               value={social}
               onChange={(e) => {
                 setSocial(e.target.value);
-                setErrors({});
+                setErrors((current) => ({ ...current, social: undefined, submit: undefined }));
               }}
             />
             <p className="registration-hint">
@@ -84,7 +121,11 @@ function Registration({ item, user, onClose, onSuccess }) {
               checked={authentic}
               onChange={(e) => {
                 setAuthentic(e.target.checked);
-                setErrors({});
+                setErrors((current) => ({
+                  ...current,
+                  authentic: undefined,
+                  submit: undefined,
+                }));
               }}
             />
             <span>
@@ -94,11 +135,18 @@ function Registration({ item, user, onClose, onSuccess }) {
             {errors.authentic && <small>{errors.authentic}</small>}
           </label>
         </div>
+        {errors.submit && (
+          <p className="registration-submit-error" role="alert">
+            {errors.submit}
+          </p>
+        )}
         <div className="registration-actions">
-          <button type="button" onClick={onClose}>
+          <button type="button" onClick={onClose} disabled={submitting}>
             取消
           </button>
-          <button type="submit">提交报名</button>
+          <button type="submit" disabled={submitting} aria-busy={submitting}>
+            {submitting ? '提交中…' : '提交报名'}
+          </button>
         </div>
       </form>
     </Modal>

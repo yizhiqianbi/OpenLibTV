@@ -13,6 +13,7 @@ export const routes: readonly RouteDefinition[] = [
   { id: 'home', pattern: /^\/(?:home_page)?$/, layout: 'shell', title: '首页' },
   { id: 'gallery', pattern: /^\/show$/, layout: 'shell', title: 'TV Show' },
   { id: 'skills', pattern: /^\/skill$/, layout: 'shell', title: 'PenStudio Agent' },
+  { id: 'xumeng', pattern: /^\/xumeng(?:\/agent)?$/, layout: 'shell', title: '叙梦 Agent' },
   { id: 'skill-create', pattern: /^\/skill\/create$/, layout: 'shell', title: '创建 Skill' },
   { id: 'skill-share', pattern: /^\/skill\/share$/, layout: 'shell', title: 'Skill' },
   { id: 'studio', pattern: /^\/3d-box$/, layout: 'shell', title: 'PenStudio 3D-BOX' },

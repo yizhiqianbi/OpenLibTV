@@ -22,7 +22,9 @@
     "assets:archive": "node scripts/archive-unused-assets.mjs --apply",
     "film:build": "node scripts/build-film-player.mjs",
     "dev:server": "npm run film:build && vercel dev",
-    "vercel:prepare:preview": "npm run film:build && vercel build --yes && node scripts/prepare-vercel-output.mjs"
+    "vercel:prepare:preview": "npm run film:build && vercel build --yes && node scripts/prepare-vercel-output.mjs",
+    "tool:mcp": "node scripts/penstudio-mcp-server.mjs",
+    "test:mcp": "node --test scripts/penstudio-mcp.test.mjs"
   },
   "dependencies": {
     "@codemirror/commands": "6.11.1",

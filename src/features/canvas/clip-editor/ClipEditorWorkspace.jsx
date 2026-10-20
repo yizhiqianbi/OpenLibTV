@@ -13,38 +13,61 @@ import ClipTextWorkspace, {
   ClipTextTimelineRows,
   useTextModel,
 } from './text/ClipTextWorkspace.jsx';
-import { projectTextDraft, effectiveTextHtml } from './text/document-model.js';
+import {
+  projectTextDraft,
+  effectiveTextHtml,
+  readTextStyle,
+  textOutputSize,
+} from './text/document-model.js';
 import { useHtmlSubtitleSources } from './text/useHtmlSubtitleSources.js';
 import HtmlSubtitleWorkspace, {
   HtmlSubtitleTimelineRows,
   useHtmlSubtitleView,
 } from './text/HtmlSubtitleWorkspace.jsx';
-import ClipSubtitleTimelineRow from './ClipSubtitleTimelineRow.jsx';
 import { classifySubtitleSources } from './domain/subtitle-source-mode.js';
+import { describeSubtitleEditing } from './domain/subtitle-ownership-model.js';
+import { planClipTimelineExport } from './domain/clip-export-model.js';
+import { download } from '../../editor/browser.js';
+import { readHtmlSubtitleStyle } from './text/subtitle-style-document.js';
 
-export default function ClipEditorWorkspace({ controller, state, mediaHost, src, documentKey }) {
+export default function ClipEditorWorkspace({
+  controller,
+  state,
+  mediaHost,
+  src,
+  documentKey,
+  fontSource,
+}) {
   useTextTools(state, controller, src);
   const htmlPlan = useHtmlSubtitleSources(state, controller, src);
   const subtitleSources = classifySubtitleSources({
     clips: state?.timeline.clips,
     timelineSubtitles: state?.timeline.subtitles,
     htmlLayers: htmlPlan.layers,
+    nodeSubtitleHtmlUrl: state?.nodeSubtitleHtmlUrl,
   });
-  const htmlMode = Boolean(
-    htmlPlan.error ||
-    htmlPlan.layers.length ||
-    !(
-      state?.timeline.subtitles?.cues?.length ||
-      state?.timeline.subtitles?.rawVtt ||
-      state?.timeline.subtitles?.sourceUrl ||
-      state?.timeline.subtitles?.userCleared ||
-      state?.timeline.clips.some((clip) => clip.subtitleUrl)
-    ),
+  const editing = describeSubtitleEditing(state);
+  const htmlMode = editing.useHtmlEditor;
+  useClipSubtitleSources(
+    state,
+    controller,
+    src,
+    !htmlMode || subtitleSources.hasVtt,
+    !editing.ownsHtml,
   );
-  useClipSubtitleSources(state, controller, src, !htmlMode || subtitleSources.hasVtt);
   const textModel = useTextModel(state);
   const htmlView = useHtmlSubtitleView(state);
   if (!state) return null;
+  const exportLocal = () => {
+    const plan = planClipTimelineExport(state.timeline, state.mediaBySourceId);
+    if (plan.status !== 'ready') {
+      controller.notify?.(plan.message);
+      return false;
+    }
+    download(plan.filename, plan.content, 'application/json');
+    controller.notify?.('剪辑工程已导出到本地');
+    return true;
+  };
   const previewTimeline = state.subtitleTextDraft
     ? projectSubtitleTextDraft(state)
     : effectiveSubtitleTimeline(state);
@@ -56,14 +79,77 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
   const renderedTimeline = {
     ...textTimeline,
     subtitlesHtml: htmlView.timeline.subtitlesHtml,
-    ...(htmlMode && !subtitleSources.hasVtt ? { subtitles: undefined } : {}),
+    ...(editing.active ? { subtitles: undefined } : {}),
   };
-  const htmlLayers = htmlView.layers.map(({ key, nodeId, html, url }) => ({
-    key,
-    nodeId,
-    html,
-    url,
-  }));
+  const output = textOutputSize(state);
+  const textCue =
+    textModel?.ok && state.selectedTextCueId
+      ? textModel.cues.find((cue) => cue.cueId === state.selectedTextCueId)
+      : null;
+  const textActive = Boolean(
+    textCue &&
+    state.timeline.currentTime >= textCue.start - 0.001 &&
+    state.timeline.currentTime < textCue.start + textCue.duration - 0.001 &&
+    !textCue.hidden &&
+    !textCue.trackHidden,
+  );
+  const htmlSelection = state.selectedHtmlSubtitle
+    ? htmlView.blocks.find(
+        (block) =>
+          block.identity.key === state.selectedHtmlSubtitle.key &&
+          block.cueId === state.selectedHtmlSubtitle.cueId &&
+          (!state.selectedHtmlSubtitle.clipId ||
+            block.clipId === state.selectedHtmlSubtitle.clipId),
+      )
+    : null;
+  const htmlLayer = htmlSelection
+    ? htmlView.layers.find((layer) => layer.key === htmlSelection.identity.key)
+    : null;
+  const htmlCue =
+    htmlLayer?.model.ok && state.selectedHtmlSubtitle
+      ? htmlLayer.model.cues.find((cue) => cue.cueId === state.selectedHtmlSubtitle.cueId)
+      : null;
+  const htmlActive = Boolean(
+    htmlSelection &&
+    htmlCue &&
+    state.timeline.currentTime >= htmlSelection.startTime - 0.001 &&
+    state.timeline.currentTime < htmlSelection.endTime - 0.001 &&
+    !htmlSelection.hidden &&
+    !htmlSelection.trackHidden,
+  );
+  const previewSelection =
+    state.textPanelOpen && textCue
+      ? {
+          owner: 'overlay',
+          cueId: textCue.cueId,
+          operation: 'text-overlay',
+          layout: readTextStyle(textModel, textCue.cueId, output),
+          active: textActive,
+          canEditLayout: true,
+          label: '文字',
+        }
+      : state.htmlSubtitlePanelOpen && htmlSelection && htmlCue && htmlLayer?.model.ok
+        ? {
+            owner: 'html-subtitle',
+            layerKey: htmlSelection.identity.key,
+            cueId: htmlSelection.cueId,
+            clipId: htmlSelection.clipId,
+            trackIndex: htmlSelection.trackIndex,
+            operation: 'html-subtitle',
+            layout: readHtmlSubtitleStyle(htmlLayer.model, htmlCue.cueId, output),
+            active: htmlActive,
+            canEditLayout: !htmlLayer.model.styleCompatibility?.readOnly,
+            label: '字幕',
+          }
+        : null;
+  const htmlLayers = htmlView.layers
+    .filter((layer) => layer.model.ok)
+    .map(({ key, nodeId, html, url }) => ({
+      key,
+      nodeId,
+      html,
+      url,
+    }));
   const videoController = htmlMode
     ? {
         ...controller,
@@ -71,8 +157,15 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
         onCloseSubtitlePanel: controller.onCloseHtmlSubtitles,
       }
     : controller;
+  const subtitlePanelOpen = Boolean(state.htmlSubtitlePanelOpen || state.subtitlePanelOpen);
+  const htmlState = {
+    ...state,
+    htmlSubtitlePanelOpen: htmlMode && subtitlePanelOpen,
+    htmlSubtitleStatus: editing.canEditHtml ? 'ready' : state.htmlSubtitleStatus,
+  };
+  const vttState = { ...state, subtitlePanelOpen: !htmlMode && subtitlePanelOpen };
   const content = (
-    <ClipTextWorkspace state={state} controller={controller}>
+    <ClipTextWorkspace state={state} controller={controller} fontSource={fontSource}>
       <ClipTimelinePreview
         ref={controller.playbackRef}
         timeline={renderedTimeline}
@@ -92,6 +185,11 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
         htmlSubtitleLayers={htmlLayers}
         onHtmlSubtitlePreviewStatus={controller.onHtmlSubtitlePreviewStatus}
         htmlSubtitleRetryKey={state.htmlSubtitleRetry}
+        previewSelection={previewSelection}
+        onBeginPreviewEdit={controller.onBeginEdit}
+        onEditPreview={controller.onEditPreview}
+        onEndPreviewEdit={controller.onEndEdit}
+        onCancelPreviewEdit={controller.onCancelEdit}
       />
     </ClipTextWorkspace>
   );
@@ -99,15 +197,16 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
     <>
       {createPortal(
         <ClipTransitionWorkspace state={state} controller={controller} src={src}>
-          {htmlMode ? (
-            <HtmlSubtitleWorkspace state={state} controller={controller} view={htmlView}>
-              {content}
-            </HtmlSubtitleWorkspace>
-          ) : (
-            <ClipSubtitleWorkspace state={state} controller={controller}>
+          <HtmlSubtitleWorkspace
+            state={htmlState}
+            controller={controller}
+            view={htmlView}
+            fontSource={fontSource}
+          >
+            <ClipSubtitleWorkspace state={vttState} controller={controller} fontSource={fontSource}>
               {content}
             </ClipSubtitleWorkspace>
-          )}
+          </HtmlSubtitleWorkspace>
         </ClipTransitionWorkspace>,
         mediaHost,
       )}
@@ -173,28 +272,18 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
                 ? { ...state.timeline, subtitles: undefined }
                 : effectiveSubtitleTimeline(state)
             }
-            subtitlePanelOpen={htmlMode ? state.htmlSubtitlePanelOpen : state.subtitlePanelOpen}
+            subtitlePanelOpen={subtitlePanelOpen}
             subtitleTrackRows={
               htmlMode ? (
-                <>
-                  <HtmlSubtitleTimelineRows state={state} controller={controller} view={htmlView} />
-                  {subtitleSources.mixed && (
-                    <ClipSubtitleTimelineRow
-                      timeline={effectiveSubtitleTimeline(state)}
-                      selectedSubtitleId={state.selectedSubtitleId}
-                      blocked={!state.ready || state.conflicted || state.subtitleStatus !== 'ready'}
-                      draftSession={state.draftSession}
-                      onSelectSubtitle={controller.onSelectSubtitle}
-                      onEditSubtitle={controller.onEditSubtitle}
-                      onBeginEdit={controller.onBeginEdit}
-                      onEditPreview={controller.onEditPreview}
-                      onEndEdit={controller.onEndEdit}
-                      onCancelEdit={controller.onCancelEdit}
-                    />
-                  )}
-                </>
+                <HtmlSubtitleTimelineRows
+                  state={htmlState}
+                  controller={controller}
+                  view={htmlView}
+                />
               ) : undefined
             }
+            htmlSubtitleBlocks={htmlView.blocks}
+            onEditHtmlSubtitle={controller.onEditHtmlSubtitle}
             canPasteClip={Boolean(state.clipClipboard?.clip)}
             error={state.error || state.mediaError}
             ready={state.ready && !state.conflicted}
@@ -203,15 +292,15 @@ export default function ClipEditorWorkspace({ controller, state, mediaHost, src,
             playbackBlocked={
               (Boolean(state.timeline.overlayHtmlInline || state.timeline.overlayHtmlUrl) &&
                 (state.textStatus !== 'ready' || state.textPreviewReady !== true)) ||
-              (htmlPlan.layers.length > 0 &&
-                (state.htmlSubtitleStatus !== 'ready' || state.htmlSubtitlePreviewReady !== true))
+              editing.readiness !== 'ready' ||
+              (editing.active && state.htmlSubtitlePreviewReady !== true)
             }
             textTrackRows={<ClipTextTimelineRows state={state} controller={controller} />}
             textBeforeSubtitles={textModel?.groupAnchor === 0}
             onCanDetachAudio={controller.onCanDetachAudio}
             onDetachAudio={controller.onDetachAudio}
-            onCanVocalSplit={controller.onCanVocalSplit}
             onVocalSplit={controller.onVocalSplit}
+            onExportLocal={exportLocal}
           />
         </div>
       </div>

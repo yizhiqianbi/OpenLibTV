@@ -9,9 +9,12 @@ import { useCanvasAutosave } from '../hooks/useCanvasDocument.js';
 import { createClipTextTools } from './text/controls.js';
 import { readTextOverlayHtml } from './text/html-document.js';
 import { readTextStyle } from './text/document-model.js';
-import { readSubtitleHtml } from './text/html-document.js';
+import { createSubtitleHtml, readSubtitleHtml } from './text/html-document.js';
 import { htmlSubtitleLoadPlan } from './domain/html-subtitle-sources.js';
 import { readHtmlSubtitleStyle } from './text/subtitle-style-document.js';
+import { materializeHtmlSubtitles } from './text/subtitle-materialization.js';
+import { subtitleMigrationSourcePlan } from './domain/subtitle-migration-model.js';
+import { mergeSubtitleSources } from './domain/subtitle-vtt.js';
 
 const storageKey = 'clip-review-document';
 const initialTimeline = {
@@ -175,6 +178,339 @@ function openReady(result, id) {
 
 beforeEach(() => localStorage.clear());
 
+describe('VTT migration through real graph, pending input and history', () => {
+  const setup = (hydrate = false) => {
+    const suite = harness({ synchronizeSavedDrafts: true });
+    const sourceTrack = {
+      visible: true,
+      cues: [{ id: 'origin', startTime: 1, endTime: 3, text: '原始VTT' }],
+    };
+    const clips = [
+      { ...initialTimeline.clips[0], ...(hydrate ? { subtitleUrl: '/origin.vtt' } : {}) },
+    ];
+    const track = hydrate
+      ? mergeSubtitleSources([{ clipId: clips[0].id, track: sourceTrack }], clips)
+      : { visible: true, cues: [{ id: 'vtt', startTime: 1, endTime: 3, text: '原始VTT' }] };
+    act(() =>
+      suite.result.current.setGraph((graph) => ({
+        ...graph,
+        nodes: graph.nodes.map((node) =>
+          node.id === 'clip-a'
+            ? {
+                ...node,
+                data: {
+                  ...node.data,
+                  clipTimelineData: {
+                    ...node.data.clipTimelineData,
+                    clips,
+                    subtitles: track,
+                    videoAudioMutedPerTrack: [false],
+                    videoTrackHiddenPerTrack: [false],
+                  },
+                },
+              }
+            : node,
+        ),
+      })),
+    );
+    openReady(suite.result, 'clip-a');
+    act(() => suite.result.current.controller.installTextTools(createClipTextTools));
+    act(() => suite.result.current.controller.onSubtitleLoaded('ready'));
+    act(() =>
+      expect(suite.result.current.controller.onSelectSubtitle(track.cues[0].id)).toBe(true),
+    );
+    const plan = subtitleMigrationSourcePlan(suite.result.current.controller.state.timeline.clips);
+    const loaded = () =>
+      suite.result.current.controller.onSubtitleMigrationSources(plan.key, 'ready', [
+        { ...plan.sources[0], track: sourceTrack },
+      ]);
+    return { ...suite, id: track.cues[0].id, plan, loaded };
+  };
+  const change = (result, id, text) => {
+    act(() => result.current.controller.onSubtitleTextChange(id, text));
+    act(() => expect(result.current.controller.onCommitSubtitleText()).toBe(true));
+  };
+  it('converts an edited manual VTT in the same history transaction, preserving VTT and exact undo/redo', () => {
+    const { result, unmount, id } = setup();
+    const before = structuredClone(result.current.controller.state.timeline);
+    change(result, id, '迁移后的正文');
+    const after = structuredClone(savedClipTimeline(result));
+    expect(after.subtitles.cues[0].text).toBe('迁移后的正文');
+    expect(readSubtitleHtml(after.subtitlesHtml['video-1'].htmlInline).cues[0]).toMatchObject({
+      text: '迁移后的正文',
+      clipId: 'saved-1',
+      start: 1,
+      duration: 2,
+    });
+    expect(result.current.controller.state.selectedHtmlSubtitle.key).toBe('video-1');
+    expect(result.current.controller.state.history.past).toHaveLength(1);
+    act(() => expect(result.current.controller.onUndo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(before);
+    act(() => expect(result.current.controller.onRedo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(after);
+    unmount();
+  });
+  it('keeps edits writable while sources load, captures an unblurred autosaved last input and amends just one history entry', () => {
+    const { result, unmount, id, loaded } = setup(true);
+    const before = structuredClone(result.current.controller.state.timeline);
+    change(result, id, '等待来源的正文');
+    expect(result.current.controller.state.subtitleMigrationPhase).toBe('pending');
+    expect(savedClipTimeline(result).subtitlesHtml).toBeUndefined();
+    act(() => result.current.controller.onSubtitleTextChange(id, '最后未失焦输入'));
+    act(() => expect(result.current.flushGraph()).toBe(true));
+    act(() => expect(loaded()).toBe(true));
+    const after = structuredClone(savedClipTimeline(result));
+    expect(readSubtitleHtml(after.subtitlesHtml['video-1'].htmlInline).cues[0].text).toBe(
+      '最后未失焦输入',
+    );
+    expect(result.current.controller.state.subtitleTextDraft).toBeNull();
+    expect(result.current.controller.state.history.past).toHaveLength(1);
+    act(() => expect(result.current.controller.onUndo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(before);
+    act(() => expect(result.current.controller.onRedo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(after);
+    unmount();
+  });
+  it('does not complete a queued migration after undo or after an unrelated edit changed its history owner', () => {
+    const { result, unmount, id, loaded } = setup(true);
+    change(result, id, '已保存VTT');
+    act(() =>
+      result.current.controller.onSetTrackControl({
+        kind: 'video',
+        control: 'muted',
+        trackIndex: 0,
+        value: true,
+      }),
+    );
+    expect(result.current.controller.state.pendingVttMigration).toBeNull();
+    act(() => loaded());
+    expect(savedClipTimeline(result).subtitlesHtml).toBeUndefined();
+    expect(savedClipTimeline(result).videoAudioMutedPerTrack).toEqual([true]);
+    expect(result.current.controller.state.history.past).toHaveLength(2);
+    act(() => result.current.controller.onUndo());
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('已保存VTT');
+    act(() => result.current.controller.onUndo());
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('原始VTT');
+    unmount();
+  });
+  it('retains VTT and a current draft on hydration failure instead of writing partial HTML', () => {
+    const { result, unmount, id, plan } = setup(true);
+    change(result, id, '已保存');
+    act(() => result.current.controller.onSubtitleTextChange(id, '仍在输入'));
+    act(() => result.current.controller.onSubtitleMigrationSources(plan.key, 'failed'));
+    expect(savedClipTimeline(result).subtitlesHtml).toBeUndefined();
+    expect(result.current.controller.state.subtitleTextDraft.text).toBe('仍在输入');
+    act(() => expect(result.current.controller.onCommitSubtitleText()).toBe(true));
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('仍在输入');
+    unmount();
+  });
+  it('migrates a VTT gesture at release and restores its original source time with one undo', () => {
+    const { result, unmount, id } = setup();
+    const before = structuredClone(result.current.controller.state.timeline);
+    act(() => expect(result.current.controller.onBeginEdit()).toBe(true));
+    act(() =>
+      expect(
+        result.current.controller.onEditPreview('subtitle', {
+          kind: 'gesture',
+          cueId: id,
+          mode: 'move',
+          delta: 1,
+        }),
+      ).toBe(true),
+    );
+    act(() => expect(result.current.controller.onEndEdit()).toBe(true));
+    expect(
+      readSubtitleHtml(savedClipTimeline(result).subtitlesHtml['video-1'].htmlInline).cues[0].start,
+    ).toBe(2);
+    expect(result.current.controller.state.history.past).toHaveLength(1);
+    act(() => result.current.controller.onUndo());
+    expect(savedClipTimeline(result)).toEqual(before);
+    unmount();
+  });
+});
+
+describe('mixed subtitle ownership in the real graph/history controller', () => {
+  const setupMixed = (partial = false, synchronizeSavedDrafts = false) => {
+    const suite = harness({ authoritative: true, synchronizeSavedDrafts });
+    act(() =>
+      suite.result.current.setGraph((graph) => ({
+        ...graph,
+        nodes: graph.nodes.map((node) =>
+          node.id !== 'clip-a'
+            ? node
+            : {
+                ...node,
+                data: {
+                  ...node.data,
+                  clipTimelineData: {
+                    ...node.data.clipTimelineData,
+                    clips: [
+                      {
+                        ...initialTimeline.clips[0],
+                        subtitleHtmlUrl: '/caption.html',
+                        subtitleUrl: '/caption.vtt',
+                      },
+                      ...(partial
+                        ? [
+                            {
+                              ...initialTimeline.clips[0],
+                              id: 'second',
+                              startTime: 5,
+                              duration: 5,
+                              subtitleHtmlUrl: '/bad.html',
+                            },
+                          ]
+                        : []),
+                    ],
+                    subtitles: {
+                      visible: true,
+                      cues: [{ id: 'vtt', startTime: 0, endTime: 2, text: '原VTT正文' }],
+                    },
+                  },
+                },
+              },
+        ),
+      })),
+    );
+    openReady(suite.result, 'clip-a');
+    act(() => suite.result.current.controller.installTextTools(createClipTextTools));
+    act(() => suite.result.current.controller.onSubtitleLoaded('ready'));
+    const plan = htmlSubtitleLoadPlan(suite.result.current.controller.state.timeline);
+    const html = createSubtitleHtml({
+      compositionId: 'source-subtitle',
+      width: 1920,
+      height: 1080,
+      duration: 10,
+      cues: [
+        {
+          cueId: 'html',
+          clipId: 'saved-1',
+          start: 0,
+          duration: 2,
+          trackIndex: 0,
+          text: '原HTML正文',
+        },
+      ],
+    });
+    return { ...suite, plan, layer: { ...plan.layers[0], html, sourceHtml: html } };
+  };
+
+  it('blocks stale VTT selection, edits and gestures while HTML owns editing and preserves VTT through HTML undo/redo', () => {
+    const { result, unmount, plan, layer } = setupMixed();
+    const original = structuredClone(savedClipTimeline(result).subtitles);
+    act(() => {
+      expect(result.current.controller.onSelectSubtitle('vtt')).toBe(false);
+      expect(result.current.controller.onAddSubtitle({ force: true })).toBe(false);
+      expect(result.current.controller.onEditSubtitle({ kind: 'delete', cueId: 'vtt' })).toBe(
+        false,
+      );
+      expect(result.current.controller.onBeginEdit()).toBe(true);
+      expect(
+        result.current.controller.onEditPreview('subtitle', {
+          kind: 'gesture',
+          cueId: 'vtt',
+          mode: 'move',
+          delta: 1,
+        }),
+      ).toBe(false);
+      expect(result.current.controller.onEndEdit()).toBe(true);
+    });
+    expect(savedClipTimeline(result).subtitles).toEqual(original);
+    act(() => result.current.controller.onHtmlSubtitleLoaded(plan.key, [layer]));
+    act(() =>
+      expect(
+        result.current.controller.onSelectHtmlSubtitle({
+          key: layer.key,
+          cueId: 'html',
+          clipId: 'saved-1',
+        }),
+      ).toBe(true),
+    );
+    act(() => result.current.controller.onHtmlSubtitleTextChange('仅编辑HTML正文'));
+    act(() => expect(result.current.controller.onCommitHtmlSubtitle()).toBe(true));
+    expect(savedClipTimeline(result).subtitles).toEqual(original);
+    expect(
+      readSubtitleHtml(savedClipTimeline(result).subtitlesHtml[layer.key].htmlInline).cues[0].text,
+    ).toBe('仅编辑HTML正文');
+    act(() => expect(result.current.controller.onUndo()).toBe(true));
+    expect(savedClipTimeline(result).subtitlesHtml).toBeUndefined();
+    expect(savedClipTimeline(result).subtitles).toEqual(original);
+    act(() => expect(result.current.controller.onRedo()).toBe(true));
+    expect(
+      readSubtitleHtml(savedClipTimeline(result).subtitlesHtml[layer.key].htmlInline).cues[0].text,
+    ).toBe('仅编辑HTML正文');
+    expect(savedClipTimeline(result).subtitles).toEqual(original);
+    unmount();
+  });
+
+  it('falls back after all remote rejections and commits the last VTT draft before a retry reclaims ownership', () => {
+    const { result, unmount, plan, layer } = setupMixed(false, true);
+    act(() =>
+      result.current.controller.onHtmlSubtitleLoaded(
+        plan.key,
+        [],
+        [{ key: layer.key, nodeId: layer.nodeId, error: '远程字幕不可读取' }],
+      ),
+    );
+    act(() => expect(result.current.controller.onSelectSubtitle('vtt')).toBe(true));
+    act(() => result.current.controller.onSubtitleTextChange('vtt', '最后的VTT输入'));
+    act(() => expect(result.current.flushGraph()).toBe(true));
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('最后的VTT输入');
+    act(() => result.current.controller.onRetryHtmlSubtitles());
+    expect(result.current.controller.state.subtitleTextDraft).toBeNull();
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('最后的VTT输入');
+    act(() => result.current.controller.onHtmlSubtitleLoadStatus(plan.key));
+    act(() =>
+      expect(result.current.controller.onEditSubtitle({ kind: 'delete', cueId: 'vtt' })).toBe(
+        false,
+      ),
+    );
+    act(() => result.current.controller.onHtmlSubtitleLoaded(plan.key, [layer]));
+    expect(savedClipTimeline(result).subtitlesHtml).toBeUndefined();
+    act(() => expect(result.current.controller.onSelectSubtitle('vtt')).toBe(false));
+    act(() => expect(result.current.controller.onUndo()).toBe(true));
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('原VTT正文');
+    act(() => expect(result.current.controller.onRedo()).toBe(true));
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('最后的VTT输入');
+    unmount();
+  });
+
+  it('keeps a successful layer editable when another URL fails without serializing load receipts or dropping failed sources', () => {
+    const { result, unmount, plan, layer } = setupMixed(true);
+    expect(plan.layers).toHaveLength(2);
+    act(() =>
+      result.current.controller.onHtmlSubtitleLoaded(
+        plan.key,
+        [layer],
+        [{ key: plan.layers[1].key, nodeId: layer.nodeId, error: '另一个HTML失败' }],
+      ),
+    );
+    act(() =>
+      expect(
+        result.current.controller.onSelectHtmlSubtitle({
+          key: layer.key,
+          cueId: 'html',
+          clipId: 'saved-1',
+        }),
+      ).toBe(true),
+    );
+    act(() =>
+      expect(result.current.controller.onEditHtmlSubtitle({ fields: { color: '#00ff00' } })).toBe(
+        true,
+      ),
+    );
+    expect(
+      savedClipTimeline(result).clips.find((clip) => clip.id === 'second').subtitleHtmlUrl,
+    ).toBe('/bad.html');
+    expect(savedClipTimeline(result).subtitles.cues[0].text).toBe('原VTT正文');
+    expect(savedClipTimeline(result)).not.toHaveProperty('htmlSubtitleSourceStates');
+    expect(
+      result.current.controller.state.htmlSubtitleSourceStates.map((state) => state.status),
+    ).toEqual(['ready', 'rejected']);
+    unmount();
+  });
+});
+
 describe('HTML subtitle integration with the real graph/draft/history controller', () => {
   const add = (result) => {
     act(() => result.current.controller.installTextTools(createClipTextTools));
@@ -191,6 +527,79 @@ describe('HTML subtitle integration with the real graph/draft/history controller
     const archives = savedClipTimeline(result).subtitlesHtml;
     return readSubtitleHtml(Object.values(archives)[0].htmlInline);
   };
+
+  it('reads and upgrades a legacy remote source without saving until editing, then keeps one-step history after actual autosave acknowledgement', () => {
+    const { result, unmount } = harness({ synchronizeSavedDrafts: true });
+    act(() =>
+      result.current.setGraph((graph) => ({
+        ...graph,
+        nodes: graph.nodes.map((node) =>
+          node.id === 'clip-a'
+            ? {
+                ...node,
+                data: {
+                  ...node.data,
+                  clipTimelineData: {
+                    ...node.data.clipTimelineData,
+                    videoAudioMutedPerTrack: [false],
+                    videoTrackHiddenPerTrack: [false],
+                    clips: node.data.clipTimelineData.clips.map((clip) => ({
+                      ...clip,
+                      subtitleHtmlUrl: '/legacy.html',
+                    })),
+                  },
+                },
+              }
+            : node,
+        ),
+      })),
+    );
+    openReady(result, 'clip-a');
+    act(() => result.current.controller.installTextTools(createClipTextTools));
+    const plan = htmlSubtitleLoadPlan(result.current.controller.state.timeline);
+    const raw =
+      '<html><body><div id="root" data-width="1920" data-height="1080"><p data-start="0" data-duration="2"><span data-libtv-text>旧字幕正文</span></p></div></body></html>';
+    const layer = {
+      ...plan.layers[0],
+      sourceHtml: raw,
+      html: materializeHtmlSubtitles(
+        { ...plan.layers[0], html: raw },
+        result.current.controller.state.timeline.clips,
+        result.current.controller.state.timeline.clips,
+      ),
+    };
+    act(() => result.current.controller.onHtmlSubtitleLoaded(plan.key, [layer]));
+    const before = structuredClone(result.current.controller.state.timeline);
+    expect(before.subtitlesHtml).toBeUndefined();
+    const cue = readSubtitleHtml(layer.html).cues[0];
+    expect(readSubtitleHtml(layer.html).contractVersion).toBe(4);
+    act(() =>
+      expect(
+        result.current.controller.onSelectHtmlSubtitle({
+          key: layer.key,
+          cueId: cue.cueId,
+          clipId: 'saved-1',
+        }),
+      ).toBe(true),
+    );
+    act(() => result.current.controller.onHtmlSubtitleTextChange('旧字幕最后输入'));
+    act(() => expect(result.current.flushGraph()).toBe(true));
+    expect(document(result).cues[0].text).toBe('旧字幕最后输入');
+    act(() => expect(result.current.controller.onCommitHtmlSubtitle()).toBe(true));
+    const after = structuredClone(savedClipTimeline(result));
+    expect(document(result).cues[0]).toMatchObject({
+      cueId: cue.cueId,
+      clipId: 'saved-1',
+      start: 0,
+      duration: 2,
+    });
+    act(() => expect(result.current.controller.onUndo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(before);
+    act(() => expect(result.current.controller.onRedo()).toBe(true));
+    expect(savedClipTimeline(result)).toEqual(after);
+    expect(raw).not.toContain('libtv-subtitle/4');
+    unmount();
+  });
 
   it('persists a source word-highlight toggle without clearing its preset and undoes the whole change once', () => {
     const { result, unmount } = harness();

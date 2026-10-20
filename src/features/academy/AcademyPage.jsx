@@ -6,6 +6,13 @@ function Academy({ data, login, asset, user, navigate }) {
   const [tab, setTab] = useState('article');
   const learning = useRef(null);
   const course = data.masterclasses[0];
+  function openEntry(kind, id) {
+    if (!user) {
+      login();
+      return;
+    }
+    window.open(`/academy/${kind}/${encodeURIComponent(id)}`, '_blank', 'noopener,noreferrer');
+  }
   function changeTab(next) {
     setTab(next);
     learning.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -30,9 +37,7 @@ function Academy({ data, login, asset, user, navigate }) {
             <h2>AI 大师公开课</h2>
             <button
               className="academy-master-card"
-              onClick={() =>
-                user ? navigate(`/academy/masterclass/${course.masterclassUuid}`) : login()
-              }
+              onClick={() => openEntry('masterclass', course.masterclassUuid)}
             >
               <div className="academy-master-image">
                 <img src={asset(course.cover)} alt={course.cardTitle} />
@@ -80,11 +85,7 @@ function Academy({ data, login, asset, user, navigate }) {
               <button
                 className="academy-course-card"
                 key={item.articleUuid || item.tutorialUuid}
-                onClick={() =>
-                  user
-                    ? navigate(`/academy/${tab}/${item.articleUuid || item.tutorialUuid}`)
-                    : login()
-                }
+                onClick={() => openEntry(tab, item.articleUuid || item.tutorialUuid)}
               >
                 <div className="academy-course-image">
                   <img src={asset(item.cover)} alt={item.title} />

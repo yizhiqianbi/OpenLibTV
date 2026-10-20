@@ -316,6 +316,12 @@
   justify-content: flex-end;
   gap: 12px;
 }
+.registration-submit-error {
+  color: #f26368;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
 .registration-actions button {
   height: 32px;
   border: 0;

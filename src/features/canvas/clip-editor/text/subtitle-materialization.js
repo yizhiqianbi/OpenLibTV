@@ -74,6 +74,7 @@ export function materializeHtmlSubtitles(layer, openingClips, liveClips) {
       });
       unit.remove();
     }
+    model.root.setAttribute(A.contract, 'libtv-subtitle/4');
     const patched = patchHtmlSubtitle(
       serializeTextHtml(model.document),
       windows.map((window) => ({

@@ -1,6 +1,8 @@
 const record = (value) => value && typeof value === 'object' && !Array.isArray(value);
 export const studioNodePath = (path) => path.join('.');
 export const studioNodeId = (ownerId, path) => `${ownerId}:node:${studioNodePath(path)}`;
+export const studioNodeCopyId = (ownerId, copyId, relativePath = []) =>
+  `${ownerId}:copy:${copyId}:node:${relativePath.join('.')}`;
 
 const studioNodeDeleted = (object, path) =>
   path.some((_, index) => object.nodeEdits?.[studioNodePath(path.slice(0, index + 1))]?.deleted);
@@ -28,6 +30,55 @@ export function studioOutlinerRows(objects) {
           node.path.length === 1 ? object.id : studioNodeId(object.id, node.path.slice(0, -1)),
         subtree: true,
       });
+    }
+    for (const copy of object.nodeCopies || []) {
+      if (!copy?.id || !Array.isArray(copy.sourcePath)) continue;
+      const sourceRoot = (object.subtree || []).find(
+        (node) =>
+          Array.isArray(node.path) && studioNodePath(node.path) === studioNodePath(copy.sourcePath),
+      );
+      if (!sourceRoot) continue;
+      const descendants = (object.subtree || []).filter(
+        (node) =>
+          Array.isArray(node.path) &&
+          node.path.length >= copy.sourcePath.length &&
+          copy.sourcePath.every((part, index) => node.path[index] === part),
+      );
+      for (const source of descendants) {
+        const relativePath = source.path.slice(copy.sourcePath.length);
+        const edits = {
+          ...(relativePath.length === 0
+            ? {
+                name: copy.name,
+                position: copy.position,
+                rotation: copy.rotation,
+                scale: copy.scale,
+                visible: copy.visible,
+              }
+            : {}),
+          ...(copy.edits?.[studioNodePath(relativePath)] || {}),
+        };
+        const id = studioNodeCopyId(object.id, copy.id, relativePath);
+        rows.push({
+          ...source,
+          ...edits,
+          id,
+          ownerId: object.id,
+          path: source.path,
+          sourcePath: copy.sourcePath,
+          relativePath,
+          copyId: copy.id,
+          subtree: true,
+          subtreeCopy: true,
+          depth: source.path.length,
+          parentId:
+            relativePath.length === 0
+              ? copy.sourcePath.length === 1
+                ? object.id
+                : studioNodeId(object.id, copy.sourcePath.slice(0, -1))
+              : studioNodeCopyId(object.id, copy.id, relativePath.slice(0, -1)),
+        });
+      }
     }
   }
   return studioRowRelations(rows);
@@ -122,6 +173,24 @@ export function patchStudioRow(objects, id, changes) {
   return objects.map((object) => {
     if (object.id !== row.ownerId) return object;
     if (!row.subtree) return { ...object, ...changes };
+    if (row.subtreeCopy) {
+      const copy = (object.nodeCopies || []).find((item) => item.id === row.copyId);
+      if (!copy) return object;
+      const key = studioNodePath(row.relativePath || []);
+      return {
+        ...object,
+        nodeCopies: object.nodeCopies.map((item) =>
+          item.id === row.copyId
+            ? {
+                ...item,
+                ...(key
+                  ? { edits: { ...item.edits, [key]: { ...item.edits?.[key], ...changes } } }
+                  : changes),
+              }
+            : item,
+        ),
+      };
+    }
     const key = studioNodePath(row.path);
     return {
       ...object,

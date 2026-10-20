@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Icon from '../../components/Icon.jsx';
-import { useData } from '../../data.js';
+import { useContent } from '../../data.js';
 
 export default function StudioPage({ navigate, login, user, toast }) {
   const [prompt, setPrompt] = useState(''),
@@ -10,8 +10,29 @@ export default function StudioPage({ navigate, login, user, toast }) {
     [model, setModel] = useState('3D-BOX Model Pro'),
     [files, setFiles] = useState([]);
   const file = useRef();
-  const config = useData('shell-config', {});
+  const configResource = useContent('shell-config', {});
+  const config = configResource.data;
   const examples = config.studio?.prompts || [];
+  const hasStudioConfig = Boolean(config.studio);
+  const retry = () => void configResource.reload().catch(() => undefined);
+  if (configResource.error && !hasStudioConfig) {
+    return (
+      <div className="empty-state">
+        <p role="alert">3D-BOX 配置加载失败，请重试</p>
+        <button className="soft-button" onClick={retry}>
+          重试
+        </button>
+      </div>
+    );
+  }
+  if (configResource.loading && !hasStudioConfig) {
+    return (
+      <div className="empty-state" role="status">
+        <span className="spinner" />
+        <p>加载 3D-BOX...</p>
+      </div>
+    );
+  }
   return (
     <div className="studio-page page-inner">
       <section className="studio-hero">

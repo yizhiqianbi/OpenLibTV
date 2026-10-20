@@ -1,0 +1,7 @@
+{
+  "name": "penstudio-local",
+  "version": "0.1.0",
+  "description": "Read-only local PenStudio route and public snapshot tools for Codex.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

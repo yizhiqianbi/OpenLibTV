@@ -1,0 +1,293 @@
+.xumeng-page {
+  min-height: 100%;
+  padding: 36px clamp(20px, 4vw, 64px) 72px;
+  background: #f7f7f5;
+  color: #161616;
+}
+.xumeng-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto 28px;
+}
+.xumeng-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #6c5ce7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.xumeng-header h1 {
+  margin: 10px 0 6px;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -0.04em;
+}
+.xumeng-header p {
+  margin: 0;
+  color: #686868;
+}
+.xumeng-header-actions,
+.xumeng-editor-actions {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.xumeng-header button,
+.xumeng-editor button,
+.xumeng-send {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #d9d9d5;
+  border-radius: 9px;
+  padding: 9px 12px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  font: inherit;
+}
+.xumeng-header button:disabled,
+.xumeng-editor button:disabled,
+.xumeng-send:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.xumeng-banner,
+.xumeng-error {
+  max-width: 1440px;
+  margin: 0 auto 16px;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 13px;
+}
+.xumeng-banner {
+  background: #eeebff;
+  color: #4435a8;
+}
+.xumeng-error {
+  background: #fff0f0;
+  color: #a43131;
+}
+.xumeng-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(260px, 0.8fr) minmax(340px, 1.2fr);
+  gap: 14px;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: start;
+}
+.xumeng-library,
+.xumeng-editor,
+.xumeng-chat {
+  min-width: 0;
+  border: 1px solid #e6e6e1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgb(26 26 26 / 4%);
+}
+.xumeng-library {
+  padding: 14px 10px;
+}
+.xumeng-editor {
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+.xumeng-chat {
+  min-height: 640px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.xumeng-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 750;
+}
+.xumeng-section-title span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.xumeng-section-title small {
+  color: #929292;
+  font-size: 11px;
+  font-weight: 500;
+}
+.xumeng-character-row {
+  width: 100%;
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 9px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.xumeng-character-row:hover,
+.xumeng-character-row.is-active {
+  background: #f0edff;
+}
+.xumeng-character-row strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.xumeng-character-row span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #858585;
+  font-size: 11px;
+}
+.xumeng-muted {
+  padding: 14px 6px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.xumeng-editor label {
+  display: grid;
+  gap: 6px;
+  color: #555;
+  font-size: 12px;
+  font-weight: 650;
+}
+.xumeng-editor input,
+.xumeng-editor textarea,
+.xumeng-composer textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #deded8;
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: #fcfcfb;
+  color: #191919;
+  font: inherit;
+  font-size: 13px;
+  resize: vertical;
+}
+.xumeng-editor textarea {
+  min-height: 58px;
+}
+.xumeng-editor input:focus,
+.xumeng-editor textarea:focus,
+.xumeng-composer textarea:focus {
+  outline: 2px solid rgb(108 92 231 / 24%);
+  border-color: #6c5ce7;
+}
+.xumeng-primary {
+  border-color: #6c5ce7 !important;
+  background: #6c5ce7 !important;
+  color: #fff !important;
+}
+.xumeng-messages {
+  flex: 1;
+  min-height: 380px;
+  overflow: auto;
+  padding: 10px 2px 16px;
+}
+.xumeng-empty-chat {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 360px;
+  padding: 20px;
+  color: #777;
+  text-align: center;
+}
+.xumeng-empty-chat svg {
+  color: #6c5ce7;
+}
+.xumeng-empty-chat p {
+  max-width: 380px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+.xumeng-message {
+  max-width: 84%;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 11px;
+  background: #f0f0ed;
+}
+.xumeng-message.user {
+  margin-left: auto;
+  background: #e9e5ff;
+}
+.xumeng-message span {
+  display: block;
+  margin-bottom: 4px;
+  color: #6a6a6a;
+  font-size: 10px;
+  font-weight: 700;
+}
+.xumeng-message p {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  font-size: 13px;
+}
+.xumeng-composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border-top: 1px solid #ededeb;
+  padding-top: 12px;
+}
+.xumeng-composer textarea {
+  min-height: 44px;
+  max-height: 130px;
+}
+.xumeng-send {
+  flex: 0 0 auto;
+  min-height: 44px;
+  border-color: #6c5ce7;
+  background: #6c5ce7;
+  color: #fff;
+}
+@media (max-width: 1060px) {
+  .xumeng-layout {
+    grid-template-columns: 190px minmax(250px, 1fr);
+  }
+  .xumeng-chat {
+    grid-column: 1 / -1;
+    min-height: 520px;
+  }
+}
+@media (max-width: 680px) {
+  .xumeng-page {
+    padding: 22px 14px 48px;
+  }
+  .xumeng-header {
+    display: grid;
+  }
+  .xumeng-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .xumeng-library,
+  .xumeng-editor,
+  .xumeng-chat {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .xumeng-library {
+    max-height: 220px;
+    overflow: auto;
+  }
+  .xumeng-chat {
+    min-height: 500px;
+  }
+}

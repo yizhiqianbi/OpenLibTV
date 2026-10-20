@@ -50,7 +50,12 @@ export function createViewportEntityController({
     entry.object.position.fromArray(spec.position || [0, 0, 0]);
     entry.object.rotation.set(...(spec.rotation || [0, 0, 0]).map(radians));
     entry.object.scale.fromArray(spec.scale || [1, 1, 1]);
-    entry.tree?.apply(spec.nodeEdits);
+    if (entry.tree) {
+      const previousIds = [...entry.tree.nodes.keys()];
+      entry.tree.apply(spec.nodeEdits, spec.nodeCopies);
+      for (const id of previousIds) if (id !== spec.id) entities.delete(id);
+      for (const [id, node] of entry.tree.nodes) entities.set(id, node);
+    }
     if (
       entry.tree &&
       transform.object &&

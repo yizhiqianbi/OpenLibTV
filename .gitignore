@@ -16,3 +16,4 @@ dist-film/
 .env*.local
 
 output/
+.vercel

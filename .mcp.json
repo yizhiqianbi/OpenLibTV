@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "penstudio": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/scripts/penstudio-mcp-server.mjs"],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

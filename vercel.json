@@ -24,6 +24,12 @@
     },
     "api/film/release.ts": {
       "maxDuration": 30
+    },
+    "api/backend/[...path].ts": {
+      "maxDuration": 180
+    },
+    "api/xumeng/[...path].ts": {
+      "maxDuration": 120
     }
   }
 }

@@ -34,4 +34,7 @@ export const TEXT_TOOL_ACTIONS = Object.freeze([
   'onCancelHtmlSubtitleStyle',
   'onHtmlSubtitlePreviewStatus',
   'onApplyHtmlSubtitleToAll',
+  'onConvertHtmlSubtitle',
+  'onSubtitleMigrationSources',
+  'onResumeSubtitleMigration',
 ]);

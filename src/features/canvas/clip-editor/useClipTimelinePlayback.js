@@ -868,6 +868,14 @@ export class ClipTimelinePlaybackRuntime {
     return rendered;
   }
 
+  measurePreviewCueRect(selection) {
+    if (!selection?.owner) return null;
+    if (selection.owner === 'overlay') return this.textRenderer.measureCueRect(selection.cueId);
+    if (selection.owner === 'html-subtitle')
+      return this.htmlSubtitleRenderer.measureCueRect(selection);
+    return null;
+  }
+
   playbackSignature(description) {
     return JSON.stringify([
       [...description.activeVideos, ...description.activeAudios].map((entry) => entry.id),
@@ -1054,5 +1062,6 @@ export function useClipTimelinePlayback({ hostRef, documentKey, nodeId, ...input
     seekAndWait: (time, options) => call('seekAndWait', time, options),
     play: () => call('play'),
     pause: () => call('pause'),
+    measurePreviewCueRect: (selection) => call('measurePreviewCueRect', selection),
   };
 }

@@ -1,5 +1,15 @@
 # Studio 导入动画、解码与场景子树接线（2026-10-11）
 
+2026-10-18 浮动机位预览维护：监视器卡片新增桌面 PIP 入口，`StudioFloatingPreview` 复用已有 monitor frame channel，支持机位标签、播放/暂停、关闭、标题栏拖动和边界限制；浮窗使用 `data-preview-pip` 隔离内部 pointer，位置只属于临时视口 chrome，不写入 Studio 文档。Studio 专项 **30 文件 / 145 项通过**；最新完整 `npm run check` **498 文件 / 6739 测试**、3713 modules、build18.60s，证据 `artifacts/studio-floating-preview-verification.json`、日志 `artifacts/studio-pip-full-check.log`。协作/云端写入、真实生成与视频导出仍未接入。
+
+2026-10-19 WebM 视频导出维护：导出面板在存在动画时启用视频选项，`viewport-commands.exportVideo` 使用当前 renderer canvas 的 `captureStream` 与 `MediaRecorder`，协商 VP9/VP8/WebM，按时间轴逐帧调用 `renderViewportFrame` 后下载 Blob；面板显示进度并支持 AbortController 取消，浏览器能力缺失、无动画、取消或录制错误均保留明确错误。Studio 专项 **30 文件 / 147 项通过**；最新完整 `npm run check` **499 文件 / 6744 测试**、3714 modules、build13.96s，证据 `artifacts/studio-video-export-verification.json`、日志 `artifacts/studio-video-progress-full-check.log`。服务端成片、云端交付和移动端浏览器仍未接入。
+
+2026-10-16 3D-BOX 入口维护：`StudioLandingPage` 通过 `useContent('shell-config')` 区分 loading、错误和已有配置缓存；配置读取失败时显示“3D-BOX 配置加载失败”和重试，重试只刷新外壳配置，不创建生成任务、项目或账号。定向 2 文件 / 12 项通过；Node24.19.0 完整 `npm run check` 为 **482 文件 / 6619 测试**，证据见 `artifacts/studio-landing-retry-verification.json`。这只覆盖入口配置边界，不提高完整 Studio 工具、真实生成或项目服务的完成声明。
+
+2026-10-16 材质参数控件维护：公开 `object.material.set` 已确认 `baseColor`、`metallic`、`roughness` 和透明度的运行时 mutation 契约；本地 `StudioInspector` 现在将金属度、粗糙度、不透明度、透明材质和深度写入接到既有 `materialPatch`、snapshot history、500ms autosave、刷新恢复和 GLB 场景恢复。真实导入 mesh 与 primitive 均可操作，nodeEdits 只保存可序列化覆盖，不改写源 GLB data URL。定向 2 文件 / 16 项通过；Node24.19.0 完整 `npm run check` 为 **477 文件 / 6611 测试**，格式、零警告 lint、核心 strict 和生产构建通过，Vite 3698 modules、build 12.62s；证据见 `artifacts/studio-material-verification.json`。本批证明本地参数功能和保存边界，原站可见面板逐像素布局、纹理、骨架、动画轨道属性、真机 Safari 和服务端 mutation 仍未验收。
+
+2026-10-18 导入子树副本维护：`StudioInspector` 的创建副本、复制/粘贴现在适用于导入 GLB 的真实 subtree 行；本地 `nodeCopies` 保存稳定 copy ID、sourcePath、名称/变换和局部 edits，runtime 克隆独立 geometry/material 并加入 entities/outliner，删除、撤销/重做、刷新恢复和 GLB 导出沿同一文档边界。源 dataUrl、source path、原始 subtree metadata 和原 GLB animation tracks 不被改写。Studio 域专项 **29 文件 / 143 项通过**，最终完整检查 **495 文件 / 6727 测试**，证据 `artifacts/studio-subtree-copy-verification.json`。导出器可能对非 ASCII 名称做规范化；协作锁、云端同步、纹理/多材质槽、骨架和原始导入轨道属性编辑仍未接入。
+
 2026-10-15 前批根检查（转场实际预览接入前）：`npm run check` 通过 **433 个测试文件／6366 项测试**；三类灯光添加入口（Sun/Point/Spot）保持源契约独立，Studio 定向计数仍以各节记录为准。后续转场操作批次的当前根检查现已完整通过438文件/6408测试及标准构建，取代中间ENOSPC失败状态，见 [当前验证](../../../AGENTS.md#当前工程验证)；该根统计不代表Studio新增功能或全部状态已验收。
 
 2026-10-12按用户授权参考Blender改善渲染与导航，独立证据见 [视口审计](../../../research/studio-blender-viewport-audit.md)。AgX/环境光、实际几何聚焦、橙色选择框与XYZ导航为本批适配；原导入材质/动画/相机/导出协议保留。监视器已修复同AgX输出及俯视近端裁切；不是新增原站账号证据或完整Blender工具，方向视图仍为透视。
@@ -60,7 +70,7 @@
 - `outliner/model.js` 只处理可序列化描述与操作；`outliner/StudioOutliner.jsx` 实际提供上述搜索、键盘、折叠、计数、隐藏与改名交互。`StudioInspector` 与 `StudioEditor` 接入真实子节点 selection、属性和 undo/redo。全局快捷键尊重树已消费的键与 IME；子节点不误触顶层复制、删除或 wrapper 加帧。
 - `outliner/scene-tree.js` 从实际加载完成的 GLB Object3D 层级提取描述；`viewport-entities` 的 runtime Map 持有所有真实内部节点。点击网格命中实际子节点，focus 以 world position 定位，gizmo 提交按所属子节点处理。迟到/删除/卸载仍由原 entity controller 生命周期清理；不会把旧 parse 结果挂到新文档。
 - 本地文档的 `subtree` 是源 GLB 节点前序描述，`nodeEdits` 按原 GLB 的 child-index path 保存 name/visible/static transform；Three UUID 与对象引用只在 runtime。路径只对同一源 GLB 有效，不是项目服务器字段或可跨资源合并的协议。旧文档无 `subtree` 时真实 loader 回填；undo 无 override 时恢复源 GLB 静态值。
-- 导入 AnimationClip 在 mixer 建立时绑定原目标 UUID，改名后播放和 GLB 导出仍绑定原节点；保留原 clips，不重新生成关键帧。轨道控制的 transform 分量禁用 Inspector/gizmo 编辑，并明确显示其关键帧编辑尚未接入；其余静态分量可编辑。本地 nodeEdits 不篡改源 GLB data URL。
+- 导入 AnimationClip 在 mixer 建立时绑定原目标 UUID，改名后播放和 GLB 导出仍绑定原节点；保留原 clips，不重新生成关键帧。原始 GLB AnimationClip 轨道的 transform 分量继续禁用 Inspector/gizmo 编辑；本地 `frames` 创建的关键帧现在可在当前时间编辑并只更新命中的 keyframe，其余时间保持锁定。本地 nodeEdits 不篡改源 GLB data URL。
 - 实际 GLTFExporter 回读可确认改名/静态 transform/全部导入 clips。`onlyVisible:false` 仍导出隐藏几何；运行时 visible 仅由本地文档恢复，标准 GLB 不编码这个属性。
 - 子树批次当时保留了 <=760px 隐藏整个 Inspector 及其开关的边界；该历史限制已由文末窄屏属性批次解除。原站手机 Studio 的全部视觉仍未核实，不能把局部可用当作完整移动编辑器验收。
 
@@ -80,9 +90,11 @@ studio-subtree-fixture.glb
 
 建议真实浏览器动作：Arrow/Alt 折叠与搜索 Detail；选择 Assembly 用 H 隐藏，Detail 的眼睛定位隐藏上级，再 H 恢复；将 Detail 改名 `EditedDetail`、位置 X 改为 0.8 后刷新确认；MovingTriangle 改名后播放 Slide 确认仍运动；导出 GLB 再导入确认 EditedDetail 名称/静态位置与两个 clips。保存 visible 的恢复应检验本地刷新，不能以 GLB 再导入声称 visible 保留。
 
-仍未实现 camera trajectory/easing/shot 专用关键帧、导入动画轨道属性编辑、子节点复制、完整材质参数编辑和骨架变换产品分支；不以禁用相关入口声称完整。真实存储/生成/director/视频服务未接，本批无账号或写服务依赖。
+仍未实现 camera trajectory/easing/shot 专用关键帧、导入动画轨道属性编辑、纹理/完整材质槽和骨架变换产品分支；子节点副本已接本地 copy 协议，但不等于原站服务器实体或协作同步。材质基础参数的本地 Inspector 已接，但不等于原站可见面板逐像素一致。真实存储/生成/director/视频服务未接，本批无账号或写服务依赖。
 
-2026-10-15，本地 Studio 已接入源 `entity.delete` 语义：选中的导入 GLB 子节点及其后代可从实时场景树删除，序列化为稳定 path 的 `nodeEdits[path].deleted` tombstone。撤销或清除 tombstone 会按原 parent/index 重新挂回同一 Three 对象；导出同时过滤已脱离节点的动画轨道。该协议是本地可逆演示字段，不伪造原站服务器 mutation log。子节点复制仍未实现；原 renderer 的 duplicate 分支只对可持久化顶层实体有明确 add/remove adapter，不能把嵌套 GLB clone 冒充完成。
+2026-10-15，本地 Studio 已接入源 `entity.delete` 语义：选中的导入 GLB 子节点及其后代可从实时场景树删除，序列化为稳定 path 的 `nodeEdits[path].deleted` tombstone。撤销或清除 tombstone 会按原 parent/index 重新挂回同一 Three 对象；导出同时过滤已脱离节点的动画轨道。该协议是本地可逆演示字段，不伪造原站服务器 mutation log。
+
+2026-10-18，子节点副本使用独立 `nodeCopies` 而不是写回源 `nodeEdits`：创建副本只保存 sourcePath 与可编辑 copy metadata，runtime 对源 Object3D 做独立 geometry/material clone，子树行得到 copy ID，删除副本只移除 copy，不影响源节点。该协议已由 `scene-tree.test.js`、Outliner model 和 `StudioEditor.test.jsx` 覆盖；不能扩展为服务器实体、协作复制或原始 GLB track 改写。
 
 ### Root 实际浏览器验收
 
@@ -127,7 +139,7 @@ studio-subtree-fixture.glb
 
 - 本批相机操作不连接 director、场景 mutation ledger、账号权限、项目写服务或视频导出服务；不伪造协作 sequence、服务成功或支付/生成完成。
 - 既有监视器卡片仍为占位 thumbnail，未做原离屏批量 monitor frame renderer；本批完成的是主 viewport 的真实机位/成片预演，不以卡片图标声称监视器缩略图完成。
-- 普通模型的导入 animation tracks 属性编辑、完整材质参数/骨架/子节点复制仍为既有未完成分支；子节点删除已按上方 path tombstone 接入，本批新增的静态材质颜色编辑不覆盖其它缺口。source Shift+Arrow 状态快捷键、C / workspace 数字快捷键、PIP 漂浮布局及其它未接的 chrome 分支保留后续核对，不以状态按钮覆盖这些快捷键宣称全 Studio 完成。
+- 普通模型的导入 animation tracks 属性编辑、纹理/完整材质槽/骨架仍为既有未完成分支；本地 transform keyframe 的当前时间编辑已接入，不能扩展为原始 GLB track 改写。子节点删除和本地子树副本已按上方协议接入，但不代表协作实体复制。source Shift+Arrow 状态快捷键、C / workspace 数字快捷键以及其它未接的 chrome 分支保留后续核对；桌面 PIP 浮动预览和桌面 WebM 导出已接入，不以它们覆盖这些仍缺的 Studio 工具。
 - camera 数据测试覆盖一个含两机位的真实 GLB 与同 scene 原 clips；同名且同 `hf_id` 的多个 camera GLB 合并/复制还需单独核对源 name/ID 去重契约，本批未声称完成此边界。
 - scene/root marker extras 的 source 分支已支持；asset-level marker extras 没有通过当前 loader 公布，不能声称完整覆盖所有 WEBGI / asset marker 来源。
 - <=760px 既有 CSS 仍隐藏 Inspector；本批不新增未经源核实的手机抽屉，390px 没有相机属性编辑的完整体验。标准 GLB 不编码 Object3D.visible，仍只由本地文档恢复隐藏状态。
@@ -174,15 +186,15 @@ monitor 规则 / 相机投影 / 离屏 capture / runtime 与 React 可见性 hoo
 
 源编辑器提供对选中导入网格子节点的删除操作；本地实现采用可逆 tombstone，而不改写原始 GLB data URL。`nodeEdits[path].deleted` 会隐藏选中节点及其完整后代，保留稳定 path、父级和动画绑定；撤销、重做、刷新恢复与再次导出都使用同一源层级。导出时过滤已 detached 节点对应的 animation tracks，恢复后重新挂回原 parent/index，避免动画目标或兄弟节点错位。
 
-`StudioEditor` 的“删除子节点”只对真实 subtree 行开放，确认后选中父级；`StudioOutliner` 不把墓碑节点显示为可操作行，父级删除仍是独立 root object 删除协议。定向 Studio 回归覆盖 model、scene-tree、StudioEditor 和 GLB 导出回读；完整材质参数、骨架、轨道属性与子节点复制仍未接入。
+`StudioEditor` 的“删除子节点”只对真实 subtree 行开放，确认后选中父级；`StudioOutliner` 不把墓碑节点显示为可操作行，父级删除仍是独立 root object 删除协议。子节点副本使用独立 copy 行和 runtime resources；定向 Studio 回归覆盖 model、scene-tree、StudioEditor 和 GLB 导出回读；纹理/多材质槽、骨架和轨道属性仍未接入。
 
 ## 导入网格的材质颜色编辑（2026-10-15，本批）
 
 公开 renderer `research/source/0wsgf7e09dh0-.js` 的对象 mutation 分支 `object.material.set`（UTF-8 offset **943499**）以 `baseColor`、`metallic`、`roughness` 和透明度更新真实 `MeshStandardMaterial`；可见属性面板在 offset **1008470** 只展示已核实的 Color 输入，并通过同一 material mutation 记录写入。该证据不支持把未展示的 metallic/roughness 控件冒充为已完成。
 
-本地 Studio 现在为真实导入 mesh 子节点显示颜色控件：`scene-tree.js` 在来源快照中记录首个材质的 sRGB 十六进制颜色，`nodeEdits[path].color` 作为稳定本地覆盖；`StudioInspector` 的颜色输入同时适用于导入 mesh 与原有 primitive；`StudioEditor` 在一次历史边界内写入覆盖，撤销/重做和 500ms 自动保存沿用现有文档协议。`viewport-entities.js` 先恢复来源材质再应用节点覆盖，确保切换项目、撤销和 GLB 重新载入不会把颜色泄漏到其他节点；GLB data URL 不被改写。完整材质参数、纹理、骨架和动画轨道属性仍保持明确未接入。
+本地 Studio 现在为真实导入 mesh 子节点和原有 primitive 显示颜色及基础材质参数控件：`scene-tree.js` 在来源快照中记录首个材质的 sRGB 十六进制颜色和 numeric material fields，`nodeEdits[path]` 作为稳定本地覆盖；`StudioInspector` 的颜色、金属度、粗糙度、不透明度、透明和深度写入沿用一次历史边界，撤销/重做和 500ms 自动保存共用现有文档协议。`viewport-entities.js` 先恢复来源材质再应用节点覆盖，确保切换项目、撤销和 GLB 重新载入不会把参数泄漏到其它节点；GLB data URL 不被改写。纹理、多材质槽、骨架和动画轨道属性仍保持明确未接入。
 
-定向证据：真实 Three 嵌套 GLB 回归确认 GrowingTriangle 的材质颜色覆盖与恢复来源颜色；StudioEditor userEvent 回归确认导入 mesh 颜色输入、nodeEdits 持久化、单次 undo/redo 与刷新恢复；定向命令 **4 文件 / 25 项通过**，完整 Studio 域回归 **28 文件 / 136 项通过**，目标文件 ESLint 零警告、Prettier 通过。尚未以此结果替代根全量检查或真实 GPU / 移动端材质验收。
+定向证据：真实 Three 嵌套 GLB 回归确认 GrowingTriangle 的材质颜色/参数覆盖与来源恢复；StudioEditor userEvent 回归确认材质控件、nodeEdits 持久化、单次 undo/redo 与刷新恢复；本批定向 **2 文件 / 16 项通过**，此前材质/Three 联合范围保留 **4 文件 / 25 项**，完整 Studio 域回归 **28 文件 / 136 项**，目标文件 ESLint 零警告、Prettier 通过。尚未以此结果替代根全量检查或真实 GPU / 移动端材质验收。
 
 ## 本批：灯光属性与类型（2026-10-15）
 

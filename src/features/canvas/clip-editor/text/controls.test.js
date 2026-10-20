@@ -3,12 +3,12 @@ import { createClipTextTools } from './controls.js';
 import { createTextOverlayHtml, readTextOverlayHtml } from './html-document.js';
 import { readTextStyle } from './document-model.js';
 import { readTextMotion } from './motion-document.js';
-function harness(cues) {
+function harness(cues, clips = []) {
   let session = {
     ready: true,
     textStatus: 'idle',
     timeline: {
-      clips: [],
+      clips,
       currentTime: 0,
       totalDuration: 10,
       overlayHtmlInline: createTextOverlayHtml({
@@ -134,5 +134,21 @@ describe('ordinary text tools preflight and catalogue adaptation', () => {
     expect(await tools.controls.onAddText()).toBe(false);
     expect(get().textTrackChoice).toEqual([0, 1]);
     expect(acceptEdit).not.toHaveBeenCalled();
+  });
+  it('creates a new ordinary text track only at the next valid index', async () => {
+    const { tools, get, acceptEdit, load } = harness(
+      [cue],
+      [{ id: 'video', type: 'video', width: 1920, height: 1080, duration: 8 }],
+    );
+    load();
+    expect(await tools.controls.onAddText({ trackIndex: 1, createTrack: true, force: true })).toBe(
+      true,
+    );
+    expect(acceptEdit).toHaveBeenCalledTimes(1);
+    expect(readTextOverlayHtml(get().timeline.overlayHtmlInline).trackIndexes).toEqual([0, 1]);
+    expect(await tools.controls.onAddText({ trackIndex: 3, createTrack: true, force: true })).toBe(
+      false,
+    );
+    expect(acceptEdit).toHaveBeenCalledTimes(1);
   });
 });

@@ -1,4 +1,5 @@
 import { readTextOverlayHtml, readSubtitleHtml, serializeTextHtml } from './html-document.js';
+import { subtitleCompositionRoot } from './timed-text-dom.js';
 const abortError = () => new DOMException('文字预览已取消', 'AbortError');
 const ASSET_ORIGINS =
   "'self' https://libtv-res.liblib.art https://tv-res.newtake.cloud https://fonts.gstatic.cn";
@@ -28,8 +29,9 @@ export function prepareTimedTextPreviewHtml(html, { subtitle = false } = {}) {
 export function seekTextPreview(document, time, includeCue) {
   if (!Number.isFinite(time)) return;
   time = Math.max(0, time);
+  const composition = subtitleCompositionRoot(document);
   for (const cue of document.querySelectorAll('[data-start][data-duration]')) {
-    if (cue.id === 'root' || cue.hasAttribute('data-composition-id')) continue;
+    if (cue === composition) continue;
     const start = Number(cue.getAttribute('data-start')),
       duration = Number(cue.getAttribute('data-duration'));
     const hidden = cue.closest('[data-libtv-hidden="true"],[data-libtv-track-hidden="true"]');
@@ -71,7 +73,12 @@ function waitForFrame(frame, html, signal, timeoutMs = 5000) {
     const loaded = async () => {
       try {
         const document = frame.contentDocument;
-        if (!document?.querySelector('[data-composition-id]'))
+        const root = document && subtitleCompositionRoot(document);
+        if (
+          !root ||
+          !(Number(root.getAttribute('data-width')) > 0) ||
+          !(Number(root.getAttribute('data-height')) > 0)
+        )
           throw new Error('文字预览缺少composition');
         await document.fonts?.ready;
         for (const image of document.images) {
@@ -171,6 +178,7 @@ export class TextOverlayPreviewRuntime {
       prepare = prepareTextPreviewHtml,
       seek = seekTextPreview,
       title = '文字HTML预览',
+      requireDuration = true,
     } = {},
   ) {
     this.host = host;
@@ -180,6 +188,7 @@ export class TextOverlayPreviewRuntime {
     this.prepareDocument = prepare;
     this.seekDocument = seek;
     this.title = title;
+    this.requireDuration = requireDuration;
     this.live = true;
     this.generation = 0;
     this.frames = [];
@@ -311,7 +320,8 @@ export class TextOverlayPreviewRuntime {
             this.requestedHtml !== html
           )
             return;
-          if (!(prepared.model.duration > 0)) throw new Error('文字composition总时长无效');
+          if (this.requireDuration && !(prepared.model.duration > 0))
+            throw new Error('文字composition总时长无效');
           // This host supplies the actual scriptless seek/duration runtime; original scripts remain inert.
           if (frame.contentWindow)
             frame.contentWindow.__player = {
@@ -342,6 +352,26 @@ export class TextOverlayPreviewRuntime {
     this.requestedHtml = '';
     this.render(this.timeline, this.time);
   }
+  measureCueRect(cueId) {
+    const frame = this.frames[this.active];
+    const doc = frame?.contentDocument;
+    const escaped = String(cueId ?? '').replace(/["\\]/g, '\\$&');
+    const target = doc?.querySelector?.(`[data-libtv-cue-id="${escaped}"]`);
+    const hostRect = this.host.getBoundingClientRect?.();
+    if (!target || !hostRect?.width || !hostRect?.height) return null;
+    const cueRect = target.getBoundingClientRect?.();
+    const frameRect = frame.getBoundingClientRect?.();
+    if (!cueRect || !frameRect?.width || !frameRect?.height) return null;
+    const scaleX = frame.clientWidth > 0 ? frameRect.width / frame.clientWidth : 1;
+    const scaleY = frame.clientHeight > 0 ? frameRect.height / frame.clientHeight : 1;
+    return {
+      left: frameRect.left - hostRect.left + cueRect.left * scaleX,
+      top: frameRect.top - hostRect.top + cueRect.top * scaleY,
+      width: cueRect.width * scaleX,
+      height: cueRect.height * scaleY,
+    };
+  }
+
   dispose() {
     this.live = false;
     this.generation++;

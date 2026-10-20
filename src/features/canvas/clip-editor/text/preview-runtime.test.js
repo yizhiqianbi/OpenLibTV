@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { createTextOverlayHtml } from './html-document.js';
 import { applyTextOverlayPatches } from './html-patches.js';
+import { prepareSubtitlePreviewHtml, seekSubtitlePreview } from './subtitle-preview-document.js';
 import {
   prepareTextPreviewHtml,
   seekTextPreview,
@@ -33,6 +34,42 @@ const host = () => {
 };
 const read = (value) => new DOMParser().parseFromString(value, 'text/html');
 describe('ordinary HTML preview ownership and real seek', () => {
+  it.each([true, false])(
+    'requires positive duration only when the caller protocol requests it (%s)',
+    async (requireDuration) => {
+      const source =
+        '<html><body data-width="320" data-height="180"><p data-libtv-cue-id="old" data-start="0" data-duration="2"><span data-libtv-text>旧字幕</span></p></body></html>';
+      const status = vi.fn(),
+        node = host();
+      const load = vi.fn(async (frame, value) => {
+        const doc = read(value);
+        Object.defineProperty(frame, 'contentDocument', { configurable: true, value: doc });
+        return doc;
+      });
+      const runtime = new TextOverlayPreviewRuntime(node, status, {
+        prepare: prepareSubtitlePreviewHtml,
+        seek: seekSubtitlePreview,
+        requireDuration,
+        load,
+        delay: async () => {},
+      });
+      runtime.render({ overlayHtmlInline: source }, 0.5);
+      await vi.waitFor(() =>
+        expect(status).toHaveBeenLastCalledWith(
+          requireDuration
+            ? expect.objectContaining({ ready: false, error: '文字composition总时长无效' })
+            : expect.objectContaining({ ready: true }),
+        ),
+      );
+      if (!requireDuration)
+        expect(
+          runtime.frames[runtime.active].contentDocument.querySelector('[data-libtv-cue-id]').style
+            .visibility,
+        ).toBe('visible');
+      runtime.dispose();
+      node.remove();
+    },
+  );
   it('keeps source scripts inert, removes active entry points and installs closed CSP only in the preview clone', () => {
     const original = html().replace(
       '</body>',

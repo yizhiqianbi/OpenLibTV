@@ -4,6 +4,7 @@ import { StudioDialogs } from './components/StudioDialogs.jsx';
 import { StudioMonitor } from './components/StudioMonitor.jsx';
 import { StudioInspector } from './components/StudioInspector.jsx';
 import { StudioTimeline } from './components/StudioTimeline.jsx';
+import StudioFloatingPreview from './components/StudioFloatingPreview.jsx';
 import React, { useState, useRef, useMemo } from 'react';
 import {
   ArrowLeft,
@@ -24,7 +25,7 @@ import '../canvas/canvas.css';
 import { presets } from './catalog.jsx';
 import { EditorDialog as StudioModal } from '../../components/EditorDialog.jsx';
 import { cloneSnapshot, createLocalId } from '../editor/model.js';
-import { download as saveFile } from '../editor/browser.js';
+import { download as saveFile, downloadBlob } from '../editor/browser.js';
 import { useSnapshotHistory } from '../editor/useSnapshotHistory.js';
 import { useStudioDocument, useStudioAutosave } from './hooks/useStudioDocument.js';
 import { useStudioPlayback } from './hooks/useStudioPlayback.js';
@@ -34,15 +35,23 @@ import {
   resolveStudioRoute,
   createStudioObject,
   createStudioKeyframe,
+  createStudioNodeCopy,
+  patchStudioKeyframe,
   upsertStudioKeyframe,
   duplicateStudioObject,
+  transformAt,
 } from './model.js';
 
 import { writeCanvasSnapshot } from '../canvas/document-api.js';
 const uid = () => createLocalId('studio');
 import './studio.css';
 import { importedClipTracks, sameClip } from './animation-model.js';
-import { patchStudioRow, studioNameError, studioOutlinerRows } from './outliner/model.js';
+import {
+  patchStudioRow,
+  studioNameError,
+  studioNodeCopyId,
+  studioOutlinerRows,
+} from './outliner/model.js';
 import { useStudioCameras } from './hooks/useStudioCameras.js';
 import { CameraMotionPanel } from './camera/CameraMotionPanel.jsx';
 import { studioRowRelations } from './outliner/model.js';
@@ -67,6 +76,7 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
     [leftOpen, setLeftOpen] = useState(true),
     [rightOpen, setRightOpen] = useState(true),
     [timeline, setTimeline] = useState(true),
+    [pipCameraId, setPipCameraId] = useState(null),
     [time, setTime] = useState(0),
     [animationSelection, setAnimationSelection] = useState(null),
     [duration, setDuration] = useState(10),
@@ -86,11 +96,14 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
     [ratio, setRatio] = useState('16:9'),
     [exportType, setExportType] = useState('image'),
     [busy, setBusy] = useState(false),
+    [videoExporting, setVideoExporting] = useState(false),
+    [videoExportProgress, setVideoExportProgress] = useState(0),
     [loadingModels, setModelLoading] = useState(0);
   const viewport = useRef(),
     fileInput = useRef(),
     clipboard = useRef(null),
-    materialEdit = useRef(null);
+    materialEdit = useRef(null),
+    videoExportAbort = useRef(null);
   const notify = (m) => toast?.(m);
   const baseRows = useMemo(() => studioOutlinerRows(objects), [objects]);
   const { history, future, record, undo, redo, clearHistory } = useSnapshotHistory(
@@ -211,13 +224,37 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
       cameraMotion.patchEntity(objectId, data);
       return;
     }
-    const changes = Object.fromEntries(
-      Object.entries(data).filter(([property]) => !row.animatedProperties?.includes(property)),
+    const localFrames = frames.filter((frame) => frame.objectId === objectId);
+    const localAnimated = new Set(
+      localFrames.flatMap((frame) =>
+        ['position', 'rotation', 'scale'].filter((key) => key in frame),
+      ),
     );
-    if (!Object.keys(changes).length) return;
+    const currentKey = localFrames.find((frame) => Math.abs(frame.time - time) < 0.04);
+    const baseChanges = Object.fromEntries(
+      Object.entries(data).filter(
+        ([property]) => !row.animatedProperties?.includes(property) && !localAnimated.has(property),
+      ),
+    );
+    const keyChanges = Object.fromEntries(
+      Object.entries(data).filter(
+        ([property]) => localAnimated.has(property) && currentKey && property in currentKey,
+      ),
+    );
+    const autoKeyChanges = Object.fromEntries(
+      Object.entries(data).filter(([property]) => localAnimated.has(property)),
+    );
+    const shouldAutoKey =
+      autoKey && !row.subtree && !currentKey && Object.keys(autoKeyChanges).length > 0;
+    if (!Object.keys(baseChanges).length && !Object.keys(keyChanges).length && !shouldAutoKey)
+      return;
     record();
-    setObjects((list) => patchStudioRow(list, objectId, changes));
-    if (autoKey && !row.subtree) addKey(row, changes);
+    if (Object.keys(baseChanges).length)
+      setObjects((list) => patchStudioRow(list, objectId, baseChanges));
+    if (Object.keys(keyChanges).length)
+      setFrames((list) => patchStudioKeyframe(list, { objectId, time, changes: keyChanges }));
+    if (shouldAutoKey) addKey({ ...transformAt(row, frames, time), id: row.id }, autoKeyChanges);
+    else if (autoKey && !row.subtree && !Object.keys(keyChanges).length) addKey(row, baseChanges);
   };
   const materialChange = (objectId, changes) => {
     const row = outlinerRows.find((candidate) => candidate.id === objectId);
@@ -279,6 +316,21 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
   const remove = () => {
     const row = outlinerRows.find((candidate) => candidate.id === selected);
     if (!row) return;
+    if (row.subtreeCopy) {
+      record();
+      setObjects((list) =>
+        list.map((object) =>
+          object.id === row.ownerId
+            ? {
+                ...object,
+                nodeCopies: (object.nodeCopies || []).filter((copy) => copy.id !== row.copyId),
+              }
+            : object,
+        ),
+      );
+      setSelected(row.parentId);
+      return;
+    }
     if (row.subtree) {
       // The source editor removes the selected entity from its parent. Keep
       // the source GLB/path stable locally and persist a tombstone instead;
@@ -318,19 +370,55 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
     setSelected(d.id);
     return true;
   };
+  const appendSubtreeCopy = (row) => {
+    if (!row?.subtree) return false;
+    const owner = objects.find((object) => object.id === row.ownerId);
+    const copy = createStudioNodeCopy(row, uid);
+    if (!owner || !copy) return false;
+    record();
+    setObjects((list) =>
+      list.map((object) =>
+        object.id === owner.id
+          ? { ...object, nodeCopies: [...(object.nodeCopies || []), copy] }
+          : object,
+      ),
+    );
+    setSelected(studioNodeCopyId(owner.id, copy.id));
+    return true;
+  };
   const duplicate = () => {
-    const object = objects.find((o) => o.id === selected);
-    return appendDuplicate(object);
+    const row = outlinerRows.find((candidate) => candidate.id === selected);
+    if (row?.subtree) return appendSubtreeCopy(row);
+    return appendDuplicate(objects.find((o) => o.id === selected));
   };
   const copy = () => {
+    const row = outlinerRows.find((candidate) => candidate.id === selected);
+    if (row?.subtree) {
+      clipboard.current = {
+        subtree: { ownerId: row.ownerId, sourcePath: [...(row.sourcePath || row.path)] },
+        pasteCount: 0,
+      };
+      notify('已复制节点');
+      return true;
+    }
     const object = objects.find((o) => o.id === selected);
-    if (!object || object.subtree) return false;
+    if (!object) return false;
     clipboard.current = { template: cloneSnapshot(object), pasteCount: 0 };
     notify('已复制对象');
     return true;
   };
   const paste = () => {
     const entry = clipboard.current;
+    if (entry?.subtree) {
+      const owner = objects.find((object) => object.id === entry.subtree.ownerId);
+      const source = owner?.subtree?.find(
+        (node) =>
+          Array.isArray(node.path) && node.path.join('.') === entry.subtree.sourcePath.join('.'),
+      );
+      if (!source) return false;
+      const row = { ...source, ownerId: owner.id, subtree: true };
+      return appendSubtreeCopy(row);
+    }
     if (!entry?.template) return false;
     const offset = ++entry.pasteCount;
     const pasted = appendDuplicate(entry.template, offset);
@@ -382,6 +470,33 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
       setBusy(false);
     }
   };
+  const exportVideo = async () => {
+    if (videoExporting) return;
+    const abort = new AbortController();
+    videoExportAbort.current = abort;
+    setVideoExporting(true);
+    setVideoExportProgress(0);
+    try {
+      const result = await viewport.current?.exportVideo({
+        duration,
+        fps: 30,
+        signal: abort.signal,
+        onProgress: setVideoExportProgress,
+      });
+      if (result?.blob) {
+        downloadBlob(result.blob, `${title}.webm`);
+        notify('视频导出成功');
+      }
+    } catch (error) {
+      if (error?.name === 'AbortError') notify('视频导出已取消');
+      else notify(error?.message || '视频导出失败，请重试');
+    } finally {
+      videoExportAbort.current = null;
+      setVideoExporting(false);
+      setVideoExportProgress(0);
+    }
+  };
+  const cancelVideoExport = () => videoExportAbort.current?.abort();
   const importFile = useStudioImport(id, {
     viewport,
     record,
@@ -505,6 +620,28 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
     }
   };
   const active = outlinerRows.find((o) => o.id === selected);
+  const activeLocalFrames = active ? frames.filter((frame) => frame.objectId === active.id) : [];
+  const activeAtTime = active ? transformAt(active, frames, time) : active;
+  const activeForInspector = active
+    ? {
+        ...activeAtTime,
+        animatedProperties: [
+          ...new Set([
+            ...(active.animatedProperties || []),
+            ...activeLocalFrames.flatMap((frame) =>
+              ['position', 'rotation', 'scale'].filter((key) => key in frame),
+            ),
+          ]),
+        ],
+        keyframeEditableProperties: activeLocalFrames.find(
+          (frame) => Math.abs(frame.time - time) < 0.04,
+        )
+          ? ['position', 'rotation', 'scale'].filter((key) =>
+              activeLocalFrames.some((frame) => Math.abs(frame.time - time) < 0.04 && key in frame),
+            )
+          : [],
+      }
+    : active;
   const cameras = cameraMotion.cameras;
   if (!validEntry)
     return (
@@ -704,13 +841,24 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
           monitor={monitors}
           selectedCameraId={cameras.some((camera) => camera.id === selected) ? selected : null}
           onSelectCamera={selectMonitorCamera}
+          onOpenPip={setPipCameraId}
+          pipCameraId={pipCameraId}
           disabled={!loaded || loadedId !== id}
+        />
+      )}
+      {pipCameraId && cameras.some((camera) => camera.id === pipCameraId) && (
+        <StudioFloatingPreview
+          label={cameras.find((camera) => camera.id === pipCameraId)?.name || '机位预览'}
+          frame={monitors.frames[pipCameraId]}
+          playing={playing}
+          onTogglePlay={() => setPlaying((value) => !value)}
+          onClose={() => setPipCameraId(null)}
         />
       )}
       {rightOpen && (
         <StudioInspector
           {...{
-            active,
+            active: activeForInspector,
             addKey,
             assetSearch,
             duplicate,
@@ -796,6 +944,7 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
           dialog,
           duration,
           exportGLB,
+          exportVideo,
           exportType,
           frames,
           id,
@@ -808,6 +957,12 @@ export default function StudioEditor({ path = '', navigate, login, toast, user }
           setExportType,
           share,
           title,
+          hasAnimation:
+            frames.length > 0 ||
+            objects.some((object) => Array.isArray(object.clips) && object.clips.length),
+          videoExporting,
+          videoExportProgress,
+          onCancelVideoExport: cancelVideoExport,
           toCanvas,
         }}
       />

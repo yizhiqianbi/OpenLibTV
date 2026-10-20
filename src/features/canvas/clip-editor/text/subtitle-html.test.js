@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import {
   createSubtitleHtml,
   createTextOverlayHtml,
@@ -20,6 +20,8 @@ import {
   subtitleDocumentSource,
 } from '../domain/html-subtitle-model.js';
 import { prepareSubtitlePreviewHtml, seekSubtitlePreview } from './subtitle-preview-document.js';
+import { archiveHtmlSubtitle } from './subtitle-archive.js';
+import { createHtmlSubtitleTools } from './html-subtitle-tools.js';
 
 const clip = (id, startTime = 0, sourceOffset = 10, duration = 4) => ({
   id,
@@ -108,7 +110,7 @@ describe('HTML subtitle source contract and clip lineage', () => {
     ).toBe('timeline');
   });
 
-  it('permits source-time overlap between independently bound clips, rejects overlap in the same clip, and retains the ordinary overlay guard', () => {
+  it('permits independently bound clips, reports existing same-clip overlap, and retains the ordinary overlay guard', () => {
     expect(readSubtitleHtml(html([cue('a', 'one'), cue('b', 'two')])).ok).toBe(true);
     expect(readSubtitleHtml(html([cue('a', 'one'), cue('b', 'one')])).issues).toContainEqual(
       expect.objectContaining({ code: 'track-overlap' }),
@@ -120,7 +122,7 @@ describe('HTML subtitle source contract and clip lineage', () => {
     expect(readTextOverlayHtml(overlay).ok).toBe(false);
   });
 
-  it('validates subtitle four-track bounds, composition overflow and literal time base without broadening overlay limits', () => {
+  it('rejects five subtitle tracks, reports overflow and normalizes source time base without broadening overlay limits', () => {
     const cues = Array.from({ length: 5 }, (_, index) => cue(`row${index}`, 'a', 1, 1, index));
     expect(readSubtitleHtml(html(cues)).issues).toContainEqual(
       expect.objectContaining({ code: 'track-limit-exceeded' }),
@@ -134,8 +136,9 @@ describe('HTML subtitle source contract and clip lineage', () => {
       readSubtitleHtml(html().replace('data-duration="20"', 'data-duration="12"')).issues,
     ).toContainEqual(expect.objectContaining({ code: 'duration-overflow' }));
     expect(
-      readSubtitleHtml(html().replace('data-time-base="source"', 'data-time-base="SOURCE"')).ok,
-    ).toBe(false);
+      readSubtitleHtml(html().replace('data-time-base="source"', 'data-time-base="SOURCE"'))
+        .timeBase,
+    ).toBe('source');
   });
 
   it('reads malformed materialization as unknown and ignores nested/decorative templates as the source reader does', () => {
@@ -216,6 +219,68 @@ describe('HTML subtitle source contract and clip lineage', () => {
       .digest('hex')
       .slice(0, 6);
     expect(result.cueId).toBe(`c-${digest}`);
+  });
+
+  it('creates a new HTML subtitle track only at the next valid track index', () => {
+    const value = html([cue('existing', 'old', 10, 1, 0)]),
+      key = subtitleDocumentId('video', 'clip:old');
+    let session = {
+      ready: true,
+      conflicted: false,
+      htmlSubtitleStatus: 'ready',
+      timeline: {
+        currentTime: 0,
+        totalDuration: 4,
+        clips: [
+          {
+            id: 'old',
+            type: 'video',
+            sourceNodeId: 'video',
+            startTime: 0,
+            sourceOffset: 10,
+            sourceDuration: 20,
+            duration: 4,
+            speed: 1,
+            width: 1920,
+            height: 1080,
+          },
+        ],
+        subtitlesHtml: {
+          [key]: archiveHtmlSubtitle({ html: value, nodeId: 'video', key, savedAt: 1 }),
+        },
+      },
+    };
+    const acceptEdit = vi.fn(({ timeline }) => {
+        session = { ...session, timeline };
+        return true;
+      }),
+      tools = createHtmlSubtitleTools({
+        getSession: () => session,
+        current: (value) => value === session,
+        publish: (value) => {
+          session = value;
+        },
+        acceptEdit,
+        beginStyle: vi.fn(),
+        previewStyle: vi.fn(),
+        endStyle: vi.fn(),
+        cancelStyle: vi.fn(),
+        pause: vi.fn(),
+        seek: vi.fn(),
+        notify: vi.fn(),
+      });
+    expect(
+      tools.controls.onAddHtmlSubtitle({ key, trackIndex: 1, createTrack: true, force: true }),
+    ).toBe(true);
+    expect(acceptEdit).toHaveBeenCalledTimes(1);
+    const archived = session.timeline.subtitlesHtml[key],
+      model = readSubtitleHtml(archived.htmlInline);
+    expect(model.trackIndexes).toEqual([0, 1]);
+    expect(model.cues.find((item) => item.trackIndex === 1)?.text).toBe('默认文本');
+    expect(
+      tools.controls.onAddHtmlSubtitle({ key, trackIndex: 3, createTrack: true, force: true }),
+    ).toBe(false);
+    expect(acceptEdit).toHaveBeenCalledTimes(1);
   });
 
   it('clones full cue and scale wrapper with collision suffix, library identity, words and inert scripts intact; repeating is idempotent', async () => {

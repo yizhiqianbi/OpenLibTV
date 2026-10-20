@@ -4,6 +4,7 @@ import { asset, localHref } from '../../data.js';
 
 const navigation = [
   ['/skill', 'PenStudio Agent', 'icon-sparkles-soft'],
+  ['/xumeng', '叙梦 Agent', 'icon-sparkles-soft'],
   ['/3d-box', 'PenStudio 3D-BOX', 'studio-3d'],
   ['/', '首页', 'home-shell'],
   ['/project', '项目', 'icon-projects'],
@@ -56,7 +57,7 @@ export default function SidebarContent({
             </div>
           ) : (
             <React.Fragment key={url}>
-              {i === 2 && <div className="nav-spacer" />}
+              {i === 3 && <div className="nav-spacer" />}
               <button
                 className={`nav-link ${(url === '/' ? path === '/' : path === url || path.startsWith(url + '/')) ? 'active' : ''}`}
                 onMouseEnter={() => {

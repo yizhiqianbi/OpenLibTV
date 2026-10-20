@@ -91,7 +91,6 @@ export function useCanvasClipEditor({
   uploadFiles,
   notify,
   extractAudio = loadEmbeddedAudioExtractor,
-  vocalSplit,
   makeId = createLocalId,
 }) {
   const owner = useMemo(() => ({ documentKey, ready, readonly }), [documentKey, ready, readonly]);
@@ -101,6 +100,7 @@ export function useCanvasClipEditor({
   const edit = useRef(null);
   const timer = useRef(null);
   const playbackRef = useRef(null);
+  const subtitleInputRef = useRef(null);
   const listeners = useRef(new Set());
   const pendingUploads = useRef(new Set());
   const recovery = useRef(null);
@@ -131,7 +131,6 @@ export function useCanvasClipEditor({
     uploadFiles,
     notify,
     extractAudio,
-    vocalSplit,
     makeId,
   };
   const publish = useCallback((value) => {
@@ -655,6 +654,8 @@ export function useCanvasClipEditor({
       selectedHtmlSubtitle: null,
       htmlSubtitleDraft: null,
       htmlSubtitleLayers: null,
+      htmlSubtitleSourceStates: null,
+      htmlSubtitleLoadKey: undefined,
       htmlSubtitleStatus: 'idle',
       htmlSubtitleError: '',
       htmlSubtitlePreviewReady: undefined,
@@ -717,6 +718,8 @@ export function useCanvasClipEditor({
       selectedHtmlSubtitle: null,
       htmlSubtitleDraft: null,
       htmlSubtitleLayers: null,
+      htmlSubtitleSourceStates: null,
+      htmlSubtitleLoadKey: undefined,
       htmlSubtitleStatus: 'idle',
       htmlSubtitleError: '',
       htmlSubtitlePreviewReady: undefined,
@@ -866,7 +869,9 @@ export function useCanvasClipEditor({
       !current(captured) ||
       !captured.ready ||
       captured.conflicted ||
-      result.timeline === captured.timeline
+      (result.timeline === captured.timeline &&
+        (!result.historyTimeline ||
+          fingerprint(result.historyTimeline) === fingerprint(captured.timeline)))
     ) {
       if (result.status === 'main-track-protected')
         latest.current.notify?.('主轨至少需要保留一个视频片段');
@@ -874,11 +879,18 @@ export function useCanvasClipEditor({
     }
     // persist canonicalizes the live document after a successful graph commit.
     // Capture the pre-edit state before that mutation, including the selection.
-    const history = pushClipTimelineHistory(
-      captured.history,
-      captured.timeline,
-      captured.selectedClipIds,
-    );
+    const amendMigration =
+      result.migrationToken &&
+      captured.pendingVttMigration?.token === result.migrationToken &&
+      captured.pendingVttMigration.history === captured.history &&
+      result.amendHistory === captured.history;
+    const history = amendMigration
+      ? captured.history
+      : pushClipTimelineHistory(
+          captured.history,
+          result.historyTimeline || captured.timeline,
+          captured.selectedClipIds,
+        );
     if (!persist(captured, result.timeline, true)) return false;
     publish({
       ...captured,
@@ -961,9 +973,24 @@ export function useCanvasClipEditor({
     publish({ ...captured, playing: false });
     return true;
   };
+  const isVttEditingBlocked = () => {
+    const session = request.current;
+    if (
+      textTools.current?.session === session?.draftSession &&
+      textTools.current?.isVttEditingBlocked
+    )
+      return textTools.current.isVttEditingBlocked();
+    // Before the lazy tools are installed, known HTML stays reserved rather than becoming writable VTT.
+    return Boolean(
+      session?.nodeSubtitleHtmlUrl ||
+      Object.keys(session?.timeline.subtitlesHtml || {}).length ||
+      session?.timeline.clips.some((clip) => clip.type !== 'audio' && clip.subtitleHtmlUrl),
+    );
+  };
   const previewEdit = (operation, options) => {
     const captured = request.current;
     if (!current(captured) || !edit.current || captured.conflicted) return false;
+    if (operation === 'subtitle' && isVttEditingBlocked()) return false;
     const base =
       operation === 'insert-track'
         ? captured.timeline
@@ -992,6 +1019,7 @@ export function useCanvasClipEditor({
     if (!method) return false;
     const result = method(subtitleBase, { ...options, selectedClipIds: captured.selectedClipIds });
     if (result.error || result.status === 'no-slot') return false;
+    edit.current.operation = operation;
     return publishTimeline(
       result.timeline,
       result.selectedClipIds ? { selectedClipIds: result.selectedClipIds } : {},
@@ -1004,6 +1032,14 @@ export function useCanvasClipEditor({
     const captured = request.current;
     if (!transaction || !current(captured)) return false;
     if (fingerprint(captured.timeline) === fingerprint(transaction.timeline)) return true;
+    if (
+      transaction.operation === 'subtitle' &&
+      textTools.current?.session === captured.draftSession
+    )
+      return textTools.current.commitVttEdit(
+        { timeline: captured.timeline, historyTimeline: transaction.timeline },
+        captured.selectedSubtitleId,
+      );
     if (!persist(captured, captured.timeline, true)) return false;
     publish({
       ...captured,
@@ -1075,6 +1111,11 @@ export function useCanvasClipEditor({
         .catch((error) => latest.current.notify?.(error.message));
     },
     notify: (message) => latest.current.notify?.(message),
+    isVttEditingBlocked,
+    commitVttEdit: (result, selectedId) =>
+      textTools.current?.session === request.current?.draftSession
+        ? textTools.current.commitVttEdit(result, selectedId)
+        : acceptEdit(result),
   });
   const flushBefore = new Set([
     'close',
@@ -1114,6 +1155,7 @@ export function useCanvasClipEditor({
     'onApplyHtmlSubtitleToAll',
     'onBeginHtmlSubtitleStyle',
     'onCloseHtmlSubtitles',
+    'onRetryHtmlSubtitles',
   ]);
   const guardSession =
     (action, name) =>
@@ -1206,68 +1248,9 @@ export function useCanvasClipEditor({
     const reason = allowed ? null : '当前片段暂不可分离';
     return { allowed: !reason, reason };
   };
-  const getVocalSplitStatus = (clipId) => {
-    const captured = request.current;
-    const context = current(captured);
-    if (!context) return { allowed: false, reason: '时间轴尚未准备完成' };
-    const clip = captured.timeline.clips.find((item) => item.id === clipId);
-    const sourceNode = context.graph.nodes.find((item) => item.id === clip?.sourceNodeId);
-    const media = clip?.sourceNodeId ? captured.mediaBySourceId.get(clip.sourceNodeId) : null;
-    const duration = Number(media?.metadata?.sourceDuration ?? clip?.sourceDuration ?? 0);
-    const reason =
-      !clip || clip.type === 'audio'
-        ? '请先选中视频片段'
-        : clip.loading === true
-          ? '请等待视频片段加载完成'
-          : clip.embedAudioMuted === true
-            ? '该片段已做人声分离或音视频分离'
-            : sourceNode?.data?.videoHasAudioTrack === false
-              ? '当前视频无音轨，无法使用人声分离'
-              : !media?.url?.trim()
-                ? '当前没有可分离的视频地址'
-                : Number.isFinite(duration) && duration > 180
-                  ? '视频时长超过 3 分钟，暂不支持人声分离'
-                  : null;
-    return { allowed: !reason, reason };
-  };
-  const vocalSplitAction = async (clipId, choice) => {
-    const status = getVocalSplitStatus(clipId);
-    if (!status.allowed) {
-      if (status.reason) latest.current.notify?.(status.reason);
-      return false;
-    }
-    const service = latest.current.vocalSplit;
-    if (typeof service !== 'function') {
-      latest.current.notify?.('人声分离服务尚未连接');
-      return false;
-    }
-    const captured = request.current;
-    const clip = captured.timeline.clips.find((item) => item.id === clipId);
-    const media = captured.mediaBySourceId.get(clip.sourceNodeId);
-    const session = captured.draftSession;
-    const { vocalSplitChoice } = await import('./domain/vocal-separation-model.js');
-    const normalizedChoice = vocalSplitChoice(choice);
-    if (!normalizedChoice) return false;
-    try {
-      const result = await service({
-        clipId,
-        choice: normalizedChoice,
-        sourceNodeId: clip.sourceNodeId,
-        sourceUrl: media.url,
-        isCurrent: () => request.current?.draftSession === session && !request.current?.conflicted,
-      });
-      if (request.current?.draftSession !== session || request.current?.conflicted) return false;
-      if (!result?.ok) {
-        latest.current.notify?.(result?.message || '人声分离失败，请重试');
-        return false;
-      }
-      latest.current.notify?.('人声分离任务已提交，等待服务回写结果');
-      return true;
-    } catch (error) {
-      if (request.current?.draftSession === session)
-        latest.current.notify?.(error.message || '人声分离失败，请重试');
-      return false;
-    }
+  const vocalSplitAction = () => {
+    latest.current.notify?.('人声分离服务尚未连接');
+    return false;
   };
   const detachAudio = async (clipId) => {
     const captured = request.current;
@@ -1369,6 +1352,16 @@ export function useCanvasClipEditor({
           },
           makeId: () => latest.current.makeId(),
           notify: (message) => latest.current.notify?.(message),
+          getSubtitleInputSelection: () => {
+            const input = subtitleInputRef.current;
+            return input && input.ownerDocument.activeElement === input
+              ? {
+                  start: input.selectionStart,
+                  end: input.selectionEnd,
+                  direction: input.selectionDirection,
+                }
+              : null;
+          },
         }),
         session,
         factory,
@@ -1379,6 +1372,7 @@ export function useCanvasClipEditor({
     subscribe,
     getState,
     playbackRef,
+    subtitleInputRef,
     open,
     close,
     locked: Boolean(state?.previewExpanded),
@@ -1590,7 +1584,6 @@ export function useCanvasClipEditor({
     },
     onCanDetachAudio: getAudioSeparationStatus,
     onDetachAudio: detachAudio,
-    onCanVocalSplit: getVocalSplitStatus,
     onVocalSplit: vocalSplitAction,
     onSetTrackControl: (control) => {
       if (current()) {
@@ -1697,6 +1690,7 @@ export function useCanvasClipEditor({
       )
         latest.current.notify?.('视频合成服务尚未连接，时间轴已保存在本机');
     },
+    notify: (message) => latest.current.notify?.(message),
   };
   for (const name of Object.keys(controls))
     if (typeof controls[name] === 'function' && !['open', 'subscribe', 'getState'].includes(name))

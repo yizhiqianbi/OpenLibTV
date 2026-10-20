@@ -1,18 +1,49 @@
 import React from 'react';
 import Icon from '../../components/Icon.jsx';
 import Gallery from '../../components/Gallery.jsx';
-import { useData, asset } from '../../data.js';
+import { useContent, asset } from '../../data.js';
 
 export default function ProfilePage({ navigate, login, user, toast }) {
-  const all = useData('gallery-all', null);
-  const initial = useData('gallery', { items: [] });
-  const profiles = useData('profiles', {});
-  const config = useData('shell-config', {});
   const uuid = new URLSearchParams(location.search).get('uuid');
+  const allResource = useContent('gallery-all', null);
+  const initialResource = useContent('gallery', { items: [] });
+  const profilesResource = useContent('profiles', {});
+  const configResource = useContent('shell-config', {});
+  const all = allResource.data;
+  const initial = initialResource.data;
+  const profiles = profilesResource.data;
+  const config = configResource.data;
   const list = all?.allItems || all?.items || initial.items;
   const profile = profiles[uuid] || {};
   const works = profile.works?.list || list.filter((i) => i.ownerUuid === uuid);
   const first = works[0];
+  const hasProfile = Boolean(uuid ? profiles[uuid] : user || first);
+  const resources = [allResource, initialResource, profilesResource, configResource];
+  const hasError = resources.some((resource) => resource.error);
+  const isLoading = resources.some((resource) => resource.loading);
+  const retry = () => {
+    const failed = resources.filter((resource) => resource.error);
+    const requests = (failed.length ? failed : [allResource]).map((resource) => resource.reload());
+    void Promise.allSettled(requests);
+  };
+  if (hasError && !hasProfile) {
+    return (
+      <div className="empty-state">
+        <p role="alert">用户主页加载失败，请重试</p>
+        <button className="soft-button" onClick={retry}>
+          重试
+        </button>
+      </div>
+    );
+  }
+  if (isLoading && !hasProfile && !first) {
+    return (
+      <div className="empty-state" role="status">
+        <span className="spinner" />
+        <p>加载用户主页...</p>
+      </div>
+    );
+  }
   const counters = profile.extra?.counter || {};
   const description = profile.person?.userDetail?.personalSpaceInformation?.briefIntroduction;
   let hash = 5381;

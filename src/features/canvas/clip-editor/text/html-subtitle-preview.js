@@ -103,6 +103,7 @@ export class HtmlSubtitlePreviewRuntime {
               },
               {
                 title: '字幕HTML预览',
+                requireDuration: false,
                 prepare: prepareSubtitlePreviewHtml,
                 seek: (document, sourceTime) =>
                   seekSubtitlePreview(document, sourceTime, clip.id, trackIndex),
@@ -168,6 +169,22 @@ export class HtmlSubtitlePreviewRuntime {
   retry() {
     for (const record of this.records.values()) record.runtime.retry();
   }
+
+  measureCueRect({ layerKey, clipId, cueId, trackIndex } = {}) {
+    const record = this.records.get(JSON.stringify([layerKey, clipId, trackIndex]));
+    const local = record?.runtime?.measureCueRect?.(cueId);
+    if (!local || !record?.host?.getBoundingClientRect) return null;
+    const hostRect = this.host.getBoundingClientRect?.();
+    const recordRect = record.host.getBoundingClientRect();
+    if (!hostRect?.width || !hostRect?.height || !recordRect) return null;
+    return {
+      left: recordRect.left - hostRect.left + local.left,
+      top: recordRect.top - hostRect.top + local.top,
+      width: local.width,
+      height: local.height,
+    };
+  }
+
   dispose() {
     this.live = false;
     for (const record of this.records.values()) {

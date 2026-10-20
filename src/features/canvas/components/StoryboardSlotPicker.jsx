@@ -8,7 +8,9 @@ import { useContent } from '../../../hooks/useContent.ts';
 function SlotHistory({ onClose, onPick, src }) {
   const content = useContent('gallery', []);
   const data = content.data;
-  const items = Array.isArray(data) ? data : data?.items || data?.list || data?.data?.list || [];
+  const items = Array.isArray(data)
+    ? data
+    : data?.items || data?.list || data?.data?.items || data?.data?.list || [];
   return (
     <EditorDialog title="从历史记录中选择" onClose={onClose} wide>
       {content.loading ? (

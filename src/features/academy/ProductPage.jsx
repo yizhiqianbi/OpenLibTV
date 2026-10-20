@@ -41,6 +41,10 @@ export default function ProductPage({
       : intro.error?.code === 60002
         ? '课程已下架'
         : '内容加载失败，请刷新重试';
+  const retryProduct = () => {
+    if (infoFailed) info.reload();
+    else intro.reload();
+  };
   const action = info.data ? productAction(user, info.data) : null;
   useLayoutEffect(() => {
     const element = description.current;
@@ -103,7 +107,7 @@ export default function ProductPage({
       <div className="academy-product-columns">
         <main>
           {introFailed ? (
-            <AcademyState>{failureText}</AcademyState>
+            <AcademyState retry={retryProduct}>{failureText}</AcademyState>
           ) : !intro.data ? (
             <div className="academy-product-skeleton" role="status" aria-label="内容加载中">
               <div className="academy-course-shimmer" />
@@ -175,7 +179,7 @@ export default function ProductPage({
         </main>
         <aside>
           {infoFailed ? (
-            <AcademyState>课程信息加载失败，请刷新重试</AcademyState>
+            <AcademyState retry={() => info.reload()}>课程信息加载失败，请刷新重试</AcademyState>
           ) : !info.data ? (
             <div className="academy-course-shimmer academy-product-card-skeleton" />
           ) : (

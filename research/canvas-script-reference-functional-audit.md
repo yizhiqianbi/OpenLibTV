@@ -30,4 +30,4 @@
 
 首次真实 lazy 兼容测试同步读 view 导致12失败，改为等待实际 mount 后原19项全部通过，保全部图/history/Quota/focus断言。首次新 actual App Quota 断言混淆 groups-first DOM 与 source 节点保存顺序，日志 `canvas-script-reference-app-initial-tests.log` 留存；修 fixture 同时核对新 ID、完整 ID set、准确 prepend 原顺序、edge 和一次 undo/redo。首轮完整检查324文件/4318项中仅此1失败、4317通过，没有完成build，不能称完整check成功。2026-10-12 Node24.19.0最终 `npm run check` exit0：**324文件/4320测试全部通过**，tests16:07:31/115.51s，格式、零警告lint/架构边界、核心strict与生产构建20.28s通过，日志 `artifacts/canvas-script-reference-final-check.log`。CanvasPage最终873.73kB/gzip288.54kB，低于既有900kB阈值，未抬阈值或加manualChunks。actualApp与旧compat联合30项16:03:31/5.95s通过。后续增强actual和准确范围见 [覆盖清单](./coverage.md) 与 [验证历史](./verification-history.md)。
 
-strict 仍只覆盖核心 TypeScript，CI未远端执行，测试总数含独立影游扩展。新source正向夹具不代表账号 / 上传 / 生成 / 费用 / 权限 / 协作服务。原站整体复刻、完整工具箱和 renderer、全部 explicit target、触控 / Safari及大图性能继续未完成；无需登录注册或小号。
+strict 仍只覆盖核心 TypeScript，CI未远端执行，测试总数含独立影游扩展。新source正向夹具不代表账号 / 上传 / 生成 / 费用 / 权限 / 协作服务。原站整体复刻、完整工具箱和部分 renderer、大图性能继续未完成；reference/mark/focus 的本地 explicit target 已接入，当前回归见 [显式 target 专项](../artifacts/canvas-explicit-target-verification.json)。触摸/Safari按当前用户范围不计入完成度；无需登录注册或小号。

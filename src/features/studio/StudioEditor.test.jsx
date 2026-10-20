@@ -1,12 +1,13 @@
-import { act, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, expect, it, vi } from 'vitest';
 import StudioEditor from './StudioEditor.jsx';
 import { createStudioObject, createStudioKeyframe } from './model.js';
 import { persistStudioDocument, readStudioDocument } from './persistence.js';
 
-const { capture } = vi.hoisted(() => ({
+const { capture, exportVideo } = vi.hoisted(() => ({
   capture: vi.fn(() => 'data:image/png;base64,c3R1ZGlv'),
+  exportVideo: vi.fn(async () => ({ blob: new Blob(['webm'], { type: 'video/webm' }) })),
 }));
 
 vi.mock('./StudioViewport.jsx', async () => {
@@ -18,6 +19,7 @@ vi.mock('./StudioViewport.jsx', async () => {
     ) {
       useImperativeHandle(ref, () => ({
         capture,
+        exportVideo,
         cameraRigContext: () => ({ origin: [0, 2, 10], focus: [0, 1, 0] }),
         worldToCameraPath: (_id, position) => position,
       }));
@@ -232,6 +234,70 @@ it('keeps the scene and export dialog when transferring to Canvas exceeds storag
   expect(screen.getByTestId('studio-scene').textContent).toBe(sceneState);
 });
 
+it('enables animated WebM export and reports completion from the viewport command', async () => {
+  const user = userEvent.setup();
+  const object = createStudioObject('cube', '动画方块', []);
+  const frame = createStudioKeyframe(object, 1, { position: [1, 0, 0] });
+  persistStudioDocument({
+    id: 'video-export-scene',
+    title: '视频导出场景',
+    objects: [object],
+    frames: [frame],
+    duration: 2,
+    ratio: '16:9',
+  });
+  render(
+    <StudioEditor
+      path="/animation-preview?projectId=video-export-scene"
+      user={{ id: 'local-test-user' }}
+    />,
+  );
+  await user.click(screen.getByRole('button', { name: '导出', exact: true }));
+  const dialog = screen.getByRole('dialog', { name: '导出' });
+  await user.click(within(dialog).getByRole('button', { name: '视频' }));
+  expect(within(dialog).getByText('将按当前画幅和时间轴导出 WebM 视频。')).toBeTruthy();
+  await user.click(within(dialog).getByRole('button', { name: '下载' }));
+  await waitFor(() => expect(exportVideo).toHaveBeenCalledOnce());
+});
+
+it('edits an existing local transform keyframe only at its timeline time', async () => {
+  const user = userEvent.setup();
+  const object = createStudioObject('cube', '关键帧方块', []);
+  object.id = 'keyframe-object';
+  const frame = createStudioKeyframe(object, 2, { position: [1, 2, 3] }, () => 'frame-one');
+  const scene = {
+    id: 'keyframe-edit-scene',
+    title: '关键帧编辑场景',
+    objects: [object],
+    frames: [frame],
+    duration: 4,
+    ratio: '16:9',
+  };
+  persistStudioDocument(scene);
+  render(
+    <StudioEditor
+      path="/animation-preview?projectId=keyframe-edit-scene"
+      user={{ id: 'local-test-user' }}
+    />,
+  );
+  const row = screen
+    .getAllByRole('treeitem')
+    .find((element) => element.dataset.outlinerId === object.id);
+  await user.click(row);
+  const timeline = screen.getByRole('region', { name: '动画时间轴' });
+  await user.click(within(timeline).getByTitle('关键帧 2 秒（右键删除）'));
+  const position = screen.getByRole('spinbutton', { name: '位置 X' });
+  expect(position.disabled).toBe(false);
+  fireEvent.change(position, { target: { value: '5' } });
+  expect(JSON.parse(screen.getByTestId('studio-scene').textContent).frames[0].position).toEqual([
+    5, 2, 3,
+  ]);
+  const progress = within(timeline).getByRole('slider', { name: '时间轴进度' });
+  progress.focus();
+  await user.keyboard('{Home}');
+  expect(screen.getByRole('spinbutton', { name: '位置 X' }).disabled).toBe(true);
+});
+
 it('connects real subtree selection to static properties, history and paused reload while retaining quota-failed edits', async () => {
   const user = userEvent.setup(),
     toast = vi.fn();
@@ -327,6 +393,65 @@ it('connects real subtree selection to static properties, history and paused rel
   expect(screen.getByRole('spinbutton', { name: '位置 X' }).value).toBe('7');
   expect(row('nested-model:node:0.0').dataset.hidden).toBe('true');
   expect(screen.getByRole('button', { name: '播放' })).toBeTruthy();
+});
+
+it('duplicates an imported subtree through the inspector and restores it with undo', async () => {
+  const user = userEvent.setup();
+  const object = {
+    id: 'copy-model',
+    name: 'CopyModel',
+    type: 'glb',
+    dataUrl: 'fixture',
+    visible: true,
+    position: [0, 0, 0],
+    rotation: [0, 0, 0],
+    scale: [1, 1, 1],
+    subtree: [
+      {
+        path: [0],
+        name: 'Branch',
+        type: 'group',
+        position: [0, 0, 0],
+        rotation: [0, 0, 0],
+        scale: [1, 1, 1],
+        visible: true,
+      },
+      {
+        path: [0, 0],
+        name: 'Leaf',
+        type: 'mesh',
+        position: [1, 0, 0],
+        rotation: [0, 0, 0],
+        scale: [1, 1, 1],
+        visible: true,
+      },
+    ],
+  };
+  const scene = {
+    id: 'copy-subtree-scene',
+    title: '子树副本场景',
+    objects: [object],
+    frames: [],
+    duration: 4,
+    ratio: '16:9',
+  };
+  persistStudioDocument(scene);
+  render(
+    <StudioEditor
+      path="/animation-preview?projectId=copy-subtree-scene"
+      user={{ id: 'local-test-user' }}
+    />,
+  );
+  const branch = screen
+    .getAllByRole('treeitem')
+    .find((element) => element.dataset.outlinerId === 'copy-model:node:0');
+  await user.click(branch);
+  await user.click(screen.getByRole('button', { name: '创建副本 Branch' }));
+  const state = () => JSON.parse(screen.getByTestId('studio-scene').textContent).objects[0];
+  expect(state().nodeCopies).toHaveLength(1);
+  expect(screen.getByRole('treeitem', { name: /Branch 副本/ })).toBeTruthy();
+  await user.click(screen.getByRole('button', { name: '撤销 ⌘Z' }));
+  expect(state().nodeCopies || []).toHaveLength(0);
 });
 
 it('deletes an imported subtree with one reversible tombstone and restores it after reload', async () => {
@@ -452,12 +577,26 @@ it('edits an imported mesh material color with one undo boundary and local resto
   const color = screen.getByLabelText('颜色');
   expect(color.value).toBe('#123456');
   fireEvent.change(color, { target: { value: '#22cc55' } });
+  fireEvent.change(screen.getByRole('slider', { name: '金属度' }), {
+    target: { value: '0.8', valueAsNumber: 0.8 },
+  });
+  fireEvent.change(screen.getByRole('slider', { name: '粗糙度' }), {
+    target: { value: '0.2', valueAsNumber: 0.2 },
+  });
+  fireEvent.change(screen.getByRole('slider', { name: '不透明度' }), {
+    target: { value: '0.4', valueAsNumber: 0.4 },
+  });
+  fireEvent.click(screen.getByRole('checkbox', { name: '透明材质' }));
   const state = () => JSON.parse(screen.getByTestId('studio-scene').textContent).objects[0];
-  expect(state().nodeEdits).toEqual({ 0: { color: '#22cc55' } });
+  expect(state().nodeEdits).toEqual({
+    0: { color: '#22cc55', metallic: 0.8, roughness: 0.2, opacity: 0.4, transparent: true },
+  });
   await user.click(screen.getByRole('button', { name: '撤销 ⌘Z' }));
   expect(state().nodeEdits).toBeUndefined();
   await user.click(screen.getByRole('button', { name: '重做 ⇧⌘Z' }));
-  expect(state().nodeEdits).toEqual({ 0: { color: '#22cc55' } });
+  expect(state().nodeEdits).toEqual({
+    0: { color: '#22cc55', metallic: 0.8, roughness: 0.2, opacity: 0.4, transparent: true },
+  });
   page.unmount();
   render(
     <StudioEditor
@@ -470,6 +609,10 @@ it('edits an imported mesh material color with one undo boundary and local resto
     .find((element) => element.dataset.outlinerId === 'material-model:node:0');
   await user.click(reloadedRow);
   expect(screen.getByLabelText('颜色').value).toBe('#22cc55');
+  expect(screen.getByRole('slider', { name: '金属度' }).value).toBe('0.8');
+  expect(screen.getByRole('slider', { name: '粗糙度' }).value).toBe('0.2');
+  expect(screen.getByRole('slider', { name: '不透明度' }).value).toBe('0.4');
+  expect(screen.getByRole('checkbox', { name: '透明材质' }).checked).toBe(true);
 });
 
 it('opens the source-shaped color popover, edits RGB, and restores focus on Escape', async () => {

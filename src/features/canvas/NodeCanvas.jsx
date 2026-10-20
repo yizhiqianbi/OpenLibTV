@@ -122,10 +122,12 @@ export default function NodeCanvas({
     [linkPoint, setLinkPoint] = useState(null),
     [search, setSearch] = useState(''),
     [library, setLibrary] = useState([]),
+    [libraryLoadState, setLibraryLoadState] = useState('idle'),
     [libraryTab, setLibraryTab] = useState('图片'),
     [selectionRect, setSelectionRect] = useState(null),
     [shareUrl, setShareUrl] = useState('');
   const [storyboardSlotRequest, setStoryboardSlotRequest] = useState(null);
+  const libraryRequestRef = useRef(0);
   const clearEdgeSelection = useRef(null);
   const retireEdgeSelection = useRef(null);
   const getEdgeSelection = useRef(null);
@@ -180,8 +182,8 @@ export default function NodeCanvas({
   const storyboardWarning = useRef({ documentKey: storageKey, time: -Infinity });
   viewRef.current = view;
   useEmbeddedCanvasFocus({ canvasRoot, embedded, onClose });
-  const notify = (m) => toast?.(m),
-    src = (url) => asset?.(url) || url;
+  const notify = (m) => toast?.(m);
+  const src = useCallback((url) => asset?.(url) || url, [asset]);
   const agentState = useCanvasAgentState(key);
   const {
     prompt,
@@ -541,6 +543,7 @@ export default function NodeCanvas({
     title,
     nodes,
     notify,
+    agentMode,
   });
   const clipComposer = useCanvasClipComposer({
     documentKey: storageKey,
@@ -1167,10 +1170,21 @@ export default function NodeCanvas({
     },
   });
   const openLibrary = () => {
+    const request = ++libraryRequestRef.current;
     setDialog('assets');
+    setLibraryLoadState('loading');
     loadContent('gallery')
-      .then((d) => setLibrary(Array.isArray(d) ? d : d.list || d.data?.list || []))
-      .catch(() => {});
+      .then((d) => {
+        if (request !== libraryRequestRef.current) return;
+        const items = Array.isArray(d)
+          ? d
+          : d?.items || d?.list || d?.data?.items || d?.data?.list || [];
+        setLibrary(Array.isArray(items) ? items : []);
+        setLibraryLoadState('ready');
+      })
+      .catch(() => {
+        if (request === libraryRequestRef.current) setLibraryLoadState('error');
+      });
   };
   if (!user && !readonly)
     return (
@@ -1613,6 +1627,8 @@ export default function NodeCanvas({
             share,
             notify,
             library,
+            libraryLoadState,
+            retryLibrary: openLibrary,
             libraryTab,
             setLibraryTab,
             fileInput,

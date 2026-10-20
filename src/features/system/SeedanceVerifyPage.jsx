@@ -111,9 +111,14 @@ function SeedanceVerify({ navigate, user, login, toast }) {
           {loading ? (
             <p className="seedance-querying">正在向 火山方舟 核验任务实际调用的模型...</p>
           ) : error ? (
-            <p className="seedance-error" role="alert">
-              {error}
-            </p>
+            <>
+              <p className="seedance-error" role="alert">
+                {error}
+              </p>
+              <button type="button" className="seedance-retry" onClick={verify}>
+                重试
+              </button>
+            </>
           ) : (
             <>
               <div>

@@ -1,5 +1,7 @@
 # ScriptV2 新增参考：实际 App 接线审计
 
+> 当前状态修正（2026-10-18）：reference/mark/focus mode owner 与显式 target eligibility 已接入 Canvas；本文较早段落中的“未实现模式”只代表审计时快照。当前验证见 `artifacts/canvas-explicit-target-verification.json`。
+
 2026-10-12。本批依据归档公开脚本静态核对，再验证本机 NodeCanvas、专用生成器、参考模式、实际 FileReader 边界和共享本机资产选择器。没有执行原站 bundle、登录、读取私人资产详情、真实上传/生成、消费或发布。Root 持有生产接线与全工程检查；本文作者仅维护实际 App 回归与本审计。
 
 ## 原站合同与本机接线

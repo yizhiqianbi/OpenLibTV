@@ -1,4 +1,14 @@
-# Vercel 部署记录（更新至2026-10-14）
+# Vercel 部署记录（更新至2026-10-16）
+
+## 当前生产更新：10 月 16 日工作区发布
+
+生产别名 [PenStudio](https://penstudio-libtv.vercel.app/) 已更新为 `dpl_B4TDynikaEvefBAdbtz44ZM9fqc6`，状态 READY；不可变地址 [nej2khde4](https://penstudio-libtv-nej2khde4-bins-projects-795df2ea.vercel.app/)。CLI 使用 `vercel deploy --prebuilt --prod --yes --scope bins-projects-795df2ea`，发布耗时20秒，四个影游 Functions 均由 Build Output 保留。
+
+发布前当前工作区用 bundled Node24.19.0 完整 `npm run check` 通过483文件/6623测试，日志 `artifacts/oct16-deploy-check.log`。最新 `npm run vercel:prepare` 成功，日志 `artifacts/oct16-vercel-prepare.log`；包报告 `artifacts/vercel-package-report.json` 为2563文件、94,192,140字节，低于95,000,000硬上限但高于90,000,000目标，包含151个编译文件、1144个平台/Functions文件、1203个本地资产。原public/不裁剪。
+
+受包大小限制，本轮代表性内容保留gallery1、真实canvas snapshot1、skills13、tutorial1、articles4、masterclass1、activities2、features2、chatShare1；没有新增采集或删除本地素材。后续继续增加大媒体前应先压缩或转由CDN/服务端提供，否则会触及Vercel Hobby上限。
+
+线上HTTP复验 `artifacts/oct16-production-http-verification.json` 通过：首页、`/animation-preview?newProject=true`、互动影游编辑器、匿名试玩、Canvas、Skill、资产、models和gzip快照均200；四个影游Function的GET方法门控返回405，缺失 release 返回404。浏览器复验显示3D-BOX画布、互动影游编辑器、匿名试玩视频均已加载；截图 `artifacts/oct16-production-play.jpg`。错误级日志 `artifacts/oct16-production-logs.jsonl` 只见Vercel Node runtime的DEP0169 deprecation warning，没有应用5xx；本轮没有重复真实上传/complete与跨设备同步。
 
 ## 当前生产更新：当前工作区与影游 Functions（2026-10-14）
 

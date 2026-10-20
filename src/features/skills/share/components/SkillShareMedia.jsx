@@ -25,8 +25,14 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
     [elapsed, setElapsed] = useState(0),
     [muted, setMuted] = useState(false),
     [text, setText] = useState(null),
+    [documentError, setDocumentError] = useState(false),
+    [documentAttempt, setDocumentAttempt] = useState(0),
+    [switching, setSwitching] = useState(false),
+    [mediaError, setMediaError] = useState(false),
+    [mediaAttempt, setMediaAttempt] = useState(0),
     video = useRef(null),
     stage = useRef(null),
+    switchTimer = useRef(null),
     item = items[index],
     url = item?.productionCaseUrl || '',
     type = /\.(mp4|webm|m4v|mov|avi|mkv)(?:\?|$)/i.test(url)
@@ -41,17 +47,36 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
     setElapsed(0);
     setDuration(0);
     setText(null);
+    setDocumentError(false);
+    setMediaError(false);
     if (type === 'document') {
       let live = true;
       fetch(asset(url))
         .then((r) => (r.ok ? r.text() : Promise.reject()))
         .then((t) => live && setText(t))
-        .catch(() => live && setText('内容加载失败'));
+        .catch(() => live && setDocumentError(true));
       return () => {
         live = false;
       };
     }
-  }, [url, type, asset]);
+  }, [url, type, asset, documentAttempt, mediaAttempt]);
+  useEffect(
+    () => () => {
+      clearTimeout(switchTimer.current);
+    },
+    [],
+  );
+  function changeCase(next) {
+    if (next === index) return;
+    clearTimeout(switchTimer.current);
+    setSwitching(true);
+    setIndex(next);
+    switchTimer.current = setTimeout(() => setSwitching(false), 360);
+  }
+  function retryMedia() {
+    setMediaError(false);
+    setMediaAttempt((value) => value + 1);
+  }
   if (!item) return null;
   function full() {
     if (document.fullscreenElement) document.exitFullscreen?.();
@@ -93,7 +118,7 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
     <div className="secondary-skill-share-media">
       <div
         ref={stage}
-        className={`secondary-skill-media-stage ${type}`}
+        className={`secondary-skill-media-stage ${type}${switching ? ' is-switching' : ''}`}
         style={
           type === 'image' || type === 'video'
             ? { aspectRatio: ratio, width: `min(100%,${(type === 'video' ? 479 : 480) * ratio}px)` }
@@ -101,22 +126,52 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
         }
       >
         {type === 'image' ? (
-          <button
-            className="secondary-skill-media-image"
-            onClick={() => setZoom(true)}
-            aria-label="查看原图"
-          >
-            <img
-              src={asset(url)}
-              alt="Skill 案例"
-              onLoad={(e) =>
-                setRatio(e.currentTarget.naturalWidth / e.currentTarget.naturalHeight || 1)
-              }
-            />
-          </button>
+          mediaError ? (
+            <div className="secondary-skill-media-error" role="alert">
+              媒体加载失败
+              <button type="button" onClick={retryMedia}>
+                重试
+              </button>
+            </div>
+          ) : (
+            <button
+              className="secondary-skill-media-image"
+              onClick={() => setZoom(true)}
+              aria-label="查看原图"
+            >
+              <img
+                key={`${url}:${mediaAttempt}`}
+                src={asset(url)}
+                alt="Skill 案例"
+                onError={() => setMediaError(true)}
+                onLoad={(e) =>
+                  setRatio(e.currentTarget.naturalWidth / e.currentTarget.naturalHeight || 1)
+                }
+              />
+            </button>
+          )
         ) : type === 'document' ? (
           <div className="secondary-skill-document">
-            {text === null ? '加载中...' : <Markdown content={text} asset={asset} />}
+            {documentError ? (
+              <div role="alert">
+                内容加载失败
+                <button
+                  type="button"
+                  aria-label="重试读取案例"
+                  onClick={() => {
+                    setDocumentError(false);
+                    setText(null);
+                    setDocumentAttempt((value) => value + 1);
+                  }}
+                >
+                  重试
+                </button>
+              </div>
+            ) : text === null ? (
+              <p role="status">加载中...</p>
+            ) : (
+              <Markdown content={text} asset={asset} />
+            )}
           </div>
         ) : (
           <>
@@ -129,7 +184,7 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
               )}
               {type === 'video' ? (
                 <video
-                  key={url}
+                  key={`${url}:${mediaAttempt}`}
                   ref={video}
                   src={asset(url)}
                   poster={asset(cover)}
@@ -144,10 +199,11 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
                     setRatio(e.currentTarget.videoWidth / e.currentTarget.videoHeight || 16 / 9);
                     setDuration(e.currentTarget.duration);
                   }}
+                  onError={() => setMediaError(true)}
                 />
               ) : (
                 <audio
-                  key={url}
+                  key={`${url}:${mediaAttempt}`}
                   ref={video}
                   src={asset(url)}
                   muted={muted}
@@ -155,10 +211,20 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
                   onPause={() => setPlaying(false)}
                   onTimeUpdate={(e) => setElapsed(e.currentTarget.currentTime)}
                   onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+                  onError={() => setMediaError(true)}
                 />
               )}
             </div>
-            {controls}
+            {mediaError ? (
+              <div className="secondary-skill-media-error" role="alert">
+                媒体加载失败
+                <button type="button" onClick={retryMedia}>
+                  重试
+                </button>
+              </div>
+            ) : (
+              controls
+            )}
           </>
         )}
         {items.length > 1 && (
@@ -166,7 +232,7 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
             <button
               disabled={index === 0}
               aria-label="上一个案例"
-              onClick={() => setIndex((i) => i - 1)}
+              onClick={() => changeCase(index - 1)}
             >
               <ChevronLeft size={14} />
             </button>
@@ -176,7 +242,7 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
             <button
               disabled={index === items.length - 1}
               aria-label="下一个案例"
-              onClick={() => setIndex((i) => i + 1)}
+              onClick={() => changeCase(index + 1)}
             >
               <ChevronRight size={14} />
             </button>
@@ -202,12 +268,12 @@ function SkillShareMedia({ items, cover, asset, templateUuid }) {
         <Modal className="secondary-skill-zoom" title="查看原图" onClose={() => setZoom(false)}>
           <img src={asset(url)} alt="Skill 案例" />
           {index > 0 && (
-            <button className="prev" onClick={() => setIndex((i) => i - 1)} aria-label="上一张">
+            <button className="prev" onClick={() => changeCase(index - 1)} aria-label="上一张">
               <ChevronLeft />
             </button>
           )}
           {index < items.length - 1 && (
-            <button className="next" onClick={() => setIndex((i) => i + 1)} aria-label="下一张">
+            <button className="next" onClick={() => changeCase(index + 1)} aria-label="下一张">
               <ChevronRight />
             </button>
           )}

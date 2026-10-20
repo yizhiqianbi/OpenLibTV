@@ -42,4 +42,6 @@
 
 进一步读到`[lK,lG]=useState("subtitle")`、`gL`和`gV`：字幕“列表/样式”在同一个右侧300px栏切换，新建/双击进入样式，样式页头返回列表；左侧是预设库等独立面板。当前已按此修正为默认右侧列表、双击进入右侧样式、样式头返回列表；390px标题不换行、栏位不越界。`artifacts/subtitle-sidebar-next-source.json`保存了侧栏静态摘录，`output/playwright/subtitle-sidebar-list-snapshot.txt`、`subtitle-sidebar-style-snapshot.txt`和`subtitle-sidebar-toggle-narrow.txt`保存实际证据。剩余仍是旧版本/混合分类、多语言属性、完整轨道/字体目录、预览几何、自定义runtime和真实服务。
 
-旧L1/L2/旧版本升级和VTT/HTML分类、多语言专属属性面板、完整字体/预设目录、轨道新增/连续重排、预览几何、复杂computed style与任意自定义runtime/内嵌媒体仍缺。大字幕文档、极快跨控件手势及后台页恢复仍需进一步实测；实际上传/字幕生成/导出/协作/云锁/费用和运营写服务未接，登录/小号继续延期。
+后续已接轨道新增/连续重排、字体目录及字体资源adapter和预览几何操作，当前批次与完整检查见 [覆盖记录](./coverage.md)；2026-10-18进一步修复列表/样式切换重建预览、300px初始宽度和页头焦点，见 [侧栏生命周期审计](./canvas-subtitle-sidebar-lifecycle-audit.md)。上段“下一步”是原批次时点，不作为当前缺口清单。
+
+当前仍缺旧L1/L2/旧版本升级、完整混合来源编辑权/降级/迁移、多语言专属属性面板、完整字体/预设运营目录、复杂computed style与任意自定义runtime/内嵌媒体。大字幕文档、极快跨控件手势及后台页恢复仍需进一步实测；实际上传/字幕生成/导出/协作/云锁/费用和运营写服务未接，登录/小号继续延期。

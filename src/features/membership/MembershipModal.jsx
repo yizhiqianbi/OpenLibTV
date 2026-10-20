@@ -1,17 +1,45 @@
 import React, { useState, useRef } from 'react';
 import Icon from '../../components/Icon.jsx';
 import Modal from '../../components/Modal.jsx';
-import { useData } from '../../data.js';
+import { useContent } from '../../data.js';
 
 export default function Membership({ onClose, login, user, toast, mode = 'member' }) {
-  const data = useData('member', {});
+  const memberResource = useContent('member', {});
+  const data = memberResource.data;
   const [type, setType] = useState(mode === 'points' ? '积分超市' : '创作会员'),
     [period, setPeriod] = useState(4),
     [more, setMore] = useState(false),
     [selected, setSelected] = useState(null);
+  const row = useRef();
+  const hasMemberContent =
+    data &&
+    typeof data === 'object' &&
+    ['packages', 'powers', 'faqs'].some((key) => Object.prototype.hasOwnProperty.call(data, key));
+  const retry = () => void memberResource.reload().catch(() => undefined);
+  if (memberResource.error && !hasMemberContent) {
+    return (
+      <Modal title="开通会员" onClose={onClose} className="membership-modal">
+        <div className="empty-state">
+          <p role="alert">会员信息加载失败，请重试</p>
+          <button className="soft-button" onClick={retry}>
+            重试
+          </button>
+        </div>
+      </Modal>
+    );
+  }
+  if (memberResource.loading && !hasMemberContent) {
+    return (
+      <Modal title="开通会员" onClose={onClose} className="membership-modal">
+        <div className="empty-state" role="status">
+          <span className="spinner" />
+          <p>加载会员信息...</p>
+        </div>
+      </Modal>
+    );
+  }
   const plans = data.packages || [];
   const powers = data.powers || [];
-  const row = useRef();
   const groups = ['标准版', '进阶版', '高级版', '豪华版', '至尊版'];
   const visible = groups
     .map(

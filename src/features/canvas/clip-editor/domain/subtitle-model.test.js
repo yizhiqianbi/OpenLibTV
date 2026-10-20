@@ -134,6 +134,36 @@ describe('source basic VTT branch', () => {
       strokeOpacity: 0,
     });
   });
+
+  it('keeps source clip ownership and supports per-clip visibility and deletion', () => {
+    const before = {
+      ...timeline(),
+      subtitles: {
+        visible: true,
+        cues: [
+          { id: 'main-cue', clipId: 'main', startTime: 0, endTime: 1, text: '主片' },
+          { id: 'next-cue', clipId: 'next', startTime: 1, endTime: 2, text: '下一片' },
+        ],
+      },
+    };
+    const hidden = editSubtitleTrack(before, {
+      kind: 'clip-visible',
+      clipId: 'main',
+      visible: false,
+    });
+    expect(hidden.timeline.subtitles.cues).toEqual([
+      { ...before.subtitles.cues[0], hidden: true },
+      before.subtitles.cues[1],
+    ]);
+    const shown = editSubtitleTrack(hidden.timeline, {
+      kind: 'clip-visible',
+      clipId: 'main',
+      visible: true,
+    });
+    expect(shown.timeline.subtitles.cues[0]).toEqual(before.subtitles.cues[0]);
+    const deleted = editSubtitleTrack(before, { kind: 'clip-delete', clipId: 'main' });
+    expect(deleted.timeline.subtitles.cues).toEqual([before.subtitles.cues[1]]);
+  });
   it('parses real VTT timing/styles/class parts and never interprets arbitrary HTML as DOM', () => {
     const raw =
       'WEBVTT\n\nSTYLE\n::cue { font-size: 33px; color: #FFFF00; }\n::cue(.red) { color: red; }\n\nline-id\n00:00:01.000 --> 00:00:03.000 line:80%\n<c.red>你好</c>\nworld\n\nNOTE ignored\ncomment\n';
@@ -177,6 +207,7 @@ describe('source basic VTT branch', () => {
       [0.5, 2],
       [4, 6],
     ]);
+    expect(merged.cues.map((cue) => cue.clipId)).toEqual(['left', 'right']);
     expect(new Set(merged.cues.map((cue) => cue.id)).size).toBe(2);
     const raw = { ...timeline(), clips, subtitles: undefined };
     const session = {
