@@ -1,28 +1,95 @@
-# PenStudio frontend
+# OpenLibTV
 
-基于 React 19 + Vite 的 PenStudio 前端，页面与交互以 LibTV 为调研参照。当前目标是页面、功能和交互；内容采用公开样本，后续由运营服务器提供。当前版本默认本地工作区，无需登录；登录注册与真实账号资源按用户要求暂缓。通用 LibTV API 代理与 Agent 运行协议已接入，配置运营后端后内容、项目、资产、Skill、Canvas、任务、会话和 Agent 可以走服务端；未配置时继续使用本地样本并明确保留离线边界。当前验收按桌面 Chromium、本地前端状态和已确认的服务边界执行，协作、远程配置、多语言以及触摸/Safari 不计入完成度扣分。工程结构已按业务域整理，功能是否与原站完全一致仍以 `research/coverage.md` 中的证据为准。
+> 一个以 LibTV 为视觉与交互参照的 React + Vite 创作工作台。它把公开样本、Canvas 节点编辑、3D Studio、字幕剪辑、Skill、学院和互动影游放在同一套可运行的前端里。
 
-Studio 导入 GLB 子节点现在支持 Inspector 创建副本、复制/粘贴、独立资源、局部属性编辑、撤销/重做、刷新恢复和 GLB 导出，源 GLB 路径不被改写。Studio 专项 29 文件/143 测试、全量 `npm run check` 495 文件/6727 测试通过；证据见 [Studio 子树副本验证](./artifacts/studio-subtree-copy-verification.json)。
+[在线体验](https://penstudio-libtv.vercel.app/) · [互动影游编辑器](https://penstudio-libtv.vercel.app/interactive-film) · [匿名试玩示例](https://penstudio-libtv.vercel.app/interactive-film/play/2ed10a7c-3009-41a9-aeae-0cf2a1610de3) · [GitHub](https://github.com/yizhiqianbi/OpenLibTV)
 
-Studio 监视器现在支持桌面浮动机位预览：复用真实 Three monitor frame，提供机位标签、播放/暂停、关闭和标题栏拖动，位置只属于临时视口状态。专项 30 文件/145 测试、最新全量 `npm run check` 498 文件/6739 测试通过；证据见 [Studio 浮动预览验证](./artifacts/studio-floating-preview-verification.json)。
+OpenLibTV 当前按“可操作的代表性真实样本”验收，不把无限采集内容当作完成度指标。默认打开即进入本地工作区，不需要登录；项目、画布、资产和 Skill 可以直接体验。接入自己的运营后端后，内容、项目、资产、任务、会话和 Agent 可以通过统一代理切换到服务端。
 
-Studio 导出面板现在支持桌面 WebM 视频导出：按时间轴采样当前 Three canvas，使用浏览器 `MediaRecorder` 下载视频，显示进度并支持取消，对能力缺失和无动画状态给出明确提示。专项 30 文件/147 测试、最新全量 `npm run check` 通过 501 文件/6751 测试；证据见 [Studio 视频导出验证](./artifacts/studio-video-export-verification.json) 和 [当前工作区回归](./artifacts/current-continuation-verification.json)。
+## 先看效果
 
-最新选中边／混合删除与VIDEO／AUDIO剪辑断线已接统一coordinator，部分取消、末次草稿、分阶段undo和按operation隔离的本机lease可操作。407文件／5862测试、格式／lint／核心strict／构建与1192源码冻结通过；首次旧Skill超时保留，同源码原配置完整重跑通过。19份真实GUI文档覆盖桌面／390混合删除和公开VIDEO clip的断线／撤销重做／刷新，见 [本批验收](./research/canvas-selected-delete-functional-audit.md)。完整剪辑renderer／timeline编辑与原生AUDIO、Studio高级工具、真实服务和跨浏览器细节仍缺；整体仍约70%工程估算，本机未部署。下方记录保留各历史批次范围。
+<table>
+  <tr>
+    <td width="50%"><a href="https://penstudio-libtv.vercel.app/interactive-film"><img src="docs/screenshots/interactive-film-editor.png" alt="互动影游编辑器：节点、视频片段、选择分支和变量面板" /></a></td>
+    <td width="50%"><a href="https://penstudio-libtv.vercel.app/interactive-film/play/2ed10a7c-3009-41a9-aeae-0cf2a1610de3"><img src="docs/screenshots/interactive-film-player.png" alt="互动影游播放器：视频画面上的选择分支" /></a></td>
+  </tr>
+  <tr>
+    <td align="center">互动影游：节点编排、片段切点、分支与发布</td>
+    <td align="center">互动影游：选择、热点和 QTE 叠加在视频画面中</td>
+  </tr>
+  <tr>
+    <td><a href="https://penstudio-libtv.vercel.app/animation-preview?newProject=true"><img src="docs/screenshots/studio-editor.jpg" alt="3D Studio：模型层级、机位预览和时间轴" /></a></td>
+    <td><a href="https://penstudio-libtv.vercel.app/canvas"><img src="docs/screenshots/canvas-subtitle-editor.png" alt="Canvas 字幕编辑器：轨道、字幕样式和时间轴" /></a></td>
+  </tr>
+  <tr>
+    <td align="center">3D Studio：GLB 层级、机位、动画和时间轴</td>
+    <td align="center">Canvas 剪辑器：字幕轨道、样式、逐字高亮和导出入口</td>
+  </tr>
+</table>
 
-此前连线优化已接20世界单位透明命中、源曲线/选择/flow与1000ms悬停剪刀，双击不再删除；普通按下/松手、hand/Space与readonly保持当前owner门控。新5文件158项、实际App与14份GUI全字段比较及390px/10%/readonly边界见 [连线验收](./research/canvas-edge-interaction-functional-audit.md)，398文件/5617项完整检查与1171冻结通过。选中边 Delete/Backspace、混合 node/edge 删除和 VIDEO/AUDIO→VIDEO_CLIP 断线随后已接统一 coordinator，并以 19 份 GUI 文档和407文件/5862项完整检查复核，详见 [选中删除验收](./research/canvas-selected-delete-functional-audit.md)。本机前端整体仍约75%的工程估算；完整 clip renderer/timeline、特殊 renderer/3D 高级工具及真实服务仍缺，本机修改未部署。
+## 你可以直接体验什么
 
-此前脚本/分镜组单边断线已接确认、精确解绑、editing优先及一次撤销；末次输入同次提交，取消不改图，quota只重试保存。393文件/5459项完整检查与1161冻结、首次focus等待失败修正、真实101节点GUI恢复及390确认见 [分镜断线验收](./research/canvas-storyboard-unlink-functional-audit.md)。本机未部署，无登录/小号；mixed edge batch、VIDEO_CLIP时间轴异步前端/源锁、完整renderer与真机/Safari/大图仍未完。整体目标未完成。
+| 入口                                                                                                                      | 已实现的可体验内容                                                                          | 当前边界                                                |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [`/canvas`](https://penstudio-libtv.vercel.app/canvas)                                                                    | 节点画布、Agent 输入、引用与 target 模式、素材库、分镜、连线、历史、剪辑器、字幕和本地保存  | 真实模型生成、上传审核、多人协作和云端写入等待运营服务  |
+| [`/animation-preview?newProject=true`](https://penstudio-libtv.vercel.app/animation-preview?newProject=true)              | GLB 导入与恢复、层级副本、材质/变换、动画、相机轨道、时间轴、浮动机位预览和浏览器 WebM 导出 | 服务端渲染、完整高级 3D 工具、触摸/Safari               |
+| [`/interactive-film`](https://penstudio-libtv.vercel.app/interactive-film)                                                | 影游节点、视频/图片、热点、选择分支、变量、QTE、预览、导出、发布和匿名播放                  | 发布依赖 Blob 与服务端环境变量；不替代通用生成/支付服务 |
+| [`/skill`](https://penstudio-libtv.vercel.app/skill) / [`/skill/create`](https://penstudio-libtv.vercel.app/skill/create) | Skill 浏览、创建、分享、Mine、本地草稿、附件和公共选择器                                    | 真实审核、团队权限、公开发布和账号权益                  |
+| [`/academy`](https://penstudio-libtv.vercel.app/academy)                                                                  | 学院首页、图文/视频/课程/跟练入口、播放器、章节目录和本地状态                               | 课程授权、订单、进度写服务和完整跟练闭环                |
+| [`/xumeng`](https://penstudio-libtv.vercel.app/xumeng)                                                                    | 角色卡、世界书、状态、记忆、SillyTavern v2 导入/导出和流式对话界面                          | 需要配置 `XUMENG_BACKEND_URL`；未配置时不伪造模型回复   |
+| `/api/backend/*` / `/api/xumeng/*`                                                                                        | 白名单、HTTPS、请求体限制、Cookie 过滤、CAS、SSE/NDJSON 转发                                | 上游认证、模型、队列、持久化和所有权由运营后端负责      |
+| `npm run tool:mcp`                                                                                                        | 只读读取路由、公开快照和内容搜索的本地 MCP 工具桥                                           | 不读取账号、浏览器状态、生成、支付或生产写服务          |
 
-上一批节点优化已接整图删除／连线清理／脚本确认，保最新输入与一次撤销，手型禁误删；普通 UI 删组同时删子树，解组保留孩子。388文件／5370项完整检查、1150冻结、实际GUI删源／整组／脚本确认／双击连线及恢复，390弹窗／回焦点见 [整图删除验收](./research/canvas-destructive-delete-functional-audit.md)。本机未部署；分镜断线特殊确认／VIDEO_CLIP异步清理／原锁及完整特殊renderer和真实服务仍缺。
+其余已注册入口包括 `/show`、`/detail/:uuid`、`/profile`、`/project`、`/assets`、`/activity`、`/feature-updates`、`/plugin`、`/blender`、`/academy/course/:id`、`/academy/practice/:id`、`/academy/product/:id`、`/academy/article/:id`、`/academy/tutorial/:id`、`/canvas/share`、`/canvas/chat-share`、`/canvas/import/blender`、`/skill/share`、`/mcp/authorize` 和 `/seedance-verify`。直接访问、刷新、query/hash 变化和未知路由都有独立的路由处理。
 
-VIDEO角色库已从真实节点入口接线，目录／详情、媒体选择和引用图事务由独立source／纯模型／controller／view维护。修复引用删除后的草稿回写、保存失败重复审核及portal点击造成背景失选；完整检查与实际App、桌面／390／320范围见 [角色库验收](./research/canvas-role-library-functional-audit.md)。仅本机未部署；目录／审核默认未连接，真人授权／组／QR、历史图库和主体前端仍缺，整个目标未完成。
+## 完整度怎么理解
 
-此前节点面板优化统一实际尺寸／视口定位：下方不足时上放、标题与工具栏避让、短屏整卡滚动，输入不继承连接倾斜。VIDEO排序消费CAS接受正文，修复150ms草稿换绑；IMAGE依完整源链只改typed顺序保literal。375文件／5108项完整检查、1129冻结SHA与实际桌面／窄屏范围见 [节点面板验收](./research/canvas-generator-vertical-functional-audit.md)。上述角色与下方Mark数字保历史；仅本机未部署，登录／小号继续延期，真实服务及特殊前端缺口仍在覆盖清单。
+OpenLibTV 的完成度按桌面 Chromium、本地前端状态和已核实的服务边界评估：
 
-此前普通参考删除按源清理已删媒体 token 并重编号，最后输入、卡片与 undo 同次接受；修复旧 debounce 回写，组按全部 leaf 判断最后项。正式379文件／5193项与1135冻结SHA、真实GUI删除／撤销／重做／刷新、390最后项删除见 [删除验收](./research/canvas-reference-delete-functional-audit.md)。仅本机未部署，该历史批次的特殊锁与整图级联／lens／style／panorama纯状态已由最新记录补接，完整特殊renderer继续另验；上方375／5108保留历史。
+- **已落地并可回归**：路由与外壳、作品/Skill/学院等公开页面、Canvas 节点与编辑事务、字幕与剪辑器、3D Studio、互动影游编辑器与播放器、本地持久化、通用代理协议、叙梦可选适配、MCP 工具桥。
+- **本地可操作但需要服务才能闭环**：项目/资产/Skill/Canvas 保存、上传、生成任务、课程进度、评论、发布和 Agent 运行。前端会保留草稿、错误态和重试入口，不把本地 actor 当作账号。
+- **明确保留的服务边界**：真实认证、模型生成、支付、审核、多人协作、跨设备同步、云端对象存储、服务端渲染，以及触摸/Safari 兼容。
 
-节点的参考、聚焦和元素标记已按各自原站流程接线；Mark支持IMAGE/VIDEO receiver、真实建议的prompt标记与元数据、模式切换、草稿/保存/图历史。默认识别与生成服务尚未连接；正向识别只用明确测试adapter验证。生成器按实际横向边界收进溢出浮层，Script卡片和Mark工具真正按需加载、原CSS保持顺序，主画布690.23kB低于既有900kB阈值。各自原生与工程范围见 [元素标记验收](./research/canvas-mark-functional-audit.md)、[聚焦验收](./research/canvas-focus-functional-audit.md)、[参考手势验收](./research/canvas-reference-gesture-functional-audit.md)。普通prompt文本撤销不会重建已清理metadata；归档canvasCapture是前图URL回调且未证实可见入口，不能当任意区域截图，见 [抓取可达性](./research/canvas-capture-view-source-audit.md)。
+| 范围                             | 状态                          | 证据入口                                                                                       |
+| -------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
+| 页面、路由、状态和主要交互       | ✅ 可运行                     | [`src/app/router`](./src/app/router)、[`research/coverage.md`](./research/coverage.md)         |
+| Canvas / 字幕 / 3D Studio        | ✅ 已接入代表性流程           | [`src/features/canvas`](./src/features/canvas)、[`src/features/studio`](./src/features/studio) |
+| 互动影游 v1                      | ✅ 已部署并可匿名试玩         | [`research/interactive-film-audit.md`](./research/interactive-film-audit.md)                   |
+| 通用 LibTV 后端与叙梦代理        | ✅ 前端协议和 Function 已接入 | [`src/services/agent-api.js`](./src/services/agent-api.js)、[`api/backend`](./api/backend)     |
+| 认证、生成、支付、协作和运营写入 | ⏳ 等待上游服务               | [`AGENTS.md`](./AGENTS.md) 的服务边界说明                                                      |
+
+## 当前验证与线上版本
+
+当前工作区的完整检查记录为 **501 个测试文件、6753 项测试**，并通过格式检查、零警告 lint、核心 TypeScript strict 和生产构建。最近生产版本来自当前工作区 HEAD：
+
+- [线上首页](https://penstudio-libtv.vercel.app/)
+- [不可变部署地址](https://penstudio-libtv-epzriz3zz-bins-projects-795df2ea.vercel.app)
+- 部署产物：2,582 个文件，94,396,284 字节，低于 95 MB 上限
+- 已复验首页、Canvas、Skill、资产、3D Studio、互动影游、公开快照和四个影游 Function 路由
+- 生产环境暂未配置 `LIBTV_BACKEND_URL` 或 `XUMENG_BACKEND_URL`，因此代理协议已上线但真实运营上游仍需单独接入
+
+## 快速开始
+
+```sh
+npm ci
+npm run dev
+```
+
+打开 `http://localhost:5173`。想验证 Vercel Functions、互动影游发布和代理路由时使用：
+
+```sh
+npm run dev:server
+```
+
+常用检查：
+
+```sh
+npm run check       # 格式、lint、核心类型、测试、生产构建
+npm run test:mcp    # MCP 初始化、工具发现、调用和路径安全
+npm run build       # 生产前端构建
+```
+
+后面的章节保留工程目录、服务契约、持久化、扩展约定和审计记录，方便继续开发或接入自己的后端。
 
 ## 本地开发
 
@@ -73,7 +140,7 @@ npm run tool:mcp
 
 仓库同时包含可打包的 `.codex-plugin/plugin.json`、`.mcp.json` 和 `skills/penstudio/SKILL.md`。将仓库作为本地插件注册时，Code Agent 会在本机启动这个只读 server；它不会自动获得账号、浏览器本地项目或生产生成权限。
 
-`.github/workflows/check.yml` 在 push / pull_request 执行 `npm ci` 和同一套 `npm run check`，只授予 contents:read，官方 actions 固定 commit，Node 版本从 `.nvmrc` 读取。配置依据 [checkout](https://github.com/actions/checkout) 与 [setup-node](https://github.com/actions/setup-node) 官方文档；本仓库当前没有 Git 远端，尚未产生远端 CI 运行记录。
+`.github/workflows/check.yml` 在 push / pull_request 执行 `npm ci` 和同一套 `npm run check`，只授予 contents:read，官方 actions 固定 commit，Node 版本从 `.nvmrc` 读取。配置依据 [checkout](https://github.com/actions/checkout) 与 [setup-node](https://github.com/actions/setup-node) 官方文档；GitHub 仓库为 [yizhiqianbi/OpenLibTV](https://github.com/yizhiqianbi/OpenLibTV)，CI 是否已在远端执行以 Actions 页面为准。
 
 ## 目录与职责
 
